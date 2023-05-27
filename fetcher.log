@@ -207,3 +207,44 @@
 [2023-05-28 00:38:31] INFO root fetch - main [MainThread]: End processing [easybuild-easyblocks]: success
 [2023-05-28 00:38:35] INFO root fetch - main [MainThread]: End processing [easybuild-framework]: success
 [2023-05-28 00:38:35] INFO root fetch - main [MainThread]: Store serial: [18277231]
+[2023-05-28 00:43:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277231]
+[2023-05-28 00:43:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easybuild-easyconfigs
+[2023-05-28 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatcmd
+[2023-05-28 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sgw
+[2023-05-28 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: persist-to-disk
+[2023-05-28 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gotify-tray
+[2023-05-28 00:43:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: easybuild
+[2023-05-28 00:43:44] INFO root fetch - processPackages [easybuild-easyconfigs]: New version: [4.7.2] Old Version: [4.7.1]
+[2023-05-28 00:43:44] INFO root fetch - processPackages [persist-to-disk]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-28 00:43:44] INFO root fetch - processPackages [chatcmd]: New version: [1.0.34] Old Version: [1.0.33]
+[2023-05-28 00:43:44] WARNING root fetch - processPackages [sgw]: Skipping, unable to determine old version
+[2023-05-28 00:43:44] INFO root fetch - main [MainThread]: End processing [sgw] error
+[2023-05-28 00:43:44] INFO root fetch - processPackages [gotify-tray]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-05-28 00:43:44] INFO root fetch - processPackages [easybuild]: New version: [4.7.2] Old Version: [4.7.1]
+[2023-05-28 00:43:44] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/64/c7/4276ea5a6055226e142da41f7563980eb1198e1e72db664ac967f2b97290/chatcmd-1.0.34.tar.gz
+[2023-05-28 00:43:44] INFO root fetch - processPackages [persist-to-disk]: Downloading https://files.pythonhosted.org/packages/6f/10/214d4143286cce7ffb1b279fbab0d32748417cc36fcf92e6441ec968e5b7/persist_to_disk-0.0.4.tar.gz
+[2023-05-28 00:43:44] INFO root fetch - processPackages [easybuild-easyconfigs]: Downloading https://files.pythonhosted.org/packages/32/1a/e7c851db23ffb0fc5c3cc9c255318d533f642c86eff2c3c33e0ab063a449/easybuild-easyconfigs-4.7.1.tar.gz
+[2023-05-28 00:43:44] INFO root fetch - processPackages [easybuild]: Downloading https://files.pythonhosted.org/packages/05/82/75dd2b60f1c0484d4ecefdac748ec00ab406c057e1c6336f52f73b21ad61/easybuild-4.7.1.tar.gz
+[2023-05-28 00:43:44] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 00:43:44] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.33.tar.gz tmp/chatcmd-1.0.34.tar.gz --markdown 20230528/c/chatcmd/1.0.33-1.0.34/diff.md --exclude *.pyd
+[2023-05-28 00:43:45] INFO root fetch - processPackages [gotify-tray]: Downloading https://files.pythonhosted.org/packages/56/33/0da41f8fe059ba6ecd86f6d212ed1a4c0e14e397259df8ae46eb3e2bd234/gotify-tray-0.4.2.tar.gz
+[2023-05-28 00:43:45] INFO root fetch - processPackages [persist-to-disk]: Downloading https://files.pythonhosted.org/packages/61/2d/786e6dd45d70b748b98a13c832fc48a8776eaecb4a920a29051c425442f5/persist_to_disk-0.0.5-py2.py3-none-any.whl
+[2023-05-28 00:43:45] INFO root fetch - processPackages [easybuild]: Downloading https://files.pythonhosted.org/packages/8a/87/f6d61072146a5411526d3013f48bbb2ade088f885e8bb7848879122f12bd/easybuild-4.7.2.tar.gz
+[2023-05-28 00:43:45] INFO root fetch - processPackages [persist-to-disk]: executing diffoscope
+[2023-05-28 00:43:45] INFO root fetch - processPackages [persist-to-disk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/persist_to_disk-0.0.4.tar.gz tmp/persist_to_disk-0.0.5-py2.py3-none-any.whl.zip --markdown 20230528/p/persist-to-disk/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-28 00:43:45] INFO root fetch - processPackages [easybuild]: executing diffoscope
+[2023-05-28 00:43:45] INFO root fetch - processPackages [easybuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easybuild-4.7.1.tar.gz tmp/easybuild-4.7.2.tar.gz --markdown 20230528/e/easybuild/4.7.1-4.7.2/diff.md --exclude *.pyd
+[2023-05-28 00:43:45] INFO root fetch - processPackages [gotify-tray]: Downloading https://files.pythonhosted.org/packages/59/19/f04386597d20242ca328302995da342970f3bd24bc45cc402f44f4c35f56/gotify-tray-0.5.0.tar.gz
+[2023-05-28 00:43:45] INFO root fetch - processPackages [gotify-tray]: executing diffoscope
+[2023-05-28 00:43:45] INFO root fetch - processPackages [gotify-tray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotify-tray-0.4.2.tar.gz tmp/gotify-tray-0.5.0.tar.gz --markdown 20230528/g/gotify-tray/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-05-28 00:43:45] INFO root fetch - processPackages [easybuild-easyconfigs]: Downloading https://files.pythonhosted.org/packages/80/86/791f7470292f1d6b26eb84e08a53ceb37c3d75e45d02ae48d8b51a3d4075/easybuild-easyconfigs-4.7.2.tar.gz
+[2023-05-28 00:43:45] INFO root fetch - processPackages [easybuild-easyconfigs]: executing diffoscope
+[2023-05-28 00:43:45] INFO root fetch - processPackages [easybuild-easyconfigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easybuild-easyconfigs-4.7.1.tar.gz tmp/easybuild-easyconfigs-4.7.2.tar.gz --markdown 20230528/e/easybuild-easyconfigs/4.7.1-4.7.2/diff.md --exclude *.pyd
+[2023-05-28 00:43:46] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 00:43:46] INFO root fetch - main [MainThread]: End processing [persist-to-disk]: success
+[2023-05-28 00:43:46] INFO root fetch - main [MainThread]: End processing [easybuild]: success
+[2023-05-28 00:43:47] INFO root fetch - main [MainThread]: End processing [gotify-tray]: success
+[2023-05-28 00:46:46] ERROR root fetch - processPackages [easybuild-easyconfigs]: Timeout during execution of pkgdiff
+[2023-05-28 00:46:46] INFO root fetch - main [MainThread]: End processing [easybuild-easyconfigs] error
+[2023-05-28 00:46:46] INFO root fetch - main [MainThread]: Store serial: [18277248]
