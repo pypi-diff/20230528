@@ -340,3 +340,23 @@
 [2023-05-28 01:07:28] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2023-05-28 01:07:29] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-05-28 01:07:29] INFO root fetch - main [MainThread]: Store serial: [18277302]
+[2023-05-28 01:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277302]
+[2023-05-28 01:12:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 01:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docker-recipe
+[2023-05-28 01:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fabricius
+[2023-05-28 01:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fabricius
+[2023-05-28 01:12:38] WARNING root fetch - processPackages [docker-recipe]: Skipping, unable to determine old version
+[2023-05-28 01:12:38] INFO root fetch - processPackages [fabricius]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 01:12:38] INFO root fetch - main [MainThread]: End processing [docker-recipe] error
+[2023-05-28 01:12:38] INFO root fetch - processPackages [fabricius]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: Downloading https://files.pythonhosted.org/packages/c7/79/9124efc0453ba4ef762ddc1779311e109ca29ce20a778b3ff1ad3de58e4c/fabricius-0.1.0.tar.gz
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: Downloading https://files.pythonhosted.org/packages/c7/79/9124efc0453ba4ef762ddc1779311e109ca29ce20a778b3ff1ad3de58e4c/fabricius-0.1.0.tar.gz
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: Downloading https://files.pythonhosted.org/packages/6e/f9/27a5c4ef865408be8885f3d8cc4d472bfc1dff6e1177d683e133bf7e21a2/fabricius-0.2.0.tar.gz
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: Downloading https://files.pythonhosted.org/packages/6e/f9/27a5c4ef865408be8885f3d8cc4d472bfc1dff6e1177d683e133bf7e21a2/fabricius-0.2.0.tar.gz
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: executing diffoscope
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabricius-0.1.0.tar.gz tmp/fabricius-0.2.0.tar.gz --markdown 20230528/f/fabricius/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: executing diffoscope
+[2023-05-28 01:12:39] INFO root fetch - processPackages [fabricius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabricius-0.1.0.tar.gz tmp/fabricius-0.2.0.tar.gz --markdown 20230528/f/fabricius/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 01:12:40] INFO root fetch - main [MainThread]: End processing [fabricius]: success
+[2023-05-28 01:12:40] INFO root fetch - main [MainThread]: End processing [fabricius]: success
+[2023-05-28 01:12:40] INFO root fetch - main [MainThread]: Store serial: [18277313]
