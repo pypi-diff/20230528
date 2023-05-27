@@ -248,3 +248,40 @@
 [2023-05-28 00:46:46] ERROR root fetch - processPackages [easybuild-easyconfigs]: Timeout during execution of pkgdiff
 [2023-05-28 00:46:46] INFO root fetch - main [MainThread]: End processing [easybuild-easyconfigs] error
 [2023-05-28 00:46:46] INFO root fetch - main [MainThread]: Store serial: [18277248]
+[2023-05-28 00:51:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277248]
+[2023-05-28 00:51:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 00:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolsql
+[2023-05-28 00:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tooltime
+[2023-05-28 00:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdxbasics
+[2023-05-28 00:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rotki-pysqlcipher3
+[2023-05-28 00:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: speedtools
+[2023-05-28 00:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shareddata
+[2023-05-28 00:51:54] WARNING root fetch - processPackages [speedtools]: Skipping, unable to determine old version
+[2023-05-28 00:51:54] INFO root fetch - main [MainThread]: End processing [speedtools] error
+[2023-05-28 00:51:54] INFO root fetch - processPackages [tooltime]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 00:51:54] INFO root fetch - processPackages [toolsql]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-28 00:51:54] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 00:51:54] INFO root fetch - processPackages [rotki-pysqlcipher3]: New version: [2023.5.1] Old Version: [2022.8.1]
+[2023-05-28 00:51:54] INFO root fetch - processPackages [shareddata]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-28 00:51:54] INFO root fetch - processPackages [toolsql]: Downloading https://files.pythonhosted.org/packages/3b/d6/aa479f177ba56f373e5e2e5288a4cbcaed9d3b0c58b7f5413eca69164573/toolsql-0.5.2.tar.gz
+[2023-05-28 00:51:54] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-05-28 00:51:54] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230528/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 00:51:55] INFO root fetch - processPackages [tooltime]: Downloading https://files.pythonhosted.org/packages/2e/3d/5d6aa93242d10e5b804a8c6547e4340ae9c99c33f73b4ee60f46f7135d0f/tooltime-0.2.8.tar.gz
+[2023-05-28 00:51:55] INFO root fetch - processPackages [rotki-pysqlcipher3]: Downloading https://files.pythonhosted.org/packages/68/96/575bb57915681ccbb5e30d65a3e26f27755aa79bb38d6d298313ec380ae3/rotki-pysqlcipher3-2022.8.1.tar.gz
+[2023-05-28 00:51:55] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-05-28 00:51:55] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.8.tar.gz tmp/shareddata-2.0.9.tar.gz --markdown 20230528/s/shareddata/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-28 00:51:55] INFO root fetch - processPackages [toolsql]: Downloading https://files.pythonhosted.org/packages/2e/8f/d4e60001380b1c038f6e2aeb3e89b908986089ccee54870cf50de04dc4b8/toolsql-0.5.3.tar.gz
+[2023-05-28 00:51:55] INFO root fetch - processPackages [rotki-pysqlcipher3]: Downloading https://files.pythonhosted.org/packages/d4/6d/0644cb0a3d42d248e1b251dfa01d1d215a3f5151ad3321335290f9da36f6/rotki-pysqlcipher3-2023.5.1.tar.gz
+[2023-05-28 00:51:55] INFO root fetch - processPackages [toolsql]: executing diffoscope
+[2023-05-28 00:51:55] INFO root fetch - processPackages [toolsql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolsql-0.5.2.tar.gz tmp/toolsql-0.5.3.tar.gz --markdown 20230528/t/toolsql/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-28 00:51:55] INFO root fetch - processPackages [tooltime]: Downloading https://files.pythonhosted.org/packages/a9/66/9165723b7590eedbbfc83be658c56c84c5fb4e590a1eec86a519b796ff0c/tooltime-0.2.9.tar.gz
+[2023-05-28 00:51:55] INFO root fetch - processPackages [rotki-pysqlcipher3]: executing diffoscope
+[2023-05-28 00:51:55] INFO root fetch - processPackages [rotki-pysqlcipher3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rotki-pysqlcipher3-2022.8.1.tar.gz tmp/rotki-pysqlcipher3-2023.5.1.tar.gz --markdown 20230528/r/rotki-pysqlcipher3/2022.8.1-2023.5.1/diff.md --exclude *.pyd
+[2023-05-28 00:51:55] INFO root fetch - processPackages [tooltime]: executing diffoscope
+[2023-05-28 00:51:55] INFO root fetch - processPackages [tooltime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooltime-0.2.8.tar.gz tmp/tooltime-0.2.9.tar.gz --markdown 20230528/t/tooltime/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 00:51:56] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-05-28 00:51:56] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-05-28 00:51:56] INFO root fetch - main [MainThread]: End processing [toolsql]: success
+[2023-05-28 00:51:56] INFO root fetch - main [MainThread]: End processing [rotki-pysqlcipher3]: success
+[2023-05-28 00:51:57] INFO root fetch - main [MainThread]: End processing [tooltime]: success
+[2023-05-28 00:51:57] INFO root fetch - main [MainThread]: Store serial: [18277277]
