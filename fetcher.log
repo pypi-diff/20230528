@@ -360,3 +360,22 @@
 [2023-05-28 01:12:40] INFO root fetch - main [MainThread]: End processing [fabricius]: success
 [2023-05-28 01:12:40] INFO root fetch - main [MainThread]: End processing [fabricius]: success
 [2023-05-28 01:12:40] INFO root fetch - main [MainThread]: Store serial: [18277313]
+[2023-05-28 01:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277313]
+[2023-05-28 01:17:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 01:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygamal
+[2023-05-28 01:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chiakilisp
+[2023-05-28 01:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tox
+[2023-05-28 01:17:49] WARNING root fetch - processPackages [pygamal]: Skipping, unable to determine old version
+[2023-05-28 01:17:49] INFO root fetch - main [MainThread]: End processing [pygamal] error
+[2023-05-28 01:17:49] INFO root fetch - processPackages [chiakilisp]: New version: [1.4.0rc5] Old Version: [1.4.0rc4]
+[2023-05-28 01:17:49] INFO root fetch - processPackages [tox]: New version: [4.5.2] Old Version: [4.5.1]
+[2023-05-28 01:17:49] INFO root fetch - processPackages [tox]: Downloading https://files.pythonhosted.org/packages/1a/d0/db430b1b14724899f96cd832d71ae98de72bbe839b00d4537941807faac1/tox-4.5.1.tar.gz
+[2023-05-28 01:17:49] INFO root fetch - processPackages [chiakilisp]: Downloading https://files.pythonhosted.org/packages/00/cf/dece8fbe4ac78450bf6ed3838cee64519d63b52aa2742bd2b647b90f3bb6/chiakilisp-1.4.0rc5-py3-none-any.whl
+[2023-05-28 01:17:49] INFO root fetch - processPackages [chiakilisp]: executing diffoscope
+[2023-05-28 01:17:49] INFO root fetch - processPackages [chiakilisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiakilisp-1.4.0rc4-py3-none-any.whl.zip tmp/chiakilisp-1.4.0rc5-py3-none-any.whl.zip --markdown 20230528/c/chiakilisp/1.4.0rc4-1.4.0rc5/diff.md --exclude *.pyd
+[2023-05-28 01:17:50] INFO root fetch - processPackages [tox]: Downloading https://files.pythonhosted.org/packages/71/da/0cb03d5659fc754dc467489acd66cdf8042e30b1255c59f71790660e0ce1/tox-4.5.2.tar.gz
+[2023-05-28 01:17:50] INFO root fetch - processPackages [tox]: executing diffoscope
+[2023-05-28 01:17:50] INFO root fetch - processPackages [tox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tox-4.5.1.tar.gz tmp/tox-4.5.2.tar.gz --markdown 20230528/t/tox/4.5.1-4.5.2/diff.md --exclude *.pyd
+[2023-05-28 01:17:51] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
+[2023-05-28 01:17:51] INFO root fetch - main [MainThread]: End processing [tox]: success
+[2023-05-28 01:17:51] INFO root fetch - main [MainThread]: Store serial: [18277323]
