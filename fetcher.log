@@ -553,3 +553,34 @@
 [2023-05-28 01:50:00] INFO root fetch - processPackages [autoAmbient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoAmbient-0.3.4.tar.gz tmp/autoAmbient-0.4.1.tar.gz --markdown 20230528/a/autoAmbient/0.3.4-0.4.1/diff.md --exclude *.pyd
 [2023-05-28 01:50:01] INFO root fetch - main [MainThread]: End processing [autoAmbient]: success
 [2023-05-28 01:50:01] INFO root fetch - main [MainThread]: Store serial: [18277406]
+[2023-05-28 01:55:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277406]
+[2023-05-28 01:55:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 01:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycalculation
+[2023-05-28 01:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatcmd
+[2023-05-28 01:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: naturalspeech2-pytorch
+[2023-05-28 01:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enderchest
+[2023-05-28 01:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ElGamal-c
+[2023-05-28 01:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mpservice
+[2023-05-28 01:55:10] INFO root fetch - processPackages [chatcmd]: New version: [1.0.35] Old Version: [1.0.34]
+[2023-05-28 01:55:10] WARNING root fetch - processPackages [pycalculation]: Skipping, unable to determine old version
+[2023-05-28 01:55:10] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 01:55:10] INFO root fetch - processPackages [enderchest]: New version: [0.1.0rc3] Old Version: [0.1.0rc2]
+[2023-05-28 01:55:10] INFO root fetch - main [MainThread]: End processing [pycalculation] error
+[2023-05-28 01:55:10] WARNING root fetch - processPackages [ElGamal-c]: Skipping, unable to determine old version
+[2023-05-28 01:55:10] INFO root fetch - main [MainThread]: End processing [ElGamal-c] error
+[2023-05-28 01:55:10] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-28 01:55:10] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/ad/f5/b4f790f0c25869fafb48135f81a8995ae4326e18d77eeea829a7a02dc146/chatcmd-1.0.35.tar.gz
+[2023-05-28 01:55:10] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/30/06/fcca747bfae834fea5f4a475da4d179a0ea0cbab0594a09730d91d55dc4a/enderchest-0.1.0rc3.tar.gz
+[2023-05-28 01:55:10] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 01:55:10] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.34.tar.gz tmp/chatcmd-1.0.35.tar.gz --markdown 20230528/c/chatcmd/1.0.34-1.0.35/diff.md --exclude *.pyd
+[2023-05-28 01:55:10] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-05-28 01:55:10] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.8.tar.gz tmp/naturalspeech2-pytorch-0.0.9.tar.gz --markdown 20230528/n/naturalspeech2-pytorch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 01:55:10] INFO root fetch - processPackages [enderchest]: executing diffoscope
+[2023-05-28 01:55:10] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-28 01:55:10] INFO root fetch - processPackages [enderchest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enderchest-0.1.0rc2.tar.gz tmp/enderchest-0.1.0rc3.tar.gz --markdown 20230528/e/enderchest/0.1.0rc2-0.1.0rc3/diff.md --exclude *.pyd
+[2023-05-28 01:55:10] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230528/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-28 01:55:11] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-05-28 01:55:11] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-28 01:55:11] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 01:55:11] INFO root fetch - main [MainThread]: End processing [enderchest]: success
+[2023-05-28 01:55:11] INFO root fetch - main [MainThread]: Store serial: [18277427]
