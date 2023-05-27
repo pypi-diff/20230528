@@ -544,3 +544,12 @@
 [2023-05-28 01:44:49] INFO root fetch - processPackages [aij]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aij-1.1.4.tar.gz tmp/aij-1.1.5.tar.gz --markdown 20230528/a/aij/1.1.4-1.1.5/diff.md --exclude *.pyd
 [2023-05-28 01:44:51] INFO root fetch - main [MainThread]: End processing [aij]: success
 [2023-05-28 01:44:51] INFO root fetch - main [MainThread]: Store serial: [18277404]
+[2023-05-28 01:49:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277404]
+[2023-05-28 01:49:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-28 01:49:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoAmbient
+[2023-05-28 01:49:59] INFO root fetch - processPackages [autoAmbient]: New version: [0.4.1] Old Version: [0.3.4]
+[2023-05-28 01:50:00] INFO root fetch - processPackages [autoAmbient]: Downloading https://files.pythonhosted.org/packages/b9/c5/fa5a4695af270389c1f48e1bfa3a78cc2d9dd21de88f3651d1feda50fc6c/autoAmbient-0.4.1.tar.gz
+[2023-05-28 01:50:00] INFO root fetch - processPackages [autoAmbient]: executing diffoscope
+[2023-05-28 01:50:00] INFO root fetch - processPackages [autoAmbient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoAmbient-0.3.4.tar.gz tmp/autoAmbient-0.4.1.tar.gz --markdown 20230528/a/autoAmbient/0.3.4-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 01:50:01] INFO root fetch - main [MainThread]: End processing [autoAmbient]: success
+[2023-05-28 01:50:01] INFO root fetch - main [MainThread]: Store serial: [18277406]
