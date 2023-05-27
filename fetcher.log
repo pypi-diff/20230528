@@ -314,3 +314,29 @@
 [2023-05-28 01:02:16] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
 [2023-05-28 01:02:18] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
 [2023-05-28 01:02:18] INFO root fetch - main [MainThread]: Store serial: [18277290]
+[2023-05-28 01:07:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277290]
+[2023-05-28 01:07:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 01:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt-cu101
+[2023-05-28 01:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: not1mm
+[2023-05-28 01:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flwr-nightly
+[2023-05-28 01:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmnt
+[2023-05-28 01:07:26] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-28 01:07:26] INFO root fetch - processPackages [flwr-nightly]: New version: [1.5.0.dev20230526] Old Version: [1.5.0.dev20230525]
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230527] Old Version: [0.7.0b20230526]
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230527] Old Version: [0.7.0b20230526]
+[2023-05-28 01:07:27] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-05-28 01:07:27] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.5.0.dev20230525.tar.gz tmp/flwr_nightly-1.5.0.dev20230526.tar.gz --markdown 20230528/f/flwr-nightly/1.5.0.dev20230525-1.5.0.dev20230526/diff.md --exclude *.pyd
+[2023-05-28 01:07:27] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-28 01:07:27] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230528/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/61/68/cb5631d757e1a14b79d0c221bddd19f38178871c3e33a68cc0cc662b72fe/tmnt-0.7.0b20230526.tar.gz
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/9a/25/9e3a34a4aadd5dfdece9917ead1f458e1856b15986394f76c63f4c5f9179/tmnt-cu101-0.7.0b20230527.tar.gz
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230526.tar.gz tmp/tmnt-cu101-0.7.0b20230527.tar.gz --markdown 20230528/t/tmnt-cu101/0.7.0b20230526-0.7.0b20230527/diff.md --exclude *.pyd
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/8a/92/1b2b11891414f0d62c36993260baacf93a1cdfafd195d7ea70ce5f9206f5/tmnt-0.7.0b20230527.tar.gz
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-28 01:07:27] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230526.tar.gz tmp/tmnt-0.7.0b20230527.tar.gz --markdown 20230528/t/tmnt/0.7.0b20230526-0.7.0b20230527/diff.md --exclude *.pyd
+[2023-05-28 01:07:28] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-28 01:07:28] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-28 01:07:28] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-05-28 01:07:29] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-28 01:07:29] INFO root fetch - main [MainThread]: Store serial: [18277302]
