@@ -452,3 +452,54 @@
 [2023-05-28 01:28:14] INFO root fetch - main [MainThread]: End processing [solax]: success
 [2023-05-28 01:28:14] INFO root fetch - main [MainThread]: End processing [haiku-geometric]: success
 [2023-05-28 01:28:14] INFO root fetch - main [MainThread]: Store serial: [18277358]
+[2023-05-28 01:33:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277358]
+[2023-05-28 01:33:23] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: the-spymaster-util
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: policyengine-canada
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: the-spymaster-util
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiodiskqueue
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zuspec-fe-parser
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zuspec-arl-eval
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sendgrify
+[2023-05-28 01:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygamal
+[2023-05-28 01:33:23] INFO root fetch - processPackages [aiodiskqueue]: New version: [0.1.0a8] Old Version: [0.1.0a6]
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-28 01:33:23] INFO root fetch - processPackages [zuspec-fe-parser]: New version: [0.0.1.5101250238] Old Version: [0.0.1.4673734881]
+[2023-05-28 01:33:23] INFO root fetch - processPackages [policyengine-canada]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 01:33:23] INFO root fetch - processPackages [sendgrify]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-28 01:33:23] INFO root fetch - processPackages [zuspec-arl-eval]: New version: [0.0.1.5101257616] Old Version: [0.0.1.4709169090]
+[2023-05-28 01:33:23] WARNING root fetch - processPackages [pygamal]: Skipping, unable to determine old version
+[2023-05-28 01:33:23] INFO root fetch - main [MainThread]: End processing [pygamal] error
+[2023-05-28 01:33:23] INFO root fetch - processPackages [policyengine-canada]: executing diffoscope
+[2023-05-28 01:33:23] INFO root fetch - processPackages [policyengine-canada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-canada-0.8.0.tar.gz tmp/policyengine-canada-0.9.0.tar.gz --markdown 20230528/p/policyengine-canada/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: Downloading https://files.pythonhosted.org/packages/dc/c4/946fcc01f7a4d248fb0faaba2d7510ec76e3f48206e9f8d9e104b1fb6a37/the_spymaster_util-3.0.8.tar.gz
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: Downloading https://files.pythonhosted.org/packages/dc/c4/946fcc01f7a4d248fb0faaba2d7510ec76e3f48206e9f8d9e104b1fb6a37/the_spymaster_util-3.0.8.tar.gz
+[2023-05-28 01:33:23] INFO root fetch - processPackages [zuspec-fe-parser]: Downloading https://files.pythonhosted.org/packages/a1/4a/67ce4daf6265932e37c07d3cd9ec2e4dd63ec52a6990dc83e794a0c6b5cc/zuspec_fe_parser-0.0.1.4673734881-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 01:33:23] INFO root fetch - processPackages [zuspec-arl-eval]: Downloading https://files.pythonhosted.org/packages/70/3e/d0e5c8ed355a61fe9512d1d094405925c35c9219167a50494579ce1c2253/zuspec_arl_eval-0.0.1.4709169090-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 01:33:23] INFO root fetch - processPackages [sendgrify]: Downloading https://files.pythonhosted.org/packages/32/13/2310a5db1dba4900be609652a3762b0fd10f5e62a98a3d6650f5710c85e0/sendgrify-2.0.1.macosx-11.6-arm64.tar.gz
+[2023-05-28 01:33:23] INFO root fetch - processPackages [aiodiskqueue]: Downloading https://files.pythonhosted.org/packages/cc/ec/ae9ac553e211c1912a21fb17f95c14cdc63f55cecf9fa97fc1cc43b31b8a/aiodiskqueue-0.1.0a8.tar.gz
+[2023-05-28 01:33:23] INFO root fetch - processPackages [sendgrify]: executing diffoscope
+[2023-05-28 01:33:23] INFO root fetch - processPackages [sendgrify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sendgrify-2.0.0.macosx-11.6-arm64.tar.gz tmp/sendgrify-2.0.1.macosx-11.6-arm64.tar.gz --markdown 20230528/s/sendgrify/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: Downloading https://files.pythonhosted.org/packages/ba/83/bfcb5f1c73f6dfe9d94b1cc91c905035b2d7033909fc190ff7cd8a039796/the_spymaster_util-3.0.9.tar.gz
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: Downloading https://files.pythonhosted.org/packages/ba/83/bfcb5f1c73f6dfe9d94b1cc91c905035b2d7033909fc190ff7cd8a039796/the_spymaster_util-3.0.9.tar.gz
+[2023-05-28 01:33:23] INFO root fetch - processPackages [zuspec-fe-parser]: Downloading https://files.pythonhosted.org/packages/d7/69/af04e590106dbe8dfaa2424716283831e82abf9e130690fede471622b743/zuspec_fe_parser-0.0.1.5101250238-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 01:33:23] INFO root fetch - processPackages [aiodiskqueue]: executing diffoscope
+[2023-05-28 01:33:23] INFO root fetch - processPackages [aiodiskqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiodiskqueue-0.1.0a6.tar.gz tmp/aiodiskqueue-0.1.0a8.tar.gz --markdown 20230528/a/aiodiskqueue/0.1.0a6-0.1.0a8/diff.md --exclude *.pyd
+[2023-05-28 01:33:23] INFO root fetch - processPackages [zuspec-arl-eval]: Downloading https://files.pythonhosted.org/packages/8c/13/ad486ab8a2cba781b98d0df848e1df5666998aba0cc2f231abf1298284a4/zuspec_arl_eval-0.0.1.5101257616-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: executing diffoscope
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the_spymaster_util-3.0.8.tar.gz tmp/the_spymaster_util-3.0.9.tar.gz --markdown 20230528/t/the-spymaster-util/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: executing diffoscope
+[2023-05-28 01:33:23] INFO root fetch - processPackages [the-spymaster-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the_spymaster_util-3.0.8.tar.gz tmp/the_spymaster_util-3.0.9.tar.gz --markdown 20230528/t/the-spymaster-util/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-28 01:33:24] INFO root fetch - processPackages [zuspec-fe-parser]: executing diffoscope
+[2023-05-28 01:33:24] INFO root fetch - processPackages [zuspec-fe-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_fe_parser-0.0.1.4673734881-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_fe_parser-0.0.1.5101250238-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/z/zuspec-fe-parser/0.0.1.4673734881-0.0.1.5101250238/diff.md --exclude *.pyd
+[2023-05-28 01:33:24] INFO root fetch - processPackages [zuspec-arl-eval]: executing diffoscope
+[2023-05-28 01:33:24] INFO root fetch - processPackages [zuspec-arl-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_arl_eval-0.0.1.4709169090-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_arl_eval-0.0.1.5101257616-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/z/zuspec-arl-eval/0.0.1.4709169090-0.0.1.5101257616/diff.md --exclude *.pyd
+[2023-05-28 01:33:24] INFO root fetch - main [MainThread]: End processing [policyengine-canada]: success
+[2023-05-28 01:33:24] INFO root fetch - main [MainThread]: End processing [sendgrify]: success
+[2023-05-28 01:33:25] INFO root fetch - main [MainThread]: End processing [aiodiskqueue]: success
+[2023-05-28 01:33:25] INFO root fetch - main [MainThread]: End processing [the-spymaster-util]: success
+[2023-05-28 01:33:25] INFO root fetch - main [MainThread]: End processing [the-spymaster-util]: success
+[2023-05-28 01:33:30] INFO root fetch - main [MainThread]: End processing [zuspec-arl-eval]: success
+[2023-05-28 01:33:32] INFO root fetch - main [MainThread]: End processing [zuspec-fe-parser]: success
+[2023-05-28 01:33:32] INFO root fetch - main [MainThread]: Store serial: [18277386]
