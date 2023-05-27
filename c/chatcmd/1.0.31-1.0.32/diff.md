@@ -1,0 +1,280 @@
+# Comparing `tmp/chatcmd-1.0.31.tar.gz` & `tmp/chatcmd-1.0.32.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "chatcmd-1.0.31.tar", last modified: Sat May 27 22:11:38 2023, max compression
++gzip compressed data, was "chatcmd-1.0.32.tar", last modified: Sat May 27 22:30:15 2023, max compression
+```
+
+## Comparing `chatcmd-1.0.31.tar` & `chatcmd-1.0.32.tar`
+
+### file list
+
+```diff
+@@ -1,21 +1,21 @@
+-drwxr-xr-x   0 user       (501) staff       (20)        0 2023-05-27 22:11:38.763340 chatcmd-1.0.31/
+--rw-r--r--   0 user       (501) staff       (20)     1069 2023-05-15 17:18:35.000000 chatcmd-1.0.31/LICENSE
+--rw-r--r--   0 user       (501) staff       (20)     5594 2023-05-27 22:11:38.763082 chatcmd-1.0.31/PKG-INFO
+--rw-r--r--   0 user       (501) staff       (20)     3972 2023-05-27 22:11:14.000000 chatcmd-1.0.31/README.md
+-drwxr-xr-x   0 user       (501) staff       (20)        0 2023-05-27 22:11:38.760235 chatcmd-1.0.31/chatcmd/
+--rw-r--r--   0 user       (501) staff       (20)        0 2023-04-26 12:02:06.000000 chatcmd-1.0.31/chatcmd/__init__.py
+--rw-r--r--   0 user       (501) staff       (20)     1678 2023-05-27 21:44:19.000000 chatcmd-1.0.31/chatcmd/api.py
+--rw-r--r--   0 user       (501) staff       (20)     3410 2023-05-27 22:11:14.000000 chatcmd-1.0.31/chatcmd/chatcmd.py
+--rw-r--r--   0 user       (501) staff       (20)     3985 2023-05-27 22:10:29.000000 chatcmd-1.0.31/chatcmd/commands.py
+--rw-r--r--   0 user       (501) staff       (20)     1831 2023-05-27 21:45:32.000000 chatcmd-1.0.31/chatcmd/helpers.py
+--rw-r--r--   0 user       (501) staff       (20)     2518 2023-05-27 21:45:32.000000 chatcmd-1.0.31/chatcmd/lookup.py
+-drwxr-xr-x   0 user       (501) staff       (20)        0 2023-05-27 22:11:38.762691 chatcmd-1.0.31/chatcmd.egg-info/
+--rw-r--r--   0 user       (501) staff       (20)     5594 2023-05-27 22:11:38.000000 chatcmd-1.0.31/chatcmd.egg-info/PKG-INFO
+--rw-r--r--   0 user       (501) staff       (20)      340 2023-05-27 22:11:38.000000 chatcmd-1.0.31/chatcmd.egg-info/SOURCES.txt
+--rw-r--r--   0 user       (501) staff       (20)        1 2023-05-27 22:11:38.000000 chatcmd-1.0.31/chatcmd.egg-info/dependency_links.txt
+--rw-r--r--   0 user       (501) staff       (20)       49 2023-05-27 22:11:38.000000 chatcmd-1.0.31/chatcmd.egg-info/entry_points.txt
+--rw-r--r--   0 user       (501) staff       (20)       44 2023-05-27 22:11:38.000000 chatcmd-1.0.31/chatcmd.egg-info/requires.txt
+--rw-r--r--   0 user       (501) staff       (20)        8 2023-05-27 22:11:38.000000 chatcmd-1.0.31/chatcmd.egg-info/top_level.txt
+--rw-r--r--   0 user       (501) staff       (20)     1795 2023-05-27 22:11:14.000000 chatcmd-1.0.31/pyproject.toml
+--rw-r--r--   0 user       (501) staff       (20)       38 2023-05-27 22:11:38.763421 chatcmd-1.0.31/setup.cfg
+--rw-r--r--   0 user       (501) staff       (20)      556 2023-05-27 22:11:14.000000 chatcmd-1.0.31/setup.py
++drwxr-xr-x   0 user       (501) staff       (20)        0 2023-05-27 22:30:15.968306 chatcmd-1.0.32/
++-rw-r--r--   0 user       (501) staff       (20)     1069 2023-05-15 17:18:35.000000 chatcmd-1.0.32/LICENSE
++-rw-r--r--   0 user       (501) staff       (20)     5594 2023-05-27 22:30:15.967611 chatcmd-1.0.32/PKG-INFO
++-rw-r--r--   0 user       (501) staff       (20)     3972 2023-05-27 22:29:53.000000 chatcmd-1.0.32/README.md
++drwxr-xr-x   0 user       (501) staff       (20)        0 2023-05-27 22:30:15.964321 chatcmd-1.0.32/chatcmd/
++-rw-r--r--   0 user       (501) staff       (20)        0 2023-04-26 12:02:06.000000 chatcmd-1.0.32/chatcmd/__init__.py
++-rw-r--r--   0 user       (501) staff       (20)     1678 2023-05-27 21:44:19.000000 chatcmd-1.0.32/chatcmd/api.py
++-rw-r--r--   0 user       (501) staff       (20)     3410 2023-05-27 22:29:53.000000 chatcmd-1.0.32/chatcmd/chatcmd.py
++-rw-r--r--   0 user       (501) staff       (20)     3985 2023-05-27 22:10:29.000000 chatcmd-1.0.32/chatcmd/commands.py
++-rw-r--r--   0 user       (501) staff       (20)     1850 2023-05-27 22:29:14.000000 chatcmd-1.0.32/chatcmd/helpers.py
++-rw-r--r--   0 user       (501) staff       (20)     2518 2023-05-27 21:45:32.000000 chatcmd-1.0.32/chatcmd/lookup.py
++drwxr-xr-x   0 user       (501) staff       (20)        0 2023-05-27 22:30:15.967233 chatcmd-1.0.32/chatcmd.egg-info/
++-rw-r--r--   0 user       (501) staff       (20)     5594 2023-05-27 22:30:15.000000 chatcmd-1.0.32/chatcmd.egg-info/PKG-INFO
++-rw-r--r--   0 user       (501) staff       (20)      340 2023-05-27 22:30:15.000000 chatcmd-1.0.32/chatcmd.egg-info/SOURCES.txt
++-rw-r--r--   0 user       (501) staff       (20)        1 2023-05-27 22:30:15.000000 chatcmd-1.0.32/chatcmd.egg-info/dependency_links.txt
++-rw-r--r--   0 user       (501) staff       (20)       49 2023-05-27 22:30:15.000000 chatcmd-1.0.32/chatcmd.egg-info/entry_points.txt
++-rw-r--r--   0 user       (501) staff       (20)       44 2023-05-27 22:30:15.000000 chatcmd-1.0.32/chatcmd.egg-info/requires.txt
++-rw-r--r--   0 user       (501) staff       (20)        8 2023-05-27 22:30:15.000000 chatcmd-1.0.32/chatcmd.egg-info/top_level.txt
++-rw-r--r--   0 user       (501) staff       (20)     1795 2023-05-27 22:29:53.000000 chatcmd-1.0.32/pyproject.toml
++-rw-r--r--   0 user       (501) staff       (20)       38 2023-05-27 22:30:15.968418 chatcmd-1.0.32/setup.cfg
++-rw-r--r--   0 user       (501) staff       (20)      556 2023-05-27 22:29:53.000000 chatcmd-1.0.32/setup.py
+```
+
+### Comparing `chatcmd-1.0.31/LICENSE` & `chatcmd-1.0.32/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `chatcmd-1.0.31/PKG-INFO` & `chatcmd-1.0.32/PKG-INFO`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: chatcmd
+-Version: 1.0.31
++Version: 1.0.32
+ Summary: ChatCMD is an AI-driven CLI-based command lookup using ChatGPT to lookup relevant CLI commands based on user input.
+ Home-page: https://github.com/naifalshaye/chatcmd
+ Author: Naif Alshaye
+ Author-email: Naif Alshaye <naif@naif.io>
+ License: MIT License
+ Project-URL: Homepage, https://github.com/naifalshaye/chatcmd
+ Project-URL: Documentation, https://github.com/naifalshaye/chatcmd/blob/master/README.md
+@@ -65,17 +65,17 @@
+ If pip not installed:
+ 
+     python3 -m pip install chatcmd
+ 
+ Installation output should display:
+ 
+     Collecting chatcmd
+-    Using cached chatcmd-1.0.31-py3-none-any.whl (6.8 kB)
++    Using cached chatcmd-1.0.32-py3-none-any.whl (6.8 kB)
+     Installing collected packages: chatcmd
+-    Successfully installed chatcmd-1.0.31
++    Successfully installed chatcmd-1.0.32
+ 
+ ### Uninstall ###
+     pip3 uninstall chatcmd
+ 
+ If pip not installed:
+ 
+     python3 -m pip uninstall chatcmd
+```
+
+### Comparing `chatcmd-1.0.31/README.md` & `chatcmd-1.0.32/README.md`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -32,17 +32,17 @@
+ If pip not installed:
+ 
+     python3 -m pip install chatcmd
+ 
+ Installation output should display:
+ 
+     Collecting chatcmd
+-    Using cached chatcmd-1.0.31-py3-none-any.whl (6.8 kB)
++    Using cached chatcmd-1.0.32-py3-none-any.whl (6.8 kB)
+     Installing collected packages: chatcmd
+-    Successfully installed chatcmd-1.0.31
++    Successfully installed chatcmd-1.0.32
+ 
+ ### Uninstall ###
+     pip3 uninstall chatcmd
+ 
+ If pip not installed:
+ 
+     python3 -m pip uninstall chatcmd
+```
+
+### Comparing `chatcmd-1.0.31/chatcmd/api.py` & `chatcmd-1.0.32/chatcmd/api.py`
+
+ * *Files identical despite different names*
+
+### Comparing `chatcmd-1.0.31/chatcmd/chatcmd.py` & `chatcmd-1.0.32/chatcmd/chatcmd.py`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -52,15 +52,15 @@
+ 
+         if api_key is None:
+             api_key = ask_for_api_key(conn, cursor)
+ 
+         openai.api_key = api_key
+ 
+         if args['--version']:
+-            print('ChatCMD'+' 1.0.31')
++            print('ChatCMD'+' 1.0.32')
+         elif args['--set-key']:
+             ask_for_api_key(conn, cursor)
+         elif args['--get-key']:
+             output_api_key(conn, cursor)
+         elif args['--get-cmd']:
+             get_cmd(conn, cursor)
+         elif args['--get-last']:
+```
+
+### Comparing `chatcmd-1.0.31/chatcmd/commands.py` & `chatcmd-1.0.32/chatcmd/commands.py`
+
+ * *Files identical despite different names*
+
+### Comparing `chatcmd-1.0.31/chatcmd/helpers.py` & `chatcmd-1.0.32/chatcmd/helpers.py`
+
+ * *Files 14% similar despite different names*
+
+```diff
+@@ -43,16 +43,16 @@
+ 
+ def copy_to_clipboard(text):
+     try:
+         system = platform.system()
+         if system == 'Darwin':  # macOS
+             subprocess.run(['pbcopy'], input=text, encoding='utf-8')
+         elif system == 'Linux':  # Linux
+-            subprocess.run(['xclip', '-selection', 'clipboard'], input=text, encoding='utf-8')
++            subprocess.run(['xclip', '-selection', 'clipboard'], input=text, encoding='utf-8', check=True)
+         elif system == 'Windows':  # Windows
+             subprocess.run(['clip'], input=text, encoding='utf-8', shell=True)
+-    except Exception as e:
+-        print("Error 1018: Failed to copy command. "+str(e))
++    except subprocess.CalledProcessError:
++        print("Error 1018: Failed to copy command.")
+ 
+ def get_line_number():
+     frame = inspect.currentframe().f_back
+     return frame.f_lineno
+```
+
+### Comparing `chatcmd-1.0.31/chatcmd/lookup.py` & `chatcmd-1.0.32/chatcmd/lookup.py`
+
+ * *Files identical despite different names*
+
+### Comparing `chatcmd-1.0.31/chatcmd.egg-info/PKG-INFO` & `chatcmd-1.0.32/chatcmd.egg-info/PKG-INFO`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: chatcmd
+-Version: 1.0.31
++Version: 1.0.32
+ Summary: ChatCMD is an AI-driven CLI-based command lookup using ChatGPT to lookup relevant CLI commands based on user input.
+ Home-page: https://github.com/naifalshaye/chatcmd
+ Author: Naif Alshaye
+ Author-email: Naif Alshaye <naif@naif.io>
+ License: MIT License
+ Project-URL: Homepage, https://github.com/naifalshaye/chatcmd
+ Project-URL: Documentation, https://github.com/naifalshaye/chatcmd/blob/master/README.md
+@@ -65,17 +65,17 @@
+ If pip not installed:
+ 
+     python3 -m pip install chatcmd
+ 
+ Installation output should display:
+ 
+     Collecting chatcmd
+-    Using cached chatcmd-1.0.31-py3-none-any.whl (6.8 kB)
++    Using cached chatcmd-1.0.32-py3-none-any.whl (6.8 kB)
+     Installing collected packages: chatcmd
+-    Successfully installed chatcmd-1.0.31
++    Successfully installed chatcmd-1.0.32
+ 
+ ### Uninstall ###
+     pip3 uninstall chatcmd
+ 
+ If pip not installed:
+ 
+     python3 -m pip uninstall chatcmd
+```
+
+### Comparing `chatcmd-1.0.31/pyproject.toml` & `chatcmd-1.0.32/pyproject.toml`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -4,15 +4,15 @@
+     "wheel >= 0.38",
+     "colorama >=0.4.6"
+ ]
+ build-backend = "setuptools.build_meta"
+ 
+ [project]
+ name = "chatcmd"
+-version = "1.0.31"
++version = "1.0.32"
+ description = "ChatCMD is an AI-driven CLI-based command lookup using ChatGPT to lookup relevant CLI commands based on user input."
+ authors = [
+     { name = "Naif Alshaye", email = "naif@naif.io" }
+ ]
+ license = {text = "MIT License"}
+ readme = "README.md"
+ requires-python = ">=3.7.1"
+```
+
+### Comparing `chatcmd-1.0.31/setup.py` & `chatcmd-1.0.32/setup.py`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,15 +1,15 @@
+ from setuptools import setup,find_packages
+ 
+ with open('README.md') as f:
+     readme = f.read()
+ 
+ setup(
+     name="chatcmd",
+-    version="1.0.31",
++    version="1.0.32",
+     description="ChatCMD is an AI-driven CLI-based command lookup using ChatGPT to lookup relevant CLI commands based on user input.",
+     long_description=readme,
+     long_description_content_type='text/markdown',
+     author="Naif Alshaye",
+     author_email="naif@naif.io",
+     url="https://github.com/naifalshaye/chatcmd",
+     install_requires=[
+```
+
