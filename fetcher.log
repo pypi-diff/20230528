@@ -112,3 +112,38 @@
 [2023-05-28 00:17:44] INFO root fetch - main [MainThread]: End processing [ldeep]: success
 [2023-05-28 00:17:45] INFO root fetch - main [MainThread]: End processing [pymedquery]: success
 [2023-05-28 00:17:45] INFO root fetch - main [MainThread]: Store serial: [18277143]
+[2023-05-28 00:22:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277143]
+[2023-05-28 00:22:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 00:22:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metaphor-connectors
+[2023-05-28 00:22:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: summa-embed
+[2023-05-28 00:22:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-multincm
+[2023-05-28 00:22:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clown-sort
+[2023-05-28 00:22:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfeyn2
+[2023-05-28 00:22:53] INFO root fetch - processPackages [clown-sort]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-28 00:22:53] INFO root fetch - processPackages [pyfeyn2]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-05-28 00:22:53] INFO root fetch - processPackages [summa-embed]: New version: [0.15.0] Old Version: [0.1.3]
+[2023-05-28 00:22:53] INFO root fetch - processPackages [metaphor-connectors]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-28 00:22:53] INFO root fetch - processPackages [nonebot-plugin-multincm]: New version: [0.3.1] Old Version: [0.3.0.post1]
+[2023-05-28 00:22:54] INFO root fetch - processPackages [nonebot-plugin-multincm]: Downloading https://files.pythonhosted.org/packages/0a/59/42daab532f4e6b4b8de14daab4dd50b9f2169f48d7831b0f25e539d97e29/nonebot_plugin_multincm-0.3.0.post1.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/d0/d7/0858d148adc392001bc4d0011e95fb7f017c2ae2a8b46d8d9d4872786288/pyfeyn2-2.3.2.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [summa-embed]: Downloading https://files.pythonhosted.org/packages/8c/fa/76f4f9e37b8420659e46d839da2caec5a55de1bd92960d292fc985a6df55/summa_embed-0.1.3.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/10/c5/1c5a038dcc4a893e343dcc34389433ac2810f05708ec6e793b74d9a0f3fb/clown_sort-1.6.1.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-05-28 00:22:54] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.6.0.tar.gz tmp/clown_sort-1.6.1.tar.gz --markdown 20230528/c/clown-sort/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-28 00:22:54] INFO root fetch - processPackages [metaphor-connectors]: executing diffoscope
+[2023-05-28 00:22:54] INFO root fetch - processPackages [metaphor-connectors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaphor-connectors-0.9.3.tar.gz tmp/metaphor-connectors-0.9.4.tar.gz --markdown 20230528/m/metaphor-connectors/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-28 00:22:54] INFO root fetch - processPackages [nonebot-plugin-multincm]: Downloading https://files.pythonhosted.org/packages/98/60/646aff73e11593b8ef58152f2a6c8005ef3257b675d8274a687350ce3fc2/nonebot_plugin_multincm-0.3.1.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/c0/ec/47cd3c05506ca71b860834e46bc87c1ee4cd7842142df66e0d44eea6c64c/pyfeyn2-2.3.3.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [summa-embed]: Downloading https://files.pythonhosted.org/packages/c3/00/b6c0b3e235f665e8f54011864b65235c479d5a26633b0069019a59e1e6d1/summa_embed-0.15.0.tar.gz
+[2023-05-28 00:22:54] INFO root fetch - processPackages [pyfeyn2]: executing diffoscope
+[2023-05-28 00:22:54] INFO root fetch - processPackages [pyfeyn2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfeyn2-2.3.2.tar.gz tmp/pyfeyn2-2.3.3.tar.gz --markdown 20230528/p/pyfeyn2/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-05-28 00:22:54] INFO root fetch - processPackages [summa-embed]: executing diffoscope
+[2023-05-28 00:22:54] INFO root fetch - processPackages [summa-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summa_embed-0.1.3.tar.gz tmp/summa_embed-0.15.0.tar.gz --markdown 20230528/s/summa-embed/0.1.3-0.15.0/diff.md --exclude *.pyd
+[2023-05-28 00:22:54] INFO root fetch - processPackages [nonebot-plugin-multincm]: executing diffoscope
+[2023-05-28 00:22:54] INFO root fetch - processPackages [nonebot-plugin-multincm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_multincm-0.3.0.post1.tar.gz tmp/nonebot_plugin_multincm-0.3.1.tar.gz --markdown 20230528/n/nonebot-plugin-multincm/0.3.0.post1-0.3.1/diff.md --exclude *.pyd
+[2023-05-28 00:22:55] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-05-28 00:22:55] INFO root fetch - main [MainThread]: End processing [pyfeyn2]: success
+[2023-05-28 00:22:55] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-multincm]: success
+[2023-05-28 00:22:56] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
+[2023-05-28 00:22:57] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
+[2023-05-28 00:22:57] INFO root fetch - main [MainThread]: Store serial: [18277201]
