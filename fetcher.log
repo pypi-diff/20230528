@@ -51,3 +51,41 @@
 [2023-05-28 00:07:22] INFO root fetch - main [MainThread]: End processing [domify]: success
 [2023-05-28 00:07:23] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-28 00:07:23] INFO root fetch - main [MainThread]: Store serial: [18277106]
+[2023-05-28 00:12:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277106]
+[2023-05-28 00:12:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatcmd
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-matrix-api
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genda-lens
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sciform
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grai-source-flat-file
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chatcmd
+[2023-05-28 00:12:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: simple-matrix-api
+[2023-05-28 00:12:31] INFO root fetch - processPackages [chatcmd]: New version: [1.0.30] Old Version: [1.0.29]
+[2023-05-28 00:12:31] WARNING root fetch - processPackages [genda-lens]: Skipping, unable to determine old version
+[2023-05-28 00:12:31] INFO root fetch - main [MainThread]: End processing [genda-lens] error
+[2023-05-28 00:12:31] WARNING root fetch - processPackages [simple-matrix-api]: Skipping, unable to determine old version
+[2023-05-28 00:12:31] INFO root fetch - main [MainThread]: End processing [simple-matrix-api] error
+[2023-05-28 00:12:31] WARNING root fetch - processPackages [simple-matrix-api]: Skipping, unable to determine old version
+[2023-05-28 00:12:31] INFO root fetch - main [MainThread]: End processing [simple-matrix-api] error
+[2023-05-28 00:12:31] INFO root fetch - processPackages [sciform]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 00:12:31] INFO root fetch - processPackages [chatcmd]: New version: [1.0.30] Old Version: [1.0.29]
+[2023-05-28 00:12:31] INFO root fetch - processPackages [grai-source-flat-file]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 00:12:32] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/71/ab/f8727ba622fa43a2df6895dc4daa3ccdb199243339510e4eb4179e631973/sciform-0.6.0.tar.gz
+[2023-05-28 00:12:32] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/d7/a4/d18362205b20bc9be3882e623f8265fbedea9d3330dd0965451b0fb4edee/chatcmd-1.0.30.tar.gz
+[2023-05-28 00:12:32] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/d7/a4/d18362205b20bc9be3882e623f8265fbedea9d3330dd0965451b0fb4edee/chatcmd-1.0.30.tar.gz
+[2023-05-28 00:12:32] INFO root fetch - processPackages [grai-source-flat-file]: Downloading https://files.pythonhosted.org/packages/9f/2c/fd56da5064f9492f57c9c6cf8dde2a527267feee4ec29e11d2cadc6f23f4/grai_source_flat_file-0.0.8.tar.gz
+[2023-05-28 00:12:32] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 00:12:32] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.29.tar.gz tmp/chatcmd-1.0.30.tar.gz --markdown 20230528/c/chatcmd/1.0.29-1.0.30/diff.md --exclude *.pyd
+[2023-05-28 00:12:32] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 00:12:32] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.29.tar.gz tmp/chatcmd-1.0.30.tar.gz --markdown 20230528/c/chatcmd/1.0.29-1.0.30/diff.md --exclude *.pyd
+[2023-05-28 00:12:32] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/2f/58/34f63bab80258461bddd7195b72169a511cc08aab09ba14794e48b1238fd/sciform-0.6.1.tar.gz
+[2023-05-28 00:12:32] INFO root fetch - processPackages [grai-source-flat-file]: Downloading https://files.pythonhosted.org/packages/4d/00/7850ade542f529e8acf91e7419610126645ce4343b91382d24d08b743f60/grai_source_flat_file-0.0.9.tar.gz
+[2023-05-28 00:12:32] INFO root fetch - processPackages [sciform]: executing diffoscope
+[2023-05-28 00:12:32] INFO root fetch - processPackages [sciform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciform-0.6.0.tar.gz tmp/sciform-0.6.1.tar.gz --markdown 20230528/s/sciform/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 00:12:32] INFO root fetch - processPackages [grai-source-flat-file]: executing diffoscope
+[2023-05-28 00:12:32] INFO root fetch - processPackages [grai-source-flat-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_flat_file-0.0.8.tar.gz tmp/grai_source_flat_file-0.0.9.tar.gz --markdown 20230528/g/grai-source-flat-file/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 00:12:33] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 00:12:33] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 00:12:33] INFO root fetch - main [MainThread]: End processing [sciform]: success
+[2023-05-28 00:12:33] INFO root fetch - main [MainThread]: End processing [grai-source-flat-file]: success
+[2023-05-28 00:12:33] INFO root fetch - main [MainThread]: Store serial: [18277131]
