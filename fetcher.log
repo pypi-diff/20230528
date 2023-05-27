@@ -285,3 +285,24 @@
 [2023-05-28 00:51:56] INFO root fetch - main [MainThread]: End processing [rotki-pysqlcipher3]: success
 [2023-05-28 00:51:57] INFO root fetch - main [MainThread]: End processing [tooltime]: success
 [2023-05-28 00:51:57] INFO root fetch - main [MainThread]: Store serial: [18277277]
+[2023-05-28 00:57:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277277]
+[2023-05-28 00:57:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 00:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smashed
+[2023-05-28 00:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decentralizedroutines
+[2023-05-28 00:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ml-starter
+[2023-05-28 00:57:05] INFO root fetch - processPackages [smashed]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 00:57:05] INFO root fetch - processPackages [ml-starter]: New version: [0.0.46] Old Version: [0.0.45]
+[2023-05-28 00:57:05] INFO root fetch - processPackages [decentralizedroutines]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-28 00:57:05] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/3d/5f/a1cc423674d989c235d2943a17fbddb08540685e6f1e2c5848e0ea57e93b/ml-starter-0.0.46.tar.gz
+[2023-05-28 00:57:05] INFO root fetch - processPackages [decentralizedroutines]: Downloading https://files.pythonhosted.org/packages/8c/33/34d06241f81d2cbe2d972b55e16ed405136b21130810c90b9ac6268df94c/decentralizedroutines-2.0.6.tar.gz
+[2023-05-28 00:57:06] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-28 00:57:06] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.45.tar.gz tmp/ml-starter-0.0.46.tar.gz --markdown 20230528/m/ml-starter/0.0.45-0.0.46/diff.md --exclude *.pyd
+[2023-05-28 00:57:06] INFO root fetch - processPackages [smashed]: executing diffoscope
+[2023-05-28 00:57:06] INFO root fetch - processPackages [smashed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smashed-0.8.0.tar.gz tmp/smashed-0.9.0.tar.gz --markdown 20230528/s/smashed/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 00:57:06] INFO root fetch - processPackages [decentralizedroutines]: Downloading https://files.pythonhosted.org/packages/83/5c/d64848b26d2ef0c0086f93f0679296b742a8b4249bb28b5775e41d48c7b1/decentralizedroutines-2.0.7.tar.gz
+[2023-05-28 00:57:06] INFO root fetch - processPackages [decentralizedroutines]: executing diffoscope
+[2023-05-28 00:57:06] INFO root fetch - processPackages [decentralizedroutines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decentralizedroutines-2.0.6.tar.gz tmp/decentralizedroutines-2.0.7.tar.gz --markdown 20230528/d/decentralizedroutines/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-28 00:57:07] INFO root fetch - main [MainThread]: End processing [decentralizedroutines]: success
+[2023-05-28 00:57:07] INFO root fetch - main [MainThread]: End processing [smashed]: success
+[2023-05-28 00:57:07] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-28 00:57:07] INFO root fetch - main [MainThread]: Store serial: [18277286]
