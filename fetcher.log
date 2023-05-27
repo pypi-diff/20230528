@@ -503,3 +503,35 @@
 [2023-05-28 01:33:30] INFO root fetch - main [MainThread]: End processing [zuspec-arl-eval]: success
 [2023-05-28 01:33:32] INFO root fetch - main [MainThread]: End processing [zuspec-fe-parser]: success
 [2023-05-28 01:33:32] INFO root fetch - main [MainThread]: Store serial: [18277386]
+[2023-05-28 01:38:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277386]
+[2023-05-28 01:38:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-autoscaling-gitlab-runner
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-classifiers
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libdev
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pepperize.cdk-organizations
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygamal
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-05-28 01:38:48] INFO root fetch - processPackages [libdev]: New version: [0.9] Old Version: [0.8]
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pygamal]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-05-28 01:38:48] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-05-28 01:38:48] INFO root fetch - processPackages [libdev]: Downloading https://files.pythonhosted.org/packages/e2/8d/bcacab1d4f911d6fbf6c411dfb5a06ce836e521ccc40dc8175441fdb80b8/libdev-0.8.tar.gz
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/a0/6f/a8d56be0c643d70fc61c2470095895b7c12ec2da531bb85032e37774139d/pygamal-0.2.6.tar.gz
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: executing diffoscope
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pepperize.cdk-autoscaling-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-autoscaling-gitlab-runner-0.2.98.tar.gz tmp/pepperize.cdk-autoscaling-gitlab-runner-0.2.99.tar.gz --markdown 20230528/p/pepperize.cdk-autoscaling-gitlab-runner/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-05-28 01:38:48] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230528/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-05-28 01:38:49] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/9f/79/35562ea46bb3c25ffd0b01ead58b351190fb1e083c740d0a8ee718179fe6/pygamal-0.2.7.tar.gz
+[2023-05-28 01:38:49] INFO root fetch - processPackages [libdev]: Downloading https://files.pythonhosted.org/packages/7d/2f/227c058dbbd649c3bb70bbd6d279691828eba2b5bac3cf27685382669b09/libdev-0.9.tar.gz
+[2023-05-28 01:38:49] INFO root fetch - processPackages [libdev]: executing diffoscope
+[2023-05-28 01:38:49] INFO root fetch - processPackages [libdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdev-0.8.tar.gz tmp/libdev-0.9.tar.gz --markdown 20230528/l/libdev/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-28 01:38:49] INFO root fetch - processPackages [pygamal]: executing diffoscope
+[2023-05-28 01:38:49] INFO root fetch - processPackages [pygamal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygamal-0.2.6.tar.gz tmp/pygamal-0.2.7.tar.gz --markdown 20230528/p/pygamal/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-28 01:38:49] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-05-28 01:38:49] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-autoscaling-gitlab-runner]: success
+[2023-05-28 01:38:50] INFO root fetch - main [MainThread]: End processing [libdev]: success
+[2023-05-28 01:38:50] INFO root fetch - main [MainThread]: End processing [pygamal]: success
+[2023-05-28 01:39:40] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-organizations]: success
+[2023-05-28 01:39:40] INFO root fetch - main [MainThread]: Store serial: [18277401]
