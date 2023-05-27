@@ -147,3 +147,16 @@
 [2023-05-28 00:22:56] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
 [2023-05-28 00:22:57] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
 [2023-05-28 00:22:57] INFO root fetch - main [MainThread]: Store serial: [18277201]
+[2023-05-28 00:28:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277201]
+[2023-05-28 00:28:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 00:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mindspore-dev
+[2023-05-28 00:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emhass
+[2023-05-28 00:28:06] INFO root fetch - processPackages [mindspore-dev]: New version: [2.1.0.dev20230528] Old Version: [2.0.0rc1.dev20230514]
+[2023-05-28 00:28:06] INFO root fetch - processPackages [emhass]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-28 00:28:06] INFO root fetch - processPackages [mindspore-dev]: Downloading https://files.pythonhosted.org/packages/3c/54/4145a44e5f0f1aa82da9d8b1bbd38cc950f886d77cc143c019ebb6ca8380/mindspore_dev-2.0.0rc1.dev20230514-cp39-none-any.whl
+[2023-05-28 00:28:06] WARNING root fetch - processPackages [mindspore-dev]: Skipping package: exceeds size limit 236681139>=10485760
+[2023-05-28 00:28:06] INFO root fetch - main [MainThread]: End processing [mindspore-dev] error
+[2023-05-28 00:28:06] INFO root fetch - processPackages [emhass]: executing diffoscope
+[2023-05-28 00:28:06] INFO root fetch - processPackages [emhass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emhass-0.4.8-py3-none-any.whl.zip tmp/emhass-0.4.9-py3-none-any.whl.zip --markdown 20230528/e/emhass/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-28 00:28:08] INFO root fetch - main [MainThread]: End processing [emhass]: success
+[2023-05-28 00:28:08] INFO root fetch - main [MainThread]: Store serial: [18277209]
