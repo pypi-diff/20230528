@@ -379,3 +379,33 @@
 [2023-05-28 01:17:51] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
 [2023-05-28 01:17:51] INFO root fetch - main [MainThread]: End processing [tox]: success
 [2023-05-28 01:17:51] INFO root fetch - main [MainThread]: Store serial: [18277323]
+[2023-05-28 01:22:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277323]
+[2023-05-28 01:23:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 01:23:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docker-recipe
+[2023-05-28 01:23:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-starter
+[2023-05-28 01:23:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cfn-stk
+[2023-05-28 01:23:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cloudsnorkel.cdk-github-runners
+[2023-05-28 01:23:00] INFO root fetch - processPackages [docker-recipe]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 01:23:00] INFO root fetch - processPackages [cfn-stk]: New version: [0.15.2] Old Version: [0.15.1]
+[2023-05-28 01:23:00] INFO root fetch - processPackages [ml-starter]: New version: [0.0.47] Old Version: [0.0.46]
+[2023-05-28 01:23:00] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-28 01:23:00] INFO root fetch - processPackages [docker-recipe]: Downloading https://files.pythonhosted.org/packages/12/bd/531a2277559d554839e447b923001307cde7edf68a6507fe3a41da90650a/docker-recipe-0.1.0.tar.gz
+[2023-05-28 01:23:00] INFO root fetch - processPackages [cfn-stk]: Downloading https://files.pythonhosted.org/packages/b9/91/eb019d8e4820f6ac120c768e34649ba6acf5c43cc8557cc34ab34e0de2e9/cfn-stk-0.15.1.tar.gz
+[2023-05-28 01:23:01] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/c9/a7/d5d332a50c08e84cd53ee3b2bb6af229b8769177551ded5e1852873e2628/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz
+[2023-05-28 01:23:01] INFO root fetch - processPackages [docker-recipe]: Downloading https://files.pythonhosted.org/packages/bf/bc/ec5862ca2f1d6ffc99ccaccad7e617b420b253400aea0c498f25e4d24d34/docker-recipe-0.1.1.tar.gz
+[2023-05-28 01:23:01] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/45/81/8a34c18c136bc08f91014a316edb7b31e31cc20fbc7b30e6c507f767cf18/ml-starter-0.0.47.tar.gz
+[2023-05-28 01:23:01] INFO root fetch - processPackages [cfn-stk]: Downloading https://files.pythonhosted.org/packages/c6/cb/1bc6a8c72e95666b68262a6d4b76c144e7eefa0ae43e9a079a3d1bef4ddf/cfn-stk-0.15.2.tar.gz
+[2023-05-28 01:23:01] INFO root fetch - processPackages [docker-recipe]: executing diffoscope
+[2023-05-28 01:23:01] INFO root fetch - processPackages [docker-recipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-recipe-0.1.0.tar.gz tmp/docker-recipe-0.1.1.tar.gz --markdown 20230528/d/docker-recipe/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 01:23:01] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-28 01:23:01] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.46.tar.gz tmp/ml-starter-0.0.47.tar.gz --markdown 20230528/m/ml-starter/0.0.46-0.0.47/diff.md --exclude *.pyd
+[2023-05-28 01:23:01] INFO root fetch - processPackages [cfn-stk]: executing diffoscope
+[2023-05-28 01:23:01] INFO root fetch - processPackages [cfn-stk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfn-stk-0.15.1.tar.gz tmp/cfn-stk-0.15.2.tar.gz --markdown 20230528/c/cfn-stk/0.15.1-0.15.2/diff.md --exclude *.pyd
+[2023-05-28 01:23:01] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: Downloading https://files.pythonhosted.org/packages/66/2b/f64323e7bec084fa1ddeddda4bfd6760f662cfc653b73e70a04f8ff6b51d/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz
+[2023-05-28 01:23:02] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: executing diffoscope
+[2023-05-28 01:23:02] INFO root fetch - processPackages [cloudsnorkel.cdk-github-runners]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudsnorkel.cdk-github-runners-0.9.7.tar.gz tmp/cloudsnorkel.cdk-github-runners-0.9.8.tar.gz --markdown 20230528/c/cloudsnorkel.cdk-github-runners/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-28 01:23:02] INFO root fetch - main [MainThread]: End processing [docker-recipe]: success
+[2023-05-28 01:23:02] INFO root fetch - main [MainThread]: End processing [cfn-stk]: success
+[2023-05-28 01:23:03] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-28 01:23:03] INFO root fetch - main [MainThread]: End processing [cloudsnorkel.cdk-github-runners]: success
+[2023-05-28 01:23:03] INFO root fetch - main [MainThread]: Store serial: [18277336]
