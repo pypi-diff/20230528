@@ -34,3 +34,20 @@
 [2023-05-28 00:02:12] INFO root fetch - main [MainThread]: End processing [datafiles]: success
 [2023-05-28 00:02:12] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
 [2023-05-28 00:02:12] INFO root fetch - main [MainThread]: Store serial: [18277100]
+[2023-05-28 00:07:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277100]
+[2023-05-28 00:07:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 00:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domify
+[2023-05-28 00:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-starter
+[2023-05-28 00:07:20] INFO root fetch - processPackages [domify]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-28 00:07:20] INFO root fetch - processPackages [ml-starter]: New version: [0.0.45] Old Version: [0.0.44]
+[2023-05-28 00:07:20] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/3d/17/ac3af6e333b1e348e13001488d77a4d9b53c98802f0bf9dff3c5f60c90ba/ml-starter-0.0.44.tar.gz
+[2023-05-28 00:07:20] INFO root fetch - processPackages [domify]: Downloading https://files.pythonhosted.org/packages/a0/c2/01a88bb1e4f50bfa6c0bc680ac4d2c1ce15bc99f2d6d5757a8f26de9584e/domify-0.4.1.tar.gz
+[2023-05-28 00:07:21] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/df/a7/fcc7e51ae76ddd3c77648c8a685a8c9808fd36327ad80ed2f6a6d9762dde/ml-starter-0.0.45.tar.gz
+[2023-05-28 00:07:21] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-28 00:07:21] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.44.tar.gz tmp/ml-starter-0.0.45.tar.gz --markdown 20230528/m/ml-starter/0.0.44-0.0.45/diff.md --exclude *.pyd
+[2023-05-28 00:07:21] INFO root fetch - processPackages [domify]: Downloading https://files.pythonhosted.org/packages/30/ac/2b97e6d33fd4ba7eb7bde0eb884a721ae1d2697097b3b890da87e23c28b9/domify-0.4.2.tar.gz
+[2023-05-28 00:07:21] INFO root fetch - processPackages [domify]: executing diffoscope
+[2023-05-28 00:07:21] INFO root fetch - processPackages [domify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domify-0.4.1.tar.gz tmp/domify-0.4.2.tar.gz --markdown 20230528/d/domify/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-28 00:07:22] INFO root fetch - main [MainThread]: End processing [domify]: success
+[2023-05-28 00:07:23] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-28 00:07:23] INFO root fetch - main [MainThread]: Store serial: [18277106]
