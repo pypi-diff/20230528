@@ -176,3 +176,34 @@
 [2023-05-28 00:33:18] INFO root fetch - main [MainThread]: End processing [ziper]: success
 [2023-05-28 00:33:18] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
 [2023-05-28 00:33:18] INFO root fetch - main [MainThread]: Store serial: [18277219]
+[2023-05-28 00:38:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277219]
+[2023-05-28 00:38:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 00:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ia-wumpus
+[2023-05-28 00:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatcmd
+[2023-05-28 00:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easybuild-framework
+[2023-05-28 00:38:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easybuild-easyblocks
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-framework]: New version: [4.7.2] Old Version: [4.7.1]
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-easyblocks]: New version: [4.7.2] Old Version: [4.7.1]
+[2023-05-28 00:38:27] INFO root fetch - processPackages [ia-wumpus]: New version: [0.3.2] Old Version: [0.3]
+[2023-05-28 00:38:27] INFO root fetch - processPackages [chatcmd]: New version: [1.0.33] Old Version: [1.0.32]
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-framework]: Downloading https://files.pythonhosted.org/packages/76/4b/b7a88e791cce0d79db9f2319ab07c79584815ca9e497d178c39fa4621b8d/easybuild-framework-4.7.1.tar.gz
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-easyblocks]: Downloading https://files.pythonhosted.org/packages/10/72/391eb5bde081da67fef0a59625ce7cf4939176416aed299ef55923e422b4/easybuild-easyblocks-4.7.1.tar.gz
+[2023-05-28 00:38:27] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/10/2f/f0ecc5a3b9f29be4f9189595cb5d1814d2f2a7516b1d2328d35726371b0d/chatcmd-1.0.33.tar.gz
+[2023-05-28 00:38:27] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 00:38:27] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.32.tar.gz tmp/chatcmd-1.0.33.tar.gz --markdown 20230528/c/chatcmd/1.0.32-1.0.33/diff.md --exclude *.pyd
+[2023-05-28 00:38:27] INFO root fetch - processPackages [ia-wumpus]: Downloading https://files.pythonhosted.org/packages/96/8a/b8604422f372a38e1ce94d094543b1d79b4612fd0cf533d19ac2ec1b2726/ia_wumpus-0.3.2.tar.gz
+[2023-05-28 00:38:27] INFO root fetch - processPackages [ia-wumpus]: executing diffoscope
+[2023-05-28 00:38:27] INFO root fetch - processPackages [ia-wumpus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ia_wumpus-0.3.tar.gz tmp/ia_wumpus-0.3.2.tar.gz --markdown 20230528/i/ia-wumpus/0.3-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 00:38:27] ERROR root fetch - processPackages [ia-wumpus]: Diffoscope failed: Error: error creating container storage: the container name "frosty_franklin" is already in use by "ec08b70a7cd92f0dc0d3e380c318e0301b777c2f59746def7274ad73c45bd435". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-28 00:38:27] INFO root fetch - main [MainThread]: End processing [ia-wumpus] error
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-easyblocks]: Downloading https://files.pythonhosted.org/packages/83/0c/c4953eadf14c7fd5af42873b97a02498a32cb6827213b5549ffab8730e52/easybuild-easyblocks-4.7.2.tar.gz
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-framework]: Downloading https://files.pythonhosted.org/packages/07/e1/c9bb4ddce9e02dccbff5afb41a25e0d61274ba8db8def11aed4b7f4bb8aa/easybuild-framework-4.7.2.tar.gz
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-easyblocks]: executing diffoscope
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-easyblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easybuild-easyblocks-4.7.1.tar.gz tmp/easybuild-easyblocks-4.7.2.tar.gz --markdown 20230528/e/easybuild-easyblocks/4.7.1-4.7.2/diff.md --exclude *.pyd
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-framework]: executing diffoscope
+[2023-05-28 00:38:27] INFO root fetch - processPackages [easybuild-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easybuild-framework-4.7.1.tar.gz tmp/easybuild-framework-4.7.2.tar.gz --markdown 20230528/e/easybuild-framework/4.7.1-4.7.2/diff.md --exclude *.pyd
+[2023-05-28 00:38:28] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 00:38:31] INFO root fetch - main [MainThread]: End processing [easybuild-easyblocks]: success
+[2023-05-28 00:38:35] INFO root fetch - main [MainThread]: End processing [easybuild-framework]: success
+[2023-05-28 00:38:35] INFO root fetch - main [MainThread]: Store serial: [18277231]
