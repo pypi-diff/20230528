@@ -1,0 +1,36 @@
+[2023-05-28 00:02:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277085]
+[2023-05-28 00:02:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 00:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: insidepostgresql
+[2023-05-28 00:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RobustifyToolkit
+[2023-05-28 00:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datafiles
+[2023-05-28 00:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: murloc
+[2023-05-28 00:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-logikal
+[2023-05-28 00:02:09] INFO root fetch - processPackages [insidepostgresql]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 00:02:09] INFO root fetch - processPackages [pytest-logikal]: New version: [1.9.0] Old Version: [1.8.4]
+[2023-05-28 00:02:09] INFO root fetch - processPackages [murloc]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 00:02:09] INFO root fetch - processPackages [datafiles]: New version: [2.1b5] Old Version: [2.1b4]
+[2023-05-28 00:02:09] INFO root fetch - processPackages [RobustifyToolkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 00:02:10] INFO root fetch - processPackages [insidepostgresql]: Downloading https://files.pythonhosted.org/packages/67/2f/f8b249d21874dd26a05c41377b0245f1f05578a95228a9b72f74bee608cf/insidepostgresql-0.0.1.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [datafiles]: Downloading https://files.pythonhosted.org/packages/e2/a4/afbc5fd6429c12c9fcb0bc2443ddc61492d4e492d80f5aa7a5d9a1a04a12/datafiles-2.1b4.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [murloc]: Downloading https://files.pythonhosted.org/packages/b2/9e/90b07a0ab7885fc637529896fd16afdcf9ff67cfc8e35d450efc352accbd/murloc-0.0.4.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [pytest-logikal]: Downloading https://files.pythonhosted.org/packages/06/8c/56e404ba5702b7e915fe9a9d28c1563f5b0018e9768634094b96007f0939/pytest-logikal-1.8.4.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [murloc]: executing diffoscope
+[2023-05-28 00:02:10] INFO root fetch - processPackages [murloc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/murloc-0.0.3.tar.gz tmp/murloc-0.0.4.tar.gz --markdown 20230528/m/murloc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 00:02:10] INFO root fetch - processPackages [RobustifyToolkit]: Downloading https://files.pythonhosted.org/packages/10/df/728e0308eaab27e20c42a5e1bb0047212ed6096c59aecd39417954163f69/RobustifyToolkit-0.1.1.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [insidepostgresql]: Downloading https://files.pythonhosted.org/packages/cc/80/c82edcaf4748ae7f6ff4bd530ee6f9840d9b49b51300e8eea0c2840afe2b/insidepostgresql-0.0.2.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [RobustifyToolkit]: executing diffoscope
+[2023-05-28 00:02:10] INFO root fetch - processPackages [RobustifyToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RobustifyToolkit-0.1.0.tar.gz tmp/RobustifyToolkit-0.1.1.tar.gz --markdown 20230528/R/RobustifyToolkit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 00:02:10] INFO root fetch - processPackages [pytest-logikal]: Downloading https://files.pythonhosted.org/packages/85/45/9c6bdfaad7d16d10971e2b83a0dfdba3b792ffa743e2506ac714403cb585/pytest-logikal-1.9.0.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [insidepostgresql]: executing diffoscope
+[2023-05-28 00:02:10] INFO root fetch - processPackages [insidepostgresql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insidepostgresql-0.0.1.tar.gz tmp/insidepostgresql-0.0.2.tar.gz --markdown 20230528/i/insidepostgresql/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 00:02:10] INFO root fetch - processPackages [pytest-logikal]: executing diffoscope
+[2023-05-28 00:02:10] INFO root fetch - processPackages [pytest-logikal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-logikal-1.8.4.tar.gz tmp/pytest-logikal-1.9.0.tar.gz --markdown 20230528/p/pytest-logikal/1.8.4-1.9.0/diff.md --exclude *.pyd
+[2023-05-28 00:02:10] INFO root fetch - processPackages [datafiles]: Downloading https://files.pythonhosted.org/packages/4d/5a/0d78cacc6a89e27267d5f3d0d0f6efca47e9a5fc42d7bec198bed3705937/datafiles-2.1b5.tar.gz
+[2023-05-28 00:02:10] INFO root fetch - processPackages [datafiles]: executing diffoscope
+[2023-05-28 00:02:10] INFO root fetch - processPackages [datafiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafiles-2.1b4.tar.gz tmp/datafiles-2.1b5.tar.gz --markdown 20230528/d/datafiles/2.1b4-2.1b5/diff.md --exclude *.pyd
+[2023-05-28 00:02:11] INFO root fetch - main [MainThread]: End processing [murloc]: success
+[2023-05-28 00:02:11] INFO root fetch - main [MainThread]: End processing [insidepostgresql]: success
+[2023-05-28 00:02:11] INFO root fetch - main [MainThread]: End processing [RobustifyToolkit]: success
+[2023-05-28 00:02:12] INFO root fetch - main [MainThread]: End processing [datafiles]: success
+[2023-05-28 00:02:12] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
+[2023-05-28 00:02:12] INFO root fetch - main [MainThread]: Store serial: [18277100]
