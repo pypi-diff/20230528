@@ -89,3 +89,26 @@
 [2023-05-28 00:12:33] INFO root fetch - main [MainThread]: End processing [sciform]: success
 [2023-05-28 00:12:33] INFO root fetch - main [MainThread]: End processing [grai-source-flat-file]: success
 [2023-05-28 00:12:33] INFO root fetch - main [MainThread]: Store serial: [18277131]
+[2023-05-28 00:17:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277131]
+[2023-05-28 00:17:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 00:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onboardme
+[2023-05-28 00:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ldeep
+[2023-05-28 00:17:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymedquery
+[2023-05-28 00:17:42] INFO root fetch - processPackages [ldeep]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 00:17:42] INFO root fetch - processPackages [onboardme]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-28 00:17:42] INFO root fetch - processPackages [pymedquery]: New version: [2.9.1b0] Old Version: [2.9.0b0]
+[2023-05-28 00:17:42] INFO root fetch - processPackages [ldeep]: Downloading https://files.pythonhosted.org/packages/24/e2/09c2ff64528ba7e556d1f75dec902fee07b80fdde1f9ffcf6dd1e182bfcf/ldeep-1.0.8.tar.gz
+[2023-05-28 00:17:42] INFO root fetch - processPackages [pymedquery]: Downloading https://files.pythonhosted.org/packages/d9/4d/4cb23e92f0c44c696fd4bb1df88f1fcc7e9b0d1b412c5c3ef92ebaefe343/pymedquery-2.9.0b0.tar.gz
+[2023-05-28 00:17:42] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/20/23/aa640f26ee837489424a3af155bbd70e46ece95d67c87b5748170ba8944f/onboardme-1.2.3.tar.gz
+[2023-05-28 00:17:42] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-28 00:17:42] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.2.2.tar.gz tmp/onboardme-1.2.3.tar.gz --markdown 20230528/o/onboardme/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-28 00:17:42] INFO root fetch - processPackages [ldeep]: Downloading https://files.pythonhosted.org/packages/e2/b0/645c2fce50d34f47b9f5b8fb9be8a6c2e716ddb3573e379f4221970560bc/ldeep-1.0.9.tar.gz
+[2023-05-28 00:17:42] INFO root fetch - processPackages [pymedquery]: Downloading https://files.pythonhosted.org/packages/8a/48/1987fad0bf2c967034b393966e5c0cc3f94e08481597d8df58b5326757e7/pymedquery-2.9.1b0.tar.gz
+[2023-05-28 00:17:43] INFO root fetch - processPackages [ldeep]: executing diffoscope
+[2023-05-28 00:17:43] INFO root fetch - processPackages [ldeep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldeep-1.0.8.tar.gz tmp/ldeep-1.0.9.tar.gz --markdown 20230528/l/ldeep/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 00:17:43] INFO root fetch - processPackages [pymedquery]: executing diffoscope
+[2023-05-28 00:17:43] INFO root fetch - processPackages [pymedquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymedquery-2.9.0b0.tar.gz tmp/pymedquery-2.9.1b0.tar.gz --markdown 20230528/p/pymedquery/2.9.0b0-2.9.1b0/diff.md --exclude *.pyd
+[2023-05-28 00:17:43] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-28 00:17:44] INFO root fetch - main [MainThread]: End processing [ldeep]: success
+[2023-05-28 00:17:45] INFO root fetch - main [MainThread]: End processing [pymedquery]: success
+[2023-05-28 00:17:45] INFO root fetch - main [MainThread]: Store serial: [18277143]
