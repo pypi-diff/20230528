@@ -8193,3 +8193,53 @@ EOFError: EOF read where object expected
 [2023-05-28 18:25:03] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-05-28 18:25:15] INFO root fetch - main [MainThread]: End processing [faceid-lib]: success
 [2023-05-28 18:25:15] INFO root fetch - main [MainThread]: Store serial: [18282064]
+[2023-05-28 18:30:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282064]
+[2023-05-28 18:30:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mosaic-library
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotify-recommender-api
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyleafarea
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SNPTMT
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: faceid-lib
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyx-pysite
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: joyrl
+[2023-05-28 18:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: feathub-nightly
+[2023-05-28 18:30:24] INFO root fetch - processPackages [SNPTMT]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230527] Old Version: [0.1.dev20230526]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [joyrl]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/d4/d1/521e1b554a91f0765d86943fa904765e73157edbc8745a02c88077e3230f/feathub_nightly-0.1.dev20230526-py3-none-any.whl
+[2023-05-28 18:30:24] INFO root fetch - processPackages [mosaic-library]: New version: [1.0.1] Old Version: [0.0.10]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [spotify-recommender-api]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [pyx-pysite]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [faceid-lib]: New version: [3.0.0] Old Version: [2.0.2]
+[2023-05-28 18:30:24] INFO root fetch - processPackages [pyleafarea]: New version: [2.3] Old Version: [2.2.6]
+[2023-05-28 18:30:24] WARNING root fetch - processPackages [feathub-nightly]: Skipping package: exceeds size limit 12191768>=10485760
+[2023-05-28 18:30:24] INFO root fetch - main [MainThread]: End processing [feathub-nightly] error
+[2023-05-28 18:30:24] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 18:30:24] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.8.tar.gz tmp/joyrl-0.2.9.tar.gz --markdown 20230528/j/joyrl/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 18:30:24] INFO root fetch - processPackages [SNPTMT]: Downloading https://files.pythonhosted.org/packages/56/05/2f9f9ed609ec82b77b169c932e5f24c1ed05e4eec3a680570441be36828e/SNPTMT-0.0.9.tar.gz
+[2023-05-28 18:30:24] INFO root fetch - processPackages [mosaic-library]: Downloading https://files.pythonhosted.org/packages/e7/0e/d99e9ee761c0abb5e806d1b8c55a0e81c531ad527ff25601d7efb9f7d423/mosaic-library-0.0.10.tar.gz
+[2023-05-28 18:30:24] INFO root fetch - processPackages [SNPTMT]: executing diffoscope
+[2023-05-28 18:30:24] INFO root fetch - processPackages [SNPTMT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SNPTMT-0.0.8.tar.gz tmp/SNPTMT-0.0.9.tar.gz --markdown 20230528/S/SNPTMT/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 18:30:24] INFO root fetch - processPackages [pyleafarea]: Downloading https://files.pythonhosted.org/packages/c3/1a/8dfe7b3ca89f8f42d6a5c6081dccb1c9e94210905dc64e48975fdce6a17d/pyleafarea-2.2.6.tar.gz
+[2023-05-28 18:30:24] INFO root fetch - processPackages [spotify-recommender-api]: Downloading https://files.pythonhosted.org/packages/21/d6/849a2c0354b7daab2c449c3a6549753a06e25a583e2eb70762fc251da846/spotify_recommender_api-4.1.0-py3-none-any.whl
+[2023-05-28 18:30:24] INFO root fetch - processPackages [pyx-pysite]: Downloading https://files.pythonhosted.org/packages/6b/c5/9fa077ace08912ec7a32f6764c53e7b6798b634ff634cdfdfe22c2f6ce3d/pyx-pysite-1.0.2.tar.gz
+[2023-05-28 18:30:24] WARNING root fetch - processPackages [pyleafarea]: Skipping package: exceeds size limit 27967960>=10485760
+[2023-05-28 18:30:24] INFO root fetch - main [MainThread]: End processing [pyleafarea] error
+[2023-05-28 18:30:24] INFO root fetch - processPackages [faceid-lib]: Downloading https://files.pythonhosted.org/packages/9b/c9/22dfd851adc33c24b55df4532254dc443562523dda814a6f0a72db907941/faceid-lib-3.0.0.tar.gz
+[2023-05-28 18:30:24] INFO root fetch - processPackages [pyx-pysite]: executing diffoscope
+[2023-05-28 18:30:24] INFO root fetch - processPackages [pyx-pysite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyx-pysite-1.0.1.tar.gz tmp/pyx-pysite-1.0.2.tar.gz --markdown 20230528/p/pyx-pysite/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 18:30:24] INFO root fetch - processPackages [mosaic-library]: Downloading https://files.pythonhosted.org/packages/dc/64/8ea9501e4b5c24d2292a36cabda3d5cdc937f8d1c373d36a6a92502a9a5f/mosaic-library-1.0.1.tar.gz
+[2023-05-28 18:30:24] INFO root fetch - processPackages [faceid-lib]: executing diffoscope
+[2023-05-28 18:30:24] INFO root fetch - processPackages [faceid-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceid-lib-2.0.2.tar.gz tmp/faceid-lib-3.0.0.tar.gz --markdown 20230528/f/faceid-lib/2.0.2-3.0.0/diff.md --exclude *.pyd
+[2023-05-28 18:30:24] INFO root fetch - processPackages [spotify-recommender-api]: Downloading https://files.pythonhosted.org/packages/4c/14/fd19f056bbe7064ba6331f91b1b1195700394524917f2dd40600e8f32dc2/spotify_recommender_api-4.2.0-py3-none-any.whl
+[2023-05-28 18:30:25] INFO root fetch - processPackages [mosaic-library]: executing diffoscope
+[2023-05-28 18:30:25] INFO root fetch - processPackages [mosaic-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaic-library-0.0.10.tar.gz tmp/mosaic-library-1.0.1.tar.gz --markdown 20230528/m/mosaic-library/0.0.10-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 18:30:25] INFO root fetch - processPackages [spotify-recommender-api]: executing diffoscope
+[2023-05-28 18:30:25] INFO root fetch - processPackages [spotify-recommender-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify_recommender_api-4.1.0-py3-none-any.whl.zip tmp/spotify_recommender_api-4.2.0-py3-none-any.whl.zip --markdown 20230528/s/spotify-recommender-api/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-05-28 18:30:25] INFO root fetch - main [MainThread]: End processing [SNPTMT]: success
+[2023-05-28 18:30:26] INFO root fetch - main [MainThread]: End processing [pyx-pysite]: success
+[2023-05-28 18:30:26] INFO root fetch - main [MainThread]: End processing [mosaic-library]: success
+[2023-05-28 18:30:26] INFO root fetch - main [MainThread]: End processing [spotify-recommender-api]: success
+[2023-05-28 18:30:26] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 18:30:46] INFO root fetch - main [MainThread]: End processing [faceid-lib]: success
+[2023-05-28 18:30:46] INFO root fetch - main [MainThread]: Store serial: [18282092]
