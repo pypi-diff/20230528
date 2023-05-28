@@ -2722,3 +2722,34 @@
 [2023-05-28 07:49:04] INFO root fetch - main [MainThread]: End processing [aksharify]: success
 [2023-05-28 07:49:53] INFO root fetch - main [MainThread]: End processing [autonomi-nos]: success
 [2023-05-28 07:49:53] INFO root fetch - main [MainThread]: Store serial: [18278715]
+[2023-05-28 07:54:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278715]
+[2023-05-28 07:55:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 07:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsetypes
+[2023-05-28 07:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhOn
+[2023-05-28 07:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auptitcafe
+[2023-05-28 07:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yangsuite-filemanager
+[2023-05-28 07:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: auptitcafe
+[2023-05-28 07:55:01] INFO root fetch - processPackages [parsetypes]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-28 07:55:01] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 07:55:01] INFO root fetch - processPackages [yangsuite-filemanager]: New version: [1.9.5] Old Version: [1.9.4.post0.dev4]
+[2023-05-28 07:55:01] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-28 07:55:01] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 07:55:01] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 07:55:01] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 07:55:01] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 07:55:01] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 07:55:01] INFO root fetch - processPackages [yangsuite-filemanager]: Downloading https://files.pythonhosted.org/packages/87/84/eebe3210dcdfdd9247417629cdaac4235f2540988bddf0a740a76e311a8b/yangsuite_filemanager-1.9.4.post0.dev4-py3-none-any.whl
+[2023-05-28 07:55:02] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/29/f9/fb5837645e01c196b1b1e5ebebfaf286343f310d884ade84c8ef9dbb17fd/parsetypes-0.2.3.tar.gz
+[2023-05-28 07:55:02] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-28 07:55:02] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.2.2.tar.gz tmp/parsetypes-0.2.3.tar.gz --markdown 20230528/p/parsetypes/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-28 07:55:02] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-28 07:55:02] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230528/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-28 07:55:02] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 07:55:03] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 07:55:03] INFO root fetch - processPackages [yangsuite-filemanager]: Downloading https://files.pythonhosted.org/packages/b0/52/b864657f6c9cc4794c0870ff212b78d292b6674a0645eda11d8565e225ce/yangsuite_filemanager-1.9.5-py3-none-any.whl
+[2023-05-28 07:55:03] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-28 07:55:03] INFO root fetch - processPackages [yangsuite-filemanager]: executing diffoscope
+[2023-05-28 07:55:03] INFO root fetch - processPackages [yangsuite-filemanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yangsuite_filemanager-1.9.4.post0.dev4-py3-none-any.whl.zip tmp/yangsuite_filemanager-1.9.5-py3-none-any.whl.zip --markdown 20230528/y/yangsuite-filemanager/1.9.4.post0.dev4-1.9.5/diff.md --exclude *.pyd
+[2023-05-28 07:55:05] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-28 07:55:10] INFO root fetch - main [MainThread]: End processing [yangsuite-filemanager]: success
+[2023-05-28 07:55:10] INFO root fetch - main [MainThread]: Store serial: [18278736]
