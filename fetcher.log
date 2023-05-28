@@ -7260,3 +7260,39 @@ EOFError: EOF read where object expected
 [2023-05-28 16:45:37] INFO root fetch - main [MainThread]: End processing [rekuest]: success
 [2023-05-28 16:45:39] INFO root fetch - main [MainThread]: End processing [XlsxWriter]: success
 [2023-05-28 16:45:39] INFO root fetch - main [MainThread]: Store serial: [18281471]
+[2023-05-28 16:50:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281471]
+[2023-05-28 16:50:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 16:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcodex
+[2023-05-28 16:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myl
+[2023-05-28 16:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-erp-framework
+[2023-05-28 16:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: azure-kinect-apiserver
+[2023-05-28 16:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eArsivPortal
+[2023-05-28 16:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyc3dtools
+[2023-05-28 16:50:48] INFO root fetch - processPackages [pyc3dtools]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 16:50:49] INFO root fetch - processPackages [eArsivPortal]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 16:50:49] INFO root fetch - processPackages [xcodex]: New version: [0.0.4] Old Version: [0.0.1]
+[2023-05-28 16:50:49] WARNING root fetch - processPackages [myl]: Skipping, unable to determine old version
+[2023-05-28 16:50:49] INFO root fetch - main [MainThread]: End processing [myl] error
+[2023-05-28 16:50:49] INFO root fetch - processPackages [django-erp-framework]: New version: [1.5.0] Old Version: [0.9.12]
+[2023-05-28 16:50:49] INFO root fetch - processPackages [azure-kinect-apiserver]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-28 16:50:49] INFO root fetch - processPackages [pyc3dtools]: executing diffoscope
+[2023-05-28 16:50:49] INFO root fetch - processPackages [pyc3dtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyc3dtools-0.2.3.win-amd64.zip tmp/pyc3dtools-0.2.4.win-amd64.zip --markdown 20230528/p/pyc3dtools/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:50:49] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/12/d9/d10b966cadf365891039c4f27809c666ab2231dd5904e464fa2fba63437f/eArsivPortal-0.0.4.tar.gz
+[2023-05-28 16:50:49] INFO root fetch - processPackages [django-erp-framework]: Downloading https://files.pythonhosted.org/packages/72/81/7bf798b8dd633dc5356bfee1527a48965bb6667c75bee1b311632f0769ac/django-erp-framework-0.9.12.tar.gz
+[2023-05-28 16:50:49] INFO root fetch - processPackages [eArsivPortal]: executing diffoscope
+[2023-05-28 16:50:49] INFO root fetch - processPackages [eArsivPortal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eArsivPortal-0.0.3.tar.gz tmp/eArsivPortal-0.0.4.tar.gz --markdown 20230528/e/eArsivPortal/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 16:50:49] INFO root fetch - processPackages [azure-kinect-apiserver]: Downloading https://files.pythonhosted.org/packages/07/62/0936d28253e04a9af952d2e24c90a397489ceb9cea3bb7e8297ace9efe4d/azure-kinect-apiserver-0.2.3.tar.gz
+[2023-05-28 16:50:49] INFO root fetch - processPackages [xcodex]: Downloading https://files.pythonhosted.org/packages/2f/80/5f46c8edaa0ccc4e0aa394300fc60444551b95820e5453c1b0cd73a0da31/xcodex-0.0.4.tar.gz
+[2023-05-28 16:50:49] INFO root fetch - processPackages [django-erp-framework]: Downloading https://files.pythonhosted.org/packages/a0/4f/bdf4c8ebdaafd41bd4691b5f0fa8fb3b67b43dd879ecf13a798779d62c4d/django-erp-framework-1.5.0.tar.gz
+[2023-05-28 16:50:49] INFO root fetch - processPackages [azure-kinect-apiserver]: executing diffoscope
+[2023-05-28 16:50:49] INFO root fetch - processPackages [azure-kinect-apiserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-kinect-apiserver-0.2.2.tar.gz tmp/azure-kinect-apiserver-0.2.3.tar.gz --markdown 20230528/a/azure-kinect-apiserver/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-28 16:50:49] INFO root fetch - processPackages [django-erp-framework]: executing diffoscope
+[2023-05-28 16:50:49] INFO root fetch - processPackages [django-erp-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-erp-framework-0.9.12.tar.gz tmp/django-erp-framework-1.5.0.tar.gz --markdown 20230528/d/django-erp-framework/0.9.12-1.5.0/diff.md --exclude *.pyd
+[2023-05-28 16:50:49] INFO root fetch - processPackages [xcodex]: executing diffoscope
+[2023-05-28 16:50:49] INFO root fetch - processPackages [xcodex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcodex-0.0.1-py3-none-any.whl.zip tmp/xcodex-0.0.4.tar.gz --markdown 20230528/x/xcodex/0.0.1-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 16:50:50] INFO root fetch - main [MainThread]: End processing [pyc3dtools]: success
+[2023-05-28 16:50:50] INFO root fetch - main [MainThread]: End processing [xcodex]: success
+[2023-05-28 16:50:50] INFO root fetch - main [MainThread]: End processing [django-erp-framework]: success
+[2023-05-28 16:50:50] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
+[2023-05-28 16:50:51] INFO root fetch - main [MainThread]: End processing [azure-kinect-apiserver]: success
+[2023-05-28 16:50:51] INFO root fetch - main [MainThread]: Store serial: [18281488]
