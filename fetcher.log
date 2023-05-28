@@ -8715,3 +8715,34 @@ EOFError: EOF read where object expected
 [2023-05-28 19:34:31] INFO root fetch - main [MainThread]: End processing [sesg]: success
 [2023-05-28 19:34:31] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
 [2023-05-28 19:34:31] INFO root fetch - main [MainThread]: Store serial: [18282400]
+[2023-05-28 19:39:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282400]
+[2023-05-28 19:39:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 19:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-pipelines
+[2023-05-28 19:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyserini-indexer
+[2023-05-28 19:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rahaut15
+[2023-05-28 19:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vitpose-infer
+[2023-05-28 19:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: enderchest
+[2023-05-28 19:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onelake
+[2023-05-28 19:39:40] WARNING root fetch - processPackages [onelake]: Skipping, unable to determine old version
+[2023-05-28 19:39:40] INFO root fetch - processPackages [pyserini-indexer]: New version: [0.3.1] Old Version: [0.2.0]
+[2023-05-28 19:39:40] INFO root fetch - processPackages [vector-pipelines]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 19:39:40] INFO root fetch - main [MainThread]: End processing [onelake] error
+[2023-05-28 19:39:40] WARNING root fetch - processPackages [vitpose-infer]: Skipping, unable to determine old version
+[2023-05-28 19:39:40] INFO root fetch - main [MainThread]: End processing [vitpose-infer] error
+[2023-05-28 19:39:40] WARNING root fetch - processPackages [rahaut15]: Skipping, unable to determine old version
+[2023-05-28 19:39:40] INFO root fetch - main [MainThread]: End processing [rahaut15] error
+[2023-05-28 19:39:40] INFO root fetch - processPackages [enderchest]: New version: [0.1.0rc5] Old Version: [0.1.0rc4]
+[2023-05-28 19:39:40] INFO root fetch - processPackages [pyserini-indexer]: Downloading https://files.pythonhosted.org/packages/d8/63/9e1b33849a8f2ce71b7d0231c8f1bcb1dcbb0a4d6848926dd58143c13341/pyserini_indexer-0.3.1.tar.gz
+[2023-05-28 19:39:40] INFO root fetch - processPackages [vector-pipelines]: Downloading https://files.pythonhosted.org/packages/43/a1/129eaa2aa9f68d43739eb42806130058aeeca3488715950dbbbdc99de412/vector_pipelines-0.0.1.tar.gz
+[2023-05-28 19:39:40] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/cf/49/4bb2fc9767e2ae62c74efa8cf672cf91d41be84bb4119baee33760fc8535/enderchest-0.1.0rc5.tar.gz
+[2023-05-28 19:39:40] INFO root fetch - processPackages [enderchest]: executing diffoscope
+[2023-05-28 19:39:40] INFO root fetch - processPackages [enderchest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enderchest-0.1.0rc4.tar.gz tmp/enderchest-0.1.0rc5.tar.gz --markdown 20230528/e/enderchest/0.1.0rc4-0.1.0rc5/diff.md --exclude *.pyd
+[2023-05-28 19:39:40] INFO root fetch - processPackages [pyserini-indexer]: executing diffoscope
+[2023-05-28 19:39:40] INFO root fetch - processPackages [pyserini-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserini_indexer-0.2.0.tar.gz tmp/pyserini_indexer-0.3.1.tar.gz --markdown 20230528/p/pyserini-indexer/0.2.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-28 19:39:40] INFO root fetch - processPackages [vector-pipelines]: Downloading https://files.pythonhosted.org/packages/c5/2d/d87950639e26a8949e7d9d66fb807363efe9bee4b07ea84b56178c1e1024/vector_pipelines-0.0.2.tar.gz
+[2023-05-28 19:39:40] INFO root fetch - processPackages [vector-pipelines]: executing diffoscope
+[2023-05-28 19:39:40] INFO root fetch - processPackages [vector-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_pipelines-0.0.1.tar.gz tmp/vector_pipelines-0.0.2.tar.gz --markdown 20230528/v/vector-pipelines/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 19:39:41] INFO root fetch - main [MainThread]: End processing [vector-pipelines]: success
+[2023-05-28 19:39:41] INFO root fetch - main [MainThread]: End processing [pyserini-indexer]: success
+[2023-05-28 19:39:42] INFO root fetch - main [MainThread]: End processing [enderchest]: success
+[2023-05-28 19:39:42] INFO root fetch - main [MainThread]: Store serial: [18282424]
