@@ -2363,3 +2363,23 @@
 [2023-05-28 06:38:41] INFO root fetch - main [MainThread]: End processing [databind]: success
 [2023-05-28 06:38:42] INFO root fetch - main [MainThread]: End processing [hello2]: success
 [2023-05-28 06:38:42] INFO root fetch - main [MainThread]: Store serial: [18278518]
+[2023-05-28 06:43:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278518]
+[2023-05-28 06:43:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 06:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-random-draw
+[2023-05-28 06:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: passgeneration
+[2023-05-28 06:43:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nligraphspacy
+[2023-05-28 06:43:50] WARNING root fetch - processPackages [nonebot-plugin-random-draw]: Skipping, unable to determine old version
+[2023-05-28 06:43:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-random-draw] error
+[2023-05-28 06:43:50] INFO root fetch - processPackages [passgeneration]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 06:43:50] INFO root fetch - processPackages [nligraphspacy]: New version: [0.6] Old Version: [0.4]
+[2023-05-28 06:43:50] INFO root fetch - processPackages [passgeneration]: Downloading https://files.pythonhosted.org/packages/fb/2a/5e284e0fa03991150dbb812237fb24f42fd04e62c00861e6ea2ec0431aa3/passgeneration-0.0.1.tar.gz
+[2023-05-28 06:43:50] INFO root fetch - processPackages [nligraphspacy]: Downloading https://files.pythonhosted.org/packages/3e/e3/f22a3696e7133df50d0ecb469ee13204b0ba8779793bc853d337640df1f6/NLIGraphSpacy-0.4.tar.gz
+[2023-05-28 06:43:51] INFO root fetch - processPackages [passgeneration]: Downloading https://files.pythonhosted.org/packages/6b/f4/f3d40692778b6ed7f465a3eece51a5ec185e624fccc2aa66209a0d1385d9/passgeneration-0.0.2.tar.gz
+[2023-05-28 06:43:51] INFO root fetch - processPackages [nligraphspacy]: Downloading https://files.pythonhosted.org/packages/7f/e3/7182bc8d7ad0ecc2f900b2654f505c1027c8c509358a6b5d9e870b3f6c17/nligraphspacy-0.6.tar.gz
+[2023-05-28 06:43:51] INFO root fetch - processPackages [nligraphspacy]: executing diffoscope
+[2023-05-28 06:43:51] INFO root fetch - processPackages [nligraphspacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NLIGraphSpacy-0.4.tar.gz tmp/nligraphspacy-0.6.tar.gz --markdown 20230528/n/nligraphspacy/0.4-0.6/diff.md --exclude *.pyd
+[2023-05-28 06:43:51] INFO root fetch - processPackages [passgeneration]: executing diffoscope
+[2023-05-28 06:43:51] INFO root fetch - processPackages [passgeneration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passgeneration-0.0.1.tar.gz tmp/passgeneration-0.0.2.tar.gz --markdown 20230528/p/passgeneration/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 06:43:52] INFO root fetch - main [MainThread]: End processing [passgeneration]: success
+[2023-05-28 06:43:52] INFO root fetch - main [MainThread]: End processing [nligraphspacy]: success
+[2023-05-28 06:43:52] INFO root fetch - main [MainThread]: Store serial: [18278529]
