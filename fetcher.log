@@ -7558,3 +7558,62 @@ EOFError: EOF read where object expected
 [2023-05-28 17:17:38] INFO root fetch - main [MainThread]: End processing [draggan]: success
 [2023-05-28 17:17:38] INFO root fetch - main [MainThread]: End processing [aleksis-app-evalu]: success
 [2023-05-28 17:17:38] INFO root fetch - main [MainThread]: Store serial: [18281675]
+[2023-05-28 17:22:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281675]
+[2023-05-28 17:22:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ohmytmp-simimg
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: act4e-mcdp
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqrack
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hpcflow-new2
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-clickzetta
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-nextjs
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cool-cache
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: act4e-mcdp
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: formio-data
+[2023-05-28 17:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: act4e-mcdp
+[2023-05-28 17:22:46] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 17:22:46] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:22:46] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 17:22:46] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 17:22:47] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [pyqrack]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-28 17:22:47] WARNING root fetch - processPackages [ohmytmp-simimg]: Skipping, unable to determine old version
+[2023-05-28 17:22:47] INFO root fetch - main [MainThread]: End processing [ohmytmp-simimg] error
+[2023-05-28 17:22:47] INFO root fetch - processPackages [cool-cache]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-28 17:22:47] INFO root fetch - processPackages [django-nextjs]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-28 17:22:47] INFO root fetch - processPackages [hpcflow-new2]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-05-28 17:22:47] INFO root fetch - processPackages [formio-data]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/4e/04/e7c4cc56f8e84c615ce47e55baa1b9ccbfbdacd86ffc3880a95b69fdfc79/act4e_mcdp-0.6.1-py3-none-any.whl
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/4e/04/e7c4cc56f8e84c615ce47e55baa1b9ccbfbdacd86ffc3880a95b69fdfc79/act4e_mcdp-0.6.1-py3-none-any.whl
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/4e/04/e7c4cc56f8e84c615ce47e55baa1b9ccbfbdacd86ffc3880a95b69fdfc79/act4e_mcdp-0.6.1-py3-none-any.whl
+[2023-05-28 17:22:47] INFO root fetch - processPackages [formio-data]: Downloading https://files.pythonhosted.org/packages/fc/0e/0a1d55375720d527005147b7109b5f252b025e0ddfe95f85872327f91108/formio-data-0.4.8.tar.gz
+[2023-05-28 17:22:47] INFO root fetch - processPackages [django-nextjs]: Downloading https://files.pythonhosted.org/packages/35/15/5ba806417dd254af2b7f62cd3ef9ac7eb607282ecb0e38c8e52450489410/django-nextjs-2.2.2.tar.gz
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.6.0-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.1-py3-none-any.whl.zip --markdown 20230528/a/act4e-mcdp/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.6.0-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.1-py3-none-any.whl.zip --markdown 20230528/a/act4e-mcdp/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.6.0-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.1-py3-none-any.whl.zip --markdown 20230528/a/act4e-mcdp/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [cool-cache]: Downloading https://files.pythonhosted.org/packages/04/ae/dde8fdd48ed01a7a27653c731f60702917f2c879baaeae97f6da5bd3bbef/cool_cache-0.3.6.tar.gz
+[2023-05-28 17:22:47] INFO root fetch - processPackages [pyqrack]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [hpcflow-new2]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [pyqrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqrack-1.9.5.tar.gz tmp/pyqrack-1.9.6.tar.gz --markdown 20230528/p/pyqrack/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [hpcflow-new2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpcflow_new2-0.2.0a8.tar.gz tmp/hpcflow_new2-0.2.0a9.tar.gz --markdown 20230528/h/hpcflow-new2/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [django-nextjs]: Downloading https://files.pythonhosted.org/packages/e4/f1/5561b09705823f1cdb7a96404c5c512e92b11590bf58eabbe75370309011/django-nextjs-2.2.3.tar.gz
+[2023-05-28 17:22:47] INFO root fetch - processPackages [formio-data]: Downloading https://files.pythonhosted.org/packages/e5/fa/2b41f9e0b81ce2f617e3ec533ff85bebda09eac0077b8a4e581898139482/formio-data-0.4.9.tar.gz
+[2023-05-28 17:22:47] INFO root fetch - processPackages [django-nextjs]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [django-nextjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-nextjs-2.2.2.tar.gz tmp/django-nextjs-2.2.3.tar.gz --markdown 20230528/d/django-nextjs/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-28 17:22:47] INFO root fetch - processPackages [cool-cache]: executing diffoscope
+[2023-05-28 17:22:47] INFO root fetch - processPackages [cool-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cool_cache-0.3.5.tar.gz tmp/cool_cache-0.3.6.tar.gz --markdown 20230528/c/cool-cache/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-28 17:22:48] INFO root fetch - processPackages [formio-data]: executing diffoscope
+[2023-05-28 17:22:48] INFO root fetch - processPackages [formio-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formio-data-0.4.8.tar.gz tmp/formio-data-0.4.9.tar.gz --markdown 20230528/f/formio-data/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-28 17:22:48] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 17:22:48] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-28 17:22:49] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-28 17:22:49] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-28 17:22:49] INFO root fetch - main [MainThread]: End processing [django-nextjs]: success
+[2023-05-28 17:22:49] INFO root fetch - main [MainThread]: End processing [pyqrack]: success
+[2023-05-28 17:22:49] INFO root fetch - main [MainThread]: End processing [formio-data]: success
+[2023-05-28 17:22:50] INFO root fetch - main [MainThread]: End processing [cool-cache]: success
+[2023-05-28 17:22:50] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
+[2023-05-28 17:22:50] INFO root fetch - main [MainThread]: Store serial: [18281709]
