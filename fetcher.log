@@ -3590,3 +3590,13 @@
 [2023-05-28 10:19:48] INFO root fetch - main [MainThread]: End processing [notion-database]: success
 [2023-05-28 10:19:48] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
 [2023-05-28 10:19:48] INFO root fetch - main [MainThread]: Store serial: [18279282]
+[2023-05-28 10:24:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279282]
+[2023-05-28 10:24:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-28 10:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-yaml-sanmu
+[2023-05-28 10:24:59] INFO root fetch - processPackages [pytest-yaml-sanmu]: New version: [0.2.2] Old Version: [0.2.1.dev1]
+[2023-05-28 10:25:00] INFO root fetch - processPackages [pytest-yaml-sanmu]: Downloading https://files.pythonhosted.org/packages/2e/cd/74f61a0bf5ae21197b547be9ac656823ba0f4fbfcf8b41f48c575e237306/pytest_yaml_sanmu-0.2.1.dev1-py3-none-any.whl
+[2023-05-28 10:25:00] INFO root fetch - processPackages [pytest-yaml-sanmu]: Downloading https://files.pythonhosted.org/packages/fe/82/42cf92c910cdc75346ff02ddad481e0982ad0ef38a030fa0e582358f0a28/pytest_yaml_sanmu-0.2.2-py3-none-any.whl
+[2023-05-28 10:25:00] INFO root fetch - processPackages [pytest-yaml-sanmu]: executing diffoscope
+[2023-05-28 10:25:00] INFO root fetch - processPackages [pytest-yaml-sanmu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_yaml_sanmu-0.2.1.dev1-py3-none-any.whl.zip tmp/pytest_yaml_sanmu-0.2.2-py3-none-any.whl.zip --markdown 20230528/p/pytest-yaml-sanmu/0.2.1.dev1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 10:25:01] INFO root fetch - main [MainThread]: End processing [pytest-yaml-sanmu]: success
+[2023-05-28 10:25:01] INFO root fetch - main [MainThread]: Store serial: [18279284]
