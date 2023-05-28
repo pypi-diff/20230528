@@ -10431,3 +10431,41 @@ EOFError: EOF read where object expected
 [2023-05-28 23:07:11] INFO root fetch - main [MainThread]: End processing [almgren-chriss]: success
 [2023-05-28 23:07:11] INFO root fetch - main [MainThread]: End processing [advent-of-code]: success
 [2023-05-28 23:07:11] INFO root fetch - main [MainThread]: Store serial: [18283515]
+[2023-05-28 23:12:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283515]
+[2023-05-28 23:12:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 23:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: binance-c2c-sapi
+[2023-05-28 23:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdc-dp-means
+[2023-05-28 23:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edopi
+[2023-05-28 23:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dfbrowse
+[2023-05-28 23:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openschema
+[2023-05-28 23:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simplejob
+[2023-05-28 23:12:20] INFO root fetch - processPackages [edopi]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-28 23:12:20] INFO root fetch - processPackages [pdc-dp-means]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 23:12:20] INFO root fetch - processPackages [binance-c2c-sapi]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 23:12:20] WARNING root fetch - processPackages [dfbrowse]: Skipping, unable to determine old version
+[2023-05-28 23:12:20] INFO root fetch - processPackages [openschema]: New version: [0.7] Old Version: [0.6.dev2]
+[2023-05-28 23:12:20] INFO root fetch - main [MainThread]: End processing [dfbrowse] error
+[2023-05-28 23:12:20] INFO root fetch - processPackages [simplejob]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 23:12:20] INFO root fetch - processPackages [edopi]: Downloading https://files.pythonhosted.org/packages/32/91/2bc92adc1295607377fa8e2149890de96af1fda3994d95c873d960f975d8/edopi-1.0.0.tar.gz
+[2023-05-28 23:12:20] INFO root fetch - processPackages [binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/17/5e/ea788fc7e77bbf4a9f9af7d9bc315c2654623e75d1c141ceef9a0abc96d3/binance-c2c-sapi-0.0.3.tar.gz
+[2023-05-28 23:12:20] INFO root fetch - processPackages [openschema]: Downloading https://files.pythonhosted.org/packages/93/84/c627fda4c5955672df9cbf97cb2790d0c12a4b0c93274e15a244056d7a5a/openschema-0.6.dev2-py3-none-any.whl
+[2023-05-28 23:12:20] INFO root fetch - processPackages [binance-c2c-sapi]: executing diffoscope
+[2023-05-28 23:12:20] INFO root fetch - processPackages [binance-c2c-sapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sapi-0.0.2.tar.gz tmp/binance-c2c-sapi-0.0.3.tar.gz --markdown 20230528/b/binance-c2c-sapi/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 23:12:20] INFO root fetch - processPackages [pdc-dp-means]: Downloading https://files.pythonhosted.org/packages/c1/6d/afe22ff10cfecf0a7ea3593407b7ce1c9a8f4bc88f86944cee6b8ab5204e/pdc_dp_means-0.0.4-cp39-cp39-win_amd64.whl
+[2023-05-28 23:12:20] INFO root fetch - processPackages [simplejob]: Downloading https://files.pythonhosted.org/packages/15/1f/389548fa3bd6bc9e38810194480053817b9f1f0e62e598e05dea1ff1944d/simplejob-0.0.6-py3-none-any.whl
+[2023-05-28 23:12:20] INFO root fetch - processPackages [edopi]: Downloading https://files.pythonhosted.org/packages/d3/0b/7379533acf507c64b597fdb9ed58676e2e2bb377047029f5eb697672a4bc/edopi-1.1.0.tar.gz
+[2023-05-28 23:12:20] INFO root fetch - processPackages [openschema]: Downloading https://files.pythonhosted.org/packages/9a/33/eb2cafc99f1bdfdb04976da3510054af93105ca020bb596a763ff5e146bd/openschema-0.7-py3-none-any.whl
+[2023-05-28 23:12:20] INFO root fetch - processPackages [simplejob]: executing diffoscope
+[2023-05-28 23:12:20] INFO root fetch - processPackages [simplejob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplejob-0.0.5-py3-none-any.whl.zip tmp/simplejob-0.0.6-py3-none-any.whl.zip --markdown 20230528/s/simplejob/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 23:12:20] INFO root fetch - processPackages [edopi]: executing diffoscope
+[2023-05-28 23:12:20] INFO root fetch - processPackages [edopi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edopi-1.0.0.tar.gz tmp/edopi-1.1.0.tar.gz --markdown 20230528/e/edopi/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-28 23:12:20] INFO root fetch - processPackages [openschema]: executing diffoscope
+[2023-05-28 23:12:20] INFO root fetch - processPackages [openschema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openschema-0.6.dev2-py3-none-any.whl.zip tmp/openschema-0.7-py3-none-any.whl.zip --markdown 20230528/o/openschema/0.6.dev2-0.7/diff.md --exclude *.pyd
+[2023-05-28 23:12:21] INFO root fetch - processPackages [pdc-dp-means]: executing diffoscope
+[2023-05-28 23:12:21] INFO root fetch - processPackages [pdc-dp-means]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdc_dp_means-0.0.3-cp38-cp38-any.whl.zip tmp/pdc_dp_means-0.0.4-cp39-cp39-win_amd64.whl.zip --markdown 20230528/p/pdc-dp-means/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 23:12:21] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi]: success
+[2023-05-28 23:12:21] INFO root fetch - main [MainThread]: End processing [simplejob]: success
+[2023-05-28 23:12:22] INFO root fetch - main [MainThread]: End processing [edopi]: success
+[2023-05-28 23:12:22] INFO root fetch - main [MainThread]: End processing [openschema]: success
+[2023-05-28 23:12:24] INFO root fetch - main [MainThread]: End processing [pdc-dp-means]: success
+[2023-05-28 23:12:24] INFO root fetch - main [MainThread]: Store serial: [18283543]
