@@ -5980,3 +5980,35 @@
 [2023-05-28 14:37:45] INFO root fetch - main [MainThread]: End processing [thrivve-core]: success
 [2023-05-28 14:37:45] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
 [2023-05-28 14:37:45] INFO root fetch - main [MainThread]: Store serial: [18280686]
+[2023-05-28 14:42:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280686]
+[2023-05-28 14:42:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 14:42:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: charidotella
+[2023-05-28 14:42:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorcircuit-nightly
+[2023-05-28 14:42:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fiaz
+[2023-05-28 14:42:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multi-stock-api
+[2023-05-28 14:42:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hello2
+[2023-05-28 14:42:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: exciton
+[2023-05-28 14:42:55] INFO root fetch - processPackages [exciton]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-28 14:42:55] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230527] Old Version: [0.9.1.dev20230526]
+[2023-05-28 14:42:55] INFO root fetch - processPackages [hello2]: New version: [1.7.7] Old Version: [1.7.6]
+[2023-05-28 14:42:55] WARNING root fetch - processPackages [multi-stock-api]: Skipping, unable to determine old version
+[2023-05-28 14:42:55] INFO root fetch - main [MainThread]: End processing [multi-stock-api] error
+[2023-05-28 14:42:55] INFO root fetch - processPackages [charidotella]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-28 14:42:55] WARNING root fetch - processPackages [fiaz]: Skipping, unable to determine old version
+[2023-05-28 14:42:55] INFO root fetch - main [MainThread]: End processing [fiaz] error
+[2023-05-28 14:42:55] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2023-05-28 14:42:55] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-2.0.4-py3-none-any.whl.zip tmp/exciton-2.0.5-py3-none-any.whl.zip --markdown 20230528/e/exciton/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-28 14:42:55] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-05-28 14:42:55] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.7.6.tar.gz tmp/hello2-1.7.7.tar.gz --markdown 20230528/h/hello2/1.7.6-1.7.7/diff.md --exclude *.pyd
+[2023-05-28 14:42:56] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/23/b1/d3473be1cfb9493bce00b7fba1ff47e34eab08230e16cdf97ce830f4e87a/tensorcircuit-nightly-0.9.1.dev20230527.tar.gz
+[2023-05-28 14:42:56] INFO root fetch - processPackages [charidotella]: Downloading https://files.pythonhosted.org/packages/2c/bb/72fbd26ca015c94243fabd23342f14074478fe324f215e758d08887310ba/charidotella-1.1.0.tar.gz
+[2023-05-28 14:42:56] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-28 14:42:56] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230526.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230527.tar.gz --markdown 20230528/t/tensorcircuit-nightly/0.9.1.dev20230526-0.9.1.dev20230527/diff.md --exclude *.pyd
+[2023-05-28 14:42:56] INFO root fetch - processPackages [charidotella]: Downloading https://files.pythonhosted.org/packages/bb/f9/5dac8865e8a1665f12bebfbd96245e02fe619f1aa54833abfa84355c879a/charidotella-1.2.0.tar.gz
+[2023-05-28 14:42:56] INFO root fetch - processPackages [charidotella]: executing diffoscope
+[2023-05-28 14:42:56] INFO root fetch - processPackages [charidotella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/charidotella-1.1.0.tar.gz tmp/charidotella-1.2.0.tar.gz --markdown 20230528/c/charidotella/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-28 14:42:57] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2023-05-28 14:42:57] INFO root fetch - main [MainThread]: End processing [hello2]: success
+[2023-05-28 14:42:57] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-28 14:42:58] INFO root fetch - main [MainThread]: End processing [charidotella]: success
+[2023-05-28 14:42:58] INFO root fetch - main [MainThread]: Store serial: [18280751]
