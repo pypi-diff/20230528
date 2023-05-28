@@ -9959,3 +9959,22 @@ EOFError: EOF read where object expected
 [2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [dcentralab-qa-infra-automation]: success
 [2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [ngscrape]: success
 [2023-05-28 21:58:47] INFO root fetch - main [MainThread]: Store serial: [18283239]
+[2023-05-28 22:03:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283239]
+[2023-05-28 22:03:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 22:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmltools
+[2023-05-28 22:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcflow
+[2023-05-28 22:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lib-pybroker
+[2023-05-28 22:03:57] INFO root fetch - processPackages [lib-pybroker]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-28 22:03:57] INFO root fetch - processPackages [gmltools]: New version: [0.0.75] Old Version: [0.0.74]
+[2023-05-28 22:03:57] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 22:03:57] INFO root fetch - processPackages [lib-pybroker]: executing diffoscope
+[2023-05-28 22:03:57] INFO root fetch - processPackages [lib-pybroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-pybroker-1.1.8.tar.gz tmp/lib-pybroker-1.1.9.tar.gz --markdown 20230528/l/lib-pybroker/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-28 22:03:57] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-05-28 22:03:57] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230528/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 22:03:57] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/16/07/0bfa0107711b1d2de32f44641f3e81267d04f690142a00f51531329460e5/gmltools-0.0.75.tar.gz
+[2023-05-28 22:03:57] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-05-28 22:03:57] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.74.tar.gz tmp/gmltools-0.0.75.tar.gz --markdown 20230528/g/gmltools/0.0.74-0.0.75/diff.md --exclude *.pyd
+[2023-05-28 22:03:58] INFO root fetch - main [MainThread]: End processing [tcflow]: success
+[2023-05-28 22:03:58] INFO root fetch - main [MainThread]: End processing [lib-pybroker]: success
+[2023-05-28 22:03:58] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-05-28 22:03:58] INFO root fetch - main [MainThread]: Store serial: [18283246]
