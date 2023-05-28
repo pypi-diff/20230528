@@ -4880,3 +4880,40 @@
 [2023-05-28 12:46:25] INFO root fetch - main [MainThread]: End processing [aws-service-catalog-puppet]: success
 [2023-05-28 12:46:26] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-28 12:46:26] INFO root fetch - main [MainThread]: Store serial: [18280063]
+[2023-05-28 12:51:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280063]
+[2023-05-28 12:51:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 12:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whisper-autosrt
+[2023-05-28 12:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gfs-dynamical-core
+[2023-05-28 12:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fil
+[2023-05-28 12:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: joyrl
+[2023-05-28 12:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bahire-hasab
+[2023-05-28 12:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 12:51:34] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 12:51:34] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 12:51:34] INFO root fetch - processPackages [fil]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-28 12:51:34] INFO root fetch - processPackages [joyrl]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 12:51:34] INFO root fetch - processPackages [whisper-autosrt]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 12:51:34] INFO root fetch - processPackages [bahire-hasab]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 12:51:34] INFO root fetch - processPackages [bahire-hasab]: executing diffoscope
+[2023-05-28 12:51:34] INFO root fetch - processPackages [bahire-hasab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bahire-hasab-0.2.1.tar.gz tmp/bahire_hasab-0.2.2.tar.gz --markdown 20230528/b/bahire-hasab/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 12:51:34] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/8e/23/14c0360a814e1f5e30031a442e44cb80d41fe991aee68ba83fd8f042728c/joyrl-0.2.2.tar.gz
+[2023-05-28 12:51:35] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/a3/8e/e60e8b09469408f9546c3a370a45d6bc77184b3340364f1735a6837595cc/whisper_autosrt-0.0.1.tar.gz
+[2023-05-28 12:51:35] INFO root fetch - processPackages [fil]: Downloading https://files.pythonhosted.org/packages/42/6e/ab21a0f2d1b686c7d0e397af65a1f309481b1b0df3889f9ea9bd3fe77296/fil-1.2.0.tar.gz
+[2023-05-28 12:51:35] INFO root fetch - processPackages [fil]: executing diffoscope
+[2023-05-28 12:51:35] INFO root fetch - processPackages [fil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fil-1.1.0.tar.gz tmp/fil-1.2.0.tar.gz --markdown 20230528/f/fil/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-28 12:51:35] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-28 12:51:35] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 12:51:35] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 12:51:35] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.1.tar.gz tmp/joyrl-0.2.2.tar.gz --markdown 20230528/j/joyrl/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 12:51:35] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: executing diffoscope
+[2023-05-28 12:51:35] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_stable_diffusion_diao-0.1.1.tar.gz tmp/nonebot_plugin_stable_diffusion_diao-0.1.2.tar.gz --markdown 20230528/n/nonebot-plugin-stable-diffusion-diao/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 12:51:35] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/49/d7/06fb7da70bd51ee36e5bdfe53afb3a0000bff8bbfd8e62c7428d44b423ff/whisper_autosrt-0.0.2.tar.gz
+[2023-05-28 12:51:35] INFO root fetch - processPackages [whisper-autosrt]: executing diffoscope
+[2023-05-28 12:51:35] INFO root fetch - processPackages [whisper-autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_autosrt-0.0.1.tar.gz tmp/whisper_autosrt-0.0.2.tar.gz --markdown 20230528/w/whisper-autosrt/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 12:51:36] INFO root fetch - main [MainThread]: End processing [bahire-hasab]: success
+[2023-05-28 12:51:36] INFO root fetch - main [MainThread]: End processing [fil]: success
+[2023-05-28 12:51:36] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 12:51:36] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
+[2023-05-28 12:51:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
+[2023-05-28 12:51:57] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-28 12:51:57] INFO root fetch - main [MainThread]: Store serial: [18280081]
