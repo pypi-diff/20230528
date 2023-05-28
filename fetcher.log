@@ -8852,3 +8852,44 @@ EOFError: EOF read where object expected
 [2023-05-28 19:50:05] INFO root fetch - main [MainThread]: End processing [piccolo]: success
 [2023-05-28 19:50:05] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
 [2023-05-28 19:50:05] INFO root fetch - main [MainThread]: Store serial: [18282493]
+[2023-05-28 19:55:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282493]
+[2023-05-28 19:55:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NeuralNetworkData
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyemerald
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: v-quantum-annealing
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vortex-api
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BanterBot
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycons3rt3
+[2023-05-28 19:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: linkedin-jobs-scraper
+[2023-05-28 19:55:14] INFO root fetch - processPackages [v-quantum-annealing]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-28 19:55:14] WARNING root fetch - processPackages [NeuralNetworkData]: Skipping, unable to determine old version
+[2023-05-28 19:55:14] INFO root fetch - main [MainThread]: End processing [NeuralNetworkData] error
+[2023-05-28 19:55:14] INFO root fetch - processPackages [linkedin-jobs-scraper]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-28 19:55:14] INFO root fetch - processPackages [pyemerald]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-28 19:55:14] INFO root fetch - processPackages [vortex-api]: New version: [1.0.7] Old Version: [1.0.6.dev5]
+[2023-05-28 19:55:14] WARNING root fetch - processPackages [BanterBot]: Skipping, unable to determine old version
+[2023-05-28 19:55:14] INFO root fetch - main [MainThread]: End processing [BanterBot] error
+[2023-05-28 19:55:14] INFO root fetch - processPackages [pycons3rt3]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 19:55:14] INFO root fetch - processPackages [linkedin-jobs-scraper]: Downloading https://files.pythonhosted.org/packages/a0/85/fab0f6f025368350a7cc40f7c5a6005c046b070bf76b9e2349fe920558b6/linkedin-jobs-scraper-2.1.0.tar.gz
+[2023-05-28 19:55:14] INFO root fetch - processPackages [pyemerald]: Downloading https://files.pythonhosted.org/packages/8c/94/baf1da20cb52e40d3d0ba4c126c7b2cbb38eb06ef56c769b7b8bc498794d/pyemerald-0.5.1.tar.gz
+[2023-05-28 19:55:14] INFO root fetch - processPackages [v-quantum-annealing]: Downloading https://files.pythonhosted.org/packages/f4/f4/ed0ea62f36992c7a7ce4bc73fe4d420c607a5d1e0bf35d3a72597d8fbd53/v_quantum_annealing-0.0.1.tar.gz
+[2023-05-28 19:55:14] INFO root fetch - processPackages [pyemerald]: executing diffoscope
+[2023-05-28 19:55:14] INFO root fetch - processPackages [pyemerald]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyemerald-0.5.0.tar.gz tmp/pyemerald-0.5.1.tar.gz --markdown 20230528/p/pyemerald/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-28 19:55:14] INFO root fetch - processPackages [vortex-api]: Downloading https://files.pythonhosted.org/packages/7f/8f/fcb8765d20931ec1f02208431a58c499abc569114122647441fdc6bba55a/vortex_api-1.0.7.tar.gz
+[2023-05-28 19:55:15] INFO root fetch - processPackages [pycons3rt3]: Downloading https://files.pythonhosted.org/packages/7c/d8/953c9c8d808b3135cf5dcb366f8d2c4e364919c6bdc634e258fd0328a6d4/pycons3rt3-0.0.8.tar.gz
+[2023-05-28 19:55:15] INFO root fetch - processPackages [v-quantum-annealing]: executing diffoscope
+[2023-05-28 19:55:15] INFO root fetch - processPackages [v-quantum-annealing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v_quantum_annealing-0.0.0.tar.gz tmp/v_quantum_annealing-0.0.1.tar.gz --markdown 20230528/v/v-quantum-annealing/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-28 19:55:15] INFO root fetch - processPackages [linkedin-jobs-scraper]: Downloading https://files.pythonhosted.org/packages/4d/69/3039c606916334d8af6edc91bb2dd5d0c3d432011685ac1c7dc41c853b54/linkedin-jobs-scraper-2.1.1.tar.gz
+[2023-05-28 19:55:15] INFO root fetch - processPackages [vortex-api]: executing diffoscope
+[2023-05-28 19:55:15] INFO root fetch - processPackages [vortex-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortex_api-1.0.6.dev5.tar.gz tmp/vortex_api-1.0.7.tar.gz --markdown 20230528/v/vortex-api/1.0.6.dev5-1.0.7/diff.md --exclude *.pyd
+[2023-05-28 19:55:15] INFO root fetch - processPackages [linkedin-jobs-scraper]: executing diffoscope
+[2023-05-28 19:55:15] INFO root fetch - processPackages [linkedin-jobs-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkedin-jobs-scraper-2.1.0.tar.gz tmp/linkedin-jobs-scraper-2.1.1.tar.gz --markdown 20230528/l/linkedin-jobs-scraper/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-28 19:55:15] INFO root fetch - processPackages [pycons3rt3]: Downloading https://files.pythonhosted.org/packages/09/3b/e0263138551caf7a41a5d29df848d62334b431f4b1907708ec9cad393eec/pycons3rt3-0.0.9.tar.gz
+[2023-05-28 19:55:15] INFO root fetch - processPackages [pycons3rt3]: executing diffoscope
+[2023-05-28 19:55:15] INFO root fetch - processPackages [pycons3rt3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycons3rt3-0.0.8.tar.gz tmp/pycons3rt3-0.0.9.tar.gz --markdown 20230528/p/pycons3rt3/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 19:55:16] INFO root fetch - main [MainThread]: End processing [pyemerald]: success
+[2023-05-28 19:55:16] INFO root fetch - main [MainThread]: End processing [linkedin-jobs-scraper]: success
+[2023-05-28 19:55:16] INFO root fetch - main [MainThread]: End processing [vortex-api]: success
+[2023-05-28 19:55:16] INFO root fetch - main [MainThread]: End processing [v-quantum-annealing]: success
+[2023-05-28 19:55:17] INFO root fetch - main [MainThread]: End processing [pycons3rt3]: success
+[2023-05-28 19:55:17] INFO root fetch - main [MainThread]: Store serial: [18282520]
