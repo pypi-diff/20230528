@@ -2928,3 +2928,26 @@
 [2023-05-28 08:32:19] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-random-draw]: success
 [2023-05-28 08:32:25] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
 [2023-05-28 08:32:25] INFO root fetch - main [MainThread]: Store serial: [18278852]
+[2023-05-28 08:37:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278852]
+[2023-05-28 08:37:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aksharify
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ifastapi
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webscapy
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netteikei
+[2023-05-28 08:37:34] INFO root fetch - processPackages [aksharify]: New version: [2.3.5] Old Version: [2.3.3]
+[2023-05-28 08:37:34] WARNING root fetch - processPackages [webscapy]: Skipping, unable to determine old version
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-05-28 08:37:34] INFO root fetch - main [MainThread]: End processing [webscapy] error
+[2023-05-28 08:37:34] INFO root fetch - processPackages [netteikei]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 08:37:34] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-05-28 08:37:34] INFO root fetch - processPackages [aksharify]: Downloading https://files.pythonhosted.org/packages/8e/37/ed3aeeb64fd32103a5647aaea71a21deb451f5085db6a509840156d8b7ee/aksharify-2.3.5.tar.gz
+[2023-05-28 08:37:34] INFO root fetch - processPackages [aksharify]: executing diffoscope
+[2023-05-28 08:37:34] INFO root fetch - processPackages [aksharify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aksharify-2.3.3.tar.gz tmp/aksharify-2.3.5.tar.gz --markdown 20230528/a/aksharify/2.3.3-2.3.5/diff.md --exclude *.pyd
+[2023-05-28 08:37:34] INFO root fetch - processPackages [netteikei]: Downloading https://files.pythonhosted.org/packages/2d/c5/8575e960b92e5c0de59d542fe71f8676d3d5ae6f72fcd1ec2f68fe0da871/netteikei-0.4.0.tar.gz
+[2023-05-28 08:37:34] INFO root fetch - processPackages [netteikei]: executing diffoscope
+[2023-05-28 08:37:34] INFO root fetch - processPackages [netteikei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netteikei-0.3.0-py3-none-any.whl.zip tmp/netteikei-0.4.0.tar.gz --markdown 20230528/n/netteikei/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 08:37:35] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 08:37:35] INFO root fetch - main [MainThread]: End processing [aksharify]: success
+[2023-05-28 08:38:24] INFO root fetch - main [MainThread]: End processing [netteikei]: success
+[2023-05-28 08:38:24] INFO root fetch - main [MainThread]: Store serial: [18278864]
