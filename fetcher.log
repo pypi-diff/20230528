@@ -8746,3 +8746,47 @@ EOFError: EOF read where object expected
 [2023-05-28 19:39:41] INFO root fetch - main [MainThread]: End processing [pyserini-indexer]: success
 [2023-05-28 19:39:42] INFO root fetch - main [MainThread]: End processing [enderchest]: success
 [2023-05-28 19:39:42] INFO root fetch - main [MainThread]: Store serial: [18282424]
+[2023-05-28 19:44:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282424]
+[2023-05-28 19:44:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeroapi-python
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vortex-api
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-plotly-dash
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: testpipxyz
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaodbc
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: soccminer
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vector-quantize-pytorch
+[2023-05-28 19:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: matflow-new
+[2023-05-28 19:44:50] WARNING root fetch - processPackages [pyaodbc]: Skipping, unable to determine old version
+[2023-05-28 19:44:50] INFO root fetch - main [MainThread]: End processing [pyaodbc] error
+[2023-05-28 19:44:50] INFO root fetch - processPackages [soccminer]: New version: [0.0.42a1] Old Version: [0.0.41a1]
+[2023-05-28 19:44:50] WARNING root fetch - processPackages [testpipxyz]: Skipping, unable to determine old version
+[2023-05-28 19:44:50] INFO root fetch - main [MainThread]: End processing [testpipxyz] error
+[2023-05-28 19:44:50] INFO root fetch - processPackages [aeroapi-python]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-28 19:44:50] INFO root fetch - processPackages [django-plotly-dash]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-28 19:44:50] INFO root fetch - processPackages [vortex-api]: New version: [1.0.6.dev5] Old Version: [1.0.6.dev4]
+[2023-05-28 19:44:50] INFO root fetch - processPackages [matflow-new]: New version: [0.3.0a9] Old Version: [0.3.0a8]
+[2023-05-28 19:44:50] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-05-28 19:44:51] INFO root fetch - processPackages [soccminer]: Downloading https://files.pythonhosted.org/packages/40/f0/f722fed2fc356f103944ce1722d0f7abcf130d42e8fd4a1d2ea4e59e0b8a/soccminer-0.0.42a1.tar.gz
+[2023-05-28 19:44:51] INFO root fetch - processPackages [aeroapi-python]: Downloading https://files.pythonhosted.org/packages/71/db/541d6c3ec28f70b2eedfd9b1b6e4ccc574be8192c0a35bfa9d521672e300/aeroapi-python-1.1.2.tar.gz
+[2023-05-28 19:44:51] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/08/aa/ae37f4acbb6d7ffa5ec5fb8b8a48f8bd4053f6d2644607e4adaffc98b483/vector_quantize_pytorch-1.6.5.tar.gz
+[2023-05-28 19:44:51] INFO root fetch - processPackages [django-plotly-dash]: Downloading https://files.pythonhosted.org/packages/27/1c/b31f297acbdb1553f21201204329c44a1b560071e5d39897b4e35822cc94/django-plotly-dash-2.2.0.tar.gz
+[2023-05-28 19:44:51] INFO root fetch - processPackages [aeroapi-python]: executing diffoscope
+[2023-05-28 19:44:51] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-28 19:44:51] INFO root fetch - processPackages [aeroapi-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeroapi-python-1.1.1.tar.gz tmp/aeroapi-python-1.1.2.tar.gz --markdown 20230528/a/aeroapi-python/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-28 19:44:51] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.6.4.tar.gz tmp/vector_quantize_pytorch-1.6.5.tar.gz --markdown 20230528/v/vector-quantize-pytorch/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-05-28 19:44:51] INFO root fetch - processPackages [soccminer]: executing diffoscope
+[2023-05-28 19:44:51] INFO root fetch - processPackages [soccminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccminer-0.0.41a1.tar.gz tmp/soccminer-0.0.42a1.tar.gz --markdown 20230528/s/soccminer/0.0.41a1-0.0.42a1/diff.md --exclude *.pyd
+[2023-05-28 19:44:51] INFO root fetch - processPackages [vortex-api]: executing diffoscope
+[2023-05-28 19:44:51] INFO root fetch - processPackages [vortex-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortex_api-1.0.6.dev4.tar.gz tmp/vortex_api-1.0.6.dev5.tar.gz --markdown 20230528/v/vortex-api/1.0.6.dev4-1.0.6.dev5/diff.md --exclude *.pyd
+[2023-05-28 19:44:51] INFO root fetch - processPackages [matflow-new]: executing diffoscope
+[2023-05-28 19:44:51] INFO root fetch - processPackages [matflow-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matflow_new-0.3.0a8.tar.gz tmp/matflow_new-0.3.0a9.tar.gz --markdown 20230528/m/matflow-new/0.3.0a8-0.3.0a9/diff.md --exclude *.pyd
+[2023-05-28 19:44:51] INFO root fetch - processPackages [django-plotly-dash]: Downloading https://files.pythonhosted.org/packages/c0/01/aaca61462f14f0837a2487b54479f5162993b0f23c44d333e9801fb8578a/django-plotly-dash-2.2.1.tar.gz
+[2023-05-28 19:44:51] INFO root fetch - processPackages [django-plotly-dash]: executing diffoscope
+[2023-05-28 19:44:51] INFO root fetch - processPackages [django-plotly-dash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-plotly-dash-2.2.0.tar.gz tmp/django-plotly-dash-2.2.1.tar.gz --markdown 20230528/d/django-plotly-dash/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [aeroapi-python]: success
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [vortex-api]: success
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [matflow-new]: success
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [soccminer]: success
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [django-plotly-dash]: success
+[2023-05-28 19:44:52] INFO root fetch - main [MainThread]: Store serial: [18282453]
