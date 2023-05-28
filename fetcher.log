@@ -7404,3 +7404,53 @@ EOFError: EOF read where object expected
 [2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [aiofauna]: success
 [2023-05-28 17:01:14] INFO root fetch - main [MainThread]: End processing [aleksis-app-kort]: success
 [2023-05-28 17:01:14] INFO root fetch - main [MainThread]: Store serial: [18281551]
+[2023-05-28 17:06:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281551]
+[2023-05-28 17:06:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flowtask
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylyzer
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ddadevops
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: act4e-mcdp
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aa-fleetpings
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: signalflow
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2023-05-28 17:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ohmytmp-taggy
+[2023-05-28 17:06:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tensorflow-text-nightly
+[2023-05-28 17:06:23] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-28 17:06:23] WARNING root fetch - processPackages [ohmytmp-taggy]: Skipping, unable to determine old version
+[2023-05-28 17:06:23] INFO root fetch - main [MainThread]: End processing [ohmytmp-taggy] error
+[2023-05-28 17:06:23] INFO root fetch - processPackages [pylyzer]: New version: [0.1.0b0] Old Version: [0.0.9]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-28 17:06:23] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.5.0-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.0-py3-none-any.whl.zip --markdown 20230528/a/act4e-mcdp/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-28 17:06:23] INFO root fetch - processPackages [signalflow]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [aa-fleetpings]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [yeref]: New version: [0.1.67] Old Version: [0.1.66]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.14.0.dev20230528] Old Version: [2.14.0.dev20230527]
+[2023-05-28 17:06:23] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/6a/80/7f762d6cbc3149eef8c6a4830961447e5c674605d8ba48578fbddae084eb/tensorflow_text_nightly-2.14.0.dev20230527-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 17:06:23] INFO root fetch - processPackages [pylyzer]: executing diffoscope
+[2023-05-28 17:06:23] INFO root fetch - processPackages [pylyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylyzer-0.0.9-py3-none-win_amd64.whl.zip tmp/pylyzer-0.1.0b0.tar.gz --markdown 20230528/p/pylyzer/0.0.9-0.1.0b0/diff.md --exclude *.pyd
+[2023-05-28 17:06:23] INFO root fetch - processPackages [signalflow]: Downloading https://files.pythonhosted.org/packages/ee/59/6fdcd1aa60d4c820ec771bca5531103714ab0010faf5d9fdd7f4a763ae78/signalflow-0.0.6-cp39-cp39-macosx_11_0_arm64.whl
+[2023-05-28 17:06:23] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/bf/e9/cbd98fe3e0d3cae1f540803f7edd5832872afbe83ed3d6f2edc8295fe409/yeref-0.1.67.tar.gz
+[2023-05-28 17:06:23] INFO root fetch - processPackages [aa-fleetpings]: executing diffoscope
+[2023-05-28 17:06:23] INFO root fetch - processPackages [aa-fleetpings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-fleetpings-2.8.0.tar.gz tmp/aa-fleetpings-2.9.0.tar.gz --markdown 20230528/a/aa-fleetpings/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-28 17:06:23] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-05-28 17:06:23] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-05-28 17:06:23] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-28 17:06:23] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230528/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-28 17:06:23] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-05-28 17:06:23] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.66.tar.gz tmp/yeref-0.1.67.tar.gz --markdown 20230528/y/yeref/0.1.66-0.1.67/diff.md --exclude *.pyd
+[2023-05-28 17:06:23] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/23/21/96082e0b7ed91ab5f0916cd2fb815ac21c694488a65ca300808f45bc0061/tensorflow_text_nightly-2.14.0.dev20230528-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 17:06:24] INFO root fetch - processPackages [signalflow]: executing diffoscope
+[2023-05-28 17:06:24] INFO root fetch - processPackages [signalflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signalflow-0.0.5-cp39-cp39-macosx_11_0_arm64.whl.zip tmp/signalflow-0.0.6-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20230528/s/signalflow/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 17:06:24] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-28 17:06:24] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-05-28 17:06:24] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.14.0.dev20230527-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.14.0.dev20230528-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/t/tensorflow-text-nightly/2.14.0.dev20230527-2.14.0.dev20230528/diff.md --exclude *.pyd
+[2023-05-28 17:06:25] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-05-28 17:06:25] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-28 17:06:25] INFO root fetch - main [MainThread]: End processing [aa-fleetpings]: success
+[2023-05-28 17:06:26] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-05-28 17:06:27] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-05-28 17:06:29] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
+[2023-05-28 17:06:30] INFO root fetch - main [MainThread]: End processing [signalflow]: success
+[2023-05-28 17:06:30] INFO root fetch - main [MainThread]: Store serial: [18281586]
