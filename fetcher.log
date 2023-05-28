@@ -3017,3 +3017,28 @@
 [2023-05-28 08:48:50] INFO root fetch - main [MainThread]: End processing [otpme]: success
 [2023-05-28 08:48:50] INFO root fetch - main [MainThread]: End processing [otpme]: success
 [2023-05-28 08:48:50] INFO root fetch - main [MainThread]: Store serial: [18278908]
+[2023-05-28 08:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278908]
+[2023-05-28 08:53:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 08:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otpme
+[2023-05-28 08:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatmates
+[2023-05-28 08:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyromongo
+[2023-05-28 08:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fivbvis
+[2023-05-28 08:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nkj
+[2023-05-28 08:53:59] WARNING root fetch - processPackages [fivbvis]: Skipping, unable to determine old version
+[2023-05-28 08:53:59] INFO root fetch - main [MainThread]: End processing [fivbvis] error
+[2023-05-28 08:53:59] WARNING root fetch - processPackages [pyromongo]: Skipping, unable to determine old version
+[2023-05-28 08:53:59] WARNING root fetch - processPackages [chatmates]: Skipping, unable to determine old version
+[2023-05-28 08:53:59] INFO root fetch - main [MainThread]: End processing [pyromongo] error
+[2023-05-28 08:53:59] INFO root fetch - main [MainThread]: End processing [chatmates] error
+[2023-05-28 08:53:59] INFO root fetch - processPackages [otpme]: New version: [0.3.0a8] Old Version: [0.3.0a7]
+[2023-05-28 08:53:59] INFO root fetch - processPackages [nkj]: New version: [0.8] Old Version: [0.1]
+[2023-05-28 08:53:59] INFO root fetch - processPackages [nkj]: Downloading https://files.pythonhosted.org/packages/c2/d7/82a5fedfa348e5ee29863b6cdb67130172fc1b3e3d936f2a201418cd2f53/nkj-0.1.tar.gz
+[2023-05-28 08:54:00] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/98/1d/f05f73ea1e959973ab56f0abb892009528faf4a7f0da031af39371307de8/otpme-0.3.0a8.tar.gz
+[2023-05-28 08:54:00] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2023-05-28 08:54:00] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a7.tar.gz tmp/otpme-0.3.0a8.tar.gz --markdown 20230528/o/otpme/0.3.0a7-0.3.0a8/diff.md --exclude *.pyd
+[2023-05-28 08:54:00] INFO root fetch - processPackages [nkj]: Downloading https://files.pythonhosted.org/packages/61/06/5404799ac1020e1481d96f173cfd85e35a35cf670ab52e4c80357c41d6a1/nkj-0.8.tar.gz
+[2023-05-28 08:54:00] INFO root fetch - processPackages [nkj]: executing diffoscope
+[2023-05-28 08:54:00] INFO root fetch - processPackages [nkj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkj-0.1.tar.gz tmp/nkj-0.8.tar.gz --markdown 20230528/n/nkj/0.1-0.8/diff.md --exclude *.pyd
+[2023-05-28 08:54:01] INFO root fetch - main [MainThread]: End processing [nkj]: success
+[2023-05-28 08:54:03] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2023-05-28 08:54:03] INFO root fetch - main [MainThread]: Store serial: [18278928]
