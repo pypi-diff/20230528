@@ -2286,3 +2286,35 @@
 [2023-05-28 06:28:18] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
 [2023-05-28 06:28:19] INFO root fetch - main [MainThread]: End processing [pmdsky-debug-py]: success
 [2023-05-28 06:28:19] INFO root fetch - main [MainThread]: Store serial: [18278470]
+[2023-05-28 06:33:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278470]
+[2023-05-28 06:33:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 06:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: passgeneration-py
+[2023-05-28 06:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrobblez
+[2023-05-28 06:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnx2tf
+[2023-05-28 06:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mosek-license-server
+[2023-05-28 06:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-macos
+[2023-05-28 06:33:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tktermwidget
+[2023-05-28 06:33:28] INFO root fetch - processPackages [mosek-license-server]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-28 06:33:28] WARNING root fetch - processPackages [passgeneration-py]: Skipping, unable to determine old version
+[2023-05-28 06:33:28] INFO root fetch - main [MainThread]: End processing [passgeneration-py] error
+[2023-05-28 06:33:28] INFO root fetch - processPackages [tf-nightly-macos]: New version: [2.14.0.dev20230526] Old Version: [2.14.0.dev20230525]
+[2023-05-28 06:33:28] INFO root fetch - processPackages [scrobblez]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 06:33:28] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-28 06:33:28] WARNING root fetch - processPackages [tktermwidget]: Skipping, unable to determine old version
+[2023-05-28 06:33:28] INFO root fetch - main [MainThread]: End processing [tktermwidget] error
+[2023-05-28 06:33:28] INFO root fetch - processPackages [scrobblez]: Downloading https://files.pythonhosted.org/packages/07/a9/569ab17a135383cecebf00060bbf99f9e8c0e9ffda3695a97e3fdfb0057d/scrobblez-0.1.0.tar.gz
+[2023-05-28 06:33:28] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-28 06:33:28] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230528/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-28 06:33:28] INFO root fetch - processPackages [tf-nightly-macos]: Downloading https://files.pythonhosted.org/packages/a4/c4/d824cbc83a0e89d5ae40b45f734900482dbc0eac3c9c42298318c1e2e6bc/tf_nightly_macos-2.14.0.dev20230525-cp39-cp39-macosx_12_0_arm64.whl
+[2023-05-28 06:33:28] WARNING root fetch - processPackages [tf-nightly-macos]: Skipping package: exceeds size limit 196090621>=10485760
+[2023-05-28 06:33:28] INFO root fetch - main [MainThread]: End processing [tf-nightly-macos] error
+[2023-05-28 06:33:28] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/dd/1f/e2b3032109d155291df1eedf2b505e908d4dfd579cf57865af5f3fe856ad/mosek_license_server-0.2.0.tar.gz
+[2023-05-28 06:33:29] INFO root fetch - processPackages [mosek-license-server]: executing diffoscope
+[2023-05-28 06:33:29] INFO root fetch - processPackages [mosek-license-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosek_license_server-0.1.3.tar.gz tmp/mosek_license_server-0.2.0.tar.gz --markdown 20230528/m/mosek-license-server/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 06:33:29] INFO root fetch - processPackages [scrobblez]: Downloading https://files.pythonhosted.org/packages/1e/91/b72873b29c8ae23113239b2f6201626c19d578b632bc11be683ac10ac7c0/scrobblez-0.1.1.tar.gz
+[2023-05-28 06:33:29] INFO root fetch - processPackages [scrobblez]: executing diffoscope
+[2023-05-28 06:33:29] INFO root fetch - processPackages [scrobblez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrobblez-0.1.0.tar.gz tmp/scrobblez-0.1.1.tar.gz --markdown 20230528/s/scrobblez/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 06:33:30] INFO root fetch - main [MainThread]: End processing [mosek-license-server]: success
+[2023-05-28 06:33:30] INFO root fetch - main [MainThread]: End processing [scrobblez]: success
+[2023-05-28 06:33:31] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-28 06:33:31] INFO root fetch - main [MainThread]: Store serial: [18278493]
