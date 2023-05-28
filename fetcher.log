@@ -10579,3 +10579,43 @@ EOFError: EOF read where object expected
 [2023-05-28 23:22:54] INFO root fetch - main [MainThread]: End processing [nbxmpp]: success
 [2023-05-28 23:22:55] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-05-28 23:22:55] INFO root fetch - main [MainThread]: Store serial: [18283601]
+[2023-05-28 23:27:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283601]
+[2023-05-28 23:28:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-ms
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lamin_logger
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: binance-c2c-sdk
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hcli-core
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: binance-c2c-sapi-sdk
+[2023-05-28 23:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Dehaze
+[2023-05-28 23:28:03] INFO root fetch - processPackages [python-ms]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-28 23:28:03] INFO root fetch - processPackages [binance-c2c-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 23:28:03] INFO root fetch - processPackages [hcli-core]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 23:28:03] INFO root fetch - processPackages [lamin_logger]: New version: [0.3rc1] Old Version: [0.3.2]
+[2023-05-28 23:28:03] WARNING root fetch - processPackages [binance-c2c-sapi-sdk]: Skipping, unable to determine old version
+[2023-05-28 23:28:03] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi-sdk] error
+[2023-05-28 23:28:03] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.49] Old Version: [4.2.48]
+[2023-05-28 23:28:03] WARNING root fetch - processPackages [Dehaze]: Skipping, unable to determine old version
+[2023-05-28 23:28:03] INFO root fetch - main [MainThread]: End processing [Dehaze] error
+[2023-05-28 23:28:03] INFO root fetch - processPackages [python-ms]: Downloading https://files.pythonhosted.org/packages/9c/e2/8b40e1fe93a253108d93ad09b099bab88bba0f082cd7351a4488251ebaea/python_ms-1.0.2.tar.gz
+[2023-05-28 23:28:04] INFO root fetch - processPackages [lamin_logger]: Downloading https://files.pythonhosted.org/packages/79/3b/4d8d21440a90f00df2c5fbc9ffaf0a2a316fa3e7efbe01edcd026b110798/lamin_logger-0.3.2.tar.gz
+[2023-05-28 23:28:04] INFO root fetch - processPackages [binance-c2c-sdk]: Downloading https://files.pythonhosted.org/packages/92/c8/6a159aadc08bbf127e92a9f985210fb6c3c366171e401258cff766faf4b9/binance-c2c-sdk-0.0.1.tar.gz
+[2023-05-28 23:28:04] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/fd/fe/ad38c03f1867fa620071ebbac00530d297abdaf26ecdea758f0ee651bfb1/cyberdrop-dl-4.2.49.tar.gz
+[2023-05-28 23:28:04] INFO root fetch - processPackages [hcli-core]: executing diffoscope
+[2023-05-28 23:28:04] INFO root fetch - processPackages [hcli-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcli_core-0.8.0.tar.gz tmp/hcli_core-0.9.0.tar.gz --markdown 20230528/h/hcli-core/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 23:28:04] INFO root fetch - processPackages [python-ms]: Downloading https://files.pythonhosted.org/packages/0e/8f/cbe92a1ff86bd5849a62c2e7943dee50a3333596d2a84be98bc973f71b08/python_ms-1.1.0.tar.gz
+[2023-05-28 23:28:04] INFO root fetch - processPackages [binance-c2c-sdk]: Downloading https://files.pythonhosted.org/packages/0e/41/9c1c815eb929141996a829fe1fc4e7edd0293a801a5aaa1a63d531fc68ab/binance-c2c-sdk-0.0.2.tar.gz
+[2023-05-28 23:28:04] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-28 23:28:04] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.48.tar.gz tmp/cyberdrop-dl-4.2.49.tar.gz --markdown 20230528/c/cyberdrop-dl/4.2.48-4.2.49/diff.md --exclude *.pyd
+[2023-05-28 23:28:04] INFO root fetch - processPackages [lamin_logger]: executing diffoscope
+[2023-05-28 23:28:04] INFO root fetch - processPackages [lamin_logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamin_logger-0.3.2.tar.gz tmp/lamin_logger-0.3rc1.tar.gz --markdown 20230528/l/lamin_logger/0.3.2-0.3rc1/diff.md --exclude *.pyd
+[2023-05-28 23:28:04] INFO root fetch - processPackages [python-ms]: executing diffoscope
+[2023-05-28 23:28:04] INFO root fetch - processPackages [python-ms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_ms-1.0.2.tar.gz tmp/python_ms-1.1.0.tar.gz --markdown 20230528/p/python-ms/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-05-28 23:28:04] INFO root fetch - processPackages [binance-c2c-sdk]: executing diffoscope
+[2023-05-28 23:28:04] INFO root fetch - processPackages [binance-c2c-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sdk-0.0.1.tar.gz tmp/binance-c2c-sdk-0.0.2.tar.gz --markdown 20230528/b/binance-c2c-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [binance-c2c-sdk]: success
+[2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [python-ms]: success
+[2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [hcli-core]: success
+[2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [lamin_logger]: success
+[2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-28 23:28:05] INFO root fetch - main [MainThread]: Store serial: [18283629]
