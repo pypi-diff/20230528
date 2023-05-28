@@ -6510,3 +6510,43 @@ EOFError: EOF read where object expected
 [2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [dataclass-mapper]: success
 [2023-05-28 15:26:31] INFO root fetch - main [MainThread]: End processing [pycity-scheduling]: success
 [2023-05-28 15:26:31] INFO root fetch - main [MainThread]: Store serial: [18281002]
+[2023-05-28 15:31:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281002]
+[2023-05-28 15:31:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-utils
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: encode-decode-vbm
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-keycloak
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: encode-decode-vbm
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ifastapi
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gncpy
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lnhub_rest
+[2023-05-28 15:31:39] INFO root fetch - processPackages [encode-decode-vbm]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 15:31:39] INFO root fetch - processPackages [encode-decode-vbm]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 15:31:39] INFO root fetch - processPackages [python-keycloak]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-05-28 15:31:39] INFO root fetch - processPackages [custom-utils]: New version: [0.0.39] Old Version: [0.0.38]
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 15:31:39] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-05-28 15:31:39] INFO root fetch - processPackages [python-keycloak]: executing diffoscope
+[2023-05-28 15:31:39] INFO root fetch - processPackages [python-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_keycloak-2.8.0.tar.gz tmp/python_keycloak-2.9.0.tar.gz --markdown 20230528/p/python-keycloak/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-28 15:31:40] WARNING root fetch - processPackages [gncpy]: Skipping, unable to determine old version
+[2023-05-28 15:31:40] INFO root fetch - main [MainThread]: End processing [gncpy] error
+[2023-05-28 15:31:40] INFO root fetch - processPackages [lnhub_rest]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-28 15:31:40] INFO root fetch - processPackages [encode-decode-vbm]: Downloading https://files.pythonhosted.org/packages/b6/e7/29cab376d902b740ff4c89f9259580087dac94ecb618b7ef4fecbe4815d6/encode_decode_vbm-0.1.2.tar.gz
+[2023-05-28 15:31:40] INFO root fetch - processPackages [encode-decode-vbm]: Downloading https://files.pythonhosted.org/packages/b6/e7/29cab376d902b740ff4c89f9259580087dac94ecb618b7ef4fecbe4815d6/encode_decode_vbm-0.1.2.tar.gz
+[2023-05-28 15:31:40] INFO root fetch - processPackages [encode-decode-vbm]: executing diffoscope
+[2023-05-28 15:31:40] INFO root fetch - processPackages [encode-decode-vbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_decode_vbm-0.1.1.tar.gz tmp/encode_decode_vbm-0.1.2.tar.gz --markdown 20230528/e/encode-decode-vbm/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 15:31:40] INFO root fetch - processPackages [encode-decode-vbm]: executing diffoscope
+[2023-05-28 15:31:40] INFO root fetch - processPackages [encode-decode-vbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_decode_vbm-0.1.1.tar.gz tmp/encode_decode_vbm-0.1.2.tar.gz --markdown 20230528/e/encode-decode-vbm/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 15:31:40] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/7d/41/e2a0fb5e19014e200f311d6bbe7a52c9db757c96a13d8d5030e8539b5732/custom-utils-0.0.39.tar.gz
+[2023-05-28 15:31:40] INFO root fetch - processPackages [lnhub_rest]: Downloading https://files.pythonhosted.org/packages/4c/8e/2fa0890c643c113c73b26276c3da888f81884dab829e10abe5bb99575975/lnhub_rest-0.9.8.tar.gz
+[2023-05-28 15:31:40] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-28 15:31:40] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.38.tar.gz tmp/custom-utils-0.0.39.tar.gz --markdown 20230528/c/custom-utils/0.0.38-0.0.39/diff.md --exclude *.pyd
+[2023-05-28 15:31:40] INFO root fetch - processPackages [lnhub_rest]: executing diffoscope
+[2023-05-28 15:31:40] INFO root fetch - processPackages [lnhub_rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnhub_rest-0.9.7.tar.gz tmp/lnhub_rest-0.9.8.tar.gz --markdown 20230528/l/lnhub_rest/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-28 15:31:41] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 15:31:41] INFO root fetch - main [MainThread]: End processing [python-keycloak]: success
+[2023-05-28 15:31:41] INFO root fetch - main [MainThread]: End processing [encode-decode-vbm]: success
+[2023-05-28 15:31:41] INFO root fetch - main [MainThread]: End processing [encode-decode-vbm]: success
+[2023-05-28 15:31:41] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-28 15:31:42] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
+[2023-05-28 15:31:42] INFO root fetch - main [MainThread]: Store serial: [18281030]
