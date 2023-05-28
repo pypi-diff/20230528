@@ -10280,3 +10280,69 @@ EOFError: EOF read where object expected
 [2023-05-28 22:50:43] INFO root fetch - main [MainThread]: End processing [mkdocs-risonia-theme]: success
 [2023-05-28 22:51:33] INFO root fetch - main [MainThread]: End processing [corpus-judge]: success
 [2023-05-28 22:51:33] INFO root fetch - main [MainThread]: Store serial: [18283440]
+[2023-05-28 22:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283440]
+[2023-05-28 22:56:43] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyzoom
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anisha-vehicles
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: refyre
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: StORF-Reporter
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gs-coordinator
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gs-engine
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gs-include
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: StORF-Reporter
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: versioner-py
+[2023-05-28 22:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: superkabuki
+[2023-05-28 22:56:43] INFO root fetch - processPackages [gs-coordinator]: New version: [0.22.0a20230528] Old Version: [0.22.0a20230527]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [anisha-vehicles]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [pyzoom]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [superkabuki]: New version: [0.0.47] Old Version: [0.0.45]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [gs-include]: New version: [0.22.0a20230528] Old Version: [0.22.0a20230527]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [StORF-Reporter]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [StORF-Reporter]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [refyre]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [gs-engine]: New version: [0.22.0a20230528] Old Version: [0.22.0a20230527]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [versioner-py]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-28 22:56:43] INFO root fetch - processPackages [superkabuki]: executing diffoscope
+[2023-05-28 22:56:43] INFO root fetch - processPackages [superkabuki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superkabuki-0.0.45.tar.gz tmp/superkabuki-0.0.47.tar.gz --markdown 20230528/s/superkabuki/0.0.45-0.0.47/diff.md --exclude *.pyd
+[2023-05-28 22:56:43] INFO root fetch - processPackages [refyre]: Downloading https://files.pythonhosted.org/packages/92/a0/db400469de870a7184713248792b8588fb485e111fa435a5aa1a489734ba/refyre-0.0.1.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - processPackages [StORF-Reporter]: Downloading https://files.pythonhosted.org/packages/9c/87/3ab670fdac9ed09064c0f48902f4907f4556d24e073509eb542d021e3cd8/StORF-Reporter-0.7.5.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/ed/c3/9cd8ed9b580322ed9429240de6d9a6779f6e71c650856d95a60033877f3c/gs_include-0.22.0a20230527-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-28 22:56:43] INFO root fetch - processPackages [StORF-Reporter]: Downloading https://files.pythonhosted.org/packages/9c/87/3ab670fdac9ed09064c0f48902f4907f4556d24e073509eb542d021e3cd8/StORF-Reporter-0.7.5.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/5e/13/26fa39fdefa1abb331fd77c79ba2ad3e0d0d0cabb7a31d2a1b36be7afa3c/gs_engine-0.22.0a20230527-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-28 22:56:43] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/d7/4a/4d471d3b770cd305e6666ced32cb562e87caa72282d1f29a1478f6a1081a/gs_coordinator-0.22.0a20230527-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-28 22:56:43] INFO root fetch - processPackages [pyzoom]: Downloading https://files.pythonhosted.org/packages/6b/03/ae284af4ac64c83716c3aab4398df8a0d63b38ccc452906d835496994a81/pyzoom-1.0.1.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - processPackages [pyzoom]: executing diffoscope
+[2023-05-28 22:56:43] INFO root fetch - processPackages [pyzoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzoom-1.0.0.tar.gz tmp/pyzoom-1.0.1.tar.gz --markdown 20230528/p/pyzoom/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 22:56:43] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 30330797>=10485760
+[2023-05-28 22:56:43] INFO root fetch - processPackages [anisha-vehicles]: Downloading https://files.pythonhosted.org/packages/29/df/0d00fd5c2e6e8e72b4cddd05ea5d3ace277b1c9796577e54121a952ecc90/anisha_vehicles-0.2.5.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-05-28 22:56:43] INFO root fetch - processPackages [versioner-py]: Downloading https://files.pythonhosted.org/packages/b4/43/8af19939e6a5affa324a4f1248c5780a946087dbe2fbb1d69d9fadae9941/versioner_py-1.2.0.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - processPackages [refyre]: Downloading https://files.pythonhosted.org/packages/0b/04/713c72c21329056d6b504cf40b1bdcb7d5b38909f80e273f06578b92404a/refyre-0.0.1.1.tar.gz
+[2023-05-28 22:56:43] INFO root fetch - processPackages [anisha-vehicles]: executing diffoscope
+[2023-05-28 22:56:43] INFO root fetch - processPackages [anisha-vehicles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anisha_vehicles-0.2.4.tar.gz tmp/anisha_vehicles-0.2.5.tar.gz --markdown 20230528/a/anisha-vehicles/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - processPackages [refyre]: executing diffoscope
+[2023-05-28 22:56:44] INFO root fetch - processPackages [refyre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refyre-0.0.1.tar.gz tmp/refyre-0.0.1.1.tar.gz --markdown 20230528/r/refyre/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - processPackages [StORF-Reporter]: Downloading https://files.pythonhosted.org/packages/17/b3/eff6cc8cdcdc2037214f92c999f73593dd2d6b04933094a9cfb85b224086/StORF-Reporter-0.7.6.tar.gz
+[2023-05-28 22:56:44] INFO root fetch - processPackages [versioner-py]: executing diffoscope
+[2023-05-28 22:56:44] INFO root fetch - processPackages [StORF-Reporter]: Downloading https://files.pythonhosted.org/packages/17/b3/eff6cc8cdcdc2037214f92c999f73593dd2d6b04933094a9cfb85b224086/StORF-Reporter-0.7.6.tar.gz
+[2023-05-28 22:56:44] INFO root fetch - processPackages [versioner-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/versioner.py-1.1.1-py3-none-any.whl.zip tmp/versioner_py-1.2.0.tar.gz --markdown 20230528/v/versioner-py/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/57/57/23b3e0859418e8d7e1e014c114702d3f9cf85c1fdbef2e3738e9f1671186/gs_engine-0.22.0a20230528-py2.py3-none-any.whl
+[2023-05-28 22:56:44] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/dc/4e/dd5511062f68020c7e4a41a287425ffcaa8931ccad0e817a8610411f2228/gs_coordinator-0.22.0a20230528-py2.py3-none-any.whl
+[2023-05-28 22:56:44] INFO root fetch - processPackages [StORF-Reporter]: executing diffoscope
+[2023-05-28 22:56:44] INFO root fetch - processPackages [StORF-Reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StORF-Reporter-0.7.5.tar.gz tmp/StORF-Reporter-0.7.6.tar.gz --markdown 20230528/S/StORF-Reporter/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - processPackages [StORF-Reporter]: executing diffoscope
+[2023-05-28 22:56:44] INFO root fetch - processPackages [StORF-Reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StORF-Reporter-0.7.5.tar.gz tmp/StORF-Reporter-0.7.6.tar.gz --markdown 20230528/S/StORF-Reporter/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - processPackages [gs-engine]: executing diffoscope
+[2023-05-28 22:56:44] INFO root fetch - processPackages [gs-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_engine-0.22.0a20230527-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_engine-0.22.0a20230528-py2.py3-none-any.whl.zip --markdown 20230528/g/gs-engine/0.22.0a20230527-0.22.0a20230528/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-05-28 22:56:44] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.22.0a20230527-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_coordinator-0.22.0a20230528-py2.py3-none-any.whl.zip --markdown 20230528/g/gs-coordinator/0.22.0a20230527-0.22.0a20230528/diff.md --exclude *.pyd
+[2023-05-28 22:56:44] INFO root fetch - main [MainThread]: End processing [superkabuki]: success
+[2023-05-28 22:56:45] INFO root fetch - main [MainThread]: End processing [pyzoom]: success
+[2023-05-28 22:56:45] INFO root fetch - main [MainThread]: End processing [anisha-vehicles]: success
+[2023-05-28 22:56:45] INFO root fetch - main [MainThread]: End processing [versioner-py]: success
+[2023-05-28 22:56:45] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
+[2023-05-28 22:56:45] INFO root fetch - main [MainThread]: End processing [refyre]: success
+[2023-05-28 22:56:45] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-05-28 22:56:46] INFO root fetch - main [MainThread]: End processing [StORF-Reporter]: success
+[2023-05-28 22:56:47] INFO root fetch - main [MainThread]: End processing [StORF-Reporter]: success
+[2023-05-28 22:56:47] INFO root fetch - main [MainThread]: Store serial: [18283473]
