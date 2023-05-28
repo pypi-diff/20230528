@@ -2597,3 +2597,22 @@
 [2023-05-28 07:17:57] INFO root fetch - main [MainThread]: End processing [pystemd]: success
 [2023-05-28 07:17:59] INFO root fetch - main [MainThread]: End processing [TWCManager]: success
 [2023-05-28 07:17:59] INFO root fetch - main [MainThread]: Store serial: [18278650]
+[2023-05-28 07:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278650]
+[2023-05-28 07:23:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 07:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: innerverz
+[2023-05-28 07:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auptitcafe
+[2023-05-28 07:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geniusbot
+[2023-05-28 07:23:08] INFO root fetch - processPackages [innerverz]: New version: [0.0.20] Old Version: [0.0.19]
+[2023-05-28 07:23:08] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 07:23:08] INFO root fetch - processPackages [geniusbot]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-28 07:23:08] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 07:23:08] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 07:23:08] INFO root fetch - processPackages [geniusbot]: executing diffoscope
+[2023-05-28 07:23:08] INFO root fetch - processPackages [geniusbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geniusbot-3.9.0-py2.py3-none-any.whl.zip tmp/geniusbot-3.9.1-py2.py3-none-any.whl.zip --markdown 20230528/g/geniusbot/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-28 07:23:08] INFO root fetch - processPackages [innerverz]: Downloading https://files.pythonhosted.org/packages/df/e3/897c1b82d35ea830eee6cf8cb3fb3497bf062d378f401b99aad64a7fd137/innerverz-0.0.20.tar.gz
+[2023-05-28 07:23:08] INFO root fetch - processPackages [innerverz]: executing diffoscope
+[2023-05-28 07:23:08] INFO root fetch - processPackages [innerverz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innerverz-0.0.19.tar.gz tmp/innerverz-0.0.20.tar.gz --markdown 20230528/i/innerverz/0.0.19-0.0.20/diff.md --exclude *.pyd
+[2023-05-28 07:23:09] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 07:23:09] INFO root fetch - main [MainThread]: End processing [geniusbot]: success
+[2023-05-28 07:23:10] INFO root fetch - main [MainThread]: End processing [innerverz]: success
+[2023-05-28 07:23:10] INFO root fetch - main [MainThread]: Store serial: [18278658]
