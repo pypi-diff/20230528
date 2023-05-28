@@ -9919,3 +9919,43 @@ EOFError: EOF read where object expected
 [2023-05-28 21:53:36] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
 [2023-05-28 21:53:36] INFO root fetch - main [MainThread]: End processing [mmit]: success
 [2023-05-28 21:53:36] INFO root fetch - main [MainThread]: Store serial: [18283216]
+[2023-05-28 21:58:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283216]
+[2023-05-28 21:58:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osqp
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphecerix
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ngscrape
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-envparse
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dcentralab-qa-infra-automation
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: berens-neat
+[2023-05-28 21:58:45] WARNING root fetch - processPackages [python-envparse]: Skipping, unable to determine old version
+[2023-05-28 21:58:45] INFO root fetch - main [MainThread]: End processing [python-envparse] error
+[2023-05-28 21:58:45] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-28 21:58:45] INFO root fetch - processPackages [sphecerix]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 21:58:45] INFO root fetch - processPackages [berens-neat]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ngscrape]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 21:58:45] INFO root fetch - processPackages [osqp]: New version: [1.0.0a1] Old Version: [0.6.3]
+[2023-05-28 21:58:45] INFO root fetch - processPackages [sphecerix]: Downloading https://files.pythonhosted.org/packages/60/b3/eadd9a2da384827fcf8d64c8e8081ee1602e767918460f5bb1035d46baf6/sphecerix-0.1.0-py3-none-any.whl
+[2023-05-28 21:58:45] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/49/57/60db504c2186384dd85b8103d201a39aff8dfb6d9a18c505100e6f5d4a98/dcentralab_qa_infra_automation-0.1.7.tar.gz
+[2023-05-28 21:58:45] INFO root fetch - processPackages [berens-neat]: Downloading https://files.pythonhosted.org/packages/03/19/8e8366bd481ec253e0f949ccd6795fdc8e38ab04e7478b13db4163b61924/berens-neat-0.1.0.tar.gz
+[2023-05-28 21:58:45] INFO root fetch - processPackages [ngscrape]: Downloading https://files.pythonhosted.org/packages/0f/b7/46491290937ee4e88f5d7d7f71cb56d55f75678e2d5e1a27446200ee276d/ngscrape-1.0.0.tar.gz
+[2023-05-28 21:58:46] INFO root fetch - processPackages [osqp]: Downloading https://files.pythonhosted.org/packages/fd/7b/a45ead9ba5293e386b7f8b0b1e20dd7f30b9ce178235cc7860ff80fd2b40/osqp-1.0.0a1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-28 21:58:46] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/a8/03/5f89b6e62c95f01e22f7f0c515cc63cb433c6e073b57995204bbc84753c8/dcentralab_qa_infra_automation-0.1.8.tar.gz
+[2023-05-28 21:58:46] INFO root fetch - processPackages [sphecerix]: Downloading https://files.pythonhosted.org/packages/a6/c3/152afe0c765497c141a6548d1173bbcb8798a0c10a6f037667824ab3114a/sphecerix-0.2.0-py3-none-any.whl
+[2023-05-28 21:58:46] INFO root fetch - processPackages [berens-neat]: Downloading https://files.pythonhosted.org/packages/cb/57/692aa4b8006a3b76893e59dcee4b5fc63faaddeb4682e9756c670d826aec/berens-neat-0.1.1.tar.gz
+[2023-05-28 21:58:46] INFO root fetch - processPackages [ngscrape]: Downloading https://files.pythonhosted.org/packages/9f/3e/64c8dcea771d7753d4c543db43811c820dce098726a42c955a28b740c6dd/ngscrape-1.0.1.tar.gz
+[2023-05-28 21:58:46] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: executing diffoscope
+[2023-05-28 21:58:46] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentralab_qa_infra_automation-0.1.7.tar.gz tmp/dcentralab_qa_infra_automation-0.1.8.tar.gz --markdown 20230528/d/dcentralab-qa-infra-automation/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-28 21:58:46] INFO root fetch - processPackages [sphecerix]: executing diffoscope
+[2023-05-28 21:58:46] INFO root fetch - processPackages [sphecerix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphecerix-0.1.0-py3-none-any.whl.zip tmp/sphecerix-0.2.0-py3-none-any.whl.zip --markdown 20230528/s/sphecerix/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 21:58:46] INFO root fetch - processPackages [osqp]: executing diffoscope
+[2023-05-28 21:58:46] INFO root fetch - processPackages [osqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osqp-0.6.3.tar.gz tmp/osqp-1.0.0a1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230528/o/osqp/0.6.3-1.0.0a1/diff.md --exclude *.pyd
+[2023-05-28 21:58:46] INFO root fetch - processPackages [ngscrape]: executing diffoscope
+[2023-05-28 21:58:46] INFO root fetch - processPackages [ngscrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngscrape-1.0.0.tar.gz tmp/ngscrape-1.0.1.tar.gz --markdown 20230528/n/ngscrape/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 21:58:46] INFO root fetch - processPackages [berens-neat]: executing diffoscope
+[2023-05-28 21:58:46] INFO root fetch - processPackages [berens-neat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/berens-neat-0.1.0.tar.gz tmp/berens-neat-0.1.1.tar.gz --markdown 20230528/b/berens-neat/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [osqp]: success
+[2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [sphecerix]: success
+[2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [berens-neat]: success
+[2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [dcentralab-qa-infra-automation]: success
+[2023-05-28 21:58:47] INFO root fetch - main [MainThread]: End processing [ngscrape]: success
+[2023-05-28 21:58:47] INFO root fetch - main [MainThread]: Store serial: [18283239]
