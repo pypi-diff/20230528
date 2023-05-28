@@ -8343,3 +8343,42 @@ EOFError: EOF read where object expected
 [2023-05-28 18:41:12] INFO root fetch - main [MainThread]: End processing [coso]: success
 [2023-05-28 18:41:13] INFO root fetch - main [MainThread]: End processing [v-quantum-annealing]: success
 [2023-05-28 18:41:13] INFO root fetch - main [MainThread]: Store serial: [18282164]
+[2023-05-28 18:46:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282164]
+[2023-05-28 18:46:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coso
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyaodbc
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mmit
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatcmd
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clust-learn
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tensorairspace
+[2023-05-28 18:46:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 18:46:21] INFO root fetch - processPackages [mmit]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-28 18:46:21] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-28 18:46:21] WARNING root fetch - processPackages [pyaodbc]: Skipping, unable to determine old version
+[2023-05-28 18:46:21] INFO root fetch - main [MainThread]: End processing [pyaodbc] error
+[2023-05-28 18:46:21] INFO root fetch - processPackages [coso]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-28 18:46:21] INFO root fetch - processPackages [clust-learn]: New version: [0.2.0b0] Old Version: [0.2.0.5]
+[2023-05-28 18:46:21] WARNING root fetch - processPackages [tensorairspace]: Skipping, unable to determine old version
+[2023-05-28 18:46:21] INFO root fetch - main [MainThread]: End processing [tensorairspace] error
+[2023-05-28 18:46:22] INFO root fetch - processPackages [chatcmd]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-28 18:46:22] INFO root fetch - processPackages [mmit]: executing diffoscope
+[2023-05-28 18:46:22] INFO root fetch - processPackages [mmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmit-0.3.0.tar.gz tmp/mmit-0.4.0.tar.gz --markdown 20230528/m/mmit/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 18:46:22] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/0f/95/065c2be2f5aee06ca73d4b1e8c368da46ce85afb0eb4daca1abfa6906fa8/nonebot_plugin_stable_diffusion_diao-0.1.8.tar.gz
+[2023-05-28 18:46:22] INFO root fetch - processPackages [clust-learn]: Downloading https://files.pythonhosted.org/packages/33/44/8d7661dea630cd63008a3c61a8733da27b385f75783bfa396b1854e44248/clust-learn-0.2.0.5.tar.gz
+[2023-05-28 18:46:22] INFO root fetch - processPackages [coso]: Downloading https://files.pythonhosted.org/packages/eb/b8/4d3a5280a65016cedd0f22f3aacb2c2d21ff74ebd7a3d93bbf349e2f395f/coso-1.1.4.tar.gz
+[2023-05-28 18:46:22] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/0e/64/77a85056585933ff507a37464ab64235e6b0537e8f335b05184763ad1487/chatcmd-1.1.0.tar.gz
+[2023-05-28 18:46:22] INFO root fetch - processPackages [coso]: executing diffoscope
+[2023-05-28 18:46:22] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: executing diffoscope
+[2023-05-28 18:46:22] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_stable_diffusion_diao-0.1.7.tar.gz tmp/nonebot_plugin_stable_diffusion_diao-0.1.8.tar.gz --markdown 20230528/n/nonebot-plugin-stable-diffusion-diao/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-28 18:46:22] INFO root fetch - processPackages [coso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coso-1.1.3.tar.gz tmp/coso-1.1.4.tar.gz --markdown 20230528/c/coso/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-28 18:46:22] INFO root fetch - processPackages [clust-learn]: executing diffoscope
+[2023-05-28 18:46:22] INFO root fetch - processPackages [clust-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clust-learn-0.2.0.5.tar.gz tmp/clust-learn-0.2.0b0.tar.gz --markdown 20230528/c/clust-learn/0.2.0.5-0.2.0b0/diff.md --exclude *.pyd
+[2023-05-28 18:46:22] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/f3/66/f6e7d1764ef641ff3234e3f69dda2f002e7475885f9c1e5ca18e86d45b38/chatcmd-1.1.1.tar.gz
+[2023-05-28 18:46:22] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 18:46:22] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.1.0.tar.gz tmp/chatcmd-1.1.1.tar.gz --markdown 20230528/c/chatcmd/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [mmit]: success
+[2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [coso]: success
+[2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
+[2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
+[2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 18:46:23] INFO root fetch - main [MainThread]: Store serial: [18282188]
