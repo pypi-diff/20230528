@@ -1982,3 +1982,19 @@
 [2023-05-28 05:14:58] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230527.tar.gz tmp/GANDLF-0.0.17.dev20230528.tar.gz --markdown 20230528/G/GANDLF/0.0.17.dev20230527-0.0.17.dev20230528/diff.md --exclude *.pyd
 [2023-05-28 05:15:00] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-28 05:15:00] INFO root fetch - main [MainThread]: Store serial: [18278285]
+[2023-05-28 05:20:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278285]
+[2023-05-28 05:20:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 05:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcnets
+[2023-05-28 05:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: s27a-jbq
+[2023-05-28 05:20:08] INFO root fetch - processPackages [mcnets]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-28 05:20:08] INFO root fetch - processPackages [s27a-jbq]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-28 05:20:09] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/b4/41/e1ea0454705ad73c2ec027238a7a91ac5fb0ff6ebf768ab434777122d0f5/mcnets-0.2.4-py3-none-any.whl
+[2023-05-28 05:20:09] INFO root fetch - processPackages [s27a-jbq]: Downloading https://files.pythonhosted.org/packages/d0/e8/a3b4340ef48cb06b49680bbb27c86c03f8246e6657fb933bf08c0abaae61/s27a_jbq-1.0.3.tar.gz
+[2023-05-28 05:20:09] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/39/39/720a62981c5edddef55f09e66917a58d9a68bd67cea3c6d63bc33e92e6ac/mcnets-0.2.5.tar.gz
+[2023-05-28 05:20:09] INFO root fetch - processPackages [s27a-jbq]: executing diffoscope
+[2023-05-28 05:20:09] INFO root fetch - processPackages [s27a-jbq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s27a_jbq-1.0.2.tar.gz tmp/s27a_jbq-1.0.3.tar.gz --markdown 20230528/s/s27a-jbq/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-28 05:20:09] INFO root fetch - processPackages [mcnets]: executing diffoscope
+[2023-05-28 05:20:09] INFO root fetch - processPackages [mcnets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcnets-0.2.4-py3-none-any.whl.zip tmp/mcnets-0.2.5.tar.gz --markdown 20230528/m/mcnets/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-28 05:20:10] INFO root fetch - main [MainThread]: End processing [s27a-jbq]: success
+[2023-05-28 05:20:11] INFO root fetch - main [MainThread]: End processing [mcnets]: success
+[2023-05-28 05:20:11] INFO root fetch - main [MainThread]: Store serial: [18278296]
