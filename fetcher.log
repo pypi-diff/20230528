@@ -1685,3 +1685,22 @@
 [2023-05-28 04:12:18] INFO root fetch - main [MainThread]: End processing [ptrFinance]: success
 [2023-05-28 04:12:18] INFO root fetch - main [MainThread]: End processing [embedin]: success
 [2023-05-28 04:12:18] INFO root fetch - main [MainThread]: Store serial: [18278025]
+[2023-05-28 04:17:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278025]
+[2023-05-28 04:17:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 04:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embedin
+[2023-05-28 04:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vitriolic
+[2023-05-28 04:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: guh
+[2023-05-28 04:17:27] INFO root fetch - processPackages [embedin]: New version: [0.2.2a0] Old Version: [0.2.1]
+[2023-05-28 04:17:27] WARNING root fetch - processPackages [guh]: Skipping, unable to determine old version
+[2023-05-28 04:17:27] INFO root fetch - main [MainThread]: End processing [guh] error
+[2023-05-28 04:17:27] INFO root fetch - processPackages [vitriolic]: New version: [3.2.1] Old Version: [3.2.0]
+[2023-05-28 04:17:27] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/04/5c/473d6c01702ac4ca0bb07e267a25aa973e6250faab9a049b6498b2f7f560/vitriolic-3.2.0-py3-none-any.whl
+[2023-05-28 04:17:27] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/99/5b/4162e4063264d336d63c774c0d9c6d4ed9f177b91fdf46ac1bcde29d4537/embedin-0.2.2a0.tar.gz
+[2023-05-28 04:17:27] INFO root fetch - processPackages [embedin]: executing diffoscope
+[2023-05-28 04:17:27] INFO root fetch - processPackages [embedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedin-0.2.1.tar.gz tmp/embedin-0.2.2a0.tar.gz --markdown 20230528/e/embedin/0.2.1-0.2.2a0/diff.md --exclude *.pyd
+[2023-05-28 04:17:27] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/7f/ac/2f6bfe9e2013755331b2dc304115f4f91ffdd52cbc5e2e60cb41696ae464/vitriolic-3.2.1-py3-none-any.whl
+[2023-05-28 04:17:27] INFO root fetch - processPackages [vitriolic]: executing diffoscope
+[2023-05-28 04:17:27] INFO root fetch - processPackages [vitriolic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vitriolic-3.2.0-py3-none-any.whl.zip tmp/vitriolic-3.2.1-py3-none-any.whl.zip --markdown 20230528/v/vitriolic/3.2.0-3.2.1/diff.md --exclude *.pyd
+[2023-05-28 04:17:28] INFO root fetch - main [MainThread]: End processing [embedin]: success
+[2023-05-28 04:17:41] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
+[2023-05-28 04:17:41] INFO root fetch - main [MainThread]: Store serial: [18278035]
