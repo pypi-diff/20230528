@@ -2789,3 +2789,22 @@
 [2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [muutils]: success
 [2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [nutree]: success
 [2023-05-28 08:00:24] INFO root fetch - main [MainThread]: Store serial: [18278761]
+[2023-05-28 08:05:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278761]
+[2023-05-28 08:05:33] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-28 08:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278761]
+[2023-05-28 08:10:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2023-05-28 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aksharify
+[2023-05-28 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proxy-checker-httpx
+[2023-05-28 08:10:39] INFO root fetch - processPackages [aksharify]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-05-28 08:10:39] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230527] Old Version: [2.4.0.dev20230526]
+[2023-05-28 08:10:39] ERROR root fetch - processPackages [proxy-checker-httpx]: Unable to get metadata: No such project 'proxy-checker-httpx'
+[2023-05-28 08:10:39] INFO root fetch - main [MainThread]: End processing [proxy-checker-httpx] error
+[2023-05-28 08:10:39] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-28 08:10:39] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230526.tar.gz tmp/pyg_nightly-2.4.0.dev20230527.tar.gz --markdown 20230528/p/pyg-nightly/2.4.0.dev20230526-2.4.0.dev20230527/diff.md --exclude *.pyd
+[2023-05-28 08:10:39] INFO root fetch - processPackages [aksharify]: Downloading https://files.pythonhosted.org/packages/3f/99/cb1aedf4592191d80fd53fdaa9d468110deff530955c88b80884a2fc3d37/aksharify-2.3.3.tar.gz
+[2023-05-28 08:10:39] INFO root fetch - processPackages [aksharify]: executing diffoscope
+[2023-05-28 08:10:39] INFO root fetch - processPackages [aksharify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aksharify-2.3.2.tar.gz tmp/aksharify-2.3.3.tar.gz --markdown 20230528/a/aksharify/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-05-28 08:10:40] INFO root fetch - main [MainThread]: End processing [aksharify]: success
+[2023-05-28 08:10:43] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-28 08:10:43] INFO root fetch - main [MainThread]: Store serial: [18278799]
