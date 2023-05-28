@@ -3265,3 +3265,37 @@
 [2023-05-28 09:25:31] INFO root fetch - main [MainThread]: End processing [muutils]: success
 [2023-05-28 09:26:10] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-28 09:26:10] INFO root fetch - main [MainThread]: Store serial: [18279056]
+[2023-05-28 09:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279056]
+[2023-05-28 09:31:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 09:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphere-base
+[2023-05-28 09:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wellmet
+[2023-05-28 09:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: digitalarztools
+[2023-05-28 09:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkov3
+[2023-05-28 09:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: timona
+[2023-05-28 09:31:19] INFO root fetch - processPackages [sphere-base]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 09:31:19] WARNING root fetch - processPackages [wellmet]: Skipping, unable to determine old version
+[2023-05-28 09:31:19] INFO root fetch - main [MainThread]: End processing [wellmet] error
+[2023-05-28 09:31:19] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 09:31:19] INFO root fetch - processPackages [checkov3]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-28 09:31:19] INFO root fetch - processPackages [timona]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 09:31:19] INFO root fetch - processPackages [sphere-base]: Downloading https://files.pythonhosted.org/packages/9c/6f/fcff029ec5d572acbbb18bf4b7a917612d009aa01a8705c63d8f842bf28c/sphere_base-0.1.8.tar.gz
+[2023-05-28 09:31:19] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/b5/68/99097e7e8ab286315bea6cc0c6648f909b981f4e2065be485528760f507d/digitalarztools-0.0.8.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [checkov3]: Downloading https://files.pythonhosted.org/packages/06/d2/24f075f01cf14104134c84e5d11bd902833abbbde8b53828867131e8183d/checkov3-0.1.4.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [timona]: Downloading https://files.pythonhosted.org/packages/2d/1d/a261be56122e22b87ee4924aef5fd754699da487646627bcf94155e3f212/timona-0.0.1.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [sphere-base]: Downloading https://files.pythonhosted.org/packages/23/b2/d195ee1ab25a64139920b673166142e80649e630347652252756eb6482e2/sphere_base-0.1.9.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [sphere-base]: executing diffoscope
+[2023-05-28 09:31:20] INFO root fetch - processPackages [sphere-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphere_base-0.1.8.tar.gz tmp/sphere_base-0.1.9.tar.gz --markdown 20230528/s/sphere-base/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 09:31:20] INFO root fetch - processPackages [digitalarztools]: Downloading https://files.pythonhosted.org/packages/00/25/c980e24e95c2d2aab7f7e3042a4ea7fabfcb8deb667f49e39a2c04a8a201/digitalarztools-0.0.9.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [timona]: Downloading https://files.pythonhosted.org/packages/92/bd/b5839f28ac6b31d20a96f54b82fb635b729303eb949c645773d28393d297/timona-0.0.2.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [checkov3]: Downloading https://files.pythonhosted.org/packages/0d/99/ad7574557ec69705bbe6e43ade69c7fc3abf40dfa56eff0bce69a6bc867c/checkov3-0.1.5.tar.gz
+[2023-05-28 09:31:20] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-05-28 09:31:20] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230528/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 09:31:20] INFO root fetch - processPackages [timona]: executing diffoscope
+[2023-05-28 09:31:20] INFO root fetch - processPackages [timona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timona-0.0.1.tar.gz tmp/timona-0.0.2.tar.gz --markdown 20230528/t/timona/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 09:31:20] INFO root fetch - processPackages [checkov3]: executing diffoscope
+[2023-05-28 09:31:20] INFO root fetch - processPackages [checkov3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov3-0.1.4.tar.gz tmp/checkov3-0.1.5.tar.gz --markdown 20230528/c/checkov3/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-28 09:31:21] INFO root fetch - main [MainThread]: End processing [timona]: success
+[2023-05-28 09:31:21] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-05-28 09:31:22] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
+[2023-05-28 09:31:56] INFO root fetch - main [MainThread]: End processing [checkov3]: success
+[2023-05-28 09:31:56] INFO root fetch - main [MainThread]: Store serial: [18279075]
