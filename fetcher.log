@@ -7348,3 +7348,59 @@ EOFError: EOF read where object expected
 [2023-05-28 16:56:02] INFO root fetch - main [MainThread]: End processing [phantom-types]: success
 [2023-05-28 16:56:02] INFO root fetch - main [MainThread]: End processing [pytest-md-report]: success
 [2023-05-28 16:56:02] INFO root fetch - main [MainThread]: Store serial: [18281518]
+[2023-05-28 17:01:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281518]
+[2023-05-28 17:01:11] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ohmytmp-taggy
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyautosrt
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ohmytmp-destination
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aleksis-app-kort
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crackerjack
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wordview
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: act4e-mcdp
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lifetimefitting
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbt-clickzetta
+[2023-05-28 17:01:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aiofauna
+[2023-05-28 17:01:11] INFO root fetch - processPackages [crackerjack]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 17:01:11] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:01:11] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-28 17:01:11] WARNING root fetch - processPackages [ohmytmp-taggy]: Skipping, unable to determine old version
+[2023-05-28 17:01:11] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 17:01:11] INFO root fetch - main [MainThread]: End processing [ohmytmp-taggy] error
+[2023-05-28 17:01:11] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:01:11] WARNING root fetch - processPackages [ohmytmp-destination]: Skipping, unable to determine old version
+[2023-05-28 17:01:11] INFO root fetch - main [MainThread]: End processing [ohmytmp-destination] error
+[2023-05-28 17:01:11] INFO root fetch - processPackages [aleksis-app-kort]: New version: [0.2] Old Version: [0.1.1]
+[2023-05-28 17:01:11] INFO root fetch - processPackages [crackerjack]: executing diffoscope
+[2023-05-28 17:01:11] INFO root fetch - processPackages [crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.2.1.tar.gz tmp/crackerjack-0.2.2.tar.gz --markdown 20230528/c/crackerjack/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 17:01:11] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-28 17:01:11] INFO root fetch - processPackages [wordview]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 17:01:11] INFO root fetch - processPackages [aiofauna]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 17:01:11] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-28 17:01:11] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.18.tar.gz tmp/lifetimefitting-0.0.19.tar.gz --markdown 20230528/l/lifetimefitting/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-28 17:01:12] INFO root fetch - processPackages [aleksis-app-kort]: Downloading https://files.pythonhosted.org/packages/a8/f2/6c10c8965ca4f38e088ce3e9c39a4e27a389d6e194b650a60c4125a39d2e/aleksis_app_kort-0.1.1.tar.gz
+[2023-05-28 17:01:12] INFO root fetch - processPackages [pyautosrt]: New version: [0.1.7] Old Version: [0.1.4]
+[2023-05-28 17:01:12] INFO root fetch - processPackages [wordview]: Downloading https://files.pythonhosted.org/packages/97/07/203d1d5d9de464b85116fa2c192e8151b4b40d0649d16368e1d7f8e1b56d/wordview-0.2.3.tar.gz
+[2023-05-28 17:01:12] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/82/20/d72756d4f74a561761a65a77d829def38de5bd0dbd8d6301e6282dbe4709/act4e_mcdp-0.6.0-py3-none-any.whl
+[2023-05-28 17:01:12] INFO root fetch - processPackages [pyautosrt]: Downloading https://files.pythonhosted.org/packages/e9/cf/c3b79fe083a49b26049eaeccd94ad950b95703e71c3354d49c17ea55670b/pyautosrt-0.1.4.tar.gz
+[2023-05-28 17:01:12] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-05-28 17:01:12] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.1.8.tar.gz tmp/aiofauna-0.1.9.tar.gz --markdown 20230528/a/aiofauna/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 17:01:12] INFO root fetch - processPackages [aleksis-app-kort]: Downloading https://files.pythonhosted.org/packages/35/22/73ed825b7cdd74e205f109ece3a7d5ea1d8b7cb5148c3442a77b571dbd0a/aleksis_app_kort-0.2.tar.gz
+[2023-05-28 17:01:12] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-28 17:01:12] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.5.0-py3-none-any.whl.zip tmp/act4e_mcdp-0.6.0-py3-none-any.whl.zip --markdown 20230528/a/act4e-mcdp/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-28 17:01:12] INFO root fetch - processPackages [aleksis-app-kort]: executing diffoscope
+[2023-05-28 17:01:12] INFO root fetch - processPackages [aleksis-app-kort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleksis_app_kort-0.1.1.tar.gz tmp/aleksis_app_kort-0.2.tar.gz --markdown 20230528/a/aleksis-app-kort/0.1.1-0.2/diff.md --exclude *.pyd
+[2023-05-28 17:01:12] INFO root fetch - processPackages [pyautosrt]: Downloading https://files.pythonhosted.org/packages/42/1b/cc5bb85d680226626682e68bfbf964e7113b6c69d19e0ba025884a63687d/pyautosrt-0.1.7.tar.gz
+[2023-05-28 17:01:12] INFO root fetch - processPackages [wordview]: Downloading https://files.pythonhosted.org/packages/c9/ca/7168ed2b07ba2f512a234bd033294b9cb257352d6fbf34e962f03376c992/wordview-0.2.4.tar.gz
+[2023-05-28 17:01:12] INFO root fetch - processPackages [pyautosrt]: executing diffoscope
+[2023-05-28 17:01:12] INFO root fetch - processPackages [pyautosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautosrt-0.1.4.tar.gz tmp/pyautosrt-0.1.7.tar.gz --markdown 20230528/p/pyautosrt/0.1.4-0.1.7/diff.md --exclude *.pyd
+[2023-05-28 17:01:12] INFO root fetch - processPackages [wordview]: executing diffoscope
+[2023-05-28 17:01:12] INFO root fetch - processPackages [wordview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordview-0.2.3.tar.gz tmp/wordview-0.2.4.tar.gz --markdown 20230528/w/wordview/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [crackerjack]: success
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [pyautosrt]: success
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [wordview]: success
+[2023-05-28 17:01:13] INFO root fetch - main [MainThread]: End processing [aiofauna]: success
+[2023-05-28 17:01:14] INFO root fetch - main [MainThread]: End processing [aleksis-app-kort]: success
+[2023-05-28 17:01:14] INFO root fetch - main [MainThread]: Store serial: [18281551]
