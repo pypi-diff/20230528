@@ -6606,3 +6606,33 @@ EOFError: EOF read where object expected
 [2023-05-28 15:36:53] INFO root fetch - main [MainThread]: End processing [vamb]: success
 [2023-05-28 15:36:58] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-05-28 15:36:58] INFO root fetch - main [MainThread]: Store serial: [18281064]
+[2023-05-28 15:42:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281064]
+[2023-05-28 15:42:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 15:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: encode-decode-vbm
+[2023-05-28 15:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyAGI
+[2023-05-28 15:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyTimbre
+[2023-05-28 15:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rico
+[2023-05-28 15:42:07] INFO root fetch - processPackages [encode-decode-vbm]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-28 15:42:07] INFO root fetch - processPackages [PyTimbre]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-28 15:42:07] INFO root fetch - processPackages [pyAGI]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 15:42:07] INFO root fetch - processPackages [rico]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 15:42:07] INFO root fetch - processPackages [encode-decode-vbm]: Downloading https://files.pythonhosted.org/packages/41/ad/157b0a6526db8c1e411fed04a509c63351f75cba796c9f6876986f55b56b/encode_decode_vbm-0.1.3.tar.gz
+[2023-05-28 15:42:07] INFO root fetch - processPackages [PyTimbre]: Downloading https://files.pythonhosted.org/packages/8b/d4/851147a5b183ab0003bd01d05bc8390ad98241468627bef880ff24a917fa/PyTimbre-0.6.8.tar.gz
+[2023-05-28 15:42:07] INFO root fetch - processPackages [pyAGI]: Downloading https://files.pythonhosted.org/packages/db/49/e01daee71e1d70462616d7066e36929421f28af70e44cb0962810d878dcc/pyAGI-1.0.0.tar.gz
+[2023-05-28 15:42:07] INFO root fetch - processPackages [rico]: Downloading https://files.pythonhosted.org/packages/9f/b9/cb96927f8424f8117c266037378c6f6791e43b5bd54bc7e581a765a33bf6/rico-0.0.6.tar.gz
+[2023-05-28 15:42:07] INFO root fetch - processPackages [rico]: executing diffoscope
+[2023-05-28 15:42:07] INFO root fetch - processPackages [rico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rico-0.0.5.tar.gz tmp/rico-0.0.6.tar.gz --markdown 20230528/r/rico/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 15:42:08] INFO root fetch - processPackages [encode-decode-vbm]: Downloading https://files.pythonhosted.org/packages/d4/4e/4fd4b4e84017de388569a0b3bebef0987fe6fe1790d24b769b819ea61eb6/encode_decode_vbm-0.1.4.tar.gz
+[2023-05-28 15:42:08] INFO root fetch - processPackages [pyAGI]: Downloading https://files.pythonhosted.org/packages/79/82/d7175ef68a0fe63c39b3d7e3a804a34dca8a7613cb30df8749450aed6340/pyAGI-1.0.1.tar.gz
+[2023-05-28 15:42:08] INFO root fetch - processPackages [PyTimbre]: Downloading https://files.pythonhosted.org/packages/16/b6/e5df7bb251605b94a2eb32b7aa4a3cc212864ff6585460fd628aab0e94b0/PyTimbre-0.6.9.tar.gz
+[2023-05-28 15:42:08] INFO root fetch - processPackages [pyAGI]: executing diffoscope
+[2023-05-28 15:42:08] INFO root fetch - processPackages [pyAGI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAGI-1.0.0.tar.gz tmp/pyAGI-1.0.1.tar.gz --markdown 20230528/p/pyAGI/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 15:42:08] INFO root fetch - processPackages [encode-decode-vbm]: executing diffoscope
+[2023-05-28 15:42:08] INFO root fetch - processPackages [encode-decode-vbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_decode_vbm-0.1.3.tar.gz tmp/encode_decode_vbm-0.1.4.tar.gz --markdown 20230528/e/encode-decode-vbm/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 15:42:08] INFO root fetch - processPackages [PyTimbre]: executing diffoscope
+[2023-05-28 15:42:08] INFO root fetch - processPackages [PyTimbre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTimbre-0.6.8.tar.gz tmp/PyTimbre-0.6.9.tar.gz --markdown 20230528/P/PyTimbre/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-28 15:42:09] INFO root fetch - main [MainThread]: End processing [encode-decode-vbm]: success
+[2023-05-28 15:42:09] INFO root fetch - main [MainThread]: End processing [rico]: success
+[2023-05-28 15:42:09] INFO root fetch - main [MainThread]: End processing [pyAGI]: success
+[2023-05-28 15:42:58] INFO root fetch - main [MainThread]: End processing [PyTimbre]: success
+[2023-05-28 15:42:58] INFO root fetch - main [MainThread]: Store serial: [18281077]
