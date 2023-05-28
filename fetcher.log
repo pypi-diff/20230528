@@ -5401,3 +5401,52 @@
 [2023-05-28 13:38:54] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-05-28 13:38:58] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-28 13:38:58] INFO root fetch - main [MainThread]: Store serial: [18280345]
+[2023-05-28 13:44:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280345]
+[2023-05-28 13:44:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 13:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unitgrade-devel
+[2023-05-28 13:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EdgeGPT
+[2023-05-28 13:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-28 13:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revChatGPT
+[2023-05-28 13:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: centesimal-iot
+[2023-05-28 13:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: centesimal-iot
+[2023-05-28 13:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vanty
+[2023-05-28 13:44:08] INFO root fetch - processPackages [revChatGPT]: New version: [5.3.0] Old Version: [5.2.0]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [chatcmd]: New version: [1.0.46] Old Version: [1.0.45]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [unitgrade-devel]: New version: [0.1.9] Old Version: [0.1.7a0]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [EdgeGPT]: New version: [0.6.8] Old Version: [0.6.7]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [vanty]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/30/08/2b8b1f77702f2210cb8e6f4d0cc209b3d706cb08d1cb71eb9e5c1758f8aa/centesimal_iot-0.1.5-py2.py3-none-any.whl
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/30/08/2b8b1f77702f2210cb8e6f4d0cc209b3d706cb08d1cb71eb9e5c1758f8aa/centesimal_iot-0.1.5-py2.py3-none-any.whl
+[2023-05-28 13:44:08] INFO root fetch - processPackages [unitgrade-devel]: Downloading https://files.pythonhosted.org/packages/ad/4d/9e235f005560e9bc39eb3e4654805d1da0876a5b16cdeb13e921264217be/unitgrade-devel-0.1.7a0.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [vanty]: Downloading https://files.pythonhosted.org/packages/03/b1/1658d9cac3bca0f9b30df043136047f1b5f3fb08b93a009ff95d867b591d/vanty-0.0.4.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/ba/ac/a5e08e76c342755591c38a9c14f284b3305ae0584d89a0190b3966c84139/chatcmd-1.0.46.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/35/86/ecc4a34b56acf6cd3e6bd6920c6b05f6ef48780cab78ae0e45a9087fc5ee/revChatGPT-5.3.0.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.45.tar.gz tmp/chatcmd-1.0.46.tar.gz --markdown 20230528/c/chatcmd/1.0.45-1.0.46/diff.md --exclude *.pyd
+[2023-05-28 13:44:08] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/f4/3b/c38c694c08c41197a2894af97a9dddd8ad640e8c395646b28ba32f97bdc0/EdgeGPT-0.6.8.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/b2/3f/e9bd724e878c8e41c10bfb7b09afd8450d1379c26f5fcf51cee5c55b8dbe/centesimal_iot-0.1.6-py2.py3-none-any.whl
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/b2/3f/e9bd724e878c8e41c10bfb7b09afd8450d1379c26f5fcf51cee5c55b8dbe/centesimal_iot-0.1.6-py2.py3-none-any.whl
+[2023-05-28 13:44:08] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.2.0.tar.gz tmp/revChatGPT-5.3.0.tar.gz --markdown 20230528/r/revChatGPT/5.2.0-5.3.0/diff.md --exclude *.pyd
+[2023-05-28 13:44:08] INFO root fetch - processPackages [vanty]: Downloading https://files.pythonhosted.org/packages/f1/93/f9589d84f651abc33b63c3d8dc48298d30ba3e21c4ac977ad36a0da6b167/vanty-0.0.5.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.6.7.tar.gz tmp/EdgeGPT-0.6.8.tar.gz --markdown 20230528/E/EdgeGPT/0.6.7-0.6.8/diff.md --exclude *.pyd
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.5-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.6-py2.py3-none-any.whl.zip --markdown 20230528/c/centesimal-iot/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.5-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.6-py2.py3-none-any.whl.zip --markdown 20230528/c/centesimal-iot/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-28 13:44:08] INFO root fetch - processPackages [unitgrade-devel]: Downloading https://files.pythonhosted.org/packages/8e/51/b73b3be691b9860b252c7ae440f19334b0c132b61249a634e2d38db27f2e/unitgrade-devel-0.1.9.tar.gz
+[2023-05-28 13:44:08] INFO root fetch - processPackages [vanty]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [vanty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanty-0.0.4.tar.gz tmp/vanty-0.0.5.tar.gz --markdown 20230528/v/vanty/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-28 13:44:08] INFO root fetch - processPackages [unitgrade-devel]: executing diffoscope
+[2023-05-28 13:44:08] INFO root fetch - processPackages [unitgrade-devel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitgrade-devel-0.1.7a0.tar.gz tmp/unitgrade-devel-0.1.9.tar.gz --markdown 20230528/u/unitgrade-devel/0.1.7a0-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 13:44:09] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 13:44:09] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [vanty]: success
+[2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [unitgrade-devel]: success
+[2023-05-28 13:44:10] INFO root fetch - main [MainThread]: Store serial: [18280369]
