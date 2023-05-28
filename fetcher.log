@@ -8243,3 +8243,65 @@ EOFError: EOF read where object expected
 [2023-05-28 18:30:26] INFO root fetch - main [MainThread]: End processing [joyrl]: success
 [2023-05-28 18:30:46] INFO root fetch - main [MainThread]: End processing [faceid-lib]: success
 [2023-05-28 18:30:46] INFO root fetch - main [MainThread]: Store serial: [18282092]
+[2023-05-28 18:35:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282092]
+[2023-05-28 18:35:55] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dynamicprompts
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gravitas
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyx-pysite
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: image-titler
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-quantize-pytorch
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dynamicprompts
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyaodbc
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gravitas
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyalarmdotcomajax
+[2023-05-28 18:35:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jaraco.develop
+[2023-05-28 18:35:55] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyx-pysite]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyalarmdotcomajax]: New version: [0.5.0b6] Old Version: [0.5.0b5]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.6.1.tar.gz tmp/vector_quantize_pytorch-1.6.2.tar.gz --markdown 20230528/v/vector-quantize-pytorch/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyx-pysite]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyx-pysite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyx-pysite-1.0.1.tar.gz tmp/pyx-pysite-1.0.2.tar.gz --markdown 20230528/p/pyx-pysite/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [image-titler]: New version: [2.4.0] Old Version: [2.3.4]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [dynamicprompts]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-28 18:35:55] WARNING root fetch - processPackages [pyaodbc]: Skipping, unable to determine old version
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyaodbc]: Start processing: soccminer
+[2023-05-28 18:35:55] INFO root fetch - processPackages [dynamicprompts]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-28 18:35:55] INFO root fetch - main [MainThread]: End processing [pyaodbc] error
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyalarmdotcomajax]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [pyalarmdotcomajax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalarmdotcomajax-0.5.0b5.tar.gz tmp/pyalarmdotcomajax-0.5.0b6.tar.gz --markdown 20230528/p/pyalarmdotcomajax/0.5.0b5-0.5.0b6/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [jaraco.develop]: New version: [7.9.1] Old Version: [7.9.0]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [soccminer]: New version: [0.0.40a1] Old Version: [0.0.39a1]
+[2023-05-28 18:35:55] INFO root fetch - processPackages [image-titler]: Downloading https://files.pythonhosted.org/packages/aa/97/9742bf17b2904cd3ad4cb27fa7fc6c6843d95efc19cae984bb6c111e4aad/image-titler-2.3.4.tar.gz
+[2023-05-28 18:35:55] INFO root fetch - processPackages [jaraco.develop]: Downloading https://files.pythonhosted.org/packages/37/e2/c1e161d6e86ddd1bf447938ffd2603eb81f4c86edc396b39771b0b0df9fc/jaraco.develop-7.9.0.tar.gz
+[2023-05-28 18:35:55] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230528/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230528/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [soccminer]: Downloading https://files.pythonhosted.org/packages/01/ca/0feea59061d938cb9cc03cdb9ae99851eab9470e1bf530b629e95b420d13/soccminer-0.0.39a1.tar.gz
+[2023-05-28 18:35:55] INFO root fetch - processPackages [dynamicprompts]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [dynamicprompts]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [dynamicprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicprompts-0.7.0.tar.gz tmp/dynamicprompts-0.7.1.tar.gz --markdown 20230528/d/dynamicprompts/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [dynamicprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicprompts-0.7.0.tar.gz tmp/dynamicprompts-0.7.1.tar.gz --markdown 20230528/d/dynamicprompts/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [soccminer]: Downloading https://files.pythonhosted.org/packages/e4/b0/bbb1f875ae7093212939cdd504dc22f63dcd7e0b8649b1ca61c931445afd/soccminer-0.0.40a1.tar.gz
+[2023-05-28 18:35:55] INFO root fetch - processPackages [jaraco.develop]: Downloading https://files.pythonhosted.org/packages/20/2d/16cf4a7654cc9364083e4419a0641648e22fc2a6bc8b941bb5752d923a56/jaraco.develop-7.9.1.tar.gz
+[2023-05-28 18:35:55] INFO root fetch - processPackages [soccminer]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [soccminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccminer-0.0.39a1.tar.gz tmp/soccminer-0.0.40a1.tar.gz --markdown 20230528/s/soccminer/0.0.39a1-0.0.40a1/diff.md --exclude *.pyd
+[2023-05-28 18:35:55] INFO root fetch - processPackages [jaraco.develop]: executing diffoscope
+[2023-05-28 18:35:55] INFO root fetch - processPackages [jaraco.develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaraco.develop-7.9.0.tar.gz tmp/jaraco.develop-7.9.1.tar.gz --markdown 20230528/j/jaraco.develop/7.9.0-7.9.1/diff.md --exclude *.pyd
+[2023-05-28 18:35:56] INFO root fetch - processPackages [image-titler]: Downloading https://files.pythonhosted.org/packages/5a/7c/2b1934941d0dc173fdae01dfa2ad34ba3597e75c6b2e403a093875fb53f8/image-titler-2.4.0.tar.gz
+[2023-05-28 18:35:56] INFO root fetch - main [MainThread]: End processing [pyx-pysite]: success
+[2023-05-28 18:35:56] INFO root fetch - processPackages [image-titler]: executing diffoscope
+[2023-05-28 18:35:56] INFO root fetch - processPackages [image-titler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-titler-2.3.4.tar.gz tmp/image-titler-2.4.0.tar.gz --markdown 20230528/i/image-titler/2.3.4-2.4.0/diff.md --exclude *.pyd
+[2023-05-28 18:35:57] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-28 18:35:57] INFO root fetch - main [MainThread]: End processing [dynamicprompts]: success
+[2023-05-28 18:35:57] INFO root fetch - main [MainThread]: End processing [soccminer]: success
+[2023-05-28 18:35:57] INFO root fetch - main [MainThread]: End processing [jaraco.develop]: success
+[2023-05-28 18:35:57] INFO root fetch - main [MainThread]: End processing [dynamicprompts]: success
+[2023-05-28 18:35:57] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-28 18:35:58] INFO root fetch - main [MainThread]: End processing [image-titler]: success
+[2023-05-28 18:35:58] INFO root fetch - main [MainThread]: End processing [pyalarmdotcomajax]: success
+[2023-05-28 18:35:59] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-28 18:35:59] INFO root fetch - main [MainThread]: Store serial: [18282143]
