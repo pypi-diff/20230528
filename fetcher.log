@@ -10143,3 +10143,54 @@ EOFError: EOF read where object expected
 [2023-05-28 22:35:10] INFO root fetch - main [MainThread]: End processing [gscp]: success
 [2023-05-28 22:35:11] INFO root fetch - main [MainThread]: End processing [animedata]: success
 [2023-05-28 22:35:11] INFO root fetch - main [MainThread]: Store serial: [18283372]
+[2023-05-28 22:40:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283372]
+[2023-05-28 22:40:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: regis
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rising-plugin
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dipense
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensorPak
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whats-that-code
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anisha-vehicles
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eventloop
+[2023-05-28 22:40:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-envparse
+[2023-05-28 22:40:20] INFO root fetch - processPackages [rising-plugin]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 22:40:20] INFO root fetch - processPackages [dipense]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-28 22:40:20] INFO root fetch - processPackages [tensorPak]: New version: [1.0] Old Version: [0.2]
+[2023-05-28 22:40:20] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 22:40:20] INFO root fetch - processPackages [anisha-vehicles]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 22:40:20] INFO root fetch - processPackages [whats-that-code]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-28 22:40:20] WARNING root fetch - processPackages [python-envparse]: Skipping, unable to determine old version
+[2023-05-28 22:40:20] INFO root fetch - main [MainThread]: End processing [python-envparse] error
+[2023-05-28 22:40:20] INFO root fetch - processPackages [eventloop]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 22:40:20] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230528/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 22:40:20] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/df/fc/ec627baee3168789c947e7fd732986f5b2cd7d6e8c69f97bd775e555d853/rising_plugin-0.0.2.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [anisha-vehicles]: Downloading https://files.pythonhosted.org/packages/cf/c2/25f183ffd7217a4395c23343736ae7ad6101922126d89c1c190580220324/anisha_vehicles-0.2.3.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [tensorPak]: Downloading https://files.pythonhosted.org/packages/4b/ba/c4cf9ccaab3375863d9dd9ba84b11fd602649115c298ee2f5bf2c52e6e55/tensorPak-0.2.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [dipense]: Downloading https://files.pythonhosted.org/packages/0c/40/ca77d7105fe34956238f3f11eadbd2cb50028740658dba5ee242f6b99459/dipense-0.1.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [whats-that-code]: Downloading https://files.pythonhosted.org/packages/ae/f6/835b37a0d8d0fbac79f46444b5bb2d736440c214487ae0344ac3d3871a57/whats_that_code-0.1.9.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/55/46/8a88c04c4404f98e9d597872bb75348334edd6629ef26ce34bf3f4df7fa8/rising_plugin-0.0.3.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [anisha-vehicles]: Downloading https://files.pythonhosted.org/packages/84/31/70e445c051b583dddd0a70c79e2b80ce63aa4f9882af5b79f40b6647067a/anisha_vehicles-0.2.4.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [tensorPak]: Downloading https://files.pythonhosted.org/packages/cf/a8/4faec760f99b398ebe6f15adeeba9b73adcc7eefe3def84d340836fc41bd/tensorPak-1.0.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.2.tar.gz tmp/rising_plugin-0.0.3.tar.gz --markdown 20230528/r/rising-plugin/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 22:40:20] INFO root fetch - processPackages [tensorPak]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [tensorPak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorPak-0.2.tar.gz tmp/tensorPak-1.0.tar.gz --markdown 20230528/t/tensorPak/0.2-1.0/diff.md --exclude *.pyd
+[2023-05-28 22:40:20] INFO root fetch - processPackages [whats-that-code]: Downloading https://files.pythonhosted.org/packages/17/43/76d1f51a889e321114f85830cc7b9f4a7e60f8bb35d535da07040ba67c16/whats_that_code-0.2.0.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [eventloop]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [eventloop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventloop-0.0.8.tar.gz tmp/eventloop-0.0.9.tar.gz --markdown 20230528/e/eventloop/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 22:40:20] INFO root fetch - processPackages [dipense]: Downloading https://files.pythonhosted.org/packages/bc/31/2a843aa3ddddc7d6ab9249677ae4e48c11bb47418b41065445c4b56cdaa3/dipense-0.1.1.tar.gz
+[2023-05-28 22:40:20] INFO root fetch - processPackages [anisha-vehicles]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [anisha-vehicles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anisha_vehicles-0.2.3.tar.gz tmp/anisha_vehicles-0.2.4.tar.gz --markdown 20230528/a/anisha-vehicles/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 22:40:20] INFO root fetch - processPackages [dipense]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [dipense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipense-0.1.tar.gz tmp/dipense-0.1.1.tar.gz --markdown 20230528/d/dipense/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 22:40:20] INFO root fetch - processPackages [whats-that-code]: executing diffoscope
+[2023-05-28 22:40:20] INFO root fetch - processPackages [whats-that-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whats_that_code-0.1.9.tar.gz tmp/whats_that_code-0.2.0.tar.gz --markdown 20230528/w/whats-that-code/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 22:40:21] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-05-28 22:40:21] INFO root fetch - main [MainThread]: End processing [tensorPak]: success
+[2023-05-28 22:40:21] INFO root fetch - main [MainThread]: End processing [anisha-vehicles]: success
+[2023-05-28 22:40:22] INFO root fetch - main [MainThread]: End processing [eventloop]: success
+[2023-05-28 22:40:22] INFO root fetch - main [MainThread]: End processing [dipense]: success
+[2023-05-28 22:40:22] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-28 22:40:22] INFO root fetch - main [MainThread]: End processing [whats-that-code]: success
+[2023-05-28 22:40:22] INFO root fetch - main [MainThread]: Store serial: [18283395]
