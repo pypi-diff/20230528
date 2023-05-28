@@ -1968,3 +1968,17 @@
 [2023-05-28 05:09:47] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
 [2023-05-28 05:09:49] INFO root fetch - main [MainThread]: End processing [pydantic-core]: success
 [2023-05-28 05:09:49] INFO root fetch - main [MainThread]: Store serial: [18278279]
+[2023-05-28 05:14:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278279]
+[2023-05-28 05:14:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 05:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcnets
+[2023-05-28 05:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GANDLF
+[2023-05-28 05:14:57] INFO root fetch - processPackages [mcnets]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 05:14:57] INFO root fetch - processPackages [GANDLF]: New version: [0.0.17.dev20230528] Old Version: [0.0.17.dev20230527]
+[2023-05-28 05:14:57] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/85/e4/0b349e66baa505a672046934c82cb0324850eb0046467595815256430607/mcnets-0.2.3.tar.gz
+[2023-05-28 05:14:58] WARNING root fetch - processPackages [mcnets]: Skipping package: exceeds size limit 72487488>=10485760
+[2023-05-28 05:14:58] INFO root fetch - main [MainThread]: End processing [mcnets] error
+[2023-05-28 05:14:58] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/27/d3/89103bc372bc0127f4f4227f1a834d3ea593815a06918afbfc8fde9422d7/GANDLF-0.0.17.dev20230528.tar.gz
+[2023-05-28 05:14:58] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-28 05:14:58] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230527.tar.gz tmp/GANDLF-0.0.17.dev20230528.tar.gz --markdown 20230528/G/GANDLF/0.0.17.dev20230527-0.0.17.dev20230528/diff.md --exclude *.pyd
+[2023-05-28 05:15:00] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-28 05:15:00] INFO root fetch - main [MainThread]: Store serial: [18278285]
