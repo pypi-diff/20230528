@@ -1145,3 +1145,51 @@
 [2023-05-28 02:43:31] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
 [2023-05-28 02:43:32] INFO root fetch - main [MainThread]: End processing [django-precise-bbcode]: success
 [2023-05-28 02:43:32] INFO root fetch - main [MainThread]: Store serial: [18277746]
+[2023-05-28 02:48:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277746]
+[2023-05-28 02:48:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rajm
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfds-nightly
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rtb-toolbox
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kubric-nightly
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-comprehend-s3olap
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rtb-toolbox
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rtb-toolbox
+[2023-05-28 02:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dfa-identify
+[2023-05-28 02:48:40] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.43] Old Version: [0.1.42]
+[2023-05-28 02:48:40] WARNING root fetch - processPackages [rajm]: Skipping, unable to determine old version
+[2023-05-28 02:48:40] INFO root fetch - main [MainThread]: End processing [rajm] error
+[2023-05-28 02:48:40] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.43] Old Version: [0.1.42]
+[2023-05-28 02:48:40] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.43] Old Version: [0.1.42]
+[2023-05-28 02:48:40] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 02:48:40] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-28 02:48:41] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305270044] Old Version: [4.9.2.dev202305260044]
+[2023-05-28 02:48:41] INFO root fetch - processPackages [dfa-identify]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-28 02:48:41] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/09/93/ba538c947c7d04cb672882b6eb133bc5273cfccaef6ff3575296c248ad10/rtb_toolbox-0.1.42.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/09/93/ba538c947c7d04cb672882b6eb133bc5273cfccaef6ff3575296c248ad10/rtb_toolbox-0.1.42.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/09/93/ba538c947c7d04cb672882b6eb133bc5273cfccaef6ff3575296c248ad10/rtb_toolbox-0.1.42.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-28 02:48:41] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230528/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 02:48:41] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-28 02:48:41] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-28 02:48:41] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/d2/6b/6280d7cf733bb6ea7c6a0fc80b18a2bcbcbd235846fcba05f3ee88fa524d/tfds-nightly-4.9.2.dev202305270044.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/e5/db/380fbaf56e9c2e91eba3946fea920f702fd753cac710ce6e129a95798263/rtb_toolbox-0.1.43.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/e5/db/380fbaf56e9c2e91eba3946fea920f702fd753cac710ce6e129a95798263/rtb_toolbox-0.1.43.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/e5/db/380fbaf56e9c2e91eba3946fea920f702fd753cac710ce6e129a95798263/rtb_toolbox-0.1.43.tar.gz
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.42.tar.gz tmp/rtb_toolbox-0.1.43.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.42-0.1.43/diff.md --exclude *.pyd
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.42.tar.gz tmp/rtb_toolbox-0.1.43.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.42-0.1.43/diff.md --exclude *.pyd
+[2023-05-28 02:48:41] INFO root fetch - processPackages [dfa-identify]: executing diffoscope
+[2023-05-28 02:48:41] INFO root fetch - processPackages [dfa-identify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfa_identify-3.9.0.tar.gz tmp/dfa_identify-3.9.1.tar.gz --markdown 20230528/d/dfa-identify/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 02:48:41] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.42.tar.gz tmp/rtb_toolbox-0.1.43.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.42-0.1.43/diff.md --exclude *.pyd
+[2023-05-28 02:48:41] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-28 02:48:41] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305260044.tar.gz tmp/tfds-nightly-4.9.2.dev202305270044.tar.gz --markdown 20230528/t/tfds-nightly/4.9.2.dev202305260044-4.9.2.dev202305270044/diff.md --exclude *.pyd
+[2023-05-28 02:48:42] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 02:48:42] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-28 02:48:42] INFO root fetch - main [MainThread]: End processing [dfa-identify]: success
+[2023-05-28 02:48:43] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 02:48:44] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 02:48:55] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-28 02:48:55] INFO root fetch - main [MainThread]: Store serial: [18277772]
