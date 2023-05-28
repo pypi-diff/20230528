@@ -7969,3 +7969,41 @@ EOFError: EOF read where object expected
 [2023-05-28 17:57:53] INFO root fetch - main [MainThread]: End processing [rigorous-recorder]: success
 [2023-05-28 17:58:43] INFO root fetch - main [MainThread]: End processing [daba]: success
 [2023-05-28 17:58:43] INFO root fetch - main [MainThread]: Store serial: [18281930]
+[2023-05-28 18:03:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281930]
+[2023-05-28 18:03:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: natf
+[2023-05-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dnswrapper
+[2023-05-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multicallable
+[2023-05-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myl
+[2023-05-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: audiodiffusion
+[2023-05-28 18:03:52] WARNING root fetch - processPackages [myl]: Skipping, unable to determine old version
+[2023-05-28 18:03:52] INFO root fetch - main [MainThread]: End processing [myl] error
+[2023-05-28 18:03:52] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-28 18:03:52] INFO root fetch - processPackages [multicallable]: New version: [5.1.0] Old Version: [5.0.1]
+[2023-05-28 18:03:52] INFO root fetch - processPackages [dnswrapper]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 18:03:52] INFO root fetch - processPackages [natf]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-05-28 18:03:52] INFO root fetch - processPackages [audiodiffusion]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-05-28 18:03:52] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-28 18:03:52] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230528/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-28 18:03:52] INFO root fetch - processPackages [multicallable]: Downloading https://files.pythonhosted.org/packages/73/cb/1b7dc331fbe9ba185d257b2f2c7d707842086db7bb6c70f4e598d961074f/multicallable-5.0.1.tar.gz
+[2023-05-28 18:03:52] INFO root fetch - processPackages [natf]: Downloading https://files.pythonhosted.org/packages/e6/f5/07ce3271b8cbf23a90db8eb19bc0dcb9f9d25a8693f00df69c7630299b4e/natf-2.4.2-py3-none-any.whl
+[2023-05-28 18:03:52] INFO root fetch - processPackages [dnswrapper]: Downloading https://files.pythonhosted.org/packages/e8/4f/5b862a7676f06967dc6d9b771a2a837b92fd5e7540988c8110cf72786411/dnswrapper-0.0.3.tar.gz
+[2023-05-28 18:03:52] INFO root fetch - processPackages [audiodiffusion]: Downloading https://files.pythonhosted.org/packages/3a/7d/92caf6dea372b182ccebd1a27bb6289ee448393d84414e600c3e98f170e6/audiodiffusion-1.5.6.tar.gz
+[2023-05-28 18:03:53] INFO root fetch - processPackages [multicallable]: Downloading https://files.pythonhosted.org/packages/b7/0a/f59f80f47662374aa40ee2910f7a63f9ac871d7e76deb3cd10ee8a0afb04/multicallable-5.1.0.tar.gz
+[2023-05-28 18:03:53] INFO root fetch - processPackages [natf]: Downloading https://files.pythonhosted.org/packages/75/9b/c27406ca218c348e9840b4b638ef0c023092a0f78371b3a0e243b60c37ff/natf-2.4.3-py3-none-any.whl
+[2023-05-28 18:03:53] INFO root fetch - processPackages [audiodiffusion]: executing diffoscope
+[2023-05-28 18:03:53] INFO root fetch - processPackages [audiodiffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiodiffusion-1.5.5.tar.gz tmp/audiodiffusion-1.5.6.tar.gz --markdown 20230528/a/audiodiffusion/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-05-28 18:03:53] INFO root fetch - processPackages [dnswrapper]: Downloading https://files.pythonhosted.org/packages/7e/60/d946bc282bdbc6be4b316c471118459df4630374d1283bc17e1b5575ef90/dnswrapper-0.0.4.tar.gz
+[2023-05-28 18:03:53] INFO root fetch - processPackages [natf]: executing diffoscope
+[2023-05-28 18:03:53] INFO root fetch - processPackages [natf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/natf-2.4.2-py3-none-any.whl.zip tmp/natf-2.4.3-py3-none-any.whl.zip --markdown 20230528/n/natf/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-05-28 18:03:53] INFO root fetch - processPackages [multicallable]: executing diffoscope
+[2023-05-28 18:03:53] INFO root fetch - processPackages [multicallable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multicallable-5.0.1.tar.gz tmp/multicallable-5.1.0.tar.gz --markdown 20230528/m/multicallable/5.0.1-5.1.0/diff.md --exclude *.pyd
+[2023-05-28 18:03:53] INFO root fetch - processPackages [dnswrapper]: executing diffoscope
+[2023-05-28 18:03:53] INFO root fetch - processPackages [dnswrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnswrapper-0.0.3.tar.gz tmp/dnswrapper-0.0.4.tar.gz --markdown 20230528/d/dnswrapper/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 18:03:53] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-28 18:03:54] INFO root fetch - main [MainThread]: End processing [audiodiffusion]: success
+[2023-05-28 18:03:54] INFO root fetch - main [MainThread]: End processing [dnswrapper]: success
+[2023-05-28 18:03:54] INFO root fetch - main [MainThread]: End processing [multicallable]: success
+[2023-05-28 18:03:54] INFO root fetch - main [MainThread]: End processing [natf]: success
+[2023-05-28 18:03:54] INFO root fetch - main [MainThread]: Store serial: [18281950]
