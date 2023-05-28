@@ -9247,3 +9247,70 @@ EOFError: EOF read where object expected
 [2023-05-28 20:39:36] INFO root fetch - main [MainThread]: End processing [freqtrade]: success
 [2023-05-28 20:40:08] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
 [2023-05-28 20:40:08] INFO root fetch - main [MainThread]: Store serial: [18282771]
+[2023-05-28 20:45:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282771]
+[2023-05-28 20:45:18] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pip-run
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: custom-utils
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeybee-idaice
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-adminfilters
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: promptlayer
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: johnsnowlabs
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: johnsnowlabs-for-databricks
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: langchain
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tansen
+[2023-05-28 20:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: databind
+[2023-05-28 20:45:18] INFO root fetch - processPackages [pip-run]: New version: [9.5.0] Old Version: [9.4.0]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [django-adminfilters]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-28 20:45:18] WARNING root fetch - processPackages [honeybee-idaice]: Skipping, unable to determine old version
+[2023-05-28 20:45:18] INFO root fetch - processPackages [honeybee-idaice]: Start processing: databind.core
+[2023-05-28 20:45:18] INFO root fetch - main [MainThread]: End processing [honeybee-idaice] error
+[2023-05-28 20:45:18] INFO root fetch - processPackages [custom-utils]: New version: [0.0.39] Old Version: [0.0.38]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [promptlayer]: New version: [0.1.83] Old Version: [0.1.82]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: New version: [4.4.6] Old Version: [4.4.5]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [johnsnowlabs]: New version: [4.4.6] Old Version: [4.4.5]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind]: New version: [4.2.8] Old Version: [4.2.7]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-28 20:45:18] WARNING root fetch - processPackages [tansen]: Skipping, unable to determine old version
+[2023-05-28 20:45:18] INFO root fetch - processPackages [tansen]: Start processing: databind.json
+[2023-05-28 20:45:18] INFO root fetch - main [MainThread]: End processing [tansen] error
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind.json]: New version: [4.2.8] Old Version: [4.2.7]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind.core]: New version: [4.3.0] Old Version: [4.2.8]
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind]: executing diffoscope
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind-4.2.7.tar.gz tmp/databind-4.2.8.tar.gz --markdown 20230528/d/databind/4.2.7-4.2.8/diff.md --exclude *.pyd
+[2023-05-28 20:45:18] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-28 20:45:18] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230528/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-28 20:45:18] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-28 20:45:18] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.38.tar.gz tmp/custom-utils-0.0.39.tar.gz --markdown 20230528/c/custom-utils/0.0.38-0.0.39/diff.md --exclude *.pyd
+[2023-05-28 20:45:18] INFO root fetch - processPackages [johnsnowlabs]: Downloading https://files.pythonhosted.org/packages/41/b0/5eb1b9e3032b1556492ac88f00fd6455c7d607953017cd912657e26d7887/johnsnowlabs-4.4.5.tar.gz
+[2023-05-28 20:45:18] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Downloading https://files.pythonhosted.org/packages/62/b8/c497d7befcc222db3a05f0e8c226650b4fb5a89b6cadba350e6d3add3ea5/johnsnowlabs_for_databricks-4.4.5.tar.gz
+[2023-05-28 20:45:18] INFO root fetch - processPackages [django-adminfilters]: Downloading https://files.pythonhosted.org/packages/ce/7c/2ff9c41500cdb08a037d144174ff9b1bc4e92c9ace524cbe6d901d07fb63/django-adminfilters-2.1.0.tar.gz
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind.json]: executing diffoscope
+[2023-05-28 20:45:18] INFO root fetch - processPackages [databind.json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.json-4.2.7-py3-none-any.whl.zip tmp/databind.json-4.2.8-py3-none-any.whl.zip --markdown 20230528/d/databind.json/4.2.7-4.2.8/diff.md --exclude *.pyd
+[2023-05-28 20:45:19] INFO root fetch - processPackages [promptlayer]: Downloading https://files.pythonhosted.org/packages/a8/fb/cbe19e708d15df1c1de67dad1c9a10726668ef9b002f6000c1c656ea96a6/promptlayer-0.1.83.tar.gz
+[2023-05-28 20:45:19] INFO root fetch - processPackages [pip-run]: executing diffoscope
+[2023-05-28 20:45:19] INFO root fetch - processPackages [pip-run]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-run-9.4.0.tar.gz tmp/pip-run-9.5.0.tar.gz --markdown 20230528/p/pip-run/9.4.0-9.5.0/diff.md --exclude *.pyd
+[2023-05-28 20:45:19] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: Downloading https://files.pythonhosted.org/packages/99/e1/c279b1e45ad4fffc24bd26289de4640d5ea0be72934f823ce89faf065521/johnsnowlabs_for_databricks-4.4.6.tar.gz
+[2023-05-28 20:45:19] INFO root fetch - processPackages [promptlayer]: executing diffoscope
+[2023-05-28 20:45:19] INFO root fetch - processPackages [promptlayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptlayer-0.1.82.tar.gz tmp/promptlayer-0.1.83.tar.gz --markdown 20230528/p/promptlayer/0.1.82-0.1.83/diff.md --exclude *.pyd
+[2023-05-28 20:45:19] INFO root fetch - processPackages [databind.core]: Downloading https://files.pythonhosted.org/packages/14/78/a32364cbbcc41e6b6aba99ca73e6e8cf881f781e891e21e8b60d5f9daf84/databind.core-4.3.0.tar.gz
+[2023-05-28 20:45:19] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: executing diffoscope
+[2023-05-28 20:45:19] INFO root fetch - processPackages [johnsnowlabs-for-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks-4.4.5.tar.gz tmp/johnsnowlabs_for_databricks-4.4.6.tar.gz --markdown 20230528/j/johnsnowlabs-for-databricks/4.4.5-4.4.6/diff.md --exclude *.pyd
+[2023-05-28 20:45:19] INFO root fetch - processPackages [johnsnowlabs]: Downloading https://files.pythonhosted.org/packages/b6/7e/66ab6a5ae1ea5119ffebe32f370164be6578bd47a654e0c50621746d3523/johnsnowlabs-4.4.6.tar.gz
+[2023-05-28 20:45:19] INFO root fetch - processPackages [django-adminfilters]: Downloading https://files.pythonhosted.org/packages/aa/7e/9f1516b61aaa2a7e8764c54b08c23f62a479cf434ef2f944917827c99f27/django-adminfilters-2.2.0.tar.gz
+[2023-05-28 20:45:19] INFO root fetch - processPackages [johnsnowlabs]: executing diffoscope
+[2023-05-28 20:45:19] INFO root fetch - processPackages [johnsnowlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs-4.4.5.tar.gz tmp/johnsnowlabs-4.4.6.tar.gz --markdown 20230528/j/johnsnowlabs/4.4.5-4.4.6/diff.md --exclude *.pyd
+[2023-05-28 20:45:19] INFO root fetch - processPackages [django-adminfilters]: executing diffoscope
+[2023-05-28 20:45:19] INFO root fetch - processPackages [django-adminfilters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-adminfilters-2.1.0.tar.gz tmp/django-adminfilters-2.2.0.tar.gz --markdown 20230528/d/django-adminfilters/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-28 20:45:19] INFO root fetch - processPackages [databind.core]: executing diffoscope
+[2023-05-28 20:45:19] INFO root fetch - processPackages [databind.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.core-4.2.8.tar.gz tmp/databind.core-4.3.0.tar.gz --markdown 20230528/d/databind.core/4.2.8-4.3.0/diff.md --exclude *.pyd
+[2023-05-28 20:45:20] INFO root fetch - main [MainThread]: End processing [databind]: success
+[2023-05-28 20:45:20] INFO root fetch - main [MainThread]: End processing [databind.json]: success
+[2023-05-28 20:45:20] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-28 20:45:20] INFO root fetch - main [MainThread]: End processing [promptlayer]: success
+[2023-05-28 20:45:21] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks]: success
+[2023-05-28 20:45:21] INFO root fetch - main [MainThread]: End processing [pip-run]: success
+[2023-05-28 20:45:21] INFO root fetch - main [MainThread]: End processing [johnsnowlabs]: success
+[2023-05-28 20:45:21] INFO root fetch - main [MainThread]: End processing [django-adminfilters]: success
+[2023-05-28 20:45:21] INFO root fetch - main [MainThread]: End processing [databind.core]: success
+[2023-05-28 20:45:22] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-28 20:45:22] INFO root fetch - main [MainThread]: Store serial: [18282807]
