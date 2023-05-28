@@ -6904,3 +6904,79 @@ EOFError: EOF read where object expected
 [2023-05-28 16:14:22] INFO root fetch - main [MainThread]: End processing [openlane]: success
 [2023-05-28 16:14:22] INFO root fetch - main [MainThread]: End processing [hello2]: success
 [2023-05-28 16:14:22] INFO root fetch - main [MainThread]: Store serial: [18281265]
+[2023-05-28 16:19:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281265]
+[2023-05-28 16:19:31] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scsd
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-omnilogic-local
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: turandot
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ohmytmp
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyezviz
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kodexa
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-l4d2-server
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eArsivPortal
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyvosklivesubtitle
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hg-loggingmod
+[2023-05-28 16:19:31] INFO root fetch - processPackages [ohmytmp]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 16:19:31] INFO root fetch - processPackages [eArsivPortal]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [pyezviz]: New version: [0.2.0.9] Old Version: [0.2.0.8]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [ohmytmp]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [ohmytmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ohmytmp-0.0.1.tar.gz tmp/ohmytmp-0.0.2.tar.gz --markdown 20230528/o/ohmytmp/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [hg-loggingmod]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [pyvosklivesubtitle]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [turandot]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [scsd]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [python-omnilogic-local]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.5.5] Old Version: [0.5.4.2]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [pyezviz]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [pyezviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyezviz-0.2.0.8.tar.gz tmp/pyezviz-0.2.0.9.tar.gz --markdown 20230528/p/pyezviz/0.2.0.8-0.2.0.9/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [kodexa]: New version: [6.2.25104807008] Old Version: [6.1.4]
+[2023-05-28 16:19:32] INFO root fetch - processPackages [eArsivPortal]: Downloading https://files.pythonhosted.org/packages/e0/7e/aeb3a394cf4ee2eed1498282842057cfbbb6fe5c8fceefa30de1b0d1c8e8/eArsivPortal-0.0.3.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [hg-loggingmod]: Downloading https://files.pythonhosted.org/packages/cd/ff/f9d969448778d3c1f9780c903be7015aa812507c9d137e6e092565332836/hg-loggingmod-0.2.1.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [turandot]: Downloading https://files.pythonhosted.org/packages/9a/40/c73300c8d464a693852c98e83f5a9accc22755fcbe67a87a1130d1c5c9ad/turandot-3.1.0.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [python-omnilogic-local]: Downloading https://files.pythonhosted.org/packages/11/f1/ae8183a386b3ce15e26c4ba6ec600ee976ee8d7aa84ac3c3deb528a972ea/python_omnilogic_local-0.4.1.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [eArsivPortal]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [eArsivPortal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eArsivPortal-0.0.2.tar.gz tmp/eArsivPortal-0.0.3.tar.gz --markdown 20230528/e/eArsivPortal/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [python-omnilogic-local]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [python-omnilogic-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_omnilogic_local-0.4.0.tar.gz tmp/python_omnilogic_local-0.4.1.tar.gz --markdown 20230528/p/python-omnilogic-local/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [pyvosklivesubtitle]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [pyvosklivesubtitle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvosklivesubtitle-0.1.4.tar.gz tmp/pyvosklivesubtitle-0.1.5.tar.gz --markdown 20230528/p/pyvosklivesubtitle/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [scsd]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [scsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scsd-0.0.7.tar.gz tmp/scsd-0.0.8.tar.gz --markdown 20230528/s/scsd/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [turandot]: Downloading https://files.pythonhosted.org/packages/b6/65/bc118a665333cefc96de6cc2d1e9fcf8920fdeae8a47c56d931d7a86a63c/turandot-3.1.1.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/31/2b/6ba360ebd4a1f875904646afc3b8b045d0f713db536e4443155cdb489afc/nonebot_plugin_l4d2_server-0.5.4.2.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [hg-loggingmod]: Downloading https://files.pythonhosted.org/packages/3a/e0/f9be0a45989e369a28fb3a5c46825824d7c7871944cfc02702d31a1294ec/hg-loggingmod-0.3.0.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [hg-loggingmod]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [hg-loggingmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hg-loggingmod-0.2.1.tar.gz tmp/hg-loggingmod-0.3.0.tar.gz --markdown 20230528/h/hg-loggingmod/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/3b/cd/e09da8e1152650116e18b332ba01be9734d7de4523ea4c49fdaaf69235dc/kodexa-6.2.25104807008.tar.gz
+[2023-05-28 16:19:32] INFO root fetch - processPackages [kodexa]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [kodexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa-6.1.4.tar.gz tmp/kodexa-6.2.25104807008.tar.gz --markdown 20230528/k/kodexa/6.1.4-6.2.25104807008/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [turandot]: executing diffoscope
+[2023-05-28 16:19:32] INFO root fetch - processPackages [turandot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turandot-3.1.0.tar.gz tmp/turandot-3.1.1.tar.gz --markdown 20230528/t/turandot/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-28 16:19:32] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: Downloading https://files.pythonhosted.org/packages/9d/83/6705494a03289fd4d8fff8024194b02eee8ae00015cd511a94f75581c681/nonebot_plugin_l4d2_server-0.5.5.tar.gz
+[2023-05-28 16:19:33] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-05-28 16:19:33] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.5.4.2.tar.gz tmp/nonebot_plugin_l4d2_server-0.5.5.tar.gz --markdown 20230528/n/nonebot-plugin-l4d2-server/0.5.4.2-0.5.5/diff.md --exclude *.pyd
+[2023-05-28 16:19:33] INFO root fetch - processPackages [ohmytmp]: Start processing: bovine
+[2023-05-28 16:19:33] INFO root fetch - main [MainThread]: End processing [ohmytmp]: success
+[2023-05-28 16:19:33] INFO root fetch - processPackages [bovine]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 16:19:33] INFO root fetch - processPackages [bovine]: executing diffoscope
+[2023-05-28 16:19:33] INFO root fetch - processPackages [bovine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine-0.2.3.tar.gz tmp/bovine-0.2.4.tar.gz --markdown 20230528/b/bovine/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:19:33] INFO root fetch - processPackages [eArsivPortal]: Start processing: PoePT
+[2023-05-28 16:19:33] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
+[2023-05-28 16:19:33] WARNING root fetch - processPackages [PoePT]: Skipping, unable to determine old version
+[2023-05-28 16:19:33] INFO root fetch - processPackages [PoePT]: Start processing: docker-recipe
+[2023-05-28 16:19:33] INFO root fetch - main [MainThread]: End processing [PoePT] error
+[2023-05-28 16:19:33] INFO root fetch - processPackages [docker-recipe]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [python-omnilogic-local]: success
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [scsd]: success
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [pyezviz]: success
+[2023-05-28 16:19:34] INFO root fetch - processPackages [docker-recipe]: Downloading https://files.pythonhosted.org/packages/77/7c/c62980206c608d20bc54b1d663250edfd0fafd3e76fc24c3319c369f2b9b/docker-recipe-0.1.2.tar.gz
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [pyvosklivesubtitle]: success
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [hg-loggingmod]: success
+[2023-05-28 16:19:34] INFO root fetch - processPackages [docker-recipe]: executing diffoscope
+[2023-05-28 16:19:34] INFO root fetch - processPackages [docker-recipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-recipe-0.1.1.tar.gz tmp/docker-recipe-0.1.2.tar.gz --markdown 20230528/d/docker-recipe/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [kodexa]: success
+[2023-05-28 16:19:34] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
+[2023-05-28 16:19:35] INFO root fetch - main [MainThread]: End processing [docker-recipe]: success
+[2023-05-28 16:19:35] INFO root fetch - main [MainThread]: End processing [bovine]: success
+[2023-05-28 16:19:36] INFO root fetch - main [MainThread]: End processing [turandot]: success
+[2023-05-28 16:19:36] INFO root fetch - main [MainThread]: Store serial: [18281306]
