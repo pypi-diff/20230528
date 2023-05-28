@@ -1668,3 +1668,20 @@
 [2023-05-28 04:04:41] INFO root fetch - main [MainThread]: End processing [autoprof]: success
 [2023-05-28 04:07:07] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2023-05-28 04:07:07] INFO root fetch - main [MainThread]: Store serial: [18278023]
+[2023-05-28 04:12:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278023]
+[2023-05-28 04:12:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 04:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ptrFinance
+[2023-05-28 04:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedin
+[2023-05-28 04:12:16] INFO root fetch - processPackages [ptrFinance]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 04:12:16] INFO root fetch - processPackages [embedin]: New version: [0.2.2a0] Old Version: [0.2.1]
+[2023-05-28 04:12:16] INFO root fetch - processPackages [ptrFinance]: Downloading https://files.pythonhosted.org/packages/e4/43/c7846f9cd4843cc649e9fb9a42b50a6162258f7478700a2a8e8eaa845ddf/ptrFinance-0.1.2.tar.gz
+[2023-05-28 04:12:16] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/d1/9e/bf11fe19f9be46d967f1f46d7a13c7cde3c8c2b9dab03e1bdd8655958c61/embedin-0.2.1.tar.gz
+[2023-05-28 04:12:16] INFO root fetch - processPackages [ptrFinance]: Downloading https://files.pythonhosted.org/packages/6e/00/20b8fe7fc80bc4efba16bc6ab3ca9e27a4941dc9f717c87f8ee5c608ce80/ptrFinance-0.1.3.tar.gz
+[2023-05-28 04:12:17] INFO root fetch - processPackages [ptrFinance]: executing diffoscope
+[2023-05-28 04:12:17] INFO root fetch - processPackages [ptrFinance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptrFinance-0.1.2.tar.gz tmp/ptrFinance-0.1.3.tar.gz --markdown 20230528/p/ptrFinance/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 04:12:17] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/d3/85/81c1f4e8c1638f2ebebf0423edd227705d2f90e5d872945bed9ffc83f6f2/embedin-0.2.2a0-py3-none-any.whl
+[2023-05-28 04:12:17] INFO root fetch - processPackages [embedin]: executing diffoscope
+[2023-05-28 04:12:17] INFO root fetch - processPackages [embedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedin-0.2.1.tar.gz tmp/embedin-0.2.2a0-py3-none-any.whl.zip --markdown 20230528/e/embedin/0.2.1-0.2.2a0/diff.md --exclude *.pyd
+[2023-05-28 04:12:18] INFO root fetch - main [MainThread]: End processing [ptrFinance]: success
+[2023-05-28 04:12:18] INFO root fetch - main [MainThread]: End processing [embedin]: success
+[2023-05-28 04:12:18] INFO root fetch - main [MainThread]: Store serial: [18278025]
