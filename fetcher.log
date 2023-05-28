@@ -7296,3 +7296,55 @@ EOFError: EOF read where object expected
 [2023-05-28 16:50:50] INFO root fetch - main [MainThread]: End processing [eArsivPortal]: success
 [2023-05-28 16:50:51] INFO root fetch - main [MainThread]: End processing [azure-kinect-apiserver]: success
 [2023-05-28 16:50:51] INFO root fetch - main [MainThread]: Store serial: [18281488]
+[2023-05-28 16:55:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281488]
+[2023-05-28 16:56:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifetimefitting
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phantom-types
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Abg
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-nagabus
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: taisim
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bovine-herd
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sentry-dynamic-sampling-lib
+[2023-05-28 16:56:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pytest-md-report
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-nagabus]: New version: [0.1.1.post1] Old Version: [0.1.1]
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-28 16:56:00] INFO root fetch - processPackages [bovine-herd]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-28 16:56:00] INFO root fetch - processPackages [phantom-types]: New version: [2.0.0] Old Version: [1.2.2]
+[2023-05-28 16:56:00] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: New version: [1.2.0a1] Old Version: [1.1.4a1]
+[2023-05-28 16:56:00] WARNING root fetch - processPackages [Abg]: Skipping, unable to determine old version
+[2023-05-28 16:56:00] INFO root fetch - main [MainThread]: End processing [Abg] error
+[2023-05-28 16:56:00] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-nagabus]: executing diffoscope
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-nagabus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nagabus-0.1.1.tar.gz tmp/nonebot_plugin_nagabus-0.1.1.post1.tar.gz --markdown 20230528/n/nonebot-plugin-nagabus/0.1.1-0.1.1.post1/diff.md --exclude *.pyd
+[2023-05-28 16:56:00] WARNING root fetch - processPackages [taisim]: Skipping, unable to determine old version
+[2023-05-28 16:56:00] INFO root fetch - main [MainThread]: End processing [taisim] error
+[2023-05-28 16:56:00] INFO root fetch - processPackages [pytest-md-report]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/83/3b/fe4bc44eca3df34877209b7cf4898daef8e5a8baf0f759c6e785370b5675/nonebot_plugin_stable_diffusion_diao-0.1.7.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [bovine-herd]: executing diffoscope
+[2023-05-28 16:56:00] INFO root fetch - processPackages [bovine-herd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_herd-0.2.2.tar.gz tmp/bovine_herd-0.2.4.tar.gz --markdown 20230528/b/bovine-herd/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:56:00] INFO root fetch - processPackages [pytest-md-report]: Downloading https://files.pythonhosted.org/packages/7d/7b/15078f40523ad42400def9ea8290e1407fe32b4344e3008fe68891b60410/pytest-md-report-0.3.0.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: Downloading https://files.pythonhosted.org/packages/3e/df/74ecf8e9a2b09d4aa2aeafea515772e8e11ac283d28042125fae25d06459/sentry_dynamic_sampling_lib-1.1.4a1.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: executing diffoscope
+[2023-05-28 16:56:00] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_stable_diffusion_diao-0.1.6.tar.gz tmp/nonebot_plugin_stable_diffusion_diao-0.1.7.tar.gz --markdown 20230528/n/nonebot-plugin-stable-diffusion-diao/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-28 16:56:00] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/33/61/f42758d69523543d48d0b027f75f9c5101e5f063d064951673493285aa16/lifetimefitting-0.0.19.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [phantom-types]: Downloading https://files.pythonhosted.org/packages/f8/5b/1ad3e069cbb79aa68c5c7c7eb4ddef61dc40fcdd5966a5be0a4b0a34e0be/phantom-types-1.2.2.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [pytest-md-report]: Downloading https://files.pythonhosted.org/packages/4f/6d/4f47c8f90863b5c58a5b18795715d2917d7015dce3dc50eba5f8a9a2f15d/pytest-md-report-0.3.1.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-28 16:56:00] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.18.tar.gz tmp/lifetimefitting-0.0.19.tar.gz --markdown 20230528/l/lifetimefitting/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-28 16:56:00] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: Downloading https://files.pythonhosted.org/packages/db/fd/f80d8137c3acfd1c8404e773d56afdaeea34d84be7a08c76c70c1e6ed282/sentry_dynamic_sampling_lib-1.2.0a1.tar.gz
+[2023-05-28 16:56:00] INFO root fetch - processPackages [pytest-md-report]: executing diffoscope
+[2023-05-28 16:56:00] INFO root fetch - processPackages [pytest-md-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-md-report-0.3.0.tar.gz tmp/pytest-md-report-0.3.1.tar.gz --markdown 20230528/p/pytest-md-report/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-28 16:56:00] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: executing diffoscope
+[2023-05-28 16:56:00] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry_dynamic_sampling_lib-1.1.4a1.tar.gz tmp/sentry_dynamic_sampling_lib-1.2.0a1.tar.gz --markdown 20230528/s/sentry-dynamic-sampling-lib/1.1.4a1-1.2.0a1/diff.md --exclude *.pyd
+[2023-05-28 16:56:00] INFO root fetch - processPackages [phantom-types]: Downloading https://files.pythonhosted.org/packages/7b/a9/f69a85fc92dca5d2b730a81c96bbac638962da70c7fc4ba70cf0812e63a8/phantom-types-2.0.0.tar.gz
+[2023-05-28 16:56:01] INFO root fetch - processPackages [phantom-types]: executing diffoscope
+[2023-05-28 16:56:01] INFO root fetch - processPackages [phantom-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phantom-types-1.2.2.tar.gz tmp/phantom-types-2.0.0.tar.gz --markdown 20230528/p/phantom-types/1.2.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-28 16:56:01] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nagabus]: success
+[2023-05-28 16:56:01] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-28 16:56:01] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
+[2023-05-28 16:56:02] INFO root fetch - main [MainThread]: End processing [bovine-herd]: success
+[2023-05-28 16:56:02] INFO root fetch - main [MainThread]: End processing [sentry-dynamic-sampling-lib]: success
+[2023-05-28 16:56:02] INFO root fetch - main [MainThread]: End processing [phantom-types]: success
+[2023-05-28 16:56:02] INFO root fetch - main [MainThread]: End processing [pytest-md-report]: success
+[2023-05-28 16:56:02] INFO root fetch - main [MainThread]: Store serial: [18281518]
