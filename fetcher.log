@@ -10838,3 +10838,63 @@ EOFError: EOF read where object expected
 [2023-05-28 23:54:10] INFO root fetch - main [MainThread]: End processing [attack-dashboard]: success
 [2023-05-28 23:54:11] INFO root fetch - main [MainThread]: End processing [streamlit-chat-askgdpr]: success
 [2023-05-28 23:54:11] INFO root fetch - main [MainThread]: Store serial: [18283742]
+[2023-05-28 23:59:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283742]
+[2023-05-28 23:59:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Twitch-Edog0049a
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telegin
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rising-plugin
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maestral-cocoa
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maestral-cocoa
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maestral-qt
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: maestral-qt
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dtbase
+[2023-05-28 23:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: blinkpy
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-cocoa]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [telegin]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [rising-plugin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [dtbase]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 23:59:20] WARNING root fetch - processPackages [Twitch-Edog0049a]: Skipping, unable to determine old version
+[2023-05-28 23:59:20] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a] error
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-cocoa]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-qt]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-qt]: New version: [1.7.3.dev4] Old Version: [1.7.3.dev3]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [blinkpy]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-28 23:59:20] INFO root fetch - processPackages [telegin]: Downloading https://files.pythonhosted.org/packages/2f/e4/13f6590a1092b40e58a4c85ab2016eddb62908beabd078aa91c878b72253/telegin-0.1.0-py3-none-any.whl
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/3b/b2/2b42f23f2773aaf975381f46d927c8fe9b74f84873de1879a22df5a46bff/maestral-cocoa-1.7.3.dev3.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/3b/b2/2b42f23f2773aaf975381f46d927c8fe9b74f84873de1879a22df5a46bff/maestral-cocoa-1.7.3.dev3.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/90/68/cf46df2b110074074b19eaf2ebcd430335e004dffd00d06f12de8702314d/maestral-qt-1.7.3.dev3.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/90/68/cf46df2b110074074b19eaf2ebcd430335e004dffd00d06f12de8702314d/maestral-qt-1.7.3.dev3.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/5b/0d/a583f2f7857b79a3a5008e2f29f9ef8c7ad6c88c2938cb21f7ddb9d8c733/rising_plugin-0.0.9.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [blinkpy]: Downloading https://files.pythonhosted.org/packages/bb/94/dc46b3e492c611752ea56e20a7af21780205de3b88374873288c9d7750c0/blinkpy-0.8.3-py3-none-any.whl
+[2023-05-28 23:59:20] INFO root fetch - processPackages [dtbase]: Downloading https://files.pythonhosted.org/packages/2a/23/9cd435b532221cc3381b9cc6e56d9566e6f46076c10bd677f7bf7ceda40f/dtbase-0.0.3.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [dtbase]: executing diffoscope
+[2023-05-28 23:59:20] INFO root fetch - processPackages [dtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtbase-0.0.2.tar.gz tmp/dtbase-0.0.3.tar.gz --markdown 20230528/d/dtbase/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 23:59:20] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-28 23:59:20] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.8.tar.gz tmp/rising_plugin-0.0.9.tar.gz --markdown 20230528/r/rising-plugin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/e2/61/e25f23583eae745dc537e6f2e2cf544f02cb759d45313096fcdf2c9e4054/maestral-cocoa-1.7.3.dev4.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [telegin]: Downloading https://files.pythonhosted.org/packages/56/b4/3f6cd1d74175e4d204fb9a2cfa53385cb2aef9b63c421298d3614012f766/telegin-0.1.2-py3-none-any.whl
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/4d/a6/d1c9a41aa9ef4e80388b1b6b57818fa78dde3ffca7ce41cced731d8048d0/maestral-qt-1.7.3.dev4.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/4d/a6/d1c9a41aa9ef4e80388b1b6b57818fa78dde3ffca7ce41cced731d8048d0/maestral-qt-1.7.3.dev4.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/e2/61/e25f23583eae745dc537e6f2e2cf544f02cb759d45313096fcdf2c9e4054/maestral-cocoa-1.7.3.dev4.tar.gz
+[2023-05-28 23:59:20] INFO root fetch - processPackages [blinkpy]: Downloading https://files.pythonhosted.org/packages/94/1c/9a12fec07a39b76b6cd265a781accfa81618524f334be0c4431adbf74a6c/blinkpy-0.9.0-py3-none-any.whl
+[2023-05-28 23:59:21] INFO root fetch - processPackages [telegin]: executing diffoscope
+[2023-05-28 23:59:21] INFO root fetch - processPackages [telegin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegin-0.1.0-py3-none-any.whl.zip tmp/telegin-0.1.2-py3-none-any.whl.zip --markdown 20230528/t/telegin/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-cocoa]: executing diffoscope
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-cocoa-1.7.3.dev3.tar.gz tmp/maestral-cocoa-1.7.3.dev4.tar.gz --markdown 20230528/m/maestral-cocoa/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-cocoa]: executing diffoscope
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-cocoa-1.7.3.dev3.tar.gz tmp/maestral-cocoa-1.7.3.dev4.tar.gz --markdown 20230528/m/maestral-cocoa/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-qt]: executing diffoscope
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-qt-1.7.3.dev3.tar.gz tmp/maestral-qt-1.7.3.dev4.tar.gz --markdown 20230528/m/maestral-qt/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-qt]: executing diffoscope
+[2023-05-28 23:59:21] INFO root fetch - processPackages [maestral-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-qt-1.7.3.dev3.tar.gz tmp/maestral-qt-1.7.3.dev4.tar.gz --markdown 20230528/m/maestral-qt/1.7.3.dev3-1.7.3.dev4/diff.md --exclude *.pyd
+[2023-05-28 23:59:21] INFO root fetch - processPackages [blinkpy]: executing diffoscope
+[2023-05-28 23:59:21] INFO root fetch - processPackages [blinkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blinkpy-0.8.3-py3-none-any.whl.zip tmp/blinkpy-0.9.0-py3-none-any.whl.zip --markdown 20230528/b/blinkpy/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [dtbase]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [telegin]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [blinkpy]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
+[2023-05-28 23:59:22] INFO root fetch - main [MainThread]: Store serial: [18283767]
