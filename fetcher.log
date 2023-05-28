@@ -7891,3 +7891,44 @@ EOFError: EOF read where object expected
 [2023-05-28 17:47:24] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2023-05-28 17:47:26] INFO root fetch - main [MainThread]: End processing [signalflow]: success
 [2023-05-28 17:47:26] INFO root fetch - main [MainThread]: Store serial: [18281880]
+[2023-05-28 17:52:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281880]
+[2023-05-28 17:52:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-clickzetta
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: megadata
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakvar
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: segmentation-models-pytorch
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oloren
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-batteries
+[2023-05-28 17:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyhyypapihawkmod
+[2023-05-28 17:52:35] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [django-batteries]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [pyhyypapihawkmod]: New version: [1.0.0] Old Version: [0.0.0.8]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [segmentation-models-pytorch]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [django-batteries]: executing diffoscope
+[2023-05-28 17:52:35] INFO root fetch - processPackages [django-batteries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_batteries-0.0.1.tar.gz tmp/django_batteries-0.0.2.tar.gz --markdown 20230528/d/django-batteries/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 17:52:35] INFO root fetch - processPackages [oloren]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:52:35] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 17:52:35] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:52:35] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-28 17:52:35] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230528/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-28 17:52:35] INFO root fetch - processPackages [pyhyypapihawkmod]: Downloading https://files.pythonhosted.org/packages/12/e6/6c93a007571ab3348463bb2816632bf3beb1ae86431c6188693784e34775/pyhyypapihawkmod-1.0.0.tar.gz
+[2023-05-28 17:52:35] INFO root fetch - processPackages [segmentation-models-pytorch]: Downloading https://files.pythonhosted.org/packages/97/68/119271a9693f516cfb1659023fed92a9048904af163243dd7a24a47d5115/segmentation_models_pytorch-0.3.2.tar.gz
+[2023-05-28 17:52:35] INFO root fetch - processPackages [pyhyypapihawkmod]: executing diffoscope
+[2023-05-28 17:52:35] INFO root fetch - processPackages [pyhyypapihawkmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhyypapihawkmod-0.0.0.8.tar.gz tmp/pyhyypapihawkmod-1.0.0.tar.gz --markdown 20230528/p/pyhyypapihawkmod/0.0.0.8-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 17:52:35] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-05-28 17:52:35] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230528/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:52:36] INFO root fetch - processPackages [oloren]: executing diffoscope
+[2023-05-28 17:52:36] INFO root fetch - processPackages [oloren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oloren-0.0.8.tar.gz tmp/oloren-0.0.9.tar.gz --markdown 20230528/o/oloren/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:52:36] INFO root fetch - processPackages [segmentation-models-pytorch]: Downloading https://files.pythonhosted.org/packages/df/c1/99939498a3dc2a25c9b6a6d8659a343b795a9cd914fcec4190320804506f/segmentation_models_pytorch-0.3.3.tar.gz
+[2023-05-28 17:52:36] INFO root fetch - processPackages [segmentation-models-pytorch]: executing diffoscope
+[2023-05-28 17:52:36] INFO root fetch - processPackages [segmentation-models-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segmentation_models_pytorch-0.3.2.tar.gz tmp/segmentation_models_pytorch-0.3.3.tar.gz --markdown 20230528/s/segmentation-models-pytorch/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-28 17:52:36] INFO root fetch - main [MainThread]: End processing [django-batteries]: success
+[2023-05-28 17:52:36] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 17:52:37] INFO root fetch - main [MainThread]: End processing [pyhyypapihawkmod]: success
+[2023-05-28 17:52:37] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-05-28 17:52:37] INFO root fetch - main [MainThread]: End processing [segmentation-models-pytorch]: success
+[2023-05-28 17:52:40] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-28 17:52:42] INFO root fetch - main [MainThread]: End processing [oloren]: success
+[2023-05-28 17:52:42] INFO root fetch - main [MainThread]: Store serial: [18281911]
