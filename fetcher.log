@@ -7670,3 +7670,98 @@ EOFError: EOF read where object expected
 [2023-05-28 17:28:02] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
 [2023-05-28 17:30:47] INFO root fetch - main [MainThread]: End processing [chainforge]: success
 [2023-05-28 17:30:47] INFO root fetch - main [MainThread]: Store serial: [18281735]
+[2023-05-28 17:35:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281735]
+[2023-05-28 17:35:57] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mmit
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyterlab-lsp
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyter-lsp
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-batteries
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qworker
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cengal
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blissful-basics
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyGeodesy
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: irails
+[2023-05-28 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wellmet
+[2023-05-28 17:35:57] WARNING root fetch - processPackages [wellmet]: Skipping, unable to determine old version
+[2023-05-28 17:35:57] INFO root fetch - processPackages [wellmet]: Start processing: coso
+[2023-05-28 17:35:57] INFO root fetch - main [MainThread]: End processing [wellmet] error
+[2023-05-28 17:35:57] INFO root fetch - processPackages [jupyter-lsp]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [cengal]: New version: [3.2.3] Old Version: [3.2.2]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [qworker]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [django-batteries]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [mmit]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [irails]: New version: [1.3.33] Old Version: [1.3.32]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [jupyterlab-lsp]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [blissful-basics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [coso]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [PyGeodesy]: New version: [23.5.28] Old Version: [23.5.23]
+[2023-05-28 17:35:57] INFO root fetch - processPackages [jupyter-lsp]: Downloading https://files.pythonhosted.org/packages/b3/41/d718b890bda70d4fd3b402efff7fc6847cf646fcae0d53abfac8cbc37b05/jupyter-lsp-2.1.0.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [jupyterlab-lsp]: Downloading https://files.pythonhosted.org/packages/83/30/9d175ac78b8e90610536d4670ada84c578404388fb65fa2f63efb1a4766a/jupyterlab-lsp-4.1.0.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [django-batteries]: Downloading https://files.pythonhosted.org/packages/c0/37/37fd770b74249fdc825e66613e1605f97b3f54e141a33446d821d4c12c3b/django_batteries-0.0.1.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/bd/4b/525c24644e6727c54e01fc3ae95c90441da203bfe73922a348dc3eef6548/PyGeodesy-23.5.23.zip
+[2023-05-28 17:35:57] INFO root fetch - processPackages [cengal]: Downloading https://files.pythonhosted.org/packages/8c/bb/040b45e6bda9b5061a94c842cf02f5410a96bc9e5167f3e8eb789ecc0530/cengal-3.2.3.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [qworker]: Downloading https://files.pythonhosted.org/packages/e4/bf/c604d98b9ca60976faeabc29356ffcc209f38037235a9083dce35107ffa5/qworker-1.7.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 17:35:57] INFO root fetch - processPackages [blissful-basics]: executing diffoscope
+[2023-05-28 17:35:57] INFO root fetch - processPackages [blissful-basics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blissful_basics-0.2.8.tar.gz tmp/blissful_basics-0.2.9.tar.gz --markdown 20230528/b/blissful-basics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 17:35:57] INFO root fetch - processPackages [mmit]: Downloading https://files.pythonhosted.org/packages/5d/87/01794b867c4924e782172dd74b04d0d159675abea9e079f4ff8bd55b0702/mmit-0.4.0.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/33/6a/73782f1b1171f1f6f22ff8651469cbb7fd0a8afedbd5a9ce439a50c94c00/irails-1.3.33.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [coso]: Downloading https://files.pythonhosted.org/packages/f1/09/f0f153e497cb67a5e5034ed9db238638210b83af40b69e3ebf84620a07d1/coso-1.1.2.tar.gz
+[2023-05-28 17:35:57] INFO root fetch - processPackages [jupyter-lsp]: Downloading https://files.pythonhosted.org/packages/01/f9/85c8361175208e279f63c3896db14b547d821c9cb8a52675e51a7bdb336f/jupyter-lsp-2.2.0.tar.gz
+[2023-05-28 17:35:58] INFO root fetch - processPackages [cengal]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [cengal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cengal-3.2.2.tar.gz tmp/cengal-3.2.3.tar.gz --markdown 20230528/c/cengal/3.2.2-3.2.3/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [django-batteries]: Downloading https://files.pythonhosted.org/packages/f9/8a/2b13b70594d2ae43610111c90606b0772e936148934d33a4e570952eeacf/django_batteries-0.0.2.tar.gz
+[2023-05-28 17:35:58] INFO root fetch - processPackages [coso]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [coso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coso-1.1.1.tar.gz tmp/coso-1.1.2.tar.gz --markdown 20230528/c/coso/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [jupyter-lsp]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [jupyter-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-lsp-2.1.0.tar.gz tmp/jupyter-lsp-2.2.0.tar.gz --markdown 20230528/j/jupyter-lsp/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [qworker]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [qworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qworker-1.7.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qworker-1.7.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/q/qworker/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [jupyterlab-lsp]: Downloading https://files.pythonhosted.org/packages/e5/49/c422194aa584000db54180a357542a0444b403e772dd2b861417661ab198/jupyterlab-lsp-4.2.0.tar.gz
+[2023-05-28 17:35:58] INFO root fetch - processPackages [mmit]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [mmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmit-0.3.0.tar.gz tmp/mmit-0.4.0.tar.gz --markdown 20230528/m/mmit/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [django-batteries]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [django-batteries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_batteries-0.0.1.tar.gz tmp/django_batteries-0.0.2.tar.gz --markdown 20230528/d/django-batteries/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.32.tar.gz tmp/irails-1.3.33.tar.gz --markdown 20230528/i/irails/1.3.32-1.3.33/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [jupyterlab-lsp]: executing diffoscope
+[2023-05-28 17:35:58] INFO root fetch - processPackages [jupyterlab-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab-lsp-4.1.0.tar.gz tmp/jupyterlab-lsp-4.2.0.tar.gz --markdown 20230528/j/jupyterlab-lsp/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-05-28 17:35:58] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/56/d2/5e6b8b8b93deee9b6ab3cb6e55992971980fec8f88bf130d5557d0176d1b/PyGeodesy-23.5.28.zip
+[2023-05-28 17:35:59] INFO root fetch - processPackages [django-batteries]: Start processing: sunspot
+[2023-05-28 17:35:59] INFO root fetch - main [MainThread]: End processing [django-batteries]: success
+[2023-05-28 17:35:59] INFO root fetch - processPackages [qworker]: Start processing: dbt-clickzetta
+[2023-05-28 17:35:59] INFO root fetch - main [MainThread]: End processing [qworker]: success
+[2023-05-28 17:35:59] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:35:59] INFO root fetch - processPackages [coso]: Start processing: blockpipe-db
+[2023-05-28 17:35:59] INFO root fetch - main [MainThread]: End processing [coso]: success
+[2023-05-28 17:35:59] WARNING root fetch - processPackages [blockpipe-db]: Skipping, unable to determine old version
+[2023-05-28 17:35:59] INFO root fetch - processPackages [blockpipe-db]: Start processing: python-seispy
+[2023-05-28 17:35:59] INFO root fetch - main [MainThread]: End processing [blockpipe-db] error
+[2023-05-28 17:35:59] WARNING root fetch - processPackages [sunspot]: Skipping, unable to determine old version
+[2023-05-28 17:35:59] INFO root fetch - processPackages [sunspot]: Start processing: dbt-clickzetta
+[2023-05-28 17:35:59] INFO root fetch - main [MainThread]: End processing [sunspot] error
+[2023-05-28 17:35:59] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:36:00] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 17:36:00] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:36:00] INFO root fetch - processPackages [python-seispy]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-28 17:36:00] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 17:36:00] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:36:00] INFO root fetch - processPackages [PyGeodesy]: executing diffoscope
+[2023-05-28 17:36:00] INFO root fetch - processPackages [PyGeodesy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGeodesy-23.5.23.zip tmp/PyGeodesy-23.5.28.zip --markdown 20230528/P/PyGeodesy/23.5.23-23.5.28/diff.md --exclude *.pyd
+[2023-05-28 17:36:00] INFO root fetch - processPackages [mmit]: Start processing: atsphinx-feed
+[2023-05-28 17:36:00] INFO root fetch - main [MainThread]: End processing [mmit]: success
+[2023-05-28 17:36:00] WARNING root fetch - processPackages [atsphinx-feed]: Skipping, unable to determine old version
+[2023-05-28 17:36:00] INFO root fetch - main [MainThread]: End processing [atsphinx-feed] error
+[2023-05-28 17:36:00] INFO root fetch - processPackages [python-seispy]: Downloading https://files.pythonhosted.org/packages/12/df/f7e59fa1c0a86df79941dd1400ccfd0ffafbf4a0f353882525d3a879a0c4/python-seispy-1.3.3.tar.gz
+[2023-05-28 17:36:00] INFO root fetch - main [MainThread]: End processing [jupyter-lsp]: success
+[2023-05-28 17:36:00] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-28 17:36:00] INFO root fetch - processPackages [python-seispy]: Downloading https://files.pythonhosted.org/packages/39/58/45bbcebc3a23e692bf83b87ddcef3a9ba3d5b9e2f527db3ab48e909ba0a4/python-seispy-1.3.4.tar.gz
+[2023-05-28 17:36:00] INFO root fetch - processPackages [python-seispy]: executing diffoscope
+[2023-05-28 17:36:00] INFO root fetch - processPackages [python-seispy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-seispy-1.3.3.tar.gz tmp/python-seispy-1.3.4.tar.gz --markdown 20230528/p/python-seispy/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-28 17:36:01] INFO root fetch - main [MainThread]: End processing [blissful-basics]: success
+[2023-05-28 17:36:01] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 17:36:01] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 17:36:02] INFO root fetch - main [MainThread]: End processing [python-seispy]: success
+[2023-05-28 17:36:06] INFO root fetch - main [MainThread]: End processing [jupyterlab-lsp]: success
+[2023-05-28 17:36:35] INFO root fetch - main [MainThread]: End processing [cengal]: success
+[2023-05-28 17:36:50] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
+[2023-05-28 17:36:50] INFO root fetch - main [MainThread]: Store serial: [18281791]
