@@ -6184,3 +6184,30 @@
 [2023-05-28 14:58:34] INFO root fetch - main [MainThread]: End processing [lndb]: success
 [2023-05-28 14:59:35] INFO root fetch - main [MainThread]: End processing [Misago]: success
 [2023-05-28 14:59:35] INFO root fetch - main [MainThread]: Store serial: [18280837]
+[2023-05-28 15:04:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280837]
+[2023-05-28 15:04:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 15:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-keycloak
+[2023-05-28 15:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TMDBTraktSyncer
+[2023-05-28 15:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-28 15:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: classiq
+[2023-05-28 15:04:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bibtex2cff
+[2023-05-28 15:04:45] INFO root fetch - processPackages [python-keycloak]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-28 15:04:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.27] Old Version: [2023.5.26]
+[2023-05-28 15:04:45] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-28 15:04:45] WARNING root fetch - processPackages [bibtex2cff]: Skipping, unable to determine old version
+[2023-05-28 15:04:45] INFO root fetch - main [MainThread]: End processing [bibtex2cff] error
+[2023-05-28 15:04:45] INFO root fetch - processPackages [classiq]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-05-28 15:04:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-28 15:04:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.26-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.27-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230528/f/fbgemm-gpu-nightly-cpu/2023.5.26-2023.5.27/diff.md --exclude *.pyd
+[2023-05-28 15:04:45] INFO root fetch - processPackages [python-keycloak]: executing diffoscope
+[2023-05-28 15:04:45] INFO root fetch - processPackages [python-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_keycloak-2.8.0.tar.gz tmp/python_keycloak-2.9.0.tar.gz --markdown 20230528/p/python-keycloak/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-28 15:04:46] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/09/2a/72599446375df7713ea163205a1c502bf92a57e2e01b774c0d58337565cd/TMDBTraktSyncer-1.1.8.tar.gz
+[2023-05-28 15:04:46] INFO root fetch - processPackages [classiq]: executing diffoscope
+[2023-05-28 15:04:46] INFO root fetch - processPackages [classiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classiq-0.9.1-py3-none-any.whl.zip tmp/classiq-0.9.3-py3-none-any.whl.zip --markdown 20230528/c/classiq/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-05-28 15:04:46] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-28 15:04:46] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.7.tar.gz tmp/TMDBTraktSyncer-1.1.8.tar.gz --markdown 20230528/T/TMDBTraktSyncer/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-28 15:04:47] INFO root fetch - main [MainThread]: End processing [python-keycloak]: success
+[2023-05-28 15:04:47] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-28 15:04:48] INFO root fetch - main [MainThread]: End processing [classiq]: success
+[2023-05-28 15:05:35] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-28 15:05:35] INFO root fetch - main [MainThread]: Store serial: [18280855]
