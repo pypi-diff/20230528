@@ -6084,3 +6084,62 @@
 [2023-05-28 14:48:10] INFO root fetch - main [MainThread]: End processing [parce]: success
 [2023-05-28 14:48:10] INFO root fetch - main [MainThread]: End processing [shape-commentator]: success
 [2023-05-28 14:48:10] INFO root fetch - main [MainThread]: Store serial: [18280791]
+[2023-05-28 14:53:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280791]
+[2023-05-28 14:53:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: panml
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-dynamo
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eric-ide
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sendgrify
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: erutils
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sendgrify
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: easytorch
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sendgrify
+[2023-05-28 14:53:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: GoogleBard
+[2023-05-28 14:53:19] INFO root fetch - processPackages [easytorch]: New version: [3.8.0] Old Version: [3.7.9]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [sendgrify]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [eric-ide]: New version: [23.5] Old Version: [23.4.2]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [sendgrify]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [sendgrify]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [pydantic-dynamo]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [panml]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [GoogleBard]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-28 14:53:19] INFO root fetch - processPackages [erutils]: New version: [1.4.0] Old Version: [1.3.2]
+[2023-05-28 14:53:20] INFO root fetch - processPackages [pydantic-dynamo]: Downloading https://files.pythonhosted.org/packages/92/54/e46812e60a42ba17808701ca93cd4695f6139ac9b7e6e4c8bc2869819a6b/pydantic_dynamo-0.3.1.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/cb/3e/6418d456665a6a85e29c4901ebf3cdd3604d2d657853af3480bf1bb2ba8e/panml-0.0.18.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [eric-ide]: Downloading https://files.pythonhosted.org/packages/51/bc/8a25a9a3486a2b36afdc535f5a551b581199f49cdcb22a8259f358fa981f/eric-ide-23.4.2.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [easytorch]: Downloading https://files.pythonhosted.org/packages/74/8b/f516dbd242379439aaa15c9a32fb5f1f7c28f7263a4810be982c353659aa/easytorch-3.8.0.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [erutils]: Downloading https://files.pythonhosted.org/packages/11/f0/934afb7fcbcd00c9fe2d4885c054d4bb1441d92fa853d69edd300ea56228/erutils-1.3.2.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: Downloading https://files.pythonhosted.org/packages/2b/f9/ef19aba69e059412117aa83a5c43e415e47d07b151e9c3bcb1ec0b728ff8/sendgrify-2.0.2-py3-none-any.whl
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: Downloading https://files.pythonhosted.org/packages/2b/f9/ef19aba69e059412117aa83a5c43e415e47d07b151e9c3bcb1ec0b728ff8/sendgrify-2.0.2-py3-none-any.whl
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: Downloading https://files.pythonhosted.org/packages/2b/f9/ef19aba69e059412117aa83a5c43e415e47d07b151e9c3bcb1ec0b728ff8/sendgrify-2.0.2-py3-none-any.whl
+[2023-05-28 14:53:20] INFO root fetch - processPackages [easytorch]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [easytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytorch-3.7.9.tar.gz tmp/easytorch-3.8.0.tar.gz --markdown 20230528/e/easytorch/3.7.9-3.8.0/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] INFO root fetch - processPackages [GoogleBard]: Downloading https://files.pythonhosted.org/packages/e8/4f/0e3023e8a4278b7dc2a778f36a5fdf735fb3aafc768510f1c13aec6b7e3b/GoogleBard-1.2.0.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sendgrify-2.0.1-py3-none-any.whl.zip tmp/sendgrify-2.0.2-py3-none-any.whl.zip --markdown 20230528/s/sendgrify/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sendgrify-2.0.1-py3-none-any.whl.zip tmp/sendgrify-2.0.2-py3-none-any.whl.zip --markdown 20230528/s/sendgrify/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [sendgrify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sendgrify-2.0.1-py3-none-any.whl.zip tmp/sendgrify-2.0.2-py3-none-any.whl.zip --markdown 20230528/s/sendgrify/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] INFO root fetch - processPackages [pydantic-dynamo]: Downloading https://files.pythonhosted.org/packages/bb/a0/0571829bedce24cf87712fa2ad232eab7460276fb8bd2a35059e0231cd59/pydantic_dynamo-0.3.2.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/20/f7/dee60069bbe6490da1172dccc44de77095d35e1934e022508accc7114ca4/panml-0.0.19.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [GoogleBard]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [GoogleBard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GoogleBard-1.1.3.tar.gz tmp/GoogleBard-1.2.0.tar.gz --markdown 20230528/G/GoogleBard/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] INFO root fetch - processPackages [erutils]: Downloading https://files.pythonhosted.org/packages/14/75/26fa2b059f34a6e93e01a773b2b07014c009abc8c660a3db1aafced81a47/erutils-1.4.0.tar.gz
+[2023-05-28 14:53:20] INFO root fetch - processPackages [pydantic-dynamo]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [pydantic-dynamo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_dynamo-0.3.1.tar.gz tmp/pydantic_dynamo-0.3.2.tar.gz --markdown 20230528/p/pydantic-dynamo/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] WARNING root fetch - processPackages [eric-ide]: Skipping package: exceeds size limit 19821378>=10485760
+[2023-05-28 14:53:20] INFO root fetch - main [MainThread]: End processing [eric-ide] error
+[2023-05-28 14:53:20] INFO root fetch - processPackages [panml]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [panml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panml-0.0.18.tar.gz tmp/panml-0.0.19.tar.gz --markdown 20230528/p/panml/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-28 14:53:20] INFO root fetch - processPackages [erutils]: executing diffoscope
+[2023-05-28 14:53:20] INFO root fetch - processPackages [erutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erutils-1.3.2.tar.gz tmp/erutils-1.4.0.tar.gz --markdown 20230528/e/erutils/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2023-05-28 14:53:21] INFO root fetch - main [MainThread]: End processing [sendgrify]: success
+[2023-05-28 14:53:21] INFO root fetch - main [MainThread]: End processing [sendgrify]: success
+[2023-05-28 14:53:21] INFO root fetch - main [MainThread]: End processing [sendgrify]: success
+[2023-05-28 14:53:21] INFO root fetch - main [MainThread]: End processing [GoogleBard]: success
+[2023-05-28 14:53:21] INFO root fetch - main [MainThread]: End processing [erutils]: success
+[2023-05-28 14:53:22] INFO root fetch - main [MainThread]: End processing [easytorch]: success
+[2023-05-28 14:53:22] INFO root fetch - main [MainThread]: End processing [pydantic-dynamo]: success
+[2023-05-28 14:53:22] INFO root fetch - main [MainThread]: End processing [panml]: success
+[2023-05-28 14:53:22] INFO root fetch - main [MainThread]: Store serial: [18280816]
