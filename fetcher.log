@@ -8407,3 +8407,27 @@ EOFError: EOF read where object expected
 [2023-05-28 18:51:35] INFO root fetch - main [MainThread]: End processing [Xponge]: success
 [2023-05-28 18:51:35] INFO root fetch - main [MainThread]: End processing [quantumflow]: success
 [2023-05-28 18:51:35] INFO root fetch - main [MainThread]: Store serial: [18282201]
+[2023-05-28 18:56:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282201]
+[2023-05-28 18:56:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: su6
+[2023-05-28 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Twitch-edog0049a
+[2023-05-28 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-28 18:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dash-cytoscape-elements
+[2023-05-28 18:56:44] INFO root fetch - processPackages [su6]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-28 18:56:44] INFO root fetch - processPackages [chatcmd]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-28 18:56:44] INFO root fetch - processPackages [dash-cytoscape-elements]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 18:56:44] WARNING root fetch - processPackages [Twitch-edog0049a]: Skipping, unable to determine old version
+[2023-05-28 18:56:44] INFO root fetch - main [MainThread]: End processing [Twitch-edog0049a] error
+[2023-05-28 18:56:45] INFO root fetch - processPackages [su6]: executing diffoscope
+[2023-05-28 18:56:45] INFO root fetch - processPackages [su6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/su6-0.2.1.tar.gz tmp/su6-0.3.0.tar.gz --markdown 20230528/s/su6/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 18:56:45] INFO root fetch - processPackages [dash-cytoscape-elements]: Downloading https://files.pythonhosted.org/packages/e8/3f/3cdde5638bc2c2ca51b4ca6f41fb4080c49e1d1e3d6bc2938b65724c95f5/dash-cytoscape-elements-0.0.2.tar.gz
+[2023-05-28 18:56:45] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/77/bc/3de0bbdef640c0de5b9dbc73bd319f9f1c3fa360f76e1a12affb2bdee8e7/chatcmd-1.1.2.tar.gz
+[2023-05-28 18:56:45] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 18:56:45] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.1.1.tar.gz tmp/chatcmd-1.1.2.tar.gz --markdown 20230528/c/chatcmd/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-28 18:56:45] INFO root fetch - processPackages [dash-cytoscape-elements]: Downloading https://files.pythonhosted.org/packages/b4/60/69ef1c035db99dd467da0dc424a5987768bc3c98b599685f873e36bc44bc/dash-cytoscape-elements-0.0.3.tar.gz
+[2023-05-28 18:56:45] INFO root fetch - processPackages [dash-cytoscape-elements]: executing diffoscope
+[2023-05-28 18:56:45] INFO root fetch - processPackages [dash-cytoscape-elements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-cytoscape-elements-0.0.2.tar.gz tmp/dash-cytoscape-elements-0.0.3.tar.gz --markdown 20230528/d/dash-cytoscape-elements/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 18:56:46] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 18:56:46] INFO root fetch - main [MainThread]: End processing [dash-cytoscape-elements]: success
+[2023-05-28 18:56:54] INFO root fetch - main [MainThread]: End processing [su6]: success
+[2023-05-28 18:56:54] INFO root fetch - main [MainThread]: Store serial: [18282229]
