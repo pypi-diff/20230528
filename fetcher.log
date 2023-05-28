@@ -1424,3 +1424,76 @@
 [2023-05-28 03:30:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-majsoul]: success
 [2023-05-28 03:30:45] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-28 03:30:45] INFO root fetch - main [MainThread]: Store serial: [18277901]
+[2023-05-28 03:35:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277901]
+[2023-05-28 03:35:53] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scotthsieh-projen-statemachine
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rtb-toolbox
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rtb-toolbox
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DataDoctor
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mcnets
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rtb-toolbox
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sidetrek
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: easytorch
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-stdlib
+[2023-05-28 03:35:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rtb-toolbox
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.51] Old Version: [0.1.5]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [easytorch]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [mcnets]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [DataDoctor]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.51] Old Version: [0.1.5]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.51] Old Version: [0.1.5]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.51] Old Version: [0.1.5]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [sidetrek]: New version: [0.0.92] Old Version: [0.0.91]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:35:53] INFO root fetch - processPackages [DataDoctor]: executing diffoscope
+[2023-05-28 03:35:53] INFO root fetch - processPackages [DataDoctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataDoctor-1.0.8.tar.gz tmp/DataDoctor-1.0.9.tar.gz --markdown 20230528/D/DataDoctor/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/19/56/c6b9a9788add40ec0038ba15cae5c7b5e1f72d10016b91d8f98aff0e3960/rtb_toolbox-0.1.5.tar.gz
+[2023-05-28 03:35:53] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-28 03:35:53] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230528/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/19/56/c6b9a9788add40ec0038ba15cae5c7b5e1f72d10016b91d8f98aff0e3960/rtb_toolbox-0.1.5.tar.gz
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/19/56/c6b9a9788add40ec0038ba15cae5c7b5e1f72d10016b91d8f98aff0e3960/rtb_toolbox-0.1.5.tar.gz
+[2023-05-28 03:35:53] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/19/56/c6b9a9788add40ec0038ba15cae5c7b5e1f72d10016b91d8f98aff0e3960/rtb_toolbox-0.1.5.tar.gz
+[2023-05-28 03:35:53] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/8a/58/3b2c0ea9a90444bc73561b94623ccd5ae1056faf459abc24f675f2ee6f6a/mcnets-0.2.2.tar.gz
+[2023-05-28 03:35:53] WARNING root fetch - processPackages [mcnets]: Skipping package: exceeds size limit 48298338>=10485760
+[2023-05-28 03:35:53] INFO root fetch - processPackages [mcnets]: Start processing: sweetrpg-model-core
+[2023-05-28 03:35:53] INFO root fetch - processPackages [sidetrek]: Downloading https://files.pythonhosted.org/packages/36/b5/dd878c1f90f005464cc37248ed63c58182e4efe0b552417bd210d863fe7e/sidetrek-0.0.92.tar.gz
+[2023-05-28 03:35:53] INFO root fetch - main [MainThread]: End processing [mcnets] error
+[2023-05-28 03:35:54] INFO root fetch - processPackages [easytorch]: Downloading https://files.pythonhosted.org/packages/84/f2/82a0dce618b735239c2abf09c5a88c349bf663f1e8feaa6cf0fd71971a67/easytorch-3.7.9.tar.gz
+[2023-05-28 03:35:54] INFO root fetch - processPackages [sweetrpg-model-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:35:54] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230528/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [easytorch]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [easytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytorch-3.7.8.tar.gz tmp/easytorch-3.7.9.tar.gz --markdown 20230528/e/easytorch/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.91.tar.gz tmp/sidetrek-0.0.92.tar.gz --markdown 20230528/s/sidetrek/0.0.91-0.0.92/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/f5/c3/f6c18424549b2283d78bf9dfc0b7d85aba90911fda78e462caad811a252e/rtb_toolbox-0.1.51.tar.gz
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/f5/c3/f6c18424549b2283d78bf9dfc0b7d85aba90911fda78e462caad811a252e/rtb_toolbox-0.1.51.tar.gz
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/f5/c3/f6c18424549b2283d78bf9dfc0b7d85aba90911fda78e462caad811a252e/rtb_toolbox-0.1.51.tar.gz
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/f5/c3/f6c18424549b2283d78bf9dfc0b7d85aba90911fda78e462caad811a252e/rtb_toolbox-0.1.51.tar.gz
+[2023-05-28 03:35:54] INFO root fetch - processPackages [sweetrpg-model-core]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [sweetrpg-model-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-model-core-0.0.98.tar.gz tmp/sweetrpg-model-core-0.0.99.tar.gz --markdown 20230528/s/sweetrpg-model-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.5.tar.gz tmp/rtb_toolbox-0.1.51.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.5-0.1.51/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.5.tar.gz tmp/rtb_toolbox-0.1.51.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.5-0.1.51/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.5.tar.gz tmp/rtb_toolbox-0.1.51.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.5-0.1.51/diff.md --exclude *.pyd
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:35:54] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.5.tar.gz tmp/rtb_toolbox-0.1.51.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.5-0.1.51/diff.md --exclude *.pyd
+[2023-05-28 03:35:55] INFO root fetch - processPackages [DataDoctor]: Start processing: rdfind2
+[2023-05-28 03:35:55] INFO root fetch - main [MainThread]: End processing [DataDoctor]: success
+[2023-05-28 03:35:55] INFO root fetch - processPackages [rdfind2]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-28 03:35:55] INFO root fetch - processPackages [rdfind2]: executing diffoscope
+[2023-05-28 03:35:55] INFO root fetch - processPackages [rdfind2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfind2-0.0.4.tar.gz tmp/rdfind2-0.0.5.tar.gz --markdown 20230528/r/rdfind2/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-28 03:35:55] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-05-28 03:35:55] INFO root fetch - main [MainThread]: End processing [sweetrpg-model-core]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [easytorch]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [rdfind2]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-28 03:35:56] INFO root fetch - main [MainThread]: Store serial: [18277936]
