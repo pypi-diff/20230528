@@ -2247,3 +2247,42 @@
 [2023-05-28 06:23:07] INFO root fetch - main [MainThread]: End processing [databind.core]: success
 [2023-05-28 06:23:07] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-05-28 06:23:07] INFO root fetch - main [MainThread]: Store serial: [18278451]
+[2023-05-28 06:28:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278451]
+[2023-05-28 06:28:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 06:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pmdsky-debug-py
+[2023-05-28 06:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easymms
+[2023-05-28 06:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yt-fts
+[2023-05-28 06:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pose-estimation-mp
+[2023-05-28 06:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ohmytmp
+[2023-05-28 06:28:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: systems-manager
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pmdsky-debug-py]: New version: [5.1.9] Old Version: [5.1.8]
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pose-estimation-mp]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-28 06:28:16] INFO root fetch - processPackages [yt-fts]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 06:28:16] INFO root fetch - processPackages [easymms]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 06:28:16] WARNING root fetch - processPackages [ohmytmp]: Skipping, unable to determine old version
+[2023-05-28 06:28:16] INFO root fetch - processPackages [systems-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 06:28:16] INFO root fetch - main [MainThread]: End processing [ohmytmp] error
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pose-estimation-mp]: Downloading https://files.pythonhosted.org/packages/c8/76/ae018bca70e68db9cf99c47097a57d7713609c964c5cfc03de3689d53756/pose_estimation_mp-0.1-py3-none-any.whl
+[2023-05-28 06:28:16] INFO root fetch - processPackages [easymms]: Downloading https://files.pythonhosted.org/packages/5a/56/8befb8a28b6745242b32ea8072d75044110745f33c122d6f535badc2d49a/easymms-0.1.0.tar.gz
+[2023-05-28 06:28:16] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/6b/9b/723af009408e210bce21f370423fa5d8ac91a3dce8e20650c93c97df534d/yt-fts-0.1.0.tar.gz
+[2023-05-28 06:28:16] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/0a/9f/637250b3c42b63a59c45de07eb90853ea0958cb78d0d043b573838e73584/systems_manager-0.8.0-py2.py3-none-any.whl
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pmdsky-debug-py]: executing diffoscope
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pmdsky-debug-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmdsky_debug_py-5.1.8-py3-none-any.whl.zip tmp/pmdsky_debug_py-5.1.9-py3-none-any.whl.zip --markdown 20230528/p/pmdsky-debug-py/5.1.8-5.1.9/diff.md --exclude *.pyd
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pose-estimation-mp]: Downloading https://files.pythonhosted.org/packages/79/33/d835224908eae172f234620798503138820bddee41f6d3adc86bfe3fa65e/pose_estimation_mp-0.1.1-py3-none-any.whl
+[2023-05-28 06:28:16] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/dc/38/566505e50522e02a16989ff53621455dbe9c9dddb32111ee31c8ab6d2705/yt-fts-0.1.1.tar.gz
+[2023-05-28 06:28:16] INFO root fetch - processPackages [easymms]: Downloading https://files.pythonhosted.org/packages/d1/36/95e7e073cecefd96c11063c6dc788256118100ec084031a213b22eeffa85/easymms-0.1.1.tar.gz
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pose-estimation-mp]: executing diffoscope
+[2023-05-28 06:28:16] INFO root fetch - processPackages [pose-estimation-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pose_estimation_mp-0.1-py3-none-any.whl.zip tmp/pose_estimation_mp-0.1.1-py3-none-any.whl.zip --markdown 20230528/p/pose-estimation-mp/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 06:28:16] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-28 06:28:16] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.0.tar.gz tmp/yt-fts-0.1.1.tar.gz --markdown 20230528/y/yt-fts/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 06:28:16] INFO root fetch - processPackages [systems-manager]: Downloading https://files.pythonhosted.org/packages/68/28/02a27173c177a8a83a2fbf278250985f93c69856fda1ba8ab95e09bd391f/systems_manager-0.9.0-py2.py3-none-any.whl
+[2023-05-28 06:28:16] INFO root fetch - processPackages [systems-manager]: executing diffoscope
+[2023-05-28 06:28:16] INFO root fetch - processPackages [easymms]: executing diffoscope
+[2023-05-28 06:28:16] INFO root fetch - processPackages [systems-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systems_manager-0.8.0-py2.py3-none-any.whl.zip tmp/systems_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230528/s/systems-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 06:28:16] INFO root fetch - processPackages [easymms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easymms-0.1.0.tar.gz tmp/easymms-0.1.1.tar.gz --markdown 20230528/e/easymms/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 06:28:17] INFO root fetch - main [MainThread]: End processing [pose-estimation-mp]: success
+[2023-05-28 06:28:18] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-28 06:28:18] INFO root fetch - main [MainThread]: End processing [easymms]: success
+[2023-05-28 06:28:18] INFO root fetch - main [MainThread]: End processing [systems-manager]: success
+[2023-05-28 06:28:19] INFO root fetch - main [MainThread]: End processing [pmdsky-debug-py]: success
+[2023-05-28 06:28:19] INFO root fetch - main [MainThread]: Store serial: [18278470]
