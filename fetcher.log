@@ -5215,3 +5215,73 @@
 [2023-05-28 13:23:15] INFO root fetch - main [MainThread]: End processing [album-sender]: success
 [2023-05-28 13:23:18] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-28 13:23:18] INFO root fetch - main [MainThread]: Store serial: [18280220]
+[2023-05-28 13:28:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280220]
+[2023-05-28 13:28:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EnergySystemModels
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatcmd
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyGachi
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchrl-nightly
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docspec
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docspec-python
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chatcmd
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchserve-nightly
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torch-model-archiver-nightly
+[2023-05-28 13:28:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torch-workflow-archiver-nightly
+[2023-05-28 13:28:26] INFO root fetch - processPackages [docspec]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-28 13:28:26] INFO root fetch - processPackages [chatcmd]: New version: [1.0.44] Old Version: [1.0.43]
+[2023-05-28 13:28:26] INFO root fetch - processPackages [pyGachi]: New version: [1.1] Old Version: [1.0a4]
+[2023-05-28 13:28:26] INFO root fetch - processPackages [chatcmd]: New version: [1.0.44] Old Version: [1.0.43]
+[2023-05-28 13:28:26] INFO root fetch - processPackages [EnergySystemModels]: New version: [0.1.17.post65] Old Version: [0.1.17.post63]
+[2023-05-28 13:28:26] INFO root fetch - processPackages [docspec-python]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230528/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-28 13:28:27] INFO root fetch - processPackages [pyGachi]: Downloading https://files.pythonhosted.org/packages/64/4f/d9987a56d44ee7651c1db4f68329772ccfb5ca9cb90e0eb0621a1a0a523b/pyGachi-1.0a4.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [EnergySystemModels]: Downloading https://files.pythonhosted.org/packages/50/c4/69b456a40c52835885bbc6258ecc6ab8256ee2dcf2080280808c1765d2e3/EnergySystemModels-0.1.17.post63-py3-none-any.whl
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/28/e3/f32de8d644cbb826ad5260c0e68292963b8bac211e35fc08240731f64fe5/chatcmd-1.0.43.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/28/e3/f32de8d644cbb826ad5260c0e68292963b8bac211e35fc08240731f64fe5/chatcmd-1.0.43.tar.gz
+[2023-05-28 13:28:27] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchserve-nightly]: Start processing: torchrec-nightly
+[2023-05-28 13:28:27] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-28 13:28:27] INFO root fetch - processPackages [docspec-python]: Downloading https://files.pythonhosted.org/packages/52/88/99c5e27a894f01290364563c84838cf68f1a8629474b5bbfc3bf35a8d923/docspec_python-2.2.1.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230528/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [docspec]: Downloading https://files.pythonhosted.org/packages/3c/39/7a71382107445b2cd50c67c6194e3e584f19748a817c3b29e8be8a14f00f/docspec-2.2.1.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [docspec-python]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [docspec-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docspec_python-2.2.0.tar.gz tmp/docspec_python-2.2.1.tar.gz --markdown 20230528/d/docspec-python/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-28 13:28:27] INFO root fetch - processPackages [docspec]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [docspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docspec-2.2.0.tar.gz tmp/docspec-2.2.1.tar.gz --markdown 20230528/d/docspec/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/72/c8/7ec92f3753ce4961f319c29a25d30ea0fb5c1030a4ec1f1227fc11cc06b4/chatcmd-1.0.44.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/72/c8/7ec92f3753ce4961f319c29a25d30ea0fb5c1030a4ec1f1227fc11cc06b4/chatcmd-1.0.44.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [pyGachi]: Downloading https://files.pythonhosted.org/packages/9b/68/45747912f7cc6c13812872f0ec93ad00e0487ea1e55c2072e6fb3c8cc30b/pyGachi-1.1.tar.gz
+[2023-05-28 13:28:27] INFO root fetch - processPackages [EnergySystemModels]: Downloading https://files.pythonhosted.org/packages/5a/f8/a922c69d294b768a32263275fed91bb52f7c68f717bffa5d84f8a3c5fed0/EnergySystemModels-0.1.17.post65-py3-none-any.whl
+[2023-05-28 13:28:27] INFO root fetch - processPackages [pyGachi]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [pyGachi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGachi-1.0a4.tar.gz tmp/pyGachi-1.1.tar.gz --markdown 20230528/p/pyGachi/1.0a4-1.1/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [EnergySystemModels]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [EnergySystemModels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EnergySystemModels-0.1.17.post63-py3-none-any.whl.zip tmp/EnergySystemModels-0.1.17.post65-py3-none-any.whl.zip --markdown 20230528/E/EnergySystemModels/0.1.17.post63-0.1.17.post65/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230528/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.43.tar.gz tmp/chatcmd-1.0.44.tar.gz --markdown 20230528/c/chatcmd/1.0.43-1.0.44/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.43.tar.gz tmp/chatcmd-1.0.44.tar.gz --markdown 20230528/c/chatcmd/1.0.43-1.0.44/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-05-28 13:28:27] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip --markdown 20230528/t/torchrec-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-28 13:28:27] ERROR root fetch - processPackages [EnergySystemModels]: Diffoscope failed: Error: error creating container storage: the container name "youthful_shirley" is already in use by "2afe256e98ed53b91fe31bc6104f9ca483545cd7575572ffc12d725bfdf0e421". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-28 13:28:27] INFO root fetch - main [MainThread]: End processing [EnergySystemModels] error
+[2023-05-28 13:28:28] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-28 13:28:28] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-28 13:28:28] INFO root fetch - main [MainThread]: End processing [docspec]: success
+[2023-05-28 13:28:28] INFO root fetch - main [MainThread]: End processing [docspec-python]: success
+[2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [pyGachi]: success
+[2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-05-28 13:28:29] INFO root fetch - main [MainThread]: Store serial: [18280254]
