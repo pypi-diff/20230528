@@ -6818,3 +6818,36 @@ EOFError: EOF read where object expected
 [2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [pyc3dtools]: success
 [2023-05-28 16:03:54] INFO root fetch - main [MainThread]: End processing [super-hash]: success
 [2023-05-28 16:03:54] INFO root fetch - main [MainThread]: Store serial: [18281220]
+[2023-05-28 16:08:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281220]
+[2023-05-28 16:09:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 16:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airportsdata
+[2023-05-28 16:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PoePT
+[2023-05-28 16:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arclet-alconna-tools
+[2023-05-28 16:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mmit
+[2023-05-28 16:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spin-phonon-suite
+[2023-05-28 16:09:03] INFO root fetch - processPackages [airportsdata]: New version: [20230528] Old Version: [20230510]
+[2023-05-28 16:09:03] INFO root fetch - processPackages [mmit]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-05-28 16:09:03] WARNING root fetch - processPackages [PoePT]: Skipping, unable to determine old version
+[2023-05-28 16:09:03] INFO root fetch - main [MainThread]: End processing [PoePT] error
+[2023-05-28 16:09:03] INFO root fetch - processPackages [arclet-alconna-tools]: New version: [0.6.1] Old Version: [0.6.0rc1]
+[2023-05-28 16:09:03] INFO root fetch - processPackages [spin-phonon-suite]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-28 16:09:03] INFO root fetch - processPackages [spin-phonon-suite]: Downloading https://files.pythonhosted.org/packages/cb/ff/8b7ef83b29f787323930e0f68e1da9500cbc1f62cecc1c0a420d8f4af92d/spin_phonon_suite-0.9.0.tar.gz
+[2023-05-28 16:09:03] INFO root fetch - processPackages [airportsdata]: Downloading https://files.pythonhosted.org/packages/bf/ed/1a149de9bdab0f723a162c5261d021a63db93f9c099cff6927b576d73ffc/airportsdata-20230510.tar.gz
+[2023-05-28 16:09:03] INFO root fetch - processPackages [arclet-alconna-tools]: Downloading https://files.pythonhosted.org/packages/15/54/1c48acf8cbf0085b16474b764fb770013f93e0b35dbcc8b26812ea9f49fc/arclet-alconna-tools-0.6.0rc1.tar.gz
+[2023-05-28 16:09:04] INFO root fetch - processPackages [mmit]: Downloading https://files.pythonhosted.org/packages/8e/06/68bd6260e46b68c0e930237ccba4aa76818a9c24440f7f252d8d1312df6b/mmit-0.3.0.tar.gz
+[2023-05-28 16:09:04] INFO root fetch - processPackages [mmit]: executing diffoscope
+[2023-05-28 16:09:04] INFO root fetch - processPackages [mmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmit-0.2.3.tar.gz tmp/mmit-0.3.0.tar.gz --markdown 20230528/m/mmit/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 16:09:04] INFO root fetch - processPackages [arclet-alconna-tools]: Downloading https://files.pythonhosted.org/packages/94/fd/f576afeab4c890fb1db9311059000406cad140034e5fe1cdfb2195fa2321/arclet-alconna-tools-0.6.1.tar.gz
+[2023-05-28 16:09:04] INFO root fetch - processPackages [airportsdata]: Downloading https://files.pythonhosted.org/packages/66/f4/90b4f542bd0114cd2934b4d100ad7391264a61f76e3304729994086bcf41/airportsdata-20230528.tar.gz
+[2023-05-28 16:09:04] INFO root fetch - processPackages [arclet-alconna-tools]: executing diffoscope
+[2023-05-28 16:09:04] INFO root fetch - processPackages [arclet-alconna-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-tools-0.6.0rc1.tar.gz tmp/arclet-alconna-tools-0.6.1.tar.gz --markdown 20230528/a/arclet-alconna-tools/0.6.0rc1-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 16:09:04] INFO root fetch - processPackages [spin-phonon-suite]: Downloading https://files.pythonhosted.org/packages/b4/04/7214608d60c537dcae4f6fa728c420f036c9dc177f64f905e34ad2babc9f/spin_phonon_suite-0.9.1.tar.gz
+[2023-05-28 16:09:04] INFO root fetch - processPackages [airportsdata]: executing diffoscope
+[2023-05-28 16:09:04] INFO root fetch - processPackages [airportsdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airportsdata-20230510.tar.gz tmp/airportsdata-20230528.tar.gz --markdown 20230528/a/airportsdata/20230510-20230528/diff.md --exclude *.pyd
+[2023-05-28 16:09:04] INFO root fetch - processPackages [spin-phonon-suite]: executing diffoscope
+[2023-05-28 16:09:04] INFO root fetch - processPackages [spin-phonon-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spin_phonon_suite-0.9.0.tar.gz tmp/spin_phonon_suite-0.9.1.tar.gz --markdown 20230528/s/spin-phonon-suite/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-28 16:09:05] INFO root fetch - main [MainThread]: End processing [arclet-alconna-tools]: success
+[2023-05-28 16:09:05] INFO root fetch - main [MainThread]: End processing [spin-phonon-suite]: success
+[2023-05-28 16:09:05] INFO root fetch - main [MainThread]: End processing [mmit]: success
+[2023-05-28 16:09:07] INFO root fetch - main [MainThread]: End processing [airportsdata]: success
+[2023-05-28 16:09:07] INFO root fetch - main [MainThread]: Store serial: [18281238]
