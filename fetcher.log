@@ -5757,3 +5757,55 @@
 [2023-05-28 14:16:36] INFO root fetch - main [MainThread]: End processing [sendgrify]: success
 [2023-05-28 14:16:36] INFO root fetch - main [MainThread]: End processing [joyrl]: success
 [2023-05-28 14:16:36] INFO root fetch - main [MainThread]: Store serial: [18280515]
+[2023-05-28 14:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280515]
+[2023-05-28 14:21:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyDistances
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gmltools
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wiliot-deployment-tools
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: global-hotkeys
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mujoco-dev
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: newsapi-python-client
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: access-github
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyDistances
+[2023-05-28 14:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: python-keycloak
+[2023-05-28 14:21:45] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [wiliot-deployment-tools]: New version: [4.0.5] Old Version: [4.0.4]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [gmltools]: New version: [0.0.71] Old Version: [0.0.70]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [global-hotkeys]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [newsapi-python-client]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev535989348] Old Version: [2.3.6.dev535839953]
+[2023-05-28 14:21:45] INFO root fetch - processPackages [python-keycloak]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-28 14:21:45] WARNING root fetch - processPackages [access-github]: Skipping, unable to determine old version
+[2023-05-28 14:21:45] INFO root fetch - main [MainThread]: End processing [access-github] error
+[2023-05-28 14:21:45] INFO root fetch - processPackages [python-keycloak]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [python-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_keycloak-2.8.0.tar.gz tmp/python_keycloak-2.9.0.tar.gz --markdown 20230528/p/python-keycloak/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-28 14:21:45] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/ab/c4/45d57d0101c1b09d0642eb147b2a28a3182cf2e5b6fa748b4f526263bd53/gmltools-0.0.71.tar.gz
+[2023-05-28 14:21:45] INFO root fetch - processPackages [newsapi-python-client]: Downloading https://files.pythonhosted.org/packages/3d/cd/3a9a79a8c20a57dd5f3fb392712b22f16bbc0c0c3790dc34f71ea62a08c5/newsapi-python-client-0.2.4.tar.gz
+[2023-05-28 14:21:45] INFO root fetch - processPackages [global-hotkeys]: Downloading https://files.pythonhosted.org/packages/1c/35/0276ad38cd9a0051f0b4250b78853c9950e7395a8c63397a4ddd00c2d09c/global_hotkeys-0.1.1.tar.gz
+[2023-05-28 14:21:45] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/02/cf/8c2c5b6644a47761a032dab3587683553f6a1e82325020d4b222fc4ae3c5/mujoco_dev-2.3.6.dev535839953-cp39-cp39-win_amd64.whl
+[2023-05-28 14:21:45] INFO root fetch - processPackages [wiliot-deployment-tools]: Downloading https://files.pythonhosted.org/packages/60/fe/bfdba34ed29508f60f5b267fa9aee2286ebbe8dc228567da6f41db2e254d/wiliot-deployment-tools-4.0.5.tar.gz
+[2023-05-28 14:21:45] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.70.tar.gz tmp/gmltools-0.0.71.tar.gz --markdown 20230528/g/gmltools/0.0.70-0.0.71/diff.md --exclude *.pyd
+[2023-05-28 14:21:45] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20230528/P/PyDistances/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 14:21:45] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20230528/P/PyDistances/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 14:21:45] INFO root fetch - processPackages [newsapi-python-client]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [newsapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newsapi-python-client-0.2.3.tar.gz tmp/newsapi-python-client-0.2.4.tar.gz --markdown 20230528/n/newsapi-python-client/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 14:21:45] INFO root fetch - processPackages [wiliot-deployment-tools]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [wiliot-deployment-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiliot-deployment-tools-4.0.4.tar.gz tmp/wiliot-deployment-tools-4.0.5.tar.gz --markdown 20230528/w/wiliot-deployment-tools/4.0.4-4.0.5/diff.md --exclude *.pyd
+[2023-05-28 14:21:45] INFO root fetch - processPackages [global-hotkeys]: executing diffoscope
+[2023-05-28 14:21:45] INFO root fetch - processPackages [global-hotkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/global_hotkeys-0.1.0.tar.gz tmp/global_hotkeys-0.1.1.tar.gz --markdown 20230528/g/global-hotkeys/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 14:21:46] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/aa/6e/83cb8c79df0f9817f30b392da2b71da26330de85fd4ad93990dd320e930e/mujoco_dev-2.3.6.dev535989348-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 14:21:46] INFO root fetch - main [MainThread]: End processing [python-keycloak]: success
+[2023-05-28 14:21:46] INFO root fetch - main [MainThread]: End processing [newsapi-python-client]: success
+[2023-05-28 14:21:46] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-28 14:21:46] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev535839953-cp39-cp39-win_amd64.whl.zip tmp/mujoco_dev-2.3.6.dev535989348-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/m/mujoco-dev/2.3.6.dev535839953-2.3.6.dev535989348/diff.md --exclude *.pyd
+[2023-05-28 14:21:46] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-28 14:21:46] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-28 14:21:46] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-05-28 14:21:47] INFO root fetch - main [MainThread]: End processing [global-hotkeys]: success
+[2023-05-28 14:21:47] INFO root fetch - main [MainThread]: End processing [wiliot-deployment-tools]: success
+[2023-05-28 14:21:51] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-28 14:21:51] INFO root fetch - main [MainThread]: Store serial: [18280553]
