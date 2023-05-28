@@ -1547,3 +1547,65 @@
 [2023-05-28 03:41:08] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
 [2023-05-28 03:43:08] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-05-28 03:43:08] INFO root fetch - main [MainThread]: Store serial: [18277964]
+[2023-05-28 03:48:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277964]
+[2023-05-28 03:48:18] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-sphinx
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autonomi-nos
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-django
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: proactive
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-apl
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rayfed-nightly
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: proactive-jupyter-kernel
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk-wordpress
+[2023-05-28 03:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: duckdb
+[2023-05-28 03:48:18] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [autonomi-nos]: New version: [0.0.4a1] Old Version: [0.0.4a0]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.799] Old Version: [0.0.798]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-05-28 03:48:18] INFO root fetch - processPackages [rayfed-nightly]: New version: [0.1.0b20230528.dev0] Old Version: [0.1.0b20230510.dev0]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [duckdb]: New version: [0.8.1.dev96] Old Version: [0.8.1.dev152]
+[2023-05-28 03:48:18] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-28 03:48:18] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230528/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-28 03:48:18] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/32/86/1dadfb544da2ee45b69930a3d2116c51f9f052646a5192a0cdf06bdc1985/duckdb-0.8.1.dev152-cp36-cp36m-macosx_10_9_x86_64.whl
+[2023-05-28 03:48:18] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/a5/d3/5237cefb3ea883f0503b8f423e37ef67d3f36e42948c0d466e95b747750c/nbdev-apl-0.0.799.tar.gz
+[2023-05-28 03:48:18] INFO root fetch - processPackages [rayfed-nightly]: Downloading https://files.pythonhosted.org/packages/f8/3e/5a368627a955a4c47b45d48dd579cdc4a86b4fc4f807b5b53628fec7ca99/rayfed_nightly-0.1.0b20230510.dev0-py3-none-any.whl
+[2023-05-28 03:48:19] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230528/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 14629771>=10485760
+[2023-05-28 03:48:19] INFO root fetch - processPackages [duckdb]: Start processing: rtb-toolbox
+[2023-05-28 03:48:19] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-05-28 03:48:19] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.798.tar.gz tmp/nbdev-apl-0.0.799.tar.gz --markdown 20230528/n/nbdev-apl/0.0.798-0.0.799/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] INFO root fetch - processPackages [autonomi-nos]: Downloading https://files.pythonhosted.org/packages/87/5f/a06ff4a0e7d3bc17c0bd7e4a8d0e861972eb6429a8420d8ffd7b7b6c9816/autonomi_nos-0.0.4a1-py3-none-any.whl
+[2023-05-28 03:48:19] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230528/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.53] Old Version: [0.1.52]
+[2023-05-28 03:48:19] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230528/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230528/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.52.tar.gz tmp/rtb_toolbox-0.1.53.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.52-0.1.53/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-05-28 03:48:19] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-05-28 03:48:19] INFO root fetch - processPackages [autonomi-nos]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [autonomi-nos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomi_nos-0.0.4a0-py3-none-any.whl.zip tmp/autonomi_nos-0.0.4a1-py3-none-any.whl.zip --markdown 20230528/a/autonomi-nos/0.0.4a0-0.0.4a1/diff.md --exclude *.pyd
+[2023-05-28 03:48:19] INFO root fetch - processPackages [rayfed-nightly]: Downloading https://files.pythonhosted.org/packages/a8/29/098c354f968e8bb2bd2611e8b29bac40720bf79885dfa0ce2b985ce97bc0/rayfed_nightly-0.1.0b20230528.dev0-py3-none-any.whl
+[2023-05-28 03:48:19] INFO root fetch - processPackages [rayfed-nightly]: executing diffoscope
+[2023-05-28 03:48:19] INFO root fetch - processPackages [rayfed-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rayfed_nightly-0.1.0b20230510.dev0-py3-none-any.whl.zip tmp/rayfed_nightly-0.1.0b20230528.dev0-py3-none-any.whl.zip --markdown 20230528/r/rayfed-nightly/0.1.0b20230510.dev0-0.1.0b20230528.dev0/diff.md --exclude *.pyd
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:48:20] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-28 03:48:21] INFO root fetch - main [MainThread]: End processing [autonomi-nos]: success
+[2023-05-28 03:48:21] INFO root fetch - main [MainThread]: End processing [rayfed-nightly]: success
+[2023-05-28 03:48:21] INFO root fetch - main [MainThread]: Store serial: [18277993]
