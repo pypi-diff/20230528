@@ -4836,3 +4836,47 @@
 [2023-05-28 12:41:14] INFO root fetch - main [MainThread]: End processing [django-copilot]: success
 [2023-05-28 12:41:14] INFO root fetch - main [MainThread]: End processing [openshift-cluster-management-python-wrapper]: success
 [2023-05-28 12:41:14] INFO root fetch - main [MainThread]: Store serial: [18280036]
+[2023-05-28 12:46:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280036]
+[2023-05-28 12:46:23] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansible-playbook-grapher
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: caldus
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-service-catalog-puppet
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fgo-api-types
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onnx2tf
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: functions-lib
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bahire-hasab
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: joyrl
+[2023-05-28 12:46:23] INFO root fetch - processPackages [joyrl]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-28 12:46:23] INFO root fetch - processPackages [fgo-api-types]: New version: [2023.5.3.17.28.2] Old Version: [2023.5.28.10.43.15]
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ansible-playbook-grapher]: New version: [2.0.0.dev2] Old Version: [2.0.0.dev0]
+[2023-05-28 12:46:23] WARNING root fetch - processPackages [caldus]: Skipping, unable to determine old version
+[2023-05-28 12:46:23] INFO root fetch - main [MainThread]: End processing [caldus] error
+[2023-05-28 12:46:23] WARNING root fetch - processPackages [functions-lib]: Skipping, unable to determine old version
+[2023-05-28 12:46:23] INFO root fetch - processPackages [bahire-hasab]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 12:46:23] INFO root fetch - main [MainThread]: End processing [functions-lib] error
+[2023-05-28 12:46:23] INFO root fetch - processPackages [aws-service-catalog-puppet]: New version: [0.99.2] Old Version: [0.99.1]
+[2023-05-28 12:46:23] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-28 12:46:23] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/94/1b/f87732334a0438c6b670949e3f1070a852f8b69f1308ad85dc9f67908d16/fgo_api_types-2023.5.28.10.43.15.tar.gz
+[2023-05-28 12:46:23] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/73/b5/6c36615a99980af3aa0a41b99777a42bb56cb35b8afa91e3698b4480844a/joyrl-0.2.1.tar.gz
+[2023-05-28 12:46:23] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-28 12:46:23] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230528/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-28 12:46:23] INFO root fetch - processPackages [ansible-playbook-grapher]: Downloading https://files.pythonhosted.org/packages/43/b4/fb5f44688cc791bd9abcec15aedb783875d0af5d53fdc51acaf0fc561462/ansible_playbook_grapher-2.0.0.dev0-py2.py3-none-any.whl
+[2023-05-28 12:46:23] INFO root fetch - processPackages [bahire-hasab]: Downloading https://files.pythonhosted.org/packages/df/12/5847ab41f5e412c1c729f1b5211f91ab128bb793611ad6caf322493703de/bahire_hasab-0.2.2.tar.gz
+[2023-05-28 12:46:23] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 12:46:23] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.0.tar.gz tmp/joyrl-0.2.1.tar.gz --markdown 20230528/j/joyrl/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-28 12:46:24] INFO root fetch - processPackages [aws-service-catalog-puppet]: executing diffoscope
+[2023-05-28 12:46:24] INFO root fetch - processPackages [aws-service-catalog-puppet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-service-catalog-puppet-0.99.1.tar.gz tmp/aws-service-catalog-puppet-0.99.2.tar.gz --markdown 20230528/a/aws-service-catalog-puppet/0.99.1-0.99.2/diff.md --exclude *.pyd
+[2023-05-28 12:46:24] INFO root fetch - processPackages [bahire-hasab]: executing diffoscope
+[2023-05-28 12:46:24] INFO root fetch - processPackages [bahire-hasab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bahire-hasab-0.2.1.tar.gz tmp/bahire_hasab-0.2.2.tar.gz --markdown 20230528/b/bahire-hasab/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 12:46:24] INFO root fetch - processPackages [ansible-playbook-grapher]: Downloading https://files.pythonhosted.org/packages/75/1e/9b3a5209b03d7f7b0f6dd904d2180a80d3408d516115a7cbfa284c96a503/ansible_playbook_grapher-2.0.0.dev2-py2.py3-none-any.whl
+[2023-05-28 12:46:24] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2023-05-28 12:46:24] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2023.5.28.10.43.15.tar.gz tmp/fgo_api_types-2023.5.3.17.28.2.tar.gz --markdown 20230528/f/fgo-api-types/2023.5.28.10.43.15-2023.5.3.17.28.2/diff.md --exclude *.pyd
+[2023-05-28 12:46:24] INFO root fetch - processPackages [ansible-playbook-grapher]: executing diffoscope
+[2023-05-28 12:46:24] INFO root fetch - processPackages [ansible-playbook-grapher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_playbook_grapher-2.0.0.dev0-py2.py3-none-any.whl.zip tmp/ansible_playbook_grapher-2.0.0.dev2-py2.py3-none-any.whl.zip --markdown 20230528/a/ansible-playbook-grapher/2.0.0.dev0-2.0.0.dev2/diff.md --exclude *.pyd
+[2023-05-28 12:46:25] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 12:46:25] INFO root fetch - main [MainThread]: End processing [bahire-hasab]: success
+[2023-05-28 12:46:25] INFO root fetch - main [MainThread]: End processing [ansible-playbook-grapher]: success
+[2023-05-28 12:46:25] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2023-05-28 12:46:25] INFO root fetch - main [MainThread]: End processing [aws-service-catalog-puppet]: success
+[2023-05-28 12:46:26] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-28 12:46:26] INFO root fetch - main [MainThread]: Store serial: [18280063]
