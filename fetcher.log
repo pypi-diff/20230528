@@ -622,3 +622,42 @@
 [2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [RecruitmentCurveFitting]: success
 [2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
 [2023-05-28 02:00:22] INFO root fetch - main [MainThread]: Store serial: [18277448]
+[2023-05-28 02:05:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277448]
+[2023-05-28 02:05:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 02:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygamal
+[2023-05-28 02:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchdatasets-nightly
+[2023-05-28 02:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coconut-develop
+[2023-05-28 02:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2023-05-28 02:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygamal
+[2023-05-28 02:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jaxkern-nightly
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: New version: [1.0.4] Old Version: [1.0.2]
+[2023-05-28 02:05:31] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-28 02:05:31] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-28 02:05:31] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev9] Old Version: [3.0.1.post0.dev8]
+[2023-05-28 02:05:31] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1685145799] Old Version: [1685059411]
+[2023-05-28 02:05:31] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-28 02:05:31] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230528/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-28 02:05:31] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-28 02:05:31] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230528/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/f6/d1/65b49018ca5243b818c0110db8066250ea40842c15ff7ee3282936d08e55/pygamal-1.0.2.tar.gz
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/f6/d1/65b49018ca5243b818c0110db8066250ea40842c15ff7ee3282936d08e55/pygamal-1.0.2.tar.gz
+[2023-05-28 02:05:31] INFO root fetch - processPackages [coconut-develop]: Downloading https://files.pythonhosted.org/packages/fc/7e/fac6c386df99fafbef600c434bfc6bd87df3d4a908c30d9c518e1f122841/coconut-develop-3.0.1.post0.dev9.tar.gz
+[2023-05-28 02:05:31] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/71/d5/3459ce3a94e27b13c840fedec8382a29ee01d4fee36a16700ef99c16d38e/torchdatasets-nightly-1685145799.tar.gz
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/72/36/12796fa2b67d0ea9859d634846ed059789264dab311c03c37178a3e0cf9b/pygamal-1.0.4.tar.gz
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/72/36/12796fa2b67d0ea9859d634846ed059789264dab311c03c37178a3e0cf9b/pygamal-1.0.4.tar.gz
+[2023-05-28 02:05:31] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-28 02:05:31] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1685059411.tar.gz tmp/torchdatasets-nightly-1685145799.tar.gz --markdown 20230528/t/torchdatasets-nightly/1685059411-1685145799/diff.md --exclude *.pyd
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: executing diffoscope
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: executing diffoscope
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygamal-1.0.2.tar.gz tmp/pygamal-1.0.4.tar.gz --markdown 20230528/p/pygamal/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-05-28 02:05:31] INFO root fetch - processPackages [pygamal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygamal-1.0.2.tar.gz tmp/pygamal-1.0.4.tar.gz --markdown 20230528/p/pygamal/1.0.2-1.0.4/diff.md --exclude *.pyd
+[2023-05-28 02:05:31] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-28 02:05:31] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev8.tar.gz tmp/coconut-develop-3.0.1.post0.dev9.tar.gz --markdown 20230528/c/coconut-develop/3.0.1.post0.dev8-3.0.1.post0.dev9/diff.md --exclude *.pyd
+[2023-05-28 02:05:32] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-28 02:05:32] INFO root fetch - main [MainThread]: End processing [pygamal]: success
+[2023-05-28 02:05:32] INFO root fetch - main [MainThread]: End processing [pygamal]: success
+[2023-05-28 02:05:32] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-28 02:05:33] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-28 02:05:40] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-28 02:05:40] INFO root fetch - main [MainThread]: Store serial: [18277466]
