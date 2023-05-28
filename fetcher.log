@@ -7195,3 +7195,68 @@ EOFError: EOF read where object expected
 [2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [canvas-course-tools]: success
 [2023-05-28 16:35:19] INFO root fetch - main [MainThread]: End processing [meshtastic]: success
 [2023-05-28 16:35:19] INFO root fetch - main [MainThread]: Store serial: [18281440]
+[2023-05-28 16:40:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281440]
+[2023-05-28 16:40:28] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-28 16:45:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281440]
+[2023-05-28 16:45:34] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: XlsxWriter
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-center
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docker-recipe
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lndb_storage
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-clickzetta
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ia-wumpus
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-dynamic-storage
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: esdb
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rekuest
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: autosrt
+[2023-05-28 16:45:34] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [docker-recipe]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ia-wumpus]: New version: [0.3.2] Old Version: [0.3]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [model-center]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [lndb_storage]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [esdb]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [django-dynamic-storage]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [rekuest]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [XlsxWriter]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-05-28 16:45:34] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ia-wumpus]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [ia-wumpus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ia_wumpus-0.3.tar.gz tmp/ia_wumpus-0.3.2.tar.gz --markdown 20230528/i/ia-wumpus/0.3-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [docker-recipe]: Downloading https://files.pythonhosted.org/packages/16/a5/bcccaa5d1b77fe8a4ccbeb2c070530778fee378a4b2921256fa51b753bc8/docker-recipe-0.1.4.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [model-center]: Downloading https://files.pythonhosted.org/packages/e7/5e/cfc18c7461a8eb8aa8d819687a557c5b15aa250c74fc5441e4c703087224/model-center-1.0.1.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [esdb]: Downloading https://files.pythonhosted.org/packages/58/a0/df84f6373aeaa03975f904550311b0bd13501e5521a349df77bc4f4af00a/esdb-0.3.2.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [lndb_storage]: Downloading https://files.pythonhosted.org/packages/d3/a2/90cda34936b69886c76f61388755e248cd149ad623db9296ba285a7f723f/lndb_storage-0.3.2.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [docker-recipe]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [docker-recipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker-recipe-0.1.3.tar.gz tmp/docker-recipe-0.1.4.tar.gz --markdown 20230528/d/docker-recipe/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230528/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [XlsxWriter]: Downloading https://files.pythonhosted.org/packages/04/d4/3cc6a3cd112a91d95f554ca8909c8528addf06d79c51ccd40e39a6ff48e1/XlsxWriter-3.1.2.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [django-dynamic-storage]: Downloading https://files.pythonhosted.org/packages/66/17/af2570f98317491648d7383589d5fad83ae30aa55523613e306f71f3db2d/django_dynamic_storage-0.1.3.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [rekuest]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [rekuest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rekuest-0.1.8.tar.gz tmp/rekuest-0.1.9.tar.gz --markdown 20230528/r/rekuest/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [lndb_storage]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [lndb_storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lndb_storage-0.3.1.tar.gz tmp/lndb_storage-0.3.2.tar.gz --markdown 20230528/l/lndb_storage/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [model-center]: Downloading https://files.pythonhosted.org/packages/b9/10/362caa4106264471ea16e428c2adff7a6af0da099b460ce16f47a8599a8a/model-center-1.0.2.tar.gz
+[2023-05-28 16:45:34] INFO root fetch - processPackages [django-dynamic-storage]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [django-dynamic-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_dynamic_storage-0.1.2.tar.gz tmp/django_dynamic_storage-0.1.3.tar.gz --markdown 20230528/d/django-dynamic-storage/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [XlsxWriter]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [model-center]: executing diffoscope
+[2023-05-28 16:45:34] INFO root fetch - processPackages [XlsxWriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/XlsxWriter-3.1.1.tar.gz tmp/XlsxWriter-3.1.2.tar.gz --markdown 20230528/X/XlsxWriter/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-05-28 16:45:34] INFO root fetch - processPackages [model-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model-center-1.0.1.tar.gz tmp/model-center-1.0.2.tar.gz --markdown 20230528/m/model-center/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 16:45:35] INFO root fetch - processPackages [esdb]: Downloading https://files.pythonhosted.org/packages/18/4c/b1ae8c1191ab975187fae7a9c962b7054fe4fb71cc6e03e41744e68dfc66/esdb-0.3.3.tar.gz
+[2023-05-28 16:45:35] INFO root fetch - processPackages [esdb]: executing diffoscope
+[2023-05-28 16:45:35] INFO root fetch - processPackages [esdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esdb-0.3.2.tar.gz tmp/esdb-0.3.3.tar.gz --markdown 20230528/e/esdb/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-28 16:45:35] ERROR root fetch - processPackages [model-center]: Diffoscope failed: Error: error creating container storage: the container name "angry_thompson" is already in use by "3f1648f839fd262fe905cc8ab278ab2c296951aa997f4728e72722a5b59c2deb". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-28 16:45:35] INFO root fetch - main [MainThread]: End processing [model-center] error
+[2023-05-28 16:45:35] INFO root fetch - main [MainThread]: End processing [ia-wumpus]: success
+[2023-05-28 16:45:35] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 16:45:36] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-05-28 16:45:36] INFO root fetch - main [MainThread]: End processing [docker-recipe]: success
+[2023-05-28 16:45:36] INFO root fetch - main [MainThread]: End processing [lndb_storage]: success
+[2023-05-28 16:45:36] INFO root fetch - main [MainThread]: End processing [django-dynamic-storage]: success
+[2023-05-28 16:45:36] INFO root fetch - main [MainThread]: End processing [esdb]: success
+[2023-05-28 16:45:37] INFO root fetch - main [MainThread]: End processing [rekuest]: success
+[2023-05-28 16:45:39] INFO root fetch - main [MainThread]: End processing [XlsxWriter]: success
+[2023-05-28 16:45:39] INFO root fetch - main [MainThread]: Store serial: [18281471]
