@@ -3042,3 +3042,25 @@
 [2023-05-28 08:54:01] INFO root fetch - main [MainThread]: End processing [nkj]: success
 [2023-05-28 08:54:03] INFO root fetch - main [MainThread]: End processing [otpme]: success
 [2023-05-28 08:54:03] INFO root fetch - main [MainThread]: Store serial: [18278928]
+[2023-05-28 08:59:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278928]
+[2023-05-28 08:59:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 08:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-log-notifier
+[2023-05-28 08:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bibigo
+[2023-05-28 08:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zanj
+[2023-05-28 08:59:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyslit
+[2023-05-28 08:59:12] INFO root fetch - processPackages [zanj]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-28 08:59:12] INFO root fetch - processPackages [pyslit]: New version: [2.2.5] Old Version: [2.1.5]
+[2023-05-28 08:59:12] WARNING root fetch - processPackages [bibigo]: Skipping, unable to determine old version
+[2023-05-28 08:59:12] WARNING root fetch - processPackages [cdk-log-notifier]: Skipping, unable to determine old version
+[2023-05-28 08:59:12] INFO root fetch - main [MainThread]: End processing [bibigo] error
+[2023-05-28 08:59:12] INFO root fetch - main [MainThread]: End processing [cdk-log-notifier] error
+[2023-05-28 08:59:13] INFO root fetch - processPackages [zanj]: Downloading https://files.pythonhosted.org/packages/b0/57/7cadc08496ee79a7c294dd32ee6ce68e2081f302cd581c3bacf9646f4515/zanj-0.0.1.tar.gz
+[2023-05-28 08:59:13] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/a4/ed/0eb59f3423fed8476673d96f3e30aaa791db35ff5e92a79a3d5ecd61f9ab/pyslit-2.2.5.tar.gz
+[2023-05-28 08:59:13] INFO root fetch - processPackages [pyslit]: executing diffoscope
+[2023-05-28 08:59:13] INFO root fetch - processPackages [pyslit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslit-2.1.5.tar.gz tmp/pyslit-2.2.5.tar.gz --markdown 20230528/p/pyslit/2.1.5-2.2.5/diff.md --exclude *.pyd
+[2023-05-28 08:59:13] INFO root fetch - processPackages [zanj]: Downloading https://files.pythonhosted.org/packages/a2/ce/ea413243f2248d340ae23d0aabfaf74f6db6a5ca58f65b5f584ac989267d/zanj-0.1.0.tar.gz
+[2023-05-28 08:59:13] INFO root fetch - processPackages [zanj]: executing diffoscope
+[2023-05-28 08:59:13] INFO root fetch - processPackages [zanj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zanj-0.0.1.tar.gz tmp/zanj-0.1.0.tar.gz --markdown 20230528/z/zanj/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-28 08:59:14] INFO root fetch - main [MainThread]: End processing [pyslit]: success
+[2023-05-28 08:59:14] INFO root fetch - main [MainThread]: End processing [zanj]: success
+[2023-05-28 08:59:14] INFO root fetch - main [MainThread]: Store serial: [18278944]
