@@ -7932,3 +7932,40 @@ EOFError: EOF read where object expected
 [2023-05-28 17:52:40] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2023-05-28 17:52:42] INFO root fetch - main [MainThread]: End processing [oloren]: success
 [2023-05-28 17:52:42] INFO root fetch - main [MainThread]: Store serial: [18281911]
+[2023-05-28 17:57:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281911]
+[2023-05-28 17:57:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dinohub-seedwork-be
+[2023-05-28 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phantom-types
+[2023-05-28 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rigorous-recorder
+[2023-05-28 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mathbib
+[2023-05-28 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: UnlimitedGPT
+[2023-05-28 17:57:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: daba
+[2023-05-28 17:57:51] INFO root fetch - processPackages [daba]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 17:57:51] INFO root fetch - processPackages [mathbib]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 17:57:51] INFO root fetch - processPackages [phantom-types]: New version: [2.0.0] Old Version: [1.2.2]
+[2023-05-28 17:57:51] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 17:57:52] INFO root fetch - processPackages [UnlimitedGPT]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:57:52] INFO root fetch - processPackages [rigorous-recorder]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-28 17:57:52] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-28 17:57:52] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230528/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 17:57:52] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-05-28 17:57:52] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.1.0.tar.gz tmp/mathbib-0.1.1.tar.gz --markdown 20230528/m/mathbib/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 17:57:52] INFO root fetch - processPackages [daba]: Downloading https://files.pythonhosted.org/packages/5e/a6/40343286f28d8f6dce04f4bbb5cc0420b58e8111285dc34cc6b430c65e29/daba-0.0.1.tar.gz
+[2023-05-28 17:57:52] INFO root fetch - processPackages [phantom-types]: executing diffoscope
+[2023-05-28 17:57:52] INFO root fetch - processPackages [phantom-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phantom-types-1.2.2.tar.gz tmp/phantom-types-2.0.0.tar.gz --markdown 20230528/p/phantom-types/1.2.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-28 17:57:52] INFO root fetch - processPackages [rigorous-recorder]: Downloading https://files.pythonhosted.org/packages/f5/cb/750eec335f1828b0a26515ef2bcbc33b48ddea3df59ce6e988b49f01c4f8/rigorous_recorder-1.4.2.tar.gz
+[2023-05-28 17:57:52] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/18/da/56480a3c0a5d27c844d31917814733ba88364d4aeab2a47d776202a76fad/UnlimitedGPT-0.0.9.tar.gz
+[2023-05-28 17:57:52] INFO root fetch - processPackages [daba]: Downloading https://files.pythonhosted.org/packages/56/8b/c235c8cb95368927ebdc644d87e514e24e6009141c60188eefee90d1bc14/daba-0.0.2.tar.gz
+[2023-05-28 17:57:52] INFO root fetch - processPackages [rigorous-recorder]: executing diffoscope
+[2023-05-28 17:57:52] INFO root fetch - processPackages [rigorous-recorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rigorous_recorder-1.4.1.tar.gz tmp/rigorous_recorder-1.4.2.tar.gz --markdown 20230528/r/rigorous-recorder/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-28 17:57:52] INFO root fetch - processPackages [UnlimitedGPT]: executing diffoscope
+[2023-05-28 17:57:52] INFO root fetch - processPackages [UnlimitedGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnlimitedGPT-0.0.8.tar.gz tmp/UnlimitedGPT-0.0.9.tar.gz --markdown 20230528/U/UnlimitedGPT/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:57:52] INFO root fetch - processPackages [daba]: executing diffoscope
+[2023-05-28 17:57:52] INFO root fetch - processPackages [daba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daba-0.0.1.tar.gz tmp/daba-0.0.2.tar.gz --markdown 20230528/d/daba/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 17:57:53] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-05-28 17:57:53] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
+[2023-05-28 17:57:53] INFO root fetch - main [MainThread]: End processing [phantom-types]: success
+[2023-05-28 17:57:53] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-28 17:57:53] INFO root fetch - main [MainThread]: End processing [rigorous-recorder]: success
+[2023-05-28 17:58:43] INFO root fetch - main [MainThread]: End processing [daba]: success
+[2023-05-28 17:58:43] INFO root fetch - main [MainThread]: Store serial: [18281930]
