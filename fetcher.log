@@ -1609,3 +1609,31 @@
 [2023-05-28 03:48:21] INFO root fetch - main [MainThread]: End processing [autonomi-nos]: success
 [2023-05-28 03:48:21] INFO root fetch - main [MainThread]: End processing [rayfed-nightly]: success
 [2023-05-28 03:48:21] INFO root fetch - main [MainThread]: Store serial: [18277993]
+[2023-05-28 03:53:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277993]
+[2023-05-28 03:53:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 03:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rtb-toolbox
+[2023-05-28 03:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rtb-toolbox
+[2023-05-28 03:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: selenium-supporter
+[2023-05-28 03:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-wget
+[2023-05-28 03:53:29] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.56] Old Version: [0.1.55]
+[2023-05-28 03:53:29] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.56] Old Version: [0.1.55]
+[2023-05-28 03:53:29] INFO root fetch - processPackages [selenium-supporter]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-28 03:53:29] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-28 03:53:29] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/04/23/aa1a988247189c595816a96233ed0659fe70a2e4465b14057bd761eb8f63/rtb_toolbox-0.1.55.tar.gz
+[2023-05-28 03:53:29] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/04/23/aa1a988247189c595816a96233ed0659fe70a2e4465b14057bd761eb8f63/rtb_toolbox-0.1.55.tar.gz
+[2023-05-28 03:53:29] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-28 03:53:29] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230528/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:53:29] INFO root fetch - processPackages [selenium-supporter]: Downloading https://files.pythonhosted.org/packages/fd/55/3377e348644adb9ca307f20d15a9bf6721707e0b014637d058aa8ed7baad/selenium-supporter-0.0.5.tar.gz
+[2023-05-28 03:53:29] INFO root fetch - processPackages [selenium-supporter]: executing diffoscope
+[2023-05-28 03:53:29] INFO root fetch - processPackages [selenium-supporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-supporter-0.0.4.tar.gz tmp/selenium-supporter-0.0.5.tar.gz --markdown 20230528/s/selenium-supporter/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-28 03:53:30] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/70/54/1e8e76dae4f3511f2ca6ddfb184590debb31c35ea6542ecaabce35e88141/rtb_toolbox-0.1.56.tar.gz
+[2023-05-28 03:53:30] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/70/54/1e8e76dae4f3511f2ca6ddfb184590debb31c35ea6542ecaabce35e88141/rtb_toolbox-0.1.56.tar.gz
+[2023-05-28 03:53:30] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:53:30] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.55.tar.gz tmp/rtb_toolbox-0.1.56.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.55-0.1.56/diff.md --exclude *.pyd
+[2023-05-28 03:53:30] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:53:30] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.55.tar.gz tmp/rtb_toolbox-0.1.56.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.55-0.1.56/diff.md --exclude *.pyd
+[2023-05-28 03:53:31] INFO root fetch - main [MainThread]: End processing [selenium-supporter]: success
+[2023-05-28 03:53:31] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:53:31] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-28 03:54:20] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:54:20] INFO root fetch - main [MainThread]: Store serial: [18278005]
