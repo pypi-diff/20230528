@@ -6550,3 +6550,59 @@ EOFError: EOF read where object expected
 [2023-05-28 15:31:41] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
 [2023-05-28 15:31:42] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
 [2023-05-28 15:31:42] INFO root fetch - main [MainThread]: Store serial: [18281030]
+[2023-05-28 15:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281030]
+[2023-05-28 15:36:51] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sword2vec
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-toolshed
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: investor8-sdk
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libvcs
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: C-Telethon
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TMDBTraktSyncer
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crackerjack
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vamb
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: python-roborock
+[2023-05-28 15:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: serializer-ByKaxxa
+[2023-05-28 15:36:51] INFO root fetch - processPackages [django-toolshed]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-28 15:36:51] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-28 15:36:51] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-28 15:36:51] INFO root fetch - processPackages [libvcs]: New version: [0.9.0a2] Old Version: [0.9.0a1]
+[2023-05-28 15:36:51] INFO root fetch - processPackages [sword2vec]: New version: [3.2.7] Old Version: [3.2.6]
+[2023-05-28 15:36:51] INFO root fetch - processPackages [vamb]: New version: [4.1.2] Old Version: [4.1.1]
+[2023-05-28 15:36:51] INFO root fetch - processPackages [investor8-sdk]: New version: [1.1.9] Old Version: [1.1.84]
+[2023-05-28 15:36:51] WARNING root fetch - processPackages [C-Telethon]: Skipping, unable to determine old version
+[2023-05-28 15:36:51] INFO root fetch - main [MainThread]: End processing [C-Telethon] error
+[2023-05-28 15:36:51] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230528/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-28 15:36:51] INFO root fetch - processPackages [crackerjack]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 15:36:51] WARNING root fetch - processPackages [serializer-ByKaxxa]: Skipping, unable to determine old version
+[2023-05-28 15:36:51] INFO root fetch - main [MainThread]: End processing [serializer-ByKaxxa] error
+[2023-05-28 15:36:51] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.7.tar.gz tmp/TMDBTraktSyncer-1.1.8.tar.gz --markdown 20230528/T/TMDBTraktSyncer/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-28 15:36:51] INFO root fetch - processPackages [libvcs]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [libvcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvcs-0.9.0a1.tar.gz tmp/libvcs-0.9.0a2.tar.gz --markdown 20230528/l/libvcs/0.9.0a1-0.9.0a2/diff.md --exclude *.pyd
+[2023-05-28 15:36:51] INFO root fetch - processPackages [django-toolshed]: Downloading https://files.pythonhosted.org/packages/02/ad/b38ec82f91702d09094ab93693d1ca33d909f2c932a6c066b9f167f033d7/django_toolshed-0.5.7.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/af/74/02f36f945e9f7bdaf3d18bb07c44ce6a28df64e4d01c3110034684616ca5/sword2vec-3.2.6.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [investor8-sdk]: Downloading https://files.pythonhosted.org/packages/1a/08/32c982d7022de7ec6cd40281386292d72df23095c98d573b5a6f634e482d/investor8-sdk-1.1.84.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [vamb]: Downloading https://files.pythonhosted.org/packages/12/0b/20a5991253c19619416b80a2e298be7c5372578ec47d85e80aa1f6856ba9/vamb-4.1.1.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [crackerjack]: Downloading https://files.pythonhosted.org/packages/01/c3/eea420a89c3a18a4607986d79957d997b301c277a4f2f3910036da013c59/crackerjack-0.2.2.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [django-toolshed]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [django-toolshed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_toolshed-0.5.6.tar.gz tmp/django_toolshed-0.5.7.tar.gz --markdown 20230528/d/django-toolshed/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-28 15:36:51] INFO root fetch - processPackages [crackerjack]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.2.1.tar.gz tmp/crackerjack-0.2.2.tar.gz --markdown 20230528/c/crackerjack/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 15:36:51] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/32/5e/303861af7067284d8aae5ebb2d9cdedf9ac5f458e8a3521c0f51c72d7664/sword2vec-3.2.7.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [vamb]: Downloading https://files.pythonhosted.org/packages/9e/74/846facfca0dd621883c26d22f793d56a074d6f3b42592b31e6e292f7f506/vamb-4.1.2.tar.gz
+[2023-05-28 15:36:51] INFO root fetch - processPackages [investor8-sdk]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [investor8-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investor8-sdk-1.1.84.tar.gz tmp/investor8-sdk-1.1.9.tar.gz --markdown 20230528/i/investor8-sdk/1.1.84-1.1.9/diff.md --exclude *.pyd
+[2023-05-28 15:36:51] INFO root fetch - processPackages [vamb]: executing diffoscope
+[2023-05-28 15:36:51] INFO root fetch - processPackages [vamb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vamb-4.1.1.tar.gz tmp/vamb-4.1.2.tar.gz --markdown 20230528/v/vamb/4.1.1-4.1.2/diff.md --exclude *.pyd
+[2023-05-28 15:36:52] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-28 15:36:52] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.6.tar.gz tmp/sword2vec-3.2.7.tar.gz --markdown 20230528/s/sword2vec/3.2.6-3.2.7/diff.md --exclude *.pyd
+[2023-05-28 15:36:52] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-28 15:36:52] INFO root fetch - main [MainThread]: End processing [libvcs]: success
+[2023-05-28 15:36:52] INFO root fetch - main [MainThread]: End processing [django-toolshed]: success
+[2023-05-28 15:36:53] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-28 15:36:53] INFO root fetch - main [MainThread]: End processing [crackerjack]: success
+[2023-05-28 15:36:53] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-28 15:36:53] INFO root fetch - main [MainThread]: End processing [vamb]: success
+[2023-05-28 15:36:58] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
+[2023-05-28 15:36:58] INFO root fetch - main [MainThread]: Store serial: [18281064]
