@@ -3465,3 +3465,24 @@
 [2023-05-28 09:58:53] INFO root fetch - main [MainThread]: End processing [mofmt]: success
 [2023-05-28 09:58:53] INFO root fetch - main [MainThread]: End processing [bibigo]: success
 [2023-05-28 09:58:53] INFO root fetch - main [MainThread]: Store serial: [18279204]
+[2023-05-28 10:03:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279204]
+[2023-05-28 10:04:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 10:04:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almgren-chriss
+[2023-05-28 10:04:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-nightly
+[2023-05-28 10:04:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assisted-service-client
+[2023-05-28 10:04:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sciform
+[2023-05-28 10:04:02] WARNING root fetch - processPackages [almgren-chriss]: Skipping, unable to determine old version
+[2023-05-28 10:04:02] INFO root fetch - main [MainThread]: End processing [almgren-chriss] error
+[2023-05-28 10:04:02] INFO root fetch - processPackages [sciform]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 10:04:02] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-05-28 10:04:02] INFO root fetch - processPackages [sciform]: executing diffoscope
+[2023-05-28 10:04:02] INFO root fetch - processPackages [sciform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciform-0.6.0.tar.gz tmp/sciform-0.6.1.tar.gz --markdown 20230528/s/sciform/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 10:04:02] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-28 10:04:02] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-05-28 10:04:02] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230528/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-05-28 10:04:02] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-28 10:04:02] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230528/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-28 10:04:03] INFO root fetch - main [MainThread]: End processing [sciform]: success
+[2023-05-28 10:04:06] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-05-28 10:04:13] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-28 10:04:13] INFO root fetch - main [MainThread]: Store serial: [18279219]
