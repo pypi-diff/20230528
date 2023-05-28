@@ -10619,3 +10619,60 @@ EOFError: EOF read where object expected
 [2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [lamin_logger]: success
 [2023-05-28 23:28:05] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-05-28 23:28:05] INFO root fetch - main [MainThread]: Store serial: [18283629]
+[2023-05-28 23:33:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283629]
+[2023-05-28 23:33:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: binance-c2c-sapi-sdk
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbpyman
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kappadata
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfish
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kcli
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: d3blocks
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: linkplay-cli
+[2023-05-28 23:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: binance-c2c-sapi-sdk
+[2023-05-28 23:33:14] INFO root fetch - processPackages [d3blocks]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-28 23:33:14] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kfish]: New version: [99.0.202305282131] Old Version: [99.0.202305282119]
+[2023-05-28 23:33:14] INFO root fetch - processPackages [dbpyman]: New version: [1.0.0] Old Version: [0.1.5]
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kappadata]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-28 23:33:14] WARNING root fetch - processPackages [linkplay-cli]: Skipping, unable to determine old version
+[2023-05-28 23:33:14] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 23:33:14] INFO root fetch - main [MainThread]: End processing [linkplay-cli] error
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kcli]: New version: [99.0.202305282131] Old Version: [99.0.202305282129]
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kcli]: New version: [99.0.202305282131] Old Version: [99.0.202305282129]
+[2023-05-28 23:33:14] INFO root fetch - processPackages [dbpyman]: Downloading https://files.pythonhosted.org/packages/0b/d2/f9c57d37b35b909eddd8cd530d988132414f501a0020212dd66edb93a034/dbpyman-0.1.5.tar.gz
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/54/1b/6318eadb095a616c7431d101d3bb1b85832e7493487f5e09ba660a0545da/kcli-99.0.202305282129-py3-none-any.whl
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/54/1b/6318eadb095a616c7431d101d3bb1b85832e7493487f5e09ba660a0545da/kcli-99.0.202305282129-py3-none-any.whl
+[2023-05-28 23:33:14] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/93/29/9c2d83798fd895b6a55b6fba00ea6130103e02a8ebf0d1d7a2d9513d9b27/kfish-99.0.202305282131-py3-none-any.whl
+[2023-05-28 23:33:14] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: Downloading https://files.pythonhosted.org/packages/3f/b8/da67651d02a7133bf8b4014d70759bb16ac9ad00340f2b43d87bf7136a13/binance-c2c-sapi-sdk-0.0.1.tar.gz
+[2023-05-28 23:33:14] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: Downloading https://files.pythonhosted.org/packages/3f/b8/da67651d02a7133bf8b4014d70759bb16ac9ad00340f2b43d87bf7136a13/binance-c2c-sapi-sdk-0.0.1.tar.gz
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305282119-py3-none-any.whl.zip tmp/kfish-99.0.202305282131-py3-none-any.whl.zip --markdown 20230528/k/kfish/99.0.202305282119-99.0.202305282131/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [d3blocks]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [d3blocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d3blocks-1.2.8.tar.gz tmp/d3blocks-1.2.9.tar.gz --markdown 20230528/d/d3blocks/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kappadata]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kappadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappadata-1.2.8.tar.gz tmp/kappadata-1.2.9.tar.gz --markdown 20230528/k/kappadata/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [dbpyman]: Downloading https://files.pythonhosted.org/packages/74/ae/450cc62ec6edb6d8849be71bfff1720a9c37221bec2aa087602e64456461/dbpyman-1.0.0.tar.gz
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/f1/13/1c368c9085e06159c50a3620913c8a0a17717476552d81b4e386782d06fe/kcli-99.0.202305282131-py3-none-any.whl
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/f1/13/1c368c9085e06159c50a3620913c8a0a17717476552d81b4e386782d06fe/kcli-99.0.202305282131-py3-none-any.whl
+[2023-05-28 23:33:15] INFO root fetch - processPackages [dbpyman]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [dbpyman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbpyman-0.1.5.tar.gz tmp/dbpyman-1.0.0.tar.gz --markdown 20230528/d/dbpyman/0.1.5-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: Downloading https://files.pythonhosted.org/packages/e4/42/405bc3b2c685aef9221e8c6970d2e42e04ff6243fb9e0a522cd537a22c66/binance-c2c-sapi-sdk-0.0.2.tar.gz
+[2023-05-28 23:33:15] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: Downloading https://files.pythonhosted.org/packages/e4/42/405bc3b2c685aef9221e8c6970d2e42e04ff6243fb9e0a522cd537a22c66/binance-c2c-sapi-sdk-0.0.2.tar.gz
+[2023-05-28 23:33:15] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sapi-sdk-0.0.1.tar.gz tmp/binance-c2c-sapi-sdk-0.0.2.tar.gz --markdown 20230528/b/binance-c2c-sapi-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [binance-c2c-sapi-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sapi-sdk-0.0.1.tar.gz tmp/binance-c2c-sapi-sdk-0.0.2.tar.gz --markdown 20230528/b/binance-c2c-sapi-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305282129-py3-none-any.whl.zip tmp/kcli-99.0.202305282131-py3-none-any.whl.zip --markdown 20230528/k/kcli/99.0.202305282129-99.0.202305282131/diff.md --exclude *.pyd
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-28 23:33:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305282129-py3-none-any.whl.zip tmp/kcli-99.0.202305282131-py3-none-any.whl.zip --markdown 20230528/k/kcli/99.0.202305282129-99.0.202305282131/diff.md --exclude *.pyd
+[2023-05-28 23:33:16] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-28 23:33:16] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi-sdk]: success
+[2023-05-28 23:33:16] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi-sdk]: success
+[2023-05-28 23:33:16] INFO root fetch - main [MainThread]: End processing [dbpyman]: success
+[2023-05-28 23:33:17] INFO root fetch - main [MainThread]: End processing [kappadata]: success
+[2023-05-28 23:33:17] INFO root fetch - main [MainThread]: End processing [d3blocks]: success
+[2023-05-28 23:33:21] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-28 23:33:23] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-28 23:33:23] INFO root fetch - main [MainThread]: Store serial: [18283654]
