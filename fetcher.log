@@ -8618,3 +8618,64 @@ EOFError: EOF read where object expected
 [2023-05-28 19:17:41] INFO root fetch - main [MainThread]: End processing [pypreql]: success
 [2023-05-28 19:18:56] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-28 19:18:56] INFO root fetch - main [MainThread]: Store serial: [18282333]
+[2023-05-28 19:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282333]
+[2023-05-28 19:24:05] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: attacus
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anthe-official
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ak-pynn
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pankmer
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: domjudge-utility
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hpcflow-new2
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kappaschedules
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: himza-itcollege
+[2023-05-28 19:24:05] INFO root fetch - processPackages [domjudge-utility]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [anthe-official]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [pankmer]: New version: [0.9.0] Old Version: [0.12.0]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [attacus]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 19:24:05] WARNING root fetch - processPackages [ak-pynn]: Skipping, unable to determine old version
+[2023-05-28 19:24:05] INFO root fetch - processPackages [ak-pynn]: Start processing: pyaodbc
+[2023-05-28 19:24:05] INFO root fetch - processPackages [hpcflow-new2]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-05-28 19:24:05] WARNING root fetch - processPackages [himza-itcollege]: Skipping, unable to determine old version
+[2023-05-28 19:24:05] INFO root fetch - main [MainThread]: End processing [ak-pynn] error
+[2023-05-28 19:24:05] INFO root fetch - main [MainThread]: End processing [himza-itcollege] error
+[2023-05-28 19:24:05] INFO root fetch - processPackages [kappaschedules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [pyaodbc]: New version: [0.1.9a3] Old Version: [0.1.9a1]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [hpcflow-new2]: executing diffoscope
+[2023-05-28 19:24:05] INFO root fetch - processPackages [hpcflow-new2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpcflow_new2-0.2.0a8.tar.gz tmp/hpcflow_new2-0.2.0a9.tar.gz --markdown 20230528/h/hpcflow-new2/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-05-28 19:24:05] INFO root fetch - processPackages [anthe-official]: Downloading https://files.pythonhosted.org/packages/0e/23/ded3f2dae35b61d5e390f776ad0a7d63e22935a4270fff623912da16ae4c/anthe_official-1.0.0.tar.gz
+[2023-05-28 19:24:05] INFO root fetch - processPackages [pankmer]: Downloading https://files.pythonhosted.org/packages/1b/7b/8038050511f7f821089c1d249a88d96475fdb4dafd3318a4a1d1777809c8/pankmer-0.12.0.tar.gz
+[2023-05-28 19:24:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-28 19:24:05] INFO root fetch - processPackages [pyaodbc]: Downloading https://files.pythonhosted.org/packages/cd/03/1d4abbf79663a41c6cef5d43746eb0c1fd8c7c28ed99a457d895144e683e/pyaodbc-0.1.9a1.tar.gz
+[2023-05-28 19:24:05] INFO root fetch - processPackages [attacus]: Downloading https://files.pythonhosted.org/packages/81/b5/1e7ad91c698ea9f92ff440343a349a4d3e18488455006978c590b980061e/attacus-0.1.3-cp310-cp310-win_amd64.whl
+[2023-05-28 19:24:05] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-28 19:24:05] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230528/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-28 19:24:05] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-28 19:24:05] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230528/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-28 19:24:05] INFO root fetch - processPackages [domjudge-utility]: executing diffoscope
+[2023-05-28 19:24:05] INFO root fetch - processPackages [domjudge-utility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domjudge_utility-0.0.8.tar.gz tmp/domjudge_utility-0.0.9.tar.gz --markdown 20230528/d/domjudge-utility/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 19:24:06] INFO root fetch - processPackages [kappaschedules]: executing diffoscope
+[2023-05-28 19:24:06] INFO root fetch - processPackages [kappaschedules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappaschedules-0.0.8.tar.gz tmp/kappaschedules-0.0.9.tar.gz --markdown 20230528/k/kappaschedules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 19:24:06] INFO root fetch - processPackages [attacus]: executing diffoscope
+[2023-05-28 19:24:06] INFO root fetch - processPackages [attacus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attacus-0.1.2-cp310-cp310-win_amd64.whl.zip tmp/attacus-0.1.3-cp310-cp310-win_amd64.whl.zip --markdown 20230528/a/attacus/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 19:24:06] INFO root fetch - processPackages [anthe-official]: Downloading https://files.pythonhosted.org/packages/be/0b/ab1fe05834df11eb62df997dafa12bef75fdd0e174a0b3133a7827434041/anthe_official-1.0.1.tar.gz
+[2023-05-28 19:24:06] INFO root fetch - processPackages [pankmer]: Downloading https://files.pythonhosted.org/packages/ec/87/885615746e80d9141ab39f7997ee1ac00677e583de2ddcd9b167d76993a6/pankmer-0.9.0.tar.gz
+[2023-05-28 19:24:06] INFO root fetch - processPackages [anthe-official]: executing diffoscope
+[2023-05-28 19:24:06] INFO root fetch - processPackages [anthe-official]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anthe_official-1.0.0.tar.gz tmp/anthe_official-1.0.1.tar.gz --markdown 20230528/a/anthe-official/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 19:24:06] INFO root fetch - processPackages [pyaodbc]: Downloading https://files.pythonhosted.org/packages/70/01/69c6c34e5b2b428330f1835e0e038bef2ec6535ffcee8fccbe8caeb6bc5b/pyaodbc-0.1.9a3.tar.gz
+[2023-05-28 19:24:06] INFO root fetch - processPackages [pyaodbc]: executing diffoscope
+[2023-05-28 19:24:06] INFO root fetch - processPackages [pyaodbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaodbc-0.1.9a1.tar.gz tmp/pyaodbc-0.1.9a3.tar.gz --markdown 20230528/p/pyaodbc/0.1.9a1-0.1.9a3/diff.md --exclude *.pyd
+[2023-05-28 19:24:06] INFO root fetch - processPackages [pankmer]: executing diffoscope
+[2023-05-28 19:24:06] INFO root fetch - processPackages [pankmer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pankmer-0.12.0.tar.gz tmp/pankmer-0.9.0.tar.gz --markdown 20230528/p/pankmer/0.12.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [domjudge-utility]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [attacus]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [kappaschedules]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [pankmer]: success
+[2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [anthe-official]: success
+[2023-05-28 19:24:08] INFO root fetch - main [MainThread]: End processing [pyaodbc]: success
+[2023-05-28 19:24:08] INFO root fetch - main [MainThread]: Store serial: [18282367]
