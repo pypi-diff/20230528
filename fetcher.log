@@ -9314,3 +9314,48 @@ EOFError: EOF read where object expected
 [2023-05-28 20:45:21] INFO root fetch - main [MainThread]: End processing [databind.core]: success
 [2023-05-28 20:45:22] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2023-05-28 20:45:22] INFO root fetch - main [MainThread]: Store serial: [18282807]
+[2023-05-28 20:50:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282807]
+[2023-05-28 20:50:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorflowAndKeras
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mprov-ldap-manager
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: otpme
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: raspauto
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ia-wumpus
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bpnet-lite
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: soccminer
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: python-pulsechain
+[2023-05-28 20:50:31] INFO root fetch - processPackages [mprov-ldap-manager]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 20:50:31] INFO root fetch - processPackages [otpme]: New version: [0.3.0a9] Old Version: [0.3.0a8]
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ia-wumpus]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-28 20:50:31] WARNING root fetch - processPackages [python-pulsechain]: Skipping, unable to determine old version
+[2023-05-28 20:50:31] INFO root fetch - main [MainThread]: End processing [python-pulsechain] error
+[2023-05-28 20:50:31] INFO root fetch - processPackages [soccminer]: New version: [0.0.42a1] Old Version: [0.0.41a1]
+[2023-05-28 20:50:31] WARNING root fetch - processPackages [tensorflowAndKeras]: Skipping, unable to determine old version
+[2023-05-28 20:50:31] INFO root fetch - main [MainThread]: End processing [tensorflowAndKeras] error
+[2023-05-28 20:50:31] INFO root fetch - processPackages [raspauto]: New version: [0.3.0] Old Version: [0.2.2.9]
+[2023-05-28 20:50:31] INFO root fetch - processPackages [soccminer]: executing diffoscope
+[2023-05-28 20:50:31] INFO root fetch - processPackages [soccminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccminer-0.0.41a1.tar.gz tmp/soccminer-0.0.42a1.tar.gz --markdown 20230528/s/soccminer/0.0.41a1-0.0.42a1/diff.md --exclude *.pyd
+[2023-05-28 20:50:31] INFO root fetch - processPackages [bpnet-lite]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-28 20:50:31] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2023-05-28 20:50:31] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a8.tar.gz tmp/otpme-0.3.0a9.tar.gz --markdown 20230528/o/otpme/0.3.0a8-0.3.0a9/diff.md --exclude *.pyd
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ia-wumpus]: Downloading https://files.pythonhosted.org/packages/68/2e/af031747ea282d70ffc8302c9a5d9b75bc69f438f907d96ca14ed0fd9d1a/ia_wumpus-0.3.3.tar.gz
+[2023-05-28 20:50:31] INFO root fetch - processPackages [raspauto]: Downloading https://files.pythonhosted.org/packages/b7/b7/5645ab2ea3f84be36aa8fbd0ccf83b39cc565a3f018c86d457f19cd70056/raspauto-0.2.2.9.tar.gz
+[2023-05-28 20:50:31] INFO root fetch - processPackages [mprov-ldap-manager]: Downloading https://files.pythonhosted.org/packages/85/b0/725be9806118563338c6221e548b58eee0980d526b5288e870f010b2129e/mprov_ldap_manager-0.0.3.tar.gz
+[2023-05-28 20:50:31] INFO root fetch - processPackages [bpnet-lite]: Downloading https://files.pythonhosted.org/packages/b3/5b/e584bc7349affac43e3417e41b88f61e194a783d41c4ac9dde7c4c00dd0a/bpnet-lite-0.5.0.tar.gz
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ia-wumpus]: executing diffoscope
+[2023-05-28 20:50:31] INFO root fetch - processPackages [ia-wumpus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ia_wumpus-0.3.2.tar.gz tmp/ia_wumpus-0.3.3.tar.gz --markdown 20230528/i/ia-wumpus/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-28 20:50:31] INFO root fetch - processPackages [mprov-ldap-manager]: executing diffoscope
+[2023-05-28 20:50:31] INFO root fetch - processPackages [mprov-ldap-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mprov_ldap_manager-0.0.2.tar.gz tmp/mprov_ldap_manager-0.0.3.tar.gz --markdown 20230528/m/mprov-ldap-manager/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 20:50:31] INFO root fetch - processPackages [raspauto]: Downloading https://files.pythonhosted.org/packages/59/d3/62fd822e68292bd214f7e1fe7eb2bd98c073180e61f1f62cf152edb6a6af/raspauto-0.3.0.tar.gz
+[2023-05-28 20:50:31] INFO root fetch - processPackages [bpnet-lite]: Downloading https://files.pythonhosted.org/packages/b3/12/4a010bcfae216e6270a9d7d40d1fb352cb864629f3f073767e5a546955c6/bpnet-lite-0.5.1.tar.gz
+[2023-05-28 20:50:31] INFO root fetch - processPackages [raspauto]: executing diffoscope
+[2023-05-28 20:50:31] INFO root fetch - processPackages [raspauto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raspauto-0.2.2.9.tar.gz tmp/raspauto-0.3.0.tar.gz --markdown 20230528/r/raspauto/0.2.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 20:50:32] INFO root fetch - processPackages [bpnet-lite]: executing diffoscope
+[2023-05-28 20:50:32] INFO root fetch - processPackages [bpnet-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpnet-lite-0.5.0.tar.gz tmp/bpnet-lite-0.5.1.tar.gz --markdown 20230528/b/bpnet-lite/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-28 20:50:32] INFO root fetch - main [MainThread]: End processing [ia-wumpus]: success
+[2023-05-28 20:50:32] INFO root fetch - main [MainThread]: End processing [mprov-ldap-manager]: success
+[2023-05-28 20:50:33] INFO root fetch - main [MainThread]: End processing [raspauto]: success
+[2023-05-28 20:50:33] INFO root fetch - main [MainThread]: End processing [bpnet-lite]: success
+[2023-05-28 20:50:34] INFO root fetch - main [MainThread]: End processing [soccminer]: success
+[2023-05-28 20:50:35] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2023-05-28 20:50:35] INFO root fetch - main [MainThread]: Store serial: [18282837]
