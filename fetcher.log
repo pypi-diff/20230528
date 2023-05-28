@@ -2099,3 +2099,20 @@
 [2023-05-28 05:40:51] INFO root fetch - main [MainThread]: End processing [openkit]: success
 [2023-05-28 05:40:51] INFO root fetch - main [MainThread]: End processing [topological-signal-compression]: success
 [2023-05-28 05:40:51] INFO root fetch - main [MainThread]: Store serial: [18278354]
+[2023-05-28 05:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278354]
+[2023-05-28 05:46:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 05:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bipartitepandas
+[2023-05-28 05:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsonl2
+[2023-05-28 05:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tree-of-thoughts
+[2023-05-28 05:46:00] WARNING root fetch - processPackages [jsonl2]: Skipping, unable to determine old version
+[2023-05-28 05:46:00] INFO root fetch - main [MainThread]: End processing [jsonl2] error
+[2023-05-28 05:46:00] INFO root fetch - processPackages [tree-of-thoughts]: New version: [0.2.3] Old Version: [0.2.1]
+[2023-05-28 05:46:00] INFO root fetch - processPackages [bipartitepandas]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-28 05:46:00] INFO root fetch - processPackages [tree-of-thoughts]: executing diffoscope
+[2023-05-28 05:46:00] INFO root fetch - processPackages [tree-of-thoughts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-of-thoughts-0.2.1.tar.gz tmp/tree-of-thoughts-0.2.3.tar.gz --markdown 20230528/t/tree-of-thoughts/0.2.1-0.2.3/diff.md --exclude *.pyd
+[2023-05-28 05:46:00] INFO root fetch - processPackages [bipartitepandas]: Downloading https://files.pythonhosted.org/packages/dc/e1/206a80d7fb1273a6c4d3c93f60e6601a62f1a2e04b719e5fd77461ef9368/bipartitepandas-1.1.6.tar.gz
+[2023-05-28 05:46:00] INFO root fetch - processPackages [bipartitepandas]: executing diffoscope
+[2023-05-28 05:46:00] INFO root fetch - processPackages [bipartitepandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bipartitepandas-1.1.5.tar.gz tmp/bipartitepandas-1.1.6.tar.gz --markdown 20230528/b/bipartitepandas/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-28 05:46:01] INFO root fetch - main [MainThread]: End processing [tree-of-thoughts]: success
+[2023-05-28 05:46:01] INFO root fetch - main [MainThread]: End processing [bipartitepandas]: success
+[2023-05-28 05:46:01] INFO root fetch - main [MainThread]: Store serial: [18278369]
