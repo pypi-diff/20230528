@@ -5809,3 +5809,74 @@
 [2023-05-28 14:21:47] INFO root fetch - main [MainThread]: End processing [wiliot-deployment-tools]: success
 [2023-05-28 14:21:51] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-28 14:21:51] INFO root fetch - main [MainThread]: Store serial: [18280553]
+[2023-05-28 14:26:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280553]
+[2023-05-28 14:27:03] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx2kerastl
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webpie
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aleksis
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygame-imslider
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aleksis-builddeps
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xyz-util
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eArsivPortal
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: get-titles-package
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: IMDBTraktSyncer
+[2023-05-28 14:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: easytorch
+[2023-05-28 14:27:03] INFO root fetch - processPackages [aleksis]: New version: [2023.6b1] Old Version: [2023.1b1]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [pygame-imslider]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-28 14:27:03] WARNING root fetch - processPackages [eArsivPortal]: Skipping, unable to determine old version
+[2023-05-28 14:27:03] INFO root fetch - processPackages [aleksis-builddeps]: New version: [2023.6b1] Old Version: [2023.1b1]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [eArsivPortal]: Start processing: tradingkit
+[2023-05-28 14:27:03] INFO root fetch - main [MainThread]: End processing [eArsivPortal] error
+[2023-05-28 14:27:03] INFO root fetch - processPackages [webpie]: New version: [5.9.1] Old Version: [5.9.0]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [get-titles-package]: New version: [2.0] Old Version: [1.0]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [xyz-util]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [easytorch]: New version: [3.7.9] Old Version: [3.7.8]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.94.dev1] Old Version: [0.0.94]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [get-titles-package]: executing diffoscope
+[2023-05-28 14:27:03] INFO root fetch - processPackages [get-titles-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get-titles-package-1.0.tar.gz tmp/get-titles-package-2.0.tar.gz --markdown 20230528/g/get-titles-package/1.0-2.0/diff.md --exclude *.pyd
+[2023-05-28 14:27:03] INFO root fetch - processPackages [IMDBTraktSyncer]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [easytorch]: executing diffoscope
+[2023-05-28 14:27:03] INFO root fetch - processPackages [easytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytorch-3.7.8.tar.gz tmp/easytorch-3.7.9.tar.gz --markdown 20230528/e/easytorch/3.7.8-3.7.9/diff.md --exclude *.pyd
+[2023-05-28 14:27:03] INFO root fetch - processPackages [tradingkit]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-28 14:27:03] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/94/16/ee852b96e4f1c6d0b1e6a88e87696cf3852199c8ab0feb4f5f425638ed4f/onnx2kerastl-0.0.94.tar.gz
+[2023-05-28 14:27:03] INFO root fetch - processPackages [aleksis-builddeps]: Downloading https://files.pythonhosted.org/packages/59/88/c49e5687024820ca1f8dc0a05123244deee4a6252f337ffdc32984e89f64/aleksis_builddeps-2023.1b1.tar.gz
+[2023-05-28 14:27:03] INFO root fetch - processPackages [aleksis]: Downloading https://files.pythonhosted.org/packages/9b/41/3cfeae54cd5a469960d4e21d5f40068b19f932facad68d11bc3991b44795/aleksis-2023.1b1.tar.gz
+[2023-05-28 14:27:03] INFO root fetch - processPackages [pygame-imslider]: Downloading https://files.pythonhosted.org/packages/7e/9a/c92060ab1958757f65136b1cf857afc5bed49090fe1c237f3a4cc8f457e1/pygame_imslider-1.0.1.tar.gz
+[2023-05-28 14:27:03] INFO root fetch - processPackages [webpie]: Downloading https://files.pythonhosted.org/packages/18/83/14bdbd07c6b71f1f89088c53754a2833f3e8687325e83a422e24642008ca/webpie-5.9.0.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [tradingkit]: Downloading https://files.pythonhosted.org/packages/a7/2f/789ef80125470fdd552aea6229b5468cda1a6aa7b904aced6f8f3543eb2f/tradingkit-1.9.5.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [xyz-util]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [xyz-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xyz_util-0.7.8-py3-none-any.whl.zip tmp/xyz_util-0.7.9-py3-none-any.whl.zip --markdown 20230528/x/xyz-util/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [aleksis-builddeps]: Downloading https://files.pythonhosted.org/packages/27/27/aa27df56dd62217c8986d9508e92313746c6e05d4c02cecb5f6ca375705d/aleksis_builddeps-2023.6b1.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/c8/d1/a38b9647b185b90a554a88ba0a36e8b033c8f5e59a63cc591a71fbd793bd/IMDBTraktSyncer-1.3.3.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [aleksis]: Downloading https://files.pythonhosted.org/packages/d7/07/c04decd186d9c1ca198622ff49e0284e0b371233fd229604346ebb046489/aleksis-2023.6b1.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.94.tar.gz tmp/onnx2kerastl-0.0.94.dev1.tar.gz --markdown 20230528/o/onnx2kerastl/0.0.94-0.0.94.dev1/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [pygame-imslider]: Downloading https://files.pythonhosted.org/packages/16/7f/696fc9809cf8a5bae15715465f8ad1f01d2f701ee1aec93fa56b73b629db/pygame-imslider-1.0.2.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [aleksis-builddeps]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [aleksis-builddeps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleksis_builddeps-2023.1b1.tar.gz tmp/aleksis_builddeps-2023.6b1.tar.gz --markdown 20230528/a/aleksis-builddeps/2023.1b1-2023.6b1/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [IMDBTraktSyncer]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [IMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDBTraktSyncer-1.3.2.tar.gz tmp/IMDBTraktSyncer-1.3.3.tar.gz --markdown 20230528/I/IMDBTraktSyncer/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [aleksis]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [aleksis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleksis-2023.1b1.tar.gz tmp/aleksis-2023.6b1.tar.gz --markdown 20230528/a/aleksis/2023.1b1-2023.6b1/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [webpie]: Downloading https://files.pythonhosted.org/packages/0c/6c/f8ecc255835c4b11be400c1f57f70ffbb4cb6f62eb238deb926994c37134/webpie-5.9.1.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [pygame-imslider]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [pygame-imslider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygame_imslider-1.0.1.tar.gz tmp/pygame-imslider-1.0.2.tar.gz --markdown 20230528/p/pygame-imslider/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [tradingkit]: Downloading https://files.pythonhosted.org/packages/32/47/33f4eadb58b18ba9ec0318915910483243a801d2e3af33c200b3a493c8d5/tradingkit-1.9.6.tar.gz
+[2023-05-28 14:27:04] INFO root fetch - processPackages [webpie]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [webpie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpie-5.9.0.tar.gz tmp/webpie-5.9.1.tar.gz --markdown 20230528/w/webpie/5.9.0-5.9.1/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [tradingkit]: executing diffoscope
+[2023-05-28 14:27:04] INFO root fetch - processPackages [tradingkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradingkit-1.9.5.tar.gz tmp/tradingkit-1.9.6.tar.gz --markdown 20230528/t/tradingkit/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-28 14:27:04] INFO root fetch - processPackages [get-titles-package]: Start processing: eegain
+[2023-05-28 14:27:04] INFO root fetch - main [MainThread]: End processing [get-titles-package]: success
+[2023-05-28 14:27:05] WARNING root fetch - processPackages [eegain]: Skipping, unable to determine old version
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [eegain] error
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [xyz-util]: success
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [aleksis-builddeps]: success
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [aleksis]: success
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [easytorch]: success
+[2023-05-28 14:27:05] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
+[2023-05-28 14:27:06] INFO root fetch - main [MainThread]: End processing [tradingkit]: success
+[2023-05-28 14:27:06] INFO root fetch - main [MainThread]: End processing [webpie]: success
+[2023-05-28 14:27:06] INFO root fetch - main [MainThread]: End processing [pygame-imslider]: success
+[2023-05-28 14:27:06] INFO root fetch - main [MainThread]: Store serial: [18280609]
