@@ -2652,3 +2652,37 @@
 [2023-05-28 07:33:30] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
 [2023-05-28 07:33:31] INFO root fetch - main [MainThread]: End processing [qesdk]: success
 [2023-05-28 07:33:31] INFO root fetch - main [MainThread]: Store serial: [18278680]
+[2023-05-28 07:38:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278680]
+[2023-05-28 07:38:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 07:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hello2
+[2023-05-28 07:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mosek-license-server
+[2023-05-28 07:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parsetypes
+[2023-05-28 07:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: season
+[2023-05-28 07:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: khoj-assistant
+[2023-05-28 07:38:39] INFO root fetch - processPackages [hello2]: New version: [1.7.7] Old Version: [1.7.6]
+[2023-05-28 07:38:39] INFO root fetch - processPackages [mosek-license-server]: New version: [0.5.1] Old Version: [0.2.0]
+[2023-05-28 07:38:39] INFO root fetch - processPackages [parsetypes]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 07:38:39] INFO root fetch - processPackages [season]: New version: [2.3.5] Old Version: [2.3.4]
+[2023-05-28 07:38:39] INFO root fetch - processPackages [khoj-assistant]: New version: [0.6.3.dev3] Old Version: [0.6.2.dev6]
+[2023-05-28 07:38:39] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/ae/03/daecd909212ff7a43e0a961d43ebc8e84e32e44a04479c1b42164bbb7de3/parsetypes-0.2.1.tar.gz
+[2023-05-28 07:38:39] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/f4/69/2ba02c73a592c7b98dcf5df835c0c5dfb9e6df1bd724cb610f5d75e1483a/hello2-1.7.6.tar.gz
+[2023-05-28 07:38:39] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/c9/80/eeaa2e7534cb74f49acecc604a0c09cc8ce247ac58221b29dd0c30772a21/season-2.3.4-py3-none-any.whl
+[2023-05-28 07:38:39] WARNING root fetch - processPackages [season]: Skipping package: exceeds size limit 13772878>=10485760
+[2023-05-28 07:38:39] INFO root fetch - main [MainThread]: End processing [season] error
+[2023-05-28 07:38:39] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/39/0e/c6e7ee12aec9c396aaffcfb2851a321fc6e174da4e775af59624896d722a/mosek_license_server-0.5.1.tar.gz
+[2023-05-28 07:38:40] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/1f/e7/964c2ac045d88e7f084826b73177cfe9615fd76467dfe44b163818d9c759/parsetypes-0.2.2.tar.gz
+[2023-05-28 07:38:40] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/ba/dc/0e32d82540ec2dde9b1c96d15de69cc473486d41e0b74b9a97be55b080db/khoj_assistant-0.6.3.dev3.tar.gz
+[2023-05-28 07:38:40] INFO root fetch - processPackages [mosek-license-server]: executing diffoscope
+[2023-05-28 07:38:40] INFO root fetch - processPackages [mosek-license-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosek_license_server-0.2.0.tar.gz tmp/mosek_license_server-0.5.1.tar.gz --markdown 20230528/m/mosek-license-server/0.2.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-28 07:38:40] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/3b/51/a8384cb543655d07677671149f7273009f664169c27073abdbf81a1ea4d7/hello2-1.7.7.tar.gz
+[2023-05-28 07:38:40] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-28 07:38:40] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.2.1.tar.gz tmp/parsetypes-0.2.2.tar.gz --markdown 20230528/p/parsetypes/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 07:38:40] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2023-05-28 07:38:40] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-0.6.2.dev6.tar.gz tmp/khoj_assistant-0.6.3.dev3.tar.gz --markdown 20230528/k/khoj-assistant/0.6.2.dev6-0.6.3.dev3/diff.md --exclude *.pyd
+[2023-05-28 07:38:40] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-05-28 07:38:40] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.7.6.tar.gz tmp/hello2-1.7.7.tar.gz --markdown 20230528/h/hello2/1.7.6-1.7.7/diff.md --exclude *.pyd
+[2023-05-28 07:38:41] INFO root fetch - main [MainThread]: End processing [mosek-license-server]: success
+[2023-05-28 07:38:41] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2023-05-28 07:38:42] INFO root fetch - main [MainThread]: End processing [hello2]: success
+[2023-05-28 07:38:42] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-28 07:38:42] INFO root fetch - main [MainThread]: Store serial: [18278694]
