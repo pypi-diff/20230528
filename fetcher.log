@@ -2425,3 +2425,36 @@
 [2023-05-28 06:54:13] INFO root fetch - main [MainThread]: End processing [bibleref]: success
 [2023-05-28 06:54:14] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
 [2023-05-28 06:54:14] INFO root fetch - main [MainThread]: Store serial: [18278550]
+[2023-05-28 06:59:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278550]
+[2023-05-28 06:59:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 06:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lakshmi
+[2023-05-28 06:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nx-migrate
+[2023-05-28 06:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai2
+[2023-05-28 06:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhalo
+[2023-05-28 06:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geniusbot
+[2023-05-28 06:59:24] INFO root fetch - processPackages [lakshmi]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-28 06:59:24] INFO root fetch - processPackages [pyhalo]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 06:59:24] INFO root fetch - processPackages [geniusbot]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-28 06:59:24] WARNING root fetch - processPackages [nx-migrate]: Skipping, unable to determine old version
+[2023-05-28 06:59:24] INFO root fetch - main [MainThread]: End processing [nx-migrate] error
+[2023-05-28 06:59:24] INFO root fetch - processPackages [openai2]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-28 06:59:24] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/da/c3/1d183292d2a4f2819cdb76ee48406c5b5ca1751550b0531c0a55f9449d1b/openai2-1.5.4.tar.gz
+[2023-05-28 06:59:24] INFO root fetch - processPackages [lakshmi]: Downloading https://files.pythonhosted.org/packages/c4/e1/164172acafd0fe27d16a77c811ac97d97e797c3aa5d2e09e245e37d390e0/lakshmi-2.9.0.tar.gz
+[2023-05-28 06:59:24] INFO root fetch - processPackages [geniusbot]: Downloading https://files.pythonhosted.org/packages/87/c3/88d2af0ecdbe668b9913881156aaa2a50de55b9d6483d66755117f18371a/geniusbot-3.9.0-py2.py3-none-any.whl
+[2023-05-28 06:59:24] INFO root fetch - processPackages [pyhalo]: Downloading https://files.pythonhosted.org/packages/b9/07/4c7b28e67b366ffb5f448c591ea5cc093d3b3f5192ffc3236573dcbf3a7f/pyhalo-0.2.2.tar.gz
+[2023-05-28 06:59:24] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/94/34/79fc8bd41bcbfe7ff518038ebf9789c9c66a9e050da2a005c5bfaffb4254/openai2-1.5.5.tar.gz
+[2023-05-28 06:59:24] INFO root fetch - processPackages [pyhalo]: executing diffoscope
+[2023-05-28 06:59:24] INFO root fetch - processPackages [pyhalo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhalo-0.2.1.tar.gz tmp/pyhalo-0.2.2.tar.gz --markdown 20230528/p/pyhalo/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 06:59:24] INFO root fetch - processPackages [openai2]: executing diffoscope
+[2023-05-28 06:59:24] INFO root fetch - processPackages [openai2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai2-1.5.4.tar.gz tmp/openai2-1.5.5.tar.gz --markdown 20230528/o/openai2/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-05-28 06:59:24] INFO root fetch - processPackages [lakshmi]: Downloading https://files.pythonhosted.org/packages/3c/b4/d7570e71bec8424254155d2a11c97cfb6bff9a21bcfbd47c13d21f325f07/lakshmi-2.9.1.tar.gz
+[2023-05-28 06:59:24] INFO root fetch - processPackages [geniusbot]: Downloading https://files.pythonhosted.org/packages/d7/1a/f3b2573c0ae4f53b9de279f2ca2c73dc121e230d12340e32fe3592e059a8/geniusbot-3.9.1-py2.py3-none-any.whl
+[2023-05-28 06:59:24] INFO root fetch - processPackages [lakshmi]: executing diffoscope
+[2023-05-28 06:59:24] INFO root fetch - processPackages [lakshmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lakshmi-2.9.0.tar.gz tmp/lakshmi-2.9.1.tar.gz --markdown 20230528/l/lakshmi/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-28 06:59:25] INFO root fetch - processPackages [geniusbot]: executing diffoscope
+[2023-05-28 06:59:25] INFO root fetch - processPackages [geniusbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geniusbot-3.9.0-py2.py3-none-any.whl.zip tmp/geniusbot-3.9.1-py2.py3-none-any.whl.zip --markdown 20230528/g/geniusbot/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-28 06:59:25] INFO root fetch - main [MainThread]: End processing [openai2]: success
+[2023-05-28 06:59:26] INFO root fetch - main [MainThread]: End processing [lakshmi]: success
+[2023-05-28 06:59:26] INFO root fetch - main [MainThread]: End processing [geniusbot]: success
+[2023-05-28 06:59:26] INFO root fetch - main [MainThread]: End processing [pyhalo]: success
+[2023-05-28 06:59:26] INFO root fetch - main [MainThread]: Store serial: [18278569]
