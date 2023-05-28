@@ -4131,3 +4131,47 @@
 [2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [chatapi-translate]: success
 [2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-05-28 11:23:03] INFO root fetch - main [MainThread]: Store serial: [18279645]
+[2023-05-28 11:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279645]
+[2023-05-28 11:28:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: encode-decode-vbm
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-lazy-fixtures
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oceano-algos
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitlabform-ytt
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aquatemp
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mct-quantizers
+[2023-05-28 11:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: macrometa-source-snowflake
+[2023-05-28 11:28:12] WARNING root fetch - processPackages [encode-decode-vbm]: Skipping, unable to determine old version
+[2023-05-28 11:28:12] INFO root fetch - main [MainThread]: End processing [encode-decode-vbm] error
+[2023-05-28 11:28:12] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 11:28:12] INFO root fetch - processPackages [mct-quantizers]: New version: [1.0.0.28052023.post92442] Old Version: [1.0.0.28052023.post83647]
+[2023-05-28 11:28:12] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 11:28:12] INFO root fetch - processPackages [gitlabform-ytt]: New version: [3.7.0a4] Old Version: [3.7.0a3]
+[2023-05-28 11:28:12] INFO root fetch - processPackages [aquatemp]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 11:28:12] INFO root fetch - processPackages [pytest-lazy-fixtures]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 11:28:12] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 11:28:12] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 11:28:13] INFO root fetch - processPackages [gitlabform-ytt]: Downloading https://files.pythonhosted.org/packages/74/04/4433bd7a373c85d36364b98925b8ce550d3ca61418d471ab696ee5040169/gitlabform-ytt-3.7.0a3.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [mct-quantizers]: Downloading https://files.pythonhosted.org/packages/c0/0b/50c3db0a515cc504914d4bd3ddf205da9d8c88c99cfc623644b914e037af/mct-quantizers-1.0.0.28052023.post83647.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [aquatemp]: Downloading https://files.pythonhosted.org/packages/f8/df/778a1ec8de99982aaa00215745fff86dca7ba4b3637fc278da8cfd48fc03/aquatemp-0.0.1.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [pytest-lazy-fixtures]: Downloading https://files.pythonhosted.org/packages/67/bb/886468ad73d95659009511adcad02f3448cd1f2472f97f9788d44b856ca1/pytest_lazy_fixtures-1.0.0.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-28 11:28:13] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230528/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 11:28:13] INFO root fetch - processPackages [mct-quantizers]: Downloading https://files.pythonhosted.org/packages/c4/cc/e845dd9c75204300f50ca3a36b9b0175d36f6436fb0a98e31e1b84fd5ea1/mct-quantizers-1.0.0.28052023.post92442.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [gitlabform-ytt]: Downloading https://files.pythonhosted.org/packages/50/e7/2d4ecc92b83e910e0697367c998d88dc4866ef3197cc010fb06a1e809440/gitlabform-ytt-3.7.0a4.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [pytest-lazy-fixtures]: Downloading https://files.pythonhosted.org/packages/e5/5a/6dc9cfde85ccf6c63fb95d484d5ff78415b8b78f60bbc87764b521364225/pytest_lazy_fixtures-1.0.1.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [aquatemp]: Downloading https://files.pythonhosted.org/packages/81/04/d2da39b6e8d7994433aa61181ea1ca60f44211341796b05b3917daca433f/aquatemp-0.0.2.tar.gz
+[2023-05-28 11:28:13] INFO root fetch - processPackages [mct-quantizers]: executing diffoscope
+[2023-05-28 11:28:13] INFO root fetch - processPackages [mct-quantizers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-1.0.0.28052023.post83647.tar.gz tmp/mct-quantizers-1.0.0.28052023.post92442.tar.gz --markdown 20230528/m/mct-quantizers/1.0.0.28052023.post83647-1.0.0.28052023.post92442/diff.md --exclude *.pyd
+[2023-05-28 11:28:13] INFO root fetch - processPackages [aquatemp]: executing diffoscope
+[2023-05-28 11:28:13] INFO root fetch - processPackages [aquatemp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aquatemp-0.0.1.tar.gz tmp/aquatemp-0.0.2.tar.gz --markdown 20230528/a/aquatemp/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 11:28:13] INFO root fetch - processPackages [pytest-lazy-fixtures]: executing diffoscope
+[2023-05-28 11:28:13] INFO root fetch - processPackages [pytest-lazy-fixtures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_lazy_fixtures-1.0.0.tar.gz tmp/pytest_lazy_fixtures-1.0.1.tar.gz --markdown 20230528/p/pytest-lazy-fixtures/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 11:28:13] INFO root fetch - processPackages [gitlabform-ytt]: executing diffoscope
+[2023-05-28 11:28:13] INFO root fetch - processPackages [gitlabform-ytt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlabform-ytt-3.7.0a3.tar.gz tmp/gitlabform-ytt-3.7.0a4.tar.gz --markdown 20230528/g/gitlabform-ytt/3.7.0a3-3.7.0a4/diff.md --exclude *.pyd
+[2023-05-28 11:28:14] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-28 11:28:14] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 11:28:14] INFO root fetch - main [MainThread]: End processing [aquatemp]: success
+[2023-05-28 11:28:14] INFO root fetch - main [MainThread]: End processing [mct-quantizers]: success
+[2023-05-28 11:28:14] INFO root fetch - main [MainThread]: End processing [pytest-lazy-fixtures]: success
+[2023-05-28 11:28:15] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt]: success
+[2023-05-28 11:28:15] INFO root fetch - main [MainThread]: Store serial: [18279669]
