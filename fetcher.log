@@ -10798,3 +10798,43 @@ EOFError: EOF read where object expected
 [2023-05-28 23:48:58] INFO root fetch - main [MainThread]: End processing [vision6D]: success
 [2023-05-28 23:49:00] INFO root fetch - main [MainThread]: End processing [streamlit-chat-askgdpr]: success
 [2023-05-28 23:49:00] INFO root fetch - main [MainThread]: Store serial: [18283722]
+[2023-05-28 23:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283722]
+[2023-05-28 23:54:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telegin
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-chat-askgdpr
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: laminci
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dhint
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rising-plugin
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: attack-dashboard
+[2023-05-28 23:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Twitch-Edog0049a
+[2023-05-28 23:54:08] INFO root fetch - processPackages [streamlit-chat-askgdpr]: New version: [0.2] Old Version: [0.1]
+[2023-05-28 23:54:08] ERROR root fetch - processPackages [Twitch-Edog0049a]: Unable to get metadata: No such project 'Twitch-Edog0049a'
+[2023-05-28 23:54:08] INFO root fetch - main [MainThread]: End processing [Twitch-Edog0049a] error
+[2023-05-28 23:54:08] WARNING root fetch - processPackages [telegin]: Skipping, unable to determine old version
+[2023-05-28 23:54:08] INFO root fetch - main [MainThread]: End processing [telegin] error
+[2023-05-28 23:54:08] INFO root fetch - processPackages [laminci]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-28 23:54:09] INFO root fetch - processPackages [dhint]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 23:54:09] INFO root fetch - processPackages [rising-plugin]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 23:54:09] INFO root fetch - processPackages [attack-dashboard]: New version: [0.11.3] Old Version: [0.11.11]
+[2023-05-28 23:54:09] INFO root fetch - processPackages [streamlit-chat-askgdpr]: Downloading https://files.pythonhosted.org/packages/03/11/da6fdce1767b49db5528987c9c0bce266a7615bdb1c6789753174e71b861/streamlit-chat-askgdpr-0.2.tar.gz
+[2023-05-28 23:54:09] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/0d/5c/c6c04feb6f8128a7fd709ebf82c4e183a3e4ab4029335ca2c0ca0ba6c43a/rising_plugin-0.0.8.tar.gz
+[2023-05-28 23:54:09] INFO root fetch - processPackages [laminci]: Downloading https://files.pythonhosted.org/packages/81/fa/4b4c7f254c045cf3e47c551a819be897854c40b1134a3d9a2ccb3eabc250/laminci-0.6.3.tar.gz
+[2023-05-28 23:54:09] INFO root fetch - processPackages [streamlit-chat-askgdpr]: executing diffoscope
+[2023-05-28 23:54:09] INFO root fetch - processPackages [streamlit-chat-askgdpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chat-askgdpr-0.1.tar.gz tmp/streamlit-chat-askgdpr-0.2.tar.gz --markdown 20230528/s/streamlit-chat-askgdpr/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-28 23:54:09] INFO root fetch - processPackages [attack-dashboard]: Downloading https://files.pythonhosted.org/packages/ee/46/e5e82e620f9f615d52df066ac82d72937ccf8b648a7020a1d164fdcf24c4/attack_dashboard-0.11.11.tar.gz
+[2023-05-28 23:54:09] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-28 23:54:09] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.7.tar.gz tmp/rising_plugin-0.0.8.tar.gz --markdown 20230528/r/rising-plugin/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 23:54:09] INFO root fetch - processPackages [dhint]: Downloading https://files.pythonhosted.org/packages/aa/c2/dac445188dc3ee9338816c299f772e67bb16755815ce3adf73d94687b38b/dhint-0.0.6.tar.gz
+[2023-05-28 23:54:09] INFO root fetch - processPackages [laminci]: executing diffoscope
+[2023-05-28 23:54:09] INFO root fetch - processPackages [laminci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laminci-0.6.2.tar.gz tmp/laminci-0.6.3.tar.gz --markdown 20230528/l/laminci/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-28 23:54:09] INFO root fetch - processPackages [dhint]: executing diffoscope
+[2023-05-28 23:54:09] INFO root fetch - processPackages [dhint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhint-0.0.5.tar.gz tmp/dhint-0.0.6.tar.gz --markdown 20230528/d/dhint/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 23:54:09] INFO root fetch - processPackages [attack-dashboard]: Downloading https://files.pythonhosted.org/packages/90/a8/7ee303b55a58db035f5055e9f2f162282605f5e24a0c19beba0257b65c56/attack_dashboard-0.11.3.tar.gz
+[2023-05-28 23:54:09] INFO root fetch - processPackages [attack-dashboard]: executing diffoscope
+[2023-05-28 23:54:09] INFO root fetch - processPackages [attack-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attack_dashboard-0.11.11.tar.gz tmp/attack_dashboard-0.11.3.tar.gz --markdown 20230528/a/attack-dashboard/0.11.11-0.11.3/diff.md --exclude *.pyd
+[2023-05-28 23:54:10] INFO root fetch - main [MainThread]: End processing [laminci]: success
+[2023-05-28 23:54:10] INFO root fetch - main [MainThread]: End processing [dhint]: success
+[2023-05-28 23:54:10] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-28 23:54:10] INFO root fetch - main [MainThread]: End processing [attack-dashboard]: success
+[2023-05-28 23:54:11] INFO root fetch - main [MainThread]: End processing [streamlit-chat-askgdpr]: success
+[2023-05-28 23:54:11] INFO root fetch - main [MainThread]: Store serial: [18283742]
