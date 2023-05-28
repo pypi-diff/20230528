@@ -4420,3 +4420,38 @@
 [2023-05-28 12:00:02] INFO root fetch - main [MainThread]: End processing [tkmfly]: success
 [2023-05-28 12:00:12] INFO root fetch - main [MainThread]: End processing [knx-frontend]: success
 [2023-05-28 12:00:12] INFO root fetch - main [MainThread]: Store serial: [18279802]
+[2023-05-28 12:05:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279802]
+[2023-05-28 12:05:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-matrix-api
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webscapy
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matrix-cloud
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cnvrgv2
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metabypass
+[2023-05-28 12:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycvr
+[2023-05-28 12:05:21] WARNING root fetch - processPackages [metabypass]: Skipping, unable to determine old version
+[2023-05-28 12:05:21] INFO root fetch - main [MainThread]: End processing [metabypass] error
+[2023-05-28 12:05:21] INFO root fetch - processPackages [simple-matrix-api]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 12:05:21] WARNING root fetch - processPackages [matrix-cloud]: Skipping, unable to determine old version
+[2023-05-28 12:05:21] INFO root fetch - main [MainThread]: End processing [matrix-cloud] error
+[2023-05-28 12:05:21] INFO root fetch - processPackages [webscapy]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-28 12:05:21] WARNING root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Skipping, unable to determine old version
+[2023-05-28 12:05:21] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao] error
+[2023-05-28 12:05:21] INFO root fetch - processPackages [cnvrgv2]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 12:05:21] WARNING root fetch - processPackages [pycvr]: Skipping, unable to determine old version
+[2023-05-28 12:05:21] INFO root fetch - main [MainThread]: End processing [pycvr] error
+[2023-05-28 12:05:21] INFO root fetch - processPackages [simple-matrix-api]: Downloading https://files.pythonhosted.org/packages/27/5c/dd80d72d06aa79acadba5004ab6220914786d6a5302d60881ee81c6a0eb3/simple_matrix_api-0.0.2.tar.gz
+[2023-05-28 12:05:22] INFO root fetch - processPackages [cnvrgv2]: Downloading https://files.pythonhosted.org/packages/43/fb/f63773c2a608f95bcd4a1397dc5632cf2872158cdca26fa735e9915b152a/cnvrgv2-1.0.8.tar.gz
+[2023-05-28 12:05:22] INFO root fetch - processPackages [webscapy]: Downloading https://files.pythonhosted.org/packages/e9/9b/a7afea024296ad1b496786c116dea2f7d5e189a9d12d49a6d3af0c212f6a/webscapy-1.2.0.tar.gz
+[2023-05-28 12:05:22] INFO root fetch - processPackages [webscapy]: executing diffoscope
+[2023-05-28 12:05:22] INFO root fetch - processPackages [webscapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscapy-1.1.0.tar.gz tmp/webscapy-1.2.0.tar.gz --markdown 20230528/w/webscapy/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-28 12:05:22] INFO root fetch - processPackages [simple-matrix-api]: Downloading https://files.pythonhosted.org/packages/f4/88/e57aec7afc0e424bb2d6ea080953cb1e498584ea7dd5b9f9f1620e9959b6/simple_matrix_api-0.0.3.tar.gz
+[2023-05-28 12:05:22] INFO root fetch - processPackages [cnvrgv2]: Downloading https://files.pythonhosted.org/packages/3e/d4/3802681a11d24c3a3d0577e032604d1a49eebac43c819e31ff87d7d2d575/cnvrgv2-1.0.9.tar.gz
+[2023-05-28 12:05:22] INFO root fetch - processPackages [simple-matrix-api]: executing diffoscope
+[2023-05-28 12:05:22] INFO root fetch - processPackages [simple-matrix-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_matrix_api-0.0.2.tar.gz tmp/simple_matrix_api-0.0.3.tar.gz --markdown 20230528/s/simple-matrix-api/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 12:05:22] INFO root fetch - processPackages [cnvrgv2]: executing diffoscope
+[2023-05-28 12:05:22] INFO root fetch - processPackages [cnvrgv2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnvrgv2-1.0.8.tar.gz tmp/cnvrgv2-1.0.9.tar.gz --markdown 20230528/c/cnvrgv2/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 12:05:23] INFO root fetch - main [MainThread]: End processing [webscapy]: success
+[2023-05-28 12:05:23] INFO root fetch - main [MainThread]: End processing [simple-matrix-api]: success
+[2023-05-28 12:05:24] INFO root fetch - main [MainThread]: End processing [cnvrgv2]: success
+[2023-05-28 12:05:24] INFO root fetch - main [MainThread]: Store serial: [18279830]
