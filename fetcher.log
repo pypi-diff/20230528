@@ -5086,3 +5086,39 @@
 [2023-05-28 13:07:33] INFO root fetch - main [MainThread]: End processing [openlane]: success
 [2023-05-28 13:07:39] INFO root fetch - main [MainThread]: End processing [slixmpp]: success
 [2023-05-28 13:07:39] INFO root fetch - main [MainThread]: Store serial: [18280159]
+[2023-05-28 13:12:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280159]
+[2023-05-28 13:12:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neclib
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kayle
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyFunceble-dev
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rajm
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-shays-CERT-2259
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kisstvshow
+[2023-05-28 13:12:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kayle
+[2023-05-28 13:12:48] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: New version: [20230528.11.10.175064] Old Version: [20230524.13.17.472413]
+[2023-05-28 13:12:48] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-28 13:12:48] INFO root fetch - processPackages [neclib]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 13:12:48] WARNING root fetch - processPackages [rajm]: Skipping, unable to determine old version
+[2023-05-28 13:12:48] INFO root fetch - main [MainThread]: End processing [rajm] error
+[2023-05-28 13:12:48] WARNING root fetch - processPackages [kisstvshow]: Skipping, unable to determine old version
+[2023-05-28 13:12:48] INFO root fetch - main [MainThread]: End processing [kisstvshow] error
+[2023-05-28 13:12:48] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-28 13:12:48] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.0a9] Old Version: [4.2.0a8]
+[2023-05-28 13:12:48] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-28 13:12:48] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230528/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:12:48] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-28 13:12:48] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230528/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:12:48] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: Downloading https://files.pythonhosted.org/packages/f4/ee/f6be1605799880838ffb4b0c154c578b9de9276b2ab924522a1a01a5350d/certora-cli-alpha-shays-CERT-2259-20230524.13.17.472413.tar.gz
+[2023-05-28 13:12:48] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2023-05-28 13:12:48] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.0a8.tar.gz tmp/PyFunceble-dev-4.2.0a9.tar.gz --markdown 20230528/P/PyFunceble-dev/4.2.0a8-4.2.0a9/diff.md --exclude *.pyd
+[2023-05-28 13:12:48] INFO root fetch - processPackages [neclib]: Downloading https://files.pythonhosted.org/packages/24/ac/56510f6f795bd7f4e4e5fbffafefcb74bdcc1cde02bf4c0a7829c76d3b2f/neclib-0.8.0.tar.gz
+[2023-05-28 13:12:48] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2259]: Skipping package: exceeds size limit 38988436>=10485760
+[2023-05-28 13:12:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2259] error
+[2023-05-28 13:12:48] INFO root fetch - processPackages [neclib]: Downloading https://files.pythonhosted.org/packages/57/5b/9de6618c361a02ff6b2bb0f05bed9f33fd543204479c229852e3ae608b3f/neclib-0.9.0.tar.gz
+[2023-05-28 13:12:49] INFO root fetch - processPackages [neclib]: executing diffoscope
+[2023-05-28 13:12:49] INFO root fetch - processPackages [neclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neclib-0.8.0.tar.gz tmp/neclib-0.9.0.tar.gz --markdown 20230528/n/neclib/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 13:12:49] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-28 13:12:49] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-28 13:12:49] INFO root fetch - main [MainThread]: End processing [neclib]: success
+[2023-05-28 13:12:51] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2023-05-28 13:12:51] INFO root fetch - main [MainThread]: Store serial: [18280179]
