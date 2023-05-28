@@ -2978,3 +2978,42 @@
 [2023-05-28 08:43:35] INFO root fetch - main [MainThread]: End processing [shikoni]: success
 [2023-05-28 08:43:35] INFO root fetch - main [MainThread]: End processing [onnx-tool]: success
 [2023-05-28 08:43:35] INFO root fetch - main [MainThread]: Store serial: [18278889]
+[2023-05-28 08:48:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278889]
+[2023-05-28 08:48:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otpme
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otpme
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: packages-example-omar-flores-PTY
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scsd
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ethon
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mapna-mind-sdk
+[2023-05-28 08:48:44] INFO root fetch - processPackages [otpme]: New version: [0.3.0a7] Old Version: [0.3.0a6]
+[2023-05-28 08:48:44] INFO root fetch - processPackages [otpme]: New version: [0.3.0a7] Old Version: [0.3.0a6]
+[2023-05-28 08:48:44] WARNING root fetch - processPackages [packages-example-omar-flores-PTY]: Skipping, unable to determine old version
+[2023-05-28 08:48:44] INFO root fetch - main [MainThread]: End processing [packages-example-omar-flores-PTY] error
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ethon]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-05-28 08:48:44] INFO root fetch - processPackages [scsd]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 08:48:44] INFO root fetch - processPackages [mapna-mind-sdk]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-05-28 08:48:44] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/c8/7b/c6ee0f1d9791d871931577d05eaa3d99611eda7069058054f31bb24bbd24/otpme-0.3.0a6.tar.gz
+[2023-05-28 08:48:44] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/c8/7b/c6ee0f1d9791d871931577d05eaa3d99611eda7069058054f31bb24bbd24/otpme-0.3.0a6.tar.gz
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ethon]: Downloading https://files.pythonhosted.org/packages/71/3f/bf5e6083f81d70e04dbaddacb492bda8c8eb6d1556c14facb44b99aa045e/ethon-0.1.2.tar.gz
+[2023-05-28 08:48:44] INFO root fetch - processPackages [scsd]: executing diffoscope
+[2023-05-28 08:48:44] INFO root fetch - processPackages [scsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scsd-0.0.7.tar.gz tmp/scsd-0.0.8.tar.gz --markdown 20230528/s/scsd/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 08:48:44] INFO root fetch - processPackages [mapna-mind-sdk]: Downloading https://files.pythonhosted.org/packages/70/54/4b28524cb020605e440655b388deab8d41c32bc8e25bd973be45104cff8a/mapna-mind-sdk-0.4.5.tar.gz
+[2023-05-28 08:48:44] INFO root fetch - processPackages [ethon]: Downloading https://files.pythonhosted.org/packages/70/68/91afb3c36766e5a8ea4cbbc7cb1ff3128c6cf4d86d5041a9b9d288467867/ethon-0.1.4.tar.gz
+[2023-05-28 08:48:45] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/29/0c/c80ace21a142fc8d6a0f89200dc3dd642b3af4c0d511b5d4c33e1437fb11/otpme-0.3.0a7.tar.gz
+[2023-05-28 08:48:45] INFO root fetch - processPackages [otpme]: Downloading https://files.pythonhosted.org/packages/29/0c/c80ace21a142fc8d6a0f89200dc3dd642b3af4c0d511b5d4c33e1437fb11/otpme-0.3.0a7.tar.gz
+[2023-05-28 08:48:45] INFO root fetch - processPackages [ethon]: executing diffoscope
+[2023-05-28 08:48:45] INFO root fetch - processPackages [ethon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethon-0.1.2.tar.gz tmp/ethon-0.1.4.tar.gz --markdown 20230528/e/ethon/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 08:48:45] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2023-05-28 08:48:45] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a6.tar.gz tmp/otpme-0.3.0a7.tar.gz --markdown 20230528/o/otpme/0.3.0a6-0.3.0a7/diff.md --exclude *.pyd
+[2023-05-28 08:48:45] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2023-05-28 08:48:45] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a6.tar.gz tmp/otpme-0.3.0a7.tar.gz --markdown 20230528/o/otpme/0.3.0a6-0.3.0a7/diff.md --exclude *.pyd
+[2023-05-28 08:48:45] INFO root fetch - processPackages [mapna-mind-sdk]: Downloading https://files.pythonhosted.org/packages/9f/d2/d3a2c8f0aaabee713cce98498c535518a88703487ff42eabdef21a52b325/mapna-mind-sdk-0.4.6.tar.gz
+[2023-05-28 08:48:45] INFO root fetch - processPackages [mapna-mind-sdk]: executing diffoscope
+[2023-05-28 08:48:45] INFO root fetch - processPackages [mapna-mind-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mapna-mind-sdk-0.4.5.tar.gz tmp/mapna-mind-sdk-0.4.6.tar.gz --markdown 20230528/m/mapna-mind-sdk/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-05-28 08:48:45] INFO root fetch - main [MainThread]: End processing [scsd]: success
+[2023-05-28 08:48:46] INFO root fetch - main [MainThread]: End processing [ethon]: success
+[2023-05-28 08:48:46] INFO root fetch - main [MainThread]: End processing [mapna-mind-sdk]: success
+[2023-05-28 08:48:50] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2023-05-28 08:48:50] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2023-05-28 08:48:50] INFO root fetch - main [MainThread]: Store serial: [18278908]
