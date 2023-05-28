@@ -3600,3 +3600,29 @@
 [2023-05-28 10:25:00] INFO root fetch - processPackages [pytest-yaml-sanmu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_yaml_sanmu-0.2.1.dev1-py3-none-any.whl.zip tmp/pytest_yaml_sanmu-0.2.2-py3-none-any.whl.zip --markdown 20230528/p/pytest-yaml-sanmu/0.2.1.dev1-0.2.2/diff.md --exclude *.pyd
 [2023-05-28 10:25:01] INFO root fetch - main [MainThread]: End processing [pytest-yaml-sanmu]: success
 [2023-05-28 10:25:01] INFO root fetch - main [MainThread]: Store serial: [18279284]
+[2023-05-28 10:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279284]
+[2023-05-28 10:30:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flixit
+[2023-05-28 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Mariarandomizer
+[2023-05-28 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lpr-pkg
+[2023-05-28 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sorcerun
+[2023-05-28 10:30:11] INFO root fetch - processPackages [flixit]: New version: [0.3] Old Version: [0.2]
+[2023-05-28 10:30:11] INFO root fetch - processPackages [sorcerun]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 10:30:11] WARNING root fetch - processPackages [Mariarandomizer]: Skipping, unable to determine old version
+[2023-05-28 10:30:11] INFO root fetch - processPackages [lpr-pkg]: New version: [2.0.0] Old Version: [1.1.0]
+[2023-05-28 10:30:11] INFO root fetch - main [MainThread]: End processing [Mariarandomizer] error
+[2023-05-28 10:30:12] INFO root fetch - processPackages [lpr-pkg]: Downloading https://files.pythonhosted.org/packages/77/a4/a9e61c061bd6847633f0790af4e04db768e3035beb164e798abd4f18bb02/lpr_pkg-1.1.0.tar.gz
+[2023-05-28 10:30:12] INFO root fetch - processPackages [flixit]: Downloading https://files.pythonhosted.org/packages/30/69/4993f4a5f9865ca4b58f764bc730b2c76fd3818c9a93dc3f8ef35d0785c9/flixit-0.2.tar.gz
+[2023-05-28 10:30:12] INFO root fetch - processPackages [sorcerun]: Downloading https://files.pythonhosted.org/packages/16/62/cf3286e77c1cad6855a1d614691cde176b5655bdf163502965220872e391/sorcerun-0.2.4.tar.gz
+[2023-05-28 10:30:12] INFO root fetch - processPackages [lpr-pkg]: Downloading https://files.pythonhosted.org/packages/56/bf/1347f10ed0400e6d5ed819eab01fc2ed094ea5dfc1639a46995d74a6db9d/lpr_pkg-2.0.0.tar.gz
+[2023-05-28 10:30:12] INFO root fetch - processPackages [sorcerun]: executing diffoscope
+[2023-05-28 10:30:12] INFO root fetch - processPackages [sorcerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sorcerun-0.2.3.tar.gz tmp/sorcerun-0.2.4.tar.gz --markdown 20230528/s/sorcerun/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 10:30:12] INFO root fetch - processPackages [lpr-pkg]: executing diffoscope
+[2023-05-28 10:30:12] INFO root fetch - processPackages [lpr-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpr_pkg-1.1.0.tar.gz tmp/lpr_pkg-2.0.0.tar.gz --markdown 20230528/l/lpr-pkg/1.1.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-28 10:30:12] INFO root fetch - processPackages [flixit]: Downloading https://files.pythonhosted.org/packages/5b/dd/09ca54bbeb40594e0961b715a9d1f7ef3ce06c3f07269f6bf0f372a7362e/flixit-0.3.tar.gz
+[2023-05-28 10:30:12] INFO root fetch - processPackages [flixit]: executing diffoscope
+[2023-05-28 10:30:12] INFO root fetch - processPackages [flixit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flixit-0.2.tar.gz tmp/flixit-0.3.tar.gz --markdown 20230528/f/flixit/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-28 10:30:13] INFO root fetch - main [MainThread]: End processing [lpr-pkg]: success
+[2023-05-28 10:30:13] INFO root fetch - main [MainThread]: End processing [sorcerun]: success
+[2023-05-28 10:30:13] INFO root fetch - main [MainThread]: End processing [flixit]: success
+[2023-05-28 10:30:13] INFO root fetch - main [MainThread]: Store serial: [18279298]
