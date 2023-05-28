@@ -9004,3 +9004,32 @@ EOFError: EOF read where object expected
 [2023-05-28 20:07:17] INFO root fetch - main [MainThread]: End processing [djangocms-frontend]: success
 [2023-05-28 20:08:02] INFO root fetch - main [MainThread]: End processing [aws-lambda-stream]: success
 [2023-05-28 20:08:02] INFO root fetch - main [MainThread]: Store serial: [18282606]
+[2023-05-28 20:13:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282606]
+[2023-05-28 20:13:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 20:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: img2table
+[2023-05-28 20:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pystools
+[2023-05-28 20:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DataSort
+[2023-05-28 20:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aio-fluid
+[2023-05-28 20:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spn
+[2023-05-28 20:13:11] INFO root fetch - processPackages [spn]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 20:13:11] WARNING root fetch - processPackages [DataSort]: Skipping, unable to determine old version
+[2023-05-28 20:13:11] INFO root fetch - processPackages [img2table]: New version: [1.0.0] Old Version: [0.1.4]
+[2023-05-28 20:13:11] INFO root fetch - main [MainThread]: End processing [DataSort] error
+[2023-05-28 20:13:11] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 20:13:11] INFO root fetch - processPackages [aio-fluid]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-28 20:13:11] INFO root fetch - processPackages [spn]: executing diffoscope
+[2023-05-28 20:13:11] INFO root fetch - processPackages [spn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spn-0.1.0-py2.py3-none-any.whl.zip tmp/spn-0.2.0.tar.gz --markdown 20230528/s/spn/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 20:13:11] INFO root fetch - processPackages [aio-fluid]: Downloading https://files.pythonhosted.org/packages/8b/c5/63c717c9e357f0cc62e77f13dcdd3fbb67ff97728d2320e86716d486afac/aio_fluid-0.5.1.tar.gz
+[2023-05-28 20:13:11] INFO root fetch - processPackages [img2table]: Downloading https://files.pythonhosted.org/packages/64/e7/c6aeb140d6ac73b307a838dfc363e073c1befcd6046a332b3cd983332210/img2table-1.0.0.tar.gz
+[2023-05-28 20:13:11] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2023-05-28 20:13:11] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20230528/p/pystools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 20:13:11] INFO root fetch - processPackages [img2table]: executing diffoscope
+[2023-05-28 20:13:11] INFO root fetch - processPackages [img2table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/img2table-0.1.4.tar.gz tmp/img2table-1.0.0.tar.gz --markdown 20230528/i/img2table/0.1.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 20:13:11] INFO root fetch - processPackages [aio-fluid]: Downloading https://files.pythonhosted.org/packages/43/3c/5498033af59e99bfd2a4d797be7c4f4dd17cb19e19c7ee0eff526e6e8111/aio_fluid-0.5.2.tar.gz
+[2023-05-28 20:13:12] INFO root fetch - processPackages [aio-fluid]: executing diffoscope
+[2023-05-28 20:13:12] INFO root fetch - processPackages [aio-fluid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_fluid-0.5.1.tar.gz tmp/aio_fluid-0.5.2.tar.gz --markdown 20230528/a/aio-fluid/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-28 20:13:12] INFO root fetch - main [MainThread]: End processing [spn]: success
+[2023-05-28 20:13:12] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2023-05-28 20:13:13] INFO root fetch - main [MainThread]: End processing [aio-fluid]: success
+[2023-05-28 20:13:14] INFO root fetch - main [MainThread]: End processing [img2table]: success
+[2023-05-28 20:13:14] INFO root fetch - main [MainThread]: Store serial: [18282624]
