@@ -1861,3 +1861,30 @@
 [2023-05-28 04:49:01] INFO root fetch - main [MainThread]: End processing [pydoc-markdown]: success
 [2023-05-28 04:49:04] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2023-05-28 04:49:04] INFO root fetch - main [MainThread]: Store serial: [18278127]
+[2023-05-28 04:54:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278127]
+[2023-05-28 04:54:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydoc-markdown
+[2023-05-28 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maturin
+[2023-05-28 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-bank-payment
+[2023-05-28 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coconut-develop
+[2023-05-28 04:54:13] INFO root fetch - processPackages [pydoc-markdown]: New version: [4.7.0] Old Version: [4.6.5]
+[2023-05-28 04:54:13] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: New version: [16.0.20230527.0] Old Version: [16.0.20230313.0]
+[2023-05-28 04:54:13] INFO root fetch - processPackages [maturin]: New version: [1.0.1] Old Version: [1.0.0b9]
+[2023-05-28 04:54:13] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev9] Old Version: [3.0.1.post0.dev8]
+[2023-05-28 04:54:13] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: Downloading https://files.pythonhosted.org/packages/b9/c3/82e6aec84da4beb42fcf94bc7d3192466218dd0e3b59922ce6fbebc204ef/odoo_addons_oca_bank_payment-16.0.20230313.0-py3-none-any.whl
+[2023-05-28 04:54:13] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-28 04:54:13] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev8.tar.gz tmp/coconut-develop-3.0.1.post0.dev9.tar.gz --markdown 20230528/c/coconut-develop/3.0.1.post0.dev8-3.0.1.post0.dev9/diff.md --exclude *.pyd
+[2023-05-28 04:54:13] INFO root fetch - processPackages [pydoc-markdown]: Downloading https://files.pythonhosted.org/packages/98/6e/3ff9655c579be12ba5b3ce13cb66d1cbfb4700a170e7833fde331cb019b8/pydoc_markdown-4.7.0.tar.gz
+[2023-05-28 04:54:13] INFO root fetch - processPackages [pydoc-markdown]: executing diffoscope
+[2023-05-28 04:54:13] INFO root fetch - processPackages [pydoc-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydoc_markdown-4.6.5.tar.gz tmp/pydoc_markdown-4.7.0.tar.gz --markdown 20230528/p/pydoc-markdown/4.6.5-4.7.0/diff.md --exclude *.pyd
+[2023-05-28 04:54:13] INFO root fetch - processPackages [maturin]: Downloading https://files.pythonhosted.org/packages/81/c2/89a3073efc50c2cb950877f44d7564d31a22d812db791bb6f8d3f0c891b7/maturin-1.0.1.tar.gz
+[2023-05-28 04:54:14] INFO root fetch - processPackages [maturin]: executing diffoscope
+[2023-05-28 04:54:14] INFO root fetch - processPackages [maturin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin-1.0.0b9.tar.gz tmp/maturin-1.0.1.tar.gz --markdown 20230528/m/maturin/1.0.0b9-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 04:54:14] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: Downloading https://files.pythonhosted.org/packages/57/22/7bbb75307e620fbba50fb84fecc2f2bd3fa0d7be3ebe419a00101de54bd3/odoo_addons_oca_bank_payment-16.0.20230527.0-py3-none-any.whl
+[2023-05-28 04:54:14] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: executing diffoscope
+[2023-05-28 04:54:14] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_bank_payment-16.0.20230313.0-py3-none-any.whl.zip tmp/odoo_addons_oca_bank_payment-16.0.20230527.0-py3-none-any.whl.zip --markdown 20230528/o/odoo-addons-oca-bank-payment/16.0.20230313.0-16.0.20230527.0/diff.md --exclude *.pyd
+[2023-05-28 04:54:15] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-bank-payment]: success
+[2023-05-28 04:54:15] INFO root fetch - main [MainThread]: End processing [pydoc-markdown]: success
+[2023-05-28 04:54:15] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-28 04:54:15] INFO root fetch - main [MainThread]: End processing [maturin]: success
+[2023-05-28 04:54:15] INFO root fetch - main [MainThread]: Store serial: [18278149]
