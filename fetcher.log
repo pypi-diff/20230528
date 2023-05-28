@@ -9166,3 +9166,84 @@ EOFError: EOF read where object expected
 [2023-05-28 20:34:19] INFO root fetch - main [MainThread]: End processing [retry-requests]: success
 [2023-05-28 20:34:20] INFO root fetch - main [MainThread]: End processing [pysr]: success
 [2023-05-28 20:34:20] INFO root fetch - main [MainThread]: Store serial: [18282715]
+[2023-05-28 20:39:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282715]
+[2023-05-28 20:39:29] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visor-controlnet
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uk-postcodes-parsing
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: YetAnotherModule
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deez-py
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hpc-package
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: freqtrade
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: minecraft-monitoring-api
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: edaplore
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: visor-gligen
+[2023-05-28 20:39:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: yetl-framework
+[2023-05-28 20:39:29] INFO root fetch - processPackages [uk-postcodes-parsing]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 20:39:29] INFO root fetch - processPackages [deez-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 20:39:29] WARNING root fetch - processPackages [visor-controlnet]: Skipping, unable to determine old version
+[2023-05-28 20:39:29] INFO root fetch - processPackages [visor-controlnet]: Start processing: sway
+[2023-05-28 20:39:29] INFO root fetch - main [MainThread]: End processing [visor-controlnet] error
+[2023-05-28 20:39:29] INFO root fetch - processPackages [YetAnotherModule]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-05-28 20:39:29] WARNING root fetch - processPackages [edaplore]: Skipping, unable to determine old version
+[2023-05-28 20:39:29] INFO root fetch - processPackages [edaplore]: Start processing: LegacyNeuralNetworks
+[2023-05-28 20:39:29] INFO root fetch - main [MainThread]: End processing [edaplore] error
+[2023-05-28 20:39:29] INFO root fetch - processPackages [freqtrade]: New version: [2023.5] Old Version: [2023.4]
+[2023-05-28 20:39:29] WARNING root fetch - processPackages [visor-gligen]: Skipping, unable to determine old version
+[2023-05-28 20:39:29] WARNING root fetch - processPackages [minecraft-monitoring-api]: Skipping, unable to determine old version
+[2023-05-28 20:39:29] INFO root fetch - processPackages [visor-gligen]: Start processing: terka
+[2023-05-28 20:39:29] INFO root fetch - main [MainThread]: End processing [visor-gligen] error
+[2023-05-28 20:39:29] INFO root fetch - processPackages [minecraft-monitoring-api]: Start processing: datasette-sqlite-vss
+[2023-05-28 20:39:29] INFO root fetch - main [MainThread]: End processing [minecraft-monitoring-api] error
+[2023-05-28 20:39:29] INFO root fetch - processPackages [yetl-framework]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sway]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 20:39:29] INFO root fetch - processPackages [terka]: New version: [1.9.1] Old Version: [1.9.0.1]
+[2023-05-28 20:39:29] INFO root fetch - processPackages [LegacyNeuralNetworks]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 20:39:29] WARNING root fetch - processPackages [hpc-package]: Skipping, unable to determine old version
+[2023-05-28 20:39:29] INFO root fetch - processPackages [hpc-package]: Start processing: sqlite-vss
+[2023-05-28 20:39:29] INFO root fetch - main [MainThread]: End processing [hpc-package] error
+[2023-05-28 20:39:29] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.1.1a9] Old Version: [0.1.1a8]
+[2023-05-28 20:39:29] INFO root fetch - processPackages [uk-postcodes-parsing]: Downloading https://files.pythonhosted.org/packages/e9/f7/2ad8b1548bd67f5d743fa81a7f6a0d6ef144ff4565dc6b90db2afe169cd4/uk_postcodes_parsing-0.0.1.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sway]: Downloading https://files.pythonhosted.org/packages/c8/ed/88766b9ba8f25cdb16f6cf930cbbac098f0e06d1c9e463cf96404973a124/sway-0.1.2.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sqlite-vss]: New version: [0.1.1a9] Old Version: [0.1.1a8]
+[2023-05-28 20:39:29] INFO root fetch - processPackages [deez-py]: Downloading https://files.pythonhosted.org/packages/5a/c2/efde5bdf8eeb6d5e328e7eee8ec9b3e33c91e4650904caacc20447519a1b/deez_py-0.1.2.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [freqtrade]: Downloading https://files.pythonhosted.org/packages/af/6d/3c0d94cd21b5f14eb16e705b54e1c77dd4d0d07c851c4130a216d0d42dda/freqtrade-2023.4.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/44/cc/15dfd5b1362fb8ce501cd10b4f27ea3647d020bcac9bd9f7d88a5217384f/yetl-framework-1.3.8.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [deez-py]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [deez-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deez_py-0.1.1.tar.gz tmp/deez_py-0.1.2.tar.gz --markdown 20230528/d/deez-py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sway]: Downloading https://files.pythonhosted.org/packages/b6/1b/12fa68fdeb0aae0454e89aa4a9113b8692598d7738e5eceb7aadfff81c5a/sway-0.1.3.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [uk-postcodes-parsing]: Downloading https://files.pythonhosted.org/packages/14/64/4b234816dde52d6b37c67e08b70b9ffe39fca3bd74de03230f035381afc3/uk_postcodes_parsing-0.0.2.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [YetAnotherModule]: Downloading https://files.pythonhosted.org/packages/78/77/e55782c6c1b4aa6f57268e26ade02a3788f241e80b396431aa37ddd04893/YetAnotherModule-0.0.2.1.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [LegacyNeuralNetworks]: Downloading https://files.pythonhosted.org/packages/7e/1f/95d7398b68709b2c2f24bbd5c5c872f677da1d7962328b390235a846bbe2/LegacyNeuralNetworks-0.0.4.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [uk-postcodes-parsing]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [uk-postcodes-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_postcodes_parsing-0.0.1.tar.gz tmp/uk_postcodes_parsing-0.0.2.tar.gz --markdown 20230528/u/uk-postcodes-parsing/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.1.tar.gz tmp/terka-1.9.1.tar.gz --markdown 20230528/t/terka/1.9.0.1-1.9.1/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/7b/f8/3984b8204d78d1357843869f075219ac0b687a26da7f43af66b76ee665d0/yetl-framework-1.3.9.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/78/39/1de339a6154e659c8a6464539aaa36ab5e4340a7d77d50f437b106ca0d12/datasette_sqlite_vss-0.1.1a9-py3-none-any.whl
+[2023-05-28 20:39:29] INFO root fetch - processPackages [freqtrade]: Downloading https://files.pythonhosted.org/packages/2f/6c/e6006227e6b9b8d8b0084c6d76d5b453e9c1c91f2f59f95f3ffbf8e1e101/freqtrade-2023.5.tar.gz
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sway]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sway-0.1.2.tar.gz tmp/sway-0.1.3.tar.gz --markdown 20230528/s/sway/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/84/49/c3e9edf1447bbca8e97d5a521f090a99ac9069452f7cf7863df641abd8c2/sqlite_vss-0.1.1a9-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-28 20:39:29] INFO root fetch - processPackages [YetAnotherModule]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [YetAnotherModule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YetAnotherModule-0.0.2.tar.gz tmp/YetAnotherModule-0.0.2.1.tar.gz --markdown 20230528/Y/YetAnotherModule/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [LegacyNeuralNetworks]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [LegacyNeuralNetworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LegacyNeuralNetworks-0.0.3.tar.gz tmp/LegacyNeuralNetworks-0.0.4.tar.gz --markdown 20230528/L/LegacyNeuralNetworks/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.3.8.tar.gz tmp/yetl-framework-1.3.9.tar.gz --markdown 20230528/y/yetl-framework/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.1.1a8-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.1.1a9-py3-none-any.whl.zip --markdown 20230528/d/datasette-sqlite-vss/0.1.1a8-0.1.1a9/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [freqtrade]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [freqtrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freqtrade-2023.4.tar.gz tmp/freqtrade-2023.5.tar.gz --markdown 20230528/f/freqtrade/2023.4-2023.5/diff.md --exclude *.pyd
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-05-28 20:39:29] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.1.1a8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.1.1a9-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230528/s/sqlite-vss/0.1.1a8-0.1.1a9/diff.md --exclude *.pyd
+[2023-05-28 20:39:30] INFO root fetch - main [MainThread]: End processing [deez-py]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [sway]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [uk-postcodes-parsing]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [YetAnotherModule]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-28 20:39:31] INFO root fetch - main [MainThread]: End processing [LegacyNeuralNetworks]: success
+[2023-05-28 20:39:36] INFO root fetch - main [MainThread]: End processing [freqtrade]: success
+[2023-05-28 20:40:08] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
+[2023-05-28 20:40:08] INFO root fetch - main [MainThread]: Store serial: [18282771]
