@@ -8679,3 +8679,22 @@ EOFError: EOF read where object expected
 [2023-05-28 19:24:07] INFO root fetch - main [MainThread]: End processing [anthe-official]: success
 [2023-05-28 19:24:08] INFO root fetch - main [MainThread]: End processing [pyaodbc]: success
 [2023-05-28 19:24:08] INFO root fetch - main [MainThread]: Store serial: [18282367]
+[2023-05-28 19:29:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282367]
+[2023-05-28 19:29:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otpme
+[2023-05-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gadapt
+[2023-05-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2023-05-28 19:29:17] INFO root fetch - processPackages [gadapt]: New version: [0.2.14] Old Version: [0.2.13]
+[2023-05-28 19:29:17] INFO root fetch - processPackages [otpme]: New version: [0.3.0a9] Old Version: [0.3.0a8]
+[2023-05-28 19:29:17] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-28 19:29:17] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-28 19:29:17] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230528/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-28 19:29:17] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2023-05-28 19:29:17] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a8.tar.gz tmp/otpme-0.3.0a9.tar.gz --markdown 20230528/o/otpme/0.3.0a8-0.3.0a9/diff.md --exclude *.pyd
+[2023-05-28 19:29:17] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/d1/a4/548ece9ca522504d30449e1e643a4e1872a76b704b15589ee6130a8fa7f5/gadapt-0.2.14.tar.gz
+[2023-05-28 19:29:17] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2023-05-28 19:29:17] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.2.13.tar.gz tmp/gadapt-0.2.14.tar.gz --markdown 20230528/g/gadapt/0.2.13-0.2.14/diff.md --exclude *.pyd
+[2023-05-28 19:29:18] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-28 19:29:19] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2023-05-28 19:29:21] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2023-05-28 19:29:21] INFO root fetch - main [MainThread]: Store serial: [18282384]
