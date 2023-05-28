@@ -6211,3 +6211,125 @@
 [2023-05-28 15:04:48] INFO root fetch - main [MainThread]: End processing [classiq]: success
 [2023-05-28 15:05:35] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-28 15:05:35] INFO root fetch - main [MainThread]: Store serial: [18280855]
+[2023-05-28 15:10:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280855]
+[2023-05-28 15:10:50] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-stdlib
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-numpy
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-quantizers-nightly
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parceqt
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cihai
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-pandas
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-pytorch
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robot-soccer-kit
+[2023-05-28 15:10:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-scipy
+[2023-05-28 15:10:50] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.0.0.28052023.post95022] Old Version: [1.0.0.28052023.post125509]
+[2023-05-28 15:10:50] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 15:10:50] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [parceqt]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [cihai]: New version: [0.9.0a5] Old Version: [0.9.0a4]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [robot-soccer-kit]: New version: [2.0.5] Old Version: [2.0.3]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230528/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230528/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/3e/b2/508f92325446e072e436e479843be136101c0353d52654267c32dc58795a/mct-quantizers-nightly-1.0.0.28052023.post125509.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230528/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230528/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230528/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [parceqt]: Downloading https://files.pythonhosted.org/packages/34/06/2af6cd08711327c8a9c3a605da61a9731f36a88c3a23408b24a056eefe4f/parceqt-0.8.5.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [cihai]: Downloading https://files.pythonhosted.org/packages/8e/80/ab5ca1dbe6b53fdb51c67204d2c64db811c4999e09e2f92cd43c28c1d2b9/cihai-0.9.0a4.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [robot-soccer-kit]: Downloading https://files.pythonhosted.org/packages/95/4e/b7d6bc37703436948d17906a24208c94a6b4daedb5dfaab67aa58ecdb321/robot-soccer-kit-2.0.3.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-28 15:10:51] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/c5/62/b62a4611ca8f18e7547d325039883f8561ffad8aea96811d3a7a1515a86d/mct-quantizers-nightly-1.0.0.28052023.post95022.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.0.0.28052023.post125509.tar.gz tmp/mct-quantizers-nightly-1.0.0.28052023.post95022.tar.gz --markdown 20230528/m/mct-quantizers-nightly/1.0.0.28052023.post125509-1.0.0.28052023.post95022/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [parceqt]: Downloading https://files.pythonhosted.org/packages/69/c0/29f7b90767a71b375d0ed166a9918417bd668667b696d4fefbb87523ccfa/parceqt-0.9.0.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230528/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] INFO root fetch - processPackages [cihai]: Downloading https://files.pythonhosted.org/packages/7b/fd/271d57f890d74851f00896f337a4acb861dd7a2e41bf21ea64ea73fd1d82/cihai-0.9.0a5.tar.gz
+[2023-05-28 15:10:51] INFO root fetch - processPackages [parceqt]: executing diffoscope
+[2023-05-28 15:10:51] INFO root fetch - processPackages [parceqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parceqt-0.8.5.tar.gz tmp/parceqt-0.9.0.tar.gz --markdown 20230528/p/parceqt/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 15:10:51] ERROR root fetch - processPackages [checkov]: Diffoscope failed: Error: error creating container storage: the container name "brave_wozniak" is already in use by "ef00aa2bda612b5a5d227ea8668517cbb08ebc353bd9849ef8389c58f8d7d454". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-28 15:10:51] INFO root fetch - processPackages [checkov]: Start processing: triplify-csv
+[2023-05-28 15:10:51] INFO root fetch - main [MainThread]: End processing [checkov] error
+[2023-05-28 15:10:52] INFO root fetch - processPackages [cihai]: executing diffoscope
+[2023-05-28 15:10:52] INFO root fetch - processPackages [cihai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cihai-0.9.0a4.tar.gz tmp/cihai-0.9.0a5.tar.gz --markdown 20230528/c/cihai/0.9.0a4-0.9.0a5/diff.md --exclude *.pyd
+[2023-05-28 15:10:52] INFO root fetch - processPackages [triplify-csv]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-28 15:10:52] INFO root fetch - processPackages [triplify-csv]: Downloading https://files.pythonhosted.org/packages/ab/30/573203f7010d0175b2c09c03843ff90e565a512d64580aee55d4d1effa59/triplify_csv-0.4.0.tar.gz
+[2023-05-28 15:10:52] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-28 15:10:52] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-28 15:10:52] INFO root fetch - processPackages [triplify-csv]: Downloading https://files.pythonhosted.org/packages/33/b4/10e4a238f46b77c579ef8a675f8235691a3bddeda3faee72306c7b4105bb/triplify_csv-0.4.1.tar.gz
+[2023-05-28 15:10:52] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-28 15:10:52] INFO root fetch - processPackages [robot-soccer-kit]: Downloading https://files.pythonhosted.org/packages/87/ec/641abaed1d35d04c58455de0c3ec29d9a49ead18330c796ae46ff9758c42/robot-soccer-kit-2.0.5.tar.gz
+[2023-05-28 15:10:52] INFO root fetch - processPackages [triplify-csv]: executing diffoscope
+[2023-05-28 15:10:52] INFO root fetch - processPackages [triplify-csv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triplify_csv-0.4.0.tar.gz tmp/triplify_csv-0.4.1.tar.gz --markdown 20230528/t/triplify-csv/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 15:10:52] INFO root fetch - processPackages [robot-soccer-kit]: executing diffoscope
+[2023-05-28 15:10:52] INFO root fetch - processPackages [robot-soccer-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robot-soccer-kit-2.0.3.tar.gz tmp/robot-soccer-kit-2.0.5.tar.gz --markdown 20230528/r/robot-soccer-kit/2.0.3-2.0.5/diff.md --exclude *.pyd
+[2023-05-28 15:10:53] INFO root fetch - main [MainThread]: End processing [parceqt]: success
+[2023-05-28 15:10:53] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-28 15:10:53] ERROR root fetch - processPackages [cihai]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-05-28 15:10:53] INFO root fetch - main [MainThread]: End processing [cihai] error
+[2023-05-28 15:10:53] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2023-05-28 15:10:53] INFO root fetch - main [MainThread]: End processing [triplify-csv]: success
+[2023-05-28 15:10:53] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-28 15:10:56] INFO root fetch - main [MainThread]: End processing [robot-soccer-kit]: success
+[2023-05-28 15:10:56] INFO root fetch - main [MainThread]: Store serial: [18280887]
