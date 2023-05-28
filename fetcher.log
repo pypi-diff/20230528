@@ -2404,3 +2404,24 @@
 [2023-05-28 06:49:02] INFO root fetch - main [MainThread]: End processing [je-auto-control]: success
 [2023-05-28 06:49:02] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
 [2023-05-28 06:49:02] INFO root fetch - main [MainThread]: Store serial: [18278539]
+[2023-05-28 06:54:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278539]
+[2023-05-28 06:54:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 06:54:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsetypes
+[2023-05-28 06:54:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: passgeneration
+[2023-05-28 06:54:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bibleref
+[2023-05-28 06:54:11] INFO root fetch - processPackages [passgeneration]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 06:54:11] INFO root fetch - processPackages [bibleref]: New version: [0.9.0] Old Version: [0.15.0]
+[2023-05-28 06:54:11] INFO root fetch - processPackages [parsetypes]: New version: [0.2] Old Version: [0.1.1]
+[2023-05-28 06:54:11] INFO root fetch - processPackages [bibleref]: Downloading https://files.pythonhosted.org/packages/af/60/cc5a21c0e7c75349d22743e2d9e0d1241a131e55aad5b4fbcdbd70063b30/bibleref-0.15.0.tar.gz
+[2023-05-28 06:54:11] INFO root fetch - processPackages [passgeneration]: Downloading https://files.pythonhosted.org/packages/1b/7a/1be7bf89f622588fe311c5e787e1c28c9d274c84c9650d4358f1bc9a5997/passgeneration-0.0.3.tar.gz
+[2023-05-28 06:54:11] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/5c/e2/832ec9d1a18c1b2b82bf5805b27639385bc1857e89a8f27f88c279579a6a/parsetypes-0.2.tar.gz
+[2023-05-28 06:54:11] INFO root fetch - processPackages [passgeneration]: executing diffoscope
+[2023-05-28 06:54:11] INFO root fetch - processPackages [passgeneration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passgeneration-0.0.2.tar.gz tmp/passgeneration-0.0.3.tar.gz --markdown 20230528/p/passgeneration/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 06:54:12] INFO root fetch - processPackages [bibleref]: executing diffoscope
+[2023-05-28 06:54:12] INFO root fetch - processPackages [bibleref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibleref-0.15.0.tar.gz tmp/bibleref-0.9.0.tar.gz --markdown 20230528/b/bibleref/0.15.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 06:54:12] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-28 06:54:12] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.1.1.tar.gz tmp/parsetypes-0.2.tar.gz --markdown 20230528/p/parsetypes/0.1.1-0.2/diff.md --exclude *.pyd
+[2023-05-28 06:54:12] INFO root fetch - main [MainThread]: End processing [passgeneration]: success
+[2023-05-28 06:54:13] INFO root fetch - main [MainThread]: End processing [bibleref]: success
+[2023-05-28 06:54:14] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-28 06:54:14] INFO root fetch - main [MainThread]: Store serial: [18278550]
