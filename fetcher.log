@@ -5122,3 +5122,65 @@
 [2023-05-28 13:12:49] INFO root fetch - main [MainThread]: End processing [neclib]: success
 [2023-05-28 13:12:51] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
 [2023-05-28 13:12:51] INFO root fetch - main [MainThread]: Store serial: [18280179]
+[2023-05-28 13:17:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280179]
+[2023-05-28 13:17:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: customtkinterx
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loutilities
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cobra-db
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsonrpc-py
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-slick-reporting
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SymSpellCppPy
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webscapy
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: greenstalk
+[2023-05-28 13:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kayle
+[2023-05-28 13:17:59] INFO root fetch - processPackages [django-slick-reporting]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-05-28 13:17:59] INFO root fetch - processPackages [customtkinterx]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-28 13:17:59] INFO root fetch - processPackages [jsonrpc-py]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-28 13:17:59] INFO root fetch - processPackages [webscapy]: New version: [1.3.3] Old Version: [1.2.0]
+[2023-05-28 13:17:59] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-28 13:18:00] INFO root fetch - processPackages [SymSpellCppPy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 13:18:00] INFO root fetch - processPackages [loutilities]: New version: [3.8.3] Old Version: [3.8.2]
+[2023-05-28 13:18:00] INFO root fetch - processPackages [greenstalk]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 13:18:00] INFO root fetch - processPackages [cobra-db]: New version: [0.3.8] Old Version: [0.2.4]
+[2023-05-28 13:18:00] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230528/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/63/05/89182d967c277d5ce21efce9880b75f24f1f468c00c24a891fa1ad8bd501/customtkinterx-0.1.3.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/42/13/76754b48a05e70abc3dab4adeb6a88f36c60f5cb6ef0ebe35cce9bb489b3/jsonrpc-py-3.0.8.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [SymSpellCppPy]: Downloading https://files.pythonhosted.org/packages/df/ee/f3e42f74c22461dfcdb7bad0d23c66250691d0c4a340e039e4570ac4fafe/SymSpellCppPy-0.0.8.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [webscapy]: Downloading https://files.pythonhosted.org/packages/4b/89/0bfa7e693fa4389fcadb4fd06d2b84d02c5c223d77627d6ba8460f18d6fc/webscapy-1.3.3.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [cobra-db]: Downloading https://files.pythonhosted.org/packages/2c/51/cff94b6711b83d55e37688312dc1c64a4da4b59520050d5dcee40ee9ba49/cobra_db-0.2.4.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [loutilities]: Downloading https://files.pythonhosted.org/packages/b8/3c/25c2ae6f6926e3c509252947f678ad27ecffa3abdc7a30b755117f816031/loutilities-3.8.2.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [greenstalk]: Downloading https://files.pythonhosted.org/packages/db/06/29afb306dbbe3c1ea95cfd08d506135a498db7556c3fb01d5f47cdfd0366/greenstalk-2.0.2.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [django-slick-reporting]: Downloading https://files.pythonhosted.org/packages/4e/5e/5b4751576fca888ba8d40728d5d0febe8709921b9fec4bc32cda2476f547/django-slick-reporting-0.7.0.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [webscapy]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [webscapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscapy-1.2.0.tar.gz tmp/webscapy-1.3.3.tar.gz --markdown 20230528/w/webscapy/1.2.0-1.3.3/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/6d/24/f40913ec166fc4e313640d5e54e70239399f267f493e1e03dd6462881fec/customtkinterx-0.1.4.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [greenstalk]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [greenstalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greenstalk-2.0.1.tar.gz tmp/greenstalk-2.0.2.tar.gz --markdown 20230528/g/greenstalk/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.1.3.tar.gz tmp/customtkinterx-0.1.4.tar.gz --markdown 20230528/c/customtkinterx/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [jsonrpc-py]: Downloading https://files.pythonhosted.org/packages/57/e3/86ea8748b5cb245f5185e02399bd64ca33b75971318aca8f2c0b2d34a442/jsonrpc-py-3.0.9.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [django-slick-reporting]: Downloading https://files.pythonhosted.org/packages/5d/0d/4eae2b81fc34d12e20f0de7655ea11ea4a4cfcfb583fe29c1989c98d8810/django-slick-reporting-0.8.0.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [cobra-db]: Downloading https://files.pythonhosted.org/packages/ce/25/b9c3ca4ad7369c74c6fad25935716346f60fa3f40d192ab3d3616717f652/cobra_db-0.3.8.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [jsonrpc-py]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [jsonrpc-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpc-py-3.0.8.tar.gz tmp/jsonrpc-py-3.0.9.tar.gz --markdown 20230528/j/jsonrpc-py/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [SymSpellCppPy]: Downloading https://files.pythonhosted.org/packages/94/63/6a0446d7312b71fbc7ee1bbb85bb1013788d86dbb98c01f6d96c96f01200/SymSpellCppPy-0.0.9.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [django-slick-reporting]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [django-slick-reporting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-slick-reporting-0.7.0.tar.gz tmp/django-slick-reporting-0.8.0.tar.gz --markdown 20230528/d/django-slick-reporting/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [loutilities]: Downloading https://files.pythonhosted.org/packages/1b/13/ad607725ea208dfcb409f955dfbc43d6d54a023fa99e66074b5f435f0f08/loutilities-3.8.3.tar.gz
+[2023-05-28 13:18:00] INFO root fetch - processPackages [cobra-db]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [cobra-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cobra_db-0.2.4.tar.gz tmp/cobra_db-0.3.8.tar.gz --markdown 20230528/c/cobra-db/0.2.4-0.3.8/diff.md --exclude *.pyd
+[2023-05-28 13:18:00] INFO root fetch - processPackages [loutilities]: executing diffoscope
+[2023-05-28 13:18:00] INFO root fetch - processPackages [loutilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loutilities-3.8.2.tar.gz tmp/loutilities-3.8.3.tar.gz --markdown 20230528/l/loutilities/3.8.2-3.8.3/diff.md --exclude *.pyd
+[2023-05-28 13:18:01] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-28 13:18:01] INFO root fetch - main [MainThread]: End processing [webscapy]: success
+[2023-05-28 13:18:01] INFO root fetch - main [MainThread]: End processing [greenstalk]: success
+[2023-05-28 13:18:01] INFO root fetch - processPackages [SymSpellCppPy]: executing diffoscope
+[2023-05-28 13:18:01] INFO root fetch - processPackages [SymSpellCppPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SymSpellCppPy-0.0.8.tar.gz tmp/SymSpellCppPy-0.0.9.tar.gz --markdown 20230528/S/SymSpellCppPy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 13:18:01] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-05-28 13:18:02] INFO root fetch - main [MainThread]: End processing [django-slick-reporting]: success
+[2023-05-28 13:18:02] INFO root fetch - main [MainThread]: End processing [jsonrpc-py]: success
+[2023-05-28 13:18:02] INFO root fetch - main [MainThread]: End processing [cobra-db]: success
+[2023-05-28 13:18:03] INFO root fetch - main [MainThread]: End processing [loutilities]: success
+[2023-05-28 13:18:04] INFO root fetch - main [MainThread]: End processing [SymSpellCppPy]: success
+[2023-05-28 13:18:04] INFO root fetch - main [MainThread]: Store serial: [18280205]
