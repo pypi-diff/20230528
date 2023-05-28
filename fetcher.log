@@ -10676,3 +10676,29 @@ EOFError: EOF read where object expected
 [2023-05-28 23:33:21] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-28 23:33:23] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-28 23:33:23] INFO root fetch - main [MainThread]: Store serial: [18283654]
+[2023-05-28 23:38:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283654]
+[2023-05-28 23:38:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 23:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfish
+[2023-05-28 23:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: timeblock
+[2023-05-28 23:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: distill-trainer
+[2023-05-28 23:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timeblock
+[2023-05-28 23:38:32] INFO root fetch - processPackages [timeblock]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-28 23:38:32] INFO root fetch - processPackages [timeblock]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-28 23:38:32] WARNING root fetch - processPackages [distill-trainer]: Skipping, unable to determine old version
+[2023-05-28 23:38:32] INFO root fetch - main [MainThread]: End processing [distill-trainer] error
+[2023-05-28 23:38:32] INFO root fetch - processPackages [kfish]: New version: [99.0.202305282134] Old Version: [99.0.202305282131]
+[2023-05-28 23:38:32] INFO root fetch - processPackages [timeblock]: Downloading https://files.pythonhosted.org/packages/39/86/bf577cf9b090b37e0408535d2128daa4f02425215a192d8ac1d0004c5e5b/timeblock-0.0.4.tar.gz
+[2023-05-28 23:38:32] INFO root fetch - processPackages [timeblock]: Downloading https://files.pythonhosted.org/packages/39/86/bf577cf9b090b37e0408535d2128daa4f02425215a192d8ac1d0004c5e5b/timeblock-0.0.4.tar.gz
+[2023-05-28 23:38:32] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/77/43/a590d5ed88bd96e4625e704381877010541a3ad10fb4d5d79716e21ae5dc/kfish-99.0.202305282134-py3-none-any.whl
+[2023-05-28 23:38:33] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-28 23:38:33] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305282131-py3-none-any.whl.zip tmp/kfish-99.0.202305282134-py3-none-any.whl.zip --markdown 20230528/k/kfish/99.0.202305282131-99.0.202305282134/diff.md --exclude *.pyd
+[2023-05-28 23:38:33] INFO root fetch - processPackages [timeblock]: Downloading https://files.pythonhosted.org/packages/3a/3f/d0614d7e10aa63b6f710514b774c196ab4fa75d6c2d33b6e55ba83df9aef/timeblock-0.1.0.tar.gz
+[2023-05-28 23:38:33] INFO root fetch - processPackages [timeblock]: Downloading https://files.pythonhosted.org/packages/3a/3f/d0614d7e10aa63b6f710514b774c196ab4fa75d6c2d33b6e55ba83df9aef/timeblock-0.1.0.tar.gz
+[2023-05-28 23:38:33] INFO root fetch - processPackages [timeblock]: executing diffoscope
+[2023-05-28 23:38:33] INFO root fetch - processPackages [timeblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeblock-0.0.4.tar.gz tmp/timeblock-0.1.0.tar.gz --markdown 20230528/t/timeblock/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-28 23:38:33] INFO root fetch - processPackages [timeblock]: executing diffoscope
+[2023-05-28 23:38:33] INFO root fetch - processPackages [timeblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeblock-0.0.4.tar.gz tmp/timeblock-0.1.0.tar.gz --markdown 20230528/t/timeblock/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-28 23:38:34] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-28 23:38:34] INFO root fetch - main [MainThread]: End processing [timeblock]: success
+[2023-05-28 23:38:34] INFO root fetch - main [MainThread]: End processing [timeblock]: success
+[2023-05-28 23:38:34] INFO root fetch - main [MainThread]: Store serial: [18283669]
