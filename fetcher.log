@@ -3126,3 +3126,83 @@
 [2023-05-28 09:09:37] INFO root fetch - main [MainThread]: End processing [podcast-downloader]: success
 [2023-05-28 09:09:38] INFO root fetch - main [MainThread]: End processing [wiliot-deployment-tools]: success
 [2023-05-28 09:09:38] INFO root fetch - main [MainThread]: Store serial: [18278978]
+[2023-05-28 09:14:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278978]
+[2023-05-28 09:14:47] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-models-nightly
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polyfactory
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keycloak-django
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: global-hotkeys
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prfiesta
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: assemblyline-service-client
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: assemblyline-service-server
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: assemblyline-ui
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: assemblyline-v4-service
+[2023-05-28 09:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: assemblyline
+[2023-05-28 09:14:47] INFO root fetch - processPackages [keycloak-django]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [polyfactory]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [global-hotkeys]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-28 09:14:47] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230528/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-28 09:14:47] INFO root fetch - processPackages [assemblyline-service-server]: New version: [4.4.1.dev97] Old Version: [4.4.1.dev96]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [keycloak-django]: Downloading https://files.pythonhosted.org/packages/25/55/e74508127aa4b91ca546396e615da5083557b3af8edecbc921f2fd6850ba/keycloak_django-1.1.1.tar.gz
+[2023-05-28 09:14:47] INFO root fetch - processPackages [global-hotkeys]: Downloading https://files.pythonhosted.org/packages/f1/50/6606d42eeb67a0a4205d9207d45e60ddc94529c815f12174c3ca6c2ebe95/global_hotkeys-0.1.0.tar.gz
+[2023-05-28 09:14:47] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [assemblyline-service-client]: New version: [4.4.1.dev97] Old Version: [4.4.1.dev96]
+[2023-05-28 09:14:47] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/5e/b7/2b5043bd35b8c20bade56b6bbb93d8107243604b1b41c07713ac128de936/assemblyline_service_server-4.4.1.dev96-py3-none-any.whl
+[2023-05-28 09:14:47] INFO root fetch - processPackages [keycloak-django]: executing diffoscope
+[2023-05-28 09:14:47] INFO root fetch - processPackages [keycloak-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keycloak_django-1.1.0.tar.gz tmp/keycloak_django-1.1.1.tar.gz --markdown 20230528/k/keycloak-django/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [polyfactory]: Downloading https://files.pythonhosted.org/packages/46/e8/d57a18ced8906327d5d7147014967d967ec6331294b3d0348276edcf9d8e/polyfactory-2.1.2.tar.gz
+[2023-05-28 09:14:48] INFO root fetch - processPackages [global-hotkeys]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [global-hotkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/global_hotkeys-0.0.6.tar.gz tmp/global_hotkeys-0.1.0.tar.gz --markdown 20230528/g/global-hotkeys/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-v4-service]: New version: [4.4.1.dev97] Old Version: [4.4.1.dev96]
+[2023-05-28 09:14:48] INFO root fetch - processPackages [polyfactory]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [polyfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyfactory-2.1.1.tar.gz tmp/polyfactory-2.1.2.tar.gz --markdown 20230528/p/polyfactory/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/99/0e/92da2fab430c9603640f405cedec0f033b9f8678588820715802987bfbc6/assemblyline_service_client-4.4.1.dev96-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline]: New version: [4.4.1.dev97] Old Version: [4.4.1.dev96]
+[2023-05-28 09:14:48] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230528/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/08/91/23f5f0742c3e4d03f7179061735c7f14bd40dcf65ffa9e36deec7a6cd814/assemblyline_service_server-4.4.1.dev97-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/8c/f1/edff310dc0129a191405c18414c10814b2da49381090b15661972481f9e1/assemblyline_v4_service-4.4.1.dev96-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-ui]: New version: [4.4.1.dev97] Old Version: [4.4.1.dev96]
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-server]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_server-4.4.1.dev96-py3-none-any.whl.zip tmp/assemblyline_service_server-4.4.1.dev97-py3-none-any.whl.zip --markdown 20230528/a/assemblyline-service-server/4.4.1.dev96-4.4.1.dev97/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/24/0b/2ae916aa04e47577d169a9cf18d4112477b3d747c36b5c25392f632cdc3c/assemblyline_service_client-4.4.1.dev97-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-client]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_client-4.4.1.dev96-py3-none-any.whl.zip tmp/assemblyline_service_client-4.4.1.dev97-py3-none-any.whl.zip --markdown 20230528/a/assemblyline-service-client/4.4.1.dev96-4.4.1.dev97/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/f3/a6/cbb3b64b3018b1e79b83cef8bcda3f847394061602ee51a403a6016d692b/assemblyline_ui-4.4.1.dev96-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/64/11/4b1ff8ce6dfc5523fb01d422853ec8657f085906b3836d009b40cd11e8ca/assemblyline_v4_service-4.4.1.dev97-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline]: Downloading https://files.pythonhosted.org/packages/8b/e5/3d074342d5c68dc95657928a08b01f6d161d70e3efdf3142902122d07ca4/assemblyline-4.4.1.dev97.tar.gz
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-v4-service]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-v4-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_v4_service-4.4.1.dev96-py3-none-any.whl.zip tmp/assemblyline_v4_service-4.4.1.dev97-py3-none-any.whl.zip --markdown 20230528/a/assemblyline-v4-service/4.4.1.dev96-4.4.1.dev97/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-4.4.1.dev96.tar.gz tmp/assemblyline-4.4.1.dev97.tar.gz --markdown 20230528/a/assemblyline/4.4.1.dev96-4.4.1.dev97/diff.md --exclude *.pyd
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/00/89/730b4eb615abac0cda06b994ac04236cf9e9f13079c49936a84bc98b737d/assemblyline_ui-4.4.1.dev97-py3-none-any.whl
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-ui]: executing diffoscope
+[2023-05-28 09:14:48] INFO root fetch - processPackages [assemblyline-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_ui-4.4.1.dev96-py3-none-any.whl.zip tmp/assemblyline_ui-4.4.1.dev97-py3-none-any.whl.zip --markdown 20230528/a/assemblyline-ui/4.4.1.dev96-4.4.1.dev97/diff.md --exclude *.pyd
+[2023-05-28 09:14:49] INFO root fetch - processPackages [prfiesta]: Start processing: permit
+[2023-05-28 09:14:49] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-28 09:14:49] INFO root fetch - processPackages [global-hotkeys]: Start processing: assemblyline-core
+[2023-05-28 09:14:49] INFO root fetch - main [MainThread]: End processing [global-hotkeys]: success
+[2023-05-28 09:14:49] INFO root fetch - processPackages [permit]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 09:14:49] INFO root fetch - processPackages [keycloak-django]: Start processing: git-cpp-hook
+[2023-05-28 09:14:49] INFO root fetch - main [MainThread]: End processing [keycloak-django]: success
+[2023-05-28 09:14:49] INFO root fetch - processPackages [permit]: Downloading https://files.pythonhosted.org/packages/8c/6d/2c91628e4082f275b74074639607a11f44471cdcdef558c3f0701f482d73/permit-2.0.2.tar.gz
+[2023-05-28 09:14:49] INFO root fetch - main [MainThread]: End processing [assemblyline-service-client]: success
+[2023-05-28 09:14:49] INFO root fetch - main [MainThread]: End processing [assemblyline-service-server]: success
+[2023-05-28 09:14:49] WARNING root fetch - processPackages [git-cpp-hook]: Skipping, unable to determine old version
+[2023-05-28 09:14:49] INFO root fetch - main [MainThread]: End processing [git-cpp-hook] error
+[2023-05-28 09:14:49] INFO root fetch - processPackages [permit]: executing diffoscope
+[2023-05-28 09:14:49] INFO root fetch - processPackages [permit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/permit-2.0.1.tar.gz tmp/permit-2.0.2.tar.gz --markdown 20230528/p/permit/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 09:14:50] INFO root fetch - main [MainThread]: End processing [polyfactory]: success
+[2023-05-28 09:14:50] INFO root fetch - processPackages [assemblyline-core]: New version: [4.4.1.dev97] Old Version: [4.4.1.dev96]
+[2023-05-28 09:14:50] INFO root fetch - processPackages [assemblyline-core]: Downloading https://files.pythonhosted.org/packages/00/09/00ae1560cff85148624cc2b212988e2251c3d570117623d39d3e57e4b24f/assemblyline-core-4.4.1.dev97.tar.gz
+[2023-05-28 09:14:50] INFO root fetch - processPackages [assemblyline-core]: executing diffoscope
+[2023-05-28 09:14:50] INFO root fetch - processPackages [assemblyline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-core-4.4.1.dev96.tar.gz tmp/assemblyline-core-4.4.1.dev97.tar.gz --markdown 20230528/a/assemblyline-core/4.4.1.dev96-4.4.1.dev97/diff.md --exclude *.pyd
+[2023-05-28 09:14:50] INFO root fetch - main [MainThread]: End processing [assemblyline-ui]: success
+[2023-05-28 09:14:51] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
+[2023-05-28 09:14:51] INFO root fetch - main [MainThread]: End processing [permit]: success
+[2023-05-28 09:14:51] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
+[2023-05-28 09:14:52] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
+[2023-05-28 09:15:05] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-28 09:15:05] INFO root fetch - main [MainThread]: Store serial: [18279021]
