@@ -10534,3 +10534,48 @@ EOFError: EOF read where object expected
 [2023-05-28 23:17:36] INFO root fetch - main [MainThread]: End processing [scatterd]: success
 [2023-05-28 23:17:42] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-28 23:17:42] INFO root fetch - main [MainThread]: Store serial: [18283573]
+[2023-05-28 23:22:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283573]
+[2023-05-28 23:22:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bloxflipeasily
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: colourmap
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binance-c2c-sdk
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfish
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbxmpp
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pca
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lib-dzne-filedata
+[2023-05-28 23:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: not1mm
+[2023-05-28 23:22:51] INFO root fetch - processPackages [bloxflipeasily]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 23:22:51] WARNING root fetch - processPackages [binance-c2c-sdk]: Skipping, unable to determine old version
+[2023-05-28 23:22:51] INFO root fetch - main [MainThread]: End processing [binance-c2c-sdk] error
+[2023-05-28 23:22:51] INFO root fetch - processPackages [colourmap]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-28 23:22:52] INFO root fetch - processPackages [pca]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 23:22:52] INFO root fetch - processPackages [kfish]: New version: [99.0.202305282119] Old Version: [99.0.202305271607]
+[2023-05-28 23:22:52] WARNING root fetch - processPackages [lib-dzne-filedata]: Skipping, unable to determine old version
+[2023-05-28 23:22:52] INFO root fetch - main [MainThread]: End processing [lib-dzne-filedata] error
+[2023-05-28 23:22:52] INFO root fetch - processPackages [nbxmpp]: New version: [4.3.1] Old Version: [4.3.0]
+[2023-05-28 23:22:52] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-28 23:22:52] INFO root fetch - processPackages [bloxflipeasily]: Downloading https://files.pythonhosted.org/packages/d5/e1/3ece4e38cb090ea1ac6c69d150f73c9a0821d45b9d8a07654d2215ca52b0/bloxflipeasily-0.0.1.tar.gz
+[2023-05-28 23:22:52] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-28 23:22:52] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230528/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-28 23:22:52] INFO root fetch - processPackages [pca]: Downloading https://files.pythonhosted.org/packages/7c/96/e0c91b254a3e07092609f7eb0f7c494d24ae1d54fd07cb6e79c70a112f35/pca-2.0.1.tar.gz
+[2023-05-28 23:22:52] INFO root fetch - processPackages [colourmap]: executing diffoscope
+[2023-05-28 23:22:52] INFO root fetch - processPackages [colourmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colourmap-1.1.8.tar.gz tmp/colourmap-1.1.9.tar.gz --markdown 20230528/c/colourmap/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-28 23:22:52] INFO root fetch - processPackages [nbxmpp]: Downloading https://files.pythonhosted.org/packages/cb/52/43ef13c27b3a868d6261786dd62b6b8e189caad84ec085a207d03a60a4aa/nbxmpp-4.3.1.tar.gz
+[2023-05-28 23:22:52] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/c3/db/30d27ed8fb2463e0c60567166d300bab223a8a87ec8d26de38cbed735e7e/kfish-99.0.202305282119-py3-none-any.whl
+[2023-05-28 23:22:52] INFO root fetch - processPackages [nbxmpp]: executing diffoscope
+[2023-05-28 23:22:52] INFO root fetch - processPackages [nbxmpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbxmpp-4.3.0.tar.gz tmp/nbxmpp-4.3.1.tar.gz --markdown 20230528/n/nbxmpp/4.3.0-4.3.1/diff.md --exclude *.pyd
+[2023-05-28 23:22:52] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-28 23:22:52] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305271607-py3-none-any.whl.zip tmp/kfish-99.0.202305282119-py3-none-any.whl.zip --markdown 20230528/k/kfish/99.0.202305271607-99.0.202305282119/diff.md --exclude *.pyd
+[2023-05-28 23:22:52] INFO root fetch - processPackages [bloxflipeasily]: Downloading https://files.pythonhosted.org/packages/10/a9/f9d5ee545cdf35712a2bddc820ed835fd172388592ed9949040fe3fc37ca/bloxflipeasily-0.0.2.tar.gz
+[2023-05-28 23:22:52] INFO root fetch - processPackages [bloxflipeasily]: executing diffoscope
+[2023-05-28 23:22:52] INFO root fetch - processPackages [bloxflipeasily]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bloxflipeasily-0.0.1.tar.gz tmp/bloxflipeasily-0.0.2.tar.gz --markdown 20230528/b/bloxflipeasily/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:22:52] INFO root fetch - processPackages [pca]: Downloading https://files.pythonhosted.org/packages/78/bc/9a429dad2d875b33e30daa14350cedbddc6fe2c2037b640777f50be91db7/pca-2.0.2.tar.gz
+[2023-05-28 23:22:52] INFO root fetch - processPackages [pca]: executing diffoscope
+[2023-05-28 23:22:52] INFO root fetch - processPackages [pca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pca-2.0.1.tar.gz tmp/pca-2.0.2.tar.gz --markdown 20230528/p/pca/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:22:53] INFO root fetch - main [MainThread]: End processing [colourmap]: success
+[2023-05-28 23:22:53] INFO root fetch - main [MainThread]: End processing [bloxflipeasily]: success
+[2023-05-28 23:22:53] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-28 23:22:54] INFO root fetch - main [MainThread]: End processing [pca]: success
+[2023-05-28 23:22:54] INFO root fetch - main [MainThread]: End processing [nbxmpp]: success
+[2023-05-28 23:22:55] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-28 23:22:55] INFO root fetch - main [MainThread]: Store serial: [18283601]
