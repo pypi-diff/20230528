@@ -5742,3 +5742,18 @@
 [2023-05-28 14:11:22] INFO root fetch - main [MainThread]: End processing [python-keycloak]: success
 [2023-05-28 14:11:26] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
 [2023-05-28 14:11:26] INFO root fetch - main [MainThread]: Store serial: [18280510]
+[2023-05-28 14:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280510]
+[2023-05-28 14:16:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 14:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joyrl
+[2023-05-28 14:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sendgrify
+[2023-05-28 14:16:35] INFO root fetch - processPackages [sendgrify]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-28 14:16:35] INFO root fetch - processPackages [joyrl]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 14:16:35] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/69/db/ed5e690ede0e698a2511c0fe4bbc37e8dee83f452fd361a340d04adefc25/joyrl-0.2.9.tar.gz
+[2023-05-28 14:16:35] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 14:16:35] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.8.tar.gz tmp/joyrl-0.2.9.tar.gz --markdown 20230528/j/joyrl/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 14:16:35] INFO root fetch - processPackages [sendgrify]: Downloading https://files.pythonhosted.org/packages/6c/3d/a2d50f125258c3260985b74fa724527541e1da36584ce9035e68db9c5029/sendgrify-2.0.1-py3-none-any.whl
+[2023-05-28 14:16:35] INFO root fetch - processPackages [sendgrify]: executing diffoscope
+[2023-05-28 14:16:35] INFO root fetch - processPackages [sendgrify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sendgrify-2.0.0.macosx-11.6-arm64.tar.gz tmp/sendgrify-2.0.1-py3-none-any.whl.zip --markdown 20230528/s/sendgrify/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-28 14:16:36] INFO root fetch - main [MainThread]: End processing [sendgrify]: success
+[2023-05-28 14:16:36] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 14:16:36] INFO root fetch - main [MainThread]: Store serial: [18280515]
