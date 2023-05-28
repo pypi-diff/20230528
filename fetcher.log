@@ -9108,3 +9108,22 @@ EOFError: EOF read where object expected
 [2023-05-28 20:23:56] INFO root fetch - main [MainThread]: End processing [superkabuki]: success
 [2023-05-28 20:23:57] INFO root fetch - main [MainThread]: End processing [spothinta-api]: success
 [2023-05-28 20:23:57] INFO root fetch - main [MainThread]: Store serial: [18282669]
+[2023-05-28 20:29:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282669]
+[2023-05-28 20:29:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 20:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmltools
+[2023-05-28 20:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: explore-hse2
+[2023-05-28 20:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-plex-api
+[2023-05-28 20:29:06] WARNING root fetch - processPackages [explore-hse2]: Skipping, unable to determine old version
+[2023-05-28 20:29:06] INFO root fetch - processPackages [gmltools]: New version: [0.0.72] Old Version: [0.0.71]
+[2023-05-28 20:29:06] INFO root fetch - processPackages [py-plex-api]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-28 20:29:06] INFO root fetch - main [MainThread]: End processing [explore-hse2] error
+[2023-05-28 20:29:06] INFO root fetch - processPackages [py-plex-api]: Downloading https://files.pythonhosted.org/packages/cd/b4/189f5d74c59a8e770a41f37184810d2a015faf69c925eef2909487865f2d/py_plex_api-0.2.0.tar.gz
+[2023-05-28 20:29:06] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/9f/aa/0b63f657feb16b233e4c6c75ff17b4d71578b206f53696680cdeae920a8d/gmltools-0.0.72.tar.gz
+[2023-05-28 20:29:06] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-05-28 20:29:06] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.71.tar.gz tmp/gmltools-0.0.72.tar.gz --markdown 20230528/g/gmltools/0.0.71-0.0.72/diff.md --exclude *.pyd
+[2023-05-28 20:29:06] INFO root fetch - processPackages [py-plex-api]: Downloading https://files.pythonhosted.org/packages/30/58/0594aec92800dcc1d27b47fd384452067a4cdb7a76b6baea9de3b597e78e/py_plex_api-0.2.1.tar.gz
+[2023-05-28 20:29:06] INFO root fetch - processPackages [py-plex-api]: executing diffoscope
+[2023-05-28 20:29:06] INFO root fetch - processPackages [py-plex-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_plex_api-0.2.0.tar.gz tmp/py_plex_api-0.2.1.tar.gz --markdown 20230528/p/py-plex-api/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-28 20:29:07] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-05-28 20:29:07] INFO root fetch - main [MainThread]: End processing [py-plex-api]: success
+[2023-05-28 20:29:07] INFO root fetch - main [MainThread]: Store serial: [18282686]
