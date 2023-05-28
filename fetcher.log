@@ -3299,3 +3299,35 @@
 [2023-05-28 09:31:22] INFO root fetch - main [MainThread]: End processing [sphere-base]: success
 [2023-05-28 09:31:56] INFO root fetch - main [MainThread]: End processing [checkov3]: success
 [2023-05-28 09:31:56] INFO root fetch - main [MainThread]: Store serial: [18279075]
+[2023-05-28 09:37:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279075]
+[2023-05-28 09:37:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 09:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: attacus
+[2023-05-28 09:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bridgecrew
+[2023-05-28 09:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pracci
+[2023-05-28 09:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prfiesta
+[2023-05-28 09:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lalsuite
+[2023-05-28 09:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xedocs
+[2023-05-28 09:37:05] WARNING root fetch - processPackages [pracci]: Skipping, unable to determine old version
+[2023-05-28 09:37:05] INFO root fetch - main [MainThread]: End processing [pracci] error
+[2023-05-28 09:37:05] INFO root fetch - processPackages [attacus]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 09:37:05] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-28 09:37:05] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-28 09:37:05] INFO root fetch - processPackages [xedocs]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 09:37:05] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 09:37:05] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-28 09:37:06] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-28 09:37:06] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230528/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-28 09:37:06] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-28 09:37:06] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-28 09:37:06] INFO root fetch - processPackages [attacus]: Downloading https://files.pythonhosted.org/packages/8b/fb/909aee3634cb6815f18f8bb7ea065622576d63b13b3d882a183b4a875567/attacus-0.1.2-cp310-cp310-win_amd64.whl
+[2023-05-28 09:37:06] INFO root fetch - processPackages [attacus]: executing diffoscope
+[2023-05-28 09:37:06] INFO root fetch - processPackages [attacus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attacus-0.1.1-cp310-cp310-win_amd64.whl.zip tmp/attacus-0.1.2-cp310-cp310-win_amd64.whl.zip --markdown 20230528/a/attacus/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 09:37:06] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-28 09:37:06] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230528/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-28 09:37:06] INFO root fetch - processPackages [xedocs]: executing diffoscope
+[2023-05-28 09:37:06] INFO root fetch - processPackages [xedocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xedocs-0.2.8.tar.gz tmp/xedocs-0.2.9.tar.gz --markdown 20230528/x/xedocs/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 09:37:07] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-28 09:37:07] INFO root fetch - main [MainThread]: End processing [attacus]: success
+[2023-05-28 09:37:07] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-28 09:37:56] INFO root fetch - main [MainThread]: End processing [xedocs]: success
+[2023-05-28 09:37:56] INFO root fetch - main [MainThread]: Store serial: [18279103]
