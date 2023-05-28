@@ -6636,3 +6636,29 @@ EOFError: EOF read where object expected
 [2023-05-28 15:42:09] INFO root fetch - main [MainThread]: End processing [pyAGI]: success
 [2023-05-28 15:42:58] INFO root fetch - main [MainThread]: End processing [PyTimbre]: success
 [2023-05-28 15:42:58] INFO root fetch - main [MainThread]: Store serial: [18281077]
+[2023-05-28 15:48:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281077]
+[2023-05-28 15:48:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 15:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: v-quantum-annealing
+[2023-05-28 15:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: granian
+[2023-05-28 15:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigtree
+[2023-05-28 15:48:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: siat
+[2023-05-28 15:48:07] INFO root fetch - processPackages [siat]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-28 15:48:07] WARNING root fetch - processPackages [v-quantum-annealing]: Skipping, unable to determine old version
+[2023-05-28 15:48:07] INFO root fetch - main [MainThread]: End processing [v-quantum-annealing] error
+[2023-05-28 15:48:07] INFO root fetch - processPackages [bigtree]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-28 15:48:07] INFO root fetch - processPackages [granian]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-28 15:48:07] INFO root fetch - processPackages [bigtree]: Downloading https://files.pythonhosted.org/packages/b6/d2/11a9563943f08c7626c787c7d4d33f2397b7bacd11170bc3f39097c27bfd/bigtree-0.9.2.tar.gz
+[2023-05-28 15:48:07] INFO root fetch - processPackages [granian]: Downloading https://files.pythonhosted.org/packages/9b/9b/97ec08a6d6763bf7c8461202573ca2714c8384db3a4fe5665f6ab67c0c91/granian-0.4.2.tar.gz
+[2023-05-28 15:48:07] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/8e/68/ec2c91e1d78b09cff73dba05aa33af579bdafc5cc3fa7a6b02540943cb0a/siat-2.0.9-py3-none-any.whl
+[2023-05-28 15:48:07] INFO root fetch - processPackages [siat]: executing diffoscope
+[2023-05-28 15:48:07] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-2.0.8-py3-none-any.whl.zip tmp/siat-2.0.9-py3-none-any.whl.zip --markdown 20230528/s/siat/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-28 15:48:08] INFO root fetch - processPackages [bigtree]: Downloading https://files.pythonhosted.org/packages/6f/c3/8e6e947fddd1241d96bb9c21aad87cc36e62e579c4d6f3f284e388ecb754/bigtree-0.9.3.tar.gz
+[2023-05-28 15:48:08] INFO root fetch - processPackages [granian]: Downloading https://files.pythonhosted.org/packages/76/43/2d866adcfafa0177cc53beb2a9b7b100431cab9261c0f435f1a5514530fd/granian-0.4.3.tar.gz
+[2023-05-28 15:48:08] INFO root fetch - processPackages [bigtree]: executing diffoscope
+[2023-05-28 15:48:08] INFO root fetch - processPackages [bigtree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigtree-0.9.2.tar.gz tmp/bigtree-0.9.3.tar.gz --markdown 20230528/b/bigtree/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-28 15:48:08] INFO root fetch - processPackages [granian]: executing diffoscope
+[2023-05-28 15:48:08] INFO root fetch - processPackages [granian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granian-0.4.2.tar.gz tmp/granian-0.4.3.tar.gz --markdown 20230528/g/granian/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-28 15:48:09] INFO root fetch - main [MainThread]: End processing [granian]: success
+[2023-05-28 15:48:09] INFO root fetch - main [MainThread]: End processing [bigtree]: success
+[2023-05-28 15:48:09] INFO root fetch - main [MainThread]: End processing [siat]: success
+[2023-05-28 15:48:09] INFO root fetch - main [MainThread]: Store serial: [18281132]
