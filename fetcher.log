@@ -2318,3 +2318,48 @@
 [2023-05-28 06:33:30] INFO root fetch - main [MainThread]: End processing [scrobblez]: success
 [2023-05-28 06:33:31] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-28 06:33:31] INFO root fetch - main [MainThread]: Store serial: [18278493]
+[2023-05-28 06:38:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278493]
+[2023-05-28 06:38:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databind
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databind.json
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pose-estimation-mp
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: databind
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: databind.json
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: passgeneration
+[2023-05-28 06:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hello2
+[2023-05-28 06:38:39] INFO root fetch - processPackages [databind.json]: New version: [4.2.8] Old Version: [4.2.7]
+[2023-05-28 06:38:39] INFO root fetch - processPackages [databind]: New version: [4.2.8] Old Version: [4.2.7]
+[2023-05-28 06:38:39] INFO root fetch - processPackages [databind]: New version: [4.2.8] Old Version: [4.2.7]
+[2023-05-28 06:38:39] WARNING root fetch - processPackages [passgeneration]: Skipping, unable to determine old version
+[2023-05-28 06:38:39] INFO root fetch - processPackages [pose-estimation-mp]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 06:38:39] INFO root fetch - main [MainThread]: End processing [passgeneration] error
+[2023-05-28 06:38:39] INFO root fetch - processPackages [databind.json]: New version: [4.2.8] Old Version: [4.2.7]
+[2023-05-28 06:38:39] INFO root fetch - processPackages [hello2]: New version: [1.7.5] Old Version: [1.7.4]
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: Downloading https://files.pythonhosted.org/packages/aa/60/a0a1853adc8a2ea6dbe50645a0785e806eed5c43cd7d71a49a7808a87c51/databind.json-4.2.7-py3-none-any.whl
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/2e/fc/40af1e131c8f0787289980cf71df7de7978c9ab51f0762c199dd52d31683/databind-4.2.7.tar.gz
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/2e/fc/40af1e131c8f0787289980cf71df7de7978c9ab51f0762c199dd52d31683/databind-4.2.7.tar.gz
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: Downloading https://files.pythonhosted.org/packages/aa/60/a0a1853adc8a2ea6dbe50645a0785e806eed5c43cd7d71a49a7808a87c51/databind.json-4.2.7-py3-none-any.whl
+[2023-05-28 06:38:40] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-05-28 06:38:40] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.7.4.tar.gz tmp/hello2-1.7.5.tar.gz --markdown 20230528/h/hello2/1.7.4-1.7.5/diff.md --exclude *.pyd
+[2023-05-28 06:38:40] INFO root fetch - processPackages [pose-estimation-mp]: Downloading https://files.pythonhosted.org/packages/b3/fd/026cab56cb0252e90b464dd6f59526e9991f8f8b6dccc36a95c4a7132004/pose_estimation_mp-0.1.2-py3-none-any.whl
+[2023-05-28 06:38:40] INFO root fetch - processPackages [pose-estimation-mp]: executing diffoscope
+[2023-05-28 06:38:40] INFO root fetch - processPackages [pose-estimation-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pose_estimation_mp-0.1.1-py3-none-any.whl.zip tmp/pose_estimation_mp-0.1.2-py3-none-any.whl.zip --markdown 20230528/p/pose-estimation-mp/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: Downloading https://files.pythonhosted.org/packages/e9/15/ed3105d5ae4a9f6b9f07b7e5fe708b55d9cc8dbbb2ab0e559b827f1ea742/databind.json-4.2.8-py3-none-any.whl
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: Downloading https://files.pythonhosted.org/packages/e9/15/ed3105d5ae4a9f6b9f07b7e5fe708b55d9cc8dbbb2ab0e559b827f1ea742/databind.json-4.2.8-py3-none-any.whl
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/63/61/05705c58528f7e6a41347ae8ed7f05d28d94fe55a0bc7700340b8704336e/databind-4.2.8.tar.gz
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/63/61/05705c58528f7e6a41347ae8ed7f05d28d94fe55a0bc7700340b8704336e/databind-4.2.8.tar.gz
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: executing diffoscope
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: executing diffoscope
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.json-4.2.7-py3-none-any.whl.zip tmp/databind.json-4.2.8-py3-none-any.whl.zip --markdown 20230528/d/databind.json/4.2.7-4.2.8/diff.md --exclude *.pyd
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind.json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.json-4.2.7-py3-none-any.whl.zip tmp/databind.json-4.2.8-py3-none-any.whl.zip --markdown 20230528/d/databind.json/4.2.7-4.2.8/diff.md --exclude *.pyd
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: executing diffoscope
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: executing diffoscope
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind-4.2.7.tar.gz tmp/databind-4.2.8.tar.gz --markdown 20230528/d/databind/4.2.7-4.2.8/diff.md --exclude *.pyd
+[2023-05-28 06:38:40] INFO root fetch - processPackages [databind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind-4.2.7.tar.gz tmp/databind-4.2.8.tar.gz --markdown 20230528/d/databind/4.2.7-4.2.8/diff.md --exclude *.pyd
+[2023-05-28 06:38:41] INFO root fetch - main [MainThread]: End processing [pose-estimation-mp]: success
+[2023-05-28 06:38:41] INFO root fetch - main [MainThread]: End processing [databind.json]: success
+[2023-05-28 06:38:41] INFO root fetch - main [MainThread]: End processing [databind.json]: success
+[2023-05-28 06:38:41] INFO root fetch - main [MainThread]: End processing [databind]: success
+[2023-05-28 06:38:41] INFO root fetch - main [MainThread]: End processing [databind]: success
+[2023-05-28 06:38:42] INFO root fetch - main [MainThread]: End processing [hello2]: success
+[2023-05-28 06:38:42] INFO root fetch - main [MainThread]: Store serial: [18278518]
