@@ -6388,3 +6388,45 @@ EOFError: EOF read where object expected
 [2023-05-28 15:16:07] INFO root fetch - main [MainThread]: End processing [multi-stock-api]: success
 [2023-05-28 15:16:08] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
 [2023-05-28 15:16:08] INFO root fetch - main [MainThread]: Store serial: [18280918]
+[2023-05-28 15:21:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280918]
+[2023-05-28 15:21:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-sonarqube-api
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: macrometa-source-snowflake
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asphalt
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alpha-filter
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qtgql
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gradio-stable-fork
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sixsigmaspc
+[2023-05-28 15:21:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: encode-decode-vbm
+[2023-05-28 15:21:16] INFO root fetch - processPackages [qtgql]: New version: [0.119.2] Old Version: [0.119.1]
+[2023-05-28 15:21:16] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 15:21:16] WARNING root fetch - processPackages [encode-decode-vbm]: Skipping, unable to determine old version
+[2023-05-28 15:21:16] INFO root fetch - main [MainThread]: End processing [encode-decode-vbm] error
+[2023-05-28 15:21:16] WARNING root fetch - processPackages [sixsigmaspc]: Skipping, unable to determine old version
+[2023-05-28 15:21:16] INFO root fetch - main [MainThread]: End processing [sixsigmaspc] error
+[2023-05-28 15:21:16] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 15:21:16] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 15:21:16] INFO root fetch - processPackages [python-sonarqube-api]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 15:21:16] INFO root fetch - processPackages [asphalt]: New version: [4.9.1] Old Version: [4.9.0]
+[2023-05-28 15:21:16] INFO root fetch - processPackages [qtgql]: executing diffoscope
+[2023-05-28 15:21:16] INFO root fetch - processPackages [qtgql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtgql-0.119.1.tar.gz tmp/qtgql-0.119.2.tar.gz --markdown 20230528/q/qtgql/0.119.1-0.119.2/diff.md --exclude *.pyd
+[2023-05-28 15:21:16] WARNING root fetch - processPackages [gradio-stable-fork]: Skipping, unable to determine old version
+[2023-05-28 15:21:16] INFO root fetch - main [MainThread]: End processing [gradio-stable-fork] error
+[2023-05-28 15:21:16] INFO root fetch - processPackages [alpha-filter]: New version: [0.9.1] Old Version: [0.9]
+[2023-05-28 15:21:17] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/aa/62/70fe52b186a65e36f3085940c8dc9bb40b1f6c70025e604875fb8bc6ecc2/alpha-filter-0.9.tar.gz
+[2023-05-28 15:21:17] INFO root fetch - processPackages [asphalt]: Downloading https://files.pythonhosted.org/packages/02/05/c3d080d0801b734a1861a28e0e951625dbe727433e30f26723cd9736380d/asphalt-4.9.0.tar.gz
+[2023-05-28 15:21:17] INFO root fetch - processPackages [python-sonarqube-api]: Downloading https://files.pythonhosted.org/packages/6d/59/fd46037d7360d471359c94d381463d2b0d81c1dbb7d5320c11c4e82f8015/python-sonarqube-api-2.0.2.tar.gz
+[2023-05-28 15:21:17] INFO root fetch - processPackages [python-sonarqube-api]: executing diffoscope
+[2023-05-28 15:21:17] INFO root fetch - processPackages [python-sonarqube-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-sonarqube-api-2.0.1.tar.gz tmp/python-sonarqube-api-2.0.2.tar.gz --markdown 20230528/p/python-sonarqube-api/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 15:21:17] INFO root fetch - processPackages [alpha-filter]: Downloading https://files.pythonhosted.org/packages/73/0a/63c4d5d4ed5607b14ac832a50fc89d2b39b83d4209dc8fce6ddc7c0bb408/alpha-filter-0.9.1.tar.gz
+[2023-05-28 15:21:17] INFO root fetch - processPackages [asphalt]: Downloading https://files.pythonhosted.org/packages/79/2e/0b88ffac2ccc4fcbf6934384ac0b892dff0ddd3546d2ccff8059b4cacf2b/asphalt-4.9.1.tar.gz
+[2023-05-28 15:21:17] INFO root fetch - processPackages [alpha-filter]: executing diffoscope
+[2023-05-28 15:21:17] INFO root fetch - processPackages [alpha-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha-filter-0.9.tar.gz tmp/alpha-filter-0.9.1.tar.gz --markdown 20230528/a/alpha-filter/0.9-0.9.1/diff.md --exclude *.pyd
+[2023-05-28 15:21:17] INFO root fetch - processPackages [asphalt]: executing diffoscope
+[2023-05-28 15:21:17] INFO root fetch - processPackages [asphalt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asphalt-4.9.0.tar.gz tmp/asphalt-4.9.1.tar.gz --markdown 20230528/a/asphalt/4.9.0-4.9.1/diff.md --exclude *.pyd
+[2023-05-28 15:21:17] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 15:21:17] INFO root fetch - main [MainThread]: End processing [qtgql]: success
+[2023-05-28 15:21:18] INFO root fetch - main [MainThread]: End processing [alpha-filter]: success
+[2023-05-28 15:21:18] INFO root fetch - main [MainThread]: End processing [python-sonarqube-api]: success
+[2023-05-28 15:21:18] INFO root fetch - main [MainThread]: End processing [asphalt]: success
+[2023-05-28 15:21:18] INFO root fetch - main [MainThread]: Store serial: [18280945]
