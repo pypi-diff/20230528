@@ -7617,3 +7617,56 @@ EOFError: EOF read where object expected
 [2023-05-28 17:22:50] INFO root fetch - main [MainThread]: End processing [cool-cache]: success
 [2023-05-28 17:22:50] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
 [2023-05-28 17:22:50] INFO root fetch - main [MainThread]: Store serial: [18281709]
+[2023-05-28 17:27:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281709]
+[2023-05-28 17:27:59] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esdb
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mathbib
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gptbase
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsonfmt
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shinherpro
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dizest
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chainforge
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: daba
+[2023-05-28 17:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyhyypapihawkmod
+[2023-05-28 17:27:59] INFO root fetch - processPackages [pyhyypapihawkmod]: New version: [0.0.0.8] Old Version: [0.0.0.7]
+[2023-05-28 17:27:59] WARNING root fetch - processPackages [daba]: Skipping, unable to determine old version
+[2023-05-28 17:27:59] INFO root fetch - main [MainThread]: End processing [daba] error
+[2023-05-28 17:27:59] INFO root fetch - processPackages [gptbase]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-28 17:27:59] INFO root fetch - processPackages [gptbase]: executing diffoscope
+[2023-05-28 17:27:59] INFO root fetch - processPackages [gptbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptbase-0.1.tar.gz tmp/gptbase-0.1.1.tar.gz --markdown 20230528/g/gptbase/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 17:27:59] INFO root fetch - processPackages [mathbib]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 17:28:00] INFO root fetch - processPackages [shinherpro]: New version: [1.6.8] Old Version: [1.6.7]
+[2023-05-28 17:28:00] INFO root fetch - processPackages [chainforge]: New version: [0.1.2.4] Old Version: [0.1.2.2]
+[2023-05-28 17:28:00] INFO root fetch - processPackages [esdb]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-28 17:28:00] INFO root fetch - processPackages [jsonfmt]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-28 17:28:00] INFO root fetch - processPackages [dizest]: New version: [3.3.0] Old Version: [3.2.6]
+[2023-05-28 17:28:00] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/77/38/584cbd093af56d60d6985e9ba679c2f1e665bfbc046b11d4d8a1f2c72b60/mathbib-0.1.0.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/f8/73/758020ff9001e55ffdfd4c7aa76f69d5c6f32b4f799edb2825cf0f613889/shinherpro-1.6.7.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [pyhyypapihawkmod]: executing diffoscope
+[2023-05-28 17:28:00] INFO root fetch - processPackages [pyhyypapihawkmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhyypapihawkmod-0.0.0.7.tar.gz tmp/pyhyypapihawkmod-0.0.0.8.tar.gz --markdown 20230528/p/pyhyypapihawkmod/0.0.0.7-0.0.0.8/diff.md --exclude *.pyd
+[2023-05-28 17:28:00] INFO root fetch - processPackages [dizest]: Downloading https://files.pythonhosted.org/packages/8a/7b/8d7f6dbe574c8a813da0ad50f5a41b722c11f63c0d32d3a8a0da36e23b94/dizest-3.2.6-py3-none-any.whl
+[2023-05-28 17:28:00] INFO root fetch - processPackages [esdb]: Downloading https://files.pythonhosted.org/packages/90/53/7fa4481df3ad5147e8cec916b7ac041c9ecf9f5a2da075016a396eafdc8a/esdb-0.3.4.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/e4/99/33daa0a2cfa1face8affcf3c6296d6e00ebc2f9753bb1bce8cd9d25af05f/chainforge-0.1.2.4.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [jsonfmt]: Downloading https://files.pythonhosted.org/packages/3c/f3/62629b0b45159b45aa66bb59737598891b38651f8f69cb87b6810171af40/jsonfmt-0.2.3.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/55/e9/e7aa1844a67bc8f69f324bec85e570853bbed744707b50fa6fea6bd52e80/mathbib-0.1.1.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/6a/a8/b404d958a5cda20d7683c24ff92d8aabf0c0cc7e28f8885de13d677a37e2/shinherpro-1.6.8.tar.gz
+[2023-05-28 17:28:00] INFO root fetch - processPackages [esdb]: executing diffoscope
+[2023-05-28 17:28:00] INFO root fetch - processPackages [esdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esdb-0.3.3.tar.gz tmp/esdb-0.3.4.tar.gz --markdown 20230528/e/esdb/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-28 17:28:00] INFO root fetch - processPackages [jsonfmt]: executing diffoscope
+[2023-05-28 17:28:00] INFO root fetch - processPackages [jsonfmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonfmt-0.2.2.tar.gz tmp/jsonfmt-0.2.3.tar.gz --markdown 20230528/j/jsonfmt/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-28 17:28:00] INFO root fetch - processPackages [chainforge]: executing diffoscope
+[2023-05-28 17:28:00] INFO root fetch - processPackages [chainforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainforge-0.1.2.2.tar.gz tmp/chainforge-0.1.2.4.tar.gz --markdown 20230528/c/chainforge/0.1.2.2-0.1.2.4/diff.md --exclude *.pyd
+[2023-05-28 17:28:00] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-28 17:28:00] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.6.7.tar.gz tmp/shinherpro-1.6.8.tar.gz --markdown 20230528/s/shinherpro/1.6.7-1.6.8/diff.md --exclude *.pyd
+[2023-05-28 17:28:00] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-05-28 17:28:00] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.1.0.tar.gz tmp/mathbib-0.1.1.tar.gz --markdown 20230528/m/mathbib/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 17:28:00] WARNING root fetch - processPackages [dizest]: Skipping package: exceeds size limit 14869416>=10485760
+[2023-05-28 17:28:00] INFO root fetch - main [MainThread]: End processing [dizest] error
+[2023-05-28 17:28:01] INFO root fetch - main [MainThread]: End processing [gptbase]: success
+[2023-05-28 17:28:01] INFO root fetch - main [MainThread]: End processing [pyhyypapihawkmod]: success
+[2023-05-28 17:28:01] INFO root fetch - main [MainThread]: End processing [jsonfmt]: success
+[2023-05-28 17:28:01] INFO root fetch - main [MainThread]: End processing [esdb]: success
+[2023-05-28 17:28:01] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-05-28 17:28:02] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-28 17:30:47] INFO root fetch - main [MainThread]: End processing [chainforge]: success
+[2023-05-28 17:30:47] INFO root fetch - main [MainThread]: Store serial: [18281735]
