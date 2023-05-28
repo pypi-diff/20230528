@@ -10194,3 +10194,31 @@ EOFError: EOF read where object expected
 [2023-05-28 22:40:22] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
 [2023-05-28 22:40:22] INFO root fetch - main [MainThread]: End processing [whats-that-code]: success
 [2023-05-28 22:40:22] INFO root fetch - main [MainThread]: Store serial: [18283395]
+[2023-05-28 22:45:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283395]
+[2023-05-28 22:45:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 22:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onboardme
+[2023-05-28 22:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: refyre
+[2023-05-28 22:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rising-plugin
+[2023-05-28 22:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autosubsync
+[2023-05-28 22:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sms-api-guru
+[2023-05-28 22:45:31] INFO root fetch - processPackages [autosubsync]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 22:45:31] WARNING root fetch - processPackages [refyre]: Skipping, unable to determine old version
+[2023-05-28 22:45:31] INFO root fetch - main [MainThread]: End processing [refyre] error
+[2023-05-28 22:45:31] INFO root fetch - processPackages [onboardme]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-28 22:45:31] INFO root fetch - processPackages [rising-plugin]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 22:45:31] WARNING root fetch - processPackages [sms-api-guru]: Skipping, unable to determine old version
+[2023-05-28 22:45:31] INFO root fetch - main [MainThread]: End processing [sms-api-guru] error
+[2023-05-28 22:45:31] INFO root fetch - processPackages [autosubsync]: Downloading https://files.pythonhosted.org/packages/59/1a/effabfe27ab794afe8b51707f699888f3980e51ed514a5aace7a5f253156/autosubsync-1.0.0-py2.py3-none-any.whl
+[2023-05-28 22:45:31] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/4d/8e/746a5919b5cabb102ac8f07ca28dfb563f7ceba0eeef2333db57ddf6a056/onboardme-1.3.2.tar.gz
+[2023-05-28 22:45:31] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/11/e4/f83c88be8ec894ee11e9e1734955de9fd1f346a234a29775eed996079981/rising_plugin-0.0.4.tar.gz
+[2023-05-28 22:45:31] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-28 22:45:31] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.3.tar.gz tmp/rising_plugin-0.0.4.tar.gz --markdown 20230528/r/rising-plugin/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 22:45:31] INFO root fetch - processPackages [autosubsync]: Downloading https://files.pythonhosted.org/packages/b8/60/5ffd6bd59dc4ce2a5ec96b5074ec1120243b97cb97b0464cba18a71dd0ed/autosubsync-1.0.1-py2.py3-none-any.whl
+[2023-05-28 22:45:31] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-28 22:45:31] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.3.1.tar.gz tmp/onboardme-1.3.2.tar.gz --markdown 20230528/o/onboardme/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-28 22:45:31] INFO root fetch - processPackages [autosubsync]: executing diffoscope
+[2023-05-28 22:45:31] INFO root fetch - processPackages [autosubsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosubsync-1.0.0-py2.py3-none-any.whl.zip tmp/autosubsync-1.0.1-py2.py3-none-any.whl.zip --markdown 20230528/a/autosubsync/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 22:45:32] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-28 22:45:32] INFO root fetch - main [MainThread]: End processing [autosubsync]: success
+[2023-05-28 22:45:32] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-28 22:45:32] INFO root fetch - main [MainThread]: Store serial: [18283413]
