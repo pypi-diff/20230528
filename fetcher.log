@@ -8141,3 +8141,55 @@ EOFError: EOF read where object expected
 [2023-05-28 18:19:44] INFO root fetch - main [MainThread]: End processing [nista-library]: success
 [2023-05-28 18:19:46] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2023-05-28 18:19:46] INFO root fetch - main [MainThread]: Store serial: [18282034]
+[2023-05-28 18:24:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282034]
+[2023-05-28 18:24:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SNPTMT
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyped
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multildap
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: faceid-lib
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ultralytics
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ak-pynn
+[2023-05-28 18:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: clust-learn
+[2023-05-28 18:24:55] INFO root fetch - processPackages [SNPTMT]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [faceid-lib]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [clust-learn]: New version: [0.2.0b0] Old Version: [0.2.0.4]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230528.15.37.430300] Old Version: [20230528.11.45.336808]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [SNPTMT]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [SNPTMT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SNPTMT-0.0.7.tar.gz tmp/SNPTMT-0.0.8.tar.gz --markdown 20230528/S/SNPTMT/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 18:24:55] INFO root fetch - processPackages [ultralytics]: New version: [8.0.99] Old Version: [8.0.98]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [multildap]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-28 18:24:55] WARNING root fetch - processPackages [ak-pynn]: Skipping, unable to determine old version
+[2023-05-28 18:24:55] INFO root fetch - main [MainThread]: End processing [ak-pynn] error
+[2023-05-28 18:24:55] INFO root fetch - processPackages [hyped]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [akshare]: New version: [1.9.98] Old Version: [1.9.97]
+[2023-05-28 18:24:55] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/8d/27/de9e8ffbb6fc68a7ee40670b8e8a14019b57e20c3993a3bd2404aa3f82cb/certora-cli-alpha-master-20230528.11.45.336808.tar.gz
+[2023-05-28 18:24:55] INFO root fetch - processPackages [faceid-lib]: Downloading https://files.pythonhosted.org/packages/fa/fa/584e2ffae15153c820b4d96cec206b13e67a88e1eff039298e57de7a2df6/faceid-lib-2.0.3.tar.gz
+[2023-05-28 18:24:55] INFO root fetch - processPackages [clust-learn]: Downloading https://files.pythonhosted.org/packages/5f/3a/bf2c23c0fe9385cbbed3a88c8c152731612676a8778e796ffaefc03f4061/clust-learn-0.2.0.4.tar.gz
+[2023-05-28 18:24:55] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39090962>=10485760
+[2023-05-28 18:24:55] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-28 18:24:55] INFO root fetch - processPackages [multildap]: Downloading https://files.pythonhosted.org/packages/7c/4d/8f81c2e881cc3d69e00f7228cb6afd093245f17d140e376da9217fda535e/multildap-0.3.2.tar.gz
+[2023-05-28 18:24:55] INFO root fetch - processPackages [clust-learn]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [clust-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clust-learn-0.2.0.4.tar.gz tmp/clust-learn-0.2.0b0.tar.gz --markdown 20230528/c/clust-learn/0.2.0.4-0.2.0b0/diff.md --exclude *.pyd
+[2023-05-28 18:24:55] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2023-05-28 18:24:55] INFO root fetch - processPackages [hyped]: Downloading https://files.pythonhosted.org/packages/1b/13/824c29aaa0fecc767da1a42f691bacd8d68351d035e8584259ed7f955b99/hyped-0.0.5.tar.gz
+[2023-05-28 18:24:55] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.98.tar.gz tmp/ultralytics-8.0.99.tar.gz --markdown 20230528/u/ultralytics/8.0.98-8.0.99/diff.md --exclude *.pyd
+[2023-05-28 18:24:55] INFO root fetch - processPackages [multildap]: Downloading https://files.pythonhosted.org/packages/37/ba/596fbfc929763ba4be0adbfe466819cfec6e2c64c7fdcf16a59354c70152/multildap-0.3.3.tar.gz
+[2023-05-28 18:24:55] INFO root fetch - processPackages [faceid-lib]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [faceid-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceid-lib-2.0.2.tar.gz tmp/faceid-lib-2.0.3.tar.gz --markdown 20230528/f/faceid-lib/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-28 18:24:55] INFO root fetch - processPackages [hyped]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [hyped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyped-0.0.4.tar.gz tmp/hyped-0.0.5.tar.gz --markdown 20230528/h/hyped/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-28 18:24:55] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.97.tar.gz tmp/akshare-1.9.98.tar.gz --markdown 20230528/a/akshare/1.9.97-1.9.98/diff.md --exclude *.pyd
+[2023-05-28 18:24:55] INFO root fetch - processPackages [multildap]: executing diffoscope
+[2023-05-28 18:24:55] INFO root fetch - processPackages [multildap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multildap-0.3.2.tar.gz tmp/multildap-0.3.3.tar.gz --markdown 20230528/m/multildap/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-28 18:24:56] INFO root fetch - main [MainThread]: End processing [SNPTMT]: success
+[2023-05-28 18:24:56] INFO root fetch - main [MainThread]: End processing [hyped]: success
+[2023-05-28 18:24:57] INFO root fetch - main [MainThread]: End processing [multildap]: success
+[2023-05-28 18:24:57] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-05-28 18:24:58] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
+[2023-05-28 18:25:03] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-05-28 18:25:15] INFO root fetch - main [MainThread]: End processing [faceid-lib]: success
+[2023-05-28 18:25:15] INFO root fetch - main [MainThread]: Store serial: [18282064]
