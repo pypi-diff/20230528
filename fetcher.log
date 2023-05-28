@@ -2383,3 +2383,24 @@
 [2023-05-28 06:43:52] INFO root fetch - main [MainThread]: End processing [passgeneration]: success
 [2023-05-28 06:43:52] INFO root fetch - main [MainThread]: End processing [nligraphspacy]: success
 [2023-05-28 06:43:52] INFO root fetch - main [MainThread]: Store serial: [18278529]
+[2023-05-28 06:48:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278529]
+[2023-05-28 06:49:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 06:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsetypes
+[2023-05-28 06:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: je-auto-control
+[2023-05-28 06:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pose-estimation-mp
+[2023-05-28 06:49:00] INFO root fetch - processPackages [je-auto-control]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-05-28 06:49:00] INFO root fetch - processPackages [parsetypes]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-28 06:49:00] INFO root fetch - processPackages [pose-estimation-mp]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 06:49:01] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/aa/58/2737f63995a76d9b0419466f51fa010d8f15fc26672cb05eda62a1de53c1/parsetypes-0.1.tar.gz
+[2023-05-28 06:49:01] INFO root fetch - processPackages [pose-estimation-mp]: Downloading https://files.pythonhosted.org/packages/74/0d/c1d134956825d91b936086285e03a7bbdd4f21b30a61802e45543cf73a38/pose_estimation_mp-0.1.3-py3-none-any.whl
+[2023-05-28 06:49:01] INFO root fetch - processPackages [je-auto-control]: executing diffoscope
+[2023-05-28 06:49:01] INFO root fetch - processPackages [je-auto-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control-0.0.97.tar.gz tmp/je_auto_control-0.0.99.tar.gz --markdown 20230528/j/je-auto-control/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 06:49:01] INFO root fetch - processPackages [pose-estimation-mp]: executing diffoscope
+[2023-05-28 06:49:01] INFO root fetch - processPackages [pose-estimation-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pose_estimation_mp-0.1.2-py3-none-any.whl.zip tmp/pose_estimation_mp-0.1.3-py3-none-any.whl.zip --markdown 20230528/p/pose-estimation-mp/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 06:49:01] INFO root fetch - processPackages [parsetypes]: Downloading https://files.pythonhosted.org/packages/61/e0/64b3e2630be8e82b652a44938784e65cf1637d63bedf989123658247b2ca/parsetypes-0.1.1.tar.gz
+[2023-05-28 06:49:01] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-28 06:49:01] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.1.tar.gz tmp/parsetypes-0.1.1.tar.gz --markdown 20230528/p/parsetypes/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 06:49:02] INFO root fetch - main [MainThread]: End processing [pose-estimation-mp]: success
+[2023-05-28 06:49:02] INFO root fetch - main [MainThread]: End processing [je-auto-control]: success
+[2023-05-28 06:49:02] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-28 06:49:02] INFO root fetch - main [MainThread]: Store serial: [18278539]
