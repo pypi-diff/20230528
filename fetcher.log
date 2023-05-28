@@ -6771,3 +6771,50 @@ EOFError: EOF read where object expected
 [2023-05-28 15:58:34] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-05-28 15:58:42] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-28 15:58:42] INFO root fetch - main [MainThread]: Store serial: [18281193]
+[2023-05-28 16:03:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281193]
+[2023-05-28 16:03:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KaTrain
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-roborock
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: animedata
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: super-hash
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyc3dtools
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sphinxcontrib-mermaid
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CUQIpy-FEniCS
+[2023-05-28 16:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: animedata
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [sphinxcontrib-mermaid]: New version: [0.9] Old Version: [0.8.1]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [CUQIpy-FEniCS]: New version: [0.3.0.post0.dev5] Old Version: [0.3.0.post0.dev39]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [KaTrain]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [pyc3dtools]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [super-hash]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-28 16:03:52] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230528/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-28 16:03:52] INFO root fetch - processPackages [sphinxcontrib-mermaid]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [sphinxcontrib-mermaid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-mermaid-0.8.1.tar.gz tmp/sphinxcontrib-mermaid-0.9.tar.gz --markdown 20230528/s/sphinxcontrib-mermaid/0.8.1-0.9/diff.md --exclude *.pyd
+[2023-05-28 16:03:52] INFO root fetch - processPackages [CUQIpy-FEniCS]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [CUQIpy-FEniCS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-FEniCS-0.3.0.post0.dev39.tar.gz tmp/CUQIpy-FEniCS-0.3.0.post0.dev5.tar.gz --markdown 20230528/C/CUQIpy-FEniCS/0.3.0.post0.dev39-0.3.0.post0.dev5/diff.md --exclude *.pyd
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: Downloading https://files.pythonhosted.org/packages/a5/24/566dd438fc4bdc3d9db1a925380be2f39a98841677f1b9acd7f43532e6b9/animedata-0.3.2.tar.gz
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: Downloading https://files.pythonhosted.org/packages/a5/24/566dd438fc4bdc3d9db1a925380be2f39a98841677f1b9acd7f43532e6b9/animedata-0.3.2.tar.gz
+[2023-05-28 16:03:52] INFO root fetch - processPackages [KaTrain]: Downloading https://files.pythonhosted.org/packages/81/67/75cfc7472c86aea5226b3f4f9e4faa24513e9fa19e602348c976bead02a2/KaTrain-1.9.2.tar.gz
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animedata-0.3.1.tar.gz tmp/animedata-0.3.2.tar.gz --markdown 20230528/a/animedata/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [animedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animedata-0.3.1.tar.gz tmp/animedata-0.3.2.tar.gz --markdown 20230528/a/animedata/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 16:03:52] INFO root fetch - processPackages [pyc3dtools]: Downloading https://files.pythonhosted.org/packages/c8/cb/910a9845aa3f655a31bdaffba6ca08f7b0733a50b0bd9d3bf272e5ef953a/pyc3dtools-0.2.4.win-amd64.zip
+[2023-05-28 16:03:52] INFO root fetch - processPackages [super-hash]: Downloading https://files.pythonhosted.org/packages/a6/26/eab280605822a9b7d1de7d7c27c80f5c6432ff157101742950c66b9c287f/super_hash-1.2.8.tar.gz
+[2023-05-28 16:03:52] INFO root fetch - processPackages [pyc3dtools]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [pyc3dtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyc3dtools-0.2.3.win-amd64.zip tmp/pyc3dtools-0.2.4.win-amd64.zip --markdown 20230528/p/pyc3dtools/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:03:52] INFO root fetch - processPackages [super-hash]: executing diffoscope
+[2023-05-28 16:03:52] INFO root fetch - processPackages [super-hash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/super_hash-1.2.7.tar.gz tmp/super_hash-1.2.8.tar.gz --markdown 20230528/s/super-hash/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-28 16:03:53] WARNING root fetch - processPackages [KaTrain]: Skipping package: exceeds size limit 62307271>=10485760
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [KaTrain] error
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [CUQIpy-FEniCS]: success
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-mermaid]: success
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [animedata]: success
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [animedata]: success
+[2023-05-28 16:03:53] INFO root fetch - main [MainThread]: End processing [pyc3dtools]: success
+[2023-05-28 16:03:54] INFO root fetch - main [MainThread]: End processing [super-hash]: success
+[2023-05-28 16:03:54] INFO root fetch - main [MainThread]: Store serial: [18281220]
