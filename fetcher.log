@@ -4455,3 +4455,107 @@
 [2023-05-28 12:05:23] INFO root fetch - main [MainThread]: End processing [simple-matrix-api]: success
 [2023-05-28 12:05:24] INFO root fetch - main [MainThread]: End processing [cnvrgv2]: success
 [2023-05-28 12:05:24] INFO root fetch - main [MainThread]: Store serial: [18279830]
+[2023-05-28 12:10:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279830]
+[2023-05-28 12:10:32] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sage-conf
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sage-docbuild
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sage-setup
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sage-sws2rst
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sagemath-categories
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sagemath-environment
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sagemath-objects
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sagemath-repl
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sagemath-standard
+[2023-05-28 12:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: leaf-focus
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-categories]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [leaf-focus]: New version: [0.6.0] Old Version: [0.5.3]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-objects]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-docbuild]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-environment]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-repl]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-standard]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-conf]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-05-28 12:10:33] INFO root fetch - processPackages [leaf-focus]: Downloading https://files.pythonhosted.org/packages/78/df/2539d08ca0ae20f9d74dba9d31dc1d51e87d8ba649e68072ecb4c6313b41/leaf-focus-0.5.3.tar.gz
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-standard]: Downloading https://files.pythonhosted.org/packages/ca/44/3341aa128d2058989dc35be67a94f004ad9873fc2cece58881abf81f3091/sagemath-standard-9.8b7.tar.gz
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20230528/s/sage-setup/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-objects]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-objects-9.8b7.tar.gz tmp/sagemath-objects-9.8rc0.tar.gz --markdown 20230528/s/sagemath-objects/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20230528/s/sage-sws2rst/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [leaf-focus]: Downloading https://files.pythonhosted.org/packages/43/10/656714a6ccd8fc55707a0c10d1b1507f376412f6ac0b1fc7268adf7d4876/leaf-focus-0.6.0.tar.gz
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-environment]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-environment-9.8b7.tar.gz tmp/sagemath-environment-9.8rc0.tar.gz --markdown 20230528/s/sagemath-environment/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-repl]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-repl-9.8b7.tar.gz tmp/sagemath-repl-9.8rc0.tar.gz --markdown 20230528/s/sagemath-repl/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-conf]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-conf-9.8b7.tar.gz tmp/sage-conf-9.8rc0.tar.gz --markdown 20230528/s/sage-conf/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-docbuild]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sage-docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-docbuild-9.8b7.tar.gz tmp/sage-docbuild-9.8rc0.tar.gz --markdown 20230528/s/sage-docbuild/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-categories]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-categories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-categories-9.8b7.tar.gz tmp/sagemath-categories-9.8rc0.tar.gz --markdown 20230528/s/sagemath-categories/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] WARNING root fetch - processPackages [sagemath-standard]: Skipping package: exceeds size limit 18194906>=10485760
+[2023-05-28 12:10:33] INFO root fetch - processPackages [sagemath-standard]: Start processing: projen
+[2023-05-28 12:10:33] INFO root fetch - main [MainThread]: End processing [sagemath-standard] error
+[2023-05-28 12:10:33] INFO root fetch - processPackages [leaf-focus]: executing diffoscope
+[2023-05-28 12:10:33] INFO root fetch - processPackages [leaf-focus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leaf-focus-0.5.3.tar.gz tmp/leaf-focus-0.6.0.tar.gz --markdown 20230528/l/leaf-focus/0.5.3-0.6.0/diff.md --exclude *.pyd
+[2023-05-28 12:10:33] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-28 12:10:34] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-28 12:10:34] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230528/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-28 12:10:35] INFO root fetch - processPackages [sage-docbuild]: Start processing: gfs-dynamical-core
+[2023-05-28 12:10:35] INFO root fetch - main [MainThread]: End processing [sage-docbuild]: success
+[2023-05-28 12:10:35] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 12:10:35] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-28 12:10:35] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 12:10:35] INFO root fetch - processPackages [leaf-focus]: Start processing: zWell-model
+[2023-05-28 12:10:35] INFO root fetch - main [MainThread]: End processing [leaf-focus]: success
+[2023-05-28 12:10:35] INFO root fetch - processPackages [zWell-model]: New version: [0.0.2.20230528] Old Version: [0.0.1.20230514]
+[2023-05-28 12:10:35] INFO root fetch - processPackages [zWell-model]: Downloading https://files.pythonhosted.org/packages/6d/c4/bdceb2fdeeaeec73b26065819719e08d19cf16cd683b68321919aa0e2708/zWell_model-0.0.1.20230514.tar.gz
+[2023-05-28 12:10:35] INFO root fetch - processPackages [sage-sws2rst]: Start processing: ifastapi
+[2023-05-28 12:10:35] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2023-05-28 12:10:35] INFO root fetch - processPackages [sage-setup]: Start processing: pers
+[2023-05-28 12:10:35] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2023-05-28 12:10:35] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pers]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 12:10:36] INFO root fetch - processPackages [sagemath-environment]: Start processing: gptbase
+[2023-05-28 12:10:36] INFO root fetch - main [MainThread]: End processing [sagemath-environment]: success
+[2023-05-28 12:10:36] INFO root fetch - processPackages [gptbase]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-28 12:10:36] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 12:10:36] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-05-28 12:10:36] INFO root fetch - processPackages [zWell-model]: Downloading https://files.pythonhosted.org/packages/c9/db/71160d89dc6e021da43ba0350cdadd7dab33ff84632438a7338332465782/zWell_model-0.0.2.20230528.tar.gz
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pers]: Downloading https://files.pythonhosted.org/packages/d4/95/121415a790a0edfc5a4621c81916616f94af50925888e8fd74b67be73e61/pers-0.1.2.tar.gz
+[2023-05-28 12:10:36] INFO root fetch - processPackages [zWell-model]: executing diffoscope
+[2023-05-28 12:10:36] INFO root fetch - processPackages [zWell-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zWell_model-0.0.1.20230514.tar.gz tmp/zWell_model-0.0.2.20230528.tar.gz --markdown 20230528/z/zWell-model/0.0.1.20230514-0.0.2.20230528/diff.md --exclude *.pyd
+[2023-05-28 12:10:36] INFO root fetch - processPackages [gptbase]: Downloading https://files.pythonhosted.org/packages/80/00/8ad10896a8c6c642bb826f81e687b01b879de4af2303402bf6fb4508c487/gptbase-0.1.tar.gz
+[2023-05-28 12:10:36] INFO root fetch - processPackages [sagemath-repl]: Start processing: setux
+[2023-05-28 12:10:36] INFO root fetch - main [MainThread]: End processing [sagemath-repl]: success
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pers]: Downloading https://files.pythonhosted.org/packages/a3/5b/2fbc612d784b17c5477bc5b286ff84978eb9c1b7a24a5b118e34045b38ef/pers-0.1.3.tar.gz
+[2023-05-28 12:10:36] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2023-05-28 12:10:36] INFO root fetch - processPackages [projen]: Start processing: pait
+[2023-05-28 12:10:36] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-28 12:10:36] INFO root fetch - processPackages [gptbase]: Downloading https://files.pythonhosted.org/packages/f8/51/b4ac695ca76dfc88be2c2589d02c7002584b19458128a906b88734ae77ea/gptbase-0.1.1.tar.gz
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pers]: executing diffoscope
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pers-0.1.2.tar.gz tmp/pers-0.1.3.tar.gz --markdown 20230528/p/pers/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 12:10:36] INFO root fetch - processPackages [setux]: executing diffoscope
+[2023-05-28 12:10:36] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20230528/s/setux/0.6.3.0-0.6.3.1/diff.md --exclude *.pyd
+[2023-05-28 12:10:36] INFO root fetch - processPackages [gptbase]: executing diffoscope
+[2023-05-28 12:10:36] INFO root fetch - processPackages [gptbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptbase-0.1.tar.gz tmp/gptbase-0.1.1.tar.gz --markdown 20230528/g/gptbase/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pait]: New version: [1.0.0a2] Old Version: [1.0.0a1]
+[2023-05-28 12:10:36] INFO root fetch - processPackages [pait]: Downloading https://files.pythonhosted.org/packages/2e/7b/0f51ab5f63722f4d735b1a7ec94cf7d9a855d3847da827b3bee25d422f49/pait-1.0.0a1.tar.gz
+[2023-05-28 12:10:37] INFO root fetch - main [MainThread]: End processing [sagemath-objects]: success
+[2023-05-28 12:10:37] INFO root fetch - processPackages [pait]: Downloading https://files.pythonhosted.org/packages/38/0e/6087c5e6c664814ac8ac05bd6683a498000d7c30c9f8efc45ee1e33d76fc/pait-1.0.0a2.tar.gz
+[2023-05-28 12:10:37] INFO root fetch - main [MainThread]: End processing [sagemath-categories]: success
+[2023-05-28 12:10:37] INFO root fetch - processPackages [pait]: executing diffoscope
+[2023-05-28 12:10:37] INFO root fetch - processPackages [pait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pait-1.0.0a1.tar.gz tmp/pait-1.0.0a2.tar.gz --markdown 20230528/p/pait/1.0.0a1-1.0.0a2/diff.md --exclude *.pyd
+[2023-05-28 12:10:37] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 12:10:37] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2023-05-28 12:10:38] INFO root fetch - main [MainThread]: End processing [zWell-model]: success
+[2023-05-28 12:10:38] INFO root fetch - main [MainThread]: End processing [pers]: success
+[2023-05-28 12:10:38] INFO root fetch - main [MainThread]: End processing [gptbase]: success
+[2023-05-28 12:10:39] INFO root fetch - main [MainThread]: End processing [pait]: success
+[2023-05-28 12:10:57] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-28 12:13:33] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
+[2023-05-28 12:13:33] INFO root fetch - main [MainThread]: End processing [sage-conf] error
+[2023-05-28 12:13:33] INFO root fetch - main [MainThread]: Store serial: [18279876]
