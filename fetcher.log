@@ -1388,3 +1388,39 @@
 [2023-05-28 03:25:33] INFO root fetch - main [MainThread]: End processing [python-omnilogic-local]: success
 [2023-05-28 03:25:33] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
 [2023-05-28 03:25:33] INFO root fetch - main [MainThread]: Store serial: [18277884]
+[2023-05-28 03:30:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277884]
+[2023-05-28 03:30:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 03:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DataDoctor
+[2023-05-28 03:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2023-05-28 03:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-majsoul
+[2023-05-28 03:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rdfind2
+[2023-05-28 03:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sweetrpg-api-core
+[2023-05-28 03:30:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sweetrpg-web-core
+[2023-05-28 03:30:41] INFO root fetch - processPackages [nonebot-plugin-majsoul]: New version: [0.2.0.post2] Old Version: [0.2.0.post1]
+[2023-05-28 03:30:41] INFO root fetch - processPackages [rdfind2]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-28 03:30:41] INFO root fetch - processPackages [DataDoctor]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 03:30:41] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-28 03:30:41] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:30:41] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 03:30:41] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-28 03:30:41] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230528/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:30:41] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-05-28 03:30:41] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230528/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:30:42] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-28 03:30:42] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230528/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:30:42] INFO root fetch - processPackages [nonebot-plugin-majsoul]: Downloading https://files.pythonhosted.org/packages/76/1e/ce78a81111af15676a2fd6856e69ce877e4422db7962859d270c25fe1015/nonebot_plugin_majsoul-0.2.0.post1.tar.gz
+[2023-05-28 03:30:42] INFO root fetch - processPackages [rdfind2]: Downloading https://files.pythonhosted.org/packages/fc/ad/fa5e1b30f14436948552bddfec0e9ef3faf682358d7e506c876fc9bf7ab2/rdfind2-0.0.5.tar.gz
+[2023-05-28 03:30:42] INFO root fetch - processPackages [rdfind2]: executing diffoscope
+[2023-05-28 03:30:42] INFO root fetch - processPackages [rdfind2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfind2-0.0.4.tar.gz tmp/rdfind2-0.0.5.tar.gz --markdown 20230528/r/rdfind2/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-28 03:30:42] INFO root fetch - processPackages [DataDoctor]: executing diffoscope
+[2023-05-28 03:30:42] INFO root fetch - processPackages [DataDoctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataDoctor-1.0.8.tar.gz tmp/DataDoctor-1.0.9.tar.gz --markdown 20230528/D/DataDoctor/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 03:30:42] INFO root fetch - processPackages [nonebot-plugin-majsoul]: Downloading https://files.pythonhosted.org/packages/70/d2/dcc33948a6f417580fdc74c0fc96d9af436923f9c58b4725d96dd9dcabc6/nonebot_plugin_majsoul-0.2.0.post2.tar.gz
+[2023-05-28 03:30:42] INFO root fetch - processPackages [nonebot-plugin-majsoul]: executing diffoscope
+[2023-05-28 03:30:42] INFO root fetch - processPackages [nonebot-plugin-majsoul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_majsoul-0.2.0.post1.tar.gz tmp/nonebot_plugin_majsoul-0.2.0.post2.tar.gz --markdown 20230528/n/nonebot-plugin-majsoul/0.2.0.post1-0.2.0.post2/diff.md --exclude *.pyd
+[2023-05-28 03:30:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-05-28 03:30:43] INFO root fetch - main [MainThread]: End processing [DataDoctor]: success
+[2023-05-28 03:30:43] INFO root fetch - main [MainThread]: End processing [rdfind2]: success
+[2023-05-28 03:30:43] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-28 03:30:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-majsoul]: success
+[2023-05-28 03:30:45] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-28 03:30:45] INFO root fetch - main [MainThread]: Store serial: [18277901]
