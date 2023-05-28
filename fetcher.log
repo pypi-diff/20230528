@@ -4326,3 +4326,36 @@
 [2023-05-28 11:44:12] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-05-28 11:44:28] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cadquery]: success
 [2023-05-28 11:44:28] INFO root fetch - main [MainThread]: Store serial: [18279755]
+[2023-05-28 11:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279755]
+[2023-05-28 11:49:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 11:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: setux-managers
+[2023-05-28 11:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qetrader
+[2023-05-28 11:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redhat-qe-cloud-tools
+[2023-05-28 11:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: setux
+[2023-05-28 11:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sickchill
+[2023-05-28 11:49:37] INFO root fetch - processPackages [setux-managers]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-28 11:49:37] INFO root fetch - processPackages [qetrader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 11:49:37] INFO root fetch - processPackages [redhat-qe-cloud-tools]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-28 11:49:37] INFO root fetch - processPackages [setux]: New version: [0.6.3.1] Old Version: [0.6.3.0]
+[2023-05-28 11:49:37] INFO root fetch - processPackages [sickchill]: New version: [2023.5.28] Old Version: [2023.5.24]
+[2023-05-28 11:49:37] INFO root fetch - processPackages [setux-managers]: Downloading https://files.pythonhosted.org/packages/3b/fb/45ff87fa941fc30da6badb3a24ee384d82d80c5d36760b6f34aa5057aa6c/setux_managers-0.5.0.tar.gz
+[2023-05-28 11:49:37] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/2f/49/91934bd9aee6533448fdf391683c7a735a63a59ad2cf2563b52b98ad4201/setux-0.6.3.0.tar.gz
+[2023-05-28 11:49:37] INFO root fetch - processPackages [sickchill]: Downloading https://files.pythonhosted.org/packages/91/ec/c2443725e2dac8821cc135a3f648b6097f36dbd8f8dd27e90d9056a0b6d7/sickchill-2023.5.24.tar.gz
+[2023-05-28 11:49:37] INFO root fetch - processPackages [qetrader]: executing diffoscope
+[2023-05-28 11:49:37] WARNING root fetch - processPackages [sickchill]: Skipping package: exceeds size limit 14758064>=10485760
+[2023-05-28 11:49:37] INFO root fetch - processPackages [qetrader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qetrader-1.0.8.tar.gz tmp/qetrader-1.0.9.tar.gz --markdown 20230528/q/qetrader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 11:49:37] INFO root fetch - main [MainThread]: End processing [sickchill] error
+[2023-05-28 11:49:37] INFO root fetch - processPackages [redhat-qe-cloud-tools]: Downloading https://files.pythonhosted.org/packages/94/ba/1a7ad2269c13a4b82b470d451961a4d54d2008c57674d71c2b7f6b2c77f9/redhat_qe_cloud_tools-1.0.5.tar.gz
+[2023-05-28 11:49:38] INFO root fetch - processPackages [redhat-qe-cloud-tools]: executing diffoscope
+[2023-05-28 11:49:38] INFO root fetch - processPackages [redhat-qe-cloud-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_qe_cloud_tools-1.0.4.tar.gz tmp/redhat_qe_cloud_tools-1.0.5.tar.gz --markdown 20230528/r/redhat-qe-cloud-tools/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-28 11:49:38] INFO root fetch - processPackages [setux-managers]: Downloading https://files.pythonhosted.org/packages/c4/c6/340dfdd90e886870d1293688b7d4b8f36b98075541d44a77a6a9dc054611/setux_managers-0.5.1.tar.gz
+[2023-05-28 11:49:38] INFO root fetch - processPackages [setux]: Downloading https://files.pythonhosted.org/packages/ad/0f/ea659bb0a2030b085f60069b2fb29d1dc322f7444f95eaa97478e78035e2/setux-0.6.3.1.tar.gz
+[2023-05-28 11:49:38] INFO root fetch - processPackages [setux-managers]: executing diffoscope
+[2023-05-28 11:49:38] INFO root fetch - processPackages [setux-managers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux_managers-0.5.0.tar.gz tmp/setux_managers-0.5.1.tar.gz --markdown 20230528/s/setux-managers/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-28 11:49:38] INFO root fetch - processPackages [setux]: executing diffoscope
+[2023-05-28 11:49:38] INFO root fetch - processPackages [setux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setux-0.6.3.0.tar.gz tmp/setux-0.6.3.1.tar.gz --markdown 20230528/s/setux/0.6.3.0-0.6.3.1/diff.md --exclude *.pyd
+[2023-05-28 11:49:39] INFO root fetch - main [MainThread]: End processing [redhat-qe-cloud-tools]: success
+[2023-05-28 11:49:39] INFO root fetch - main [MainThread]: End processing [qetrader]: success
+[2023-05-28 11:49:39] INFO root fetch - main [MainThread]: End processing [setux-managers]: success
+[2023-05-28 11:49:39] INFO root fetch - main [MainThread]: End processing [setux]: success
+[2023-05-28 11:49:39] INFO root fetch - main [MainThread]: Store serial: [18279770]
