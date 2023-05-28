@@ -3828,3 +3828,132 @@
 [2023-05-28 10:56:31] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-28 10:56:49] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-28 10:56:49] INFO root fetch - main [MainThread]: Store serial: [18279458]
+[2023-05-28 11:01:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279458]
+[2023-05-28 11:02:01] INFO root fetch - main [MainThread]: Found 26 changed packages
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databand
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbnd
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbnd-airflow
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbnd-airflow-auto-tracking
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbnd-airflow-export
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbnd-airflow-monitor
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dbnd-airflow-versioned-dag
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dbnd-aws
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbnd-azure
+[2023-05-28 11:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dbnd-databricks
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [databand]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-monitor]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-export]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-databricks]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-versioned-dag]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-azure]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-aws]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-auto-tracking-1.0.8.1.tar.gz tmp/dbnd-airflow-auto-tracking-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-airflow-auto-tracking/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-databricks]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-databricks-1.0.8.1.tar.gz tmp/dbnd-databricks-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-databricks/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-aws]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-aws-1.0.8.1.tar.gz tmp/dbnd-aws-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-aws/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [databand]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [databand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databand-1.0.8.1.tar.gz tmp/databand-1.0.9.1.tar.gz --markdown 20230528/d/databand/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-monitor]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-monitor-1.0.8.1.tar.gz tmp/dbnd-airflow-monitor-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-airflow-monitor/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-azure]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-1.0.8.1.tar.gz tmp/dbnd-1.0.9.1.tar.gz --markdown 20230528/d/dbnd/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-azure-1.0.8.1.tar.gz tmp/dbnd-azure-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-azure/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-versioned-dag]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-versioned-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-versioned-dag-1.0.8.1.tar.gz tmp/dbnd-airflow-versioned-dag-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-airflow-versioned-dag/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-export]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-export-1.0.8.1.tar.gz tmp/dbnd-airflow-export-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-airflow-export/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow]: executing diffoscope
+[2023-05-28 11:02:02] INFO root fetch - processPackages [dbnd-airflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-airflow-1.0.8.1.tar.gz tmp/dbnd-airflow-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-airflow/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:03] INFO root fetch - processPackages [dbnd-airflow-auto-tracking]: Start processing: dbnd-docker
+[2023-05-28 11:02:03] INFO root fetch - main [MainThread]: End processing [dbnd-airflow-auto-tracking]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-docker]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-databricks]: Start processing: dbnd-examples
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-databricks]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-examples]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-docker]: executing diffoscope
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-docker-1.0.8.1.tar.gz tmp/dbnd-docker-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-docker/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:04] INFO root fetch - processPackages [databand]: Start processing: dbnd-gcp
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [databand]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-azure]: Start processing: dbnd-hdfs
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-azure]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-airflow-versioned-dag]: Start processing: dbnd-luigi
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-airflow-versioned-dag]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-airflow-export]: Start processing: dbnd-mlflow
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-airflow-export]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-gcp]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-hdfs]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-airflow-monitor]: Start processing: dbnd-postgres
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-airflow-monitor]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-luigi]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-mlflow]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-aws]: Start processing: dbnd-qubole
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-aws]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-qubole]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-postgres]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-examples]: executing diffoscope
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-examples-1.0.8.1.tar.gz tmp/dbnd-examples-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-examples/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-airflow]: Start processing: dbnd-redshift
+[2023-05-28 11:02:04] INFO root fetch - main [MainThread]: End processing [dbnd-airflow]: success
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-gcp]: executing diffoscope
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-gcp-1.0.8.1.tar.gz tmp/dbnd-gcp-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-gcp/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-redshift]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-luigi]: executing diffoscope
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-mlflow]: executing diffoscope
+[2023-05-28 11:02:04] INFO root fetch - processPackages [dbnd-luigi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-luigi-1.0.8.1.tar.gz tmp/dbnd-luigi-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-luigi/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-mlflow-1.0.8.1.tar.gz tmp/dbnd-mlflow-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-mlflow/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-hdfs]: executing diffoscope
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-hdfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-hdfs-1.0.8.1.tar.gz tmp/dbnd-hdfs-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-hdfs/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-qubole]: executing diffoscope
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-qubole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-qubole-1.0.8.1.tar.gz tmp/dbnd-qubole-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-qubole/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-postgres]: executing diffoscope
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-postgres-1.0.8.1.tar.gz tmp/dbnd-postgres-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-postgres/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-redshift]: executing diffoscope
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-redshift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-redshift-1.0.8.1.tar.gz tmp/dbnd-redshift-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-redshift/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-docker]: Start processing: dbnd-run
+[2023-05-28 11:02:05] INFO root fetch - main [MainThread]: End processing [dbnd-docker]: success
+[2023-05-28 11:02:05] WARNING root fetch - processPackages [dbnd-run]: Skipping, unable to determine old version
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-run]: Start processing: dbnd-snowflake
+[2023-05-28 11:02:05] INFO root fetch - main [MainThread]: End processing [dbnd-run] error
+[2023-05-28 11:02:05] INFO root fetch - processPackages [dbnd-snowflake]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-luigi]: Start processing: dbnd-spark
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-luigi]: success
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-snowflake]: executing diffoscope
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-snowflake-1.0.8.1.tar.gz tmp/dbnd-snowflake-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-snowflake/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-spark]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-mlflow]: Start processing: dbnd-tensorflow
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-mlflow]: success
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-qubole]: Start processing: dbnd-test-scenarios
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-qubole]: success
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-tensorflow]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-hdfs]: Start processing: robotframework-jsonquery
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-hdfs]: success
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-test-scenarios]: New version: [1.0.9.1] Old Version: [1.0.8.1]
+[2023-05-28 11:02:06] WARNING root fetch - processPackages [robotframework-jsonquery]: Skipping, unable to determine old version
+[2023-05-28 11:02:06] INFO root fetch - processPackages [robotframework-jsonquery]: Start processing: jsonl2
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [robotframework-jsonquery] error
+[2023-05-28 11:02:06] INFO root fetch - processPackages [jsonl2]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-spark]: executing diffoscope
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-spark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-spark-1.0.8.1.tar.gz tmp/dbnd-spark-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-spark/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:06] INFO root fetch - processPackages [jsonl2]: executing diffoscope
+[2023-05-28 11:02:06] INFO root fetch - processPackages [jsonl2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonl2-1.1.8.tar.gz tmp/jsonl2-1.1.9.tar.gz --markdown 20230528/j/jsonl2/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-redshift]: success
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-gcp]: success
+[2023-05-28 11:02:06] INFO root fetch - main [MainThread]: End processing [dbnd-postgres]: success
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-tensorflow]: executing diffoscope
+[2023-05-28 11:02:06] INFO root fetch - processPackages [dbnd-tensorflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-tensorflow-1.0.8.1.tar.gz tmp/dbnd-tensorflow-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-tensorflow/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:07] INFO root fetch - processPackages [dbnd-test-scenarios]: executing diffoscope
+[2023-05-28 11:02:07] INFO root fetch - processPackages [dbnd-test-scenarios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbnd-test-scenarios-1.0.8.1.tar.gz tmp/dbnd-test-scenarios-1.0.9.1.tar.gz --markdown 20230528/d/dbnd-test-scenarios/1.0.8.1-1.0.9.1/diff.md --exclude *.pyd
+[2023-05-28 11:02:07] INFO root fetch - main [MainThread]: End processing [jsonl2]: success
+[2023-05-28 11:02:07] INFO root fetch - main [MainThread]: End processing [dbnd-snowflake]: success
+[2023-05-28 11:02:08] INFO root fetch - main [MainThread]: End processing [dbnd-tensorflow]: success
+[2023-05-28 11:02:08] INFO root fetch - main [MainThread]: End processing [dbnd-spark]: success
+[2023-05-28 11:02:08] INFO root fetch - main [MainThread]: End processing [dbnd-test-scenarios]: success
+[2023-05-28 11:02:09] INFO root fetch - main [MainThread]: End processing [dbnd-examples]: success
+[2023-05-28 11:02:11] INFO root fetch - main [MainThread]: End processing [dbnd]: success
+[2023-05-28 11:02:11] INFO root fetch - main [MainThread]: Store serial: [18279538]
