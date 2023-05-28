@@ -8525,3 +8525,62 @@ EOFError: EOF read where object expected
 [2023-05-28 19:07:18] INFO root fetch - main [MainThread]: End processing [asyncdb]: success
 [2023-05-28 19:07:19] INFO root fetch - main [MainThread]: End processing [pyasd]: success
 [2023-05-28 19:07:19] INFO root fetch - main [MainThread]: Store serial: [18282285]
+[2023-05-28 19:12:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282285]
+[2023-05-28 19:12:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-quantize-pytorch
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ak-pynn
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: findmyorder
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multiprocessorhdl
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: propelauth-fastapi
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mathbib
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ak-pynn
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ak-pynn]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ak-pynn]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [propelauth-fastapi]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [multiprocessorhdl]: New version: [2.2.2] Old Version: [2.1.5]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [mathbib]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [dxsp]: New version: [2.6.0] Old Version: [2.5.5]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [findmyorder]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230528.17.9.923907] Old Version: [20230528.16.20.50013]
+[2023-05-28 19:12:28] INFO root fetch - processPackages [multiprocessorhdl]: Downloading https://files.pythonhosted.org/packages/da/2c/18206719e61937b663105e7aa6ffe560870a5969a9461ac93c252c9d04db/multiprocessorhdl-2.1.5.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [propelauth-fastapi]: Downloading https://files.pythonhosted.org/packages/04/25/7e0d8da1540b213c3c2370c5c1d7bf32abf66cebc41a2faafd31c274cf1c/propelauth-fastapi-2.1.1.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/f1/af/faa287706456c266d60e28274c42aa39371dc218b51b1b5084f85ef5eb67/mathbib-0.1.2.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/c6/83/1432043a3bcc264d9a4ab7a736582f2b5897fe1f56433101a615804cdb21/ak_pynn-0.1.4.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/97/b7/71f4be14dfe84cb71b605644333ab802ac9b1f7e11a3ad73b550cc3d3b4b/certora-cli-alpha-master-20230528.16.20.50013.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/c6/83/1432043a3bcc264d9a4ab7a736582f2b5897fe1f56433101a615804cdb21/ak_pynn-0.1.4.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/2d/f8/8fdd0cf1ea5fa33bd3d1466a4f84151be656d50f268528120e4c36f6a5d1/vector_quantize_pytorch-1.6.3.tar.gz
+[2023-05-28 19:12:28] WARNING root fetch - processPackages [multiprocessorhdl]: Skipping package: exceeds size limit 66233729>=10485760
+[2023-05-28 19:12:28] INFO root fetch - main [MainThread]: End processing [multiprocessorhdl] error
+[2023-05-28 19:12:28] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39091105>=10485760
+[2023-05-28 19:12:28] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-28 19:12:28] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-28 19:12:28] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.8.tar.gz tmp/findmyorder-1.3.9.tar.gz --markdown 20230528/f/findmyorder/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-28 19:12:28] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/93/ff/43536a758445783f93b441f3a281048b573007f04d21957875a2d5981f82/dxsp-2.6.0.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/bc/27/f066f59c16b1eeb778830098222fe57877a611afc034b5e70cd37e8497c6/mathbib-0.2.0.tar.gz
+[2023-05-28 19:12:28] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-28 19:12:28] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.5.5.tar.gz tmp/dxsp-2.6.0.tar.gz --markdown 20230528/d/dxsp/2.5.5-2.6.0/diff.md --exclude *.pyd
+[2023-05-28 19:12:28] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/76/78/89287bcb5dc6f6f2a31eb30b07e6354c1664788a3a2adf736d0598249e71/vector_quantize_pytorch-1.6.4.tar.gz
+[2023-05-28 19:12:29] INFO root fetch - processPackages [propelauth-fastapi]: Downloading https://files.pythonhosted.org/packages/52/b5/2b93061cc00a1a34940484b4af916c62166eee63ca50b4a62f0f98140e7a/propelauth-fastapi-2.1.2.tar.gz
+[2023-05-28 19:12:29] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/6a/e4/27856123a1b2bd7fe4b36a125ea8dc47c1360a723729ee1bdd208f3f089a/ak_pynn-0.1.5.tar.gz
+[2023-05-28 19:12:29] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/6a/e4/27856123a1b2bd7fe4b36a125ea8dc47c1360a723729ee1bdd208f3f089a/ak_pynn-0.1.5.tar.gz
+[2023-05-28 19:12:29] INFO root fetch - processPackages [propelauth-fastapi]: executing diffoscope
+[2023-05-28 19:12:29] INFO root fetch - processPackages [propelauth-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propelauth-fastapi-2.1.1.tar.gz tmp/propelauth-fastapi-2.1.2.tar.gz --markdown 20230528/p/propelauth-fastapi/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-28 19:12:29] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-05-28 19:12:29] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.1.2.tar.gz tmp/mathbib-0.2.0.tar.gz --markdown 20230528/m/mathbib/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 19:12:29] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-28 19:12:29] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.6.3.tar.gz tmp/vector_quantize_pytorch-1.6.4.tar.gz --markdown 20230528/v/vector-quantize-pytorch/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-05-28 19:12:29] INFO root fetch - processPackages [ak-pynn]: executing diffoscope
+[2023-05-28 19:12:29] INFO root fetch - processPackages [ak-pynn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ak_pynn-0.1.4.tar.gz tmp/ak_pynn-0.1.5.tar.gz --markdown 20230528/a/ak-pynn/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-28 19:12:29] INFO root fetch - processPackages [ak-pynn]: executing diffoscope
+[2023-05-28 19:12:29] INFO root fetch - processPackages [ak-pynn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ak_pynn-0.1.4.tar.gz tmp/ak_pynn-0.1.5.tar.gz --markdown 20230528/a/ak-pynn/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [propelauth-fastapi]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [ak-pynn]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: End processing [ak-pynn]: success
+[2023-05-28 19:12:30] INFO root fetch - main [MainThread]: Store serial: [18282316]
