@@ -1704,3 +1704,26 @@
 [2023-05-28 04:17:28] INFO root fetch - main [MainThread]: End processing [embedin]: success
 [2023-05-28 04:17:41] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
 [2023-05-28 04:17:41] INFO root fetch - main [MainThread]: Store serial: [18278035]
+[2023-05-28 04:22:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278035]
+[2023-05-28 04:22:49] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-28 04:27:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278040]
+[2023-05-28 04:27:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auptitcafe
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-library-objects
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ifastapi
+[2023-05-28 04:27:55] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.3] Old Version: [0.0.3.2.1]
+[2023-05-28 04:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-05-28 04:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-05-28 04:27:55] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230528/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/44/4d/4ae113fb71de9a2e3112f05e7ad758901a81dd1989571af614272100f867/ifastapi-0.0.3.2.1-py3-none-any.whl
+[2023-05-28 04:27:55] INFO root fetch - processPackages [auptitcafe]: Downloading https://files.pythonhosted.org/packages/60/f4/77ee7f025a369ae154a96c2ef577a3657361c7e2a907d493bae103e19091/auptitcafe-0.1.9.tar.gz
+[2023-05-28 04:27:55] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 04:27:55] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/17/42/f85a89507d425a8b2befb63573a263eec140548cde6f2e104ebb0faa1b22/ifastapi-0.0.3.3-py3-none-any.whl
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 04:27:55] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.2.1-py3-none-any.whl.zip tmp/ifastapi-0.0.3.3-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.2.1-0.0.3.3/diff.md --exclude *.pyd
+[2023-05-28 04:27:56] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 04:27:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-05-28 04:27:57] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 04:27:57] INFO root fetch - main [MainThread]: Store serial: [18278057]
