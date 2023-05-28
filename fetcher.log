@@ -1928,3 +1928,24 @@
 [2023-05-28 04:59:26] INFO root fetch - main [MainThread]: End processing [django-yunpian-app]: success
 [2023-05-28 04:59:26] INFO root fetch - main [MainThread]: End processing [WarThunder]: success
 [2023-05-28 04:59:26] INFO root fetch - main [MainThread]: Store serial: [18278165]
+[2023-05-28 05:04:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278165]
+[2023-05-28 05:04:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 05:04:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jos3
+[2023-05-28 05:04:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vocode
+[2023-05-28 05:04:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: traceflows
+[2023-05-28 05:04:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parsetypes
+[2023-05-28 05:04:35] INFO root fetch - processPackages [jos3]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-28 05:04:35] WARNING root fetch - processPackages [traceflows]: Skipping, unable to determine old version
+[2023-05-28 05:04:35] INFO root fetch - main [MainThread]: End processing [traceflows] error
+[2023-05-28 05:04:35] INFO root fetch - processPackages [vocode]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-28 05:04:35] WARNING root fetch - processPackages [parsetypes]: Skipping, unable to determine old version
+[2023-05-28 05:04:35] INFO root fetch - main [MainThread]: End processing [parsetypes] error
+[2023-05-28 05:04:35] INFO root fetch - processPackages [jos3]: Downloading https://files.pythonhosted.org/packages/2c/f9/9950378db01f8c0031c20cf621b9d11d34c199888480c12048689f9322db/jos3-0.4.0.tar.gz
+[2023-05-28 05:04:35] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-05-28 05:04:35] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.98.tar.gz tmp/vocode-0.1.99.tar.gz --markdown 20230528/v/vocode/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-28 05:04:35] INFO root fetch - processPackages [jos3]: Downloading https://files.pythonhosted.org/packages/c2/c4/75cce97920d87a77eeaee7777a8a4230bf762e657cfd8d27cd93573b8445/jos3-0.5.0.tar.gz
+[2023-05-28 05:04:36] INFO root fetch - processPackages [jos3]: executing diffoscope
+[2023-05-28 05:04:36] INFO root fetch - processPackages [jos3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jos3-0.4.0.tar.gz tmp/jos3-0.5.0.tar.gz --markdown 20230528/j/jos3/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-28 05:04:37] INFO root fetch - main [MainThread]: End processing [jos3]: success
+[2023-05-28 05:04:37] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-05-28 05:04:37] INFO root fetch - main [MainThread]: Store serial: [18278181]
