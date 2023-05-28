@@ -10394,3 +10394,40 @@ EOFError: EOF read where object expected
 [2023-05-28 23:01:59] INFO root fetch - main [MainThread]: End processing [ziamath]: success
 [2023-05-28 23:01:59] INFO root fetch - main [MainThread]: End processing [forml]: success
 [2023-05-28 23:01:59] INFO root fetch - main [MainThread]: Store serial: [18283493]
+[2023-05-28 23:07:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283493]
+[2023-05-28 23:07:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: refyre
+[2023-05-28 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyzoom
+[2023-05-28 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zeph1rr-fastapi-utils
+[2023-05-28 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: almgren-chriss
+[2023-05-28 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: binance-c2c-sapi
+[2023-05-28 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: advent-of-code
+[2023-05-28 23:07:09] INFO root fetch - processPackages [binance-c2c-sapi]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 23:07:09] INFO root fetch - processPackages [almgren-chriss]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 23:07:09] INFO root fetch - processPackages [pyzoom]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-28 23:07:09] WARNING root fetch - processPackages [zeph1rr-fastapi-utils]: Skipping, unable to determine old version
+[2023-05-28 23:07:09] INFO root fetch - processPackages [refyre]: New version: [0.0.1.2] Old Version: [0.0.1.1]
+[2023-05-28 23:07:09] INFO root fetch - main [MainThread]: End processing [zeph1rr-fastapi-utils] error
+[2023-05-28 23:07:09] INFO root fetch - processPackages [almgren-chriss]: Downloading https://files.pythonhosted.org/packages/e0/37/117898512aba27cce1bc2335e896dd20e784cb95019fd9ac0a3de3091bcd/almgren_chriss-1.0.0.tar.gz
+[2023-05-28 23:07:09] INFO root fetch - processPackages [binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/1d/8e/d1a562ab1d6fd86aa4c420e35ece8cfbf48806ed4d6a5b7be084cabb6813/binance-c2c-sapi-0.0.1.tar.gz
+[2023-05-28 23:07:09] INFO root fetch - processPackages [pyzoom]: Downloading https://files.pythonhosted.org/packages/07/8c/d4815252d57c0c2f543f605f1927542fee5003ec5eda35a26332d9b534e2/pyzoom-1.0.2.tar.gz
+[2023-05-28 23:07:09] INFO root fetch - processPackages [refyre]: Downloading https://files.pythonhosted.org/packages/01/96/d237fca2fbfe1418f7c3cba63a7b5ab1142e0fa98031f8c6e7b741fc6dd1/refyre-0.0.1.2.tar.gz
+[2023-05-28 23:07:09] INFO root fetch - processPackages [pyzoom]: executing diffoscope
+[2023-05-28 23:07:09] INFO root fetch - processPackages [pyzoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzoom-1.0.1.tar.gz tmp/pyzoom-1.0.2.tar.gz --markdown 20230528/p/pyzoom/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:07:09] INFO root fetch - processPackages [almgren-chriss]: Downloading https://files.pythonhosted.org/packages/4d/56/cea0850886372babeb266e6b7305cdccffc5aafd7bfbf6d898e4d61ea1c8/almgren_chriss-1.0.1.tar.gz
+[2023-05-28 23:07:09] INFO root fetch - processPackages [binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/1e/6b/a5a6e89799abcc0638b459a376d02a0c600ad5c8bfd99d01c65d00b79b95/binance-c2c-sapi-0.0.2.tar.gz
+[2023-05-28 23:07:09] INFO root fetch - processPackages [binance-c2c-sapi]: executing diffoscope
+[2023-05-28 23:07:09] INFO root fetch - processPackages [binance-c2c-sapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sapi-0.0.1.tar.gz tmp/binance-c2c-sapi-0.0.2.tar.gz --markdown 20230528/b/binance-c2c-sapi/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 23:07:09] INFO root fetch - processPackages [almgren-chriss]: executing diffoscope
+[2023-05-28 23:07:09] INFO root fetch - processPackages [almgren-chriss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almgren_chriss-1.0.0.tar.gz tmp/almgren_chriss-1.0.1.tar.gz --markdown 20230528/a/almgren-chriss/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 23:07:09] INFO root fetch - processPackages [refyre]: executing diffoscope
+[2023-05-28 23:07:09] INFO root fetch - processPackages [refyre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refyre-0.0.1.1.tar.gz tmp/refyre-0.0.1.2.tar.gz --markdown 20230528/r/refyre/0.0.1.1-0.0.1.2/diff.md --exclude *.pyd
+[2023-05-28 23:07:09] INFO root fetch - processPackages [advent-of-code]: New version: [2022.0.9] Old Version: [2022.0.8]
+[2023-05-28 23:07:10] INFO root fetch - processPackages [advent-of-code]: executing diffoscope
+[2023-05-28 23:07:10] INFO root fetch - processPackages [advent-of-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advent_of_code-2022.0.8-cp39-abi3-win_amd64.whl.zip tmp/advent_of_code-2022.0.9-cp39-abi3-win_amd64.whl.zip --markdown 20230528/a/advent-of-code/2022.0.8-2022.0.9/diff.md --exclude *.pyd
+[2023-05-28 23:07:10] INFO root fetch - main [MainThread]: End processing [pyzoom]: success
+[2023-05-28 23:07:10] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi]: success
+[2023-05-28 23:07:11] INFO root fetch - main [MainThread]: End processing [refyre]: success
+[2023-05-28 23:07:11] INFO root fetch - main [MainThread]: End processing [almgren-chriss]: success
+[2023-05-28 23:07:11] INFO root fetch - main [MainThread]: End processing [advent-of-code]: success
+[2023-05-28 23:07:11] INFO root fetch - main [MainThread]: Store serial: [18283515]
