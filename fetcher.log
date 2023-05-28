@@ -6430,3 +6430,83 @@ EOFError: EOF read where object expected
 [2023-05-28 15:21:18] INFO root fetch - main [MainThread]: End processing [python-sonarqube-api]: success
 [2023-05-28 15:21:18] INFO root fetch - main [MainThread]: End processing [asphalt]: success
 [2023-05-28 15:21:18] INFO root fetch - main [MainThread]: Store serial: [18280945]
+[2023-05-28 15:26:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280945]
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tradingkit
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baboo-game-rolis
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dataclass-mapper
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: IMDBTraktSyncer
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fbgemm-gpu-nightly
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pybe
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyAGI
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: encode-decode-vbm
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: finvader
+[2023-05-28 15:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: splathash
+[2023-05-28 15:26:27] INFO root fetch - processPackages [encode-decode-vbm]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.27] Old Version: [2023.5.26]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [tradingkit]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [IMDBTraktSyncer]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [tradingkit]: executing diffoscope
+[2023-05-28 15:26:27] WARNING root fetch - processPackages [baboo-game-rolis]: Skipping, unable to determine old version
+[2023-05-28 15:26:27] INFO root fetch - processPackages [tradingkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradingkit-1.9.5.tar.gz tmp/tradingkit-1.9.6.tar.gz --markdown 20230528/t/tradingkit/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-28 15:26:27] INFO root fetch - processPackages [baboo-game-rolis]: Start processing: pycity-scheduling
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: End processing [baboo-game-rolis] error
+[2023-05-28 15:26:27] WARNING root fetch - processPackages [splathash]: Skipping, unable to determine old version
+[2023-05-28 15:26:27] INFO root fetch - processPackages [splathash]: Start processing: blockpipe-db
+[2023-05-28 15:26:27] WARNING root fetch - processPackages [finvader]: Skipping, unable to determine old version
+[2023-05-28 15:26:27] INFO root fetch - processPackages [pybe]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [finvader]: Start processing: tradlib
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: End processing [splathash] error
+[2023-05-28 15:26:27] INFO root fetch - processPackages [dataclass-mapper]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-28 15:26:27] WARNING root fetch - processPackages [pyAGI]: Skipping, unable to determine old version
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: End processing [finvader] error
+[2023-05-28 15:26:27] INFO root fetch - processPackages [pyAGI]: Start processing: libtmux
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: End processing [pyAGI] error
+[2023-05-28 15:26:27] INFO root fetch - processPackages [libtmux]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/89/68/1330e5b804a189535ecf62872cc79be48ab605a86af83925071ff02afb9b/IMDBTraktSyncer-1.3.4.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [encode-decode-vbm]: Downloading https://files.pythonhosted.org/packages/70/e0/611a97d80d595bb19dacc2a369c13d8dbd9896e0bc7b173e68c4e27083e3/encode_decode_vbm-0.1.0.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/49/25/b8a39a19d9e8fef2a1d6fa4caf955ae5f45638ca3b648f94c74dceb1ca94/fbgemm_gpu_nightly-2023.5.26-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-28 15:26:27] INFO root fetch - processPackages [pycity-scheduling]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-28 15:26:27] INFO root fetch - processPackages [tradlib]: New version: [0.4] Old Version: [0.3]
+[2023-05-28 15:26:27] WARNING root fetch - processPackages [blockpipe-db]: Skipping, unable to determine old version
+[2023-05-28 15:26:27] INFO root fetch - processPackages [libtmux]: executing diffoscope
+[2023-05-28 15:26:27] INFO root fetch - processPackages [blockpipe-db]: Start processing: custom-utils
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: End processing [blockpipe-db] error
+[2023-05-28 15:26:27] INFO root fetch - processPackages [libtmux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtmux-0.8.5.tar.gz tmp/libtmux-0.9.0.tar.gz --markdown 20230528/l/libtmux/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 15:26:27] INFO root fetch - processPackages [custom-utils]: New version: [0.0.38] Old Version: [0.0.37]
+[2023-05-28 15:26:27] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 287361321>=10485760
+[2023-05-28 15:26:27] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-28 15:26:27] INFO root fetch - processPackages [pybe]: Downloading https://files.pythonhosted.org/packages/50/e2/eef85c374b49810282ac9f045d395c10cd6818445c84c82b700511d15f3c/pybe-0.0.2.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [dataclass-mapper]: Downloading https://files.pythonhosted.org/packages/93/b6/02768ce5225834a75edac80337ba6ab5c9433cb89bbe06fff7fd4c748bdb/dataclass_mapper-1.7.1.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [IMDBTraktSyncer]: executing diffoscope
+[2023-05-28 15:26:27] INFO root fetch - processPackages [IMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDBTraktSyncer-1.3.3.tar.gz tmp/IMDBTraktSyncer-1.3.4.tar.gz --markdown 20230528/I/IMDBTraktSyncer/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-28 15:26:27] INFO root fetch - processPackages [tradlib]: Downloading https://files.pythonhosted.org/packages/3f/25/099a2530db004eebf998463d02b235c7723d079ca5c1cea0315509ccc7e8/tradlib-0.3.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [pycity-scheduling]: Downloading https://files.pythonhosted.org/packages/c5/c9/c8e72f5ec59544389bccb5fc0ecf9df90e5bc6f934ba69c7a87a9bbebe48/pycity_scheduling-1.1.0.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [encode-decode-vbm]: Downloading https://files.pythonhosted.org/packages/c1/57/30eba45ab97e01a4845945b2a0e9eef81a71048509037c85f6924c24a99d/encode_decode_vbm-0.1.1.tar.gz
+[2023-05-28 15:26:27] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/42/5f/0527f5b2b16551e2f64978819c8fdd1f291011de9c08412b7efe7add7719/custom-utils-0.0.38.tar.gz
+[2023-05-28 15:26:28] INFO root fetch - processPackages [encode-decode-vbm]: executing diffoscope
+[2023-05-28 15:26:28] INFO root fetch - processPackages [encode-decode-vbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encode_decode_vbm-0.1.0.tar.gz tmp/encode_decode_vbm-0.1.1.tar.gz --markdown 20230528/e/encode-decode-vbm/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 15:26:28] INFO root fetch - processPackages [pybe]: Downloading https://files.pythonhosted.org/packages/f8/97/b7195ec0b085ed56a68a82c2628b4b34de9815e9f5cdfc136c4ee00aa417/pybe-1.0.0.tar.gz
+[2023-05-28 15:26:28] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-28 15:26:28] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.37.tar.gz tmp/custom-utils-0.0.38.tar.gz --markdown 20230528/c/custom-utils/0.0.37-0.0.38/diff.md --exclude *.pyd
+[2023-05-28 15:26:28] INFO root fetch - processPackages [pybe]: executing diffoscope
+[2023-05-28 15:26:28] INFO root fetch - processPackages [pybe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybe-0.0.2.tar.gz tmp/pybe-1.0.0.tar.gz --markdown 20230528/p/pybe/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 15:26:28] INFO root fetch - processPackages [dataclass-mapper]: Downloading https://files.pythonhosted.org/packages/cf/90/551ff761c801f6ded7b851b5c4f77ee9da11ce099b4c257bbf3d56977558/dataclass_mapper-1.7.2.tar.gz
+[2023-05-28 15:26:28] INFO root fetch - processPackages [tradlib]: Downloading https://files.pythonhosted.org/packages/96/3e/52c668ec746cc774c787181cd4c8b34b6a57839498295fb7f438032ffab7/tradlib-0.4.tar.gz
+[2023-05-28 15:26:28] INFO root fetch - processPackages [pycity-scheduling]: Downloading https://files.pythonhosted.org/packages/b2/4f/5255915108e72c5ecef5f1657fcfe94c72d798dd9a53f5e11086e383579c/pycity_scheduling-1.2.0.tar.gz
+[2023-05-28 15:26:28] INFO root fetch - processPackages [dataclass-mapper]: executing diffoscope
+[2023-05-28 15:26:28] INFO root fetch - processPackages [dataclass-mapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataclass_mapper-1.7.1.tar.gz tmp/dataclass_mapper-1.7.2.tar.gz --markdown 20230528/d/dataclass-mapper/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-28 15:26:28] INFO root fetch - processPackages [tradlib]: executing diffoscope
+[2023-05-28 15:26:28] INFO root fetch - processPackages [tradlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradlib-0.3.tar.gz tmp/tradlib-0.4.tar.gz --markdown 20230528/t/tradlib/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-28 15:26:28] INFO root fetch - processPackages [pycity-scheduling]: executing diffoscope
+[2023-05-28 15:26:28] INFO root fetch - processPackages [pycity-scheduling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycity_scheduling-1.1.0.tar.gz tmp/pycity_scheduling-1.2.0.tar.gz --markdown 20230528/p/pycity-scheduling/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [tradingkit]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [libtmux]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [encode-decode-vbm]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [pybe]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [tradlib]: success
+[2023-05-28 15:26:29] INFO root fetch - main [MainThread]: End processing [dataclass-mapper]: success
+[2023-05-28 15:26:31] INFO root fetch - main [MainThread]: End processing [pycity-scheduling]: success
+[2023-05-28 15:26:31] INFO root fetch - main [MainThread]: Store serial: [18281002]
