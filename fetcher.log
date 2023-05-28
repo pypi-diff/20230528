@@ -3365,3 +3365,36 @@
 [2023-05-28 09:43:07] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
 [2023-05-28 09:43:10] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-28 09:43:10] INFO root fetch - main [MainThread]: Store serial: [18279140]
+[2023-05-28 09:48:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279140]
+[2023-05-28 09:48:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cxbuild
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iot-gaussian
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-nightly
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fasttq
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: auptitcafe
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cxbind
+[2023-05-28 09:48:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-threaded-sync-to-async
+[2023-05-28 09:48:19] WARNING root fetch - processPackages [cxbuild]: Skipping, unable to determine old version
+[2023-05-28 09:48:19] INFO root fetch - main [MainThread]: End processing [cxbuild] error
+[2023-05-28 09:48:19] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-28 09:48:19] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 09:48:19] WARNING root fetch - processPackages [fasttq]: Skipping, unable to determine old version
+[2023-05-28 09:48:19] WARNING root fetch - processPackages [iot-gaussian]: Skipping, unable to determine old version
+[2023-05-28 09:48:19] INFO root fetch - main [MainThread]: End processing [fasttq] error
+[2023-05-28 09:48:19] INFO root fetch - main [MainThread]: End processing [iot-gaussian] error
+[2023-05-28 09:48:19] WARNING root fetch - processPackages [django-threaded-sync-to-async]: Skipping, unable to determine old version
+[2023-05-28 09:48:19] INFO root fetch - main [MainThread]: End processing [django-threaded-sync-to-async] error
+[2023-05-28 09:48:19] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-28 09:48:19] WARNING root fetch - processPackages [cxbind]: Skipping, unable to determine old version
+[2023-05-28 09:48:19] INFO root fetch - main [MainThread]: End processing [cxbind] error
+[2023-05-28 09:48:19] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 09:48:19] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 09:48:19] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-28 09:48:19] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230528/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-28 09:48:19] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-28 09:48:19] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230528/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-28 09:48:20] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 09:48:20] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-28 09:48:29] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-28 09:48:29] INFO root fetch - main [MainThread]: Store serial: [18279171]
