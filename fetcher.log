@@ -8431,3 +8431,62 @@ EOFError: EOF read where object expected
 [2023-05-28 18:56:46] INFO root fetch - main [MainThread]: End processing [dash-cytoscape-elements]: success
 [2023-05-28 18:56:54] INFO root fetch - main [MainThread]: End processing [su6]: success
 [2023-05-28 18:56:54] INFO root fetch - main [MainThread]: Store serial: [18282229]
+[2023-05-28 19:01:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282229]
+[2023-05-28 19:02:03] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DLTA-AI
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyleafarea
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: querysource
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simpm
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyaodbc
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openllm
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ak-pynn
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gocart
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: macrometa-source-snowflake
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kavk-api
+[2023-05-28 19:02:03] INFO root fetch - processPackages [pyleafarea]: New version: [2.3.1] Old Version: [2.3]
+[2023-05-28 19:02:03] INFO root fetch - processPackages [openllm]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 19:02:03] WARNING root fetch - processPackages [pyaodbc]: Skipping, unable to determine old version
+[2023-05-28 19:02:03] INFO root fetch - main [MainThread]: End processing [pyaodbc] error
+[2023-05-28 19:02:03] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 19:02:03] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/e5/ba/ee56ecf3851cf450541f457442413edb5259c85b4d9c27eaec59c3c7846a/openllm-0.0.7.tar.gz
+[2023-05-28 19:02:03] WARNING root fetch - processPackages [DLTA-AI]: Skipping, unable to determine old version
+[2023-05-28 19:02:03] INFO root fetch - main [MainThread]: End processing [DLTA-AI] error
+[2023-05-28 19:02:03] INFO root fetch - processPackages [querysource]: New version: [3.6.9] Old Version: [3.6.8]
+[2023-05-28 19:02:03] INFO root fetch - processPackages [simpm]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-28 19:02:03] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11986540>=10485760
+[2023-05-28 19:02:03] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ak-pynn]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 19:02:03] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 19:02:03] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 19:02:03] INFO root fetch - processPackages [kavk-api]: New version: [1.0.0] Old Version: [0.9.9.2]
+[2023-05-28 19:02:03] INFO root fetch - processPackages [gocart]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-28 19:02:03] INFO root fetch - processPackages [pyleafarea]: Downloading https://files.pythonhosted.org/packages/6e/df/fa42f7f02d1a5adffb7d4bf86bb32dd0e0ec85e69b6078bcaf21b71880d1/pyleafarea-2.3.tar.gz
+[2023-05-28 19:02:03] WARNING root fetch - processPackages [pyleafarea]: Skipping package: exceeds size limit 27987265>=10485760
+[2023-05-28 19:02:03] INFO root fetch - main [MainThread]: End processing [pyleafarea] error
+[2023-05-28 19:02:03] INFO root fetch - processPackages [simpm]: Downloading https://files.pythonhosted.org/packages/cf/a4/b680320ce583d69344962fee968f1e255636148bd91ac0de7907f1205805/simpm-2.0.0.tar.gz
+[2023-05-28 19:02:03] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/12/b3/4ac4ef11dd5c79d6a5631f51c7534bc9eea2e306f9a35842eeda336bd00f/ak_pynn-0.1.2.tar.gz
+[2023-05-28 19:02:03] INFO root fetch - processPackages [querysource]: Downloading https://files.pythonhosted.org/packages/70/4b/8c539f343afcdd37564e5a6c74c47423c9bf31268e67037958cf41e0fefb/querysource-3.6.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 19:02:03] INFO root fetch - processPackages [kavk-api]: Downloading https://files.pythonhosted.org/packages/30/66/890245251581356014fb5bdd34ac424751c16dc73959a54ad9a5bc675393/kavk_api-0.9.9.2.tar.gz
+[2023-05-28 19:02:03] INFO root fetch - processPackages [gocart]: Downloading https://files.pythonhosted.org/packages/b7/a4/4de9e425e3e9d6836bfe88b0aba55deace6a830a936a798602aa49e6cb5a/gocart-0.4.1.tar.gz
+[2023-05-28 19:02:03] INFO root fetch - processPackages [simpm]: Downloading https://files.pythonhosted.org/packages/ca/a6/b85ff76e715d0a7d33bcd5cb5f1ab613bfa603c0bf04ee7b4f0161449e1b/simpm-2.0.1.tar.gz
+[2023-05-28 19:02:04] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/a3/2e/eb0ccb5ac3999738354821f8ee0f210e40903fc72819f28635f13ac24f00/ak_pynn-0.1.3.tar.gz
+[2023-05-28 19:02:04] INFO root fetch - processPackages [gocart]: Downloading https://files.pythonhosted.org/packages/ae/4b/34d75199a23741d5e48b8b70dd9221e604885744ad57a7af04b02b67a25d/gocart-0.4.2.tar.gz
+[2023-05-28 19:02:04] INFO root fetch - processPackages [simpm]: executing diffoscope
+[2023-05-28 19:02:04] INFO root fetch - processPackages [simpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpm-2.0.0.tar.gz tmp/simpm-2.0.1.tar.gz --markdown 20230528/s/simpm/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-28 19:02:04] INFO root fetch - processPackages [ak-pynn]: executing diffoscope
+[2023-05-28 19:02:04] INFO root fetch - processPackages [ak-pynn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ak_pynn-0.1.2.tar.gz tmp/ak_pynn-0.1.3.tar.gz --markdown 20230528/a/ak-pynn/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 19:02:04] INFO root fetch - processPackages [kavk-api]: Downloading https://files.pythonhosted.org/packages/c2/0b/fb3a26e9777c139b1e3bbc9983ab61bfd1793ddd26d5a27545ce6ecb9961/kavk_api-1.0.0.tar.gz
+[2023-05-28 19:02:04] INFO root fetch - processPackages [gocart]: executing diffoscope
+[2023-05-28 19:02:04] INFO root fetch - processPackages [gocart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gocart-0.4.1.tar.gz tmp/gocart-0.4.2.tar.gz --markdown 20230528/g/gocart/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-28 19:02:04] INFO root fetch - processPackages [kavk-api]: executing diffoscope
+[2023-05-28 19:02:04] INFO root fetch - processPackages [kavk-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kavk_api-0.9.9.2.tar.gz tmp/kavk_api-1.0.0.tar.gz --markdown 20230528/k/kavk-api/0.9.9.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 19:02:04] INFO root fetch - processPackages [querysource]: Downloading https://files.pythonhosted.org/packages/ab/50/018cb101f002f53a882706970a666f7fabfdaef68902e2363149b998910b/querysource-3.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 19:02:04] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 19:02:05] INFO root fetch - processPackages [querysource]: executing diffoscope
+[2023-05-28 19:02:05] INFO root fetch - processPackages [querysource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querysource-3.6.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/querysource-3.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/q/querysource/3.6.8-3.6.9/diff.md --exclude *.pyd
+[2023-05-28 19:02:05] INFO root fetch - main [MainThread]: End processing [simpm]: success
+[2023-05-28 19:02:05] INFO root fetch - main [MainThread]: End processing [ak-pynn]: success
+[2023-05-28 19:02:05] INFO root fetch - main [MainThread]: End processing [gocart]: success
+[2023-05-28 19:02:05] INFO root fetch - main [MainThread]: End processing [kavk-api]: success
+[2023-05-28 19:02:07] INFO root fetch - main [MainThread]: End processing [querysource]: success
+[2023-05-28 19:02:07] INFO root fetch - main [MainThread]: Store serial: [18282265]
