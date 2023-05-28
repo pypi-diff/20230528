@@ -8120,3 +8120,24 @@ EOFError: EOF read where object expected
 [2023-05-28 18:14:33] INFO root fetch - main [MainThread]: End processing [aleksis-app-fritak]: success
 [2023-05-28 18:14:34] INFO root fetch - main [MainThread]: End processing [debspawn]: success
 [2023-05-28 18:14:34] INFO root fetch - main [MainThread]: Store serial: [18282011]
+[2023-05-28 18:19:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282011]
+[2023-05-28 18:19:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 18:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faceid-lib
+[2023-05-28 18:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain
+[2023-05-28 18:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nista-library
+[2023-05-28 18:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyaodbc
+[2023-05-28 18:19:43] INFO root fetch - processPackages [faceid-lib]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 18:19:43] INFO root fetch - processPackages [nista-library]: New version: [4.0.6] Old Version: [4.0.5]
+[2023-05-28 18:19:43] WARNING root fetch - processPackages [pyaodbc]: Skipping, unable to determine old version
+[2023-05-28 18:19:43] INFO root fetch - main [MainThread]: End processing [pyaodbc] error
+[2023-05-28 18:19:43] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-28 18:19:43] INFO root fetch - processPackages [faceid-lib]: executing diffoscope
+[2023-05-28 18:19:43] INFO root fetch - processPackages [faceid-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceid-lib-2.0.1.tar.gz tmp/faceid-lib-2.0.2.tar.gz --markdown 20230528/f/faceid-lib/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 18:19:43] INFO root fetch - processPackages [nista-library]: executing diffoscope
+[2023-05-28 18:19:43] INFO root fetch - processPackages [nista-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nista_library-4.0.5.tar.gz tmp/nista_library-4.0.6.tar.gz --markdown 20230528/n/nista-library/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2023-05-28 18:19:43] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-28 18:19:43] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230528/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-28 18:19:44] INFO root fetch - main [MainThread]: End processing [faceid-lib]: success
+[2023-05-28 18:19:44] INFO root fetch - main [MainThread]: End processing [nista-library]: success
+[2023-05-28 18:19:46] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-28 18:19:46] INFO root fetch - main [MainThread]: Store serial: [18282034]
