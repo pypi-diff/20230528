@@ -9083,3 +9083,28 @@ EOFError: EOF read where object expected
 [2023-05-28 20:18:27] INFO root fetch - main [MainThread]: End processing [ReText]: success
 [2023-05-28 20:18:46] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-28 20:18:46] INFO root fetch - main [MainThread]: Store serial: [18282652]
+[2023-05-28 20:23:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282652]
+[2023-05-28 20:23:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 20:23:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superkabuki
+[2023-05-28 20:23:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: META-TOOLBOX
+[2023-05-28 20:23:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mltb2
+[2023-05-28 20:23:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spothinta-api
+[2023-05-28 20:23:55] INFO root fetch - processPackages [superkabuki]: New version: [0.0.45] Old Version: [0.0.43]
+[2023-05-28 20:23:55] WARNING root fetch - processPackages [mltb2]: Skipping, unable to determine old version
+[2023-05-28 20:23:55] INFO root fetch - main [MainThread]: End processing [mltb2] error
+[2023-05-28 20:23:55] INFO root fetch - processPackages [META-TOOLBOX]: New version: [2023.3] Old Version: [2023.2]
+[2023-05-28 20:23:55] INFO root fetch - processPackages [spothinta-api]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-28 20:23:55] INFO root fetch - processPackages [META-TOOLBOX]: Downloading https://files.pythonhosted.org/packages/88/ee/63c58e65c3ec79417aa6a45398d5d1a4140a9af9d6fafb45b214765158ae/META_TOOLBOX-2023.3.tar.gz
+[2023-05-28 20:23:55] INFO root fetch - processPackages [spothinta-api]: Downloading https://files.pythonhosted.org/packages/8c/b3/c103d105affb8aa96b5d079f208a7b94dcb4094382bc038077a34fe27526/spothinta_api-0.2.0.tar.gz
+[2023-05-28 20:23:55] INFO root fetch - processPackages [META-TOOLBOX]: executing diffoscope
+[2023-05-28 20:23:55] INFO root fetch - processPackages [META-TOOLBOX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/META_TOOLBOX-2023.2.tar.gz tmp/META_TOOLBOX-2023.3.tar.gz --markdown 20230528/M/META-TOOLBOX/2023.2-2023.3/diff.md --exclude *.pyd
+[2023-05-28 20:23:55] INFO root fetch - processPackages [superkabuki]: Downloading https://files.pythonhosted.org/packages/26/d7/296b88bf5023bee8f73610a375582ff18ce8b3ad13ae6f8acd0f82cf6335/superkabuki-0.0.45.tar.gz
+[2023-05-28 20:23:55] INFO root fetch - processPackages [superkabuki]: executing diffoscope
+[2023-05-28 20:23:55] INFO root fetch - processPackages [superkabuki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superkabuki-0.0.43.tar.gz tmp/superkabuki-0.0.45.tar.gz --markdown 20230528/s/superkabuki/0.0.43-0.0.45/diff.md --exclude *.pyd
+[2023-05-28 20:23:56] INFO root fetch - processPackages [spothinta-api]: Downloading https://files.pythonhosted.org/packages/6c/ed/b3a356650b1a7c33f7c1da40ac7362b9c7dd995b588d98c3da709b515ae7/spothinta_api-0.3.0.tar.gz
+[2023-05-28 20:23:56] INFO root fetch - processPackages [spothinta-api]: executing diffoscope
+[2023-05-28 20:23:56] INFO root fetch - processPackages [spothinta-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spothinta_api-0.2.0.tar.gz tmp/spothinta_api-0.3.0.tar.gz --markdown 20230528/s/spothinta-api/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 20:23:56] INFO root fetch - main [MainThread]: End processing [META-TOOLBOX]: success
+[2023-05-28 20:23:56] INFO root fetch - main [MainThread]: End processing [superkabuki]: success
+[2023-05-28 20:23:57] INFO root fetch - main [MainThread]: End processing [spothinta-api]: success
+[2023-05-28 20:23:57] INFO root fetch - main [MainThread]: Store serial: [18282669]
