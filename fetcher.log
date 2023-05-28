@@ -7061,3 +7061,71 @@ EOFError: EOF read where object expected
 [2023-05-28 16:24:50] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-05-28 16:24:51] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
 [2023-05-28 16:24:51] INFO root fetch - main [MainThread]: Store serial: [18281362]
+[2023-05-28 16:29:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281362]
+[2023-05-28 16:30:04] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cli50
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bovine-store
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bovine-process
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: similarweb-rapidapi
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyxbox
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: metablock
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rajm
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-l4d2-server
+[2023-05-28 16:30:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: download-station-api
+[2023-05-28 16:30:04] INFO root fetch - processPackages [bovine-process]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [bovine-store]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [pyxbox]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: New version: [0.5.5] Old Version: [0.5.4.2]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [bovine-store]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [bovine-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_store-0.2.2.tar.gz tmp/bovine_store-0.2.4.tar.gz --markdown 20230528/b/bovine-store/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [cli50]: New version: [7.4.0] Old Version: [7.3.0]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [bovine-process]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [bovine-process]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_process-0.2.2.tar.gz tmp/bovine_process-0.2.4.tar.gz --markdown 20230528/b/bovine-process/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] WARNING root fetch - processPackages [similarweb-rapidapi]: Skipping, unable to determine old version
+[2023-05-28 16:30:04] INFO root fetch - processPackages [similarweb-rapidapi]: Start processing: hpcflow-new2
+[2023-05-28 16:30:04] INFO root fetch - main [MainThread]: End processing [similarweb-rapidapi] error
+[2023-05-28 16:30:04] INFO root fetch - processPackages [download-station-api]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [rajm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [pyxbox]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [metablock]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [pyxbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxbox-0.1.0.tar.gz tmp/pyxbox-0.1.1.tar.gz --markdown 20230528/p/pyxbox/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-l4d2-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_l4d2_server-0.5.4.2.tar.gz tmp/nonebot_plugin_l4d2_server-0.5.5.tar.gz --markdown 20230528/n/nonebot-plugin-l4d2-server/0.5.4.2-0.5.5/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/10/82/d5203c939412cce532c605554d7e40e04d7837854295b13a9c77bff66193/nonebot_plugin_stable_diffusion_diao-0.1.6.tar.gz
+[2023-05-28 16:30:04] INFO root fetch - processPackages [hpcflow-new2]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-05-28 16:30:04] INFO root fetch - processPackages [download-station-api]: Downloading https://files.pythonhosted.org/packages/17/60/227d36fcdbe30f834aa30fab1c1f9aa991218e085d47219761d60336807e/download_station_api-0.1.2.tar.gz
+[2023-05-28 16:30:04] INFO root fetch - processPackages [rajm]: Downloading https://files.pythonhosted.org/packages/90/4a/01f5f55c2c272555ef110f24dfbd17c1a6e0b98196b4209c6d4c53f062f1/rajm-0.0.1-py3-none-any.whl
+[2023-05-28 16:30:04] INFO root fetch - processPackages [metablock]: Downloading https://files.pythonhosted.org/packages/ed/e9/ffe869e7bbac4b5aba2a3aa96afee87d612f615f903a3d3eefb2da3813f2/metablock-0.7.0.tar.gz
+[2023-05-28 16:30:04] INFO root fetch - processPackages [cli50]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [cli50]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli50-7.3.0.tar.gz tmp/cli50-7.4.0.tar.gz --markdown 20230528/c/cli50/7.3.0-7.4.0/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_stable_diffusion_diao-0.1.5.tar.gz tmp/nonebot_plugin_stable_diffusion_diao-0.1.6.tar.gz --markdown 20230528/n/nonebot-plugin-stable-diffusion-diao/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [download-station-api]: Downloading https://files.pythonhosted.org/packages/1e/63/6df68e6e58cdbcbf31ed86ea0408a48639ee244d2573deac6131f79aff2a/download_station_api-0.1.3.tar.gz
+[2023-05-28 16:30:04] INFO root fetch - processPackages [rajm]: Downloading https://files.pythonhosted.org/packages/87/58/42c193b0b6b3cc63c8877ace92542095f525d622f78a524bcc0a7749b9bd/rajm-0.0.2-py3-none-any.whl
+[2023-05-28 16:30:04] INFO root fetch - processPackages [metablock]: Downloading https://files.pythonhosted.org/packages/c8/41/64af151ec195aaba51e749ea87ce55976775e4c7845fcb96ac15d1710728/metablock-0.7.1.tar.gz
+[2023-05-28 16:30:04] INFO root fetch - processPackages [download-station-api]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [download-station-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_station_api-0.1.2.tar.gz tmp/download_station_api-0.1.3.tar.gz --markdown 20230528/d/download-station-api/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [hpcflow-new2]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [hpcflow-new2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpcflow_new2-0.2.0a8.tar.gz tmp/hpcflow_new2-0.2.0a9.tar.gz --markdown 20230528/h/hpcflow-new2/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [metablock]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [metablock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metablock-0.7.0.tar.gz tmp/metablock-0.7.1.tar.gz --markdown 20230528/m/metablock/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-28 16:30:04] INFO root fetch - processPackages [rajm]: executing diffoscope
+[2023-05-28 16:30:04] INFO root fetch - processPackages [rajm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rajm-0.0.1-py3-none-any.whl.zip tmp/rajm-0.0.2-py3-none-any.whl.zip --markdown 20230528/r/rajm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 16:30:06] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Start processing: bovine-pubsub
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [bovine-process]: success
+[2023-05-28 16:30:06] INFO root fetch - processPackages [bovine-pubsub]: New version: [0.2.4] Old Version: [0.2.1]
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [cli50]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [pyxbox]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [metablock]: success
+[2023-05-28 16:30:06] INFO root fetch - processPackages [bovine-pubsub]: executing diffoscope
+[2023-05-28 16:30:06] INFO root fetch - processPackages [bovine-pubsub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_pubsub-0.2.1.tar.gz tmp/bovine_pubsub-0.2.4.tar.gz --markdown 20230528/b/bovine-pubsub/0.2.1-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [bovine-store]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [rajm]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [download-station-api]: success
+[2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
+[2023-05-28 16:30:07] INFO root fetch - main [MainThread]: End processing [bovine-pubsub]: success
+[2023-05-28 16:30:07] INFO root fetch - main [MainThread]: Store serial: [18281404]
