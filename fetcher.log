@@ -8790,3 +8790,65 @@ EOFError: EOF read where object expected
 [2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [soccminer]: success
 [2023-05-28 19:44:52] INFO root fetch - main [MainThread]: End processing [django-plotly-dash]: success
 [2023-05-28 19:44:52] INFO root fetch - main [MainThread]: Store serial: [18282453]
+[2023-05-28 19:49:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282453]
+[2023-05-28 19:50:01] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lnschema_core
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: github-email-collector
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-chat-askgdpr
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: piccolo
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autonomy-dev
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chatcmd
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xarray-beam
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vitpose-infer
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aio-kong
+[2023-05-28 19:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: macrometa-source-snowflake
+[2023-05-28 19:50:01] INFO root fetch - processPackages [autonomy-dev]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-28 19:50:01] WARNING root fetch - processPackages [github-email-collector]: Skipping, unable to determine old version
+[2023-05-28 19:50:01] INFO root fetch - processPackages [github-email-collector]: Start processing: python-semantic-release
+[2023-05-28 19:50:01] INFO root fetch - main [MainThread]: End processing [github-email-collector] error
+[2023-05-28 19:50:01] INFO root fetch - processPackages [lnschema_core]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [chatcmd]: New version: [1.1.6] Old Version: [1.1.4]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [vitpose-infer]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [xarray-beam]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 19:50:01] WARNING root fetch - processPackages [streamlit-chat-askgdpr]: Skipping, unable to determine old version
+[2023-05-28 19:50:01] INFO root fetch - main [MainThread]: End processing [streamlit-chat-askgdpr] error
+[2023-05-28 19:50:01] INFO root fetch - processPackages [piccolo]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [aio-kong]: New version: [3.3.0] Old Version: [3.0.0]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [python-semantic-release]: New version: [8.0.0a5] Old Version: [8.0.0a4]
+[2023-05-28 19:50:01] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 19:50:01] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 19:50:01] INFO root fetch - processPackages [python-semantic-release]: executing diffoscope
+[2023-05-28 19:50:01] INFO root fetch - processPackages [python-semantic-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-semantic-release-8.0.0a4.tar.gz tmp/python-semantic-release-8.0.0a5.tar.gz --markdown 20230528/p/python-semantic-release/8.0.0a4-8.0.0a5/diff.md --exclude *.pyd
+[2023-05-28 19:50:01] INFO root fetch - processPackages [vitpose-infer]: Downloading https://files.pythonhosted.org/packages/16/f1/3fc3b1f59f150eb80ae0548d3e901a287402ff09290dcaa341cbe2d10ff6/vitpose_infer-0.1.0.tar.gz
+[2023-05-28 19:50:01] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/0b/db/83b3d601efb395e4ff62033daa87fbce529c3237561c5045954df254cefb/chatcmd-1.1.6.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [aio-kong]: Downloading https://files.pythonhosted.org/packages/d7/4d/98e5aac514732d1bffb4fa212aa90f156774069cfc0392c70e41de496965/aio_kong-3.0.0.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [autonomy-dev]: Downloading https://files.pythonhosted.org/packages/2a/42/ea649f258e678c27506163817240a8e9251ac74180b28a1748662b750d82/autonomy_dev-0.1.4.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [xarray-beam]: Downloading https://files.pythonhosted.org/packages/8c/d6/1452504fab48a6fbcbe272c25230e63602379c81d8c90bd2b01bbbdfa66d/xarray-beam-0.6.0.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.1.4.tar.gz tmp/chatcmd-1.1.6.tar.gz --markdown 20230528/c/chatcmd/1.1.4-1.1.6/diff.md --exclude *.pyd
+[2023-05-28 19:50:02] INFO root fetch - processPackages [autonomy-dev]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [autonomy-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomy_dev-0.1.3.tar.gz tmp/autonomy_dev-0.1.4.tar.gz --markdown 20230528/a/autonomy-dev/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 19:50:02] INFO root fetch - processPackages [aio-kong]: Downloading https://files.pythonhosted.org/packages/83/31/de95273c3148aaa1c0116240bd7fb81cf16d48edd1d9f59a9a81989ea42a/aio_kong-3.3.0.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [vitpose-infer]: Downloading https://files.pythonhosted.org/packages/e3/cc/b5b5047b32779bb18db2f767b95de8aaedfa169cde6697520e440d3bcd06/vitpose_infer-0.2.0.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [lnschema_core]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [lnschema_core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_core-0.8.1.tar.gz tmp/lnschema_core-0.9.0.tar.gz --markdown 20230528/l/lnschema_core/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 19:50:02] INFO root fetch - processPackages [piccolo]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [piccolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piccolo-0.98.0.tar.gz tmp/piccolo-0.99.0.tar.gz --markdown 20230528/p/piccolo/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-28 19:50:02] INFO root fetch - processPackages [aio-kong]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [aio-kong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_kong-3.0.0.tar.gz tmp/aio_kong-3.3.0.tar.gz --markdown 20230528/a/aio-kong/3.0.0-3.3.0/diff.md --exclude *.pyd
+[2023-05-28 19:50:02] INFO root fetch - processPackages [vitpose-infer]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [vitpose-infer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vitpose_infer-0.1.0.tar.gz tmp/vitpose_infer-0.2.0.tar.gz --markdown 20230528/v/vitpose-infer/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 19:50:02] INFO root fetch - processPackages [xarray-beam]: Downloading https://files.pythonhosted.org/packages/6e/fb/6716237b3d4443806b894137eb10c5652295d931d05dcf5fd0e07f820cca/xarray-beam-0.6.1.tar.gz
+[2023-05-28 19:50:02] INFO root fetch - processPackages [xarray-beam]: executing diffoscope
+[2023-05-28 19:50:02] INFO root fetch - processPackages [xarray-beam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xarray-beam-0.6.0.tar.gz tmp/xarray-beam-0.6.1.tar.gz --markdown 20230528/x/xarray-beam/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 19:50:03] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 19:50:03] INFO root fetch - main [MainThread]: End processing [autonomy-dev]: success
+[2023-05-28 19:50:03] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 19:50:03] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
+[2023-05-28 19:50:04] INFO root fetch - main [MainThread]: End processing [aio-kong]: success
+[2023-05-28 19:50:04] INFO root fetch - main [MainThread]: End processing [vitpose-infer]: success
+[2023-05-28 19:50:04] INFO root fetch - main [MainThread]: End processing [xarray-beam]: success
+[2023-05-28 19:50:05] INFO root fetch - main [MainThread]: End processing [piccolo]: success
+[2023-05-28 19:50:05] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
+[2023-05-28 19:50:05] INFO root fetch - main [MainThread]: Store serial: [18282493]
