@@ -2189,3 +2189,21 @@
 [2023-05-28 06:07:28] INFO root fetch - main [MainThread]: End processing [plotbitrate]: success
 [2023-05-28 06:07:29] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-28 06:07:29] INFO root fetch - main [MainThread]: Store serial: [18278409]
+[2023-05-28 06:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278409]
+[2023-05-28 06:12:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 06:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-fts
+[2023-05-28 06:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcod
+[2023-05-28 06:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phasellm
+[2023-05-28 06:12:38] WARNING root fetch - processPackages [yt-fts]: Skipping, unable to determine old version
+[2023-05-28 06:12:38] INFO root fetch - main [MainThread]: End processing [yt-fts] error
+[2023-05-28 06:12:38] INFO root fetch - processPackages [tcod]: New version: [9.3.0] Old Version: [9.2.5]
+[2023-05-28 06:12:38] INFO root fetch - processPackages [phasellm]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-28 06:12:38] INFO root fetch - processPackages [phasellm]: Downloading https://files.pythonhosted.org/packages/44/a4/333adbf3e55db32f332b83fe45ebe50c38f92fdf196422045fba2cebb14a/phasellm-0.0.6.tar.gz
+[2023-05-28 06:12:39] INFO root fetch - processPackages [tcod]: executing diffoscope
+[2023-05-28 06:12:39] INFO root fetch - processPackages [tcod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod-9.2.5.tar.gz tmp/tcod-9.3.0.tar.gz --markdown 20230528/t/tcod/9.2.5-9.3.0/diff.md --exclude *.pyd
+[2023-05-28 06:12:39] INFO root fetch - processPackages [phasellm]: Downloading https://files.pythonhosted.org/packages/3b/22/e3f99eb926f2052a73f3275dfb5bccb37eea2e4c66db48520857b8b6c796/phasellm-0.0.7.tar.gz
+[2023-05-28 06:12:39] INFO root fetch - processPackages [phasellm]: executing diffoscope
+[2023-05-28 06:12:39] INFO root fetch - processPackages [phasellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phasellm-0.0.6.tar.gz tmp/phasellm-0.0.7.tar.gz --markdown 20230528/p/phasellm/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-28 06:12:40] INFO root fetch - main [MainThread]: End processing [phasellm]: success
+[2023-05-28 06:12:47] INFO root fetch - main [MainThread]: End processing [tcod]: success
+[2023-05-28 06:12:47] INFO root fetch - main [MainThread]: Store serial: [18278432]
