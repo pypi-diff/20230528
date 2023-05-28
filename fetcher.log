@@ -2171,3 +2171,21 @@
 [2023-05-28 06:01:29] INFO root fetch - main [MainThread]: End processing [pyalarmdotcomajax]: success
 [2023-05-28 06:02:17] INFO root fetch - main [MainThread]: End processing [docspec-python]: success
 [2023-05-28 06:02:17] INFO root fetch - main [MainThread]: Store serial: [18278395]
+[2023-05-28 06:07:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278395]
+[2023-05-28 06:07:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 06:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx2tf
+[2023-05-28 06:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: look-like-scanned
+[2023-05-28 06:07:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plotbitrate
+[2023-05-28 06:07:26] WARNING root fetch - processPackages [look-like-scanned]: Skipping, unable to determine old version
+[2023-05-28 06:07:26] INFO root fetch - main [MainThread]: End processing [look-like-scanned] error
+[2023-05-28 06:07:26] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-28 06:07:26] INFO root fetch - processPackages [plotbitrate]: New version: [1.1.0.0] Old Version: [1.0.8.0]
+[2023-05-28 06:07:27] INFO root fetch - processPackages [plotbitrate]: Downloading https://files.pythonhosted.org/packages/71/ed/58eb1e16f8434cf672f83725a62693fde67abd2839e41616fa397d7f88fd/plotbitrate-1.0.8.0-py3-none-any.whl
+[2023-05-28 06:07:27] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-28 06:07:27] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230528/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-28 06:07:27] INFO root fetch - processPackages [plotbitrate]: Downloading https://files.pythonhosted.org/packages/f7/f2/39e6f58f93456e5223a4892da2db2e694e9ad467da7ecb07c170173670d4/plotbitrate-1.1.0.0-py3-none-any.whl
+[2023-05-28 06:07:27] INFO root fetch - processPackages [plotbitrate]: executing diffoscope
+[2023-05-28 06:07:27] INFO root fetch - processPackages [plotbitrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotbitrate-1.0.8.0-py3-none-any.whl.zip tmp/plotbitrate-1.1.0.0-py3-none-any.whl.zip --markdown 20230528/p/plotbitrate/1.0.8.0-1.1.0.0/diff.md --exclude *.pyd
+[2023-05-28 06:07:28] INFO root fetch - main [MainThread]: End processing [plotbitrate]: success
+[2023-05-28 06:07:29] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-28 06:07:29] INFO root fetch - main [MainThread]: Store serial: [18278409]
