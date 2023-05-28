@@ -1360,3 +1360,31 @@
 [2023-05-28 03:20:20] INFO root fetch - main [MainThread]: End processing [META-TOOLBOX]: success
 [2023-05-28 03:20:22] INFO root fetch - main [MainThread]: End processing [django-machina]: success
 [2023-05-28 03:20:22] INFO root fetch - main [MainThread]: Store serial: [18277867]
+[2023-05-28 03:25:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277867]
+[2023-05-28 03:25:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 03:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdfind2
+[2023-05-28 03:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-omnilogic-local
+[2023-05-28 03:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-nagabus
+[2023-05-28 03:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: json-work-manager
+[2023-05-28 03:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-lambda-subminute
+[2023-05-28 03:25:31] INFO root fetch - processPackages [rdfind2]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 03:25:31] INFO root fetch - processPackages [json-work-manager]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 03:25:31] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-28 03:25:31] WARNING root fetch - processPackages [nonebot-plugin-nagabus]: Skipping, unable to determine old version
+[2023-05-28 03:25:31] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nagabus] error
+[2023-05-28 03:25:31] INFO root fetch - processPackages [python-omnilogic-local]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-05-28 03:25:32] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-05-28 03:25:32] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230528/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-28 03:25:32] INFO root fetch - processPackages [rdfind2]: Downloading https://files.pythonhosted.org/packages/0c/17/47dae7689614e8cbad756974048df047ae33f8e001e3cec0f27693ce8f64/rdfind2-0.0.4.tar.gz
+[2023-05-28 03:25:32] INFO root fetch - processPackages [python-omnilogic-local]: Downloading https://files.pythonhosted.org/packages/ba/d3/83e4462f3a57858476f50873bccf7c0f2fd06157b7db4f921f8e319a9f59/python_omnilogic_local-0.4.0.tar.gz
+[2023-05-28 03:25:32] INFO root fetch - processPackages [rdfind2]: executing diffoscope
+[2023-05-28 03:25:32] INFO root fetch - processPackages [rdfind2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfind2-0.0.3.tar.gz tmp/rdfind2-0.0.4.tar.gz --markdown 20230528/r/rdfind2/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 03:25:32] INFO root fetch - processPackages [json-work-manager]: executing diffoscope
+[2023-05-28 03:25:32] INFO root fetch - processPackages [json-work-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json-work-manager-0.0.8.tar.gz tmp/json-work-manager-0.0.9.tar.gz --markdown 20230528/j/json-work-manager/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 03:25:32] INFO root fetch - processPackages [python-omnilogic-local]: executing diffoscope
+[2023-05-28 03:25:32] INFO root fetch - processPackages [python-omnilogic-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_omnilogic_local-0.3.4.tar.gz tmp/python_omnilogic_local-0.4.0.tar.gz --markdown 20230528/p/python-omnilogic-local/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 03:25:33] INFO root fetch - main [MainThread]: End processing [rdfind2]: success
+[2023-05-28 03:25:33] INFO root fetch - main [MainThread]: End processing [json-work-manager]: success
+[2023-05-28 03:25:33] INFO root fetch - main [MainThread]: End processing [python-omnilogic-local]: success
+[2023-05-28 03:25:33] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-05-28 03:25:33] INFO root fetch - main [MainThread]: Store serial: [18277884]
