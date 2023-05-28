@@ -9890,3 +9890,32 @@ EOFError: EOF read where object expected
 [2023-05-28 21:48:05] INFO root fetch - main [MainThread]: End processing [tcflow]: success
 [2023-05-28 21:48:26] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-28 21:48:26] INFO root fetch - main [MainThread]: Store serial: [18283197]
+[2023-05-28 21:53:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283197]
+[2023-05-28 21:53:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edaplore
+[2023-05-28 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ngscrape
+[2023-05-28 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mmit
+[2023-05-28 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lnschema_bionty
+[2023-05-28 21:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tcflow
+[2023-05-28 21:53:34] INFO root fetch - processPackages [edaplore]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-28 21:53:34] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 21:53:34] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-28 21:53:34] INFO root fetch - processPackages [mmit]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-05-28 21:53:34] WARNING root fetch - processPackages [ngscrape]: Skipping, unable to determine old version
+[2023-05-28 21:53:34] INFO root fetch - main [MainThread]: End processing [ngscrape] error
+[2023-05-28 21:53:35] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-05-28 21:53:35] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230528/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 21:53:35] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-28 21:53:35] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230528/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 21:53:35] INFO root fetch - processPackages [mmit]: Downloading https://files.pythonhosted.org/packages/83/d3/7e14476800de863975fe9f2e3754a4e297618f1cd9433a950827da62f5a8/mmit-0.4.1.tar.gz
+[2023-05-28 21:53:35] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/f9/cd/79b099939eba1071ac46435a2b2bab1bbaa5475bf961a7d98dd3586a3a57/edaplore-0.2.3.tar.gz
+[2023-05-28 21:53:35] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-28 21:53:35] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.2.2.tar.gz tmp/edaplore-0.2.3.tar.gz --markdown 20230528/e/edaplore/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-28 21:53:35] INFO root fetch - processPackages [mmit]: Downloading https://files.pythonhosted.org/packages/40/fa/ff1700272f7160835a25cbadbeef99510e61b0f9f45989d9a6cb1fd6ffbd/mmit-0.5.0.tar.gz
+[2023-05-28 21:53:35] INFO root fetch - processPackages [mmit]: executing diffoscope
+[2023-05-28 21:53:35] INFO root fetch - processPackages [mmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmit-0.4.1.tar.gz tmp/mmit-0.5.0.tar.gz --markdown 20230528/m/mmit/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-05-28 21:53:36] INFO root fetch - main [MainThread]: End processing [tcflow]: success
+[2023-05-28 21:53:36] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-28 21:53:36] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-28 21:53:36] INFO root fetch - main [MainThread]: End processing [mmit]: success
+[2023-05-28 21:53:36] INFO root fetch - main [MainThread]: Store serial: [18283216]
