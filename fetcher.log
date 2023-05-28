@@ -9731,3 +9731,37 @@ EOFError: EOF read where object expected
 [2023-05-28 21:26:57] INFO root fetch - main [MainThread]: End processing [python-tools-scripts]: success
 [2023-05-28 21:27:18] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-28 21:27:18] INFO root fetch - main [MainThread]: Store serial: [18283067]
+[2023-05-28 21:32:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283067]
+[2023-05-28 21:32:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 21:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poe-cli
+[2023-05-28 21:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dgex
+[2023-05-28 21:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scikit-net
+[2023-05-28 21:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lief
+[2023-05-28 21:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: secat
+[2023-05-28 21:32:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AoiPy
+[2023-05-28 21:32:27] INFO root fetch - processPackages [AoiPy]: New version: [0.9.17] Old Version: [0.9.16]
+[2023-05-28 21:32:27] WARNING root fetch - processPackages [dgex]: Skipping, unable to determine old version
+[2023-05-28 21:32:27] INFO root fetch - main [MainThread]: End processing [dgex] error
+[2023-05-28 21:32:27] INFO root fetch - processPackages [scikit-net]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 21:32:27] WARNING root fetch - processPackages [poe-cli]: Skipping, unable to determine old version
+[2023-05-28 21:32:27] INFO root fetch - main [MainThread]: End processing [poe-cli] error
+[2023-05-28 21:32:27] INFO root fetch - processPackages [secat]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-28 21:32:27] INFO root fetch - processPackages [lief]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-28 21:32:27] INFO root fetch - processPackages [AoiPy]: executing diffoscope
+[2023-05-28 21:32:27] INFO root fetch - processPackages [AoiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoiPy-0.9.16-py3-none-any.whl.zip tmp/AoiPy-0.9.17-py3-none-any.whl.zip --markdown 20230528/A/AoiPy/0.9.16-0.9.17/diff.md --exclude *.pyd
+[2023-05-28 21:32:27] INFO root fetch - processPackages [secat]: Downloading https://files.pythonhosted.org/packages/8a/37/8ea2da98e966f0e94166fcfdfa21507631d96d30171bb6e570421da7eb7b/secat-1.1.4.tar.gz
+[2023-05-28 21:32:27] INFO root fetch - processPackages [scikit-net]: Downloading https://files.pythonhosted.org/packages/67/a4/409481b906c0abebeddfa2f3bb4db38f2d5b06c95bd9e7104fbd605b998f/scikit-net-0.0.4.tar.gz
+[2023-05-28 21:32:27] INFO root fetch - processPackages [lief]: Downloading https://files.pythonhosted.org/packages/bc/71/447eb3ac7e942cec17c065100931e5f3d3a11428fae686b01a2d7d2da746/lief-0.8.3.post3.zip
+[2023-05-28 21:32:27] INFO root fetch - processPackages [scikit-net]: executing diffoscope
+[2023-05-28 21:32:27] INFO root fetch - processPackages [scikit-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-net-0.0.3.tar.gz tmp/scikit-net-0.0.4.tar.gz --markdown 20230528/s/scikit-net/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 21:32:27] INFO root fetch - processPackages [secat]: Downloading https://files.pythonhosted.org/packages/4c/a8/753fa6df69eef2c6075b22f32acd21bc55cd9b1d40dac55336f6eef65695/secat-1.1.5.tar.gz
+[2023-05-28 21:32:27] INFO root fetch - processPackages [lief]: Downloading https://files.pythonhosted.org/packages/cd/0e/0d6f3357975dd1530aeb4b4a84a99d493775391758378fb5109f47b613f9/lief-0.9.0.zip
+[2023-05-28 21:32:27] INFO root fetch - processPackages [secat]: executing diffoscope
+[2023-05-28 21:32:27] INFO root fetch - processPackages [secat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secat-1.1.4.tar.gz tmp/secat-1.1.5.tar.gz --markdown 20230528/s/secat/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-28 21:32:27] INFO root fetch - processPackages [lief]: executing diffoscope
+[2023-05-28 21:32:27] INFO root fetch - processPackages [lief]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lief-0.8.3.post3.zip tmp/lief-0.9.0.zip --markdown 20230528/l/lief/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 21:32:28] INFO root fetch - main [MainThread]: End processing [AoiPy]: success
+[2023-05-28 21:32:28] INFO root fetch - main [MainThread]: End processing [scikit-net]: success
+[2023-05-28 21:32:28] INFO root fetch - main [MainThread]: End processing [lief]: success
+[2023-05-28 21:32:29] INFO root fetch - main [MainThread]: End processing [secat]: success
+[2023-05-28 21:32:29] INFO root fetch - main [MainThread]: Store serial: [18283108]
