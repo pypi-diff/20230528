@@ -2908,3 +2908,23 @@
 [2023-05-28 08:26:19] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
 [2023-05-28 08:27:08] INFO root fetch - main [MainThread]: End processing [ms-entropy]: success
 [2023-05-28 08:27:08] INFO root fetch - main [MainThread]: Store serial: [18278844]
+[2023-05-28 08:32:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278844]
+[2023-05-28 08:32:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 08:32:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-random-draw
+[2023-05-28 08:32:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qontract-reconcile
+[2023-05-28 08:32:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clust-learn
+[2023-05-28 08:32:18] INFO root fetch - processPackages [nonebot-plugin-random-draw]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 08:32:18] INFO root fetch - processPackages [clust-learn]: New version: [0.2.0b0] Old Version: [0.2.0.3]
+[2023-05-28 08:32:18] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-05-28 08:32:18] INFO root fetch - processPackages [nonebot-plugin-random-draw]: Downloading https://files.pythonhosted.org/packages/0c/03/4adadebd0b88d68f4e77bd9e4356d7347f7c424945773e18096668938ef4/nonebot_plugin_random_draw-0.0.1.tar.gz
+[2023-05-28 08:32:18] INFO root fetch - processPackages [clust-learn]: executing diffoscope
+[2023-05-28 08:32:18] INFO root fetch - processPackages [clust-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clust-learn-0.2.0.3.tar.gz tmp/clust-learn-0.2.0b0.tar.gz --markdown 20230528/c/clust-learn/0.2.0.3-0.2.0b0/diff.md --exclude *.pyd
+[2023-05-28 08:32:18] INFO root fetch - processPackages [nonebot-plugin-random-draw]: Downloading https://files.pythonhosted.org/packages/23/0a/f529815de5e8749ca42e85adbb2aed5492bccf7d00eb151e2fb5649acfb4/nonebot_plugin_random_draw-0.0.2.tar.gz
+[2023-05-28 08:32:18] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-05-28 08:32:18] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230528/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-05-28 08:32:18] INFO root fetch - processPackages [nonebot-plugin-random-draw]: executing diffoscope
+[2023-05-28 08:32:18] INFO root fetch - processPackages [nonebot-plugin-random-draw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_random_draw-0.0.1.tar.gz tmp/nonebot_plugin_random_draw-0.0.2.tar.gz --markdown 20230528/n/nonebot-plugin-random-draw/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 08:32:19] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
+[2023-05-28 08:32:19] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-random-draw]: success
+[2023-05-28 08:32:25] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-05-28 08:32:25] INFO root fetch - main [MainThread]: Store serial: [18278852]
