@@ -3442,3 +3442,26 @@
 [2023-05-28 09:53:41] INFO root fetch - main [MainThread]: End processing [metaindex]: success
 [2023-05-28 09:53:43] INFO root fetch - main [MainThread]: End processing [otpme]: success
 [2023-05-28 09:53:43] INFO root fetch - main [MainThread]: Store serial: [18279196]
+[2023-05-28 09:58:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279196]
+[2023-05-28 09:58:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 09:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mofmt
+[2023-05-28 09:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bibigo
+[2023-05-28 09:58:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SunNeurons
+[2023-05-28 09:58:52] INFO root fetch - processPackages [SunNeurons]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 09:58:52] INFO root fetch - processPackages [bibigo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 09:58:52] INFO root fetch - processPackages [mofmt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 09:58:52] INFO root fetch - processPackages [bibigo]: Downloading https://files.pythonhosted.org/packages/0c/99/8b244a95eb5509d5ad4ae7b4cee2f123b8f5e870ce70a964f35bd28d000f/bibigo-0.0.1.tar.gz
+[2023-05-28 09:58:52] INFO root fetch - processPackages [mofmt]: Downloading https://files.pythonhosted.org/packages/a0/2c/55bca5720281a74e1af2e38f4071fc1d6e267fc7fe428c7cf127797b12c8/mofmt-0.1.0-py3-none-any.whl
+[2023-05-28 09:58:52] INFO root fetch - processPackages [SunNeurons]: Downloading https://files.pythonhosted.org/packages/d4/ed/995b6688751950464f7075d603f68106fc26de3d5500b2f98279aa1f2da4/SunNeurons-0.0.3.tar.gz
+[2023-05-28 09:58:52] INFO root fetch - processPackages [SunNeurons]: executing diffoscope
+[2023-05-28 09:58:52] INFO root fetch - processPackages [SunNeurons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SunNeurons-0.0.2.tar.gz tmp/SunNeurons-0.0.3.tar.gz --markdown 20230528/S/SunNeurons/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 09:58:52] INFO root fetch - processPackages [bibigo]: Downloading https://files.pythonhosted.org/packages/54/14/6b9df2fe36ea95313432a25c3fd24fddf022d6941a0d49622d9386e76887/bibigo-0.0.2.tar.gz
+[2023-05-28 09:58:52] INFO root fetch - processPackages [mofmt]: Downloading https://files.pythonhosted.org/packages/68/99/958b4d8d87e7e42d50136f036aed9c0fdc7aebf38aa98cd55e7fbb5ab20c/mofmt-0.1.1-py3-none-any.whl
+[2023-05-28 09:58:52] INFO root fetch - processPackages [bibigo]: executing diffoscope
+[2023-05-28 09:58:52] INFO root fetch - processPackages [bibigo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibigo-0.0.1.tar.gz tmp/bibigo-0.0.2.tar.gz --markdown 20230528/b/bibigo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 09:58:52] INFO root fetch - processPackages [mofmt]: executing diffoscope
+[2023-05-28 09:58:52] INFO root fetch - processPackages [mofmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mofmt-0.1.0-py3-none-any.whl.zip tmp/mofmt-0.1.1-py3-none-any.whl.zip --markdown 20230528/m/mofmt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 09:58:53] INFO root fetch - main [MainThread]: End processing [SunNeurons]: success
+[2023-05-28 09:58:53] INFO root fetch - main [MainThread]: End processing [mofmt]: success
+[2023-05-28 09:58:53] INFO root fetch - main [MainThread]: End processing [bibigo]: success
+[2023-05-28 09:58:53] INFO root fetch - main [MainThread]: Store serial: [18279204]
