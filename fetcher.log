@@ -9990,3 +9990,71 @@ EOFError: EOF read where object expected
 [2023-05-28 22:09:08] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.4.9991.tar.gz tmp/spotON_sdk-0.0.5.tar.gz --markdown 20230528/s/spotON_sdk/0.0.4.9991-0.0.5/diff.md --exclude *.pyd
 [2023-05-28 22:09:09] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
 [2023-05-28 22:09:09] INFO root fetch - main [MainThread]: Store serial: [18283254]
+[2023-05-28 22:14:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283254]
+[2023-05-28 22:14:17] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ot-my-libs
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlightRadarAPI
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: always-updates
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim-ui
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jiggle-version
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphscope
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pydoc-fork
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aim
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: graphscope-client
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: animedata
+[2023-05-28 22:14:17] INFO root fetch - processPackages [FlightRadarAPI]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [graphscope]: New version: [0.22.0a20230528] Old Version: [0.22.0a20230527]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [pydoc-fork]: New version: [3.2.0] Old Version: [3.1.9]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [ot-my-libs]: New version: [0.0.12] Old Version: [0.0.11]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0a2] Old Version: [4.0.0a1]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [jiggle-version]: New version: [1.1.0] Old Version: [1.0.77]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [animedata]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [graphscope-client]: New version: [0.22.0a20230528] Old Version: [0.22.0a20230527]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [aim]: New version: [4.0.0a2] Old Version: [4.0.0a1]
+[2023-05-28 22:14:17] INFO root fetch - processPackages [FlightRadarAPI]: Downloading https://files.pythonhosted.org/packages/52/13/51e350f4aba9a9bc8c8b34ff07535fb341946605d59cedb7afb91be32580/FlightRadarAPI-1.2.7.tar.gz
+[2023-05-28 22:14:17] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/35/d8/e7951d85de04b6a3d2279e4780a3d067e58c136fed0278bb24acfbe56c2f/aim-ui-4.0.0a1.tar.gz
+[2023-05-28 22:14:17] INFO root fetch - processPackages [pydoc-fork]: Downloading https://files.pythonhosted.org/packages/32/ba/98daba0fbead37f6f51f2015949d45fd2152123065f163b76953ba1ed5de/pydoc_fork-3.1.9-py3-none-any.whl
+[2023-05-28 22:14:18] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 20219507>=10485760
+[2023-05-28 22:14:18] INFO root fetch - processPackages [aim-ui]: Start processing: gs-apps
+[2023-05-28 22:14:18] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-05-28 22:14:18] INFO root fetch - processPackages [animedata]: Downloading https://files.pythonhosted.org/packages/6b/33/472b078162fe524b87094d03f01e988527719b5791870af8ee29a4541949/animedata-0.3.3.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [ot-my-libs]: Downloading https://files.pythonhosted.org/packages/27/62/cab5ca8db5e9b53cea7e0ba3be22a8b0be81e949218423ef56455c699eb7/ot_my_libs-0.0.11.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [jiggle-version]: Downloading https://files.pythonhosted.org/packages/c9/76/7d487e4ef360ebe23478b2f493c58948da5abb89e0cd5b74cc2a80ab7ee1/jiggle_version-1.0.77-py3-none-any.whl
+[2023-05-28 22:14:18] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-28 22:14:18] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/63/ce/6bc403ca4bb17c4baf0eaffc1cd3d0246b440e2206d8f3d53240c9f2497e/graphscope-0.22.0a20230527-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 22:14:18] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/c7/dc/16f0c1193c6d5eb072cede124447ed46110180b5123d3238fb241e476b8d/graphscope_client-0.22.0a20230527-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 22:14:18] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 136753924>=10485760
+[2023-05-28 22:14:18] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2023-05-28 22:14:18] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 63661869>=10485760
+[2023-05-28 22:14:18] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-05-28 22:14:18] INFO root fetch - processPackages [FlightRadarAPI]: Downloading https://files.pythonhosted.org/packages/d6/74/5b30e45a4e2ecfd2917d7d91666ead77e789968a6faa3f4131d1c7f3dc35/FlightRadarAPI-1.2.8.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/05/e6/38fcd22366ff9385bb3ff9377bfe0f5c8eda65e3c3bf3da1a9264b38c392/gs_apps-0.22.0a20230526-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 22:14:18] INFO root fetch - processPackages [pydoc-fork]: Downloading https://files.pythonhosted.org/packages/bb/af/17b026466ee6193922ea7257c2b92b7a763d7a9abdbbb094b5f0a529b6d0/pydoc_fork-3.2.0.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230528/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-28 22:14:18] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47797577>=10485760
+[2023-05-28 22:14:18] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-05-28 22:14:18] INFO root fetch - processPackages [jiggle-version]: Downloading https://files.pythonhosted.org/packages/d2/46/2f3e472d2982c20d0ab6f713bfd2cb3f04886220e7173c803e5e49345a6f/jiggle_version-1.1.0.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [ot-my-libs]: Downloading https://files.pythonhosted.org/packages/57/5f/c0e8e54de3accc3c9a19a90ecbacc74ce2eff49929df530f2a8ad04df1b3/ot_my_libs-0.0.12.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [animedata]: Downloading https://files.pythonhosted.org/packages/83/93/c5e4da99544855f704bed4fd48010f2ed47640c0dacb2bea95fe95608eb3/animedata-0.3.4.tar.gz
+[2023-05-28 22:14:18] INFO root fetch - processPackages [FlightRadarAPI]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [FlightRadarAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlightRadarAPI-1.2.7.tar.gz tmp/FlightRadarAPI-1.2.8.tar.gz --markdown 20230528/F/FlightRadarAPI/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-28 22:14:18] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0a1.tar.gz tmp/aim-4.0.0a2.tar.gz --markdown 20230528/a/aim/4.0.0a1-4.0.0a2/diff.md --exclude *.pyd
+[2023-05-28 22:14:18] INFO root fetch - processPackages [pydoc-fork]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [pydoc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydoc_fork-3.1.9-py3-none-any.whl.zip tmp/pydoc_fork-3.2.0.tar.gz --markdown 20230528/p/pydoc-fork/3.1.9-3.2.0/diff.md --exclude *.pyd
+[2023-05-28 22:14:18] INFO root fetch - processPackages [jiggle-version]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [jiggle-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiggle_version-1.0.77-py3-none-any.whl.zip tmp/jiggle_version-1.1.0.tar.gz --markdown 20230528/j/jiggle-version/1.0.77-1.1.0/diff.md --exclude *.pyd
+[2023-05-28 22:14:18] INFO root fetch - processPackages [ot-my-libs]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [ot-my-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ot_my_libs-0.0.11.tar.gz tmp/ot_my_libs-0.0.12.tar.gz --markdown 20230528/o/ot-my-libs/0.0.11-0.0.12/diff.md --exclude *.pyd
+[2023-05-28 22:14:18] INFO root fetch - processPackages [animedata]: executing diffoscope
+[2023-05-28 22:14:18] INFO root fetch - processPackages [animedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animedata-0.3.3.tar.gz tmp/animedata-0.3.4.tar.gz --markdown 20230528/a/animedata/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-28 22:14:19] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-28 22:14:19] INFO root fetch - main [MainThread]: End processing [pydoc-fork]: success
+[2023-05-28 22:14:19] INFO root fetch - main [MainThread]: End processing [FlightRadarAPI]: success
+[2023-05-28 22:14:19] INFO root fetch - main [MainThread]: End processing [jiggle-version]: success
+[2023-05-28 22:14:19] INFO root fetch - main [MainThread]: End processing [animedata]: success
+[2023-05-28 22:14:20] INFO root fetch - main [MainThread]: End processing [ot-my-libs]: success
+[2023-05-28 22:14:26] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-05-28 22:14:26] INFO root fetch - main [MainThread]: Store serial: [18283291]
