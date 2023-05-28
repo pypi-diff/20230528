@@ -1648,3 +1648,23 @@
 [2023-05-28 03:59:28] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
 [2023-05-28 03:59:30] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
 [2023-05-28 03:59:30] INFO root fetch - main [MainThread]: Store serial: [18278013]
+[2023-05-28 04:04:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278013]
+[2023-05-28 04:04:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 04:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: viser
+[2023-05-28 04:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-majsoul
+[2023-05-28 04:04:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoprof
+[2023-05-28 04:04:39] INFO root fetch - processPackages [nonebot-plugin-majsoul]: New version: [0.2.0.post3] Old Version: [0.2.0.post2]
+[2023-05-28 04:04:39] INFO root fetch - processPackages [viser]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 04:04:39] INFO root fetch - processPackages [autoprof]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-05-28 04:04:39] INFO root fetch - processPackages [nonebot-plugin-majsoul]: Downloading https://files.pythonhosted.org/packages/03/76/9ac8cb1ec9eb661ace02f294e1947cd052468fa8c604f9f858a56b2b55d9/nonebot_plugin_majsoul-0.2.0.post3.tar.gz
+[2023-05-28 04:04:39] INFO root fetch - processPackages [nonebot-plugin-majsoul]: executing diffoscope
+[2023-05-28 04:04:39] INFO root fetch - processPackages [nonebot-plugin-majsoul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_majsoul-0.2.0.post2.tar.gz tmp/nonebot_plugin_majsoul-0.2.0.post3.tar.gz --markdown 20230528/n/nonebot-plugin-majsoul/0.2.0.post2-0.2.0.post3/diff.md --exclude *.pyd
+[2023-05-28 04:04:39] INFO root fetch - processPackages [viser]: executing diffoscope
+[2023-05-28 04:04:39] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.0.8.tar.gz tmp/viser-0.0.9.tar.gz --markdown 20230528/v/viser/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 04:04:39] INFO root fetch - processPackages [autoprof]: Downloading https://files.pythonhosted.org/packages/2e/3a/489acc9ea5f7f48e6e4b837ce0d7e472df606f56037efc34ca7094d61db4/autoprof-0.8.0-py2.py3-none-any.whl
+[2023-05-28 04:04:39] INFO root fetch - processPackages [autoprof]: executing diffoscope
+[2023-05-28 04:04:39] INFO root fetch - processPackages [autoprof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoprof-0.7.3-py2.py3-none-any.whl.zip tmp/autoprof-0.8.0-py2.py3-none-any.whl.zip --markdown 20230528/a/autoprof/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-05-28 04:04:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-majsoul]: success
+[2023-05-28 04:04:41] INFO root fetch - main [MainThread]: End processing [autoprof]: success
+[2023-05-28 04:07:07] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2023-05-28 04:07:07] INFO root fetch - main [MainThread]: Store serial: [18278023]
