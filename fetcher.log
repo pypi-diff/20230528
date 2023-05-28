@@ -1998,3 +1998,57 @@
 [2023-05-28 05:20:10] INFO root fetch - main [MainThread]: End processing [s27a-jbq]: success
 [2023-05-28 05:20:11] INFO root fetch - main [MainThread]: End processing [mcnets]: success
 [2023-05-28 05:20:11] INFO root fetch - main [MainThread]: Store serial: [18278296]
+[2023-05-28 05:25:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278296]
+[2023-05-28 05:25:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: czsc
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ifastapi
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poe-api
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyttsx4
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: databind
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: databind.core
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: databind.json
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: easymms
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.5] Old Version: [0.0.3.4]
+[2023-05-28 05:25:21] INFO root fetch - processPackages [poe-api]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-28 05:25:21] INFO root fetch - processPackages [czsc]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-28 05:25:21] INFO root fetch - processPackages [pyttsx4]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-28 05:25:21] WARNING root fetch - processPackages [easymms]: Skipping, unable to determine old version
+[2023-05-28 05:25:21] INFO root fetch - processPackages [databind.core]: New version: [4.2.6] Old Version: [4.2.5]
+[2023-05-28 05:25:21] INFO root fetch - main [MainThread]: End processing [easymms] error
+[2023-05-28 05:25:21] INFO root fetch - processPackages [databind]: New version: [4.2.6] Old Version: [4.2.5]
+[2023-05-28 05:25:21] INFO root fetch - processPackages [databind.json]: New version: [4.2.6] Old Version: [4.2.5]
+[2023-05-28 05:25:21] INFO root fetch - processPackages [databind.core]: Downloading https://files.pythonhosted.org/packages/14/2c/f02270076e012b29d79264ca9e3cad4d5140bf924f93e96105cc9277351a/databind.core-4.2.5.tar.gz
+[2023-05-28 05:25:21] INFO root fetch - processPackages [pyttsx4]: Downloading https://files.pythonhosted.org/packages/dd/de/26b39dd5fed630ddc10980a3093173d56f7db5dc952f2b7a56690f60e300/pyttsx4-3.0.8-py3-none-any.whl
+[2023-05-28 05:25:21] INFO root fetch - processPackages [poe-api]: Downloading https://files.pythonhosted.org/packages/ee/c6/136acbcce3a127aa7fbe44298b8a05469e9c67478ff66143d79511e0d75f/poe_api-0.3.1-py3-none-any.whl
+[2023-05-28 05:25:21] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/ff/64/49e6809b474049632717e96f3a51bcdab728d63517d8ec0eb228e09ad52d/czsc-0.9.8.tar.gz
+[2023-05-28 05:25:21] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/77/8b/3f30c986de9e90b72f7d42f4f6fff88cbc09f0bbbf94c5bc178926e5abe6/databind-4.2.5.tar.gz
+[2023-05-28 05:25:21] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/96/01/882ec5b4efe35ac08f92605f8453f0922469fd1c56e2683e48605e150e8f/ifastapi-0.0.3.5-py3-none-any.whl
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.json]: Downloading https://files.pythonhosted.org/packages/83/95/d2a4d0aa13d31730efc368bc7c1b85cc6839eb60cf0cbcfd77e0e8f8b1e3/databind.json-4.2.5.tar.gz
+[2023-05-28 05:25:22] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.4-py3-none-any.whl.zip tmp/ifastapi-0.0.3.5-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.4-0.0.3.5/diff.md --exclude *.pyd
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.core]: Downloading https://files.pythonhosted.org/packages/08/70/58e8f4e4b23e8073528c4e63832fe7db25078772b63aa539f3a16cba9bfb/databind.core-4.2.6.tar.gz
+[2023-05-28 05:25:22] INFO root fetch - processPackages [poe-api]: Downloading https://files.pythonhosted.org/packages/cd/60/434c465508fdf2b44f922a62ffa78d95d42907f3689ec6f740ca3c4d427b/poe_api-0.4.0-py3-none-any.whl
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.core]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.core-4.2.5.tar.gz tmp/databind.core-4.2.6.tar.gz --markdown 20230528/d/databind.core/4.2.5-4.2.6/diff.md --exclude *.pyd
+[2023-05-28 05:25:22] INFO root fetch - processPackages [pyttsx4]: Downloading https://files.pythonhosted.org/packages/2a/ee/0e644ebf5b6bccad1a1ec24ecdb41ac104667d81bd2b27df29d036edd58a/pyttsx4-3.0.9-py3-none-any.whl
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.json]: Downloading https://files.pythonhosted.org/packages/85/c1/32fe2d545a9e8435d6ba6f4a518291761660bbf46c9a76913befd1edd47d/databind.json-4.2.6.tar.gz
+[2023-05-28 05:25:22] INFO root fetch - processPackages [poe-api]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.3.1-py3-none-any.whl.zip tmp/poe_api-0.4.0-py3-none-any.whl.zip --markdown 20230528/p/poe-api/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 05:25:22] INFO root fetch - processPackages [pyttsx4]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [pyttsx4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttsx4-3.0.8-py3-none-any.whl.zip tmp/pyttsx4-3.0.9-py3-none-any.whl.zip --markdown 20230528/p/pyttsx4/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind]: Downloading https://files.pythonhosted.org/packages/5b/c9/bb2f84f5c2ce9c9db0dc396bb97f1f730dba47bc7bdc857c2d31061e0b85/databind-4.2.6.tar.gz
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.json]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind.json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind.json-4.2.5.tar.gz tmp/databind.json-4.2.6.tar.gz --markdown 20230528/d/databind.json/4.2.5-4.2.6/diff.md --exclude *.pyd
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [databind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databind-4.2.5.tar.gz tmp/databind-4.2.6.tar.gz --markdown 20230528/d/databind/4.2.5-4.2.6/diff.md --exclude *.pyd
+[2023-05-28 05:25:22] INFO root fetch - processPackages [czsc]: Downloading https://files.pythonhosted.org/packages/65/2a/c6b0017939d88546e65732fc499326433b075adecda347c5aca412e4fe77/czsc-0.9.9.tar.gz
+[2023-05-28 05:25:22] INFO root fetch - processPackages [czsc]: executing diffoscope
+[2023-05-28 05:25:22] INFO root fetch - processPackages [czsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czsc-0.9.8.tar.gz tmp/czsc-0.9.9.tar.gz --markdown 20230528/c/czsc/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-28 05:25:23] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 05:25:23] INFO root fetch - main [MainThread]: End processing [databind]: success
+[2023-05-28 05:25:23] INFO root fetch - main [MainThread]: End processing [databind.core]: success
+[2023-05-28 05:25:23] INFO root fetch - main [MainThread]: End processing [databind.json]: success
+[2023-05-28 05:25:23] INFO root fetch - main [MainThread]: End processing [pyttsx4]: success
+[2023-05-28 05:25:23] INFO root fetch - main [MainThread]: End processing [poe-api]: success
+[2023-05-28 05:25:24] INFO root fetch - main [MainThread]: End processing [czsc]: success
+[2023-05-28 05:25:24] INFO root fetch - main [MainThread]: Store serial: [18278324]
