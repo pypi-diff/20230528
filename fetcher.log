@@ -4608,3 +4608,62 @@
 [2023-05-28 12:18:44] INFO root fetch - main [MainThread]: End processing [battle-cats-save-editor]: success
 [2023-05-28 12:19:36] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-28 12:19:36] INFO root fetch - main [MainThread]: Store serial: [18279917]
+[2023-05-28 12:24:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279917]
+[2023-05-28 12:24:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-option-menu
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ogc-na
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dscan-api-client
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-rename
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: font-CLI
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: projen
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: animetime
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qmuvi
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pepperize.cdk-route53-health-check
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-rename]: New version: [1.3.5] Old Version: [1.3.0]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [streamlit-option-menu]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ogc-na]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [qmuvi]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [animetime]: New version: [0.2] Old Version: [0.1.6]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [font-CLI]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/23/64/b54c562b0b8376f851ae6cc48e510e663866a5635b4e2c97ea87e6a5bee8/nonebot_plugin_stable_diffusion_diao-0.1.1.tar.gz
+[2023-05-28 12:24:45] INFO root fetch - processPackages [qmuvi]: Downloading https://files.pythonhosted.org/packages/41/a2/43cb666c027ff22def91110202cecd147bde26f4d0025ff6c3b284d07b9b/qmuvi-0.1.1.tar.gz
+[2023-05-28 12:24:45] INFO root fetch - processPackages [animetime]: Downloading https://files.pythonhosted.org/packages/3b/2e/24350bfd135e7799fabfad472b51e825bd46c39c514c09dd4585fb4a07fa/animetime-0.1.6.tar.gz
+[2023-05-28 12:24:45] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-28 12:24:45] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230528/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-28 12:24:45] WARNING root fetch - processPackages [qmuvi]: Skipping package: exceeds size limit 31131222>=10485760
+[2023-05-28 12:24:45] INFO root fetch - main [MainThread]: End processing [qmuvi] error
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/58/f2/42c48957542c74b32908f29100db55aecf7d609e7e05a94bb02042331a58/nonebot_plugin_stable_diffusion_diao-0.1.2.tar.gz
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ogc-na]: executing diffoscope
+[2023-05-28 12:24:45] INFO root fetch - processPackages [ogc-na]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogc_na-0.2.8.tar.gz tmp/ogc_na-0.2.9.tar.gz --markdown 20230528/o/ogc-na/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-rename]: Downloading https://files.pythonhosted.org/packages/43/53/e70d727ef86a4c8af2d73085b569551e99c5a9e601211f251fed9d1f588c/nonebot_plugin_rename-1.3.5.tar.gz
+[2023-05-28 12:24:45] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-28 12:24:45] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.8-py3-none-any.whl.zip tmp/dscan_api_client-1.0.9-py3-none-any.whl.zip --markdown 20230528/d/dscan-api-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 12:24:45] INFO root fetch - processPackages [streamlit-option-menu]: Downloading https://files.pythonhosted.org/packages/f4/f3/bdf4504f2a2a7e7f0fbd6bcfafeb2819630844c2b835a36b735eb5006588/streamlit-option-menu-0.3.5.tar.gz
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: executing diffoscope
+[2023-05-28 12:24:45] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_stable_diffusion_diao-0.1.1.tar.gz tmp/nonebot_plugin_stable_diffusion_diao-0.1.2.tar.gz --markdown 20230528/n/nonebot-plugin-stable-diffusion-diao/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 12:24:45] INFO root fetch - processPackages [font-CLI]: executing diffoscope
+[2023-05-28 12:24:45] INFO root fetch - processPackages [font-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/font-CLI-0.9.8.tar.gz tmp/font-CLI-0.9.9.tar.gz --markdown 20230528/f/font-CLI/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-28 12:24:46] INFO root fetch - processPackages [animetime]: Downloading https://files.pythonhosted.org/packages/c1/19/7fafd025e3d04183c2eb2473b0d067807188b134cc3e047ce4b7cb1c4e2d/animetime-0.2.tar.gz
+[2023-05-28 12:24:46] INFO root fetch - processPackages [streamlit-option-menu]: executing diffoscope
+[2023-05-28 12:24:46] INFO root fetch - processPackages [streamlit-option-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-option-menu-0.3.4.tar.gz tmp/streamlit-option-menu-0.3.5.tar.gz --markdown 20230528/s/streamlit-option-menu/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-28 12:24:46] INFO root fetch - processPackages [animetime]: executing diffoscope
+[2023-05-28 12:24:46] INFO root fetch - processPackages [animetime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animetime-0.1.6.tar.gz tmp/animetime-0.2.tar.gz --markdown 20230528/a/animetime/0.1.6-0.2/diff.md --exclude *.pyd
+[2023-05-28 12:24:46] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: executing diffoscope
+[2023-05-28 12:24:46] INFO root fetch - processPackages [pepperize.cdk-route53-health-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-route53-health-check-0.0.98.tar.gz tmp/pepperize.cdk-route53-health-check-0.0.99.tar.gz --markdown 20230528/p/pepperize.cdk-route53-health-check/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 12:24:46] INFO root fetch - processPackages [nonebot-plugin-rename]: executing diffoscope
+[2023-05-28 12:24:46] INFO root fetch - processPackages [nonebot-plugin-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_rename-1.3.0.tar.gz tmp/nonebot_plugin_rename-1.3.5.tar.gz --markdown 20230528/n/nonebot-plugin-rename/1.3.0-1.3.5/diff.md --exclude *.pyd
+[2023-05-28 12:24:47] INFO root fetch - main [MainThread]: End processing [ogc-na]: success
+[2023-05-28 12:24:47] INFO root fetch - main [MainThread]: End processing [animetime]: success
+[2023-05-28 12:24:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
+[2023-05-28 12:24:47] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-28 12:24:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-rename]: success
+[2023-05-28 12:24:47] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-28 12:24:49] INFO root fetch - main [MainThread]: End processing [font-CLI]: success
+[2023-05-28 12:24:49] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-route53-health-check]: success
+[2023-05-28 12:24:50] INFO root fetch - main [MainThread]: End processing [streamlit-option-menu]: success
+[2023-05-28 12:24:50] INFO root fetch - main [MainThread]: Store serial: [18279945]
