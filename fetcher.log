@@ -5184,3 +5184,34 @@
 [2023-05-28 13:18:03] INFO root fetch - main [MainThread]: End processing [loutilities]: success
 [2023-05-28 13:18:04] INFO root fetch - main [MainThread]: End processing [SymSpellCppPy]: success
 [2023-05-28 13:18:04] INFO root fetch - main [MainThread]: Store serial: [18280205]
+[2023-05-28 13:23:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280205]
+[2023-05-28 13:23:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 13:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feature-forger
+[2023-05-28 13:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: album-sender
+[2023-05-28 13:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tb-nightly
+[2023-05-28 13:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensordict-nightly
+[2023-05-28 13:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchtnt-nightly
+[2023-05-28 13:23:13] INFO root fetch - processPackages [album-sender]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 13:23:13] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:23:13] INFO root fetch - processPackages [feature-forger]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 13:23:13] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:23:14] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-28 13:23:14] INFO root fetch - processPackages [album-sender]: Downloading https://files.pythonhosted.org/packages/72/90/a5e804bd6c1ecf26050b552365080edb0ff4e57f9b474941d1b3e8c956f2/album_sender-0.0.8.tar.gz
+[2023-05-28 13:23:14] INFO root fetch - processPackages [feature-forger]: Downloading https://files.pythonhosted.org/packages/e2/34/e5b60863e65538cbfb5ddf2fd0a8ff1fad11b79a5056b917972f154ba68e/feature_forger-0.1.2.tar.gz
+[2023-05-28 13:23:14] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-28 13:23:14] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.8.tar.gz tmp/torchtnt-nightly-2023.5.9.tar.gz --markdown 20230528/t/torchtnt-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:23:14] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-28 13:23:14] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230528/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-28 13:23:14] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-28 13:23:14] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230528/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:23:14] INFO root fetch - processPackages [feature-forger]: executing diffoscope
+[2023-05-28 13:23:14] INFO root fetch - processPackages [feature-forger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feature_forger-0.1.1.tar.gz tmp/feature_forger-0.1.2.tar.gz --markdown 20230528/f/feature-forger/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 13:23:14] INFO root fetch - processPackages [album-sender]: Downloading https://files.pythonhosted.org/packages/a6/b0/b73dab7d1275705a49c4160beb9cf5cd8fb5aab7e889c7b606e81f425bac/album_sender-0.0.9.tar.gz
+[2023-05-28 13:23:14] INFO root fetch - processPackages [album-sender]: executing diffoscope
+[2023-05-28 13:23:14] INFO root fetch - processPackages [album-sender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/album_sender-0.0.8.tar.gz tmp/album_sender-0.0.9.tar.gz --markdown 20230528/a/album-sender/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 13:23:15] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-28 13:23:15] INFO root fetch - main [MainThread]: End processing [feature-forger]: success
+[2023-05-28 13:23:15] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-28 13:23:15] INFO root fetch - main [MainThread]: End processing [album-sender]: success
+[2023-05-28 13:23:18] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-28 13:23:18] INFO root fetch - main [MainThread]: Store serial: [18280220]
