@@ -1888,3 +1888,43 @@
 [2023-05-28 04:54:15] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-05-28 04:54:15] INFO root fetch - main [MainThread]: End processing [maturin]: success
 [2023-05-28 04:54:15] INFO root fetch - main [MainThread]: Store serial: [18278149]
+[2023-05-28 04:59:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278149]
+[2023-05-28 04:59:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-api-call
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: WarThunder
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-yunpian-app
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-classifiers
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: auptitcafe
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ifastapi
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.4] Old Version: [0.0.3.3]
+[2023-05-28 04:59:24] INFO root fetch - processPackages [WarThunder]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-05-28 04:59:24] INFO root fetch - processPackages [django-yunpian-app]: New version: [1.1.0] Old Version: [1.0.8]
+[2023-05-28 04:59:24] INFO root fetch - processPackages [openai-api-call]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-28 04:59:24] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-05-28 04:59:24] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 04:59:24] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 04:59:24] INFO root fetch - processPackages [openai-api-call]: Downloading https://files.pythonhosted.org/packages/d6/83/c51c29f674972d90ebfe7702dd82e9acfa16c284c87b9d3912c49497b83e/openai_api_call-0.4.0.tar.gz
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/e4/b9/b102ada39230f2f52dfee32804bc1f7814a793677a2af8da9ed827c8a918/ifastapi-0.0.3.4-py3-none-any.whl
+[2023-05-28 04:59:24] INFO root fetch - processPackages [django-yunpian-app]: Downloading https://files.pythonhosted.org/packages/3e/47/ce3feec439e6c7dfea7b58cc5a12793bd843d0b2ef7070b712df86b76e3d/django-yunpian-app-1.0.8.tar.gz
+[2023-05-28 04:59:24] INFO root fetch - processPackages [WarThunder]: Downloading https://files.pythonhosted.org/packages/8c/90/517d9ed05eacc3c0657c4a15608e0f83e4d205c2ab9d51678f02f18c7836/WarThunder-2.3.3.tar.gz
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 04:59:24] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.3-py3-none-any.whl.zip tmp/ifastapi-0.0.3.4-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.3-0.0.3.4/diff.md --exclude *.pyd
+[2023-05-28 04:59:24] INFO root fetch - processPackages [openai-api-call]: Downloading https://files.pythonhosted.org/packages/08/bd/2cd64bc22457e6f93a84207fae374e6b9323ae7dc67c6cc26483c04ec08f/openai_api_call-0.4.1.tar.gz
+[2023-05-28 04:59:24] INFO root fetch - processPackages [django-yunpian-app]: Downloading https://files.pythonhosted.org/packages/cd/a2/199d96f31474a596508cc083aaa16c19c83823434f4d9240e01de2f4dd50/django-yunpian-app-1.1.0.tar.gz
+[2023-05-28 04:59:24] INFO root fetch - processPackages [WarThunder]: Downloading https://files.pythonhosted.org/packages/3b/5a/f9c9d2eb251342462f489efa8a7b7cc00c7d6a40ca344adc04fb7f365afc/WarThunder-2.3.4.tar.gz
+[2023-05-28 04:59:24] INFO root fetch - processPackages [openai-api-call]: executing diffoscope
+[2023-05-28 04:59:24] INFO root fetch - processPackages [openai-api-call]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_api_call-0.4.0.tar.gz tmp/openai_api_call-0.4.1.tar.gz --markdown 20230528/o/openai-api-call/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 04:59:24] INFO root fetch - processPackages [django-yunpian-app]: executing diffoscope
+[2023-05-28 04:59:24] INFO root fetch - processPackages [django-yunpian-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-yunpian-app-1.0.8.tar.gz tmp/django-yunpian-app-1.1.0.tar.gz --markdown 20230528/d/django-yunpian-app/1.0.8-1.1.0/diff.md --exclude *.pyd
+[2023-05-28 04:59:24] INFO root fetch - processPackages [WarThunder]: executing diffoscope
+[2023-05-28 04:59:24] INFO root fetch - processPackages [WarThunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WarThunder-2.3.3.tar.gz tmp/WarThunder-2.3.4.tar.gz --markdown 20230528/W/WarThunder/2.3.3-2.3.4/diff.md --exclude *.pyd
+[2023-05-28 04:59:25] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 04:59:25] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-05-28 04:59:25] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 04:59:26] INFO root fetch - main [MainThread]: End processing [openai-api-call]: success
+[2023-05-28 04:59:26] INFO root fetch - main [MainThread]: End processing [django-yunpian-app]: success
+[2023-05-28 04:59:26] INFO root fetch - main [MainThread]: End processing [WarThunder]: success
+[2023-05-28 04:59:26] INFO root fetch - main [MainThread]: Store serial: [18278165]
