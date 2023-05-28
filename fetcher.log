@@ -8305,3 +8305,41 @@ EOFError: EOF read where object expected
 [2023-05-28 18:35:58] INFO root fetch - main [MainThread]: End processing [pyalarmdotcomajax]: success
 [2023-05-28 18:35:59] INFO root fetch - main [MainThread]: End processing [gravitas]: success
 [2023-05-28 18:35:59] INFO root fetch - main [MainThread]: Store serial: [18282143]
+[2023-05-28 18:41:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282143]
+[2023-05-28 18:41:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: databend
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: v-quantum-annealing
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macrometa-source-snowflake
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coso
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cpggen
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: DLTA-AI
+[2023-05-28 18:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webpy-framework
+[2023-05-28 18:41:10] INFO root fetch - processPackages [databend]: New version: [1.1.50] Old Version: [1.1.49]
+[2023-05-28 18:41:10] INFO root fetch - processPackages [coso]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-28 18:41:10] INFO root fetch - processPackages [webpy-framework]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-28 18:41:10] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 18:41:10] INFO root fetch - processPackages [v-quantum-annealing]: New version: [1.0.0] Old Version: [0.0.0]
+[2023-05-28 18:41:10] WARNING root fetch - processPackages [DLTA-AI]: Skipping, unable to determine old version
+[2023-05-28 18:41:10] INFO root fetch - main [MainThread]: End processing [DLTA-AI] error
+[2023-05-28 18:41:10] INFO root fetch - processPackages [coso]: executing diffoscope
+[2023-05-28 18:41:10] INFO root fetch - processPackages [coso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coso-1.1.2.tar.gz tmp/coso-1.1.3.tar.gz --markdown 20230528/c/coso/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-28 18:41:10] INFO root fetch - processPackages [cpggen]: New version: [1.3.0] Old Version: [1.2.3]
+[2023-05-28 18:41:10] INFO root fetch - processPackages [webpy-framework]: executing diffoscope
+[2023-05-28 18:41:10] INFO root fetch - processPackages [webpy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpy-framework-1.1.1.tar.gz tmp/webpy-framework-1.1.2.tar.gz --markdown 20230528/w/webpy-framework/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-28 18:41:10] INFO root fetch - processPackages [databend]: Downloading https://files.pythonhosted.org/packages/85/d8/213c776f54bca48bc2a366891e2a28c591cd590b41625452d399d055643c/databend-1.1.49-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-28 18:41:11] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 18:41:11] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 18:41:11] WARNING root fetch - processPackages [databend]: Skipping package: exceeds size limit 28821329>=10485760
+[2023-05-28 18:41:11] INFO root fetch - main [MainThread]: End processing [databend] error
+[2023-05-28 18:41:11] INFO root fetch - processPackages [v-quantum-annealing]: Downloading https://files.pythonhosted.org/packages/f7/9b/90d5615cca53df942e8da320ea62dc3119470f4da6b3c679f03db37bf94f/v_quantum_annealing-0.0.0.tar.gz
+[2023-05-28 18:41:11] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/e1/aa/f2e7dda5189ccf205f67894d26da038599276ae6643e6648ea80677f0e13/cpggen-1.2.3.tar.gz
+[2023-05-28 18:41:11] INFO root fetch - processPackages [v-quantum-annealing]: Downloading https://files.pythonhosted.org/packages/92/83/8ee499a1dfef067d93fef2968e2f32daefd39c44f2aee3aa3a8a8583ba87/v_quantum_annealing-1.0.0.tar.gz
+[2023-05-28 18:41:11] WARNING root fetch - processPackages [cpggen]: Skipping package: exceeds size limit 87524687>=10485760
+[2023-05-28 18:41:11] INFO root fetch - main [MainThread]: End processing [cpggen] error
+[2023-05-28 18:41:11] INFO root fetch - processPackages [v-quantum-annealing]: executing diffoscope
+[2023-05-28 18:41:11] INFO root fetch - processPackages [v-quantum-annealing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v_quantum_annealing-0.0.0.tar.gz tmp/v_quantum_annealing-1.0.0.tar.gz --markdown 20230528/v/v-quantum-annealing/0.0.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 18:41:12] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 18:41:12] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
+[2023-05-28 18:41:12] INFO root fetch - main [MainThread]: End processing [coso]: success
+[2023-05-28 18:41:13] INFO root fetch - main [MainThread]: End processing [v-quantum-annealing]: success
+[2023-05-28 18:41:13] INFO root fetch - main [MainThread]: Store serial: [18282164]
