@@ -2686,3 +2686,11 @@
 [2023-05-28 07:38:42] INFO root fetch - main [MainThread]: End processing [hello2]: success
 [2023-05-28 07:38:42] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
 [2023-05-28 07:38:42] INFO root fetch - main [MainThread]: Store serial: [18278694]
+[2023-05-28 07:43:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278694]
+[2023-05-28 07:43:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-28 07:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-classifiers
+[2023-05-28 07:43:51] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-05-28 07:43:51] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-05-28 07:43:51] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-05-28 07:43:53] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-05-28 07:43:53] INFO root fetch - main [MainThread]: Store serial: [18278698]
