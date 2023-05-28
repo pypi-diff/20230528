@@ -5450,3 +5450,48 @@
 [2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [vanty]: success
 [2023-05-28 13:44:10] INFO root fetch - main [MainThread]: End processing [unitgrade-devel]: success
 [2023-05-28 13:44:10] INFO root fetch - main [MainThread]: Store serial: [18280369]
+[2023-05-28 13:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280369]
+[2023-05-28 13:49:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyflp
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: digitalarztools
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: propan
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chatcmd
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: revChatGPT
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gfs-dynamical-core
+[2023-05-28 13:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vfxpipe
+[2023-05-28 13:49:19] INFO root fetch - processPackages [digitalarztools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 13:49:19] INFO root fetch - processPackages [chatcmd]: New version: [1.0.47] Old Version: [1.0.46]
+[2023-05-28 13:49:19] INFO root fetch - processPackages [pyflp]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-05-28 13:49:19] WARNING root fetch - processPackages [vfxpipe]: Skipping, unable to determine old version
+[2023-05-28 13:49:19] INFO root fetch - main [MainThread]: End processing [vfxpipe] error
+[2023-05-28 13:49:19] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 13:49:19] INFO root fetch - processPackages [propan]: New version: [0.1.2.3] Old Version: [0.1.2.2]
+[2023-05-28 13:49:19] INFO root fetch - processPackages [revChatGPT]: New version: [5.3.1] Old Version: [5.3.0]
+[2023-05-28 13:49:19] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230528.11.45.336808] Old Version: [20230527.16.12.609191]
+[2023-05-28 13:49:19] INFO root fetch - processPackages [digitalarztools]: executing diffoscope
+[2023-05-28 13:49:19] INFO root fetch - processPackages [digitalarztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digitalarztools-0.0.8.tar.gz tmp/digitalarztools-0.0.9.tar.gz --markdown 20230528/d/digitalarztools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 13:49:19] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/d0/90/1cdb93b2aa6bd9a39ca4a569c75b58597c093abedcdee4b7543b122e6736/chatcmd-1.0.47.tar.gz
+[2023-05-28 13:49:19] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/94/ba/a6e35050ca1b41b5f9527222b644e11b3e8277f913566dd708e8cf6304ff/revChatGPT-5.3.1.tar.gz
+[2023-05-28 13:49:19] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/15/da/d58c1eeca0d80a976ab1247e421c7982825e41ed3b55928d1f83aeff443c/certora-cli-alpha-master-20230527.16.12.609191.tar.gz
+[2023-05-28 13:49:19] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39090968>=10485760
+[2023-05-28 13:49:19] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-28 13:49:19] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 13:49:19] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.46.tar.gz tmp/chatcmd-1.0.47.tar.gz --markdown 20230528/c/chatcmd/1.0.46-1.0.47/diff.md --exclude *.pyd
+[2023-05-28 13:49:19] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-28 13:49:19] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.3.0.tar.gz tmp/revChatGPT-5.3.1.tar.gz --markdown 20230528/r/revChatGPT/5.3.0-5.3.1/diff.md --exclude *.pyd
+[2023-05-28 13:49:19] INFO root fetch - processPackages [pyflp]: Downloading https://files.pythonhosted.org/packages/99/4c/6e680e653bedc43b1a4c9280425ace73b43af23d894944ca6dde1e641c2b/pyflp-2.2.0.tar.gz
+[2023-05-28 13:49:19] INFO root fetch - processPackages [propan]: Downloading https://files.pythonhosted.org/packages/97/7c/b57d333a7787365152384fccdcadb59fdb217fda51c8c134e3b73fc5773e/propan-0.1.2.3.tar.gz
+[2023-05-28 13:49:19] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-28 13:49:19] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 13:49:20] INFO root fetch - processPackages [propan]: executing diffoscope
+[2023-05-28 13:49:20] INFO root fetch - processPackages [propan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propan-0.1.2.2.tar.gz tmp/propan-0.1.2.3.tar.gz --markdown 20230528/p/propan/0.1.2.2-0.1.2.3/diff.md --exclude *.pyd
+[2023-05-28 13:49:20] INFO root fetch - processPackages [pyflp]: executing diffoscope
+[2023-05-28 13:49:20] INFO root fetch - processPackages [pyflp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflp-2.1.1.tar.gz tmp/pyflp-2.2.0.tar.gz --markdown 20230528/p/pyflp/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-05-28 13:49:21] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-28 13:49:21] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 13:49:21] INFO root fetch - main [MainThread]: End processing [digitalarztools]: success
+[2023-05-28 13:49:21] INFO root fetch - main [MainThread]: End processing [propan]: success
+[2023-05-28 13:49:23] INFO root fetch - main [MainThread]: End processing [pyflp]: success
+[2023-05-28 13:49:42] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-28 13:49:42] INFO root fetch - main [MainThread]: Store serial: [18280394]
