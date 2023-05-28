@@ -4559,3 +4559,52 @@
 [2023-05-28 12:13:33] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
 [2023-05-28 12:13:33] INFO root fetch - main [MainThread]: End processing [sage-conf] error
 [2023-05-28 12:13:33] INFO root fetch - main [MainThread]: Store serial: [18279876]
+[2023-05-28 12:18:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279876]
+[2023-05-28 12:18:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dm-reverb-nightly
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-cdhit
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: battle-cats-save-editor
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pathvar
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: modelon-impact-client
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bibigo
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pepperize.projen-awscdk-construct
+[2023-05-28 12:18:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jetblack-tweeter
+[2023-05-28 12:18:42] INFO root fetch - processPackages [py-cdhit]: New version: [0.3.0] Old Version: [0.1.0]
+[2023-05-28 12:18:42] INFO root fetch - processPackages [battle-cats-save-editor]: New version: [2.7.2] Old Version: [2.7.1]
+[2023-05-28 12:18:42] INFO root fetch - processPackages [bibigo]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-28 12:18:42] WARNING root fetch - processPackages [pathvar]: Skipping, unable to determine old version
+[2023-05-28 12:18:42] INFO root fetch - main [MainThread]: End processing [pathvar] error
+[2023-05-28 12:18:42] WARNING root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Skipping, unable to determine old version
+[2023-05-28 12:18:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao] error
+[2023-05-28 12:18:42] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-05-28 12:18:42] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 12:18:42] INFO root fetch - processPackages [jetblack-tweeter]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 12:18:42] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-28 12:18:42] INFO root fetch - processPackages [jetblack-tweeter]: executing diffoscope
+[2023-05-28 12:18:42] INFO root fetch - processPackages [jetblack-tweeter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetblack-tweeter-0.8.0.tar.gz tmp/jetblack-tweeter-0.9.0.tar.gz --markdown 20230528/j/jetblack-tweeter/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 12:18:42] INFO root fetch - processPackages [battle-cats-save-editor]: Downloading https://files.pythonhosted.org/packages/74/ed/29e3e861ebb98dbcbdc9cf383cb9592a90c7683bedb826cc5e3ce7d0abef/battle-cats-save-editor-2.7.1.tar.gz
+[2023-05-28 12:18:42] INFO root fetch - processPackages [bibigo]: Downloading https://files.pythonhosted.org/packages/df/57/c77c06f5efcc0f1117d5b1b35d650ad37598845f8a0548c0c8d29ed9e8da/bibigo-0.0.7.tar.gz
+[2023-05-28 12:18:42] INFO root fetch - processPackages [py-cdhit]: Downloading https://files.pythonhosted.org/packages/96/0a/e438ef181152cbb413a067ec8a6c49eb68671c07f144fd11e18575008922/py-cdhit-0.1.0.tar.gz
+[2023-05-28 12:18:42] INFO root fetch - processPackages [bibigo]: executing diffoscope
+[2023-05-28 12:18:42] INFO root fetch - processPackages [bibigo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibigo-0.0.6.tar.gz tmp/bibigo-0.0.7.tar.gz --markdown 20230528/b/bibigo/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-28 12:18:42] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-05-28 12:18:42] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230528/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-28 12:18:42] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: executing diffoscope
+[2023-05-28 12:18:42] INFO root fetch - processPackages [pepperize.projen-awscdk-construct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-construct-0.0.98.tar.gz tmp/pepperize.projen-awscdk-construct-0.0.99.tar.gz --markdown 20230528/p/pepperize.projen-awscdk-construct/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 12:18:43] INFO root fetch - processPackages [py-cdhit]: Downloading https://files.pythonhosted.org/packages/a5/29/d7774f4f1104214a14838ff84028f4a2c7df365d104d890fb27dcf74a479/py_cdhit-0.3.0-py3-none-any.whl
+[2023-05-28 12:18:43] INFO root fetch - processPackages [battle-cats-save-editor]: Downloading https://files.pythonhosted.org/packages/30/db/689c10565d4f4b135f370737287531a94be76845eb67c1208b4a8269e8f8/battle-cats-save-editor-2.7.2.tar.gz
+[2023-05-28 12:18:43] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-28 12:18:43] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230528/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-28 12:18:43] INFO root fetch - processPackages [py-cdhit]: executing diffoscope
+[2023-05-28 12:18:43] INFO root fetch - processPackages [py-cdhit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-cdhit-0.1.0.tar.gz tmp/py_cdhit-0.3.0-py3-none-any.whl.zip --markdown 20230528/p/py-cdhit/0.1.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 12:18:43] INFO root fetch - processPackages [battle-cats-save-editor]: executing diffoscope
+[2023-05-28 12:18:43] INFO root fetch - processPackages [battle-cats-save-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battle-cats-save-editor-2.7.1.tar.gz tmp/battle-cats-save-editor-2.7.2.tar.gz --markdown 20230528/b/battle-cats-save-editor/2.7.1-2.7.2/diff.md --exclude *.pyd
+[2023-05-28 12:18:43] INFO root fetch - main [MainThread]: End processing [jetblack-tweeter]: success
+[2023-05-28 12:18:44] INFO root fetch - main [MainThread]: End processing [bibigo]: success
+[2023-05-28 12:18:44] INFO root fetch - main [MainThread]: End processing [py-cdhit]: success
+[2023-05-28 12:18:44] INFO root fetch - main [MainThread]: End processing [pepperize.projen-awscdk-construct]: success
+[2023-05-28 12:18:44] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-05-28 12:18:44] INFO root fetch - main [MainThread]: End processing [battle-cats-save-editor]: success
+[2023-05-28 12:19:36] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-28 12:19:36] INFO root fetch - main [MainThread]: Store serial: [18279917]
