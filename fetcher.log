@@ -7129,3 +7129,69 @@ EOFError: EOF read where object expected
 [2023-05-28 16:30:06] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-l4d2-server]: success
 [2023-05-28 16:30:07] INFO root fetch - main [MainThread]: End processing [bovine-pubsub]: success
 [2023-05-28 16:30:07] INFO root fetch - main [MainThread]: Store serial: [18281404]
+[2023-05-28 16:35:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281404]
+[2023-05-28 16:35:16] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-chatbox
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panda3d-keybindings
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bovine-tool
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nista-library
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-clickzetta
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyzoom
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: molcas-suite
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: canvas-course-tools
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbt-clickzetta
+[2023-05-28 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: meshtastic
+[2023-05-28 16:35:16] INFO root fetch - processPackages [bovine-tool]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [panda3d-keybindings]: New version: [0.3a1] Old Version: [0.3a0]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [streamlit-chatbox]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [molcas-suite]: New version: [1.22.0] Old Version: [1.21.0]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [nista-library]: New version: [4.0.6] Old Version: [4.0.5]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [canvas-course-tools]: New version: [0.6.0] Old Version: [0.5.2]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [pyzoom]: New version: [1.0.0] Old Version: [0.1.9]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [meshtastic]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-05-28 16:35:16] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230528/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [bovine-tool]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [bovine-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_tool-0.2.2.tar.gz tmp/bovine_tool-0.2.4.tar.gz --markdown 20230528/b/bovine-tool/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [panda3d-keybindings]: Downloading https://files.pythonhosted.org/packages/94/a1/f64224aa40fda4fcb5eb22ef19fa6f28f8d324040b88ca9ff11703a8bc54/panda3d_keybindings-0.3a0-py3-none-any.whl
+[2023-05-28 16:35:16] INFO root fetch - processPackages [streamlit-chatbox]: Downloading https://files.pythonhosted.org/packages/fd/e0/e0ce3579d6efee1e89b577ededfc86ab948ac8df932939e9c1fc53e51416/streamlit_chatbox-0.1.0-py3-none-any.whl
+[2023-05-28 16:35:16] INFO root fetch - processPackages [pyzoom]: Downloading https://files.pythonhosted.org/packages/fb/99/05ce0c75b00c5f59c98e1aa79487b2622d7a8581c5ab62d7f22a653d4fba/pyzoom-0.1.9.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [molcas-suite]: Downloading https://files.pythonhosted.org/packages/21/0b/1357b475da915d9199c4f1d720d9505ed5834629c49ea222dab0e443ba88/molcas_suite-1.21.0.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [canvas-course-tools]: Downloading https://files.pythonhosted.org/packages/cc/13/2e76c441f542502f380c4dbfcd914b1bed96c739923369e142fcd8835061/canvas_course_tools-0.5.2.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/d2/ba/cc701b5940ac446b4bdd2ed2cf3cbe380a7068c1071955b5b0f0ff9e6546/meshtastic-2.1.6.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [nista-library]: Downloading https://files.pythonhosted.org/packages/9f/50/3a3522b22425f70dbd8258bd10101df355e211fcd2dbeb1ec213245290db/nista_library-4.0.6.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [streamlit-chatbox]: Downloading https://files.pythonhosted.org/packages/73/bd/5bb04adc8f4137690bd2cbb972ba4a40d2b897de5fd511574e942cff513b/streamlit_chatbox-0.1.1-py3-none-any.whl
+[2023-05-28 16:35:16] INFO root fetch - processPackages [molcas-suite]: Downloading https://files.pythonhosted.org/packages/45/11/a5eae30959f190a63c6d00d3ed4a3acf8b2d457dacc000a6122de3557df0/molcas_suite-1.22.0.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [nista-library]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [nista-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nista_library-4.0.5.tar.gz tmp/nista_library-4.0.6.tar.gz --markdown 20230528/n/nista-library/4.0.5-4.0.6/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [panda3d-keybindings]: Downloading https://files.pythonhosted.org/packages/87/18/06ea6fca5936a4aad1f70ccf01e517536fda6788d289bc926a1c55dcd36a/panda3d_keybindings-0.3a1-py3-none-any.whl
+[2023-05-28 16:35:16] INFO root fetch - processPackages [canvas-course-tools]: Downloading https://files.pythonhosted.org/packages/c2/88/9026bfb12b76632214fba1f96657c6f62a6c1adb28781b30119c2f6c3803/canvas_course_tools-0.6.0.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [streamlit-chatbox]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [streamlit-chatbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chatbox-0.1.0-py3-none-any.whl.zip tmp/streamlit_chatbox-0.1.1-py3-none-any.whl.zip --markdown 20230528/s/streamlit-chatbox/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [pyzoom]: Downloading https://files.pythonhosted.org/packages/d9/bd/c05afad61daee234b5f9212a112214ea4cdd04cbcdc1528bfb280447ddba/pyzoom-1.0.0.tar.gz
+[2023-05-28 16:35:16] INFO root fetch - processPackages [panda3d-keybindings]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [panda3d-keybindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panda3d_keybindings-0.3a0-py3-none-any.whl.zip tmp/panda3d_keybindings-0.3a1-py3-none-any.whl.zip --markdown 20230528/p/panda3d-keybindings/0.3a0-0.3a1/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [canvas-course-tools]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [canvas-course-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvas_course_tools-0.5.2.tar.gz tmp/canvas_course_tools-0.6.0.tar.gz --markdown 20230528/c/canvas-course-tools/0.5.2-0.6.0/diff.md --exclude *.pyd
+[2023-05-28 16:35:16] INFO root fetch - processPackages [molcas-suite]: executing diffoscope
+[2023-05-28 16:35:16] INFO root fetch - processPackages [molcas-suite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molcas_suite-1.21.0.tar.gz tmp/molcas_suite-1.22.0.tar.gz --markdown 20230528/m/molcas-suite/1.21.0-1.22.0/diff.md --exclude *.pyd
+[2023-05-28 16:35:17] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/0a/58/7d09e8a0beaf4f6dc37dc8a06c7e1f75e9cd9e124c58fb0ff793f76b093d/meshtastic-2.1.7.tar.gz
+[2023-05-28 16:35:17] INFO root fetch - processPackages [pyzoom]: executing diffoscope
+[2023-05-28 16:35:17] INFO root fetch - processPackages [pyzoom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzoom-0.1.9.tar.gz tmp/pyzoom-1.0.0.tar.gz --markdown 20230528/p/pyzoom/0.1.9-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 16:35:17] INFO root fetch - processPackages [meshtastic]: executing diffoscope
+[2023-05-28 16:35:17] INFO root fetch - processPackages [meshtastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshtastic-2.1.6.tar.gz tmp/meshtastic-2.1.7.tar.gz --markdown 20230528/m/meshtastic/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-05-28 16:35:17] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 16:35:17] INFO root fetch - main [MainThread]: End processing [bovine-tool]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [streamlit-chatbox]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [pyzoom]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [panda3d-keybindings]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [molcas-suite]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [nista-library]: success
+[2023-05-28 16:35:18] INFO root fetch - main [MainThread]: End processing [canvas-course-tools]: success
+[2023-05-28 16:35:19] INFO root fetch - main [MainThread]: End processing [meshtastic]: success
+[2023-05-28 16:35:19] INFO root fetch - main [MainThread]: Store serial: [18281440]
