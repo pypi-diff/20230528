@@ -4765,3 +4765,54 @@
 [2023-05-28 12:30:14] INFO root fetch - main [MainThread]: End processing [feffery-utils-components]: success
 [2023-05-28 12:30:52] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-security-group]: success
 [2023-05-28 12:30:52] INFO root fetch - main [MainThread]: Store serial: [18280001]
+[2023-05-28 12:35:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280001]
+[2023-05-28 12:36:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TradeGate
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-github
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smawe-tools
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tvdbAPI
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: health-bsa
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bahire-hasab
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-28 12:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: joyrl
+[2023-05-28 12:36:01] WARNING root fetch - processPackages [health-bsa]: Skipping, unable to determine old version
+[2023-05-28 12:36:01] INFO root fetch - main [MainThread]: End processing [health-bsa] error
+[2023-05-28 12:36:01] INFO root fetch - processPackages [bahire-hasab]: New version: [0.2.1] Old Version: [0.1.1.1]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [smawe-tools]: New version: [0.2.6] Old Version: [0.2.4]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [joyrl]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [tvdbAPI]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [TradeGate]: New version: [0.3.8.1] Old Version: [0.3.8]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.339] Old Version: [0.3.338]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 12:36:01] INFO root fetch - processPackages [smawe-tools]: Downloading https://files.pythonhosted.org/packages/e2/cd/e505ff12a18947b22f24da65f13a95e893e2685070a63e19ded8cd52ef08/smawe_tools-0.2.4.tar.gz
+[2023-05-28 12:36:01] INFO root fetch - processPackages [tvdbAPI]: Downloading https://files.pythonhosted.org/packages/af/d6/00dffcc92f7c8257e377fbe91f4ba98c121aa270f94c6de950740c046ea8/tvdbAPI-0.2.8.tar.gz
+[2023-05-28 12:36:01] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/45/eb/440bf154b6613416f2fbb5d1d4c68133c122cd9f3b65f8b785e4bc8decab/joyrl-0.1.9.tar.gz
+[2023-05-28 12:36:01] INFO root fetch - processPackages [TradeGate]: Downloading https://files.pythonhosted.org/packages/b9/47/2420c0174110b6f047addb8d8c322971578226e96f7e9cfe53ebd71a25c1/TradeGate-0.3.8.tar.gz
+[2023-05-28 12:36:01] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/3d/f6/dace1add28f077e441f203742a88c8e6ea6b535e5666be6e0c1b32915bd8/pepperize.cdk-ses-smtp-credentials-0.3.339.tar.gz
+[2023-05-28 12:36:01] INFO root fetch - processPackages [bahire-hasab]: Downloading https://files.pythonhosted.org/packages/49/ee/ab2d2cea2d0dcb39c8e7e0c7db489b8e4e96615a7b47589e9b37cf538f24/bahire-hasab-0.2.1.tar.gz
+[2023-05-28 12:36:01] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-28 12:36:01] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.338.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.339.tar.gz --markdown 20230528/p/pepperize.cdk-ses-smtp-credentials/0.3.338-0.3.339/diff.md --exclude *.pyd
+[2023-05-28 12:36:01] INFO root fetch - processPackages [bahire-hasab]: executing diffoscope
+[2023-05-28 12:36:01] INFO root fetch - processPackages [bahire-hasab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bahire-hasab-0.1.1.1.tar.gz tmp/bahire-hasab-0.2.1.tar.gz --markdown 20230528/b/bahire-hasab/0.1.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-05-28 12:36:02] INFO root fetch - processPackages [TradeGate]: Downloading https://files.pythonhosted.org/packages/f9/81/45f28d76b6e258a4576329a82bf1aaf3f238495465d59e0e93e77267b75e/TradeGate-0.3.8.1.tar.gz
+[2023-05-28 12:36:02] INFO root fetch - processPackages [smawe-tools]: Downloading https://files.pythonhosted.org/packages/d0/5a/ccdf09b740b05f45706b2de4837e4c69e142a186c93e540f68996179cda4/smawe_tools-0.2.6.tar.gz
+[2023-05-28 12:36:02] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-05-28 12:36:02] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230528/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 12:36:02] INFO root fetch - processPackages [tvdbAPI]: Downloading https://files.pythonhosted.org/packages/cd/5d/974a6ddd047729b003a0cf31f1505917d0f1a6c031d66832e19c80484adb/tvdbAPI-0.2.9.tar.gz
+[2023-05-28 12:36:02] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/da/94/2d75b3e1bd21d6a59bdabb67e6b76289b96c5887506854c91e1b8a09142f/joyrl-0.2.0.tar.gz
+[2023-05-28 12:36:02] INFO root fetch - processPackages [TradeGate]: executing diffoscope
+[2023-05-28 12:36:02] INFO root fetch - processPackages [TradeGate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TradeGate-0.3.8.tar.gz tmp/TradeGate-0.3.8.1.tar.gz --markdown 20230528/T/TradeGate/0.3.8-0.3.8.1/diff.md --exclude *.pyd
+[2023-05-28 12:36:02] INFO root fetch - processPackages [smawe-tools]: executing diffoscope
+[2023-05-28 12:36:02] INFO root fetch - processPackages [smawe-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smawe_tools-0.2.4.tar.gz tmp/smawe_tools-0.2.6.tar.gz --markdown 20230528/s/smawe-tools/0.2.4-0.2.6/diff.md --exclude *.pyd
+[2023-05-28 12:36:02] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 12:36:02] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.1.9.tar.gz tmp/joyrl-0.2.0.tar.gz --markdown 20230528/j/joyrl/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 12:36:02] INFO root fetch - processPackages [tvdbAPI]: executing diffoscope
+[2023-05-28 12:36:02] INFO root fetch - processPackages [tvdbAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvdbAPI-0.2.8.tar.gz tmp/tvdbAPI-0.2.9.tar.gz --markdown 20230528/t/tvdbAPI/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [bahire-hasab]: success
+[2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [tvdbAPI]: success
+[2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [smawe-tools]: success
+[2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 12:36:04] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
+[2023-05-28 12:36:04] INFO root fetch - main [MainThread]: Store serial: [18280028]
