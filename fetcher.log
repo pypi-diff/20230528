@@ -2694,3 +2694,31 @@
 [2023-05-28 07:43:51] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
 [2023-05-28 07:43:53] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
 [2023-05-28 07:43:53] INFO root fetch - main [MainThread]: Store serial: [18278698]
+[2023-05-28 07:48:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278698]
+[2023-05-28 07:49:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 07:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpservice
+[2023-05-28 07:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aksharify
+[2023-05-28 07:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auptitcafe
+[2023-05-28 07:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autonomi-nos
+[2023-05-28 07:49:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zanj
+[2023-05-28 07:49:02] INFO root fetch - processPackages [aksharify]: New version: [2.3.2] Old Version: [2.2.7]
+[2023-05-28 07:49:02] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-28 07:49:02] WARNING root fetch - processPackages [zanj]: Skipping, unable to determine old version
+[2023-05-28 07:49:02] INFO root fetch - main [MainThread]: End processing [zanj] error
+[2023-05-28 07:49:02] INFO root fetch - processPackages [autonomi-nos]: New version: [0.0.4a2] Old Version: [0.0.4a1]
+[2023-05-28 07:49:02] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 07:49:02] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 07:49:02] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 07:49:02] INFO root fetch - processPackages [autonomi-nos]: Downloading https://files.pythonhosted.org/packages/dc/75/78ef1969539da9f68ff5bc3cb8b8fc9132a0b19766c31bc2da83ae05f991/autonomi_nos-0.0.4a2-py3-none-any.whl
+[2023-05-28 07:49:02] INFO root fetch - processPackages [aksharify]: Downloading https://files.pythonhosted.org/packages/f4/9f/648dce36b64ea9a1c66edd64a9e2e77d42b4259807e175635677b3e420b8/aksharify-2.3.2.tar.gz
+[2023-05-28 07:49:02] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-28 07:49:02] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230528/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-28 07:49:03] INFO root fetch - processPackages [aksharify]: executing diffoscope
+[2023-05-28 07:49:03] INFO root fetch - processPackages [aksharify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aksharify-2.2.7.tar.gz tmp/aksharify-2.3.2.tar.gz --markdown 20230528/a/aksharify/2.2.7-2.3.2/diff.md --exclude *.pyd
+[2023-05-28 07:49:03] INFO root fetch - processPackages [autonomi-nos]: executing diffoscope
+[2023-05-28 07:49:03] INFO root fetch - processPackages [autonomi-nos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomi_nos-0.0.4a1-py3-none-any.whl.zip tmp/autonomi_nos-0.0.4a2-py3-none-any.whl.zip --markdown 20230528/a/autonomi-nos/0.0.4a1-0.0.4a2/diff.md --exclude *.pyd
+[2023-05-28 07:49:03] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 07:49:04] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-28 07:49:04] INFO root fetch - main [MainThread]: End processing [aksharify]: success
+[2023-05-28 07:49:53] INFO root fetch - main [MainThread]: End processing [autonomi-nos]: success
+[2023-05-28 07:49:53] INFO root fetch - main [MainThread]: Store serial: [18278715]
