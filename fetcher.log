@@ -4275,3 +4275,54 @@
 [2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [vortexpy]: success
 [2023-05-28 11:38:59] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-28 11:38:59] INFO root fetch - main [MainThread]: Store serial: [18279724]
+[2023-05-28 11:44:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279724]
+[2023-05-28 11:44:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dasida
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: delta-sharing
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhyypapihawkmod
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinxcontrib-cadquery
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama-index
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kaioretry
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gpt-index
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: look-like-scanned
+[2023-05-28 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-copilot
+[2023-05-28 11:44:08] INFO root fetch - processPackages [delta-sharing]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-05-28 11:44:08] INFO root fetch - processPackages [look-like-scanned]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-05-28 11:44:08] WARNING root fetch - processPackages [dasida]: Skipping, unable to determine old version
+[2023-05-28 11:44:08] INFO root fetch - processPackages [sphinxcontrib-cadquery]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-28 11:44:08] INFO root fetch - main [MainThread]: End processing [dasida] error
+[2023-05-28 11:44:08] INFO root fetch - processPackages [kaioretry]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-28 11:44:08] INFO root fetch - processPackages [pyhyypapihawkmod]: New version: [0.0.0.8] Old Version: [0.0.0.7]
+[2023-05-28 11:44:08] INFO root fetch - processPackages [llama-index]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-28 11:44:08] INFO root fetch - processPackages [gpt-index]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-28 11:44:09] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.6.8.tar.gz tmp/gpt_index-0.6.9.tar.gz --markdown 20230528/g/gpt-index/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-28 11:44:09] WARNING root fetch - processPackages [django-copilot]: Skipping, unable to determine old version
+[2023-05-28 11:44:09] INFO root fetch - main [MainThread]: End processing [django-copilot] error
+[2023-05-28 11:44:09] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.6.8.tar.gz tmp/llama_index-0.6.9.tar.gz --markdown 20230528/l/llama-index/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-28 11:44:09] INFO root fetch - processPackages [look-like-scanned]: Downloading https://files.pythonhosted.org/packages/fa/64/d20e2283c83cce1f2270a38149153be400cb75a0b5840e95f3856f679693/look_like_scanned-0.2.0.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [delta-sharing]: Downloading https://files.pythonhosted.org/packages/01/18/33cf2840d4442c44d1d6aa7a857375bbc6ca9b0e809c8f661f773f52d47b/delta-sharing-0.6.4.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [sphinxcontrib-cadquery]: Downloading https://files.pythonhosted.org/packages/a4/67/56141f1480cadbd94474d7b19b5612691b4f4d7cd023330cbfc67cf25d35/sphinxcontrib_cadquery-0.6.0.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [kaioretry]: Downloading https://files.pythonhosted.org/packages/7c/e1/d69842193520e42fbe7a7c2310e62bf3f85fff0a2421bdb2530ea50424cb/kaioretry-0.9.3.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [kaioretry]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [kaioretry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaioretry-0.9.2.tar.gz tmp/kaioretry-0.9.3.tar.gz --markdown 20230528/k/kaioretry/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-28 11:44:09] INFO root fetch - processPackages [pyhyypapihawkmod]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [pyhyypapihawkmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhyypapihawkmod-0.0.0.7.tar.gz tmp/pyhyypapihawkmod-0.0.0.8.tar.gz --markdown 20230528/p/pyhyypapihawkmod/0.0.0.7-0.0.0.8/diff.md --exclude *.pyd
+[2023-05-28 11:44:09] INFO root fetch - processPackages [sphinxcontrib-cadquery]: Downloading https://files.pythonhosted.org/packages/5b/fb/f8a83f86c5941ebdf2cf198ea048d514c3c61914e9d5ec96fde79786dcf3/sphinxcontrib_cadquery-0.7.0.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [look-like-scanned]: Downloading https://files.pythonhosted.org/packages/e4/83/ce0f7da7eba5757c8dc029eaf24a00571f1895bd729423a8ba230796fcd1/look_like_scanned-0.2.2.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [delta-sharing]: Downloading https://files.pythonhosted.org/packages/e4/b8/ffabe0a61d6c21b2219db9e65879d2fd66e5911499ac2dd7ecfe8135055f/delta-sharing-0.6.5.tar.gz
+[2023-05-28 11:44:09] INFO root fetch - processPackages [sphinxcontrib-cadquery]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [sphinxcontrib-cadquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_cadquery-0.6.0.tar.gz tmp/sphinxcontrib_cadquery-0.7.0.tar.gz --markdown 20230528/s/sphinxcontrib-cadquery/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-28 11:44:09] INFO root fetch - processPackages [look-like-scanned]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [look-like-scanned]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/look_like_scanned-0.2.0.tar.gz tmp/look_like_scanned-0.2.2.tar.gz --markdown 20230528/l/look-like-scanned/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 11:44:09] INFO root fetch - processPackages [delta-sharing]: executing diffoscope
+[2023-05-28 11:44:09] INFO root fetch - processPackages [delta-sharing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delta-sharing-0.6.4.tar.gz tmp/delta-sharing-0.6.5.tar.gz --markdown 20230528/d/delta-sharing/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-05-28 11:44:10] INFO root fetch - main [MainThread]: End processing [kaioretry]: success
+[2023-05-28 11:44:10] INFO root fetch - main [MainThread]: End processing [look-like-scanned]: success
+[2023-05-28 11:44:10] INFO root fetch - main [MainThread]: End processing [delta-sharing]: success
+[2023-05-28 11:44:10] INFO root fetch - main [MainThread]: End processing [pyhyypapihawkmod]: success
+[2023-05-28 11:44:12] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-05-28 11:44:12] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-05-28 11:44:28] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cadquery]: success
+[2023-05-28 11:44:28] INFO root fetch - main [MainThread]: Store serial: [18279755]
