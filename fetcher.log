@@ -1193,3 +1193,12 @@
 [2023-05-28 02:48:44] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
 [2023-05-28 02:48:55] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-28 02:48:55] INFO root fetch - main [MainThread]: Store serial: [18277772]
+[2023-05-28 02:53:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277772]
+[2023-05-28 02:54:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-28 02:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdfind2
+[2023-05-28 02:54:04] INFO root fetch - processPackages [rdfind2]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 02:54:04] INFO root fetch - processPackages [rdfind2]: Downloading https://files.pythonhosted.org/packages/4d/41/71991c3ed76aad484a7a9608389c28ef9ab5e3b5e3a1a81a031512b77eb7/rdfind2-0.0.3.tar.gz
+[2023-05-28 02:54:04] INFO root fetch - processPackages [rdfind2]: executing diffoscope
+[2023-05-28 02:54:04] INFO root fetch - processPackages [rdfind2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfind2-0.0.2.tar.gz tmp/rdfind2-0.0.3.tar.gz --markdown 20230528/r/rdfind2/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 02:54:06] INFO root fetch - main [MainThread]: End processing [rdfind2]: success
+[2023-05-28 02:54:06] INFO root fetch - main [MainThread]: Store serial: [18277775]
