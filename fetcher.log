@@ -2067,3 +2067,35 @@
 [2023-05-28 05:30:34] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
 [2023-05-28 05:30:34] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nagabus]: success
 [2023-05-28 05:30:34] INFO root fetch - main [MainThread]: Store serial: [18278331]
+[2023-05-28 05:35:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278331]
+[2023-05-28 05:35:43] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-28 05:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278331]
+[2023-05-28 05:40:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 05:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openkit
+[2023-05-28 05:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RStockvn
+[2023-05-28 05:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: topological-signal-compression
+[2023-05-28 05:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FinGPT
+[2023-05-28 05:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: calc-processing
+[2023-05-28 05:40:49] INFO root fetch - processPackages [topological-signal-compression]: New version: [0.9] Old Version: [0.8]
+[2023-05-28 05:40:49] WARNING root fetch - processPackages [calc-processing]: Skipping, unable to determine old version
+[2023-05-28 05:40:49] INFO root fetch - main [MainThread]: End processing [calc-processing] error
+[2023-05-28 05:40:49] INFO root fetch - processPackages [openkit]: New version: [1.0.9] Old Version: [1.0.7]
+[2023-05-28 05:40:49] INFO root fetch - processPackages [RStockvn]: New version: [2.1.81] Old Version: [2.1.8]
+[2023-05-28 05:40:49] WARNING root fetch - processPackages [FinGPT]: Skipping, unable to determine old version
+[2023-05-28 05:40:49] INFO root fetch - main [MainThread]: End processing [FinGPT] error
+[2023-05-28 05:40:49] INFO root fetch - processPackages [openkit]: Downloading https://files.pythonhosted.org/packages/c9/f1/f6663bf1bc3b469e5cb7616f5d2edcb4c3409203a829e982b5d97159d668/openkit-1.0.7.tar.gz
+[2023-05-28 05:40:49] INFO root fetch - processPackages [topological-signal-compression]: Downloading https://files.pythonhosted.org/packages/82/6c/e2204012a88476075f1c61b3547005dd7d42de4f3d7e736f4b17c0d36650/topological-signal-compression-0.8.tar.gz
+[2023-05-28 05:40:49] INFO root fetch - processPackages [RStockvn]: Downloading https://files.pythonhosted.org/packages/cd/ef/9f51a663745521b6dcf4fbf5eb03185bcd79f9fa84ffd342fd084f0a42b2/RStockvn-2.1.8.tar.gz
+[2023-05-28 05:40:49] INFO root fetch - processPackages [openkit]: Downloading https://files.pythonhosted.org/packages/6b/c1/fc8b7c32b133da4ee50a1b9ca7b768713d3e81dc9494816831b8e651ddc3/openkit-1.0.9.tar.gz
+[2023-05-28 05:40:49] INFO root fetch - processPackages [RStockvn]: Downloading https://files.pythonhosted.org/packages/93/16/526a823271f527791de7cd6b2ec2e7662290238fcb709192e31f88b6a528/RStockvn-2.1.81.tar.gz
+[2023-05-28 05:40:49] INFO root fetch - processPackages [topological-signal-compression]: Downloading https://files.pythonhosted.org/packages/e6/cf/450bb7088b87704f439d8e0ae6445e89748682956c7b4663712111c038d8/topological-signal-compression-0.9.tar.gz
+[2023-05-28 05:40:49] INFO root fetch - processPackages [RStockvn]: executing diffoscope
+[2023-05-28 05:40:49] INFO root fetch - processPackages [RStockvn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RStockvn-2.1.8.tar.gz tmp/RStockvn-2.1.81.tar.gz --markdown 20230528/R/RStockvn/2.1.8-2.1.81/diff.md --exclude *.pyd
+[2023-05-28 05:40:50] INFO root fetch - processPackages [openkit]: executing diffoscope
+[2023-05-28 05:40:50] INFO root fetch - processPackages [openkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openkit-1.0.7.tar.gz tmp/openkit-1.0.9.tar.gz --markdown 20230528/o/openkit/1.0.7-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 05:40:50] INFO root fetch - processPackages [topological-signal-compression]: executing diffoscope
+[2023-05-28 05:40:50] INFO root fetch - processPackages [topological-signal-compression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topological-signal-compression-0.8.tar.gz tmp/topological-signal-compression-0.9.tar.gz --markdown 20230528/t/topological-signal-compression/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-28 05:40:51] INFO root fetch - main [MainThread]: End processing [RStockvn]: success
+[2023-05-28 05:40:51] INFO root fetch - main [MainThread]: End processing [openkit]: success
+[2023-05-28 05:40:51] INFO root fetch - main [MainThread]: End processing [topological-signal-compression]: success
+[2023-05-28 05:40:51] INFO root fetch - main [MainThread]: Store serial: [18278354]
