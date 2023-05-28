@@ -10109,3 +10109,15 @@ EOFError: EOF read where object expected
 [2023-05-28 22:24:45] INFO root fetch - main [MainThread]: End processing [Pybag]: success
 [2023-05-28 22:24:48] INFO root fetch - main [MainThread]: End processing [python-ron]: success
 [2023-05-28 22:24:48] INFO root fetch - main [MainThread]: Store serial: [18283350]
+[2023-05-28 22:29:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283350]
+[2023-05-28 22:29:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 22:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wizmap
+[2023-05-28 22:29:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlp-models
+[2023-05-28 22:29:58] INFO root fetch - processPackages [nlp-models]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-05-28 22:29:58] WARNING root fetch - processPackages [wizmap]: Skipping, unable to determine old version
+[2023-05-28 22:29:58] INFO root fetch - main [MainThread]: End processing [wizmap] error
+[2023-05-28 22:29:58] INFO root fetch - processPackages [nlp-models]: Downloading https://files.pythonhosted.org/packages/51/69/1c4ab0fb6988408f11cd518c1d72b2d10d5843a8d113d473257f7c9add47/nlp-models-2.1.0.tar.gz
+[2023-05-28 22:29:58] INFO root fetch - processPackages [nlp-models]: executing diffoscope
+[2023-05-28 22:29:58] INFO root fetch - processPackages [nlp-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlp-models-2.0.1.tar.gz tmp/nlp-models-2.1.0.tar.gz --markdown 20230528/n/nlp-models/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-05-28 22:30:00] INFO root fetch - main [MainThread]: End processing [nlp-models]: success
+[2023-05-28 22:30:00] INFO root fetch - main [MainThread]: Store serial: [18283363]
