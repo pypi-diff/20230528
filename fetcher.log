@@ -10346,3 +10346,51 @@ EOFError: EOF read where object expected
 [2023-05-28 22:56:46] INFO root fetch - main [MainThread]: End processing [StORF-Reporter]: success
 [2023-05-28 22:56:47] INFO root fetch - main [MainThread]: End processing [StORF-Reporter]: success
 [2023-05-28 22:56:47] INFO root fetch - main [MainThread]: Store serial: [18283473]
+[2023-05-28 23:01:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283473]
+[2023-05-28 23:01:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rising-plugin
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziamath
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cijoe
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jupytercards
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: atlassian-python-api
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: forml
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rising-plugin
+[2023-05-28 23:01:56] INFO root fetch - processPackages [cijoe]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ziamath]: New version: [0.8.1] Old Version: [0.8]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [forml]: New version: [0.93] Old Version: [0.92]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [jupytercards]: New version: [2.5.5] Old Version: [2.5.4]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [atlassian-python-api]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/5a/fc/7b878c89e6fd9f6e16c2c219272653cb39eb1530f24d39f1c7ccfe84311d/rising_plugin-0.0.5.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/5a/fc/7b878c89e6fd9f6e16c2c219272653cb39eb1530f24d39f1c7ccfe84311d/rising_plugin-0.0.5.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ziamath]: Downloading https://files.pythonhosted.org/packages/60/09/1e33af8fcfa2544fb46bdf55402e00c0160682a9a5e435841e1dd9bb1063/ziamath-0.8.1.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [jupytercards]: Downloading https://files.pythonhosted.org/packages/32/42/827c4a9c57ed5f11b24a3493bb8437002eba4774edf82a661f7c264fb87f/jupytercards-2.5.5.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [atlassian-python-api]: Downloading https://files.pythonhosted.org/packages/de/cb/1ab14dde3ba4e20ad5cbf7512888719fead9d55905895c511f6e87875e93/atlassian-python-api-3.9.0.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [forml]: Downloading https://files.pythonhosted.org/packages/4c/57/f869723fb995a5e5787416838a7a37dccca62c38d677ec5bf0ad0454fcd0/forml-0.92-py3-none-any.whl
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ziamath]: executing diffoscope
+[2023-05-28 23:01:56] INFO root fetch - processPackages [ziamath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziamath-0.8.tar.gz tmp/ziamath-0.8.1.tar.gz --markdown 20230528/z/ziamath/0.8-0.8.1/diff.md --exclude *.pyd
+[2023-05-28 23:01:56] INFO root fetch - processPackages [jupytercards]: executing diffoscope
+[2023-05-28 23:01:56] INFO root fetch - processPackages [jupytercards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupytercards-2.5.4.tar.gz tmp/jupytercards-2.5.5.tar.gz --markdown 20230528/j/jupytercards/2.5.4-2.5.5/diff.md --exclude *.pyd
+[2023-05-28 23:01:56] INFO root fetch - processPackages [cijoe]: executing diffoscope
+[2023-05-28 23:01:56] INFO root fetch - processPackages [cijoe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cijoe-0.9.8.tar.gz tmp/cijoe-0.9.9.tar.gz --markdown 20230528/c/cijoe/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/3c/31/968e2ff05e9cbbb0c151a4482aa62af242230ff85145f7dd289e2abe0499/rising_plugin-0.0.6.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: Downloading https://files.pythonhosted.org/packages/3c/31/968e2ff05e9cbbb0c151a4482aa62af242230ff85145f7dd289e2abe0499/rising_plugin-0.0.6.tar.gz
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.5.tar.gz tmp/rising_plugin-0.0.6.tar.gz --markdown 20230528/r/rising-plugin/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: executing diffoscope
+[2023-05-28 23:01:56] INFO root fetch - processPackages [rising-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rising_plugin-0.0.5.tar.gz tmp/rising_plugin-0.0.6.tar.gz --markdown 20230528/r/rising-plugin/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 23:01:56] INFO root fetch - processPackages [forml]: Downloading https://files.pythonhosted.org/packages/7a/ed/fd5113371942643ef22695ad605655c5269eac365105f79657c7d812050f/forml-0.93-py3-none-any.whl
+[2023-05-28 23:01:56] INFO root fetch - processPackages [atlassian-python-api]: Downloading https://files.pythonhosted.org/packages/cb/14/85d85bbd586b56a59d3d44b5ef418c2f03547213d1ae05e8c542fbcb50e7/atlassian-python-api-3.9.1.tar.gz
+[2023-05-28 23:01:57] INFO root fetch - processPackages [atlassian-python-api]: executing diffoscope
+[2023-05-28 23:01:57] INFO root fetch - processPackages [atlassian-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlassian-python-api-3.9.0.tar.gz tmp/atlassian-python-api-3.9.1.tar.gz --markdown 20230528/a/atlassian-python-api/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-28 23:01:57] INFO root fetch - processPackages [forml]: executing diffoscope
+[2023-05-28 23:01:57] INFO root fetch - processPackages [forml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forml-0.92-py3-none-any.whl.zip tmp/forml-0.93-py3-none-any.whl.zip --markdown 20230528/f/forml/0.92-0.93/diff.md --exclude *.pyd
+[2023-05-28 23:01:57] INFO root fetch - main [MainThread]: End processing [jupytercards]: success
+[2023-05-28 23:01:58] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-28 23:01:58] INFO root fetch - main [MainThread]: End processing [cijoe]: success
+[2023-05-28 23:01:58] INFO root fetch - main [MainThread]: End processing [rising-plugin]: success
+[2023-05-28 23:01:58] INFO root fetch - main [MainThread]: End processing [atlassian-python-api]: success
+[2023-05-28 23:01:59] INFO root fetch - main [MainThread]: End processing [ziamath]: success
+[2023-05-28 23:01:59] INFO root fetch - main [MainThread]: End processing [forml]: success
+[2023-05-28 23:01:59] INFO root fetch - main [MainThread]: Store serial: [18283493]
