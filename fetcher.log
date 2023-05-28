@@ -8916,3 +8916,91 @@ EOFError: EOF read where object expected
 [2023-05-28 20:00:28] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
 [2023-05-28 20:02:02] INFO root fetch - main [MainThread]: End processing [streamlit-chat-askgdpr]: success
 [2023-05-28 20:02:02] INFO root fetch - main [MainThread]: Store serial: [18282533]
+[2023-05-28 20:07:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282533]
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatcmd
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: custom-utils
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djangocms-frontend
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jatool
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonertheguy
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spn
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: DataStructureCol
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cracker
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chatcmd
+[2023-05-28 20:07:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: NeuralNetworkData
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [chatcmd]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] INFO root fetch - processPackages [chatcmd]: Start processing: EQuadratic
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [chatcmd] error
+[2023-05-28 20:07:11] INFO root fetch - processPackages [custom-utils]: New version: [0.0.39] Old Version: [0.0.38]
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [DataStructureCol]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] INFO root fetch - processPackages [djangocms-frontend]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-28 20:07:11] INFO root fetch - processPackages [DataStructureCol]: Start processing: spn
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [DataStructureCol] error
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [EQuadratic]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [jatool]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [chatcmd]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] INFO root fetch - processPackages [spn]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [nonertheguy]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] INFO root fetch - processPackages [NeuralNetworkData]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 20:07:11] INFO root fetch - processPackages [EQuadratic]: Start processing: python-runit
+[2023-05-28 20:07:11] INFO root fetch - processPackages [jatool]: Start processing: uk-postcodes-parsing
+[2023-05-28 20:07:11] INFO root fetch - processPackages [chatcmd]: Start processing: piperider-nightly
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [EQuadratic] error
+[2023-05-28 20:07:11] INFO root fetch - processPackages [nonertheguy]: Start processing: aws-lambda-stream
+[2023-05-28 20:07:11] INFO root fetch - processPackages [spn]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [jatool] error
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [chatcmd] error
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [nonertheguy] error
+[2023-05-28 20:07:11] INFO root fetch - processPackages [cracker]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-28 20:07:11] INFO root fetch - processPackages [python-runit]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 20:07:11] WARNING root fetch - processPackages [uk-postcodes-parsing]: Skipping, unable to determine old version
+[2023-05-28 20:07:11] INFO root fetch - processPackages [uk-postcodes-parsing]: Start processing: macrometa-source-snowflake
+[2023-05-28 20:07:11] INFO root fetch - main [MainThread]: End processing [uk-postcodes-parsing] error
+[2023-05-28 20:07:11] INFO root fetch - processPackages [aws-lambda-stream]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 20:07:11] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 20:07:11] INFO root fetch - processPackages [spn]: Downloading https://files.pythonhosted.org/packages/49/9a/d795bd7508536e2a0b6a50e14693c15ea3ff7b4e211346c9fa15b0f3afde/spn-0.1.0-py2.py3-none-any.whl
+[2023-05-28 20:07:11] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-05-28 20:07:11] INFO root fetch - processPackages [python-runit]: Downloading https://files.pythonhosted.org/packages/13/88/ab8d406d5be72f9220ef7286d6d40e5bd2339afaada471492387ec5f9e41/python-runit-0.1.0.tar.gz
+[2023-05-28 20:07:11] INFO root fetch - processPackages [NeuralNetworkData]: Downloading https://files.pythonhosted.org/packages/ee/96/35241db127b93cb85ad5c43cc466361bfbb1b85f72d6c68cb66b5d74cfe7/NeuralNetworkData-0.0.1.tar.gz
+[2023-05-28 20:07:11] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 20:07:11] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 20:07:11] INFO root fetch - processPackages [spn]: Downloading https://files.pythonhosted.org/packages/49/9a/d795bd7508536e2a0b6a50e14693c15ea3ff7b4e211346c9fa15b0f3afde/spn-0.1.0-py2.py3-none-any.whl
+[2023-05-28 20:07:11] INFO root fetch - processPackages [aws-lambda-stream]: Downloading https://files.pythonhosted.org/packages/22/8f/dcb5ba98230515a1199f83cfdb868fe7f1045540643bddbfe4b5e66b92be/aws_lambda_stream-1.0.8.tar.gz
+[2023-05-28 20:07:11] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-28 20:07:11] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.38.tar.gz tmp/custom-utils-0.0.39.tar.gz --markdown 20230528/c/custom-utils/0.0.38-0.0.39/diff.md --exclude *.pyd
+[2023-05-28 20:07:11] INFO root fetch - processPackages [cracker]: Downloading https://files.pythonhosted.org/packages/d2/16/d8b0d3269d531b325d8511fbcee8852b652c01a3c80337b77d087fa5ee06/cracker-0.7.3.tar.gz
+[2023-05-28 20:07:11] INFO root fetch - processPackages [djangocms-frontend]: Downloading https://files.pythonhosted.org/packages/10/f0/d86ab158bd3c67b86d6a45b3722f50359d58fbedf5cb82597f55af09ea27/djangocms-frontend-1.1.4.tar.gz
+[2023-05-28 20:07:12] INFO root fetch - processPackages [spn]: Downloading https://files.pythonhosted.org/packages/42/7d/7d26083557b99a101cc2edff69f29adb2fac68eaa53311e966c833d5050f/spn-0.2.0.tar.gz
+[2023-05-28 20:07:12] INFO root fetch - processPackages [spn]: Downloading https://files.pythonhosted.org/packages/42/7d/7d26083557b99a101cc2edff69f29adb2fac68eaa53311e966c833d5050f/spn-0.2.0.tar.gz
+[2023-05-28 20:07:12] INFO root fetch - processPackages [python-runit]: Downloading https://files.pythonhosted.org/packages/b9/96/77b2f6306659be9a71e2b3712be7f7a705c377768cf92268b595f420f439/python-runit-0.2.0.tar.gz
+[2023-05-28 20:07:12] INFO root fetch - processPackages [NeuralNetworkData]: Downloading https://files.pythonhosted.org/packages/d4/4b/a7690cf66d5fd541e6b94266462211cc38eff9e2bf3ecca9845d55b08cce/NeuralNetworkData-0.0.2.tar.gz
+[2023-05-28 20:07:12] INFO root fetch - processPackages [cracker]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [cracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cracker-0.7.2.tar.gz tmp/cracker-0.7.3.tar.gz --markdown 20230528/c/cracker/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [djangocms-frontend]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [djangocms-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-frontend-1.1.3.tar.gz tmp/djangocms-frontend-1.1.4.tar.gz --markdown 20230528/d/djangocms-frontend/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [python-runit]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [NeuralNetworkData]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [NeuralNetworkData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NeuralNetworkData-0.0.1.tar.gz tmp/NeuralNetworkData-0.0.2.tar.gz --markdown 20230528/N/NeuralNetworkData/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [python-runit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-runit-0.1.0.tar.gz tmp/python-runit-0.2.0.tar.gz --markdown 20230528/p/python-runit/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230528/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [spn]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [spn]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [spn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spn-0.1.0-py2.py3-none-any.whl.zip tmp/spn-0.2.0.tar.gz --markdown 20230528/s/spn/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [spn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spn-0.1.0-py2.py3-none-any.whl.zip tmp/spn-0.2.0.tar.gz --markdown 20230528/s/spn/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] INFO root fetch - processPackages [aws-lambda-stream]: Downloading https://files.pythonhosted.org/packages/da/15/c31ca0eb5f5909e28e4231087916245fa809168fa902c34c9df8c1c94268/aws_lambda_stream-1.0.9.tar.gz
+[2023-05-28 20:07:12] INFO root fetch - processPackages [aws-lambda-stream]: executing diffoscope
+[2023-05-28 20:07:12] INFO root fetch - processPackages [aws-lambda-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_stream-1.0.8.tar.gz tmp/aws_lambda_stream-1.0.9.tar.gz --markdown 20230528/a/aws-lambda-stream/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 20:07:12] ERROR root fetch - processPackages [spn]: Diffoscope failed: Error: error creating container storage: the container name "pedantic_torvalds" is already in use by "43a11e2efb8812a63b17cd75f58259b3fa7d0d841b202e9ebb9ae275d91a41dd". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-28 20:07:12] INFO root fetch - main [MainThread]: End processing [spn] error
+[2023-05-28 20:07:13] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 20:07:13] INFO root fetch - main [MainThread]: End processing [spn]: success
+[2023-05-28 20:07:13] INFO root fetch - main [MainThread]: End processing [cracker]: success
+[2023-05-28 20:07:14] INFO root fetch - main [MainThread]: End processing [NeuralNetworkData]: success
+[2023-05-28 20:07:14] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-28 20:07:14] INFO root fetch - main [MainThread]: End processing [python-runit]: success
+[2023-05-28 20:07:15] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-05-28 20:07:17] INFO root fetch - main [MainThread]: End processing [djangocms-frontend]: success
+[2023-05-28 20:08:02] INFO root fetch - main [MainThread]: End processing [aws-lambda-stream]: success
+[2023-05-28 20:08:02] INFO root fetch - main [MainThread]: Store serial: [18282606]
