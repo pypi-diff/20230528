@@ -6143,3 +6143,44 @@
 [2023-05-28 14:53:22] INFO root fetch - main [MainThread]: End processing [pydantic-dynamo]: success
 [2023-05-28 14:53:22] INFO root fetch - main [MainThread]: End processing [panml]: success
 [2023-05-28 14:53:22] INFO root fetch - main [MainThread]: Store serial: [18280816]
+[2023-05-28 14:58:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280816]
+[2023-05-28 14:58:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lndb
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plutous-trade
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Misago
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-quantizers-nightly
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unihan-etl
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plutous-trade-crypto
+[2023-05-28 14:58:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xsget
+[2023-05-28 14:58:31] INFO root fetch - processPackages [unihan-etl]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-28 14:58:31] WARNING root fetch - processPackages [mct-quantizers-nightly]: Skipping, unable to determine old version
+[2023-05-28 14:58:31] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly] error
+[2023-05-28 14:58:31] INFO root fetch - processPackages [plutous-trade]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 14:58:31] INFO root fetch - processPackages [plutous-trade-crypto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 14:58:31] INFO root fetch - processPackages [xsget]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 14:58:31] INFO root fetch - processPackages [lndb]: New version: [0.45a3] Old Version: [0.45a2]
+[2023-05-28 14:58:31] INFO root fetch - processPackages [Misago]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 14:58:31] INFO root fetch - processPackages [unihan-etl]: executing diffoscope
+[2023-05-28 14:58:31] INFO root fetch - processPackages [unihan-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unihan-etl-0.9.4.tar.gz tmp/unihan-etl-0.9.5.tar.gz --markdown 20230528/u/unihan-etl/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-28 14:58:31] INFO root fetch - processPackages [plutous-trade]: Downloading https://files.pythonhosted.org/packages/c1/2b/6b557b2cb5ec4a19583edf2f5afd460b6e4e7546b9e65a572aa975317d08/plutous_trade-0.0.3.tar.gz
+[2023-05-28 14:58:31] INFO root fetch - processPackages [xsget]: Downloading https://files.pythonhosted.org/packages/96/a6/b71d9512c97667916e557dd9cd533b70e8ca6a55dab9074d6f5358957fa3/xsget-0.1.8.tar.gz
+[2023-05-28 14:58:32] INFO root fetch - processPackages [lndb]: Downloading https://files.pythonhosted.org/packages/dd/c3/631499b1daac6c220a077a740fc75eb7baebf2c92b90c0dfe02985310bda/lndb-0.45a3.tar.gz
+[2023-05-28 14:58:32] INFO root fetch - processPackages [plutous-trade]: Downloading https://files.pythonhosted.org/packages/7a/10/be7c0d46ba649d014d674aa060fe74429d3c25f9c01bb9a860c9f65ed2bc/plutous_trade-0.0.4.tar.gz
+[2023-05-28 14:58:32] INFO root fetch - processPackages [plutous-trade-crypto]: executing diffoscope
+[2023-05-28 14:58:32] INFO root fetch - processPackages [plutous-trade-crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutous_trade_crypto-0.0.8.tar.gz tmp/plutous_trade_crypto-0.0.9.tar.gz --markdown 20230528/p/plutous-trade-crypto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 14:58:32] INFO root fetch - processPackages [Misago]: executing diffoscope
+[2023-05-28 14:58:32] INFO root fetch - processPackages [Misago]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Misago-0.8.0.tar.gz tmp/Misago-0.9.0.tar.gz --markdown 20230528/M/Misago/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 14:58:32] INFO root fetch - processPackages [xsget]: Downloading https://files.pythonhosted.org/packages/66/35/2c898bac16a5b69022653501992a8126b1dbc5ab40174c24a13824b786fa/xsget-0.1.9.tar.gz
+[2023-05-28 14:58:32] INFO root fetch - processPackages [lndb]: executing diffoscope
+[2023-05-28 14:58:32] INFO root fetch - processPackages [lndb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lndb-0.45a2.tar.gz tmp/lndb-0.45a3.tar.gz --markdown 20230528/l/lndb/0.45a2-0.45a3/diff.md --exclude *.pyd
+[2023-05-28 14:58:32] INFO root fetch - processPackages [plutous-trade]: executing diffoscope
+[2023-05-28 14:58:32] INFO root fetch - processPackages [plutous-trade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutous_trade-0.0.3.tar.gz tmp/plutous_trade-0.0.4.tar.gz --markdown 20230528/p/plutous-trade/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 14:58:32] INFO root fetch - processPackages [xsget]: executing diffoscope
+[2023-05-28 14:58:32] INFO root fetch - processPackages [xsget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xsget-0.1.8.tar.gz tmp/xsget-0.1.9.tar.gz --markdown 20230528/x/xsget/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 14:58:32] INFO root fetch - main [MainThread]: End processing [unihan-etl]: success
+[2023-05-28 14:58:33] INFO root fetch - main [MainThread]: End processing [plutous-trade-crypto]: success
+[2023-05-28 14:58:33] INFO root fetch - main [MainThread]: End processing [plutous-trade]: success
+[2023-05-28 14:58:34] INFO root fetch - main [MainThread]: End processing [xsget]: success
+[2023-05-28 14:58:34] INFO root fetch - main [MainThread]: End processing [lndb]: success
+[2023-05-28 14:59:35] INFO root fetch - main [MainThread]: End processing [Misago]: success
+[2023-05-28 14:59:35] INFO root fetch - main [MainThread]: Store serial: [18280837]
