@@ -4382,3 +4382,41 @@
 [2023-05-28 11:54:50] INFO root fetch - main [MainThread]: End processing [mkdocs-toc-md]: success
 [2023-05-28 11:54:50] INFO root fetch - main [MainThread]: End processing [kaioretry]: success
 [2023-05-28 11:54:50] INFO root fetch - main [MainThread]: Store serial: [18279785]
+[2023-05-28 11:59:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279785]
+[2023-05-28 12:00:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkmfly
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkfly
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: knx-frontend
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ifastapi
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yellowbox
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bc-detect-secrets
+[2023-05-28 12:00:00] INFO root fetch - processPackages [tkmfly]: New version: [0.1.0b3] Old Version: [0.1.0b2]
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-05-28 12:00:00] INFO root fetch - processPackages [tkfly]: New version: [0.1.0b3] Old Version: [0.1.0b1]
+[2023-05-28 12:00:00] INFO root fetch - processPackages [knx-frontend]: New version: [2023.5.28.94855] Old Version: [2023.5.2.73247]
+[2023-05-28 12:00:00] INFO root fetch - processPackages [yellowbox]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 12:00:00] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-05-28 12:00:00] INFO root fetch - processPackages [bc-detect-secrets]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-28 12:00:00] INFO root fetch - processPackages [yellowbox]: Downloading https://files.pythonhosted.org/packages/57/9d/612a19dd2e730c08e13651979344fde027153506e4226e4f07dea15da5b1/yellowbox-0.8.2.tar.gz
+[2023-05-28 12:00:00] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/0a/72/fb8ab7507c12c528b84d129c76856d8b762b29b21a3b5a9f7646dfcaf2ab/tkfly-0.1.0b1.tar.gz
+[2023-05-28 12:00:00] INFO root fetch - processPackages [knx-frontend]: Downloading https://files.pythonhosted.org/packages/43/4e/6213d3408d02658eac33ff8439112d8c36b17138a166439615ae6435e24a/knx_frontend-2023.5.2.73247.tar.gz
+[2023-05-28 12:00:00] WARNING root fetch - processPackages [tkfly]: Skipping package: exceeds size limit 27791440>=10485760
+[2023-05-28 12:00:00] INFO root fetch - main [MainThread]: End processing [tkfly] error
+[2023-05-28 12:00:00] INFO root fetch - processPackages [tkmfly]: Downloading https://files.pythonhosted.org/packages/2d/cc/485cc23863d0aba727fdb9a8bd8d51fec0a593636ee68fe7c43ad01f3a6c/tkmfly-0.1.0b3.tar.gz
+[2023-05-28 12:00:00] INFO root fetch - processPackages [bc-detect-secrets]: executing diffoscope
+[2023-05-28 12:00:00] INFO root fetch - processPackages [bc-detect-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bc-detect-secrets-1.4.8.tar.gz tmp/bc-detect-secrets-1.4.9.tar.gz --markdown 20230528/b/bc-detect-secrets/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-28 12:00:01] INFO root fetch - processPackages [yellowbox]: Downloading https://files.pythonhosted.org/packages/be/61/a04dd0eff50533523ba6bfb65ce77e5a520155b946ddd21a6c02295ca293/yellowbox-0.8.3.tar.gz
+[2023-05-28 12:00:01] INFO root fetch - processPackages [tkmfly]: executing diffoscope
+[2023-05-28 12:00:01] INFO root fetch - processPackages [tkmfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkmfly-0.1.0b2.tar.gz tmp/tkmfly-0.1.0b3.tar.gz --markdown 20230528/t/tkmfly/0.1.0b2-0.1.0b3/diff.md --exclude *.pyd
+[2023-05-28 12:00:01] INFO root fetch - processPackages [yellowbox]: executing diffoscope
+[2023-05-28 12:00:01] INFO root fetch - processPackages [yellowbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yellowbox-0.8.2.tar.gz tmp/yellowbox-0.8.3.tar.gz --markdown 20230528/y/yellowbox/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-05-28 12:00:01] INFO root fetch - processPackages [knx-frontend]: Downloading https://files.pythonhosted.org/packages/eb/aa/fb10559044160afaafdefb3f82b2ea8425f1d84f0535c58d3bb80535afe8/knx_frontend-2023.5.28.94855.tar.gz
+[2023-05-28 12:00:01] INFO root fetch - processPackages [knx-frontend]: executing diffoscope
+[2023-05-28 12:00:01] INFO root fetch - processPackages [knx-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knx_frontend-2023.5.2.73247.tar.gz tmp/knx_frontend-2023.5.28.94855.tar.gz --markdown 20230528/k/knx-frontend/2023.5.2.73247-2023.5.28.94855/diff.md --exclude *.pyd
+[2023-05-28 12:00:01] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 12:00:02] INFO root fetch - main [MainThread]: End processing [yellowbox]: success
+[2023-05-28 12:00:02] INFO root fetch - main [MainThread]: End processing [bc-detect-secrets]: success
+[2023-05-28 12:00:02] INFO root fetch - main [MainThread]: End processing [tkmfly]: success
+[2023-05-28 12:00:12] INFO root fetch - main [MainThread]: End processing [knx-frontend]: success
+[2023-05-28 12:00:12] INFO root fetch - main [MainThread]: Store serial: [18279802]
