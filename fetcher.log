@@ -2128,3 +2128,46 @@
 [2023-05-28 05:56:16] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.4-py3-none-any.whl.zip tmp/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.5.dev1-py3-none-any.whl.zip --markdown 20230528/o/odoo14-addon-l10n-es-vat-prorate/14.0.1.0.4-14.0.1.0.5.dev1/diff.md --exclude *.pyd
 [2023-05-28 05:56:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-vat-prorate]: success
 [2023-05-28 05:56:18] INFO root fetch - main [MainThread]: Store serial: [18278372]
+[2023-05-28 06:01:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278372]
+[2023-05-28 06:01:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openllm
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paper-qa
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arange
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docspec
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docspec-python
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tree-of-thoughts
+[2023-05-28 06:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyalarmdotcomajax
+[2023-05-28 06:01:27] INFO root fetch - processPackages [pyalarmdotcomajax]: New version: [0.5.0b6] Old Version: [0.5.0b5]
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec-python]: New version: [2.2.0] Old Version: [2.1.2]
+[2023-05-28 06:01:27] WARNING root fetch - processPackages [arange]: Skipping, unable to determine old version
+[2023-05-28 06:01:27] INFO root fetch - main [MainThread]: End processing [arange] error
+[2023-05-28 06:01:27] INFO root fetch - processPackages [paper-qa]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-28 06:01:27] INFO root fetch - processPackages [tree-of-thoughts]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec]: New version: [2.2.0] Old Version: [2.1.2]
+[2023-05-28 06:01:27] INFO root fetch - processPackages [openllm]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec-python]: Downloading https://files.pythonhosted.org/packages/03/d3/77bd867892fc15b57656947d77d6cd919a1be86a6dcec7c88b089b8eef74/docspec_python-2.1.2.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/21/09/5ca8958b9fd154c8014204eabb82405acd2c27f56afdcbd9064be75aff99/openllm-0.0.6.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec]: Downloading https://files.pythonhosted.org/packages/ae/c2/05931142724e35b0f5cd78034f3a0c14e4c743ec1ef6539696b37a0ae24f/docspec-2.1.2.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2023-05-28 06:01:27] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-qa-1.8.0.tar.gz tmp/paper-qa-1.9.0.tar.gz --markdown 20230528/p/paper-qa/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-28 06:01:27] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11980682>=10485760
+[2023-05-28 06:01:27] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-05-28 06:01:27] INFO root fetch - processPackages [tree-of-thoughts]: Downloading https://files.pythonhosted.org/packages/13/7a/d5792d63d0c6659a365efa7429ef21aafe84a676200c1eb456a78d680c60/tree-of-thoughts-0.2.5.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [pyalarmdotcomajax]: Downloading https://files.pythonhosted.org/packages/76/fc/c569d298db31d57d2814d524ab8b19c4e505b04b853a66d1f5c2a765a953/pyalarmdotcomajax-0.5.0b6.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [tree-of-thoughts]: Downloading https://files.pythonhosted.org/packages/fd/75/84ca672844794d00f1232fad3673d6d90b2e6a0ba7532b14ab80f13b6c60/tree-of-thoughts-0.2.6.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec]: Downloading https://files.pythonhosted.org/packages/84/c4/dbdabfd4d83499777f4e2af0315a02b0a07b084b33c34353003e5e9c0f44/docspec-2.2.0.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec-python]: Downloading https://files.pythonhosted.org/packages/0e/40/603189898706235aa5a5fe2d39ef89515caf3de112615bd542e2d84aa6e1/docspec_python-2.2.0.tar.gz
+[2023-05-28 06:01:27] INFO root fetch - processPackages [pyalarmdotcomajax]: executing diffoscope
+[2023-05-28 06:01:27] INFO root fetch - processPackages [pyalarmdotcomajax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalarmdotcomajax-0.5.0b5.tar.gz tmp/pyalarmdotcomajax-0.5.0b6.tar.gz --markdown 20230528/p/pyalarmdotcomajax/0.5.0b5-0.5.0b6/diff.md --exclude *.pyd
+[2023-05-28 06:01:27] INFO root fetch - processPackages [tree-of-thoughts]: executing diffoscope
+[2023-05-28 06:01:27] INFO root fetch - processPackages [tree-of-thoughts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-of-thoughts-0.2.5.tar.gz tmp/tree-of-thoughts-0.2.6.tar.gz --markdown 20230528/t/tree-of-thoughts/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec]: executing diffoscope
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docspec-2.1.2.tar.gz tmp/docspec-2.2.0.tar.gz --markdown 20230528/d/docspec/2.1.2-2.2.0/diff.md --exclude *.pyd
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec-python]: executing diffoscope
+[2023-05-28 06:01:27] INFO root fetch - processPackages [docspec-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docspec_python-2.1.2.tar.gz tmp/docspec_python-2.2.0.tar.gz --markdown 20230528/d/docspec-python/2.1.2-2.2.0/diff.md --exclude *.pyd
+[2023-05-28 06:01:28] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
+[2023-05-28 06:01:28] INFO root fetch - main [MainThread]: End processing [tree-of-thoughts]: success
+[2023-05-28 06:01:28] INFO root fetch - main [MainThread]: End processing [docspec]: success
+[2023-05-28 06:01:29] INFO root fetch - main [MainThread]: End processing [pyalarmdotcomajax]: success
+[2023-05-28 06:02:17] INFO root fetch - main [MainThread]: End processing [docspec-python]: success
+[2023-05-28 06:02:17] INFO root fetch - main [MainThread]: Store serial: [18278395]
