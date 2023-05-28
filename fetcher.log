@@ -9819,3 +9819,35 @@ EOFError: EOF read where object expected
 [2023-05-28 21:37:41] INFO root fetch - main [MainThread]: End processing [i8-terminal]: success
 [2023-05-28 21:37:42] INFO root fetch - main [MainThread]: End processing [signalflow]: success
 [2023-05-28 21:37:42] INFO root fetch - main [MainThread]: Store serial: [18283143]
+[2023-05-28 21:42:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283143]
+[2023-05-28 21:42:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 21:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: i8-terminal
+[2023-05-28 21:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trilogy-public-models
+[2023-05-28 21:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydoc-markdown
+[2023-05-28 21:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DTLSSocket
+[2023-05-28 21:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AoiPy
+[2023-05-28 21:42:52] INFO root fetch - processPackages [DTLSSocket]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 21:42:52] INFO root fetch - processPackages [AoiPy]: New version: [0.9.18] Old Version: [0.9.17]
+[2023-05-28 21:42:52] INFO root fetch - processPackages [trilogy-public-models]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-28 21:42:52] INFO root fetch - processPackages [i8-terminal]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 21:42:52] INFO root fetch - processPackages [pydoc-markdown]: New version: [4.8.0] Old Version: [4.7.0]
+[2023-05-28 21:42:53] INFO root fetch - processPackages [DTLSSocket]: Downloading https://files.pythonhosted.org/packages/18/2b/9fa82d730955ca1c53d882f3ffc82f5499efb5393f47f558f27534f5f802/DTLSSocket-0.1.8.tar.gz
+[2023-05-28 21:42:53] INFO root fetch - processPackages [AoiPy]: Downloading https://files.pythonhosted.org/packages/f8/27/5da8a71f296f225c17b3ca84e877f963fdba228b95bff7e6c40ae3bd2a0a/AoiPy-0.9.18-py3-none-any.whl
+[2023-05-28 21:42:53] INFO root fetch - processPackages [pydoc-markdown]: Downloading https://files.pythonhosted.org/packages/68/5e/069abec30bdd40a782f52d84899a5aba51c3c7d7405ab49785a7fe2880e1/pydoc_markdown-4.8.0.tar.gz
+[2023-05-28 21:42:53] INFO root fetch - processPackages [trilogy-public-models]: executing diffoscope
+[2023-05-28 21:42:53] INFO root fetch - processPackages [trilogy-public-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trilogy-public-models-0.0.6.tar.gz tmp/trilogy-public-models-0.0.8.tar.gz --markdown 20230528/t/trilogy-public-models/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 21:42:53] INFO root fetch - processPackages [i8-terminal]: executing diffoscope
+[2023-05-28 21:42:53] INFO root fetch - processPackages [i8-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i8-terminal-0.2.8.tar.gz tmp/i8-terminal-0.2.9.tar.gz --markdown 20230528/i/i8-terminal/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 21:42:53] INFO root fetch - processPackages [AoiPy]: executing diffoscope
+[2023-05-28 21:42:53] INFO root fetch - processPackages [AoiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoiPy-0.9.17-py3-none-any.whl.zip tmp/AoiPy-0.9.18-py3-none-any.whl.zip --markdown 20230528/A/AoiPy/0.9.17-0.9.18/diff.md --exclude *.pyd
+[2023-05-28 21:42:53] INFO root fetch - processPackages [pydoc-markdown]: executing diffoscope
+[2023-05-28 21:42:53] INFO root fetch - processPackages [pydoc-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydoc_markdown-4.7.0.tar.gz tmp/pydoc_markdown-4.8.0.tar.gz --markdown 20230528/p/pydoc-markdown/4.7.0-4.8.0/diff.md --exclude *.pyd
+[2023-05-28 21:42:53] INFO root fetch - processPackages [DTLSSocket]: Downloading https://files.pythonhosted.org/packages/af/60/e64c275e80ef396898ef6404a4e3c3212b4e9099aadbe15e23be3acdfe44/DTLSSocket-0.1.9.tar.gz
+[2023-05-28 21:42:53] INFO root fetch - processPackages [DTLSSocket]: executing diffoscope
+[2023-05-28 21:42:53] INFO root fetch - processPackages [DTLSSocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DTLSSocket-0.1.8.tar.gz tmp/DTLSSocket-0.1.9.tar.gz --markdown 20230528/D/DTLSSocket/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 21:42:54] INFO root fetch - main [MainThread]: End processing [AoiPy]: success
+[2023-05-28 21:42:54] INFO root fetch - main [MainThread]: End processing [trilogy-public-models]: success
+[2023-05-28 21:42:54] INFO root fetch - main [MainThread]: End processing [pydoc-markdown]: success
+[2023-05-28 21:42:54] INFO root fetch - main [MainThread]: End processing [i8-terminal]: success
+[2023-05-28 21:42:55] INFO root fetch - main [MainThread]: End processing [DTLSSocket]: success
+[2023-05-28 21:42:55] INFO root fetch - main [MainThread]: Store serial: [18283157]
