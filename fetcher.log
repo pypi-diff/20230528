@@ -7841,3 +7841,53 @@ EOFError: EOF read where object expected
 [2023-05-28 17:42:07] INFO root fetch - main [MainThread]: End processing [PH-Baseliner]: success
 [2023-05-28 17:42:11] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-28 17:42:11] INFO root fetch - main [MainThread]: Store serial: [18281825]
+[2023-05-28 17:47:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281825]
+[2023-05-28 17:47:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfc
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: signalflow
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhOn
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: faceid-lib
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ACT-100
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dramkit
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: attachments-fetcher
+[2023-05-28 17:47:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: oakvar
+[2023-05-28 17:47:20] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-28 17:47:20] INFO root fetch - processPackages [chatcmd]: New version: [1.0.50] Old Version: [1.0.49]
+[2023-05-28 17:47:20] INFO root fetch - processPackages [signalflow]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 17:47:20] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-28 17:47:20] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230528/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [faceid-lib]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-28 17:47:20] WARNING root fetch - processPackages [ACT-100]: Skipping, unable to determine old version
+[2023-05-28 17:47:20] WARNING root fetch - processPackages [attachments-fetcher]: Skipping, unable to determine old version
+[2023-05-28 17:47:20] INFO root fetch - main [MainThread]: End processing [ACT-100] error
+[2023-05-28 17:47:20] INFO root fetch - main [MainThread]: End processing [attachments-fetcher] error
+[2023-05-28 17:47:20] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230528/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [dramkit]: New version: [0.5.43] Old Version: [0.5.42]
+[2023-05-28 17:47:20] INFO root fetch - processPackages [signalflow]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [signalflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signalflow-0.0.5-cp39-cp39-macosx_11_0_arm64.whl.zip tmp/signalflow-0.0.6-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20230528/s/signalflow/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [tfc]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-28 17:47:20] INFO root fetch - processPackages [faceid-lib]: Downloading https://files.pythonhosted.org/packages/b9/36/3512ed72c7d0ab63a25d511c4d8118af05243f64b82f413ba9b3060f1515/faceid-lib-2.0.1.tar.gz
+[2023-05-28 17:47:20] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/2e/be/f59cd77405a9a4b549764dd19824d1ea009c7d3acd764cd70d9c9577e8b0/chatcmd-1.0.50.tar.gz
+[2023-05-28 17:47:20] INFO root fetch - processPackages [tfc]: Downloading https://files.pythonhosted.org/packages/a5/cc/a915535d81cdd6253459d08845f4a39e5190d377fa0d34898fc23b02e62b/tfc-1.0.3.tar.gz
+[2023-05-28 17:47:20] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.49.tar.gz tmp/chatcmd-1.0.50.tar.gz --markdown 20230528/c/chatcmd/1.0.49-1.0.50/diff.md --exclude *.pyd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [dramkit]: Downloading https://files.pythonhosted.org/packages/b8/c2/6c92355133712b43f4c781f292a87fb6e6c35eeee29cc2aec917ef1329ac/dramkit-0.5.43.tar.gz
+[2023-05-28 17:47:20] INFO root fetch - processPackages [tfc]: Downloading https://files.pythonhosted.org/packages/e4/fe/51a82ff2fd5137cfa7cf684af4f1190e824194504255c5a99943ccfddb7a/tfc-1.0.4.tar.gz
+[2023-05-28 17:47:20] INFO root fetch - processPackages [faceid-lib]: Downloading https://files.pythonhosted.org/packages/f9/8f/88dad53eb17032de8406f7a8ebb8166c2732072e684542b4bc8ec739bada/faceid-lib-2.0.2.tar.gz
+[2023-05-28 17:47:20] INFO root fetch - processPackages [tfc]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [tfc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfc-1.0.3.tar.gz tmp/tfc-1.0.4.tar.gz --markdown 20230528/t/tfc/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [faceid-lib]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [faceid-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceid-lib-2.0.1.tar.gz tmp/faceid-lib-2.0.2.tar.gz --markdown 20230528/f/faceid-lib/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-28 17:47:20] INFO root fetch - processPackages [dramkit]: executing diffoscope
+[2023-05-28 17:47:20] INFO root fetch - processPackages [dramkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dramkit-0.5.42.tar.gz tmp/dramkit-0.5.43.tar.gz --markdown 20230528/d/dramkit/0.5.42-0.5.43/diff.md --exclude *.pyd
+[2023-05-28 17:47:21] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-28 17:47:22] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 17:47:22] INFO root fetch - main [MainThread]: End processing [faceid-lib]: success
+[2023-05-28 17:47:22] INFO root fetch - main [MainThread]: End processing [tfc]: success
+[2023-05-28 17:47:24] INFO root fetch - main [MainThread]: End processing [dramkit]: success
+[2023-05-28 17:47:24] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-28 17:47:26] INFO root fetch - main [MainThread]: End processing [signalflow]: success
+[2023-05-28 17:47:26] INFO root fetch - main [MainThread]: Store serial: [18281880]
