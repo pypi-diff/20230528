@@ -1835,3 +1835,29 @@
 [2023-05-28 04:43:50] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-28 04:43:51] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
 [2023-05-28 04:43:51] INFO root fetch - main [MainThread]: Store serial: [18278114]
+[2023-05-28 04:48:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278114]
+[2023-05-28 04:48:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 04:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rtb-toolbox
+[2023-05-28 04:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auptitcafe
+[2023-05-28 04:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakvar
+[2023-05-28 04:48:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydoc-markdown
+[2023-05-28 04:48:59] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.59] Old Version: [0.1.58]
+[2023-05-28 04:48:59] INFO root fetch - processPackages [pydoc-markdown]: New version: [4.6.5] Old Version: [4.6.4]
+[2023-05-28 04:48:59] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 04:48:59] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-28 04:48:59] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 04:48:59] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 04:48:59] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/77/77/fb57926d3ceffcf4640abe0a3d7182dbcc0870b86cbdaf6936e343162da6/rtb_toolbox-0.1.59.tar.gz
+[2023-05-28 04:48:59] INFO root fetch - processPackages [pydoc-markdown]: Downloading https://files.pythonhosted.org/packages/9e/5b/040c91fc0d451c1625ea6b86f04f0aeb6b19a2d50084575545baede471e1/pydoc_markdown-4.6.4.tar.gz
+[2023-05-28 04:49:00] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-28 04:49:00] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230528/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-28 04:49:00] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 04:49:00] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.58.tar.gz tmp/rtb_toolbox-0.1.59.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.58-0.1.59/diff.md --exclude *.pyd
+[2023-05-28 04:49:00] INFO root fetch - processPackages [pydoc-markdown]: Downloading https://files.pythonhosted.org/packages/77/43/f3cf18d6214a0ac0222c0496e958fd6685da804a3be54ecea99cccbd6ee0/pydoc_markdown-4.6.5.tar.gz
+[2023-05-28 04:49:00] INFO root fetch - processPackages [pydoc-markdown]: executing diffoscope
+[2023-05-28 04:49:00] INFO root fetch - processPackages [pydoc-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydoc_markdown-4.6.4.tar.gz tmp/pydoc_markdown-4.6.5.tar.gz --markdown 20230528/p/pydoc-markdown/4.6.4-4.6.5/diff.md --exclude *.pyd
+[2023-05-28 04:49:00] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 04:49:01] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 04:49:01] INFO root fetch - main [MainThread]: End processing [pydoc-markdown]: success
+[2023-05-28 04:49:04] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-28 04:49:04] INFO root fetch - main [MainThread]: Store serial: [18278127]
