@@ -7454,3 +7454,51 @@ EOFError: EOF read where object expected
 [2023-05-28 17:06:29] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
 [2023-05-28 17:06:30] INFO root fetch - main [MainThread]: End processing [signalflow]: success
 [2023-05-28 17:06:30] INFO root fetch - main [MainThread]: Store serial: [18281586]
+[2023-05-28 17:11:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281586]
+[2023-05-28 17:11:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: su6
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sentry-dynamic-sampling-lib
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atsphinx-feed
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dscan-api-client
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: remotior-sensus
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aalink
+[2023-05-28 17:11:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fondat
+[2023-05-28 17:11:54] INFO root fetch - processPackages [fondat]: New version: [4.1.2] Old Version: [4.1.1]
+[2023-05-28 17:11:54] INFO root fetch - processPackages [chatcmd]: New version: [1.0.48] Old Version: [1.0.47]
+[2023-05-28 17:11:54] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 17:11:54] WARNING root fetch - processPackages [atsphinx-feed]: Skipping, unable to determine old version
+[2023-05-28 17:11:54] INFO root fetch - main [MainThread]: End processing [atsphinx-feed] error
+[2023-05-28 17:11:54] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: New version: [1.2.0a2] Old Version: [1.2.0a1]
+[2023-05-28 17:11:54] INFO root fetch - processPackages [su6]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-28 17:11:54] INFO root fetch - processPackages [aalink]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 17:11:54] INFO root fetch - processPackages [remotior-sensus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 17:11:54] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-28 17:11:54] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.8-py3-none-any.whl.zip tmp/dscan_api_client-1.0.9-py3-none-any.whl.zip --markdown 20230528/d/dscan-api-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:11:54] INFO root fetch - processPackages [fondat]: executing diffoscope
+[2023-05-28 17:11:54] INFO root fetch - processPackages [fondat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fondat-4.1.1.tar.gz tmp/fondat-4.1.2.tar.gz --markdown 20230528/f/fondat/4.1.1-4.1.2/diff.md --exclude *.pyd
+[2023-05-28 17:11:54] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/85/4c/a6cddd6300718389b0769f7082d64ac1cea71885c054ea0426a6adc144fc/chatcmd-1.0.48.tar.gz
+[2023-05-28 17:11:54] INFO root fetch - processPackages [remotior-sensus]: Downloading https://files.pythonhosted.org/packages/2d/82/4f0f8be3b8f3c4f00b90027ff3c32958918221be17a5ad7c3cf298d4af04/remotior_sensus-0.0.8.tar.gz
+[2023-05-28 17:11:54] INFO root fetch - processPackages [aalink]: Downloading https://files.pythonhosted.org/packages/15/68/2510632b939cf79e9abcc890c9aed7a404fab7331d052190777eff9f660e/aalink-0.0.2.tar.gz
+[2023-05-28 17:11:54] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: Downloading https://files.pythonhosted.org/packages/d5/36/65b8e3b5597e8f99348ea672d24a008652864a267238839dd872b1a1fab1/sentry_dynamic_sampling_lib-1.2.0a2.tar.gz
+[2023-05-28 17:11:55] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 17:11:55] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.47.tar.gz tmp/chatcmd-1.0.48.tar.gz --markdown 20230528/c/chatcmd/1.0.47-1.0.48/diff.md --exclude *.pyd
+[2023-05-28 17:11:55] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/d4/d5/ac8af62fd9e178bed3d7040bd125da5dd64b1f2c0d4994f5135d4bdce621/su6-0.3.0.tar.gz
+[2023-05-28 17:11:55] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: executing diffoscope
+[2023-05-28 17:11:55] INFO root fetch - processPackages [sentry-dynamic-sampling-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry_dynamic_sampling_lib-1.2.0a1.tar.gz tmp/sentry_dynamic_sampling_lib-1.2.0a2.tar.gz --markdown 20230528/s/sentry-dynamic-sampling-lib/1.2.0a1-1.2.0a2/diff.md --exclude *.pyd
+[2023-05-28 17:11:55] INFO root fetch - processPackages [su6]: executing diffoscope
+[2023-05-28 17:11:55] INFO root fetch - processPackages [su6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/su6-0.2.1.tar.gz tmp/su6-0.3.0.tar.gz --markdown 20230528/s/su6/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 17:11:55] INFO root fetch - processPackages [remotior-sensus]: Downloading https://files.pythonhosted.org/packages/e4/c8/0c6054910848b2651da24ecb17a3d9ab9a62b4c844a98797ec686eaac17b/remotior_sensus-0.0.9.tar.gz
+[2023-05-28 17:11:55] INFO root fetch - processPackages [remotior-sensus]: executing diffoscope
+[2023-05-28 17:11:55] INFO root fetch - processPackages [remotior-sensus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotior_sensus-0.0.8.tar.gz tmp/remotior_sensus-0.0.9.tar.gz --markdown 20230528/r/remotior-sensus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 17:11:55] INFO root fetch - processPackages [aalink]: Downloading https://files.pythonhosted.org/packages/c0/32/da0a81c2b178f9c9dcf5e91b107b97b37c718058a132b3455304e505bfcd/aalink-0.0.3.tar.gz
+[2023-05-28 17:11:56] INFO root fetch - main [MainThread]: End processing [fondat]: success
+[2023-05-28 17:11:56] INFO root fetch - main [MainThread]: End processing [sentry-dynamic-sampling-lib]: success
+[2023-05-28 17:11:56] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 17:11:56] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-28 17:11:56] INFO root fetch - processPackages [aalink]: executing diffoscope
+[2023-05-28 17:11:56] INFO root fetch - processPackages [aalink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aalink-0.0.2.tar.gz tmp/aalink-0.0.3.tar.gz --markdown 20230528/a/aalink/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 17:11:57] INFO root fetch - main [MainThread]: End processing [remotior-sensus]: success
+[2023-05-28 17:12:03] INFO root fetch - main [MainThread]: End processing [su6]: success
+[2023-05-28 17:12:26] INFO root fetch - main [MainThread]: End processing [aalink]: success
+[2023-05-28 17:12:26] INFO root fetch - main [MainThread]: Store serial: [18281642]
