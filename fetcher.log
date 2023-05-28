@@ -8893,3 +8893,26 @@ EOFError: EOF read where object expected
 [2023-05-28 19:55:16] INFO root fetch - main [MainThread]: End processing [v-quantum-annealing]: success
 [2023-05-28 19:55:17] INFO root fetch - main [MainThread]: End processing [pycons3rt3]: success
 [2023-05-28 19:55:17] INFO root fetch - main [MainThread]: Store serial: [18282520]
+[2023-05-28 20:00:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282520]
+[2023-05-28 20:00:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 20:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strictdoc
+[2023-05-28 20:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: q2terminal
+[2023-05-28 20:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chromax
+[2023-05-28 20:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-chat-askgdpr
+[2023-05-28 20:00:26] INFO root fetch - processPackages [streamlit-chat-askgdpr]: New version: [0.0.2.3] Old Version: [0.0.2.2]
+[2023-05-28 20:00:26] INFO root fetch - processPackages [q2terminal]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 20:00:26] WARNING root fetch - processPackages [chromax]: Skipping, unable to determine old version
+[2023-05-28 20:00:26] INFO root fetch - main [MainThread]: End processing [chromax] error
+[2023-05-28 20:00:26] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 20:00:26] INFO root fetch - processPackages [streamlit-chat-askgdpr]: Downloading https://files.pythonhosted.org/packages/6b/0e/7d8ecad3d3f64e6647aec4b36066a2cc701334262d3b50aee1120eeafd39/streamlit-chat-askgdpr-0.0.2.2.tar.gz
+[2023-05-28 20:00:27] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-28 20:00:27] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.8.tar.gz tmp/q2terminal-0.1.9.tar.gz --markdown 20230528/q/q2terminal/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 20:00:27] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2023-05-28 20:00:27] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20230528/s/strictdoc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 20:00:27] INFO root fetch - processPackages [streamlit-chat-askgdpr]: Downloading https://files.pythonhosted.org/packages/f5/a4/d6e062ff8c65368345a8d62d4f30a9109c7eb3ad71a66755ce4afb6f916e/streamlit-chat-askgdpr-0.0.2.3.tar.gz
+[2023-05-28 20:00:27] INFO root fetch - processPackages [streamlit-chat-askgdpr]: executing diffoscope
+[2023-05-28 20:00:27] INFO root fetch - processPackages [streamlit-chat-askgdpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chat-askgdpr-0.0.2.2.tar.gz tmp/streamlit-chat-askgdpr-0.0.2.3.tar.gz --markdown 20230528/s/streamlit-chat-askgdpr/0.0.2.2-0.0.2.3/diff.md --exclude *.pyd
+[2023-05-28 20:00:27] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-28 20:00:28] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2023-05-28 20:02:02] INFO root fetch - main [MainThread]: End processing [streamlit-chat-askgdpr]: success
+[2023-05-28 20:02:02] INFO root fetch - main [MainThread]: Store serial: [18282533]
