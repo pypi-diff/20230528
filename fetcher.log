@@ -5285,3 +5285,51 @@
 [2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2023-05-28 13:28:29] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
 [2023-05-28 13:28:29] INFO root fetch - main [MainThread]: Store serial: [18280254]
+[2023-05-28 13:33:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280254]
+[2023-05-28 13:33:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchx-nightly
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatcmd
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kayle
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bibigo
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyGachi
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythreader
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qclib
+[2023-05-28 13:33:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chatai-stream
+[2023-05-28 13:33:38] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-28 13:33:38] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-28 13:33:38] INFO root fetch - processPackages [chatcmd]: New version: [1.0.45] Old Version: [1.0.44]
+[2023-05-28 13:33:38] INFO root fetch - processPackages [bibigo]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 13:33:38] INFO root fetch - processPackages [pythreader]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-05-28 13:33:38] INFO root fetch - processPackages [pyGachi]: New version: [1.2] Old Version: [1.1]
+[2023-05-28 13:33:38] WARNING root fetch - processPackages [chatai-stream]: Skipping, unable to determine old version
+[2023-05-28 13:33:38] INFO root fetch - main [MainThread]: End processing [chatai-stream] error
+[2023-05-28 13:33:38] INFO root fetch - processPackages [qclib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 13:33:39] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230528/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:33:39] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230528/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pythreader]: Downloading https://files.pythonhosted.org/packages/cc/bb/b043da2c757c30edaa7c94aef2da47516bcd810c668cc1959819951a87cd/pythreader-2.9.3.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/11/2e/2baf0eb09071b355ef3e49ce31a5cadcf09d2764b0e0f5a06db60e97cf9d/chatcmd-1.0.45.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [bibigo]: Downloading https://files.pythonhosted.org/packages/ea/87/2417744eca7e26496ad90e7422ce2f03481a15a39fb1a5c58bf855597c78/bibigo-0.0.8.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pyGachi]: Downloading https://files.pythonhosted.org/packages/d9/51/ef1f3aa5d14a57b70db0e3793e63e614c4c7f150ef43c0fee2616e0a29c2/pyGachi-1.2.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [qclib]: Downloading https://files.pythonhosted.org/packages/7c/9f/ca5f94fbaabe0bc74fb5b580e0514eb61929f2709d3ee2f37659c8baddce/qclib-0.0.8.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.44.tar.gz tmp/chatcmd-1.0.45.tar.gz --markdown 20230528/c/chatcmd/1.0.44-1.0.45/diff.md --exclude *.pyd
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pyGachi]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pyGachi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGachi-1.1.tar.gz tmp/pyGachi-1.2.tar.gz --markdown 20230528/p/pyGachi/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-28 13:33:39] INFO root fetch - processPackages [bibigo]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [bibigo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibigo-0.0.7.tar.gz tmp/bibigo-0.0.8.tar.gz --markdown 20230528/b/bibigo/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pythreader]: Downloading https://files.pythonhosted.org/packages/66/41/ab1c32726ebf68061f48797fc83fe6b711fed6c9a7f8418c8c84d65d316e/pythreader-2.9.4.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [qclib]: Downloading https://files.pythonhosted.org/packages/37/33/d7799da17e9fde9c1af34e3ea0892c983154899f8d8be8de045ce0317d24/qclib-0.0.9.tar.gz
+[2023-05-28 13:33:39] INFO root fetch - processPackages [qclib]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [qclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qclib-0.0.8.tar.gz tmp/qclib-0.0.9.tar.gz --markdown 20230528/q/qclib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pythreader]: executing diffoscope
+[2023-05-28 13:33:39] INFO root fetch - processPackages [pythreader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythreader-2.9.3.tar.gz tmp/pythreader-2.9.4.tar.gz --markdown 20230528/p/pythreader/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-05-28 13:33:40] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-28 13:33:40] INFO root fetch - main [MainThread]: End processing [bibigo]: success
+[2023-05-28 13:33:40] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 13:33:40] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-28 13:33:40] INFO root fetch - main [MainThread]: End processing [pyGachi]: success
+[2023-05-28 13:33:41] INFO root fetch - main [MainThread]: End processing [pythreader]: success
+[2023-05-28 13:33:41] INFO root fetch - main [MainThread]: End processing [qclib]: success
+[2023-05-28 13:33:41] INFO root fetch - main [MainThread]: Store serial: [18280281]
