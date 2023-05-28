@@ -5880,3 +5880,40 @@
 [2023-05-28 14:27:06] INFO root fetch - main [MainThread]: End processing [webpie]: success
 [2023-05-28 14:27:06] INFO root fetch - main [MainThread]: End processing [pygame-imslider]: success
 [2023-05-28 14:27:06] INFO root fetch - main [MainThread]: Store serial: [18280609]
+[2023-05-28 14:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280609]
+[2023-05-28 14:32:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcod
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p-template-crawler
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: joyrl
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: leap-model-parser
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ProjectB-clientside-template-package
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythreader
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ChatGPTWeb
+[2023-05-28 14:32:15] INFO root fetch - processPackages [pythreader]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-05-28 14:32:15] INFO root fetch - processPackages [joyrl]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 14:32:15] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 14:32:15] INFO root fetch - processPackages [tcod]: New version: [9.3.0] Old Version: [9.2.5]
+[2023-05-28 14:32:15] WARNING root fetch - processPackages [ProjectB-clientside-template-package]: Skipping, unable to determine old version
+[2023-05-28 14:32:15] INFO root fetch - main [MainThread]: End processing [ProjectB-clientside-template-package] error
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ChatGPTWeb]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 14:32:15] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-28 14:32:15] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 14:32:15] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.8.tar.gz tmp/joyrl-0.2.9.tar.gz --markdown 20230528/j/joyrl/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 14:32:15] INFO root fetch - processPackages [pythreader]: executing diffoscope
+[2023-05-28 14:32:15] INFO root fetch - processPackages [pythreader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythreader-2.9.3.tar.gz tmp/pythreader-2.9.4.tar.gz --markdown 20230528/p/pythreader/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-05-28 14:32:15] INFO root fetch - processPackages [tcod]: executing diffoscope
+[2023-05-28 14:32:15] INFO root fetch - processPackages [tcod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod-9.2.5.tar.gz tmp/tcod-9.3.0.tar.gz --markdown 20230528/t/tcod/9.2.5-9.3.0/diff.md --exclude *.pyd
+[2023-05-28 14:32:15] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-05-28 14:32:15] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230528/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ChatGPTWeb]: Downloading https://files.pythonhosted.org/packages/77/61/84f31acc7f47c35663dcca76ad1e24de109232587fbc9cd2b335b1867157/ChatGPTWeb-0.0.9.tar.gz
+[2023-05-28 14:32:15] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2023-05-28 14:32:15] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.98.tar.gz tmp/leap_model_parser-0.1.99.tar.gz --markdown 20230528/l/leap-model-parser/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ChatGPTWeb]: executing diffoscope
+[2023-05-28 14:32:15] INFO root fetch - processPackages [ChatGPTWeb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatGPTWeb-0.0.8.tar.gz tmp/ChatGPTWeb-0.0.9.tar.gz --markdown 20230528/C/ChatGPTWeb/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 14:32:16] INFO root fetch - main [MainThread]: End processing [p-template-crawler]: success
+[2023-05-28 14:32:16] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 14:32:16] INFO root fetch - main [MainThread]: End processing [ChatGPTWeb]: success
+[2023-05-28 14:32:16] INFO root fetch - main [MainThread]: End processing [pythreader]: success
+[2023-05-28 14:32:23] INFO root fetch - main [MainThread]: End processing [tcod]: success
+[2023-05-28 14:32:33] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
+[2023-05-28 14:32:33] INFO root fetch - main [MainThread]: Store serial: [18280656]
