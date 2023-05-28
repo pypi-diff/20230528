@@ -2116,3 +2116,15 @@
 [2023-05-28 05:46:01] INFO root fetch - main [MainThread]: End processing [tree-of-thoughts]: success
 [2023-05-28 05:46:01] INFO root fetch - main [MainThread]: End processing [bipartitepandas]: success
 [2023-05-28 05:46:01] INFO root fetch - main [MainThread]: Store serial: [18278369]
+[2023-05-28 05:51:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278369]
+[2023-05-28 05:51:10] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-28 05:56:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278370]
+[2023-05-28 05:56:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-28 05:56:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-es-vat-prorate
+[2023-05-28 05:56:16] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: New version: [14.0.1.0.5.dev1] Old Version: [14.0.1.0.4]
+[2023-05-28 05:56:16] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: Downloading https://files.pythonhosted.org/packages/92/d2/eb925d6a06daecf5c668920326067a4f9b2c6c7232770f5d36eb5a1b8597/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.4-py3-none-any.whl
+[2023-05-28 05:56:16] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: Downloading https://files.pythonhosted.org/packages/da/3b/b12c3bd88ba0e706fc1403ea752fc2cdbab50453d5eb2ae61a53a300dd83/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.5.dev1-py3-none-any.whl
+[2023-05-28 05:56:16] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: executing diffoscope
+[2023-05-28 05:56:16] INFO root fetch - processPackages [odoo14-addon-l10n-es-vat-prorate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.4-py3-none-any.whl.zip tmp/odoo14_addon_l10n_es_vat_prorate-14.0.1.0.5.dev1-py3-none-any.whl.zip --markdown 20230528/o/odoo14-addon-l10n-es-vat-prorate/14.0.1.0.4-14.0.1.0.5.dev1/diff.md --exclude *.pyd
+[2023-05-28 05:56:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-es-vat-prorate]: success
+[2023-05-28 05:56:18] INFO root fetch - main [MainThread]: Store serial: [18278372]
