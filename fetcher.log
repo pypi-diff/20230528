@@ -1289,3 +1289,28 @@
 [2023-05-28 03:09:57] INFO root fetch - main [MainThread]: End processing [pytest-selenium]: success
 [2023-05-28 03:09:57] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-28 03:09:57] INFO root fetch - main [MainThread]: Store serial: [18277815]
+[2023-05-28 03:15:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277815]
+[2023-05-28 03:15:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 03:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rtb-toolbox
+[2023-05-28 03:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: networkcalculator
+[2023-05-28 03:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyagrum-nightly
+[2023-05-28 03:15:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatsnack
+[2023-05-28 03:15:05] WARNING root fetch - processPackages [networkcalculator]: Skipping, unable to determine old version
+[2023-05-28 03:15:05] INFO root fetch - main [MainThread]: End processing [networkcalculator] error
+[2023-05-28 03:15:05] INFO root fetch - processPackages [chatsnack]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-28 03:15:05] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.47] Old Version: [0.1.46]
+[2023-05-28 03:15:05] INFO root fetch - processPackages [chatsnack]: Downloading https://files.pythonhosted.org/packages/f6/bc/aae9fc80318921de16f7d570b6e44edce2932294ec943fc0d44f509b8a0f/chatsnack-0.1.5.tar.gz
+[2023-05-28 03:15:05] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.1.dev202305251684934970] Old Version: [1.8.1.9.dev202305281685116202]
+[2023-05-28 03:15:05] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/8b/80/b9cc10b13eef5fac7e3dbacacd97dfc2aa8a5e15df3fb08b3ecc912c25be/rtb_toolbox-0.1.47.tar.gz
+[2023-05-28 03:15:05] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 03:15:05] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.46.tar.gz tmp/rtb_toolbox-0.1.47.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.46-0.1.47/diff.md --exclude *.pyd
+[2023-05-28 03:15:05] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/c6/29/1151dfcd5a2503c7f8fb73dd9269be332e8a212db73dd03202ec3ecfe5da/pyAgrum_nightly-1.8.1.9.dev202305281685116202-cp39-cp39-win_amd64.whl
+[2023-05-28 03:15:06] INFO root fetch - processPackages [chatsnack]: Downloading https://files.pythonhosted.org/packages/ae/66/82077da805348a1e920d054eaa1cac187a2e964917ed0f3b088e5289c0ca/chatsnack-0.1.6.tar.gz
+[2023-05-28 03:15:06] INFO root fetch - processPackages [chatsnack]: executing diffoscope
+[2023-05-28 03:15:06] INFO root fetch - processPackages [chatsnack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatsnack-0.1.5.tar.gz tmp/chatsnack-0.1.6.tar.gz --markdown 20230528/c/chatsnack/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-28 03:15:06] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 03:15:07] INFO root fetch - main [MainThread]: End processing [chatsnack]: success
+[2023-05-28 03:15:07] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-28 03:15:07] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.1.9.dev202305281685116202-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.1.dev202305251684934970-cp39-cp39-win_amd64.whl.zip --markdown 20230528/p/pyagrum-nightly/1.8.1.9.dev202305281685116202-1.8.1.dev202305251684934970/diff.md --exclude *.pyd
+[2023-05-28 03:15:09] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-28 03:15:09] INFO root fetch - main [MainThread]: Store serial: [18277847]
