@@ -4917,3 +4917,70 @@
 [2023-05-28 12:51:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
 [2023-05-28 12:51:57] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-28 12:51:57] INFO root fetch - main [MainThread]: Store serial: [18280081]
+[2023-05-28 12:57:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280081]
+[2023-05-28 12:57:07] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yetl-framework
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tvdbAPI
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkmfly
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: joyrl
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tplink-omada-client
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nligraphspacy
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: joyrl
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: joyrl
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: macrometa-source-snowflake
+[2023-05-28 12:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: exciton
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tkmfly]: New version: [0.1.0b4] Old Version: [0.1.0b3]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [yetl-framework]: New version: [1.3.7.dev1] Old Version: [1.3.6]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tplink-omada-client]: New version: [1.3.0] Old Version: [1.2.5]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [nligraphspacy]: New version: [0.7] Old Version: [0.6]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tvdbAPI]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [exciton]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-28 12:57:07] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 12:57:07] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tkmfly]: Downloading https://files.pythonhosted.org/packages/43/fa/a99b67cf69f953664b3d52879b45ba9e741ba9a81fe428d7dbad24df4d80/tkmfly-0.1.0b4.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [nligraphspacy]: Downloading https://files.pythonhosted.org/packages/9c/54/98768492c986841b1be2d97687a0b1ad5f8704d1e39e425837238ccad01a/nligraphspacy-0.7.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/96/bf/40e20c9bd939467667f24037de518d382f2a20cc00a94cdda2b401ceeb69/joyrl-0.2.3.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/96/bf/40e20c9bd939467667f24037de518d382f2a20cc00a94cdda2b401ceeb69/joyrl-0.2.3.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/21/9b/44f2cb2cc54f329961015bb1db1726ba33ca48b15f25194e2fc7c0378bf7/yetl-framework-1.3.6.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/96/bf/40e20c9bd939467667f24037de518d382f2a20cc00a94cdda2b401ceeb69/joyrl-0.2.3.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/f5/60/7cfe3dd97f756b3bd75ede65e4ff810e93b067fe8f20a02cd19f11b269fc/tplink_omada_client-1.2.5.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/2c/73/28512b35f8e8588ea1e714c22591541d3747180ddd391481329316f8c9da/exciton-2.0.4-py3-none-any.whl
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tvdbAPI]: executing diffoscope
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tvdbAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvdbAPI-0.2.8.tar.gz tmp/tvdbAPI-0.2.9.tar.gz --markdown 20230528/t/tvdbAPI/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tkmfly]: executing diffoscope
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tkmfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkmfly-0.1.0b3.tar.gz tmp/tkmfly-0.1.0b4.tar.gz --markdown 20230528/t/tkmfly/0.1.0b3-0.1.0b4/diff.md --exclude *.pyd
+[2023-05-28 12:57:07] INFO root fetch - processPackages [nligraphspacy]: executing diffoscope
+[2023-05-28 12:57:07] INFO root fetch - processPackages [nligraphspacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nligraphspacy-0.6.tar.gz tmp/nligraphspacy-0.7.tar.gz --markdown 20230528/n/nligraphspacy/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-28 12:57:07] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/3d/85/68539aef19bac51fd227818190cae6357bd3a87872dca7e5efb21a5556dd/yetl-framework-1.3.7.dev1.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/05/46/9e6a0c9f50ad667ed6c0588d73326cad5bc4fa7fa681410e1a01de46363a/joyrl-0.2.4.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/05/46/9e6a0c9f50ad667ed6c0588d73326cad5bc4fa7fa681410e1a01de46363a/joyrl-0.2.4.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/05/46/9e6a0c9f50ad667ed6c0588d73326cad5bc4fa7fa681410e1a01de46363a/joyrl-0.2.4.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-28 12:57:07] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.3.6.tar.gz tmp/yetl-framework-1.3.7.dev1.tar.gz --markdown 20230528/y/yetl-framework/1.3.6-1.3.7.dev1/diff.md --exclude *.pyd
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tplink-omada-client]: Downloading https://files.pythonhosted.org/packages/03/57/6939a0579ec38957916a63dfe166f4130693c2393e0fc11bf0e49c6d84db/tplink_omada_client-1.3.0.tar.gz
+[2023-05-28 12:57:07] INFO root fetch - processPackages [exciton]: Downloading https://files.pythonhosted.org/packages/af/5d/5b0c5d04ce5c27a54cc9b18266c311aaaee2f1a5dbebdac13cc135ca787b/exciton-2.0.5-py3-none-any.whl
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tplink-omada-client]: executing diffoscope
+[2023-05-28 12:57:07] INFO root fetch - processPackages [tplink-omada-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tplink_omada_client-1.2.5.tar.gz tmp/tplink_omada_client-1.3.0.tar.gz --markdown 20230528/t/tplink-omada-client/1.2.5-1.3.0/diff.md --exclude *.pyd
+[2023-05-28 12:57:08] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 12:57:08] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.3.tar.gz tmp/joyrl-0.2.4.tar.gz --markdown 20230528/j/joyrl/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 12:57:08] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 12:57:08] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.3.tar.gz tmp/joyrl-0.2.4.tar.gz --markdown 20230528/j/joyrl/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 12:57:08] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 12:57:08] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.3.tar.gz tmp/joyrl-0.2.4.tar.gz --markdown 20230528/j/joyrl/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 12:57:08] INFO root fetch - processPackages [exciton]: executing diffoscope
+[2023-05-28 12:57:08] INFO root fetch - processPackages [exciton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exciton-2.0.4-py3-none-any.whl.zip tmp/exciton-2.0.5-py3-none-any.whl.zip --markdown 20230528/e/exciton/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-28 12:57:08] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 12:57:08] INFO root fetch - main [MainThread]: End processing [tvdbAPI]: success
+[2023-05-28 12:57:09] INFO root fetch - main [MainThread]: End processing [nligraphspacy]: success
+[2023-05-28 12:57:09] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 12:57:09] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 12:57:09] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-28 12:57:09] INFO root fetch - main [MainThread]: End processing [tplink-omada-client]: success
+[2023-05-28 12:57:09] INFO root fetch - main [MainThread]: End processing [exciton]: success
+[2023-05-28 12:57:10] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 12:57:11] INFO root fetch - main [MainThread]: End processing [tkmfly]: success
+[2023-05-28 12:57:11] INFO root fetch - main [MainThread]: Store serial: [18280111]
