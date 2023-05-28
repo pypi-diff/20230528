@@ -9628,3 +9628,59 @@ EOFError: EOF read where object expected
 [2023-05-28 21:16:32] INFO root fetch - main [MainThread]: End processing [pitchtools]: success
 [2023-05-28 21:16:34] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-05-28 21:16:34] INFO root fetch - main [MainThread]: Store serial: [18283004]
+[2023-05-28 21:21:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283004]
+[2023-05-28 21:21:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edaplore
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ia-wumpus
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypreql
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: list-cli
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AoiPy
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tkeras
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tcflow
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scikit-net
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: trilogy-public-models
+[2023-05-28 21:21:43] INFO root fetch - processPackages [ia-wumpus]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [list-cli]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [edaplore]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [scikit-net]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [AoiPy]: New version: [0.9.17] Old Version: [0.9.16]
+[2023-05-28 21:21:43] WARNING root fetch - processPackages [tkeras]: Skipping, unable to determine old version
+[2023-05-28 21:21:43] INFO root fetch - main [MainThread]: End processing [tkeras] error
+[2023-05-28 21:21:43] INFO root fetch - processPackages [trilogy-public-models]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-28 21:21:43] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-05-28 21:21:43] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230528/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/e4/5b/f68c87325beec7e41bbdf47d62980be2a433b30291aa6359c809b4d3cbf5/edaplore-0.1.0-py3-none-any.whl
+[2023-05-28 21:21:44] INFO root fetch - processPackages [ia-wumpus]: Downloading https://files.pythonhosted.org/packages/50/ba/581212a2f8abdc1ac9586cf89df0784caaaaeeb06e9608acef09be654cab/ia_wumpus-0.3.4.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [AoiPy]: Downloading https://files.pythonhosted.org/packages/19/32/af10b0bc2e821a9e92b4ee843886148150c9020cf0d270f59c0179deafe7/AoiPy-0.9.17-py3-none-any.whl
+[2023-05-28 21:21:44] INFO root fetch - processPackages [tcflow]: Downloading https://files.pythonhosted.org/packages/57/19/81a64de31d7db8171e126d799f4701057432416ec9dcd463e26233fc7d37/tcflow-0.0.8.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [scikit-net]: Downloading https://files.pythonhosted.org/packages/43/29/a2bb1a785fefe62143c5a36235f6fcb6351e41b62a56edc0b3919c553728/scikit-net-0.0.2.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [list-cli]: Downloading https://files.pythonhosted.org/packages/d0/fa/6099ec62ad917315f7ca2fdab13eeffe9a225eb34b8272cf4336f45289e1/list-cli-0.1.5.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [AoiPy]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [AoiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoiPy-0.9.16-py3-none-any.whl.zip tmp/AoiPy-0.9.17-py3-none-any.whl.zip --markdown 20230528/A/AoiPy/0.9.16-0.9.17/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [edaplore]: Downloading https://files.pythonhosted.org/packages/1e/4b/9e105045d89040eb593583a42ce64d836d7d6dc723cc55beb320de218168/edaplore-0.2.0.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [ia-wumpus]: Downloading https://files.pythonhosted.org/packages/72/e1/deba5a90f11ffc977c17cf71d94fa54ae7dfe7a55572b95cf83c247c17c1/ia_wumpus-0.3.5.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [list-cli]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [list-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/list-cli-0.1.4.tar.gz tmp/list-cli-0.1.5.tar.gz --markdown 20230528/l/list-cli/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [scikit-net]: Downloading https://files.pythonhosted.org/packages/ca/fa/a21fb176cb6060bfaef0ab4a101dd1624ee0fb501a89d365c9e5ad0e786e/scikit-net-0.0.3.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [trilogy-public-models]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [trilogy-public-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trilogy-public-models-0.0.6.tar.gz tmp/trilogy-public-models-0.0.8.tar.gz --markdown 20230528/t/trilogy-public-models/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [ia-wumpus]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [ia-wumpus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ia_wumpus-0.3.4.tar.gz tmp/ia_wumpus-0.3.5.tar.gz --markdown 20230528/i/ia-wumpus/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [edaplore]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [edaplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edaplore-0.1.0-py3-none-any.whl.zip tmp/edaplore-0.2.0.tar.gz --markdown 20230528/e/edaplore/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [scikit-net]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [scikit-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-net-0.0.2.tar.gz tmp/scikit-net-0.0.3.tar.gz --markdown 20230528/s/scikit-net/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 21:21:44] INFO root fetch - processPackages [tcflow]: Downloading https://files.pythonhosted.org/packages/39/ff/8e0da9c9da61e4705f0dc96d922443efd8b863b2c4be09580e169505ca27/tcflow-0.0.9.tar.gz
+[2023-05-28 21:21:44] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-05-28 21:21:44] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230528/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 21:21:45] INFO root fetch - main [MainThread]: End processing [AoiPy]: success
+[2023-05-28 21:21:45] INFO root fetch - main [MainThread]: End processing [list-cli]: success
+[2023-05-28 21:21:45] INFO root fetch - main [MainThread]: End processing [ia-wumpus]: success
+[2023-05-28 21:21:45] INFO root fetch - main [MainThread]: End processing [edaplore]: success
+[2023-05-28 21:21:45] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-05-28 21:21:46] INFO root fetch - main [MainThread]: End processing [scikit-net]: success
+[2023-05-28 21:21:46] INFO root fetch - main [MainThread]: End processing [trilogy-public-models]: success
+[2023-05-28 21:21:46] INFO root fetch - main [MainThread]: End processing [tcflow]: success
+[2023-05-28 21:21:46] INFO root fetch - main [MainThread]: Store serial: [18283031]
