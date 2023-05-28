@@ -1,0 +1,770 @@
+# Comparing `tmp/lanarky-0.6.6.tar.gz` & `tmp/lanarky-0.7.0.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "lanarky-0.6.6.tar", max compression
++gzip compressed data, was "lanarky-0.7.0.tar", max compression
+```
+
+## Comparing `lanarky-0.6.6.tar` & `lanarky-0.7.0.tar`
+
+### file list
+
+```diff
+@@ -1,19 +1,22 @@
+--rw-r--r--   0        0        0     1073 2023-05-25 07:35:03.418717 lanarky-0.6.6/LICENSE
+--rw-r--r--   0        0        0     3991 2023-05-25 07:35:03.418717 lanarky-0.6.6/README.md
+--rw-r--r--   0        0        0        0 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/__init__.py
+--rw-r--r--   0        0        0     2874 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/callbacks/__init__.py
+--rw-r--r--   0        0        0     3023 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/callbacks/agents.py
+--rw-r--r--   0        0        0     2200 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/callbacks/base.py
+--rw-r--r--   0        0        0     1685 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/callbacks/llm.py
+--rw-r--r--   0        0        0     3461 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/callbacks/retrieval_qa.py
+--rw-r--r--   0        0        0     2004 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/register.py
+--rw-r--r--   0        0        0       74 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/responses/__init__.py
+--rw-r--r--   0        0        0     2926 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/responses/streaming.py
+--rw-r--r--   0        0        0      715 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/schemas.py
+--rw-r--r--   0        0        0       69 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/testing/__init__.py
+--rw-r--r--   0        0        0     3212 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/testing/gradio.py
+--rw-r--r--   0        0        0      391 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/testing/settings.py
+--rw-r--r--   0        0        0       73 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/websockets/__init__.py
+--rw-r--r--   0        0        0     3844 2023-05-25 07:35:03.602719 lanarky-0.6.6/lanarky/websockets/base.py
+--rw-r--r--   0        0        0     1110 2023-05-25 07:35:03.602719 lanarky-0.6.6/pyproject.toml
+--rw-r--r--   0        0        0     4812 1970-01-01 00:00:00.000000 lanarky-0.6.6/PKG-INFO
++-rw-r--r--   0        0        0     1073 2023-05-28 21:14:18.453756 lanarky-0.7.0/LICENSE
++-rw-r--r--   0        0        0     4238 2023-05-28 21:14:18.453756 lanarky-0.7.0/README.md
++-rw-r--r--   0        0        0        0 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/__init__.py
++-rw-r--r--   0        0        0     2874 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/callbacks/__init__.py
++-rw-r--r--   0        0        0     3023 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/callbacks/agents.py
++-rw-r--r--   0        0        0     2200 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/callbacks/base.py
++-rw-r--r--   0        0        0     1685 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/callbacks/llm.py
++-rw-r--r--   0        0        0     3461 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/callbacks/retrieval_qa.py
++-rw-r--r--   0        0        0     2004 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/register.py
++-rw-r--r--   0        0        0       74 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/responses/__init__.py
++-rw-r--r--   0        0        0     2926 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/responses/streaming.py
++-rw-r--r--   0        0        0       70 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/routing/__init__.py
++-rw-r--r--   0        0        0     2795 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/routing/langchain.py
++-rw-r--r--   0        0        0     2627 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/routing/utils.py
++-rw-r--r--   0        0        0      715 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/schemas.py
++-rw-r--r--   0        0        0       69 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/testing/__init__.py
++-rw-r--r--   0        0        0     3212 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/testing/gradio.py
++-rw-r--r--   0        0        0      391 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/testing/settings.py
++-rw-r--r--   0        0        0       73 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/websockets/__init__.py
++-rw-r--r--   0        0        0     3844 2023-05-28 21:14:18.633759 lanarky-0.7.0/lanarky/websockets/base.py
++-rw-r--r--   0        0        0     1110 2023-05-28 21:14:18.633759 lanarky-0.7.0/pyproject.toml
++-rw-r--r--   0        0        0     5059 1970-01-01 00:00:00.000000 lanarky-0.7.0/PKG-INFO
+```
+
+### Comparing `lanarky-0.6.6/LICENSE` & `lanarky-0.7.0/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/README.md` & `lanarky-0.7.0/README.md`
+
+ * *Files 11% similar despite different names*
+
+```diff
+@@ -10,241 +10,256 @@
+ 00000090: 6172 6b79 203c 2f68 313e 0a0a 5b21 5b73  arky </h1>..[![s
+ 000000a0: 7461 7273 5d28 6874 7470 733a 2f2f 696d  tars](https://im
+ 000000b0: 672e 7368 6965 6c64 732e 696f 2f67 6974  g.shields.io/git
+ 000000c0: 6875 622f 7374 6172 732f 616a 6e64 6b72  hub/stars/ajndkr
+ 000000d0: 2f6c 616e 6172 6b79 295d 2868 7474 7073  /lanarky)](https
+ 000000e0: 3a2f 2f67 6974 6875 622e 636f 6d2f 616a  ://github.com/aj
+ 000000f0: 6e64 6b72 2f6c 616e 6172 6b79 2f73 7461  ndkr/lanarky/sta
+-00000100: 7267 617a 6572 7329 0a5b 215b 4c69 6365  rgazers).[![Lice
+-00000110: 6e73 653a 204d 4954 5d28 6874 7470 733a  nse: MIT](https:
+-00000120: 2f2f 696d 672e 7368 6965 6c64 732e 696f  //img.shields.io
+-00000130: 2f62 6164 6765 2f4c 6963 656e 7365 2d4d  /badge/License-M
+-00000140: 4954 2d79 656c 6c6f 772e 7376 6729 5d28  IT-yellow.svg)](
+-00000150: 6874 7470 733a 2f2f 6769 7468 7562 2e63  https://github.c
+-00000160: 6f6d 2f61 6a6e 646b 722f 6c61 6e61 726b  om/ajndkr/lanark
+-00000170: 792f 626c 6f62 2f6d 6169 6e2f 4c49 4345  y/blob/main/LICE
+-00000180: 4e53 4529 0a5b 215b 5079 5049 2076 6572  NSE).[![PyPI ver
+-00000190: 7369 6f6e 5d28 6874 7470 733a 2f2f 6261  sion](https://ba
+-000001a0: 6467 652e 6675 7279 2e69 6f2f 7079 2f6c  dge.fury.io/py/l
+-000001b0: 616e 6172 6b79 2e73 7667 295d 2868 7474  anarky.svg)](htt
+-000001c0: 7073 3a2f 2f70 7970 692e 6f72 672f 7072  ps://pypi.org/pr
+-000001d0: 6f6a 6563 742f 6c61 6e61 726b 792f 290a  oject/lanarky/).
+-000001e0: 5b21 5b50 7974 686f 6e20 332e 395d 2868  [![Python 3.9](h
+-000001f0: 7474 7073 3a2f 2f69 6d67 2e73 6869 656c  ttps://img.shiel
+-00000200: 6473 2e69 6f2f 6261 6467 652f 7079 7468  ds.io/badge/pyth
+-00000210: 6f6e 2d33 2e39 2d62 6c75 652e 7376 6729  on-3.9-blue.svg)
+-00000220: 5d28 6874 7470 733a 2f2f 7777 772e 7079  ](https://www.py
+-00000230: 7468 6f6e 2e6f 7267 2f64 6f77 6e6c 6f61  thon.org/downloa
+-00000240: 6473 2f72 656c 6561 7365 2f70 7974 686f  ds/release/pytho
+-00000250: 6e2d 3339 3136 2f29 0a5b 215b 436f 6465  n-3916/).[![Code
+-00000260: 2043 6f76 6572 6167 655d 2868 7474 7073   Coverage](https
+-00000270: 3a2f 2f63 6f76 6572 616c 6c73 2e69 6f2f  ://coveralls.io/
+-00000280: 7265 706f 732f 6769 7468 7562 2f61 6a6e  repos/github/ajn
+-00000290: 646b 722f 6c61 6e61 726b 792f 6261 6467  dkr/lanarky/badg
+-000002a0: 652e 7376 673f 6272 616e 6368 3d6d 6169  e.svg?branch=mai
+-000002b0: 6e29 5d28 6874 7470 733a 2f2f 636f 7665  n)](https://cove
+-000002c0: 7261 6c6c 732e 696f 2f67 6974 6875 622f  ralls.io/github/
+-000002d0: 616a 6e64 6b72 2f6c 616e 6172 6b79 3f62  ajndkr/lanarky?b
+-000002e0: 7261 6e63 683d 6d61 696e 290a 5b21 5b44  ranch=main).[![D
+-000002f0: 6f63 756d 656e 7461 7469 6f6e 5d28 6874  ocumentation](ht
+-00000300: 7470 733a 2f2f 696d 672e 7368 6965 6c64  tps://img.shield
+-00000310: 732e 696f 2f62 6164 6765 2f64 6f63 756d  s.io/badge/docum
+-00000320: 656e 7461 7469 6f6e 2d52 6561 6454 6865  entation-ReadThe
+-00000330: 446f 6373 2d62 6c75 652e 7376 6729 5d28  Docs-blue.svg)](
+-00000340: 6874 7470 733a 2f2f 6c61 6e61 726b 792e  https://lanarky.
+-00000350: 7265 6164 7468 6564 6f63 732e 696f 2f65  readthedocs.io/e
+-00000360: 6e2f 6c61 7465 7374 2f29 0a0a 3c2f 6469  n/latest/)..</di
+-00000370: 763e 0a0a 4c61 6e61 726b 7920 6973 2061  v>..Lanarky is a
+-00000380: 6e20 6f70 656e 2d73 6f75 7263 6520 6672  n open-source fr
+-00000390: 616d 6577 6f72 6b20 746f 2064 6570 6c6f  amework to deplo
+-000003a0: 7920 4c4c 4d20 6170 706c 6963 6174 696f  y LLM applicatio
+-000003b0: 6e73 2069 6e20 7072 6f64 7563 7469 6f6e  ns in production
+-000003c0: 2e20 4974 2069 7320 6275 696c 7420 6f6e  . It is built on
+-000003d0: 2074 6f70 206f 6620 5b46 6173 7441 5049   top of [FastAPI
+-000003e0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-000003f0: 2e63 6f6d 2f74 6961 6e67 6f6c 6f2f 6661  .com/tiangolo/fa
+-00000400: 7374 6170 6929 0a61 6e64 2063 6f6d 6573  stapi).and comes
+-00000410: 2077 6974 6820 6261 7474 6572 6965 7320   with batteries 
+-00000420: 696e 636c 7564 6564 2e0a 0a23 2320 f09f  included...## ..
+-00000430: 9a80 2046 6561 7475 7265 730a 0a2d 2073  .. Features..- s
+-00000440: 7570 706f 7274 7320 5b4c 616e 6743 6861  upports [LangCha
+-00000450: 696e 5d28 6874 7470 733a 2f2f 6769 7468  in](https://gith
+-00000460: 7562 2e63 6f6d 2f68 7763 6861 7365 3137  ub.com/hwchase17
+-00000470: 2f6c 616e 6763 6861 696e 290a 2d20 7369  /langchain).- si
+-00000480: 6d70 6c65 2067 7261 6469 6f20 6368 6174  mple gradio chat
+-00000490: 626f 7420 5549 2066 6f72 2066 6173 7420  bot UI for fast 
+-000004a0: 7072 6f74 6f74 7970 696e 670a 0a53 6565  prototyping..See
+-000004b0: 205b 526f 6164 6d61 705d 2823 2d72 6f61   [Roadmap](#-roa
+-000004c0: 646d 6170 2920 666f 7220 7570 636f 6d69  dmap) for upcomi
+-000004d0: 6e67 2066 6561 7475 7265 732e 0a0a 2323  ng features...##
+-000004e0: 20e2 9d93 2057 6879 3f0a 0a54 6865 7265   ... Why?..There
+-000004f0: 2061 7265 2067 7265 6174 206c 6f77 2d63   are great low-c
+-00000500: 6f64 652f 6e6f 2d63 6f64 6520 736f 6c75  ode/no-code solu
+-00000510: 7469 6f6e 7320 696e 2074 6865 206f 7065  tions in the ope
+-00000520: 6e20 736f 7572 6365 2074 6f20 6465 706c  n source to depl
+-00000530: 6f79 2079 6f75 7220 4c4c 4d20 7072 6f6a  oy your LLM proj
+-00000540: 6563 7473 2e20 486f 7765 7665 722c 0a6d  ects. However,.m
+-00000550: 6f73 7420 6f66 2074 6865 6d20 6172 6520  ost of them are 
+-00000560: 6f70 696e 696f 6e61 7465 6420 696e 2074  opinionated in t
+-00000570: 6572 6d73 206f 6620 636c 6f75 6420 6f72  erms of cloud or
+-00000580: 2064 6570 6c6f 796d 656e 7420 636f 6465   deployment code
+-00000590: 2e20 5468 6973 2070 726f 6a65 6374 2061  . This project a
+-000005a0: 696d 7320 746f 2070 726f 7669 6465 2075  ims to provide u
+-000005b0: 7365 7273 0a77 6974 6820 6120 636c 6f75  sers.with a clou
+-000005c0: 642d 6167 6e6f 7374 6963 2061 6e64 2064  d-agnostic and d
+-000005d0: 6570 6c6f 796d 656e 742d 6167 6e6f 7374  eployment-agnost
+-000005e0: 6963 2073 6f6c 7574 696f 6e20 7768 6963  ic solution whic
+-000005f0: 6820 6361 6e20 6265 2065 6173 696c 7920  h can be easily 
+-00000600: 696e 7465 6772 6174 6564 2069 6e74 6f20  integrated into 
+-00000610: 6578 6973 7469 6e67 0a62 6163 6b65 6e64  existing.backend
+-00000620: 2069 6e66 7261 7374 7275 6374 7572 6573   infrastructures
+-00000630: 2e0a 0a23 2320 f09f 92be 2049 6e73 7461  ...## .... Insta
+-00000640: 6c6c 6174 696f 6e0a 0a54 6865 206c 6962  llation..The lib
+-00000650: 7261 7279 2069 7320 6176 6169 6c61 626c  rary is availabl
+-00000660: 6520 6f6e 2050 7950 4920 616e 6420 6361  e on PyPI and ca
+-00000670: 6e20 6265 2069 6e73 7461 6c6c 6564 2076  n be installed v
+-00000680: 6961 2060 7069 7060 2e0a 0a60 6060 6261  ia `pip`...```ba
+-00000690: 7368 0a70 6970 2069 6e73 7461 6c6c 206c  sh.pip install l
+-000006a0: 616e 6172 6b79 0a60 6060 0a0a 596f 7520  anarky.```..You 
+-000006b0: 6361 6e20 6669 6e64 2074 6865 2066 756c  can find the ful
+-000006c0: 6c20 646f 6375 6d65 6e74 6174 696f 6e20  l documentation 
+-000006d0: 6174 205b 6874 7470 733a 2f2f 6c61 6e61  at [https://lana
+-000006e0: 726b 792e 7265 6164 7468 6564 6f63 732e  rky.readthedocs.
+-000006f0: 696f 2f65 6e2f 6c61 7465 7374 2f5d 2868  io/en/latest/](h
+-00000700: 7474 7073 3a2f 2f6c 616e 6172 6b79 2e72  ttps://lanarky.r
+-00000710: 6561 6474 6865 646f 6373 2e69 6f2f 656e  eadthedocs.io/en
+-00000720: 2f6c 6174 6573 742f 292e 0a0a 2323 20f0  /latest/)...## .
+-00000730: 9f94 a520 4465 706c 6f79 2061 2073 696d  ... Deploy a sim
+-00000740: 706c 6520 4c61 6e67 6368 6169 6e20 6170  ple Langchain ap
+-00000750: 706c 6963 6174 696f 6e20 696e 2075 6e64  plication in und
+-00000760: 6572 2032 3020 6c69 6e65 7320 6f66 2063  er 20 lines of c
+-00000770: 6f64 650a 0a60 6060 7079 7468 6f6e 0a66  ode..```python.f
+-00000780: 726f 6d20 646f 7465 6e76 2069 6d70 6f72  rom dotenv impor
+-00000790: 7420 6c6f 6164 5f64 6f74 656e 760a 6672  t load_dotenv.fr
+-000007a0: 6f6d 2066 6173 7461 7069 2069 6d70 6f72  om fastapi impor
+-000007b0: 7420 4661 7374 4150 490a 6672 6f6d 206c  t FastAPI.from l
+-000007c0: 616e 6763 6861 696e 2069 6d70 6f72 7420  angchain import 
+-000007d0: 436f 6e76 6572 7361 7469 6f6e 4368 6169  ConversationChai
+-000007e0: 6e0a 6672 6f6d 206c 616e 6763 6861 696e  n.from langchain
+-000007f0: 2e63 6861 745f 6d6f 6465 6c73 2069 6d70  .chat_models imp
+-00000800: 6f72 7420 4368 6174 4f70 656e 4149 0a66  ort ChatOpenAI.f
+-00000810: 726f 6d20 7079 6461 6e74 6963 2069 6d70  rom pydantic imp
+-00000820: 6f72 7420 4261 7365 4d6f 6465 6c0a 6672  ort BaseModel.fr
+-00000830: 6f6d 206c 616e 6172 6b79 2e72 6573 706f  om lanarky.respo
+-00000840: 6e73 6573 2069 6d70 6f72 7420 5374 7265  nses import Stre
+-00000850: 616d 696e 6752 6573 706f 6e73 650a 0a6c  amingResponse..l
+-00000860: 6f61 645f 646f 7465 6e76 2829 0a61 7070  oad_dotenv().app
+-00000870: 203d 2046 6173 7441 5049 2829 0a0a 636c   = FastAPI()..cl
+-00000880: 6173 7320 5265 7175 6573 7428 4261 7365  ass Request(Base
+-00000890: 4d6f 6465 6c29 3a0a 2020 2020 7175 6572  Model):.    quer
+-000008a0: 793a 2073 7472 0a0a 4061 7070 2e70 6f73  y: str..@app.pos
+-000008b0: 7428 222f 6368 6174 2229 0a61 7379 6e63  t("/chat").async
+-000008c0: 2064 6566 2063 6861 7428 7265 7175 6573   def chat(reques
+-000008d0: 743a 2052 6571 7565 7374 2920 2d3e 2053  t: Request) -> S
+-000008e0: 7472 6561 6d69 6e67 5265 7370 6f6e 7365  treamingResponse
+-000008f0: 3a0a 2020 2020 6368 6169 6e20 3d20 436f  :.    chain = Co
+-00000900: 6e76 6572 7361 7469 6f6e 4368 6169 6e28  nversationChain(
+-00000910: 6c6c 6d3d 4368 6174 4f70 656e 4149 2874  llm=ChatOpenAI(t
+-00000920: 656d 7065 7261 7475 7265 3d30 2c20 7374  emperature=0, st
+-00000930: 7265 616d 696e 673d 5472 7565 292c 2076  reaming=True), v
+-00000940: 6572 626f 7365 3d54 7275 6529 0a20 2020  erbose=True).   
+-00000950: 2072 6574 7572 6e20 5374 7265 616d 696e   return Streamin
+-00000960: 6752 6573 706f 6e73 652e 6672 6f6d 5f63  gResponse.from_c
+-00000970: 6861 696e 2863 6861 696e 2c20 7265 7175  hain(chain, requ
+-00000980: 6573 742e 7175 6572 792c 206d 6564 6961  est.query, media
+-00000990: 5f74 7970 653d 2274 6578 742f 6576 656e  _type="text/even
+-000009a0: 742d 7374 7265 616d 2229 0a60 6060 0a0a  t-stream").```..
+-000009b0: 5365 6520 5b60 6578 616d 706c 6573 2f60  See [`examples/`
+-000009c0: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
+-000009d0: 2e63 6f6d 2f61 6a6e 646b 722f 6c61 6e61  .com/ajndkr/lana
+-000009e0: 726b 792f 626c 6f62 2f6d 6169 6e2f 6578  rky/blob/main/ex
+-000009f0: 616d 706c 6573 2f52 4541 444d 452e 6d64  amples/README.md
+-00000a00: 2920 666f 7220 6c69 7374 206f 6620 6176  ) for list of av
+-00000a10: 6169 6c61 626c 6520 6465 6d6f 2065 7861  ailable demo exa
+-00000a20: 6d70 6c65 732e 0a0a 4372 6561 7465 2061  mples...Create a
+-00000a30: 2060 2e65 6e76 6020 6669 6c65 2075 7369   `.env` file usi
+-00000a40: 6e67 2060 2e65 6e76 2e73 616d 706c 6560  ng `.env.sample`
+-00000a50: 2061 6e64 2061 6464 2079 6f75 7220 4f70   and add your Op
+-00000a60: 656e 4149 2041 5049 206b 6579 2074 6f20  enAI API key to 
+-00000a70: 6974 0a62 6566 6f72 6520 7275 6e6e 696e  it.before runnin
+-00000a80: 6720 7468 6520 6578 616d 706c 6573 2e0a  g the examples..
+-00000a90: 0a21 5b64 656d 6f5d 2868 7474 7073 3a2f  .![demo](https:/
+-00000aa0: 2f72 6177 2e67 6974 6875 6275 7365 7263  /raw.githubuserc
+-00000ab0: 6f6e 7465 6e74 2e63 6f6d 2f61 6a6e 646b  ontent.com/ajndk
+-00000ac0: 722f 6c61 6e61 726b 792f 6d61 696e 2f61  r/lanarky/main/a
+-00000ad0: 7373 6574 732f 6465 6d6f 2e67 6966 290a  ssets/demo.gif).
+-00000ae0: 0a23 2320 f09f 938d 2052 6f61 646d 6170  .## .... Roadmap
+-00000af0: 0a0a 2d20 5b78 5d20 4164 6420 7375 7070  ..- [x] Add supp
+-00000b00: 6f72 7420 666f 7220 5b4c 616e 6743 6861  ort for [LangCha
+-00000b10: 696e 5d28 6874 7470 733a 2f2f 6769 7468  in](https://gith
+-00000b20: 7562 2e63 6f6d 2f68 7763 6861 7365 3137  ub.com/hwchase17
+-00000b30: 2f6c 616e 6763 6861 696e 290a 2d20 5b78  /langchain).- [x
+-00000b40: 5d20 4164 6420 5b47 7261 6469 6f5d 2868  ] Add [Gradio](h
+-00000b50: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
+-00000b60: 6d2f 6772 6164 696f 2d61 7070 2f67 7261  m/gradio-app/gra
+-00000b70: 6469 6f29 2055 4920 666f 7220 6661 7374  dio) UI for fast
+-00000b80: 2070 726f 746f 7479 7069 6e67 0a2d 205b   prototyping.- [
+-00000b90: 205d 2041 6464 2053 514c 2064 6174 6162   ] Add SQL datab
+-00000ba0: 6173 6520 696e 7465 6772 6174 696f 6e0a  ase integration.
+-00000bb0: 2d20 5b20 5d20 4164 6420 7375 7070 6f72  - [ ] Add suppor
+-00000bc0: 7420 666f 7220 5b47 7561 7264 7261 696c  t for [Guardrail
+-00000bd0: 735d 2868 7474 7073 3a2f 2f67 6974 6875  s](https://githu
+-00000be0: 622e 636f 6d2f 5368 7265 7961 522f 6775  b.com/ShreyaR/gu
+-00000bf0: 6172 6472 6169 6c73 290a 2d20 5b20 5d20  ardrails).- [ ] 
+-00000c00: 4164 6420 7375 7070 6f72 7420 666f 7220  Add support for 
+-00000c10: 5b4c 6c61 6d61 496e 6465 785d 2868 7474  [LlamaIndex](htt
+-00000c20: 7073 3a2f 2f67 6974 6875 622e 636f 6d2f  ps://github.com/
+-00000c30: 6a65 7272 796a 6c69 752f 6c6c 616d 615f  jerryjliu/llama_
+-00000c40: 696e 6465 7829 0a2d 205b 205d 2041 6464  index).- [ ] Add
+-00000c50: 205b 4750 5443 6163 6865 5d28 6874 7470   [GPTCache](http
+-00000c60: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f7a  s://github.com/z
+-00000c70: 696c 6c69 7a74 6563 682f 4750 5443 6163  illiztech/GPTCac
+-00000c80: 6865 2920 696e 7465 6772 6174 696f 6e0a  he) integration.
+-00000c90: 0a23 2320 f09f a49d 2043 6f6e 7472 6962  .## .... Contrib
+-00000ca0: 7574 696e 670a 0a5b 215b 436f 6465 2063  uting..[![Code c
+-00000cb0: 6865 636b 5d28 6874 7470 733a 2f2f 6769  heck](https://gi
+-00000cc0: 7468 7562 2e63 6f6d 2f61 6a6e 646b 722f  thub.com/ajndkr/
+-00000cd0: 6c61 6e61 726b 792f 6163 7469 6f6e 732f  lanarky/actions/
+-00000ce0: 776f 726b 666c 6f77 732f 636f 6465 2d63  workflows/code-c
+-00000cf0: 6865 636b 2e79 616d 6c2f 6261 6467 652e  heck.yaml/badge.
+-00000d00: 7376 6729 5d28 6874 7470 733a 2f2f 6769  svg)](https://gi
+-00000d10: 7468 7562 2e63 6f6d 2f61 6a6e 646b 722f  thub.com/ajndkr/
+-00000d20: 6c61 6e61 726b 792f 6163 7469 6f6e 732f  lanarky/actions/
+-00000d30: 776f 726b 666c 6f77 732f 636f 6465 2d63  workflows/code-c
+-00000d40: 6865 636b 2e79 616d 6c29 0a5b 215b 5075  heck.yaml).[![Pu
+-00000d50: 626c 6973 685d 2868 7474 7073 3a2f 2f67  blish](https://g
+-00000d60: 6974 6875 622e 636f 6d2f 616a 6e64 6b72  ithub.com/ajndkr
+-00000d70: 2f6c 616e 6172 6b79 2f61 6374 696f 6e73  /lanarky/actions
+-00000d80: 2f77 6f72 6b66 6c6f 7773 2f70 7562 6c69  /workflows/publi
+-00000d90: 7368 2e79 616d 6c2f 6261 6467 652e 7376  sh.yaml/badge.sv
+-00000da0: 6729 5d28 6874 7470 733a 2f2f 6769 7468  g)](https://gith
+-00000db0: 7562 2e63 6f6d 2f61 6a6e 646b 722f 6c61  ub.com/ajndkr/la
+-00000dc0: 6e61 726b 792f 6163 7469 6f6e 732f 776f  narky/actions/wo
+-00000dd0: 726b 666c 6f77 732f 7075 626c 6973 682e  rkflows/publish.
+-00000de0: 7961 6d6c 290a 0a43 6f6e 7472 6962 7574  yaml)..Contribut
+-00000df0: 696f 6e73 2061 7265 206d 6f72 6520 7468  ions are more th
+-00000e00: 616e 2077 656c 636f 6d65 2120 4966 2079  an welcome! If y
+-00000e10: 6f75 2068 6176 6520 616e 2069 6465 6120  ou have an idea 
+-00000e20: 666f 7220 6120 6e65 7720 6665 6174 7572  for a new featur
+-00000e30: 6520 6f72 2077 616e 7420 746f 2068 656c  e or want to hel
+-00000e40: 7020 696d 7072 6f76 6520 6c61 6e61 726b  p improve lanark
+-00000e50: 792c 0a70 6c65 6173 6520 6372 6561 7465  y,.please create
+-00000e60: 2061 6e20 6973 7375 6520 6f72 2073 7562   an issue or sub
+-00000e70: 6d69 7420 6120 7075 6c6c 2072 6571 7565  mit a pull reque
+-00000e80: 7374 206f 6e20 5b47 6974 4875 625d 2868  st on [GitHub](h
+-00000e90: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
+-00000ea0: 6d2f 616a 6e64 6b72 2f6c 616e 6172 6b79  m/ajndkr/lanarky
+-00000eb0: 292e 0a0a 5365 6520 5b43 4f4e 5452 4942  )...See [CONTRIB
+-00000ec0: 5554 494e 472e 6d64 5d28 6874 7470 733a  UTING.md](https:
+-00000ed0: 2f2f 6769 7468 7562 2e63 6f6d 2f61 6a6e  //github.com/ajn
+-00000ee0: 646b 722f 6c61 6e61 726b 792f 626c 6f62  dkr/lanarky/blob
+-00000ef0: 2f6d 6169 6e2f 434f 4e54 5249 4255 5449  /main/CONTRIBUTI
+-00000f00: 4e47 2e6d 6429 2066 6f72 206d 6f72 6520  NG.md) for more 
+-00000f10: 696e 666f 726d 6174 696f 6e2e 0a0a 2323  information...##
+-00000f20: 20e2 9a96 efb8 8f20 4c69 6365 6e73 650a   ...... License.
+-00000f30: 0a54 6865 206c 6962 7261 7279 2069 7320  .The library is 
+-00000f40: 7265 6c65 6173 6564 2075 6e64 6572 2074  released under t
+-00000f50: 6865 205b 4d49 5420 4c69 6365 6e73 655d  he [MIT License]
+-00000f60: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
+-00000f70: 636f 6d2f 616a 6e64 6b72 2f6c 616e 6172  com/ajndkr/lanar
+-00000f80: 6b79 2f62 6c6f 622f 6d61 696e 2f4c 4943  ky/blob/main/LIC
+-00000f90: 454e 5345 292e 0a                        ENSE)..
++00000100: 7267 617a 6572 7329 0a5b 215b 446f 6375  rgazers).[![Docu
++00000110: 6d65 6e74 6174 696f 6e5d 2868 7474 7073  mentation](https
++00000120: 3a2f 2f69 6d67 2e73 6869 656c 6473 2e69  ://img.shields.i
++00000130: 6f2f 6261 6467 652f 646f 6375 6d65 6e74  o/badge/document
++00000140: 6174 696f 6e2d 5265 6164 5468 6544 6f63  ation-ReadTheDoc
++00000150: 732d 626c 7565 2e73 7667 295d 2868 7474  s-blue.svg)](htt
++00000160: 7073 3a2f 2f6c 616e 6172 6b79 2e72 6561  ps://lanarky.rea
++00000170: 6474 6865 646f 6373 2e69 6f2f 656e 2f6c  dthedocs.io/en/l
++00000180: 6174 6573 742f 290a 5b21 5b50 7950 4920  atest/).[![PyPI 
++00000190: 7665 7273 696f 6e5d 2868 7474 7073 3a2f  version](https:/
++000001a0: 2f62 6164 6765 2e66 7572 792e 696f 2f70  /badge.fury.io/p
++000001b0: 792f 6c61 6e61 726b 792e 7376 6729 5d28  y/lanarky.svg)](
++000001c0: 6874 7470 733a 2f2f 7079 7069 2e6f 7267  https://pypi.org
++000001d0: 2f70 726f 6a65 6374 2f6c 616e 6172 6b79  /project/lanarky
++000001e0: 2f29 0a21 5b53 7570 706f 7274 6564 2050  /).![Supported P
++000001f0: 7974 686f 6e20 5665 7273 696f 6e73 5d28  ython Versions](
++00000200: 6874 7470 733a 2f2f 696d 672e 7368 6965  https://img.shie
++00000210: 6c64 732e 696f 2f70 7970 692f 7079 7665  lds.io/pypi/pyve
++00000220: 7273 696f 6e73 2f6c 616e 6172 6b79 2e73  rsions/lanarky.s
++00000230: 7667 290a 5b21 5b43 6f64 6520 436f 7665  vg).[![Code Cove
++00000240: 7261 6765 5d28 6874 7470 733a 2f2f 636f  rage](https://co
++00000250: 7665 7261 6c6c 732e 696f 2f72 6570 6f73  veralls.io/repos
++00000260: 2f67 6974 6875 622f 616a 6e64 6b72 2f6c  /github/ajndkr/l
++00000270: 616e 6172 6b79 2f62 6164 6765 2e73 7667  anarky/badge.svg
++00000280: 3f62 7261 6e63 683d 6d61 696e 295d 2868  ?branch=main)](h
++00000290: 7474 7073 3a2f 2f63 6f76 6572 616c 6c73  ttps://coveralls
++000002a0: 2e69 6f2f 6769 7468 7562 2f61 6a6e 646b  .io/github/ajndk
++000002b0: 722f 6c61 6e61 726b 793f 6272 616e 6368  r/lanarky?branch
++000002c0: 3d6d 6169 6e29 0a5b 215b 4c69 6365 6e73  =main).[![Licens
++000002d0: 653a 204d 4954 5d28 6874 7470 733a 2f2f  e: MIT](https://
++000002e0: 696d 672e 7368 6965 6c64 732e 696f 2f62  img.shields.io/b
++000002f0: 6164 6765 2f4c 6963 656e 7365 2d4d 4954  adge/License-MIT
++00000300: 2d79 656c 6c6f 772e 7376 6729 5d28 6874  -yellow.svg)](ht
++00000310: 7470 733a 2f2f 6769 7468 7562 2e63 6f6d  tps://github.com
++00000320: 2f61 6a6e 646b 722f 6c61 6e61 726b 792f  /ajndkr/lanarky/
++00000330: 626c 6f62 2f6d 6169 6e2f 4c49 4345 4e53  blob/main/LICENS
++00000340: 4529 0a0a 3c2f 6469 763e 0a0a 4c61 6e61  E)..</div>..Lana
++00000350: 726b 7920 6973 2061 6e20 6f70 656e 2d73  rky is an open-s
++00000360: 6f75 7263 6520 6672 616d 6577 6f72 6b20  ource framework 
++00000370: 746f 2064 6570 6c6f 7920 4c4c 4d20 6170  to deploy LLM ap
++00000380: 706c 6963 6174 696f 6e73 2069 6e20 7072  plications in pr
++00000390: 6f64 7563 7469 6f6e 2e20 4974 2069 7320  oduction. It is 
++000003a0: 6275 696c 7420 6f6e 2074 6f70 206f 6620  built on top of 
++000003b0: 5b46 6173 7441 5049 5d28 6874 7470 733a  [FastAPI](https:
++000003c0: 2f2f 6769 7468 7562 2e63 6f6d 2f74 6961  //github.com/tia
++000003d0: 6e67 6f6c 6f2f 6661 7374 6170 6929 0a61  ngolo/fastapi).a
++000003e0: 6e64 2063 6f6d 6573 2077 6974 6820 6261  nd comes with ba
++000003f0: 7474 6572 6965 7320 696e 636c 7564 6564  tteries included
++00000400: 2e0a 0a23 2320 f09f 9a80 2046 6561 7475  ...## .... Featu
++00000410: 7265 730a 0a2d 2073 7570 706f 7274 7320  res..- supports 
++00000420: 5b4c 616e 6743 6861 696e 5d28 6874 7470  [LangChain](http
++00000430: 733a 2f2f 6769 7468 7562 2e63 6f6d 2f68  s://github.com/h
++00000440: 7763 6861 7365 3137 2f6c 616e 6763 6861  wchase17/langcha
++00000450: 696e 290a 2d20 7369 6d70 6c65 2067 7261  in).- simple gra
++00000460: 6469 6f20 6368 6174 626f 7420 5549 2066  dio chatbot UI f
++00000470: 6f72 2066 6173 7420 7072 6f74 6f74 7970  or fast prototyp
++00000480: 696e 670a 0a53 6565 205b 526f 6164 6d61  ing..See [Roadma
++00000490: 705d 2823 2d72 6f61 646d 6170 2920 666f  p](#-roadmap) fo
++000004a0: 7220 7570 636f 6d69 6e67 2066 6561 7475  r upcoming featu
++000004b0: 7265 732e 0a0a 2323 20e2 9d93 2057 6879  res...## ... Why
++000004c0: 3f0a 0a54 6865 7265 2061 7265 2067 7265  ?..There are gre
++000004d0: 6174 206c 6f77 2d63 6f64 652f 6e6f 2d63  at low-code/no-c
++000004e0: 6f64 6520 736f 6c75 7469 6f6e 7320 696e  ode solutions in
++000004f0: 2074 6865 206f 7065 6e20 736f 7572 6365   the open source
++00000500: 2074 6f20 6465 706c 6f79 2079 6f75 7220   to deploy your 
++00000510: 4c4c 4d20 7072 6f6a 6563 7473 2e20 486f  LLM projects. Ho
++00000520: 7765 7665 722c 0a6d 6f73 7420 6f66 2074  wever,.most of t
++00000530: 6865 6d20 6172 6520 6f70 696e 696f 6e61  hem are opiniona
++00000540: 7465 6420 696e 2074 6572 6d73 206f 6620  ted in terms of 
++00000550: 636c 6f75 6420 6f72 2064 6570 6c6f 796d  cloud or deploym
++00000560: 656e 7420 636f 6465 2e20 5468 6973 2070  ent code. This p
++00000570: 726f 6a65 6374 2061 696d 7320 746f 2070  roject aims to p
++00000580: 726f 7669 6465 2075 7365 7273 0a77 6974  rovide users.wit
++00000590: 6820 6120 636c 6f75 642d 6167 6e6f 7374  h a cloud-agnost
++000005a0: 6963 2061 6e64 2064 6570 6c6f 796d 656e  ic and deploymen
++000005b0: 742d 6167 6e6f 7374 6963 2073 6f6c 7574  t-agnostic solut
++000005c0: 696f 6e20 7768 6963 6820 6361 6e20 6265  ion which can be
++000005d0: 2065 6173 696c 7920 696e 7465 6772 6174   easily integrat
++000005e0: 6564 2069 6e74 6f20 6578 6973 7469 6e67  ed into existing
++000005f0: 0a62 6163 6b65 6e64 2069 6e66 7261 7374  .backend infrast
++00000600: 7275 6374 7572 6573 2e0a 0a23 2320 f09f  ructures...## ..
++00000610: 92be 2049 6e73 7461 6c6c 6174 696f 6e0a  .. Installation.
++00000620: 0a54 6865 206c 6962 7261 7279 2069 7320  .The library is 
++00000630: 6176 6169 6c61 626c 6520 6f6e 2050 7950  available on PyP
++00000640: 4920 616e 6420 6361 6e20 6265 2069 6e73  I and can be ins
++00000650: 7461 6c6c 6564 2076 6961 2060 7069 7060  talled via `pip`
++00000660: 2e0a 0a60 6060 6261 7368 0a70 6970 2069  ...```bash.pip i
++00000670: 6e73 7461 6c6c 206c 616e 6172 6b79 0a60  nstall lanarky.`
++00000680: 6060 0a0a 596f 7520 6361 6e20 6669 6e64  ``..You can find
++00000690: 2074 6865 2066 756c 6c20 646f 6375 6d65   the full docume
++000006a0: 6e74 6174 696f 6e20 6174 205b 6874 7470  ntation at [http
++000006b0: 733a 2f2f 6c61 6e61 726b 792e 7265 6164  s://lanarky.read
++000006c0: 7468 6564 6f63 732e 696f 2f65 6e2f 6c61  thedocs.io/en/la
++000006d0: 7465 7374 2f5d 2868 7474 7073 3a2f 2f6c  test/](https://l
++000006e0: 616e 6172 6b79 2e72 6561 6474 6865 646f  anarky.readthedo
++000006f0: 6373 2e69 6f2f 656e 2f6c 6174 6573 742f  cs.io/en/latest/
++00000700: 292e 0a0a 2323 20f0 9f94 a520 4275 696c  )...## .... Buil
++00000710: 6420 796f 7572 2066 6972 7374 204c 616e  d your first Lan
++00000720: 6763 6861 696e 2061 7070 0a0a 6060 6070  gchain app..```p
++00000730: 7974 686f 6e0a 6672 6f6d 2064 6f74 656e  ython.from doten
++00000740: 7620 696d 706f 7274 206c 6f61 645f 646f  v import load_do
++00000750: 7465 6e76 0a66 726f 6d20 6661 7374 6170  tenv.from fastap
++00000760: 6920 696d 706f 7274 2046 6173 7441 5049  i import FastAPI
++00000770: 0a66 726f 6d20 6c61 6e67 6368 6169 6e20  .from langchain 
++00000780: 696d 706f 7274 2043 6f6e 7665 7273 6174  import Conversat
++00000790: 696f 6e43 6861 696e 0a66 726f 6d20 6c61  ionChain.from la
++000007a0: 6e67 6368 6169 6e2e 6368 6174 5f6d 6f64  ngchain.chat_mod
++000007b0: 656c 7320 696d 706f 7274 2043 6861 744f  els import ChatO
++000007c0: 7065 6e41 490a 0a66 726f 6d20 6c61 6e61  penAI..from lana
++000007d0: 726b 792e 726f 7574 696e 6720 696d 706f  rky.routing impo
++000007e0: 7274 204c 616e 6763 6861 696e 526f 7574  rt LangchainRout
++000007f0: 6572 0a0a 6c6f 6164 5f64 6f74 656e 7628  er..load_dotenv(
++00000800: 290a 6170 7020 3d20 4661 7374 4150 4928  ).app = FastAPI(
++00000810: 290a 0a6c 616e 6763 6861 696e 5f72 6f75  )..langchain_rou
++00000820: 7465 7220 3d20 4c61 6e67 6368 6169 6e52  ter = LangchainR
++00000830: 6f75 7465 7228 0a20 2020 206c 616e 6763  outer(.    langc
++00000840: 6861 696e 5f6f 626a 6563 743d 436f 6e76  hain_object=Conv
++00000850: 6572 7361 7469 6f6e 4368 6169 6e28 0a20  ersationChain(. 
++00000860: 2020 2020 2020 206c 6c6d 3d43 6861 744f         llm=ChatO
++00000870: 7065 6e41 4928 7465 6d70 6572 6174 7572  penAI(temperatur
++00000880: 653d 3029 2c20 7665 7262 6f73 653d 5472  e=0), verbose=Tr
++00000890: 7565 0a20 2020 2029 0a29 0a61 7070 2e69  ue.    ).).app.i
++000008a0: 6e63 6c75 6465 5f72 6f75 7465 7228 6c61  nclude_router(la
++000008b0: 6e67 6368 6169 6e5f 726f 7574 6572 290a  ngchain_router).
++000008c0: 6060 600a 0a53 6565 205b 6065 7861 6d70  ```..See [`examp
++000008d0: 6c65 732f 605d 2868 7474 7073 3a2f 2f67  les/`](https://g
++000008e0: 6974 6875 622e 636f 6d2f 616a 6e64 6b72  ithub.com/ajndkr
++000008f0: 2f6c 616e 6172 6b79 2f62 6c6f 622f 6d61  /lanarky/blob/ma
++00000900: 696e 2f65 7861 6d70 6c65 732f 5245 4144  in/examples/READ
++00000910: 4d45 2e6d 6429 0a66 6f72 206c 6973 7420  ME.md).for list 
++00000920: 6f66 2061 7661 696c 6162 6c65 2064 656d  of available dem
++00000930: 6f20 6578 616d 706c 6573 2e0a 0a43 7265  o examples...Cre
++00000940: 6174 6520 6120 602e 656e 7660 2066 696c  ate a `.env` fil
++00000950: 6520 7573 696e 6720 602e 656e 762e 7361  e using `.env.sa
++00000960: 6d70 6c65 6020 616e 6420 6164 6420 796f  mple` and add yo
++00000970: 7572 204f 7065 6e41 4920 4150 4920 6b65  ur OpenAI API ke
++00000980: 7920 746f 2069 740a 6265 666f 7265 2072  y to it.before r
++00000990: 756e 6e69 6e67 2074 6865 2065 7861 6d70  unning the examp
++000009a0: 6c65 732e 0a0a 215b 6465 6d6f 5d28 6874  les...![demo](ht
++000009b0: 7470 733a 2f2f 7261 772e 6769 7468 7562  tps://raw.github
++000009c0: 7573 6572 636f 6e74 656e 742e 636f 6d2f  usercontent.com/
++000009d0: 616a 6e64 6b72 2f6c 616e 6172 6b79 2f6d  ajndkr/lanarky/m
++000009e0: 6169 6e2f 6173 7365 7473 2f64 656d 6f2e  ain/assets/demo.
++000009f0: 6769 6629 0a0a 2323 20f0 9f93 8d20 526f  gif)..## .... Ro
++00000a00: 6164 6d61 700a 0a2d 205b 785d 2041 6464  admap..- [x] Add
++00000a10: 2073 7570 706f 7274 2066 6f72 205b 4c61   support for [La
++00000a20: 6e67 4368 6169 6e5d 2868 7474 7073 3a2f  ngChain](https:/
++00000a30: 2f67 6974 6875 622e 636f 6d2f 6877 6368  /github.com/hwch
++00000a40: 6173 6531 372f 6c61 6e67 6368 6169 6e29  ase17/langchain)
++00000a50: 0a2d 205b 785d 2041 6464 205b 4772 6164  .- [x] Add [Grad
++00000a60: 696f 5d28 6874 7470 733a 2f2f 6769 7468  io](https://gith
++00000a70: 7562 2e63 6f6d 2f67 7261 6469 6f2d 6170  ub.com/gradio-ap
++00000a80: 702f 6772 6164 696f 2920 5549 2066 6f72  p/gradio) UI for
++00000a90: 2066 6173 7420 7072 6f74 6f74 7970 696e   fast prototypin
++00000aa0: 670a 2d20 5b20 5d20 4164 6420 5351 4c20  g.- [ ] Add SQL 
++00000ab0: 6461 7461 6261 7365 2069 6e74 6567 7261  database integra
++00000ac0: 7469 6f6e 0a2d 205b 205d 2041 6464 2073  tion.- [ ] Add s
++00000ad0: 7570 706f 7274 2066 6f72 205b 4775 6172  upport for [Guar
++00000ae0: 6472 6169 6c73 5d28 6874 7470 733a 2f2f  drails](https://
++00000af0: 6769 7468 7562 2e63 6f6d 2f53 6872 6579  github.com/Shrey
++00000b00: 6152 2f67 7561 7264 7261 696c 7329 0a2d  aR/guardrails).-
++00000b10: 205b 205d 2041 6464 2073 7570 706f 7274   [ ] Add support
++00000b20: 2066 6f72 205b 4c6c 616d 6149 6e64 6578   for [LlamaIndex
++00000b30: 5d28 6874 7470 733a 2f2f 6769 7468 7562  ](https://github
++00000b40: 2e63 6f6d 2f6a 6572 7279 6a6c 6975 2f6c  .com/jerryjliu/l
++00000b50: 6c61 6d61 5f69 6e64 6578 290a 2d20 5b20  lama_index).- [ 
++00000b60: 5d20 4164 6420 5b47 5054 4361 6368 655d  ] Add [GPTCache]
++00000b70: 2868 7474 7073 3a2f 2f67 6974 6875 622e  (https://github.
++00000b80: 636f 6d2f 7a69 6c6c 697a 7465 6368 2f47  com/zilliztech/G
++00000b90: 5054 4361 6368 6529 2069 6e74 6567 7261  PTCache) integra
++00000ba0: 7469 6f6e 0a0a 2323 20f0 9fa4 a920 5374  tion..## .... St
++00000bb0: 6172 6761 7a65 7273 0a0a 4c65 6176 6520  argazers..Leave 
++00000bc0: 6120 e2ad 9020 6966 2079 6f75 2066 696e  a ... if you fin
++00000bd0: 6420 7468 6973 2070 726f 6a65 6374 2075  d this project u
++00000be0: 7365 6675 6c2e 0a0a 5b21 5b53 7461 7220  seful...[![Star 
++00000bf0: 4869 7374 6f72 7920 4368 6172 745d 2868  History Chart](h
++00000c00: 7474 7073 3a2f 2f61 7069 2e73 7461 722d  ttps://api.star-
++00000c10: 6869 7374 6f72 792e 636f 6d2f 7376 673f  history.com/svg?
++00000c20: 7265 706f 733d 616a 6e64 6b72 2f6c 616e  repos=ajndkr/lan
++00000c30: 6172 6b79 2674 7970 653d 4461 7465 295d  arky&type=Date)]
++00000c40: 2868 7474 7073 3a2f 2f73 7461 722d 6869  (https://star-hi
++00000c50: 7374 6f72 792e 636f 6d2f 2361 6a6e 646b  story.com/#ajndk
++00000c60: 722f 6c61 6e61 726b 7926 4461 7465 290a  r/lanarky&Date).
++00000c70: 0a23 2320 f09f a49d 2043 6f6e 7472 6962  .## .... Contrib
++00000c80: 7574 696e 670a 0a5b 215b 436f 6465 2063  uting..[![Code c
++00000c90: 6865 636b 5d28 6874 7470 733a 2f2f 6769  heck](https://gi
++00000ca0: 7468 7562 2e63 6f6d 2f61 6a6e 646b 722f  thub.com/ajndkr/
++00000cb0: 6c61 6e61 726b 792f 6163 7469 6f6e 732f  lanarky/actions/
++00000cc0: 776f 726b 666c 6f77 732f 636f 6465 2d63  workflows/code-c
++00000cd0: 6865 636b 2e79 616d 6c2f 6261 6467 652e  heck.yaml/badge.
++00000ce0: 7376 6729 5d28 6874 7470 733a 2f2f 6769  svg)](https://gi
++00000cf0: 7468 7562 2e63 6f6d 2f61 6a6e 646b 722f  thub.com/ajndkr/
++00000d00: 6c61 6e61 726b 792f 6163 7469 6f6e 732f  lanarky/actions/
++00000d10: 776f 726b 666c 6f77 732f 636f 6465 2d63  workflows/code-c
++00000d20: 6865 636b 2e79 616d 6c29 0a5b 215b 5075  heck.yaml).[![Pu
++00000d30: 626c 6973 685d 2868 7474 7073 3a2f 2f67  blish](https://g
++00000d40: 6974 6875 622e 636f 6d2f 616a 6e64 6b72  ithub.com/ajndkr
++00000d50: 2f6c 616e 6172 6b79 2f61 6374 696f 6e73  /lanarky/actions
++00000d60: 2f77 6f72 6b66 6c6f 7773 2f70 7562 6c69  /workflows/publi
++00000d70: 7368 2e79 616d 6c2f 6261 6467 652e 7376  sh.yaml/badge.sv
++00000d80: 6729 5d28 6874 7470 733a 2f2f 6769 7468  g)](https://gith
++00000d90: 7562 2e63 6f6d 2f61 6a6e 646b 722f 6c61  ub.com/ajndkr/la
++00000da0: 6e61 726b 792f 6163 7469 6f6e 732f 776f  narky/actions/wo
++00000db0: 726b 666c 6f77 732f 7075 626c 6973 682e  rkflows/publish.
++00000dc0: 7961 6d6c 290a 0a43 6f6e 7472 6962 7574  yaml)..Contribut
++00000dd0: 696f 6e73 2061 7265 206d 6f72 6520 7468  ions are more th
++00000de0: 616e 2077 656c 636f 6d65 2120 4966 2079  an welcome! If y
++00000df0: 6f75 2068 6176 6520 616e 2069 6465 6120  ou have an idea 
++00000e00: 666f 7220 6120 6e65 7720 6665 6174 7572  for a new featur
++00000e10: 6520 6f72 2077 616e 7420 746f 2068 656c  e or want to hel
++00000e20: 7020 696d 7072 6f76 6520 6c61 6e61 726b  p improve lanark
++00000e30: 792c 0a70 6c65 6173 6520 6372 6561 7465  y,.please create
++00000e40: 2061 6e20 6973 7375 6520 6f72 2073 7562   an issue or sub
++00000e50: 6d69 7420 6120 7075 6c6c 2072 6571 7565  mit a pull reque
++00000e60: 7374 206f 6e20 5b47 6974 4875 625d 2868  st on [GitHub](h
++00000e70: 7474 7073 3a2f 2f67 6974 6875 622e 636f  ttps://github.co
++00000e80: 6d2f 616a 6e64 6b72 2f6c 616e 6172 6b79  m/ajndkr/lanarky
++00000e90: 292e 0a0a 5365 6520 5b43 4f4e 5452 4942  )...See [CONTRIB
++00000ea0: 5554 494e 472e 6d64 5d28 6874 7470 733a  UTING.md](https:
++00000eb0: 2f2f 6769 7468 7562 2e63 6f6d 2f61 6a6e  //github.com/ajn
++00000ec0: 646b 722f 6c61 6e61 726b 792f 626c 6f62  dkr/lanarky/blob
++00000ed0: 2f6d 6169 6e2f 434f 4e54 5249 4255 5449  /main/CONTRIBUTI
++00000ee0: 4e47 2e6d 6429 2066 6f72 206d 6f72 6520  NG.md) for more 
++00000ef0: 696e 666f 726d 6174 696f 6e2e 0a0a 2323  information...##
++00000f00: 2320 436f 6e74 7269 6275 746f 7273 0a0a  # Contributors..
++00000f10: 5b21 5b5d 2868 7474 7073 3a2f 2f69 6d67  [![](https://img
++00000f20: 2e73 6869 656c 6473 2e69 6f2f 6769 7468  .shields.io/gith
++00000f30: 7562 2f63 6f6e 7472 6962 7574 6f72 732d  ub/contributors-
++00000f40: 616e 6f6e 2f61 6a6e 646b 722f 6c61 6e61  anon/ajndkr/lana
++00000f50: 726b 7929 5d28 6874 7470 733a 2f2f 6769  rky)](https://gi
++00000f60: 7468 7562 2e63 6f6d 2f61 6a6e 646b 722f  thub.com/ajndkr/
++00000f70: 6c61 6e61 726b 792f 6772 6170 6873 2f63  lanarky/graphs/c
++00000f80: 6f6e 7472 6962 7574 6f72 7329 0a0a 3c61  ontributors)..<a
++00000f90: 2068 7265 663d 2268 7474 7073 3a2f 2f67   href="https://g
++00000fa0: 6974 6875 622e 636f 6d2f 616a 6e64 6b72  ithub.com/ajndkr
++00000fb0: 2f6c 616e 6172 6b79 2f67 7261 7068 732f  /lanarky/graphs/
++00000fc0: 636f 6e74 7269 6275 746f 7273 223e 0a20  contributors">. 
++00000fd0: 203c 696d 6720 7372 633d 2268 7474 7073   <img src="https
++00000fe0: 3a2f 2f63 6f6e 7472 6962 2e72 6f63 6b73  ://contrib.rocks
++00000ff0: 2f69 6d61 6765 3f72 6570 6f3d 616a 6e64  /image?repo=ajnd
++00001000: 6b72 2f6c 616e 6172 6b79 2220 2f3e 0a3c  kr/lanarky" />.<
++00001010: 2f61 3e0a 0a23 2320 e29a 96ef b88f 204c  /a>..## ...... L
++00001020: 6963 656e 7365 0a0a 5468 6520 6c69 6272  icense..The libr
++00001030: 6172 7920 6973 2072 656c 6561 7365 6420  ary is released 
++00001040: 756e 6465 7220 7468 6520 5b4d 4954 204c  under the [MIT L
++00001050: 6963 656e 7365 5d28 6874 7470 733a 2f2f  icense](https://
++00001060: 6769 7468 7562 2e63 6f6d 2f61 6a6e 646b  github.com/ajndk
++00001070: 722f 6c61 6e61 726b 792f 626c 6f62 2f6d  r/lanarky/blob/m
++00001080: 6169 6e2f 4c49 4345 4e53 4529 2e0a       ain/LICENSE)..
+```
+
+### Comparing `lanarky-0.6.6/lanarky/callbacks/__init__.py` & `lanarky-0.7.0/lanarky/callbacks/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/callbacks/agents.py` & `lanarky-0.7.0/lanarky/callbacks/agents.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/callbacks/base.py` & `lanarky-0.7.0/lanarky/callbacks/base.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/callbacks/llm.py` & `lanarky-0.7.0/lanarky/callbacks/llm.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/callbacks/retrieval_qa.py` & `lanarky-0.7.0/lanarky/callbacks/retrieval_qa.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/register.py` & `lanarky-0.7.0/lanarky/register.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/responses/streaming.py` & `lanarky-0.7.0/lanarky/responses/streaming.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/schemas.py` & `lanarky-0.7.0/lanarky/schemas.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/testing/gradio.py` & `lanarky-0.7.0/lanarky/testing/gradio.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/lanarky/websockets/base.py` & `lanarky-0.7.0/lanarky/websockets/base.py`
+
+ * *Files identical despite different names*
+
+### Comparing `lanarky-0.6.6/pyproject.toml` & `lanarky-0.7.0/pyproject.toml`
+
+ * *Files 12% similar despite different names*
+
+```diff
+@@ -1,22 +1,22 @@
+ [tool.poetry]
+ name = "lanarky"
+-version = "0.6.6"
++version = "0.7.0"
+ description = "Ship production-ready LLM projects with FastAPI"
+ authors = ["Ajinkya Indulkar <26824103+ajndkr@users.noreply.github.com>"]
+ readme = "README.md"
+ homepage = "https://github.com/ajndkr/lanarky"
+ repository = "https://github.com/ajndkr/lanarky"
+ license = "MIT"
+ packages = [{include = "lanarky"}]
+ 
+ [tool.poetry.dependencies]
+ python = "^3.9"
+ fastapi = ">=0.95.2"
+-langchain = ">=0.0.178"
++langchain = ">=0.0.183"
+ urllib3 = "<=1.26.15"  # added due to poetry errors
+ python-dotenv = "^1.0.0"
+ typing-extensions = "4.5.0"  # added due to https://github.com/hwchase17/langchain/issues/5113
+ 
+ [tool.poetry.group.dev.dependencies]
+ pre-commit = "^3.3.1"
+```
+
+### Comparing `lanarky-0.6.6/PKG-INFO` & `lanarky-0.7.0/PKG-INFO`
+
+ * *Files 8% similar despite different names*
+
+```diff
+@@ -1,41 +1,41 @@
+ Metadata-Version: 2.1
+ Name: lanarky
+-Version: 0.6.6
++Version: 0.7.0
+ Summary: Ship production-ready LLM projects with FastAPI
+ Home-page: https://github.com/ajndkr/lanarky
+ License: MIT
+ Author: Ajinkya Indulkar
+ Author-email: 26824103+ajndkr@users.noreply.github.com
+ Requires-Python: >=3.9,<4.0
+ Classifier: License :: OSI Approved :: MIT License
+ Classifier: Programming Language :: Python :: 3
+ Classifier: Programming Language :: Python :: 3.9
+ Classifier: Programming Language :: Python :: 3.10
+ Classifier: Programming Language :: Python :: 3.11
+ Requires-Dist: fastapi (>=0.95.2)
+-Requires-Dist: langchain (>=0.0.178)
++Requires-Dist: langchain (>=0.0.183)
+ Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+ Requires-Dist: typing-extensions (==4.5.0)
+ Requires-Dist: urllib3 (<=1.26.15)
+ Project-URL: Repository, https://github.com/ajndkr/lanarky
+ Description-Content-Type: text/markdown
+ 
+ <div align="center">
+ 
+ <img src="https://raw.githubusercontent.com/ajndkr/lanarky/main/assets/logo.png" alt="lanarky-logo" width="150">
+ 
+ <h1> Lanarky </h1>
+ 
+ [![stars](https://img.shields.io/github/stars/ajndkr/lanarky)](https://github.com/ajndkr/lanarky/stargazers)
+-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ajndkr/lanarky/blob/main/LICENSE)
++[![Documentation](https://img.shields.io/badge/documentation-ReadTheDocs-blue.svg)](https://lanarky.readthedocs.io/en/latest/)
+ [![PyPI version](https://badge.fury.io/py/lanarky.svg)](https://pypi.org/project/lanarky/)
+-[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-3916/)
++![Supported Python Versions](https://img.shields.io/pypi/pyversions/lanarky.svg)
+ [![Code Coverage](https://coveralls.io/repos/github/ajndkr/lanarky/badge.svg?branch=main)](https://coveralls.io/github/ajndkr/lanarky?branch=main)
+-[![Documentation](https://img.shields.io/badge/documentation-ReadTheDocs-blue.svg)](https://lanarky.readthedocs.io/en/latest/)
++[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ajndkr/lanarky/blob/main/LICENSE)
+ 
+ </div>
+ 
+ Lanarky is an open-source framework to deploy LLM applications in production. It is built on top of [FastAPI](https://github.com/tiangolo/fastapi)
+ and comes with batteries included.
+ 
+ ## 🚀 Features
+@@ -58,37 +58,37 @@
+ 
+ ```bash
+ pip install lanarky
+ ```
+ 
+ You can find the full documentation at [https://lanarky.readthedocs.io/en/latest/](https://lanarky.readthedocs.io/en/latest/).
+ 
+-## 🔥 Deploy a simple Langchain application in under 20 lines of code
++## 🔥 Build your first Langchain app
+ 
+ ```python
+ from dotenv import load_dotenv
+ from fastapi import FastAPI
+ from langchain import ConversationChain
+ from langchain.chat_models import ChatOpenAI
+-from pydantic import BaseModel
+-from lanarky.responses import StreamingResponse
++
++from lanarky.routing import LangchainRouter
+ 
+ load_dotenv()
+ app = FastAPI()
+ 
+-class Request(BaseModel):
+-    query: str
+-
+-@app.post("/chat")
+-async def chat(request: Request) -> StreamingResponse:
+-    chain = ConversationChain(llm=ChatOpenAI(temperature=0, streaming=True), verbose=True)
+-    return StreamingResponse.from_chain(chain, request.query, media_type="text/event-stream")
++langchain_router = LangchainRouter(
++    langchain_object=ConversationChain(
++        llm=ChatOpenAI(temperature=0), verbose=True
++    )
++)
++app.include_router(langchain_router)
+ ```
+ 
+-See [`examples/`](https://github.com/ajndkr/lanarky/blob/main/examples/README.md) for list of available demo examples.
++See [`examples/`](https://github.com/ajndkr/lanarky/blob/main/examples/README.md)
++for list of available demo examples.
+ 
+ Create a `.env` file using `.env.sample` and add your OpenAI API key to it
+ before running the examples.
+ 
+ ![demo](https://raw.githubusercontent.com/ajndkr/lanarky/main/assets/demo.gif)
+ 
+ ## 📍 Roadmap
+@@ -96,21 +96,35 @@
+ - [x] Add support for [LangChain](https://github.com/hwchase17/langchain)
+ - [x] Add [Gradio](https://github.com/gradio-app/gradio) UI for fast prototyping
+ - [ ] Add SQL database integration
+ - [ ] Add support for [Guardrails](https://github.com/ShreyaR/guardrails)
+ - [ ] Add support for [LlamaIndex](https://github.com/jerryjliu/llama_index)
+ - [ ] Add [GPTCache](https://github.com/zilliztech/GPTCache) integration
+ 
++## 🤩 Stargazers
++
++Leave a ⭐ if you find this project useful.
++
++[![Star History Chart](https://api.star-history.com/svg?repos=ajndkr/lanarky&type=Date)](https://star-history.com/#ajndkr/lanarky&Date)
++
+ ## 🤝 Contributing
+ 
+ [![Code check](https://github.com/ajndkr/lanarky/actions/workflows/code-check.yaml/badge.svg)](https://github.com/ajndkr/lanarky/actions/workflows/code-check.yaml)
+ [![Publish](https://github.com/ajndkr/lanarky/actions/workflows/publish.yaml/badge.svg)](https://github.com/ajndkr/lanarky/actions/workflows/publish.yaml)
+ 
+ Contributions are more than welcome! If you have an idea for a new feature or want to help improve lanarky,
+ please create an issue or submit a pull request on [GitHub](https://github.com/ajndkr/lanarky).
+ 
+ See [CONTRIBUTING.md](https://github.com/ajndkr/lanarky/blob/main/CONTRIBUTING.md) for more information.
+ 
++### Contributors
++
++[![](https://img.shields.io/github/contributors-anon/ajndkr/lanarky)](https://github.com/ajndkr/lanarky/graphs/contributors)
++
++<a href="https://github.com/ajndkr/lanarky/graphs/contributors">
++  <img src="https://contrib.rocks/image?repo=ajndkr/lanarky" />
++</a>
++
+ ## ⚖️ License
+ 
+ The library is released under the [MIT License](https://github.com/ajndkr/lanarky/blob/main/LICENSE).
+```
+

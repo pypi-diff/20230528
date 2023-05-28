@@ -10469,3 +10469,68 @@ EOFError: EOF read where object expected
 [2023-05-28 23:12:22] INFO root fetch - main [MainThread]: End processing [openschema]: success
 [2023-05-28 23:12:24] INFO root fetch - main [MainThread]: End processing [pdc-dp-means]: success
 [2023-05-28 23:12:24] INFO root fetch - main [MainThread]: Store serial: [18283543]
+[2023-05-28 23:17:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283543]
+[2023-05-28 23:17:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlite3-to-mysql
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chiakilisp
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dionpy
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scansort
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: binance-c2c-sapi
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openlake
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lanarky
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: clown-sort
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: scatterd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kcli
+[2023-05-28 23:17:33] INFO root fetch - processPackages [dionpy]: New version: [0.99.8] Old Version: [0.99.7]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [chiakilisp]: New version: [1.4.0rc7] Old Version: [1.4.0rc6]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [sqlite3-to-mysql]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [binance-c2c-sapi]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [lanarky]: New version: [0.7.0] Old Version: [0.6.6]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [openlake]: New version: [0.6] Old Version: [0.5.dev2]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scansort]: New version: [0.2] Old Version: [0.1]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scatterd]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [clown-sort]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [kcli]: New version: [99.0.202305282117] Old Version: [99.0.202305271605]
+[2023-05-28 23:17:33] INFO root fetch - processPackages [chiakilisp]: Downloading https://files.pythonhosted.org/packages/04/e2/d5f525c2cd4c5125fd7aaeb379b0f96ebe9cbe6da4337347711512a5760a/chiakilisp-1.4.0rc7-py3-none-any.whl
+[2023-05-28 23:17:33] INFO root fetch - processPackages [binance-c2c-sapi]: Downloading https://files.pythonhosted.org/packages/de/27/39ef9d7fbb30504faad3ae357a2e52e1ee5280fdf096a8889d9e91868ca7/binance-c2c-sapi-0.0.4.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scansort]: Downloading https://files.pythonhosted.org/packages/b5/44/18c5806b37e0f3bbd63b9a88544de08f3e7ce9ea2a5006b8bc913a60eb36/scansort-0.1.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [openlake]: Downloading https://files.pythonhosted.org/packages/73/99/da8e552dfab8cde47a46bed4499134b9772573ba89fb7c21bfa3241289f1/openlake-0.5.dev2-py3-none-any.whl
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scatterd]: Downloading https://files.pythonhosted.org/packages/44/2f/e7a5e56676a0dba8260b6391656051076a41c0e0651ebd80eaf03dff0b6f/scatterd-1.3.4.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/66/6b/20ff56dca2058dc29ccb0349e668aaf77928e61da3600118fce488c38509/clown_sort-1.6.2.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [binance-c2c-sapi]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [binance-c2c-sapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance-c2c-sapi-0.0.3.tar.gz tmp/binance-c2c-sapi-0.0.4.tar.gz --markdown 20230528/b/binance-c2c-sapi/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.6.1.tar.gz tmp/clown_sort-1.6.2.tar.gz --markdown 20230528/c/clown-sort/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [lanarky]: Downloading https://files.pythonhosted.org/packages/64/86/00a0efa2f6282a7fa0f7387e09380fa6183a1e0d3c40c303c24cff77ce23/lanarky-0.7.0.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [dionpy]: Downloading https://files.pythonhosted.org/packages/70/7f/724cf20179a0512b211cb7b6438a2d822ba01203846f293c353bd2ec7b64/dionpy-0.99.8.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [chiakilisp]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [chiakilisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiakilisp-1.4.0rc6-py3-none-any.whl.zip tmp/chiakilisp-1.4.0rc7-py3-none-any.whl.zip --markdown 20230528/c/chiakilisp/1.4.0rc6-1.4.0rc7/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [sqlite3-to-mysql]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [sqlite3-to-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite3-to-mysql-1.4.8.tar.gz tmp/sqlite3-to-mysql-1.4.9.tar.gz --markdown 20230528/s/sqlite3-to-mysql/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [lanarky]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [openlake]: Downloading https://files.pythonhosted.org/packages/fc/5c/2a06e5de18e543254fbca46d788dae6d780efa7b81dab6c4bc3d1c7a5349/openlake-0.6-py3-none-any.whl
+[2023-05-28 23:17:33] INFO root fetch - processPackages [lanarky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanarky-0.6.6.tar.gz tmp/lanarky-0.7.0.tar.gz --markdown 20230528/l/lanarky/0.6.6-0.7.0/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scansort]: Downloading https://files.pythonhosted.org/packages/37/1c/402078b3bc6a276eb55ded8a557469baa3d37cac2160fdd531ebbb95b3ff/scansort-0.2.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [dionpy]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [dionpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dionpy-0.99.7.tar.gz tmp/dionpy-0.99.8.tar.gz --markdown 20230528/d/dionpy/0.99.7-0.99.8/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/b9/60/2da11e23d106f9ac39d50f1b6a70d5cb0514b0015cb0a6144e4e5ed8615d/kcli-99.0.202305282117-py3-none-any.whl
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scatterd]: Downloading https://files.pythonhosted.org/packages/91/f4/c5a7a74cdcb0152c37f6849947194951a58009a04238e979a23918a9ed5f/scatterd-1.3.5.tar.gz
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scansort]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scansort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scansort-0.1.tar.gz tmp/scansort-0.2.tar.gz --markdown 20230528/s/scansort/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [openlake]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [openlake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlake-0.5.dev2-py3-none-any.whl.zip tmp/openlake-0.6-py3-none-any.whl.zip --markdown 20230528/o/openlake/0.5.dev2-0.6/diff.md --exclude *.pyd
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scatterd]: executing diffoscope
+[2023-05-28 23:17:33] INFO root fetch - processPackages [scatterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatterd-1.3.4.tar.gz tmp/scatterd-1.3.5.tar.gz --markdown 20230528/s/scatterd/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-28 23:17:34] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-28 23:17:34] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305271605-py3-none-any.whl.zip tmp/kcli-99.0.202305282117-py3-none-any.whl.zip --markdown 20230528/k/kcli/99.0.202305271605-99.0.202305282117/diff.md --exclude *.pyd
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [binance-c2c-sapi]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [openlake]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [sqlite3-to-mysql]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [dionpy]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [scansort]: success
+[2023-05-28 23:17:35] INFO root fetch - main [MainThread]: End processing [lanarky]: success
+[2023-05-28 23:17:36] INFO root fetch - main [MainThread]: End processing [scatterd]: success
+[2023-05-28 23:17:42] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-28 23:17:42] INFO root fetch - main [MainThread]: Store serial: [18283573]
