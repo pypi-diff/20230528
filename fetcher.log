@@ -9450,3 +9450,56 @@ EOFError: EOF read where object expected
 [2023-05-28 21:00:57] INFO root fetch - main [MainThread]: End processing [honeybee-idaice]: success
 [2023-05-28 21:00:57] INFO root fetch - main [MainThread]: End processing [featurewiz]: success
 [2023-05-28 21:00:57] INFO root fetch - main [MainThread]: Store serial: [18282900]
+[2023-05-28 21:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282900]
+[2023-05-28 21:06:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-Rocket
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loratransmit
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-threaded-sync-to-async
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ubami
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tnsn
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netteikei
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: backtestify
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aiogram3-form
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tensorPak
+[2023-05-28 21:06:07] INFO root fetch - processPackages [loratransmit]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-28 21:06:07] INFO root fetch - processPackages [api-Rocket]: New version: [1.6.0] Old Version: [1.3.6]
+[2023-05-28 21:06:07] WARNING root fetch - processPackages [tnsn]: Skipping, unable to determine old version
+[2023-05-28 21:06:07] INFO root fetch - processPackages [netteikei]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-28 21:06:07] INFO root fetch - main [MainThread]: End processing [tnsn] error
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ubami]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 21:06:07] WARNING root fetch - processPackages [backtestify]: Skipping, unable to determine old version
+[2023-05-28 21:06:07] INFO root fetch - processPackages [aiogram3-form]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-28 21:06:07] INFO root fetch - main [MainThread]: End processing [backtestify] error
+[2023-05-28 21:06:07] INFO root fetch - processPackages [django-threaded-sync-to-async]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-28 21:06:07] WARNING root fetch - processPackages [tensorPak]: Skipping, unable to determine old version
+[2023-05-28 21:06:07] INFO root fetch - main [MainThread]: End processing [tensorPak] error
+[2023-05-28 21:06:07] INFO root fetch - processPackages [loratransmit]: Downloading https://files.pythonhosted.org/packages/50/3c/0f57142add616908858122204c3bf817bcf93518e717a6c81bb573c4e85e/loratransmit-0.3.1.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [api-Rocket]: Downloading https://files.pythonhosted.org/packages/f3/30/e740551ff5585bb52ddba07a9aeac4e95ba980bacafdc3b0b2e3e4e5465f/api-Rocket-1.3.6.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [django-threaded-sync-to-async]: Downloading https://files.pythonhosted.org/packages/e4/07/acacb94b8297849b1d8c6e6f75a84316b2af7a5f5f222c1dc53072edbca7/django_threaded_sync_to_async-1.0.1.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [netteikei]: Downloading https://files.pythonhosted.org/packages/79/6b/0fb69b9f54d598776969ef6be0330a9103494f0a3a58de60fb76ed0376fd/netteikei-0.4.1.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ubami]: Downloading https://files.pythonhosted.org/packages/04/7b/25d371381a3352b8cd3ced5d02b9996bbb1f86f542f8b35fc7661a83fc66/ubami-0.1.0.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/37/2b/0c79caf0e07d938d854d2a8a931c65c193fbbc8f86d0fe6b93294ff4c8fa/aiogram3_form-0.3.3.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [netteikei]: executing diffoscope
+[2023-05-28 21:06:07] INFO root fetch - processPackages [netteikei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netteikei-0.4.0.tar.gz tmp/netteikei-0.4.1.tar.gz --markdown 20230528/n/netteikei/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 21:06:07] INFO root fetch - processPackages [loratransmit]: Downloading https://files.pythonhosted.org/packages/2d/00/30ca46fc84e729223d9b2aee0c4947b0acb7b8c04495fe28941d768b01d6/loratransmit-0.3.2.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [django-threaded-sync-to-async]: Downloading https://files.pythonhosted.org/packages/9b/68/c184b876b5149ab7321d591addde1a720d523f46243b725f74681710fdd8/django_threaded_sync_to_async-1.0.2.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ubami]: Downloading https://files.pythonhosted.org/packages/e7/f4/f040cb9f4eb99c84066c09c85794a1d887609486819bafc5ed8cc11796bc/ubami-0.1.1.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [api-Rocket]: Downloading https://files.pythonhosted.org/packages/91/63/868fb52b64c7382da89a990aeeaced15d6b65dbeae1046dd046d364906fb/api-Rocket-1.6.0.tar.gz
+[2023-05-28 21:06:07] INFO root fetch - processPackages [loratransmit]: executing diffoscope
+[2023-05-28 21:06:07] INFO root fetch - processPackages [loratransmit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loratransmit-0.3.1.tar.gz tmp/loratransmit-0.3.2.tar.gz --markdown 20230528/l/loratransmit/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 21:06:07] INFO root fetch - processPackages [django-threaded-sync-to-async]: executing diffoscope
+[2023-05-28 21:06:07] INFO root fetch - processPackages [django-threaded-sync-to-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_threaded_sync_to_async-1.0.1.tar.gz tmp/django_threaded_sync_to_async-1.0.2.tar.gz --markdown 20230528/d/django-threaded-sync-to-async/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ubami]: executing diffoscope
+[2023-05-28 21:06:07] INFO root fetch - processPackages [ubami]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubami-0.1.0.tar.gz tmp/ubami-0.1.1.tar.gz --markdown 20230528/u/ubami/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 21:06:07] INFO root fetch - processPackages [api-Rocket]: executing diffoscope
+[2023-05-28 21:06:07] INFO root fetch - processPackages [api-Rocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-Rocket-1.3.6.tar.gz tmp/api-Rocket-1.6.0.tar.gz --markdown 20230528/a/api-Rocket/1.3.6-1.6.0/diff.md --exclude *.pyd
+[2023-05-28 21:06:07] INFO root fetch - processPackages [aiogram3-form]: Downloading https://files.pythonhosted.org/packages/a8/09/15b3513b0d93243f3d91e1f269737a613d1803db23d6149776cd683dd07d/aiogram3_form-0.4.0.tar.gz
+[2023-05-28 21:06:08] INFO root fetch - processPackages [aiogram3-form]: executing diffoscope
+[2023-05-28 21:06:08] INFO root fetch - processPackages [aiogram3-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram3_form-0.3.3.tar.gz tmp/aiogram3_form-0.4.0.tar.gz --markdown 20230528/a/aiogram3-form/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 21:06:08] INFO root fetch - main [MainThread]: End processing [netteikei]: success
+[2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [django-threaded-sync-to-async]: success
+[2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [ubami]: success
+[2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [loratransmit]: success
+[2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [api-Rocket]: success
+[2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [aiogram3-form]: success
+[2023-05-28 21:06:09] INFO root fetch - main [MainThread]: Store serial: [18282931]
