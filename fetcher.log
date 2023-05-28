@@ -1727,3 +1727,23 @@
 [2023-05-28 04:27:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
 [2023-05-28 04:27:57] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
 [2023-05-28 04:27:57] INFO root fetch - main [MainThread]: Store serial: [18278057]
+[2023-05-28 04:33:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278057]
+[2023-05-28 04:33:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 04:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monai-weekly
+[2023-05-28 04:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PolicyEngine-UK
+[2023-05-28 04:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-web-core
+[2023-05-28 04:33:05] INFO root fetch - processPackages [monai-weekly]: New version: [1.2.dev2322] Old Version: [1.2.dev2321]
+[2023-05-28 04:33:05] INFO root fetch - processPackages [PolicyEngine-UK]: New version: [0.50.1] Old Version: [0.50.0]
+[2023-05-28 04:33:05] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 04:33:05] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-28 04:33:05] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230528/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 04:33:06] INFO root fetch - processPackages [PolicyEngine-UK]: Downloading https://files.pythonhosted.org/packages/cb/85/a5b8c8ff510f35acb80552e6fb49caa44df0e2d5c95372f146e121cc1b6c/PolicyEngine-UK-0.50.1.tar.gz
+[2023-05-28 04:33:06] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/1c/b3/5fd1a9b148b514e6ec9344114f65ec39580b99c3179996deea95293cd1dc/monai-weekly-1.2.dev2322.tar.gz
+[2023-05-28 04:33:06] INFO root fetch - processPackages [PolicyEngine-UK]: executing diffoscope
+[2023-05-28 04:33:06] INFO root fetch - processPackages [PolicyEngine-UK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolicyEngine-UK-0.50.0.tar.gz tmp/PolicyEngine-UK-0.50.1.tar.gz --markdown 20230528/P/PolicyEngine-UK/0.50.0-0.50.1/diff.md --exclude *.pyd
+[2023-05-28 04:33:06] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2023-05-28 04:33:06] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.2.dev2321.tar.gz tmp/monai-weekly-1.2.dev2322.tar.gz --markdown 20230528/m/monai-weekly/1.2.dev2321-1.2.dev2322/diff.md --exclude *.pyd
+[2023-05-28 04:33:07] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-28 04:33:12] INFO root fetch - main [MainThread]: End processing [PolicyEngine-UK]: success
+[2023-05-28 04:33:20] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2023-05-28 04:33:20] INFO root fetch - main [MainThread]: Store serial: [18278069]
