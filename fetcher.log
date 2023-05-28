@@ -3090,3 +3090,39 @@
 [2023-05-28 09:04:24] INFO root fetch - main [MainThread]: End processing [aksharify]: success
 [2023-05-28 09:04:25] INFO root fetch - main [MainThread]: End processing [py-pdf-term]: success
 [2023-05-28 09:04:25] INFO root fetch - main [MainThread]: Store serial: [18278959]
+[2023-05-28 09:09:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278959]
+[2023-05-28 09:09:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 09:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: serializers-for-lab3
+[2023-05-28 09:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wiliot-deployment-tools
+[2023-05-28 09:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: podcast-downloader
+[2023-05-28 09:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt-fts
+[2023-05-28 09:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-hub-nightly
+[2023-05-28 09:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simpleobsws
+[2023-05-28 09:09:35] WARNING root fetch - processPackages [serializers-for-lab3]: Skipping, unable to determine old version
+[2023-05-28 09:09:35] INFO root fetch - main [MainThread]: End processing [serializers-for-lab3] error
+[2023-05-28 09:09:35] INFO root fetch - processPackages [simpleobsws]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-28 09:09:35] INFO root fetch - processPackages [podcast-downloader]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-28 09:09:35] INFO root fetch - processPackages [wiliot-deployment-tools]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-05-28 09:09:35] INFO root fetch - processPackages [yt-fts]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 09:09:35] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-28 09:09:36] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-28 09:09:36] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230528/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-28 09:09:36] INFO root fetch - processPackages [simpleobsws]: Downloading https://files.pythonhosted.org/packages/40/d4/d8d2afd425b70a857beb373b4f5e6db4297e2938cb8cf64cc887e5b3c296/simpleobsws-1.3.1.tar.gz
+[2023-05-28 09:09:36] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/39/ee/e8587c1faec40f3eaace83313561fa269ec09f7d901ca5fe9204a54f669c/yt-fts-0.1.2.tar.gz
+[2023-05-28 09:09:36] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2023-05-28 09:09:36] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.1.tar.gz tmp/yt-fts-0.1.2.tar.gz --markdown 20230528/y/yt-fts/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 09:09:36] INFO root fetch - processPackages [podcast-downloader]: Downloading https://files.pythonhosted.org/packages/79/1f/38c64931f999ace410af03a7d2a25da026fb6355e9cd14b64c03507d80e7/podcast_downloader-0.6.1.tar.gz
+[2023-05-28 09:09:36] INFO root fetch - processPackages [podcast-downloader]: executing diffoscope
+[2023-05-28 09:09:36] INFO root fetch - processPackages [podcast-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/podcast_downloader-0.6.0.tar.gz tmp/podcast_downloader-0.6.1.tar.gz --markdown 20230528/p/podcast-downloader/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-28 09:09:36] INFO root fetch - processPackages [simpleobsws]: Downloading https://files.pythonhosted.org/packages/5b/2f/aae8a6b920ac2fac7f6297b11cf8c533523910b7a3bc03303972004fc1aa/simpleobsws-1.4.0.tar.gz
+[2023-05-28 09:09:36] INFO root fetch - processPackages [wiliot-deployment-tools]: Downloading https://files.pythonhosted.org/packages/20/c0/bc016b7c2562209888f9b2d619547938b6ab057b4f8ef5801cd4bd6c0169/wiliot-deployment-tools-4.0.4.tar.gz
+[2023-05-28 09:09:36] INFO root fetch - processPackages [simpleobsws]: executing diffoscope
+[2023-05-28 09:09:36] INFO root fetch - processPackages [simpleobsws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleobsws-1.3.1.tar.gz tmp/simpleobsws-1.4.0.tar.gz --markdown 20230528/s/simpleobsws/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-28 09:09:36] INFO root fetch - processPackages [wiliot-deployment-tools]: executing diffoscope
+[2023-05-28 09:09:36] INFO root fetch - processPackages [wiliot-deployment-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiliot-deployment-tools-4.0.3.tar.gz tmp/wiliot-deployment-tools-4.0.4.tar.gz --markdown 20230528/w/wiliot-deployment-tools/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2023-05-28 09:09:37] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2023-05-28 09:09:37] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-28 09:09:37] INFO root fetch - main [MainThread]: End processing [simpleobsws]: success
+[2023-05-28 09:09:37] INFO root fetch - main [MainThread]: End processing [podcast-downloader]: success
+[2023-05-28 09:09:38] INFO root fetch - main [MainThread]: End processing [wiliot-deployment-tools]: success
+[2023-05-28 09:09:38] INFO root fetch - main [MainThread]: Store serial: [18278978]
