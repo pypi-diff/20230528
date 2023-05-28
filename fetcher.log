@@ -4028,3 +4028,44 @@
 [2023-05-28 11:07:24] INFO root fetch - main [MainThread]: End processing [wand-ai-client]: success
 [2023-05-28 11:07:24] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
 [2023-05-28 11:07:24] INFO root fetch - main [MainThread]: Store serial: [18279571]
+[2023-05-28 11:12:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279571]
+[2023-05-28 11:12:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: doFolder
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybrary
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: worktoy
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitlabform-ytt
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gptbase
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfmc
+[2023-05-28 11:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: apysc
+[2023-05-28 11:12:33] INFO root fetch - processPackages [worktoy]: New version: [0.31.0] Old Version: [0.30.0]
+[2023-05-28 11:12:33] INFO root fetch - processPackages [doFolder]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 11:12:33] WARNING root fetch - processPackages [gptbase]: Skipping, unable to determine old version
+[2023-05-28 11:12:33] INFO root fetch - main [MainThread]: End processing [gptbase] error
+[2023-05-28 11:12:33] INFO root fetch - processPackages [pyfmc]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-28 11:12:33] INFO root fetch - processPackages [pybrary]: New version: [0.3.0] Old Version: [0.2321.0]
+[2023-05-28 11:12:33] WARNING root fetch - processPackages [gitlabform-ytt]: Skipping, unable to determine old version
+[2023-05-28 11:12:33] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt] error
+[2023-05-28 11:12:33] INFO root fetch - processPackages [apysc]: New version: [2.8.0] Old Version: [2.7.9]
+[2023-05-28 11:12:33] INFO root fetch - processPackages [pybrary]: Downloading https://files.pythonhosted.org/packages/5e/8c/1bde2d5018b56db42638ff697e74fdbbcb91fc549518b1abadb2396993d7/pybrary-0.2321.0.tar.gz
+[2023-05-28 11:12:33] INFO root fetch - processPackages [pyfmc]: Downloading https://files.pythonhosted.org/packages/4b/db/ba8a7bdb440c9f938ea1f98a75f3e42713a92d2af7a6a56c5284701f45cf/pyfmc-0.0.5.tar.gz
+[2023-05-28 11:12:33] INFO root fetch - processPackages [worktoy]: Downloading https://files.pythonhosted.org/packages/62/3d/7d53737f3cb9fcb5a1c418ff01597efa8538f7de5dfbf3173b43abbc0eaa/worktoy-0.31.0.tar.gz
+[2023-05-28 11:12:33] INFO root fetch - processPackages [doFolder]: Downloading https://files.pythonhosted.org/packages/5a/54/601690f522aeb7317e065c25a676ae0f58d8472ea6e8a847ae40debe9963/doFolder-0.0.4.tar.gz
+[2023-05-28 11:12:34] INFO root fetch - processPackages [pyfmc]: executing diffoscope
+[2023-05-28 11:12:34] INFO root fetch - processPackages [pyfmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfmc-0.0.5.tar.gz tmp/pyfmc-0.0.6.tar.gz --markdown 20230528/p/pyfmc/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-28 11:12:34] INFO root fetch - processPackages [doFolder]: executing diffoscope
+[2023-05-28 11:12:34] INFO root fetch - processPackages [doFolder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doFolder-0.0.3.tar.gz tmp/doFolder-0.0.4.tar.gz --markdown 20230528/d/doFolder/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 11:12:34] INFO root fetch - processPackages [worktoy]: executing diffoscope
+[2023-05-28 11:12:34] INFO root fetch - processPackages [worktoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worktoy-0.30.0.tar.gz tmp/worktoy-0.31.0.tar.gz --markdown 20230528/w/worktoy/0.30.0-0.31.0/diff.md --exclude *.pyd
+[2023-05-28 11:12:34] INFO root fetch - processPackages [apysc]: Downloading https://files.pythonhosted.org/packages/aa/58/e8f266678080e72fb8f6cda92b2186537c6cfd88d09cee518c8cab4c825f/apysc-2.8.0.tar.gz
+[2023-05-28 11:12:34] INFO root fetch - processPackages [pybrary]: executing diffoscope
+[2023-05-28 11:12:34] INFO root fetch - processPackages [pybrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrary-0.2321.0.tar.gz tmp/pybrary-0.3.0.tar.gz --markdown 20230528/p/pybrary/0.2321.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-28 11:12:34] ERROR root fetch - processPackages [pyfmc]: Diffoscope failed: Error: error creating container storage: the container name "sweet_newton" is already in use by "287a29c2748c2d230415b976f6d1648853123c7c06443d4a0a4bca12356f2cae". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-28 11:12:34] INFO root fetch - main [MainThread]: End processing [pyfmc] error
+[2023-05-28 11:12:34] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-05-28 11:12:34] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.7.9.tar.gz tmp/apysc-2.8.0.tar.gz --markdown 20230528/a/apysc/2.7.9-2.8.0/diff.md --exclude *.pyd
+[2023-05-28 11:12:35] INFO root fetch - main [MainThread]: End processing [doFolder]: success
+[2023-05-28 11:12:35] INFO root fetch - main [MainThread]: End processing [worktoy]: success
+[2023-05-28 11:12:35] INFO root fetch - main [MainThread]: End processing [pybrary]: success
+[2023-05-28 11:12:41] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2023-05-28 11:12:41] INFO root fetch - main [MainThread]: Store serial: [18279597]
