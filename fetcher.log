@@ -584,3 +584,41 @@
 [2023-05-28 01:55:11] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
 [2023-05-28 01:55:11] INFO root fetch - main [MainThread]: End processing [enderchest]: success
 [2023-05-28 01:55:11] INFO root fetch - main [MainThread]: Store serial: [18277427]
+[2023-05-28 02:00:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277427]
+[2023-05-28 02:00:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chiakilisp
+[2023-05-28 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygamal
+[2023-05-28 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycalculation
+[2023-05-28 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rtb-toolbox
+[2023-05-28 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RecruitmentCurveFitting
+[2023-05-28 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chatcmd
+[2023-05-28 02:00:20] INFO root fetch - processPackages [chiakilisp]: New version: [1.4.0rc6] Old Version: [1.4.0rc5]
+[2023-05-28 02:00:20] WARNING root fetch - processPackages [pycalculation]: Skipping, unable to determine old version
+[2023-05-28 02:00:20] INFO root fetch - main [MainThread]: End processing [pycalculation] error
+[2023-05-28 02:00:20] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.40] Old Version: [0.1.39]
+[2023-05-28 02:00:20] INFO root fetch - processPackages [pygamal]: New version: [1.0.1] Old Version: [0.2.7]
+[2023-05-28 02:00:20] INFO root fetch - processPackages [RecruitmentCurveFitting]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 02:00:20] INFO root fetch - processPackages [chatcmd]: New version: [1.0.36] Old Version: [1.0.35]
+[2023-05-28 02:00:20] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/7f/f6/546416da9c3b1b1d834457e80ed1310bf94e263c1dbdf5b78d8c30e130e3/rtb_toolbox-0.1.39.tar.gz
+[2023-05-28 02:00:20] INFO root fetch - processPackages [chiakilisp]: Downloading https://files.pythonhosted.org/packages/2a/32/7567725dd3d805e1dbd31e2f2ccf9989e302838b219357eb8e53f59fe017/chiakilisp-1.4.0rc6-py3-none-any.whl
+[2023-05-28 02:00:20] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/bc/a2/32632cf31c9fa3059916452653291970d6a7054151ce26b7d40c2efeacad/chatcmd-1.0.36.tar.gz
+[2023-05-28 02:00:20] INFO root fetch - processPackages [RecruitmentCurveFitting]: Downloading https://files.pythonhosted.org/packages/15/f2/1d5878e1dbf4a5776c34185f023dd1c5c69f521dc1849355e5db96782601/RecruitmentCurveFitting-1.0.0-py2.py3-none-any.whl
+[2023-05-28 02:00:20] INFO root fetch - processPackages [pygamal]: Downloading https://files.pythonhosted.org/packages/a6/fd/ad14aee82113b07343de717e720a02dbcc68997a512830bb05333fc6abd0/pygamal-1.0.1.tar.gz
+[2023-05-28 02:00:21] INFO root fetch - processPackages [chiakilisp]: executing diffoscope
+[2023-05-28 02:00:21] INFO root fetch - processPackages [chiakilisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiakilisp-1.4.0rc5-py3-none-any.whl.zip tmp/chiakilisp-1.4.0rc6-py3-none-any.whl.zip --markdown 20230528/c/chiakilisp/1.4.0rc5-1.4.0rc6/diff.md --exclude *.pyd
+[2023-05-28 02:00:21] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 02:00:21] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.35.tar.gz tmp/chatcmd-1.0.36.tar.gz --markdown 20230528/c/chatcmd/1.0.35-1.0.36/diff.md --exclude *.pyd
+[2023-05-28 02:00:21] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/f8/fc/93b913a91f97f75bdb45387fb8852c1dd2279ec06cecc806d87f9e9168f0/rtb_toolbox-0.1.40.tar.gz
+[2023-05-28 02:00:21] INFO root fetch - processPackages [pygamal]: executing diffoscope
+[2023-05-28 02:00:21] INFO root fetch - processPackages [pygamal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygamal-0.2.7.tar.gz tmp/pygamal-1.0.1.tar.gz --markdown 20230528/p/pygamal/0.2.7-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 02:00:21] INFO root fetch - processPackages [RecruitmentCurveFitting]: Downloading https://files.pythonhosted.org/packages/34/6d/21947a327f0650a2e81a8906134659d3b7738b8879ea85d8249eaec8087c/RecruitmentCurveFitting-1.0.1-py2.py3-none-any.whl
+[2023-05-28 02:00:21] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 02:00:21] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.39.tar.gz tmp/rtb_toolbox-0.1.40.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.39-0.1.40/diff.md --exclude *.pyd
+[2023-05-28 02:00:21] INFO root fetch - processPackages [RecruitmentCurveFitting]: executing diffoscope
+[2023-05-28 02:00:21] INFO root fetch - processPackages [RecruitmentCurveFitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RecruitmentCurveFitting-1.0.0-py2.py3-none-any.whl.zip tmp/RecruitmentCurveFitting-1.0.1-py2.py3-none-any.whl.zip --markdown 20230528/R/RecruitmentCurveFitting/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
+[2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [pygamal]: success
+[2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [RecruitmentCurveFitting]: success
+[2023-05-28 02:00:22] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 02:00:22] INFO root fetch - main [MainThread]: Store serial: [18277448]
