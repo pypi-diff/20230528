@@ -9503,3 +9503,54 @@ EOFError: EOF read where object expected
 [2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [api-Rocket]: success
 [2023-05-28 21:06:09] INFO root fetch - main [MainThread]: End processing [aiogram3-form]: success
 [2023-05-28 21:06:09] INFO root fetch - main [MainThread]: Store serial: [18282931]
+[2023-05-28 21:11:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282931]
+[2023-05-28 21:11:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spida
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rising-plugin
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bansodai
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cardano-nft-vending-machine
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: api-Rocket
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: littletable
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: taipan-di
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ubami
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: NeuralNetworkDataFlow
+[2023-05-28 21:11:17] INFO root fetch - processPackages [api-Rocket]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-28 21:11:17] INFO root fetch - processPackages [spida]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 21:11:17] INFO root fetch - processPackages [ubami]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 21:11:17] WARNING root fetch - processPackages [bansodai]: Skipping, unable to determine old version
+[2023-05-28 21:11:17] INFO root fetch - main [MainThread]: End processing [bansodai] error
+[2023-05-28 21:11:17] WARNING root fetch - processPackages [rising-plugin]: Skipping, unable to determine old version
+[2023-05-28 21:11:17] INFO root fetch - processPackages [taipan-di]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-28 21:11:17] INFO root fetch - processPackages [cardano-nft-vending-machine]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-05-28 21:11:17] INFO root fetch - main [MainThread]: End processing [rising-plugin] error
+[2023-05-28 21:11:17] INFO root fetch - processPackages [littletable]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-28 21:11:18] WARNING root fetch - processPackages [NeuralNetworkDataFlow]: Skipping, unable to determine old version
+[2023-05-28 21:11:18] INFO root fetch - main [MainThread]: End processing [NeuralNetworkDataFlow] error
+[2023-05-28 21:11:18] INFO root fetch - processPackages [ubami]: executing diffoscope
+[2023-05-28 21:11:18] INFO root fetch - processPackages [ubami]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubami-0.1.0.tar.gz tmp/ubami-0.1.1.tar.gz --markdown 20230528/u/ubami/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 21:11:18] INFO root fetch - processPackages [spida]: Downloading https://files.pythonhosted.org/packages/18/97/797dfca00d50c15eaec817c7157f8b6764eddafeb58afb1660224eaa83eb/spida-0.2.3.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [taipan-di]: Downloading https://files.pythonhosted.org/packages/4a/f1/27d5f8b2a5e3a68f426d5f9a7a077e0153281706ed9892315430a8788ca7/taipan_di-0.0.1.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [cardano-nft-vending-machine]: Downloading https://files.pythonhosted.org/packages/58/30/60e4f694457688d8fcb5b92c4cb5b2004bf9c69066d27803235db9636d85/cardano-nft-vending-machine-0.7.3.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [api-Rocket]: Downloading https://files.pythonhosted.org/packages/fe/56/9c393b7d1ab6075da276f8928b380af1c34df7576048971648163a830154/api-Rocket-1.6.1.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [littletable]: Downloading https://files.pythonhosted.org/packages/7d/ad/d23d01333f337fee71fd1fc7cbb1585b47015b7dddc199ced9333d1a2571/littletable-2.2.0.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [api-Rocket]: executing diffoscope
+[2023-05-28 21:11:18] INFO root fetch - processPackages [api-Rocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-Rocket-1.6.0.tar.gz tmp/api-Rocket-1.6.1.tar.gz --markdown 20230528/a/api-Rocket/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-28 21:11:18] INFO root fetch - processPackages [spida]: Downloading https://files.pythonhosted.org/packages/5e/0c/74abaf34e17a56e285db304ac1344d458d5e5fdc39e4cd438a66164317b4/spida-0.2.4.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [cardano-nft-vending-machine]: Downloading https://files.pythonhosted.org/packages/d6/0c/d98e08a1647ecc3b13a291a45eca2ee7e21785b19ae20d5b85722c355ed2/cardano-nft-vending-machine-0.8.0.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [taipan-di]: Downloading https://files.pythonhosted.org/packages/71/2c/4ee05389717714d00accfa450b726878b75d5bf0f1f1289aa40fb4e23790/taipan_di-0.0.2.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [littletable]: Downloading https://files.pythonhosted.org/packages/0f/2e/7a257eca8f91ae2aeef48f304daadbac362ca8f1e1300b555ab60e8d06c9/littletable-2.2.1.tar.gz
+[2023-05-28 21:11:18] INFO root fetch - processPackages [spida]: executing diffoscope
+[2023-05-28 21:11:18] INFO root fetch - processPackages [spida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spida-0.2.3.tar.gz tmp/spida-0.2.4.tar.gz --markdown 20230528/s/spida/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 21:11:18] INFO root fetch - processPackages [taipan-di]: executing diffoscope
+[2023-05-28 21:11:18] INFO root fetch - processPackages [taipan-di]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taipan_di-0.0.1.tar.gz tmp/taipan_di-0.0.2.tar.gz --markdown 20230528/t/taipan-di/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-28 21:11:18] INFO root fetch - processPackages [cardano-nft-vending-machine]: executing diffoscope
+[2023-05-28 21:11:18] INFO root fetch - processPackages [cardano-nft-vending-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardano-nft-vending-machine-0.7.3.tar.gz tmp/cardano-nft-vending-machine-0.8.0.tar.gz --markdown 20230528/c/cardano-nft-vending-machine/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-05-28 21:11:18] INFO root fetch - processPackages [littletable]: executing diffoscope
+[2023-05-28 21:11:18] INFO root fetch - processPackages [littletable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/littletable-2.2.0.tar.gz tmp/littletable-2.2.1.tar.gz --markdown 20230528/l/littletable/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: End processing [ubami]: success
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: End processing [api-Rocket]: success
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: End processing [spida]: success
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: End processing [cardano-nft-vending-machine]: success
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: End processing [taipan-di]: success
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: End processing [littletable]: success
+[2023-05-28 21:11:19] INFO root fetch - main [MainThread]: Store serial: [18282973]
