@@ -2753,3 +2753,39 @@
 [2023-05-28 07:55:05] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
 [2023-05-28 07:55:10] INFO root fetch - main [MainThread]: End processing [yangsuite-filemanager]: success
 [2023-05-28 07:55:10] INFO root fetch - main [MainThread]: Store serial: [18278736]
+[2023-05-28 08:00:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278736]
+[2023-05-28 08:00:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 08:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muutils
+[2023-05-28 08:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pose-estimation-mp
+[2023-05-28 08:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auptitcafe
+[2023-05-28 08:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygmssl
+[2023-05-28 08:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nutree
+[2023-05-28 08:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: taskkill
+[2023-05-28 08:00:22] INFO root fetch - processPackages [pose-estimation-mp]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-28 08:00:22] WARNING root fetch - processPackages [taskkill]: Skipping, unable to determine old version
+[2023-05-28 08:00:22] INFO root fetch - main [MainThread]: End processing [taskkill] error
+[2023-05-28 08:00:22] INFO root fetch - processPackages [nutree]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-28 08:00:22] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 08:00:22] INFO root fetch - processPackages [pygmssl]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 08:00:22] INFO root fetch - processPackages [muutils]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-05-28 08:00:22] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 08:00:22] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 08:00:23] INFO root fetch - processPackages [nutree]: Downloading https://files.pythonhosted.org/packages/62/80/078c996b245d5a5e33b32ddd91735a5389b83c7607111bbd9305692bb29e/nutree-0.4.0.tar.gz
+[2023-05-28 08:00:23] INFO root fetch - processPackages [pygmssl]: Downloading https://files.pythonhosted.org/packages/a0/b9/b59b5ec4c614b1cfa4804ddc323850fbb3744f3358dbe0480200b9d2c4af/pygmssl-0.0.4.tar.gz
+[2023-05-28 08:00:23] INFO root fetch - processPackages [pose-estimation-mp]: Downloading https://files.pythonhosted.org/packages/b3/07/fccc8200854c756d8e98f0f209f7e7fc9fc45dbb5c2088e81bf0e4978f68/pose_estimation_mp-0.1.5-py3-none-any.whl
+[2023-05-28 08:00:23] INFO root fetch - processPackages [pose-estimation-mp]: executing diffoscope
+[2023-05-28 08:00:23] INFO root fetch - processPackages [pose-estimation-mp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pose_estimation_mp-0.1.4-py3-none-any.whl.zip tmp/pose_estimation_mp-0.1.5-py3-none-any.whl.zip --markdown 20230528/p/pose-estimation-mp/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-28 08:00:23] INFO root fetch - processPackages [muutils]: Downloading https://files.pythonhosted.org/packages/92/3c/1281b9df06d6cb4f81aa68d60bc5778e10f0e43abe167557fed325ef5f5a/muutils-0.4.0.tar.gz
+[2023-05-28 08:00:23] INFO root fetch - processPackages [pygmssl]: executing diffoscope
+[2023-05-28 08:00:23] INFO root fetch - processPackages [pygmssl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmssl-0.0.3.tar.gz tmp/pygmssl-0.0.4.tar.gz --markdown 20230528/p/pygmssl/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 08:00:23] INFO root fetch - processPackages [nutree]: Downloading https://files.pythonhosted.org/packages/01/be/696c8865b2a5750fce52878d815e3ba5c34ae2520d422f895411dacd5ba0/nutree-0.5.0.tar.gz
+[2023-05-28 08:00:23] INFO root fetch - processPackages [muutils]: executing diffoscope
+[2023-05-28 08:00:23] INFO root fetch - processPackages [muutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muutils-0.3.9.tar.gz tmp/muutils-0.4.0.tar.gz --markdown 20230528/m/muutils/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-05-28 08:00:23] INFO root fetch - processPackages [nutree]: executing diffoscope
+[2023-05-28 08:00:23] INFO root fetch - processPackages [nutree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nutree-0.4.0.tar.gz tmp/nutree-0.5.0.tar.gz --markdown 20230528/n/nutree/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [pose-estimation-mp]: success
+[2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [pygmssl]: success
+[2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [muutils]: success
+[2023-05-28 08:00:24] INFO root fetch - main [MainThread]: End processing [nutree]: success
+[2023-05-28 08:00:24] INFO root fetch - main [MainThread]: Store serial: [18278761]
