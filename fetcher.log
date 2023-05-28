@@ -4224,3 +4224,54 @@
 [2023-05-28 11:33:27] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt]: success
 [2023-05-28 11:33:28] INFO root fetch - main [MainThread]: End processing [redis]: success
 [2023-05-28 11:33:28] INFO root fetch - main [MainThread]: Store serial: [18279699]
+[2023-05-28 11:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279699]
+[2023-05-28 11:38:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-rename
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graph-read-simulator
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vortexpy
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oceano-algos
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotframework-jsonquery
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gfs-dynamical-core
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jetblack-tweeter
+[2023-05-28 11:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qtgql
+[2023-05-28 11:38:37] INFO root fetch - processPackages [robotframework-jsonquery]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [nonebot-plugin-rename]: New version: [1.3.0] Old Version: [1.2.3]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [graph-read-simulator]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [jetblack-tweeter]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [qtgql]: New version: [0.119.2] Old Version: [0.119.1]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [vortexpy]: New version: [3.4.6] Old Version: [3.4.5]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 11:38:37] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-28 11:38:37] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230528/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 11:38:37] INFO root fetch - processPackages [robotframework-jsonquery]: Downloading https://files.pythonhosted.org/packages/73/d2/c8dbfe8528a53ddde47ca370ab91a2ea99c79ceb3f53a4a13405e598c557/robotframework_jsonquery-1.0.1.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [vortexpy]: Downloading https://files.pythonhosted.org/packages/c0/ed/cd5f2d14384ab5fdae4b5c737baf772f259d6067cb5a158fb33ec72843e4/vortexpy-3.4.5.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [jetblack-tweeter]: Downloading https://files.pythonhosted.org/packages/ba/aa/21a55037817113d6c0116bc668731be8d2b9284f8dfa24f4f558fb376e6e/jetblack-tweeter-0.8.0.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [graph-read-simulator]: Downloading https://files.pythonhosted.org/packages/5b/49/fe81fdf5aaa195747d22f932a406d1a7f6bcaba858da71f9a3c4915c46f6/graph_read_simulator-0.0.8.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [nonebot-plugin-rename]: executing diffoscope
+[2023-05-28 11:38:37] INFO root fetch - processPackages [nonebot-plugin-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_rename-1.2.3.tar.gz tmp/nonebot_plugin_rename-1.3.0.tar.gz --markdown 20230528/n/nonebot-plugin-rename/1.2.3-1.3.0/diff.md --exclude *.pyd
+[2023-05-28 11:38:37] INFO root fetch - processPackages [robotframework-jsonquery]: executing diffoscope
+[2023-05-28 11:38:37] INFO root fetch - processPackages [robotframework-jsonquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_jsonquery-1.0.0.tar.gz tmp/robotframework_jsonquery-1.0.1.tar.gz --markdown 20230528/r/robotframework-jsonquery/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 11:38:37] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-28 11:38:37] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 11:38:37] INFO root fetch - processPackages [qtgql]: Downloading https://files.pythonhosted.org/packages/8e/7d/397305d4fba1b5c72cbf7ea3bf126735965e178e917f8add90cfc833ffd7/qtgql-0.119.2.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [graph-read-simulator]: Downloading https://files.pythonhosted.org/packages/64/c6/416740281ee9b07ab7bf304fd865dcf2c2ac6568b8b02363e560a34f1888/graph_read_simulator-0.0.9.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [vortexpy]: Downloading https://files.pythonhosted.org/packages/66/b1/2a8f0cacdceb11870d3040cc2705176cda88e8e78093fa6ab60c5e35e152/vortexpy-3.4.6.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [jetblack-tweeter]: Downloading https://files.pythonhosted.org/packages/d0/6f/d2db81227f5403c3b828d08d344377b52889bee3839ff0e32b595cfcba0b/jetblack-tweeter-0.9.0.tar.gz
+[2023-05-28 11:38:37] INFO root fetch - processPackages [qtgql]: executing diffoscope
+[2023-05-28 11:38:37] INFO root fetch - processPackages [qtgql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtgql-0.119.1.tar.gz tmp/qtgql-0.119.2.tar.gz --markdown 20230528/q/qtgql/0.119.1-0.119.2/diff.md --exclude *.pyd
+[2023-05-28 11:38:38] INFO root fetch - processPackages [vortexpy]: executing diffoscope
+[2023-05-28 11:38:38] INFO root fetch - processPackages [vortexpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortexpy-3.4.5.tar.gz tmp/vortexpy-3.4.6.tar.gz --markdown 20230528/v/vortexpy/3.4.5-3.4.6/diff.md --exclude *.pyd
+[2023-05-28 11:38:38] INFO root fetch - processPackages [jetblack-tweeter]: executing diffoscope
+[2023-05-28 11:38:38] INFO root fetch - processPackages [jetblack-tweeter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetblack-tweeter-0.8.0.tar.gz tmp/jetblack-tweeter-0.9.0.tar.gz --markdown 20230528/j/jetblack-tweeter/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-28 11:38:38] INFO root fetch - processPackages [graph-read-simulator]: executing diffoscope
+[2023-05-28 11:38:38] INFO root fetch - processPackages [graph-read-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_read_simulator-0.0.8.tar.gz tmp/graph_read_simulator-0.0.9.tar.gz --markdown 20230528/g/graph-read-simulator/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 11:38:38] INFO root fetch - main [MainThread]: End processing [robotframework-jsonquery]: success
+[2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-rename]: success
+[2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [qtgql]: success
+[2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [jetblack-tweeter]: success
+[2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [graph-read-simulator]: success
+[2023-05-28 11:38:39] INFO root fetch - main [MainThread]: End processing [vortexpy]: success
+[2023-05-28 11:38:59] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-28 11:38:59] INFO root fetch - main [MainThread]: Store serial: [18279724]
