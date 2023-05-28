@@ -3251,3 +3251,17 @@
 [2023-05-28 09:20:19] INFO root fetch - main [MainThread]: End processing [jsonl2]: success
 [2023-05-28 09:20:21] INFO root fetch - main [MainThread]: End processing [django-ninja]: success
 [2023-05-28 09:20:21] INFO root fetch - main [MainThread]: Store serial: [18279050]
+[2023-05-28 09:25:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279050]
+[2023-05-28 09:25:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 09:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2023-05-28 09:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: muutils
+[2023-05-28 09:25:29] INFO root fetch - processPackages [muutils]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-28 09:25:30] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-28 09:25:30] INFO root fetch - processPackages [muutils]: Downloading https://files.pythonhosted.org/packages/96/55/15ab2c88d1407a2616b13fb185de420b33ee661168c5c7f6af41159062f4/muutils-0.4.1.tar.gz
+[2023-05-28 09:25:30] INFO root fetch - processPackages [muutils]: executing diffoscope
+[2023-05-28 09:25:30] INFO root fetch - processPackages [muutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muutils-0.4.0.tar.gz tmp/muutils-0.4.1.tar.gz --markdown 20230528/m/muutils/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 09:25:30] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-28 09:25:30] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230528/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-28 09:25:31] INFO root fetch - main [MainThread]: End processing [muutils]: success
+[2023-05-28 09:26:10] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-28 09:26:10] INFO root fetch - main [MainThread]: Store serial: [18279056]
