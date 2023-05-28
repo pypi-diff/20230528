@@ -8382,3 +8382,28 @@ EOFError: EOF read where object expected
 [2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
 [2023-05-28 18:46:23] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
 [2023-05-28 18:46:23] INFO root fetch - main [MainThread]: Store serial: [18282188]
+[2023-05-28 18:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282188]
+[2023-05-28 18:51:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 18:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantumflow
+[2023-05-28 18:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Xponge
+[2023-05-28 18:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-28 18:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flowtask
+[2023-05-28 18:51:32] INFO root fetch - processPackages [chatcmd]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-28 18:51:32] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-05-28 18:51:32] INFO root fetch - processPackages [quantumflow]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-28 18:51:32] INFO root fetch - processPackages [Xponge]: New version: [1.3b7] Old Version: [1.3b6]
+[2023-05-28 18:51:32] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-05-28 18:51:32] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-05-28 18:51:32] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 18:51:32] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.1.0.tar.gz tmp/chatcmd-1.1.1.tar.gz --markdown 20230528/c/chatcmd/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-28 18:51:33] INFO root fetch - processPackages [quantumflow]: Downloading https://files.pythonhosted.org/packages/57/00/aa14aa1e7affa96e9217e621b04c52088f8cb4d07b6aff3695657d7199f9/quantumflow-1.2.1.tar.gz
+[2023-05-28 18:51:33] INFO root fetch - processPackages [Xponge]: executing diffoscope
+[2023-05-28 18:51:33] INFO root fetch - processPackages [Xponge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Xponge-1.3b6.tar.gz tmp/Xponge-1.3b7.tar.gz --markdown 20230528/X/Xponge/1.3b6-1.3b7/diff.md --exclude *.pyd
+[2023-05-28 18:51:33] INFO root fetch - processPackages [quantumflow]: Downloading https://files.pythonhosted.org/packages/76/d4/a274eb224b848f6574442f462ff118e45e42bc6ab7a374ff844d19ce9d08/quantumflow-1.3.0.tar.gz
+[2023-05-28 18:51:33] INFO root fetch - processPackages [quantumflow]: executing diffoscope
+[2023-05-28 18:51:33] INFO root fetch - processPackages [quantumflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantumflow-1.2.1.tar.gz tmp/quantumflow-1.3.0.tar.gz --markdown 20230528/q/quantumflow/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-28 18:51:34] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 18:51:35] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-05-28 18:51:35] INFO root fetch - main [MainThread]: End processing [Xponge]: success
+[2023-05-28 18:51:35] INFO root fetch - main [MainThread]: End processing [quantumflow]: success
+[2023-05-28 18:51:35] INFO root fetch - main [MainThread]: Store serial: [18282201]
