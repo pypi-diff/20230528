@@ -8490,3 +8490,38 @@ EOFError: EOF read where object expected
 [2023-05-28 19:02:05] INFO root fetch - main [MainThread]: End processing [kavk-api]: success
 [2023-05-28 19:02:07] INFO root fetch - main [MainThread]: End processing [querysource]: success
 [2023-05-28 19:02:07] INFO root fetch - main [MainThread]: Store serial: [18282265]
+[2023-05-28 19:07:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18282265]
+[2023-05-28 19:07:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-28 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyasd
+[2023-05-28 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asyncdb
+[2023-05-28 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: terminut
+[2023-05-28 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soccminer
+[2023-05-28 19:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chatcmd
+[2023-05-28 19:07:16] INFO root fetch - processPackages [terminut]: New version: [0.0.0.901] Old Version: [0.0.0.869]
+[2023-05-28 19:07:16] INFO root fetch - processPackages [pyasd]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-28 19:07:16] INFO root fetch - processPackages [asyncdb]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-28 19:07:16] INFO root fetch - processPackages [chatcmd]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-28 19:07:16] INFO root fetch - processPackages [soccminer]: New version: [0.0.41a1] Old Version: [0.0.40a1]
+[2023-05-28 19:07:17] INFO root fetch - processPackages [pyasd]: Downloading https://files.pythonhosted.org/packages/83/4e/38921238f7e0a640bd6f0ea22ab8c76b59e200d24a12287d4b43a6eafb04/pyasd-0.0.7.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/0a/c0/a6132c28dc4320fd016c33c7279300e3051bca24edf56a2a57338e61b246/terminut-0.0.0.869.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/9b/11/539d6889ec6f69b0457e85b2898cd722f540532e41a40145d2af46740f86/chatcmd-1.1.3.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [soccminer]: Downloading https://files.pythonhosted.org/packages/29/c2/50de455eedd49402d1817bc570324af138f7d5624310ee3fbc0b5f5b645a/soccminer-0.0.41a1.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [asyncdb]: executing diffoscope
+[2023-05-28 19:07:17] INFO root fetch - processPackages [asyncdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncdb-2.2.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/asyncdb-2.2.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/a/asyncdb/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-28 19:07:17] INFO root fetch - processPackages [soccminer]: executing diffoscope
+[2023-05-28 19:07:17] INFO root fetch - processPackages [soccminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccminer-0.0.40a1.tar.gz tmp/soccminer-0.0.41a1.tar.gz --markdown 20230528/s/soccminer/0.0.40a1-0.0.41a1/diff.md --exclude *.pyd
+[2023-05-28 19:07:17] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/29/0b/fdbe14dca632542b3aa0aa0c762c3f38e83d04dfb5f02daae173972bde07/chatcmd-1.1.4.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [terminut]: Downloading https://files.pythonhosted.org/packages/ca/b5/bfbb272750ddf01c5fa17f20691444c1fbe098af6f46362afc1333ea5beb/terminut-0.0.0.901.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [terminut]: executing diffoscope
+[2023-05-28 19:07:17] INFO root fetch - processPackages [terminut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminut-0.0.0.869.tar.gz tmp/terminut-0.0.0.901.tar.gz --markdown 20230528/t/terminut/0.0.0.869-0.0.0.901/diff.md --exclude *.pyd
+[2023-05-28 19:07:17] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-28 19:07:17] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.1.3.tar.gz tmp/chatcmd-1.1.4.tar.gz --markdown 20230528/c/chatcmd/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-28 19:07:17] INFO root fetch - processPackages [pyasd]: Downloading https://files.pythonhosted.org/packages/1e/3c/e5da3440b3de1912ef22aa718f0ba2bdd5adfc11c88683f2b96d50aa99f5/pyasd-0.0.8.tar.gz
+[2023-05-28 19:07:17] INFO root fetch - processPackages [pyasd]: executing diffoscope
+[2023-05-28 19:07:17] INFO root fetch - processPackages [pyasd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasd-0.0.7.tar.gz tmp/pyasd-0.0.8.tar.gz --markdown 20230528/p/pyasd/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-28 19:07:18] INFO root fetch - main [MainThread]: End processing [terminut]: success
+[2023-05-28 19:07:18] INFO root fetch - main [MainThread]: End processing [soccminer]: success
+[2023-05-28 19:07:18] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-28 19:07:18] INFO root fetch - main [MainThread]: End processing [asyncdb]: success
+[2023-05-28 19:07:19] INFO root fetch - main [MainThread]: End processing [pyasd]: success
+[2023-05-28 19:07:19] INFO root fetch - main [MainThread]: Store serial: [18282285]
