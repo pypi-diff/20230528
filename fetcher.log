@@ -3064,3 +3064,29 @@
 [2023-05-28 08:59:14] INFO root fetch - main [MainThread]: End processing [pyslit]: success
 [2023-05-28 08:59:14] INFO root fetch - main [MainThread]: End processing [zanj]: success
 [2023-05-28 08:59:14] INFO root fetch - main [MainThread]: Store serial: [18278944]
+[2023-05-28 09:04:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278944]
+[2023-05-28 09:04:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 09:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keycloak-django
+[2023-05-28 09:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seqio-nightly
+[2023-05-28 09:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aksharify
+[2023-05-28 09:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-pdf-term
+[2023-05-28 09:04:23] INFO root fetch - processPackages [py-pdf-term]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-05-28 09:04:23] INFO root fetch - processPackages [keycloak-django]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-05-28 09:04:23] INFO root fetch - processPackages [aksharify]: New version: [2.5.2] Old Version: [2.3.5]
+[2023-05-28 09:04:23] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-28 09:04:23] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-28 09:04:23] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230528/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-28 09:04:23] INFO root fetch - processPackages [aksharify]: Downloading https://files.pythonhosted.org/packages/05/64/7afc54bc621021339d7fbb662ce6b9f1f39770e3c1d367c5b0346bd5ad3c/aksharify-2.5.2.tar.gz
+[2023-05-28 09:04:23] INFO root fetch - processPackages [keycloak-django]: Downloading https://files.pythonhosted.org/packages/55/46/2e957c9b5f8b48d1f77e4966903c3b21bb2b6c023a3c50de7b588f9318ad/keycloak_django-1.1.0.tar.gz
+[2023-05-28 09:04:23] INFO root fetch - processPackages [py-pdf-term]: Downloading https://files.pythonhosted.org/packages/ca/b4/93ab90d86ed5a24da0e98363c05c142c8fe06af716ed6b37c5f867acbffd/py_pdf_term-1.0.2.tar.gz
+[2023-05-28 09:04:23] INFO root fetch - processPackages [aksharify]: executing diffoscope
+[2023-05-28 09:04:23] INFO root fetch - processPackages [aksharify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aksharify-2.3.5.tar.gz tmp/aksharify-2.5.2.tar.gz --markdown 20230528/a/aksharify/2.3.5-2.5.2/diff.md --exclude *.pyd
+[2023-05-28 09:04:23] INFO root fetch - processPackages [keycloak-django]: executing diffoscope
+[2023-05-28 09:04:23] INFO root fetch - processPackages [keycloak-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keycloak_django-1.0.9.tar.gz tmp/keycloak_django-1.1.0.tar.gz --markdown 20230528/k/keycloak-django/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-05-28 09:04:23] INFO root fetch - processPackages [py-pdf-term]: executing diffoscope
+[2023-05-28 09:04:23] INFO root fetch - processPackages [py-pdf-term]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_pdf_term-1.0.0.tar.gz tmp/py_pdf_term-1.0.2.tar.gz --markdown 20230528/p/py-pdf-term/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-05-28 09:04:24] INFO root fetch - main [MainThread]: End processing [keycloak-django]: success
+[2023-05-28 09:04:24] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-28 09:04:24] INFO root fetch - main [MainThread]: End processing [aksharify]: success
+[2023-05-28 09:04:25] INFO root fetch - main [MainThread]: End processing [py-pdf-term]: success
+[2023-05-28 09:04:25] INFO root fetch - main [MainThread]: Store serial: [18278959]
