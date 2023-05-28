@@ -5655,3 +5655,90 @@
 [2023-05-28 14:05:56] INFO root fetch - main [MainThread]: End processing [ctransformers]: success
 [2023-05-28 14:06:02] INFO root fetch - main [MainThread]: End processing [aec-cli]: success
 [2023-05-28 14:06:02] INFO root fetch - main [MainThread]: Store serial: [18280469]
+[2023-05-28 14:11:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280469]
+[2023-05-28 14:11:18] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prungo
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-dllib
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-agents-nightly
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eArsivPortal
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-orca
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-friesian
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-dllib-spark2
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bigdl-orca-spark2
+[2023-05-28 14:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bigdl-friesian-spark2
+[2023-05-28 14:11:18] INFO root fetch - processPackages [prungo]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] WARNING root fetch - processPackages [eArsivPortal]: Skipping, unable to determine old version
+[2023-05-28 14:11:18] INFO root fetch - processPackages [eArsivPortal]: Start processing: bigdl-chronos-spark2
+[2023-05-28 14:11:18] INFO root fetch - main [MainThread]: End processing [eArsivPortal] error
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-dllib-spark2]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-orca]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-friesian-spark2]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-orca-spark2]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-friesian]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [bigdl-chronos-spark2]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:18] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/8d/a0/21939a59d91521cf2f3006799c187879e0955308d056b75f78e3d206d413/bigdl-dllib-2.4.0b20230527.tar.gz
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-dllib-spark2]: Downloading https://files.pythonhosted.org/packages/13/88/a21688f7c7476b9775f429debb36ef2f62fb4f66a3b0c0d9b63d1125d82d/bigdl-dllib-spark2-2.4.0b20230527.tar.gz
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-orca]: Downloading https://files.pythonhosted.org/packages/04/75/768fb38bc79bb32500d999f6c83e36e3119ce289d7d24f299d2a6c10cceb/bigdl_orca-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-orca-spark2]: Downloading https://files.pythonhosted.org/packages/be/35/b4fe514d09eecea140c71bce7666d3081f8f515ff842ef55429a5203d9bd/bigdl_orca_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53560833>=10485760
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-dllib]: Start processing: bigdl-spark2
+[2023-05-28 14:11:19] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-05-28 14:11:19] WARNING root fetch - processPackages [bigdl-dllib-spark2]: Skipping package: exceeds size limit 53560815>=10485760
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-dllib-spark2]: Start processing: python-keycloak
+[2023-05-28 14:11:19] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark2] error
+[2023-05-28 14:11:19] INFO root fetch - processPackages [prungo]: Downloading https://files.pythonhosted.org/packages/b1/88/f9b9fb005ffc5e47a6bf62d36ca6e8cdfcb8b0921a01695cec68647297d8/prungo-1.0.4.tar.gz
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-spark2]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl]: Downloading https://files.pythonhosted.org/packages/0c/f4/3cf5c15c9907a531355e115025b2f058d798c8f0799e027b18572a399c5a/bigdl-2.4.0b20230528-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] INFO root fetch - processPackages [prungo]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [prungo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prungo-1.0.3.tar.gz tmp/prungo-1.0.4.tar.gz --markdown 20230528/p/prungo/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [python-keycloak]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-chronos-spark2]: Downloading https://files.pythonhosted.org/packages/f5/e7/4be401857e17a244db1de76f9bafbae41fbc657efe6fd4e9d5d6bd381b05/bigdl_chronos_spark2-2.4.0b20230528-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-friesian-spark2]: Downloading https://files.pythonhosted.org/packages/36/ae/35d0bb34c5f042a1995feea3e66d05cf3dfc7b9eefe377fb640da3bbe535/bigdl_friesian_spark2-2.4.0b20230528-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] WARNING root fetch - processPackages [bigdl-orca-spark2]: Skipping package: exceeds size limit 20369478>=10485760
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-orca-spark2]: Start processing: joyrl
+[2023-05-28 14:11:19] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark2] error
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/cc/02/a298c0336339ad8b834d63e0c8a39cf838cfe2d7aad8f8ecd9bcddcd18b5/bigdl_friesian-2.4.0b20230528-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] INFO root fetch - processPackages [joyrl]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl-2.4.0b20230528-py3-none-manylinux1_x86_64.whl.zip --markdown 20230528/b/bigdl/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230528/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-friesian-spark2]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-chronos-spark2]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-friesian-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark2-2.4.0b20230528-py3-none-manylinux1_x86_64.whl.zip --markdown 20230528/b/bigdl-friesian-spark2/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-chronos-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark2-2.4.0b20230528-py3-none-manylinux1_x86_64.whl.zip --markdown 20230528/b/bigdl-chronos-spark2/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-friesian]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-friesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian-2.4.0b20230528-py3-none-manylinux1_x86_64.whl.zip --markdown 20230528/b/bigdl-friesian/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [python-keycloak]: Downloading https://files.pythonhosted.org/packages/eb/54/07bfe635aaec6c0f5168129e734eb353802c83f78b51b3a2e6ea2f1989ca/python_keycloak-2.8.0.tar.gz
+[2023-05-28 14:11:19] INFO root fetch - processPackages [joyrl]: Downloading https://files.pythonhosted.org/packages/cc/4c/11144abae5654b62640ee79cd6e59cc4f91e4ebac3c60d43b00af6abf0ae/joyrl-0.2.8.tar.gz
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-spark2]: Downloading https://files.pythonhosted.org/packages/75/3e/010f1ce803bfa37657c8f55e9eb3436cb6e7b9b775f143a0b3851e4ca832/bigdl_spark2-2.4.0b20230528-py3-none-manylinux1_x86_64.whl
+[2023-05-28 14:11:19] INFO root fetch - processPackages [joyrl]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [joyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joyrl-0.2.7.tar.gz tmp/joyrl-0.2.8.tar.gz --markdown 20230528/j/joyrl/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-spark2]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark2-2.4.0b20230528-py3-none-manylinux1_x86_64.whl.zip --markdown 20230528/b/bigdl-spark2/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 14:11:19] WARNING root fetch - processPackages [bigdl-orca]: Skipping package: exceeds size limit 20369397>=10485760
+[2023-05-28 14:11:19] INFO root fetch - processPackages [bigdl-orca]: Start processing: sitreps-client
+[2023-05-28 14:11:19] INFO root fetch - main [MainThread]: End processing [bigdl-orca] error
+[2023-05-28 14:11:19] INFO root fetch - processPackages [python-keycloak]: Downloading https://files.pythonhosted.org/packages/70/32/0581edf4d2c87e2aaa3a9090a794b2946728a141c23d2180b0bb4a8b5709/python_keycloak-2.9.0.tar.gz
+[2023-05-28 14:11:19] INFO root fetch - processPackages [sitreps-client]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-28 14:11:19] INFO root fetch - processPackages [python-keycloak]: executing diffoscope
+[2023-05-28 14:11:19] INFO root fetch - processPackages [python-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_keycloak-2.8.0.tar.gz tmp/python_keycloak-2.9.0.tar.gz --markdown 20230528/p/python-keycloak/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-28 14:11:20] INFO root fetch - processPackages [sitreps-client]: Downloading https://files.pythonhosted.org/packages/8a/74/e5523e0b6ba40d13daf44163032410cd3d6c97af78521c563fd22db7122d/sitreps_client-1.1.0-py2.py3-none-any.whl
+[2023-05-28 14:11:20] INFO root fetch - processPackages [sitreps-client]: Downloading https://files.pythonhosted.org/packages/25/3d/94b79bd0def9da8fc7de046a8df423cfb578c020f723cee7209edfe4d426/sitreps_client-1.1.1-py2.py3-none-any.whl
+[2023-05-28 14:11:20] INFO root fetch - processPackages [sitreps-client]: executing diffoscope
+[2023-05-28 14:11:20] INFO root fetch - processPackages [sitreps-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sitreps_client-1.1.0-py2.py3-none-any.whl.zip tmp/sitreps_client-1.1.1-py2.py3-none-any.whl.zip --markdown 20230528/s/sitreps-client/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-28 14:11:20] INFO root fetch - main [MainThread]: End processing [prungo]: success
+[2023-05-28 14:11:20] INFO root fetch - main [MainThread]: End processing [bigdl]: success
+[2023-05-28 14:11:21] INFO root fetch - main [MainThread]: End processing [bigdl-spark2]: success
+[2023-05-28 14:11:21] INFO root fetch - main [MainThread]: End processing [joyrl]: success
+[2023-05-28 14:11:21] INFO root fetch - main [MainThread]: End processing [sitreps-client]: success
+[2023-05-28 14:11:21] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
+[2023-05-28 14:11:22] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
+[2023-05-28 14:11:22] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark2]: success
+[2023-05-28 14:11:22] INFO root fetch - main [MainThread]: End processing [python-keycloak]: success
+[2023-05-28 14:11:26] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-05-28 14:11:26] INFO root fetch - main [MainThread]: Store serial: [18280510]
