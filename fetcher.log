@@ -2458,3 +2458,45 @@
 [2023-05-28 06:59:26] INFO root fetch - main [MainThread]: End processing [geniusbot]: success
 [2023-05-28 06:59:26] INFO root fetch - main [MainThread]: End processing [pyhalo]: success
 [2023-05-28 06:59:26] INFO root fetch - main [MainThread]: Store serial: [18278569]
+[2023-05-28 07:04:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278569]
+[2023-05-28 07:04:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auptitcafe
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nx-migrate
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dask-cuda
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: guidance
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: superkabuki
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhalo
+[2023-05-28 07:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: parsetypes
+[2023-05-28 07:04:34] INFO root fetch - processPackages [nx-migrate]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [guidance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [auptitcafe]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [parsetypes]: New version: [0.2] Old Version: [0.1.1]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [pyhalo]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [dask-cuda]: New version: [23.8.0a230526] Old Version: [23.8.0a230525]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [superkabuki]: New version: [0.0.43] Old Version: [0.0.41]
+[2023-05-28 07:04:35] INFO root fetch - processPackages [nx-migrate]: Downloading https://files.pythonhosted.org/packages/49/63/8d3b6130357f73e82159938136519d3ce04714e1dd0a330d0dd04db6f3ad/nx_migrate-0.1.0.tar.gz
+[2023-05-28 07:04:35] INFO root fetch - processPackages [auptitcafe]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [auptitcafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auptitcafe-0.1.8.tar.gz tmp/auptitcafe-0.1.9.tar.gz --markdown 20230528/a/auptitcafe/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 07:04:35] INFO root fetch - processPackages [pyhalo]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [pyhalo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhalo-0.2.1.tar.gz tmp/pyhalo-0.2.2.tar.gz --markdown 20230528/p/pyhalo/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-28 07:04:35] INFO root fetch - processPackages [parsetypes]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [parsetypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsetypes-0.1.1.tar.gz tmp/parsetypes-0.2.tar.gz --markdown 20230528/p/parsetypes/0.1.1-0.2/diff.md --exclude *.pyd
+[2023-05-28 07:04:35] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.8.0a230525.tar.gz tmp/dask-cuda-23.8.0a230526.tar.gz --markdown 20230528/d/dask-cuda/23.8.0a230525-23.8.0a230526/diff.md --exclude *.pyd
+[2023-05-28 07:04:35] INFO root fetch - processPackages [superkabuki]: Downloading https://files.pythonhosted.org/packages/4f/12/2baaf285574db0472d0604e0ae745a11f840e89e95909a03292905d4485e/superkabuki-0.0.41.tar.gz
+[2023-05-28 07:04:35] INFO root fetch - processPackages [nx-migrate]: Downloading https://files.pythonhosted.org/packages/d4/ba/32b4c58d77240471e46e01f44622135d9f10a0a4fb2e0ccc9df479cd555e/nx_migrate-0.2.0.tar.gz
+[2023-05-28 07:04:35] INFO root fetch - processPackages [guidance]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [guidance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guidance-0.0.8.tar.gz tmp/guidance-0.0.9.tar.gz --markdown 20230528/g/guidance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 07:04:35] INFO root fetch - processPackages [nx-migrate]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [nx-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nx_migrate-0.1.0.tar.gz tmp/nx_migrate-0.2.0.tar.gz --markdown 20230528/n/nx-migrate/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-28 07:04:35] INFO root fetch - processPackages [superkabuki]: Downloading https://files.pythonhosted.org/packages/84/6a/2aab2b51888f648df726483f56f1b9740278ed2a7ada59a0f068d1fa626c/superkabuki-0.0.43.tar.gz
+[2023-05-28 07:04:35] INFO root fetch - processPackages [superkabuki]: executing diffoscope
+[2023-05-28 07:04:35] INFO root fetch - processPackages [superkabuki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superkabuki-0.0.41.tar.gz tmp/superkabuki-0.0.43.tar.gz --markdown 20230528/s/superkabuki/0.0.41-0.0.43/diff.md --exclude *.pyd
+[2023-05-28 07:04:36] INFO root fetch - main [MainThread]: End processing [auptitcafe]: success
+[2023-05-28 07:04:36] INFO root fetch - main [MainThread]: End processing [guidance]: success
+[2023-05-28 07:04:36] INFO root fetch - main [MainThread]: End processing [nx-migrate]: success
+[2023-05-28 07:04:36] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-28 07:04:36] INFO root fetch - main [MainThread]: End processing [superkabuki]: success
+[2023-05-28 07:04:39] INFO root fetch - main [MainThread]: End processing [pyhalo]: success
+[2023-05-28 07:04:40] INFO root fetch - main [MainThread]: End processing [parsetypes]: success
+[2023-05-28 07:04:40] INFO root fetch - main [MainThread]: Store serial: [18278596]
