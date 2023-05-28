@@ -4092,3 +4092,42 @@
 [2023-05-28 11:17:52] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2023-05-28 11:17:53] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-05-28 11:17:53] INFO root fetch - main [MainThread]: Store serial: [18279621]
+[2023-05-28 11:22:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279621]
+[2023-05-28 11:23:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotframework-jsonquery
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatapi-translate
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mltb2
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gitlabform-ytt
+[2023-05-28 11:23:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: madtypes
+[2023-05-28 11:23:01] WARNING root fetch - processPackages [gitlabform-ytt]: Skipping, unable to determine old version
+[2023-05-28 11:23:01] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt] error
+[2023-05-28 11:23:01] WARNING root fetch - processPackages [mltb2]: Skipping, unable to determine old version
+[2023-05-28 11:23:01] INFO root fetch - main [MainThread]: End processing [mltb2] error
+[2023-05-28 11:23:01] INFO root fetch - processPackages [robotframework-jsonquery]: New version: [1.0.0] Old Version: [0.0.1a0]
+[2023-05-28 11:23:02] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-28 11:23:02] INFO root fetch - processPackages [madtypes]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-28 11:23:02] INFO root fetch - processPackages [chatapi-translate]: New version: [0.7] Old Version: [0.6]
+[2023-05-28 11:23:02] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-28 11:23:02] INFO root fetch - processPackages [robotframework-jsonquery]: Downloading https://files.pythonhosted.org/packages/84/8d/6d577e6db6eae496c642330847929858a1ee9e2bf02f65d3a66312c65270/robotframework_jsonquery-0.0.1a0.tar.gz
+[2023-05-28 11:23:02] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-28 11:23:02] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230528/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-28 11:23:02] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-28 11:23:02] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230528/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-28 11:23:02] INFO root fetch - processPackages [chatapi-translate]: Downloading https://files.pythonhosted.org/packages/fe/af/e92278774c939afd3c2344d77ae4edb763d6a19fb3263c4979afedf6d388/chatapi-translate-0.6.tar.gz
+[2023-05-28 11:23:02] INFO root fetch - processPackages [madtypes]: Downloading https://files.pythonhosted.org/packages/fb/d8/6138d4a9ea853900ef40c227e9e0299fd093dc10e16da54d03db127de29c/madtypes-0.0.3.tar.gz
+[2023-05-28 11:23:02] INFO root fetch - processPackages [robotframework-jsonquery]: Downloading https://files.pythonhosted.org/packages/fc/ec/a8c7b4ca3f616bc2e5bab0642124f64fd78064b12e1b8eaba81e54f32a7c/robotframework_jsonquery-1.0.0.tar.gz
+[2023-05-28 11:23:02] INFO root fetch - processPackages [madtypes]: executing diffoscope
+[2023-05-28 11:23:02] INFO root fetch - processPackages [madtypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madtypes-0.0.2.tar.gz tmp/madtypes-0.0.3.tar.gz --markdown 20230528/m/madtypes/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-28 11:23:02] INFO root fetch - processPackages [robotframework-jsonquery]: executing diffoscope
+[2023-05-28 11:23:02] INFO root fetch - processPackages [robotframework-jsonquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_jsonquery-0.0.1a0.tar.gz tmp/robotframework_jsonquery-1.0.0.tar.gz --markdown 20230528/r/robotframework-jsonquery/0.0.1a0-1.0.0/diff.md --exclude *.pyd
+[2023-05-28 11:23:02] INFO root fetch - processPackages [chatapi-translate]: Downloading https://files.pythonhosted.org/packages/b9/a6/c1777bf6f0b88bd715dad829fac44bb615227a1637ecc6cf90b5baff5668/chatapi-translate-0.7.tar.gz
+[2023-05-28 11:23:02] INFO root fetch - processPackages [chatapi-translate]: executing diffoscope
+[2023-05-28 11:23:02] INFO root fetch - processPackages [chatapi-translate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatapi-translate-0.6.tar.gz tmp/chatapi-translate-0.7.tar.gz --markdown 20230528/c/chatapi-translate/0.6-0.7/diff.md --exclude *.pyd
+[2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [robotframework-jsonquery]: success
+[2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [madtypes]: success
+[2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [chatapi-translate]: success
+[2023-05-28 11:23:03] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-28 11:23:03] INFO root fetch - main [MainThread]: Store serial: [18279645]
