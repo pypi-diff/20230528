@@ -1202,3 +1202,18 @@
 [2023-05-28 02:54:04] INFO root fetch - processPackages [rdfind2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdfind2-0.0.2.tar.gz tmp/rdfind2-0.0.3.tar.gz --markdown 20230528/r/rdfind2/0.0.2-0.0.3/diff.md --exclude *.pyd
 [2023-05-28 02:54:06] INFO root fetch - main [MainThread]: End processing [rdfind2]: success
 [2023-05-28 02:54:06] INFO root fetch - main [MainThread]: Store serial: [18277775]
+[2023-05-28 02:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277775]
+[2023-05-28 02:59:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-28 02:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-databrew-cicd
+[2023-05-28 02:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rtb-toolbox
+[2023-05-28 02:59:14] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.45] Old Version: [0.1.44]
+[2023-05-28 02:59:14] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-28 02:59:14] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/57/4e/050f1dda448ff670a8784b783086a179e9b98addeb04175bda172bf38d3c/rtb_toolbox-0.1.44.tar.gz
+[2023-05-28 02:59:14] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-28 02:59:14] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230528/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-28 02:59:15] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/7c/b2/d0555f9672041e3c5d5482900bbc3c2c4eab8b3744969639b11ddd01cc33/rtb_toolbox-0.1.45.tar.gz
+[2023-05-28 02:59:15] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 02:59:15] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.44.tar.gz tmp/rtb_toolbox-0.1.45.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.44-0.1.45/diff.md --exclude *.pyd
+[2023-05-28 02:59:16] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-28 02:59:16] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 02:59:16] INFO root fetch - main [MainThread]: Store serial: [18277781]
