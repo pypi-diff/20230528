@@ -1787,3 +1787,51 @@
 [2023-05-28 04:38:32] INFO root fetch - main [MainThread]: End processing [ipyeos]: success
 [2023-05-28 04:38:36] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-05-28 04:38:36] INFO root fetch - main [MainThread]: Store serial: [18278095]
+[2023-05-28 04:43:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278095]
+[2023-05-28 04:43:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-25
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rtb-toolbox
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clementine
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rtb-toolbox
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ovos-classifiers
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: novella
+[2023-05-28 04:43:45] INFO root fetch - processPackages [clementine]: New version: [0.0.2.dev0] Old Version: [0.0.1.dev0]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230528] Old Version: [1.2.20230527]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.58] Old Version: [0.1.57]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.58] Old Version: [0.1.57]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.8.4] Old Version: [2.8.3]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [novella]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-05-28 04:43:45] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/e7/5b/0a20006ca4f659cd06c2a4599259253a617b21665c6ebeddded9ca730743/rtb_toolbox-0.1.57.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/e7/5b/0a20006ca4f659cd06c2a4599259253a617b21665c6ebeddded9ca730743/rtb_toolbox-0.1.57.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [clementine]: Downloading https://files.pythonhosted.org/packages/2c/c5/45126084c80e62cde10a9b658baaef554d5c3bec7ab6b73ac830570e8eba/clementine-0.0.1.dev0.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/ad/e4/bacc3c8c7d7d36f7ef50da37c1d87bcd79cbccb562269218b79d6e09739d/iam_actions-1.2.20230528.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [novella]: Downloading https://files.pythonhosted.org/packages/13/e4/cf9879e3c30bcbbd2b278b0422cecfa30cc0944691645f9fb61cc3cee63c/novella-0.2.5.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/61/dc/d515bf8763df19efe214e2b6429c9d80369b3d1d9e9a57cd558fd3729170/cdk8s-plus-25-2.8.4.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-05-28 04:43:45] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230527.tar.gz tmp/iam_actions-1.2.20230528.tar.gz --markdown 20230528/i/iam-actions/1.2.20230527-1.2.20230528/diff.md --exclude *.pyd
+[2023-05-28 04:43:45] INFO root fetch - processPackages [clementine]: Downloading https://files.pythonhosted.org/packages/d2/f7/0a4f6048d8268e17c916513e9bb42336f74ef75fddd411fdaa08c6e4ae5e/clementine-0.0.2.dev0.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/0b/b0/0283d0434ddd2775df668fda1a65c4505b488e76b9608548025508b6ef42/rtb_toolbox-0.1.58.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/0b/b0/0283d0434ddd2775df668fda1a65c4505b488e76b9608548025508b6ef42/rtb_toolbox-0.1.58.tar.gz
+[2023-05-28 04:43:45] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-05-28 04:43:45] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.8.3.tar.gz tmp/cdk8s-plus-25-2.8.4.tar.gz --markdown 20230528/c/cdk8s-plus-25/2.8.3-2.8.4/diff.md --exclude *.pyd
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.57.tar.gz tmp/rtb_toolbox-0.1.58.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.57-0.1.58/diff.md --exclude *.pyd
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-28 04:43:45] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.57.tar.gz tmp/rtb_toolbox-0.1.58.tar.gz --markdown 20230528/r/rtb-toolbox/0.1.57-0.1.58/diff.md --exclude *.pyd
+[2023-05-28 04:43:45] INFO root fetch - processPackages [clementine]: executing diffoscope
+[2023-05-28 04:43:45] INFO root fetch - processPackages [clementine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clementine-0.0.1.dev0.tar.gz tmp/clementine-0.0.2.dev0.tar.gz --markdown 20230528/c/clementine/0.0.1.dev0-0.0.2.dev0/diff.md --exclude *.pyd
+[2023-05-28 04:43:45] INFO root fetch - processPackages [novella]: Downloading https://files.pythonhosted.org/packages/dc/46/3c02582d821a1e0cfa18a9b282dcf89fefc0b88312803eececa3b3f3d51b/novella-0.2.6.tar.gz
+[2023-05-28 04:43:46] INFO root fetch - processPackages [novella]: executing diffoscope
+[2023-05-28 04:43:46] INFO root fetch - processPackages [novella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novella-0.2.5.tar.gz tmp/novella-0.2.6.tar.gz --markdown 20230528/n/novella/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-28 04:43:46] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-05-28 04:43:47] INFO root fetch - main [MainThread]: End processing [clementine]: success
+[2023-05-28 04:43:47] INFO root fetch - main [MainThread]: End processing [novella]: success
+[2023-05-28 04:43:48] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 04:43:48] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-28 04:43:50] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-05-28 04:43:51] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-05-28 04:43:51] INFO root fetch - main [MainThread]: Store serial: [18278114]
