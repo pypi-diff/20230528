@@ -2616,3 +2616,25 @@
 [2023-05-28 07:23:09] INFO root fetch - main [MainThread]: End processing [geniusbot]: success
 [2023-05-28 07:23:10] INFO root fetch - main [MainThread]: End processing [innerverz]: success
 [2023-05-28 07:23:10] INFO root fetch - main [MainThread]: Store serial: [18278658]
+[2023-05-28 07:28:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278658]
+[2023-05-28 07:28:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helios-opentelemetry-sdk
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simpm
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crazy-thursday
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-classifiers
+[2023-05-28 07:28:18] WARNING root fetch - processPackages [simpm]: Skipping, unable to determine old version
+[2023-05-28 07:28:18] INFO root fetch - main [MainThread]: End processing [simpm] error
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ovos-classifiers]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-05-28 07:28:18] INFO root fetch - processPackages [helios-opentelemetry-sdk]: New version: [1.0.9] Old Version: [1.0.87]
+[2023-05-28 07:28:18] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-28 07:28:18] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-28 07:28:18] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230528/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ovos-classifiers]: executing diffoscope
+[2023-05-28 07:28:18] INFO root fetch - processPackages [ovos-classifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_classifiers-0.0.0a8-py3-none-any.whl.zip tmp/ovos_classifiers-0.0.0a9-py3-none-any.whl.zip --markdown 20230528/o/ovos-classifiers/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-05-28 07:28:18] INFO root fetch - processPackages [helios-opentelemetry-sdk]: Downloading https://files.pythonhosted.org/packages/d8/71/1bc654fc46ea32813b8f236836666a10e8e53f20a857d660320f48ebc8df/helios-opentelemetry-sdk-1.0.87.tar.gz
+[2023-05-28 07:28:19] INFO root fetch - processPackages [helios-opentelemetry-sdk]: executing diffoscope
+[2023-05-28 07:28:19] INFO root fetch - processPackages [helios-opentelemetry-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helios-opentelemetry-sdk-1.0.87.tar.gz tmp/helios-opentelemetry-sdk-1.0.9.tar.gz --markdown 20230528/h/helios-opentelemetry-sdk/1.0.87-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 07:28:20] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-28 07:28:20] INFO root fetch - main [MainThread]: End processing [ovos-classifiers]: success
+[2023-05-28 07:28:20] INFO root fetch - main [MainThread]: End processing [helios-opentelemetry-sdk]: success
+[2023-05-28 07:28:20] INFO root fetch - main [MainThread]: Store serial: [18278671]
