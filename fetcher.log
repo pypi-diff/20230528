@@ -3331,3 +3331,37 @@
 [2023-05-28 09:37:07] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
 [2023-05-28 09:37:56] INFO root fetch - main [MainThread]: End processing [xedocs]: success
 [2023-05-28 09:37:56] INFO root fetch - main [MainThread]: Store serial: [18279103]
+[2023-05-28 09:43:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279103]
+[2023-05-28 09:43:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 09:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-threaded-sync-to-async
+[2023-05-28 09:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: macrometa-source-snowflake
+[2023-05-28 09:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qwak-core
+[2023-05-28 09:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prfiesta
+[2023-05-28 09:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zanj
+[2023-05-28 09:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: boxmot
+[2023-05-28 09:43:05] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 09:43:05] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-28 09:43:05] INFO root fetch - processPackages [boxmot]: New version: [10.0.9] Old Version: [10.0.8]
+[2023-05-28 09:43:05] INFO root fetch - processPackages [zanj]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 09:43:05] WARNING root fetch - processPackages [django-threaded-sync-to-async]: Skipping, unable to determine old version
+[2023-05-28 09:43:05] INFO root fetch - main [MainThread]: End processing [django-threaded-sync-to-async] error
+[2023-05-28 09:43:05] INFO root fetch - processPackages [qwak-core]: New version: [0.0.79] Old Version: [0.0.78]
+[2023-05-28 09:43:05] INFO root fetch - processPackages [boxmot]: executing diffoscope
+[2023-05-28 09:43:05] INFO root fetch - processPackages [boxmot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxmot-10.0.8.tar.gz tmp/boxmot-10.0.9.tar.gz --markdown 20230528/b/boxmot/10.0.8-10.0.9/diff.md --exclude *.pyd
+[2023-05-28 09:43:05] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-28 09:43:05] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230528/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-28 09:43:05] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/c3/0b/37ee15f28f4aefba7c2aceea716f19dc3347d4f9b492c2ee5b94ff16608c/qwak_core-0.0.78.tar.gz
+[2023-05-28 09:43:05] INFO root fetch - processPackages [zanj]: Downloading https://files.pythonhosted.org/packages/dd/ba/0bb82c57a4353d8edc1b3d6074daf093067ed74db1feaa4bb04a1bca83bd/zanj-0.1.1.tar.gz
+[2023-05-28 09:43:05] INFO root fetch - processPackages [zanj]: executing diffoscope
+[2023-05-28 09:43:05] INFO root fetch - processPackages [zanj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zanj-0.1.0.tar.gz tmp/zanj-0.1.1.tar.gz --markdown 20230528/z/zanj/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 09:43:05] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 09:43:05] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 09:43:06] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/c5/d3/589794f9a767b4e7150f55d32b7382b97bebdb49fa32bfaa097471fdf97a/qwak_core-0.0.79.tar.gz
+[2023-05-28 09:43:06] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-28 09:43:06] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.78.tar.gz tmp/qwak_core-0.0.79.tar.gz --markdown 20230528/q/qwak-core/0.0.78-0.0.79/diff.md --exclude *.pyd
+[2023-05-28 09:43:06] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-28 09:43:06] INFO root fetch - main [MainThread]: End processing [zanj]: success
+[2023-05-28 09:43:07] INFO root fetch - main [MainThread]: End processing [boxmot]: success
+[2023-05-28 09:43:07] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 09:43:10] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-28 09:43:10] INFO root fetch - main [MainThread]: Store serial: [18279140]
