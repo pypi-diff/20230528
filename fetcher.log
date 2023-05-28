@@ -4175,3 +4175,52 @@
 [2023-05-28 11:28:14] INFO root fetch - main [MainThread]: End processing [pytest-lazy-fixtures]: success
 [2023-05-28 11:28:15] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt]: success
 [2023-05-28 11:28:15] INFO root fetch - main [MainThread]: Store serial: [18279669]
+[2023-05-28 11:33:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279669]
+[2023-05-28 11:33:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 11:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opteryx
+[2023-05-28 11:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redis
+[2023-05-28 11:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oceano-algos
+[2023-05-28 11:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitlabform-ytt
+[2023-05-28 11:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytechnicolor
+[2023-05-28 11:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SpatialCluster
+[2023-05-28 11:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-rename
+[2023-05-28 11:33:24] INFO root fetch - processPackages [gitlabform-ytt]: New version: [3.7.0a5] Old Version: [3.7.0a4]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [redis]: New version: [5.0.0b4] Old Version: [5.0.0b3]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [pytechnicolor]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [SpatialCluster]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [opteryx]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-28 11:33:24] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230528/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-28 11:33:24] INFO root fetch - processPackages [redis]: Downloading https://files.pythonhosted.org/packages/81/27/2eb5baacdcd7db0452db7b55ed4e0f0cc0b4caa6cf95df2f756f040bccbe/redis-5.0.0b3.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [nonebot-plugin-rename]: New version: [1.3.0] Old Version: [1.2.3]
+[2023-05-28 11:33:24] INFO root fetch - processPackages [pytechnicolor]: Downloading https://files.pythonhosted.org/packages/c5/5a/1b2329440112566b2fda67b88c9e3e2fba25cc894ea266a51e3190688d71/pytechnicolor-1.1.8.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/5e/91/765e2a472f1ca3feaa2526a4bbec45d770e3d67f120965da4092459d8d99/opteryx-0.9.2.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [SpatialCluster]: Downloading https://files.pythonhosted.org/packages/d9/d7/a51c7bdf1e3bb01f187eb04b6f229c6cb047c3139e20ee8d06cb1de548c1/SpatialCluster-0.0.8.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [gitlabform-ytt]: Downloading https://files.pythonhosted.org/packages/16/93/85dd9e0694037e04065de2e58a505b947478a87aae29518c46be2371c234/gitlabform-ytt-3.7.0a5.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [nonebot-plugin-rename]: Downloading https://files.pythonhosted.org/packages/7f/6d/59880e5e699c0fdc586289e80499917d35c56b166d10d42778b7c7815d85/nonebot_plugin_rename-1.2.3.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [gitlabform-ytt]: executing diffoscope
+[2023-05-28 11:33:24] INFO root fetch - processPackages [gitlabform-ytt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlabform-ytt-3.7.0a4.tar.gz tmp/gitlabform-ytt-3.7.0a5.tar.gz --markdown 20230528/g/gitlabform-ytt/3.7.0a4-3.7.0a5/diff.md --exclude *.pyd
+[2023-05-28 11:33:24] INFO root fetch - processPackages [redis]: Downloading https://files.pythonhosted.org/packages/60/df/38edf2bfa96f7d54a0326ae88a6a590812ee1537d957c5e1caab67dda5d8/redis-5.0.0b4.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [SpatialCluster]: Downloading https://files.pythonhosted.org/packages/9a/12/7d550441bb0b8a09aa8b4ed03f2557ac00593b9de40598dc0797cdacced9/SpatialCluster-0.0.9.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [pytechnicolor]: Downloading https://files.pythonhosted.org/packages/8a/9f/2a93f42d4142f60d6eae1f4a06c5a8de65cf58c5788db7de2bb6709dfe00/pytechnicolor-1.1.9.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [nonebot-plugin-rename]: Downloading https://files.pythonhosted.org/packages/74/8b/e521bb1485156e3b861ab65c0ea11e217cffcaac5ab67cb604350747c24f/nonebot_plugin_rename-1.3.0.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [opteryx]: Downloading https://files.pythonhosted.org/packages/64/71/44793ad728906cb5f308a98ffac1dea36c22000fac4080dd51bc5c9a0ef4/opteryx-0.9.3.tar.gz
+[2023-05-28 11:33:24] INFO root fetch - processPackages [SpatialCluster]: executing diffoscope
+[2023-05-28 11:33:24] INFO root fetch - processPackages [SpatialCluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpatialCluster-0.0.8.tar.gz tmp/SpatialCluster-0.0.9.tar.gz --markdown 20230528/S/SpatialCluster/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 11:33:24] INFO root fetch - processPackages [pytechnicolor]: executing diffoscope
+[2023-05-28 11:33:24] INFO root fetch - processPackages [pytechnicolor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytechnicolor-1.1.8.tar.gz tmp/pytechnicolor-1.1.9.tar.gz --markdown 20230528/p/pytechnicolor/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-28 11:33:24] INFO root fetch - processPackages [opteryx]: executing diffoscope
+[2023-05-28 11:33:24] INFO root fetch - processPackages [opteryx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opteryx-0.9.2.tar.gz tmp/opteryx-0.9.3.tar.gz --markdown 20230528/o/opteryx/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-28 11:33:25] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-28 11:33:25] INFO root fetch - processPackages [nonebot-plugin-rename]: executing diffoscope
+[2023-05-28 11:33:25] INFO root fetch - processPackages [nonebot-plugin-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_rename-1.2.3.tar.gz tmp/nonebot_plugin_rename-1.3.0.tar.gz --markdown 20230528/n/nonebot-plugin-rename/1.2.3-1.3.0/diff.md --exclude *.pyd
+[2023-05-28 11:33:25] INFO root fetch - main [MainThread]: End processing [SpatialCluster]: success
+[2023-05-28 11:33:25] INFO root fetch - main [MainThread]: End processing [pytechnicolor]: success
+[2023-05-28 11:33:25] INFO root fetch - processPackages [redis]: executing diffoscope
+[2023-05-28 11:33:25] INFO root fetch - processPackages [redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis-5.0.0b3.tar.gz tmp/redis-5.0.0b4.tar.gz --markdown 20230528/r/redis/5.0.0b3-5.0.0b4/diff.md --exclude *.pyd
+[2023-05-28 11:33:26] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-rename]: success
+[2023-05-28 11:33:27] INFO root fetch - main [MainThread]: End processing [opteryx]: success
+[2023-05-28 11:33:27] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt]: success
+[2023-05-28 11:33:28] INFO root fetch - main [MainThread]: End processing [redis]: success
+[2023-05-28 11:33:28] INFO root fetch - main [MainThread]: Store serial: [18279699]
