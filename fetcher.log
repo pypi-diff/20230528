@@ -5042,3 +5042,47 @@
 [2023-05-28 13:02:22] INFO root fetch - main [MainThread]: End processing [bahire-hasab]: success
 [2023-05-28 13:02:22] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
 [2023-05-28 13:02:22] INFO root fetch - main [MainThread]: Store serial: [18280135]
+[2023-05-28 13:07:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280135]
+[2023-05-28 13:07:30] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openlane
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: newsapi-python-client
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: centesimal-iot
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slixmpp
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: adofaipy
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stigg-api-client
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: macrometa-source-snowflake
+[2023-05-28 13:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: antifloating
+[2023-05-28 13:07:31] INFO root fetch - processPackages [centesimal-iot]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-28 13:07:31] WARNING root fetch - processPackages [adofaipy]: Skipping, unable to determine old version
+[2023-05-28 13:07:31] INFO root fetch - main [MainThread]: End processing [adofaipy] error
+[2023-05-28 13:07:31] INFO root fetch - processPackages [newsapi-python-client]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-28 13:07:31] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-28 13:07:31] INFO root fetch - processPackages [slixmpp]: New version: [1.8.4] Old Version: [1.8.3]
+[2023-05-28 13:07:31] INFO root fetch - processPackages [stigg-api-client]: New version: [0.5.0] Old Version: [0.445.0]
+[2023-05-28 13:07:31] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 13:07:31] WARNING root fetch - processPackages [antifloating]: Skipping, unable to determine old version
+[2023-05-28 13:07:31] INFO root fetch - main [MainThread]: End processing [antifloating] error
+[2023-05-28 13:07:31] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-28 13:07:31] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230528/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 13:07:31] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/59/79/e17cbaf47997d33be862a69dce830ee009df7def398b8bc1ca80ce651ac4/stigg_api_client-0.445.0.tar.gz
+[2023-05-28 13:07:31] INFO root fetch - processPackages [centesimal-iot]: Downloading https://files.pythonhosted.org/packages/1b/8d/9fb4b316b9535e40d549eb28f281f1873a7a3e4b6e044824c957e1fa3150/centesimal_iot-0.1.4-py2.py3-none-any.whl
+[2023-05-28 13:07:31] INFO root fetch - processPackages [slixmpp]: Downloading https://files.pythonhosted.org/packages/6b/5a/a544c9279d49f497dd602548e3d70934de1809f9522d2ed36dbf5ae416ad/slixmpp-1.8.3.tar.gz
+[2023-05-28 13:07:31] INFO root fetch - processPackages [centesimal-iot]: executing diffoscope
+[2023-05-28 13:07:31] INFO root fetch - processPackages [centesimal-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/centesimal_iot-0.1.3-py2.py3-none-any.whl.zip tmp/centesimal_iot-0.1.4-py2.py3-none-any.whl.zip --markdown 20230528/c/centesimal-iot/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 13:07:31] INFO root fetch - processPackages [newsapi-python-client]: Downloading https://files.pythonhosted.org/packages/52/6c/86b12dbc11d49e0b39a8d32a2d925ef5f798c11b21c75b878c7605b3efd3/newsapi-python-client-0.2.3.tar.gz
+[2023-05-28 13:07:31] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-05-28 13:07:31] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230528/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-28 13:07:31] INFO root fetch - processPackages [newsapi-python-client]: executing diffoscope
+[2023-05-28 13:07:31] INFO root fetch - processPackages [newsapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newsapi-python-client-0.2.2.tar.gz tmp/newsapi-python-client-0.2.3.tar.gz --markdown 20230528/n/newsapi-python-client/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-28 13:07:31] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-05-28 13:07:31] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-0.445.0.tar.gz tmp/stigg_api_client-0.5.0.tar.gz --markdown 20230528/s/stigg-api-client/0.445.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-28 13:07:31] INFO root fetch - processPackages [slixmpp]: Downloading https://files.pythonhosted.org/packages/a2/b4/d7b98fa23b42c97ba32abc6a439a729c814d57b098c74327ab2a60c9cfc9/slixmpp-1.8.4.tar.gz
+[2023-05-28 13:07:31] INFO root fetch - processPackages [slixmpp]: executing diffoscope
+[2023-05-28 13:07:31] INFO root fetch - processPackages [slixmpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slixmpp-1.8.3.tar.gz tmp/slixmpp-1.8.4.tar.gz --markdown 20230528/s/slixmpp/1.8.3-1.8.4/diff.md --exclude *.pyd
+[2023-05-28 13:07:32] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-28 13:07:32] INFO root fetch - main [MainThread]: End processing [centesimal-iot]: success
+[2023-05-28 13:07:32] INFO root fetch - main [MainThread]: End processing [newsapi-python-client]: success
+[2023-05-28 13:07:32] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-05-28 13:07:33] INFO root fetch - main [MainThread]: End processing [openlane]: success
+[2023-05-28 13:07:39] INFO root fetch - main [MainThread]: End processing [slixmpp]: success
+[2023-05-28 13:07:39] INFO root fetch - main [MainThread]: Store serial: [18280159]
