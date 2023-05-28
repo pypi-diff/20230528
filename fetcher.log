@@ -9851,3 +9851,42 @@ EOFError: EOF read where object expected
 [2023-05-28 21:42:54] INFO root fetch - main [MainThread]: End processing [i8-terminal]: success
 [2023-05-28 21:42:55] INFO root fetch - main [MainThread]: End processing [DTLSSocket]: success
 [2023-05-28 21:42:55] INFO root fetch - main [MainThread]: Store serial: [18283157]
+[2023-05-28 21:47:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283157]
+[2023-05-28 21:48:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superkabuki
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gfs-dynamical-core
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pybbi
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ak-pynn
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: regis
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tcflow
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tkeras1
+[2023-05-28 21:48:03] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 21:48:03] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-28 21:48:03] INFO root fetch - processPackages [superkabuki]: New version: [0.0.47] Old Version: [0.0.45]
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ak-pynn]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-28 21:48:03] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-28 21:48:03] WARNING root fetch - processPackages [tkeras1]: Skipping, unable to determine old version
+[2023-05-28 21:48:03] INFO root fetch - main [MainThread]: End processing [tkeras1] error
+[2023-05-28 21:48:03] INFO root fetch - processPackages [pybbi]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-28 21:48:03] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-28 21:48:03] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230528/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 21:48:03] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-05-28 21:48:03] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230528/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-28 21:48:03] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/38/b6/869fc9ad8965b875294354477ffa6a5a7259bbcda786df6b4b2df5f407cd/ak_pynn-0.1.7.tar.gz
+[2023-05-28 21:48:04] INFO root fetch - processPackages [superkabuki]: Downloading https://files.pythonhosted.org/packages/ba/a4/5cb3c340b7fcb8f9ed7eff8cbca843a25ef7bc87f35a91c4adb746211326/superkabuki-0.0.47.tar.gz
+[2023-05-28 21:48:04] INFO root fetch - processPackages [pybbi]: Downloading https://files.pythonhosted.org/packages/bc/34/898d457bebf870525c29349ec667f64cc4f621d6356b623b7d4fa5112f6d/pybbi-0.3.4.tar.gz
+[2023-05-28 21:48:04] WARNING root fetch - processPackages [pybbi]: Skipping package: exceeds size limit 34722876>=10485760
+[2023-05-28 21:48:04] INFO root fetch - main [MainThread]: End processing [pybbi] error
+[2023-05-28 21:48:04] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-05-28 21:48:04] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230528/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-28 21:48:04] INFO root fetch - processPackages [superkabuki]: executing diffoscope
+[2023-05-28 21:48:04] INFO root fetch - processPackages [superkabuki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superkabuki-0.0.45.tar.gz tmp/superkabuki-0.0.47.tar.gz --markdown 20230528/s/superkabuki/0.0.45-0.0.47/diff.md --exclude *.pyd
+[2023-05-28 21:48:04] INFO root fetch - processPackages [ak-pynn]: Downloading https://files.pythonhosted.org/packages/46/5f/42c8e950376e88a25406fa849d9a30651cfd70ab373b19d604633e5b09a4/ak_pynn-0.1.8.tar.gz
+[2023-05-28 21:48:04] INFO root fetch - processPackages [ak-pynn]: executing diffoscope
+[2023-05-28 21:48:04] INFO root fetch - processPackages [ak-pynn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ak_pynn-0.1.7.tar.gz tmp/ak_pynn-0.1.8.tar.gz --markdown 20230528/a/ak-pynn/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-28 21:48:05] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-05-28 21:48:05] INFO root fetch - main [MainThread]: End processing [ak-pynn]: success
+[2023-05-28 21:48:05] INFO root fetch - main [MainThread]: End processing [superkabuki]: success
+[2023-05-28 21:48:05] INFO root fetch - main [MainThread]: End processing [tcflow]: success
+[2023-05-28 21:48:26] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-28 21:48:26] INFO root fetch - main [MainThread]: Store serial: [18283197]
