@@ -4816,3 +4816,23 @@
 [2023-05-28 12:36:03] INFO root fetch - main [MainThread]: End processing [joyrl]: success
 [2023-05-28 12:36:04] INFO root fetch - main [MainThread]: End processing [TradeGate]: success
 [2023-05-28 12:36:04] INFO root fetch - main [MainThread]: Store serial: [18280028]
+[2023-05-28 12:41:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280028]
+[2023-05-28 12:41:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-28 12:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decentralizedroutines
+[2023-05-28 12:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openshift-cluster-management-python-wrapper
+[2023-05-28 12:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-copilot
+[2023-05-28 12:41:13] INFO root fetch - processPackages [django-copilot]: New version: [0.2.0a1] Old Version: [0.1.0]
+[2023-05-28 12:41:13] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-28 12:41:13] INFO root fetch - processPackages [decentralizedroutines]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-28 12:41:13] INFO root fetch - processPackages [decentralizedroutines]: executing diffoscope
+[2023-05-28 12:41:13] INFO root fetch - processPackages [decentralizedroutines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decentralizedroutines-2.0.6.tar.gz tmp/decentralizedroutines-2.0.7.tar.gz --markdown 20230528/d/decentralizedroutines/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-28 12:41:13] INFO root fetch - processPackages [django-copilot]: Downloading https://files.pythonhosted.org/packages/92/97/b63569c7cc4af0f676a96d44b0a5c02e08c98d6b9bc15dfd0c08c8e51dbf/django_copilot-0.1.0.tar.gz
+[2023-05-28 12:41:13] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: executing diffoscope
+[2023-05-28 12:41:13] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-cluster-management-python-wrapper-1.0.8.tar.gz tmp/openshift-cluster-management-python-wrapper-1.0.9.tar.gz --markdown 20230528/o/openshift-cluster-management-python-wrapper/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-28 12:41:13] INFO root fetch - processPackages [django-copilot]: Downloading https://files.pythonhosted.org/packages/86/51/d225a99cbace51e01018b49e00a8bd257b50831dcdfd78c4d7cd783b33a8/django_copilot-0.2.0a1.tar.gz
+[2023-05-28 12:41:13] INFO root fetch - processPackages [django-copilot]: executing diffoscope
+[2023-05-28 12:41:13] INFO root fetch - processPackages [django-copilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_copilot-0.1.0.tar.gz tmp/django_copilot-0.2.0a1.tar.gz --markdown 20230528/d/django-copilot/0.1.0-0.2.0a1/diff.md --exclude *.pyd
+[2023-05-28 12:41:14] INFO root fetch - main [MainThread]: End processing [decentralizedroutines]: success
+[2023-05-28 12:41:14] INFO root fetch - main [MainThread]: End processing [django-copilot]: success
+[2023-05-28 12:41:14] INFO root fetch - main [MainThread]: End processing [openshift-cluster-management-python-wrapper]: success
+[2023-05-28 12:41:14] INFO root fetch - main [MainThread]: Store serial: [18280036]
