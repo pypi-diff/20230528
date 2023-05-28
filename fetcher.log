@@ -5333,3 +5333,71 @@
 [2023-05-28 13:33:41] INFO root fetch - main [MainThread]: End processing [pythreader]: success
 [2023-05-28 13:33:41] INFO root fetch - main [MainThread]: End processing [qclib]: success
 [2023-05-28 13:33:41] INFO root fetch - main [MainThread]: Store serial: [18280281]
+[2023-05-28 13:38:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18280281]
+[2023-05-28 13:38:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-partiql-parser
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qwak-core
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-nano
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-chronos
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyre-check-nightly
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-stable-diffusion-diao
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-serving
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hidapi
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ziffy
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vyxal
+[2023-05-28 13:38:50] INFO root fetch - processPackages [qwak-core]: New version: [0.0.81] Old Version: [0.0.80]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [py-partiql-parser]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [hidapi]: New version: [0.9.0.post3] Old Version: [0.9.0.post2]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230528] Old Version: [2.4.0b20230527]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ziffy]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101685272158] Old Version: [0.0.101685185924]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [vyxal]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-28 13:38:50] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/e0/a4/469514750fa4b6bcc85608101a2450662751a91807df1d79e1e9504890e4/qwak_core-0.0.81.tar.gz
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/cf/ff/8634a0c347a799c07f4ff0c8db17e519161ea6d03131551008d77d65bafb/bigdl_serving-2.4.0b20230528-py2.py3-none-any.whl
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/43/3a/cfe941719345e6cb09b8534bf34241cc65f757ca15e2de5ce84bb2c6988b/bigdl_chronos-2.4.0b20230527-py3-none-win_amd64.whl
+[2023-05-28 13:38:50] INFO root fetch - processPackages [hidapi]: Downloading https://files.pythonhosted.org/packages/7c/a0/d5ca6f191c8860a4769ba19448d2b2d6b3e2ca2c30aa61bb96a3f6bd25ba/hidapi-0.9.0.post2.tar.gz
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/40/1f/552258757d85c4254184b9ebd3bf40cf0ae6e2324b99b77be02179165ad4/bigdl_nano-2.4.0b20230527-py3-none-win_amd64.whl
+[2023-05-28 13:38:50] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/51/91/09f60a3ddcd072c4402cfbb5c9bcff0b79636aa09f14b2f69e40106fc07a/nonebot_plugin_stable_diffusion_diao-0.1.3.tar.gz
+[2023-05-28 13:38:50] INFO root fetch - processPackages [vyxal]: Downloading https://files.pythonhosted.org/packages/df/34/a9313887f0e45965697911af82da491ce6ab3d9b9692419bc9d28e55edae/vyxal-2.9.0.tar.gz
+[2023-05-28 13:38:50] INFO root fetch - processPackages [ziffy]: Downloading https://files.pythonhosted.org/packages/50/d0/5d80f8b8fc9d2054b52f87b6b00a48825b76273ceff44a35793310e6d714/ziffy-0.0.0.tar.gz
+[2023-05-28 13:38:50] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/44/29/8660e95e76ef62363d1ded0748ab765407fa1e6bb41797c3e1477b9facad/pyre_check_nightly-0.0.101685185924-py3-none-manylinux1_x86_64.whl
+[2023-05-28 13:38:50] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/f5/cc/ba45dc058c60d7c83a568f378afbbff49de6ee8ffa8e4d4816352bfb3578/py-partiql-parser-0.3.2.tar.gz
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-05-28 13:38:50] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230527-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230528-py2.py3-none-any.whl.zip --markdown 20230528/b/bigdl-serving/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 13:38:50] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 45986116>=10485760
+[2023-05-28 13:38:50] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-28 13:38:51] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.80.tar.gz tmp/qwak_core-0.0.81.tar.gz --markdown 20230528/q/qwak-core/0.0.80-0.0.81/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [py-partiql-parser]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [py-partiql-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-partiql-parser-0.3.1.tar.gz tmp/py-partiql-parser-0.3.2.tar.gz --markdown 20230528/p/py-partiql-parser/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/0d/23/d1db21129327149e797b7868bbcb229f96d38c96b1bbdf008d7abc2f3019/bigdl_chronos-2.4.0b20230528-py3-none-win_amd64.whl
+[2023-05-28 13:38:51] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: Downloading https://files.pythonhosted.org/packages/d4/a2/dd3c36ab6ae6478e3428f84986ec4c4a6dec778815ed1987e0886c11c401/nonebot_plugin_stable_diffusion_diao-0.1.4.tar.gz
+[2023-05-28 13:38:51] INFO root fetch - processPackages [hidapi]: Downloading https://files.pythonhosted.org/packages/ee/e9/b2ec08690c280a0eaa4777bf829db6b5d269903d4e8e9ce82f079c837d5a/hidapi-0.9.0.post3.tar.gz
+[2023-05-28 13:38:51] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/d0/ff/728e55ddb25d4d6e26a1fb1269f7615bface1900d972c905f3994016e014/bigdl_nano-2.4.0b20230528-py3-none-win_amd64.whl
+[2023-05-28 13:38:51] INFO root fetch - processPackages [ziffy]: Downloading https://files.pythonhosted.org/packages/aa/3c/b3b75d72d538a014228cda2de5d245c91571d7d4a2c9b4964b0caf0b2a94/ziffy-0.1.0.tar.gz
+[2023-05-28 13:38:51] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [nonebot-plugin-stable-diffusion-diao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_stable_diffusion_diao-0.1.3.tar.gz tmp/nonebot_plugin_stable_diffusion_diao-0.1.4.tar.gz --markdown 20230528/n/nonebot-plugin-stable-diffusion-diao/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [hidapi]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [hidapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hidapi-0.9.0.post2.tar.gz tmp/hidapi-0.9.0.post3.tar.gz --markdown 20230528/h/hidapi/0.9.0.post2-0.9.0.post3/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [vyxal]: Downloading https://files.pythonhosted.org/packages/50/63/1746c2cccb187042ae5cc09caa52fd1fb83b4e37b2533d5d7dbcf041841a/vyxal-2.9.1.tar.gz
+[2023-05-28 13:38:51] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230527-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230528-py3-none-win_amd64.whl.zip --markdown 20230528/b/bigdl-nano/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230527-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230528-py3-none-win_amd64.whl.zip --markdown 20230528/b/bigdl-chronos/2.4.0b20230527-2.4.0b20230528/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [ziffy]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [ziffy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziffy-0.0.0.tar.gz tmp/ziffy-0.1.0.tar.gz --markdown 20230528/z/ziffy/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-28 13:38:51] INFO root fetch - processPackages [vyxal]: executing diffoscope
+[2023-05-28 13:38:51] INFO root fetch - processPackages [vyxal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vyxal-2.9.0.tar.gz tmp/vyxal-2.9.1.tar.gz --markdown 20230528/v/vyxal/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-28 13:38:52] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-05-28 13:38:52] INFO root fetch - main [MainThread]: End processing [py-partiql-parser]: success
+[2023-05-28 13:38:52] INFO root fetch - main [MainThread]: End processing [ziffy]: success
+[2023-05-28 13:38:53] INFO root fetch - main [MainThread]: End processing [vyxal]: success
+[2023-05-28 13:38:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-stable-diffusion-diao]: success
+[2023-05-28 13:38:53] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-05-28 13:38:53] INFO root fetch - main [MainThread]: End processing [hidapi]: success
+[2023-05-28 13:38:54] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-05-28 13:38:58] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-05-28 13:38:58] INFO root fetch - main [MainThread]: Store serial: [18280345]
