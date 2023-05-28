@@ -1747,3 +1747,43 @@
 [2023-05-28 04:33:12] INFO root fetch - main [MainThread]: End processing [PolicyEngine-UK]: success
 [2023-05-28 04:33:20] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2023-05-28 04:33:20] INFO root fetch - main [MainThread]: Store serial: [18278069]
+[2023-05-28 04:38:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278069]
+[2023-05-28 04:38:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-plus-24
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: betfair-parser
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webpy-framework
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipyeos
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monailabel-weekly
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk8s-plus-26
+[2023-05-28 04:38:29] INFO root fetch - processPackages [betfair-parser]: New version: [0.2.6] Old Version: [0.2.3]
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ipyeos]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-28 04:38:29] INFO root fetch - processPackages [webpy-framework]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-28 04:38:29] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2322] Old Version: [0.5.dev2321]
+[2023-05-28 04:38:29] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.8.4] Old Version: [2.8.3]
+[2023-05-28 04:38:29] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.4.4] Old Version: [2.4.3]
+[2023-05-28 04:38:29] INFO root fetch - processPackages [betfair-parser]: Downloading https://files.pythonhosted.org/packages/71/3b/6e6c1cc5e627951a005fc9b8c50062c2b770ec3cca56295b90e7c3da7fbc/betfair_parser-0.2.6.tar.gz
+[2023-05-28 04:38:29] INFO root fetch - processPackages [ipyeos]: Downloading https://files.pythonhosted.org/packages/e0/78/7b059b7deed9fd27b2521ff18aa9072c17474196cdea8f85c6099add6980/ipyeos-0.4.0.tar.gz
+[2023-05-28 04:38:29] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/21/0c/5ce10cfff0a9e096d18be2de65cfcaa199d1cb404bc8f480c60f88ef0565/webpy-framework-1.1.2.tar.gz
+[2023-05-28 04:38:29] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/04/df/6932ec6271be6099bbcfe044343f19d6eb65a991f76852a8e35f813ead7f/cdk8s-plus-26-2.4.4.tar.gz
+[2023-05-28 04:38:29] INFO root fetch - processPackages [webpy-framework]: executing diffoscope
+[2023-05-28 04:38:29] INFO root fetch - processPackages [webpy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpy-framework-1.1.1.tar.gz tmp/webpy-framework-1.1.2.tar.gz --markdown 20230528/w/webpy-framework/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-28 04:38:29] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/13/94/085d216b5e3c6943f1d3a1f2f2ea5996d4c537ed2d87df6d2d5c1cbcb541/monailabel_weekly-0.5.dev2322-py3-none-any.whl
+[2023-05-28 04:38:29] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/96/92/bb73ff9920dc83e1dd387bd4da99bcc8d9db5f56c2797c27b146a9e728d3/cdk8s-plus-24-2.8.4.tar.gz
+[2023-05-28 04:38:29] INFO root fetch - processPackages [betfair-parser]: executing diffoscope
+[2023-05-28 04:38:29] INFO root fetch - processPackages [betfair-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betfair_parser-0.2.3.tar.gz tmp/betfair_parser-0.2.6.tar.gz --markdown 20230528/b/betfair-parser/0.2.3-0.2.6/diff.md --exclude *.pyd
+[2023-05-28 04:38:30] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-05-28 04:38:30] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.4.3.tar.gz tmp/cdk8s-plus-26-2.4.4.tar.gz --markdown 20230528/c/cdk8s-plus-26/2.4.3-2.4.4/diff.md --exclude *.pyd
+[2023-05-28 04:38:30] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-05-28 04:38:30] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.8.3.tar.gz tmp/cdk8s-plus-24-2.8.4.tar.gz --markdown 20230528/c/cdk8s-plus-24/2.8.3-2.8.4/diff.md --exclude *.pyd
+[2023-05-28 04:38:30] INFO root fetch - processPackages [ipyeos]: Downloading https://files.pythonhosted.org/packages/03/d9/81bda9a65bc26fca4126d682a43fc119a3371ac5ab567edb3a4f41956030/ipyeos-0.4.1.tar.gz
+[2023-05-28 04:38:30] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-05-28 04:38:30] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2321-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2322-py3-none-any.whl.zip --markdown 20230528/m/monailabel-weekly/0.5.dev2321-0.5.dev2322/diff.md --exclude *.pyd
+[2023-05-28 04:38:30] INFO root fetch - processPackages [ipyeos]: executing diffoscope
+[2023-05-28 04:38:30] INFO root fetch - processPackages [ipyeos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyeos-0.4.0.tar.gz tmp/ipyeos-0.4.1.tar.gz --markdown 20230528/i/ipyeos/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-28 04:38:31] INFO root fetch - main [MainThread]: End processing [betfair-parser]: success
+[2023-05-28 04:38:31] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
+[2023-05-28 04:38:31] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-05-28 04:38:31] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-05-28 04:38:32] INFO root fetch - main [MainThread]: End processing [ipyeos]: success
+[2023-05-28 04:38:36] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-05-28 04:38:36] INFO root fetch - main [MainThread]: Store serial: [18278095]
