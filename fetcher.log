@@ -3685,3 +3685,50 @@
 [2023-05-28 10:35:26] INFO root fetch - main [MainThread]: End processing [pyqtorch]: success
 [2023-05-28 10:35:29] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-28 10:35:29] INFO root fetch - main [MainThread]: Store serial: [18279342]
+[2023-05-28 10:40:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18279342]
+[2023-05-28 10:40:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-rs
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lpr-pkg
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jsonl2
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-quantizers
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lpr-pkg
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-estimator-nightly
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: harmonized
+[2023-05-28 10:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: p2pd
+[2023-05-28 10:40:38] INFO root fetch - processPackages [jsonl2]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-28 10:40:38] WARNING root fetch - processPackages [mct-quantizers]: Skipping, unable to determine old version
+[2023-05-28 10:40:38] INFO root fetch - main [MainThread]: End processing [mct-quantizers] error
+[2023-05-28 10:40:38] INFO root fetch - processPackages [lpr-pkg]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-28 10:40:38] WARNING root fetch - processPackages [harmonized]: Skipping, unable to determine old version
+[2023-05-28 10:40:38] INFO root fetch - main [MainThread]: End processing [harmonized] error
+[2023-05-28 10:40:38] INFO root fetch - processPackages [lpr-pkg]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-28 10:40:38] INFO root fetch - processPackages [p2pd]: New version: [2.5.0] Old Version: [2.4.1]
+[2023-05-28 10:40:38] INFO root fetch - processPackages [llm-rs]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-28 10:40:38] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: Downloading https://files.pythonhosted.org/packages/e8/5a/bdc42f2c61a650e707e88eca646785aca15d54e3306d3308b72e34e9ea69/lpr_pkg-2.0.3.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: Downloading https://files.pythonhosted.org/packages/e8/5a/bdc42f2c61a650e707e88eca646785aca15d54e3306d3308b72e34e9ea69/lpr_pkg-2.0.3.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-28 10:40:39] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230528/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-28 10:40:39] INFO root fetch - processPackages [llm-rs]: Downloading https://files.pythonhosted.org/packages/90/76/3db5d33b028ef06429550b14e3e49b653eb3b2e987d1656a4635dc3f2850/llm_rs-0.2.6.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [jsonl2]: Downloading https://files.pythonhosted.org/packages/02/47/c426e8f2126a8c689a04cea9814ec27222e5bcf20e333f881a0ad454d8ce/jsonl2-1.1.9.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [jsonl2]: executing diffoscope
+[2023-05-28 10:40:39] INFO root fetch - processPackages [jsonl2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonl2-1.1.8.tar.gz tmp/jsonl2-1.1.9.tar.gz --markdown 20230528/j/jsonl2/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-28 10:40:39] INFO root fetch - processPackages [p2pd]: Downloading https://files.pythonhosted.org/packages/3a/13/88ff8f48405aa657cc614d220302213220ded5bda2b2e95dcc9206298190/p2pd-2.5.0.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: Downloading https://files.pythonhosted.org/packages/55/31/447a096757fee000170f63bc2095ef5e1f984a33a6f5215eb19598acce3d/lpr_pkg-2.0.4.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: Downloading https://files.pythonhosted.org/packages/55/31/447a096757fee000170f63bc2095ef5e1f984a33a6f5215eb19598acce3d/lpr_pkg-2.0.4.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [llm-rs]: Downloading https://files.pythonhosted.org/packages/a3/3d/237355ac03a81c0c61560470f5abbfe5cb939a7abf93e1f771b90be99a88/llm_rs-0.2.7.tar.gz
+[2023-05-28 10:40:39] INFO root fetch - processPackages [p2pd]: executing diffoscope
+[2023-05-28 10:40:39] INFO root fetch - processPackages [p2pd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p2pd-2.4.1.tar.gz tmp/p2pd-2.5.0.tar.gz --markdown 20230528/p/p2pd/2.4.1-2.5.0/diff.md --exclude *.pyd
+[2023-05-28 10:40:39] INFO root fetch - processPackages [llm-rs]: executing diffoscope
+[2023-05-28 10:40:39] INFO root fetch - processPackages [llm-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_rs-0.2.6.tar.gz tmp/llm_rs-0.2.7.tar.gz --markdown 20230528/l/llm-rs/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: executing diffoscope
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpr_pkg-2.0.3.tar.gz tmp/lpr_pkg-2.0.4.tar.gz --markdown 20230528/l/lpr-pkg/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: executing diffoscope
+[2023-05-28 10:40:39] INFO root fetch - processPackages [lpr-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpr_pkg-2.0.3.tar.gz tmp/lpr_pkg-2.0.4.tar.gz --markdown 20230528/l/lpr-pkg/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-28 10:40:40] INFO root fetch - main [MainThread]: End processing [jsonl2]: success
+[2023-05-28 10:40:40] INFO root fetch - main [MainThread]: End processing [lpr-pkg]: success
+[2023-05-28 10:40:40] INFO root fetch - main [MainThread]: End processing [lpr-pkg]: success
+[2023-05-28 10:40:40] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
+[2023-05-28 10:40:40] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-28 10:40:41] INFO root fetch - main [MainThread]: End processing [p2pd]: success
+[2023-05-28 10:40:41] INFO root fetch - main [MainThread]: Store serial: [18279399]
