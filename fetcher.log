@@ -6662,3 +6662,36 @@ EOFError: EOF read where object expected
 [2023-05-28 15:48:09] INFO root fetch - main [MainThread]: End processing [bigtree]: success
 [2023-05-28 15:48:09] INFO root fetch - main [MainThread]: End processing [siat]: success
 [2023-05-28 15:48:09] INFO root fetch - main [MainThread]: Store serial: [18281132]
+[2023-05-28 15:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18281132]
+[2023-05-28 15:53:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyAGI
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ardilla
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: animedata
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alpy
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyFolderOrganizer
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prfiesta
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ardilla]: New version: [0.3.0b0] Old Version: [0.2.1b0]
+[2023-05-28 15:53:18] INFO root fetch - processPackages [pyAGI]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-28 15:53:18] INFO root fetch - processPackages [animedata]: New version: [0.3] Old Version: [0.2]
+[2023-05-28 15:53:18] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-28 15:53:18] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.2.1b0.tar.gz tmp/ardilla-0.3.0b0.tar.gz --markdown 20230528/a/ardilla/0.2.1b0-0.3.0b0/diff.md --exclude *.pyd
+[2023-05-28 15:53:18] INFO root fetch - processPackages [animedata]: executing diffoscope
+[2023-05-28 15:53:18] INFO root fetch - processPackages [animedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animedata-0.2.tar.gz tmp/animedata-0.3.tar.gz --markdown 20230528/a/animedata/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-28 15:53:18] INFO root fetch - processPackages [alpy]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-05-28 15:53:18] WARNING root fetch - processPackages [pyFolderOrganizer]: Skipping, unable to determine old version
+[2023-05-28 15:53:18] INFO root fetch - main [MainThread]: End processing [pyFolderOrganizer] error
+[2023-05-28 15:53:18] INFO root fetch - processPackages [pyAGI]: executing diffoscope
+[2023-05-28 15:53:18] INFO root fetch - processPackages [pyAGI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAGI-1.0.0.tar.gz tmp/pyAGI-1.0.1.tar.gz --markdown 20230528/p/pyAGI/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-28 15:53:19] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-28 15:53:19] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230528/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-28 15:53:19] INFO root fetch - processPackages [alpy]: Downloading https://files.pythonhosted.org/packages/e9/63/c0ed6e56851d1a43b8749647346402f4424f440d459c4c7860b9b229167b/alpy-1.0.2.tar.gz
+[2023-05-28 15:53:19] INFO root fetch - processPackages [alpy]: Downloading https://files.pythonhosted.org/packages/66/e6/7408baf55f59e9bbe5eb7178df142daf432852ed13bbad32557ec00e3037/alpy-2.0.0.tar.gz
+[2023-05-28 15:53:19] INFO root fetch - processPackages [alpy]: executing diffoscope
+[2023-05-28 15:53:19] INFO root fetch - processPackages [alpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpy-1.0.2.tar.gz tmp/alpy-2.0.0.tar.gz --markdown 20230528/a/alpy/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-28 15:53:20] INFO root fetch - main [MainThread]: End processing [animedata]: success
+[2023-05-28 15:53:20] INFO root fetch - main [MainThread]: End processing [pyAGI]: success
+[2023-05-28 15:53:20] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-28 15:53:20] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-28 15:53:20] INFO root fetch - main [MainThread]: End processing [alpy]: success
+[2023-05-28 15:53:20] INFO root fetch - main [MainThread]: Store serial: [18281154]
