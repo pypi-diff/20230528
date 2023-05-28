@@ -2872,3 +2872,39 @@
 [2023-05-28 08:21:06] INFO root fetch - main [MainThread]: End processing [types-pywin32]: success
 [2023-05-28 08:21:09] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-05-28 08:21:09] INFO root fetch - main [MainThread]: Store serial: [18278825]
+[2023-05-28 08:26:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18278825]
+[2023-05-28 08:26:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ifastapi
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ms-entropy
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: usellm
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: roboco
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: boost-loss
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ifastapi
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-05-28 08:26:17] INFO root fetch - processPackages [usellm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ms-entropy]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-05-28 08:26:17] WARNING root fetch - processPackages [boost-loss]: Skipping, unable to determine old version
+[2023-05-28 08:26:17] INFO root fetch - main [MainThread]: End processing [boost-loss] error
+[2023-05-28 08:26:17] WARNING root fetch - processPackages [roboco]: Skipping, unable to determine old version
+[2023-05-28 08:26:17] INFO root fetch - main [MainThread]: End processing [roboco] error
+[2023-05-28 08:26:17] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/39/71/e9b22e00e5ee2cb98e0ad32c822147aac92b234aad1035ee68c07b58d469/ifastapi-0.0.3.8-py3-none-any.whl
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/39/71/e9b22e00e5ee2cb98e0ad32c822147aac92b234aad1035ee68c07b58d469/ifastapi-0.0.3.8-py3-none-any.whl
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ms-entropy]: Downloading https://files.pythonhosted.org/packages/91/09/3998bb2f04971dcfdc473687961c6eb86f3ebb0ac7a23bcc94acd048d59e/ms_entropy-0.5.7.tar.gz
+[2023-05-28 08:26:18] INFO root fetch - processPackages [usellm]: Downloading https://files.pythonhosted.org/packages/bd/a3/7af7ad103d5a16dc58d9536bacdb97e017e604a1239d8e9e6c2a65c27a79/usellm-0.0.4.tar.gz
+[2023-05-28 08:26:18] INFO root fetch - processPackages [usellm]: executing diffoscope
+[2023-05-28 08:26:18] INFO root fetch - processPackages [usellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usellm-0.0.3.tar.gz tmp/usellm-0.0.4.tar.gz --markdown 20230528/u/usellm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ms-entropy]: Downloading https://files.pythonhosted.org/packages/48/d7/94af976e8453ed531b1dab6cdc8a2700d9d0c8212b27b762218ae1268585/ms_entropy-0.5.8.tar.gz
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/3c/e9/3248af3fdd2dfccdd2dbb4c804618988a400945810ace08b894ec8f675e6/ifastapi-0.0.3.9-py3-none-any.whl
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: Downloading https://files.pythonhosted.org/packages/3c/e9/3248af3fdd2dfccdd2dbb4c804618988a400945810ace08b894ec8f675e6/ifastapi-0.0.3.9-py3-none-any.whl
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230528/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ms-entropy]: executing diffoscope
+[2023-05-28 08:26:18] INFO root fetch - processPackages [ms-entropy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_entropy-0.5.7.tar.gz tmp/ms_entropy-0.5.8.tar.gz --markdown 20230528/m/ms-entropy/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2023-05-28 08:26:19] INFO root fetch - main [MainThread]: End processing [usellm]: success
+[2023-05-28 08:26:19] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 08:26:19] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-05-28 08:27:08] INFO root fetch - main [MainThread]: End processing [ms-entropy]: success
+[2023-05-28 08:27:08] INFO root fetch - main [MainThread]: Store serial: [18278844]
