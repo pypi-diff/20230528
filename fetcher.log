@@ -10702,3 +10702,66 @@ EOFError: EOF read where object expected
 [2023-05-28 23:38:34] INFO root fetch - main [MainThread]: End processing [timeblock]: success
 [2023-05-28 23:38:34] INFO root fetch - main [MainThread]: End processing [timeblock]: success
 [2023-05-28 23:38:34] INFO root fetch - main [MainThread]: Store serial: [18283669]
+[2023-05-28 23:43:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18283669]
+[2023-05-28 23:43:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timeblock
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: laminci
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: json-expand-o-matic
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulp-ostree
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyGObject-stubs
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulp-ostree-client
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: global-hotkeys
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vaksms
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mgz
+[2023-05-28 23:43:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: auraxium
+[2023-05-28 23:43:42] INFO root fetch - processPackages [json-expand-o-matic]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [timeblock]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [global-hotkeys]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [laminci]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-28 23:43:42] WARNING root fetch - processPackages [vaksms]: Skipping, unable to determine old version
+[2023-05-28 23:43:42] INFO root fetch - main [MainThread]: End processing [vaksms] error
+[2023-05-28 23:43:42] INFO root fetch - processPackages [auraxium]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [PyGObject-stubs]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [mgz]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [pulp-ostree]: New version: [2.1.0] Old Version: [2.0.0a6]
+[2023-05-28 23:43:42] INFO root fetch - processPackages [pulp-ostree-client]: New version: [2.1.0] Old Version: [2.0.0a7.dev1676776305]
+[2023-05-28 23:43:43] INFO root fetch - processPackages [PyGObject-stubs]: Downloading https://files.pythonhosted.org/packages/7c/c6/ccd17e1d8830c0c5ef4f23323214713291d3c68c5a1ff09f0ff1200cb6d1/PyGObject-stubs-2.7.0.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [timeblock]: Downloading https://files.pythonhosted.org/packages/c7/f9/288c9ddd2acaca3ad80ec384f7db0fde550348e02d9c3177692511e8afb2/timeblock-0.1.1.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [auraxium]: Downloading https://files.pythonhosted.org/packages/f6/3b/d0039532edb2b1cddf67f9cea067e472493fc2ab4341dbec7687b243120d/auraxium-0.2.3.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [json-expand-o-matic]: Downloading https://files.pythonhosted.org/packages/23/a9/388d3fbf7cc202e1107cbe8f4e7fe7a207a4b6cf24c865a06c066fa3e6bb/json_expand_o_matic-0.2.4.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [global-hotkeys]: Downloading https://files.pythonhosted.org/packages/00/16/6a45c6e06acd97cfa0648a34798c5729d3da28d3b44cf47e0550b37048bf/global_hotkeys-0.1.2.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree]: Downloading https://files.pythonhosted.org/packages/d6/d8/cf45c15106e4b38e5345a459160c3fd88fc158adf2d945452e9461fcfa3a/pulp-ostree-2.0.0a6.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [timeblock]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [timeblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeblock-0.1.0.tar.gz tmp/timeblock-0.1.1.tar.gz --markdown 20230528/t/timeblock/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [laminci]: Downloading https://files.pythonhosted.org/packages/4d/d0/dc06553f73f78bb8ed4e07ca675ed0e97000bb4dcb7e11f9210a60068217/laminci-0.6.2.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree-client]: Downloading https://files.pythonhosted.org/packages/1b/e3/fc2c89d8b35046ae8fd1fc2e40c6baf409a2805df64b5ee323884494d928/pulp_ostree-client-2.0.0a7.dev1676776305.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [json-expand-o-matic]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [json-expand-o-matic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_expand_o_matic-0.2.3.tar.gz tmp/json_expand_o_matic-0.2.4.tar.gz --markdown 20230528/j/json-expand-o-matic/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [global-hotkeys]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [global-hotkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/global_hotkeys-0.1.1.tar.gz tmp/global_hotkeys-0.1.2.tar.gz --markdown 20230528/g/global-hotkeys/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [laminci]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [laminci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laminci-0.6.1.tar.gz tmp/laminci-0.6.2.tar.gz --markdown 20230528/l/laminci/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [mgz]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [mgz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgz-1.8.8.tar.gz tmp/mgz-1.8.9.tar.gz --markdown 20230528/m/mgz/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [auraxium]: Downloading https://files.pythonhosted.org/packages/60/66/68d3ffc9ac19f708597aca32a24717a332596c9550964e45d8d2f6084056/auraxium-0.2.4.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [PyGObject-stubs]: Downloading https://files.pythonhosted.org/packages/a7/b9/299dcf3d746331ba53e1835e081e74bc4c013fc8a6062f061896690823c5/PyGObject-stubs-2.8.0.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree]: Downloading https://files.pythonhosted.org/packages/51/3d/355e8848ff4c3003acab5be2f31fff25c563cf54080213f2596a46209c17/pulp-ostree-2.1.0.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [auraxium]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [auraxium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auraxium-0.2.3.tar.gz tmp/auraxium-0.2.4.tar.gz --markdown 20230528/a/auraxium/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [PyGObject-stubs]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [PyGObject-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGObject-stubs-2.7.0.tar.gz tmp/PyGObject-stubs-2.8.0.tar.gz --markdown 20230528/P/PyGObject-stubs/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp-ostree-2.0.0a6.tar.gz tmp/pulp-ostree-2.1.0.tar.gz --markdown 20230528/p/pulp-ostree/2.0.0a6-2.1.0/diff.md --exclude *.pyd
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree-client]: Downloading https://files.pythonhosted.org/packages/a4/0c/f59f000e679eed886a32b6deee84ba0c982eb8e57f538d3072685f5afc2c/pulp_ostree-client-2.1.0.tar.gz
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree-client]: executing diffoscope
+[2023-05-28 23:43:43] INFO root fetch - processPackages [pulp-ostree-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230528:/home/abi/fetcher/20230528:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp_ostree-client-2.0.0a7.dev1676776305.tar.gz tmp/pulp_ostree-client-2.1.0.tar.gz --markdown 20230528/p/pulp-ostree-client/2.0.0a7.dev1676776305-2.1.0/diff.md --exclude *.pyd
+[2023-05-28 23:43:44] INFO root fetch - main [MainThread]: End processing [timeblock]: success
+[2023-05-28 23:43:44] INFO root fetch - main [MainThread]: End processing [laminci]: success
+[2023-05-28 23:43:44] INFO root fetch - main [MainThread]: End processing [json-expand-o-matic]: success
+[2023-05-28 23:43:44] INFO root fetch - main [MainThread]: End processing [global-hotkeys]: success
+[2023-05-28 23:43:45] INFO root fetch - main [MainThread]: End processing [pulp-ostree]: success
+[2023-05-28 23:43:45] INFO root fetch - main [MainThread]: End processing [mgz]: success
+[2023-05-28 23:43:45] INFO root fetch - main [MainThread]: End processing [PyGObject-stubs]: success
+[2023-05-28 23:43:45] INFO root fetch - main [MainThread]: End processing [auraxium]: success
+[2023-05-28 23:43:47] INFO root fetch - main [MainThread]: End processing [pulp-ostree-client]: success
+[2023-05-28 23:43:47] INFO root fetch - main [MainThread]: Store serial: [18283698]
